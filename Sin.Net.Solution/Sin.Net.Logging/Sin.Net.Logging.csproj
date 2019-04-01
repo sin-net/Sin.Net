@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Adrian Singer</Authors>
+    <RepositoryUrl>https://github.com/adriansinger87/Sin.Net</RepositoryUrl>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <Copyright>Adrian Singer</Copyright>
+    <AssemblyVersion>0.0.1.0</AssemblyVersion>
+    <PackageTags>persistence layer logging</PackageTags>
+    <Description>Implementation of a logging mechanism based on Sin.Net.Domain</Description>
+    <Version>0.0.1</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sin.Net.Domain\Sin.Net.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
