@@ -5,7 +5,7 @@ using System;
 
 namespace Sin.Net.Logging
 {
-    class TestLogger : ILoggable
+    public class TestLogger : ILoggable
     {
         // -- fields
 

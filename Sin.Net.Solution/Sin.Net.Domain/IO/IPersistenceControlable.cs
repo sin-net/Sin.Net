@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Sin.Net.Domain.IO
+﻿namespace Sin.Net.Domain.IO
 {
     /// <summary>
     /// Interface for controlling IO functionality based on strategy-pattern to access import and export conretions
