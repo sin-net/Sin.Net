@@ -4,6 +4,8 @@ using Sin.Net.Domain.Logging;
 using Sin.Net.Persistence;
 using Sin.Net.Persistence.Settings;
 using System;
+using System.Collections.Generic;
+using System.Dynamic;
 using System.IO;
 using System.Reflection;
 
@@ -54,7 +56,38 @@ namespace MSTests.Persistence
                 .Get<FileSetting>();
 
             Assert.AreEqual(setting.Name, importedSetting.Name, "json import failed");
-            Log.Info("success", this);
+            Log.Info("json success", this);
+        }
+
+        [TestMethod]
+        public void ImportAndExportBinary()
+        {
+            var name = $"test.{Constants.Binary.Extension}";
+            var setting = new FileSetting { Location = _path, Name = name };
+
+            var data = new Dictionary<string, object>();
+            data.Add("string", "test-data");
+            data.Add("int", 123);
+
+            // act & assert export
+
+            var result = _io.Exporter(Constants.Binary.Key)
+                .Setup(setting)
+                .Build(data)
+                .Export();
+
+            Assert.IsNotNull(result, "binary export failed");
+
+            // act & assert import
+
+            var importedData = _io.Importer(Constants.Binary.Key)
+                .Setup(setting)
+                .Import()
+                .Get<Dictionary<string, object>>();
+
+            Assert.AreEqual(data["string"], importedData["string"], "binary import string key failed");
+            Assert.AreEqual(data["int"], importedData["int"], "binary import int key failed");
+            Log.Info("binary success", this);
         }
     }
 }

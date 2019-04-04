@@ -25,7 +25,7 @@
         public class Binary
         {
             public const string Key = "bin";
-            public const string JobsExtension = "bin";
+            public const string Extension = "bin";
         }
     }
 }

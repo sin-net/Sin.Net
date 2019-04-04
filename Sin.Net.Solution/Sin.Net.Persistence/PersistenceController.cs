@@ -33,6 +33,9 @@ namespace Sin.Net.Persistence
             export = new JsonExporter();
             _exports.Add(export.Type, export);
 
+            export = new BinaryExporter();
+            _exports.Add(export.Type, export);
+
             // add new import types here
         }
 
@@ -42,6 +45,9 @@ namespace Sin.Net.Persistence
             IImportable import;
 
             import = new JsonImporter();
+            _imports.Add(import.Type, import);
+
+            import = new BinaryImporter();
             _imports.Add(import.Type, import);
 
             // add new import types here
