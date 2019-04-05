@@ -6,11 +6,13 @@
     <RepositoryUrl>https://github.com/adriansinger87/Sin.Net</RepositoryUrl>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
     <Copyright>Adrian Singer</Copyright>
-    <AssemblyVersion>0.0.1.0</AssemblyVersion>
-    <PackageTags>persistence layer logging</PackageTags>
-    <Description>Implementation of a logging mechanism based on Sin.Net.Domain</Description>
-    <Version>0.0.1</Version>
+    <AssemblyVersion>0.0.2.0</AssemblyVersion>
+    <PackageTags>logging NLog</PackageTags>
+    <Description>Implementation of a logging mechanism based on Sin.Net.Domain and NLog.</Description>
+    <Version>0.0.2</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/adriansinger87/Sin.Net</PackageProjectUrl>
+    <FileVersion>0.0.2.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
