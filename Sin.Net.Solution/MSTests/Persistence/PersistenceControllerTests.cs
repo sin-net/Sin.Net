@@ -5,9 +5,8 @@ using Sin.Net.Persistence;
 using Sin.Net.Persistence.Settings;
 using System;
 using System.Collections.Generic;
-using System.Dynamic;
+using System.Data;
 using System.IO;
-using System.Reflection;
 
 namespace MSTests.Persistence
 {
@@ -50,7 +49,7 @@ namespace MSTests.Persistence
 
             // act & assert import
 
-            var importedSetting =_io.Importer(Constants.Json.Key)
+            var importedSetting = _io.Importer(Constants.Json.Key)
                 .Setup(setting)
                 .Import()
                 .Get<FileSetting>();
@@ -88,6 +87,60 @@ namespace MSTests.Persistence
             Assert.AreEqual(data["string"], importedData["string"], "binary import string key failed");
             Assert.AreEqual(data["int"], importedData["int"], "binary import int key failed");
             Log.Info("binary success", this);
+        }
+
+        [TestMethod]
+        public void ExAndImportCsv()
+        {
+            // arrange
+            var key = Constants.Csv.Key;
+            var name = $"test-csv.{Constants.Csv.Extension}";
+            var setting = new CsvSetting { Location = _path, Name = name };
+
+            var table = new DataTable("test-table");
+            table.Columns.AddRange(new DataColumn[]
+            {
+                new DataColumn("col_1"),
+                new DataColumn("col_2"),
+                new DataColumn("col_3")
+            });
+
+            var rand = new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                table.Rows.Add(new object[] {
+                    rand.Next(0, 10),
+                    rand.Next(10, 100),
+                    rand.NextDouble()
+                });
+            }
+
+            // act export
+            var result = _io.Exporter(key)
+                .Setup(setting)
+                .Build(table)
+                .Export();
+
+            // assert export
+            Assert.IsNotNull(result, $"{key} export failed");
+
+            // act import
+            var importedTable = _io.Importer(key)
+                .Setup(setting)
+                .Import()
+                .Get<DataTable>();
+
+            // assert import
+            for (int i = 0; i < importedTable.Rows.Count; i++)
+            {
+                for (int j = 0; j < importedTable.Columns.Count; j++)
+                {
+                    Assert.AreEqual(
+                        importedTable.Rows[i].ItemArray[j],
+                        table.Rows[i].ItemArray[j],
+                        $"row index {i} at item {j} failed");
+                }
+            }
         }
     }
 }

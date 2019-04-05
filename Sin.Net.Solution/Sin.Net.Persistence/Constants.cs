@@ -8,6 +8,7 @@
         public class Csv
         {
             public const string Key = "csv";
+            public const string Extension = "csv";
         }
 
         /// <summary>

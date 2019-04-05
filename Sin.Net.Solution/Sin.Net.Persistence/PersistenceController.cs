@@ -36,6 +36,9 @@ namespace Sin.Net.Persistence
             export = new BinaryExporter();
             _exports.Add(export.Type, export);
 
+            export = new CsvExporter();
+            _exports.Add(export.Type, export);
+
             // add new import types here
         }
 
@@ -48,6 +51,9 @@ namespace Sin.Net.Persistence
             _imports.Add(import.Type, import);
 
             import = new BinaryImporter();
+            _imports.Add(import.Type, import);
+
+            import = new CsvImporter();
             _imports.Add(import.Type, import);
 
             // add new import types here
