@@ -1,8 +1,7 @@
-# Sin.Net
+# ![Sin.Net](./Images/Sin.Net.Logo.small.png "Sin.Net") Sin.Net
 
-## Introduction
-
-The Sin.Net Project contains a bunch of reusable assemblies to build clean software architectures for any software purpose
+The **Sin.Net** Project contains a list of reusable assemblies
+to build clean software architectures for any software purpose.
 
 ## Content
 
