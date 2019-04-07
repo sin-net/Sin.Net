@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Sin.Net.Domain.Repository
 {
-    public class RepositoryBase<T> where T : new()
+    public class RepositoryBase<T>
     {
         // -- constructor
 
@@ -19,22 +19,22 @@ namespace Sin.Net.Domain.Repository
 
         // -- methods
 
-        public T FirstOrNew(Func<T, bool> predicate, out bool created)
-        {
-            var item = Items.FirstOrDefault(predicate);
+        //public T FirstOrNew(Func<T, bool> predicate, out bool created)
+        //{
+        //    var item = Items.FirstOrDefault(predicate);
 
-            if (item != null)
-            {
-                created = false;
-                return item;
-            }
-            else
-            {
-                created = true;
-                Items.Add(new T());
-                return Items.Last();
-            }
-        }
+        //    if (item != null)
+        //    {
+        //        created = false;
+        //        return item;
+        //    }
+        //    else
+        //    {
+        //        created = true;
+        //        Items.Add(new T());
+        //        return Items.Last();
+        //    }
+        //}
 
         /// <summary>
         /// overwritten method

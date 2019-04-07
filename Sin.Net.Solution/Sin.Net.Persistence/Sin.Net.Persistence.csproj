@@ -7,10 +7,10 @@
     <Copyright>Adrian Singer</Copyright>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
     <Authors>Adrian Singer</Authors>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Description>Sin.Net.Persistence contains a reference implementation of the Sin.Net.Domain interfaces for im- and export. Supported  formats are Json and Binary. A derivation of the features in your client code is supported. More features will follow.</Description>
-    <PackageTags>persistence json binary</PackageTags>
+    <Description>This assembly contains a reference implementation of the Sin.Net.Domain interfaces for im- and export control. Supported  formats are Json, Binary and Csv based on DataTables. A derivation of the features in your client code is supported. More features will follow.</Description>
+    <PackageTags>persistence json binary csv</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
