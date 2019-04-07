@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Version>0.0.4</Version>
+    <Version>0.0.5</Version>
     <Authors>Adrian Singer</Authors>
     <Description>Sin.Net.Domain contains a domain layer for abstractions and interfaces for any application purpose.</Description>
     <RepositoryUrl>https://github.com/adriansinger87/Sin.Net</RepositoryUrl>
@@ -12,12 +12,12 @@
     <PackageReleaseNotes></PackageReleaseNotes>
     <SignAssembly>true</SignAssembly>
     <DelaySign>false</DelaySign>
-    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/adriansinger87/Sin.Net/master/LICENSE</PackageLicenseUrl>
     <Copyright>Adrian Singer</Copyright>
-    <AssemblyVersion>0.0.4.0</AssemblyVersion>
-    <FileVersion>0.0.4.0</FileVersion>
+    <AssemblyVersion>0.0.5.0</AssemblyVersion>
+    <FileVersion>0.0.5.0</FileVersion>
     <PackageProjectUrl>https://github.com/adriansinger87/Sin.Net</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/adriansinger87/Sin.Net/master/Images/Sin.Net.Logo.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/adriansinger87/Sin.Net/master/Images/Sin.Net.Logo.small.png</PackageIconUrl>
   </PropertyGroup>
 
 </Project>

@@ -9,7 +9,7 @@ The abstractions cover the following definitions:
 
  * A general persistence layer, following the strategy pattern.
  * Logging, see optional Implementation **Sin.Net.Logging** for more information.
- * A repository pattern for managing collections and attached fields .
+ * A repository pattern for managing collections and attached fields.
  
 ## Dependencies
 
