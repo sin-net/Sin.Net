@@ -58,14 +58,14 @@ namespace MSTests.Persistence
 
             // act & assert import
 
-            // TODO: implement proper adaption from object into specific repository
             var importedRepo = _io.Importer(key)
                 .Setup(setting)
                 .Import()
-                .Get<object>();
+                .Get<RepositoryView<double>>()
+                .To<TestRepository>();
 
-            //Assert.AreEqual(setting.Name, importedSetting.Name, $"{key} import failed");
-            //Log.Info($"{key} success", this);
+            Assert.AreEqual(testRepo.MyProperty, importedRepo.MyProperty, $"{key} import failed");
+            Log.Info($"{key} success", this);
         }
     }
 }
