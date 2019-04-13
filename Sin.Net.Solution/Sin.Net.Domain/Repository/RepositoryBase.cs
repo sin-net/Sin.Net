@@ -101,5 +101,14 @@ namespace Sin.Net.Domain.Repository
         /// Gets the count of the items list as a shortcut property 
         /// </summary>
         public int Count => Items.Count;
+
+        // -- indexer
+
+        /// <summary>
+        /// index-based intexer to be able to get the instance at the index i
+        /// </summary>
+        /// <param name="index">The index of the item in the list</param>
+        /// <returns>The instance of T with the corresponding index</returns>
+        public T this[int index] => Items[index];
     }
 }
