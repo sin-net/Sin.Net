@@ -6,8 +6,6 @@ using System.Collections.Generic;
 
 namespace Sin.Net.Persistence
 {
-    // TODO: write unit tests for this
-
     public class PersistenceController : IPersistenceControlable
     {
         // -- fields
