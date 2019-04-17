@@ -10,6 +10,7 @@ namespace Sin.Net.Domain.Repository
     /// This class type can be used for serialization or for views in a web-based application.
     /// </summary>
     /// <typeparam name="T">The type of the items that are stored in the target repository</typeparam>
+    [Serializable]
     public class RepositoryView<T>
     {
         // -- constructor

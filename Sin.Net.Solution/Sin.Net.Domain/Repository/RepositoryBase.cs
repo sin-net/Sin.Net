@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Sin.Net.Domain.Repository
 {
+    [Serializable]
     public abstract class RepositoryBase<T> : IEnumerable
     {
         // -- constructor

@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Sin.Net.Domain.IO.Settings
 {
     /// <summary>
     /// The BaseSettings are for deriving settings for different IO functionality. The implementation follows in the persistence layer.
     /// </summary>
+    [Serializable]
     public abstract class SettingsBase
     {
         /// <summary>
