@@ -13,7 +13,6 @@ variables:
   buildConfiguration: 'Release'
   buildDir: '/Sin.Net.Solution'
 
-
 steps:
 - script: 'cd $(buildDir)'
 - script: dotnet build --configuration $(buildConfiguration)
