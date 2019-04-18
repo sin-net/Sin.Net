@@ -13,15 +13,18 @@ variables:
   buildConfiguration: 'Release'
   buildDir: 'Sin.Net.Solution'
 
-steps:
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'build'
-    workingDirectory: 'Sin.Net.Solution'
-    projects: 'Sin.Net.Solution'
-    arguments: '--configuration $(buildConfiguration)'
-
 #steps:
-#- script: 'cd $(buildDir)'
-#- script: dotnet build --configuration $(buildConfiguration)
+#- script: dotnet restore
+#- task: DotNetCoreCLI@2
+#  inputs:
+#    command: restore
+#    command: 'build'
+#    workingDirectory: 'Sin.Net.Solution'
+#    projects: 'Sin.Net.Solution'
+#    arguments: '--configuration $(buildConfiguration)'
+
+steps:
+- script: 'cd $(buildDir)'
+- script: dotnet restore
+- script: dotnet build --configuration $(buildConfiguration)
 #  displayName: 'dotnet build $(buildConfiguration)'
