@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 
 namespace Sin.Net.Domain.Repository
 {
-    [Serializable]
-    public abstract class RepositoryBase<T> : IEnumerable
+    public abstract class RepositoryBase<T>
     {
         // -- constructor
 
@@ -18,15 +17,6 @@ namespace Sin.Net.Domain.Repository
         }
 
         // -- methods
-
-        /// <summary>
-        /// Returns the Enumerator of the Items list.
-        /// </summary>
-        /// <returns></returns>
-        public IEnumerator GetEnumerator()
-        {
-            return Items.GetEnumerator();
-        }
 
         /// <summary>
         /// Takes the searchItem and processes a search in the repository
@@ -78,15 +68,6 @@ namespace Sin.Net.Domain.Repository
             Items.Clear();
         }
 
-        /// <summary>
-        /// overwritten method
-        /// </summary>
-        /// <returns>Returns the name property and the count of items</returns>
-        public override string ToString()
-        {
-            return $"{Name}: {Items.Count} {(Items.Count == 1 ? "item" : "items")}";
-        }
-
         // -- properties
 
         /// <summary>
@@ -97,7 +78,7 @@ namespace Sin.Net.Domain.Repository
         /// <summary>
         /// Gets the items of the repository and allows it for derived classes to set the items list
         /// </summary>
-        public List<T> Items { get; protected set; }
+        public List<T> Items { get; set; }
 
         /// <summary>
         /// Gets the count of the items list as a shortcut property 

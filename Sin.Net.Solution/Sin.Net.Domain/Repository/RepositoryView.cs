@@ -30,7 +30,7 @@ namespace Sin.Net.Domain.Repository
         /// </summary>
         /// <param name="repository">The instance of a concretion of the repository base class with custom properties and a list of items.</param>
         /// <returns>The calling instance with the copied fields.</returns>
-        public RepositoryView<T> From(RepositoryBase<T> repository)
+        public RepositoryView<T> From(IterativeRepositoryBase<T> repository)
         {
             // items
             Items = repository.Items;
@@ -53,7 +53,7 @@ namespace Sin.Net.Domain.Repository
         /// </summary>
         /// <typeparam name="Tout">the concrete type, that the calling object will be converted into.</typeparam>
         /// <returns>The repository isntance where all mathing properties and the Items list are copied.</returns>
-        public Tout To<Tout>() where Tout : RepositoryBase<T>, new()
+        public Tout To<Tout>() where Tout : IterativeRepositoryBase<T>, new()
         {
             // items
             Tout repository = new Tout();
@@ -75,7 +75,7 @@ namespace Sin.Net.Domain.Repository
             return repository;
         }
 
-        private PropertyInfo[] GetInfo(RepositoryBase<T> repository)
+        private PropertyInfo[] GetInfo(IterativeRepositoryBase<T> repository)
         {
             // remove the property Items or items because this is the list in the RepositoryBase class
             return repository
