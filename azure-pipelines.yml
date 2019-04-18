@@ -14,6 +14,14 @@ variables:
   buildDir: 'Sin.Net.Solution'
 
 steps:
-- script: 'cd $(buildDir)'
-- script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet build $(buildConfiguration)'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    workingDirectory: 'Sin.Net.Solution'
+    projects: 'Sin.Net.Solution'
+    arguments: '--configuration $(buildConfiguration)'
+
+#steps:
+#- script: 'cd $(buildDir)'
+#- script: dotnet build --configuration $(buildConfiguration)
+#  displayName: 'dotnet build $(buildConfiguration)'
