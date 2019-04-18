@@ -13,6 +13,11 @@ variables:
   buildConfiguration: 'Release'
   buildDir: 'Sin.Net.Solution'
 
+steps:
+- task: DotNetCoreInstaller@0
+  inputs:
+    version: '2.1.300'
+- script: dotnet restore
 #steps:
 #- script: dotnet restore
 #- task: DotNetCoreCLI@2
@@ -23,8 +28,8 @@ variables:
 #    projects: 'Sin.Net.Solution'
 #    arguments: '--configuration $(buildConfiguration)'
 
-steps:
-- script: 'cd $(buildDir)'
-- script: dotnet restore
-- script: dotnet build --configuration $(buildConfiguration)
+#steps:
+#- script: 'cd $(buildDir)'
+#- script: dotnet restore
+#- script: dotnet build --configuration $(buildConfiguration)
 #  displayName: 'dotnet build $(buildConfiguration)'
