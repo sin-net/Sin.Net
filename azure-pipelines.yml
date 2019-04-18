@@ -14,11 +14,14 @@ variables:
   buildDir: 'Sin.Net.Solution'
 
 steps:
-- task: DotNetCoreInstaller@0
-  inputs:
-    version: '2.1.300'
-- script: 'cd $(buildDir)'
 - script: dotnet restore
+- task: DotNetCoreCLI@2
+  displayName: Build
+  inputs:
+    command: build
+    projects: '**/*.csproj'
+    arguments: '--configuration Release' # Update this to match your need
+
 #steps:
 #- script: dotnet restore
 #- task: DotNetCoreCLI@2
