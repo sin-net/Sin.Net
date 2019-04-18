@@ -39,7 +39,10 @@ namespace Sin.Net.Domain.Repository
             var infos = GetInfo(repository);
             foreach (PropertyInfo pi in infos)
             {
-                Properties.Add(pi.Name, pi.GetValue(repository, null));
+                if (pi.CanWrite)
+                {
+                    Properties.Add(pi.Name, pi.GetValue(repository, null));
+                }
             }
 
             return this;
