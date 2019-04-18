@@ -11,7 +11,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  buildDir: '/Sin.Net.Solution'
+  buildDir: 'Sin.Net.Solution'
 
 steps:
 - script: 'cd $(buildDir)'
