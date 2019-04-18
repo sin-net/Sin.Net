@@ -14,7 +14,10 @@ variables:
   buildDir: 'Sin.Net.Solution'
 
 steps:
-- script: dotnet restore
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '**/*.csproj'
 - task: DotNetCoreCLI@2
   displayName: Build
   inputs:
