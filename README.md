@@ -1,5 +1,7 @@
 # ![Sin.Net](./Images/Sin.Net.Logo.small.png "Sin.Net") Sin.Net
 
+[![Build Status](https://dev.azure.com/adriansinger87/adriansinger87/_apis/build/status/adriansinger87.Sin.Net?branchName=master)](https://dev.azure.com/adriansinger87/adriansinger87/_build/latest?definitionId=1&branchName=master)
+
 The **Sin.Net** Project contains a list of reusable assemblies
 to build clean software architectures for any software purpose.
 

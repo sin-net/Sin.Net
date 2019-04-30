@@ -1,9 +1,10 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace Sin.Net.Domain.Repository
 {
-    public abstract class RepositoryBase<T> : IEnumerable
+    public abstract class RepositoryBase<T>
     {
         // -- constructor
 
@@ -16,15 +17,6 @@ namespace Sin.Net.Domain.Repository
         }
 
         // -- methods
-
-        /// <summary>
-        /// Returns the Enumerator of the Items list.
-        /// </summary>
-        /// <returns></returns>
-        public IEnumerator GetEnumerator()
-        {
-            return Items.GetEnumerator();
-        }
 
         /// <summary>
         /// Takes the searchItem and processes a search in the repository
@@ -76,15 +68,6 @@ namespace Sin.Net.Domain.Repository
             Items.Clear();
         }
 
-        /// <summary>
-        /// overwritten method
-        /// </summary>
-        /// <returns>Returns the name property and the count of items</returns>
-        public override string ToString()
-        {
-            return $"{Name}: {Items.Count} {(Items.Count == 1 ? "item" : "items")}";
-        }
-
         // -- properties
 
         /// <summary>
@@ -95,11 +78,20 @@ namespace Sin.Net.Domain.Repository
         /// <summary>
         /// Gets the items of the repository and allows it for derived classes to set the items list
         /// </summary>
-        public List<T> Items { get; protected set; }
+        public List<T> Items { get; set; }
 
         /// <summary>
         /// Gets the count of the items list as a shortcut property 
         /// </summary>
         public int Count => Items.Count;
+
+        // -- indexer
+
+        /// <summary>
+        /// index-based intexer to be able to get the instance at the index i
+        /// </summary>
+        /// <param name="index">The index of the item in the list</param>
+        /// <returns>The instance of T with the corresponding index</returns>
+        public T this[int index] => Items[index];
     }
 }
