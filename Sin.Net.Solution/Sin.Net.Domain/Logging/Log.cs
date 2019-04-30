@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sin.Net.Domain.Exeptions;
+using System;
 
 namespace Sin.Net.Domain.Logging
 {
@@ -9,6 +10,7 @@ namespace Sin.Net.Domain.Logging
 
         private static ILoggable _logger;
         private static readonly string NO_LOGGER_EXCEPTION = "no logger instance is present";
+        private static readonly string LOGGER_SET_EXCEPTION = "logger is already injected";
         private static readonly string SEP = "-";
 
         // -- methods
@@ -95,6 +97,10 @@ namespace Sin.Net.Domain.Logging
             L?.Stop();
         }
 
+        /// <summary>
+        /// Injects concrete ILoggable implementation. Calling this method multiple times is allowed.
+        /// </summary>
+        /// <param name="logger"></param>
         public static void Inject(ILoggable logger)
         {
             L = logger;
@@ -114,14 +120,7 @@ namespace Sin.Net.Domain.Logging
         {
             get
             {
-                if (_logger != null)
-                {
-                    return _logger;
-                }
-                else
-                {
-                    throw new NullReferenceException(NO_LOGGER_EXCEPTION);
-                }
+                return _logger;
             }
             set
             {
@@ -131,7 +130,7 @@ namespace Sin.Net.Domain.Logging
                 }
                 else
                 {
-                    throw new NullReferenceException(NO_LOGGER_EXCEPTION);
+                    throw new LogException(NO_LOGGER_EXCEPTION);
                 }
             }
         }
