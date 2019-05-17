@@ -1,7 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using MSTests.Persistence.Data;
 using Sin.Net.Domain.IO;
 using Sin.Net.Domain.Logging;
 using Sin.Net.Persistence;
+using Sin.Net.Persistence.IO;
 using Sin.Net.Persistence.Settings;
 using System;
 using System.Collections.Generic;
@@ -33,8 +35,37 @@ namespace MSTests.Persistence
 
         // -- Tests
 
+
         [TestMethod]
-        public void ImportAndExportJson()
+        public void ExportInterfacesAndImportJson()
+        {
+            // assert
+            var input = new InterfaceRepository();
+            input.Add(new TestClassA());
+            input.Add(new TestClassB());
+            input.Add(new TestClassA());
+            input.Add(new TestClassA());
+
+            var binder = new TypedSerializationBinder(new List<Type> {
+                typeof(TestClassA),
+                typeof(TestClassB)
+            });
+
+            string json = JsonIO.ToJsonString(input, binder);
+
+            // act
+            var output = JsonIO.FromJsonString<InterfaceRepository>(json, binder);
+
+            // Assert
+            for (int i = 0; i < output.Count; i++)
+            {
+                Assert.AreEqual(output[i].Name, input[i].Name, $"Name property at {i} is not equal");
+                Assert.AreEqual(output[i].Id, input[i].Id, $"Id property at {i} is not equal");
+            }
+        }
+
+        [TestMethod]
+        public void ExportAndImportJson()
         {
             var setting = new FileSetting { Location = _path, Name = "test-setting.json" };
 
@@ -59,7 +90,7 @@ namespace MSTests.Persistence
         }
 
         [TestMethod]
-        public void ImportAndExportBinary()
+        public void ExportAndImportBinary()
         {
             var name = $"test.{Constants.Binary.Extension}";
             var setting = new FileSetting { Location = _path, Name = name };

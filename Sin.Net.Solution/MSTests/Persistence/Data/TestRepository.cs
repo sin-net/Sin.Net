@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MSTests.Persistence
+namespace MSTests.Persistence.Data
 {
     class TestRepository : RepositoryBase<double>
     {

@@ -2,6 +2,7 @@
 using Sin.Net.Domain.IO.Adapter;
 using Sin.Net.Domain.IO.Settings;
 using Sin.Net.Domain.Logging;
+using Sin.Net.Persistence.IO;
 using Sin.Net.Persistence.Settings;
 using System;
 using System.Collections.Generic;
@@ -48,7 +49,8 @@ namespace Sin.Net.Persistence.Imports
                 using (s = File.Open(_setting.FullPath, FileMode.Open))
                 {
                     BinaryFormatter formatter = new BinaryFormatter();
-                    _data = formatter.Deserialize(s);
+                    byte[] bytes = (byte[])formatter.Deserialize(s);
+                    _data = BinaryIO.FromBytes<object>(bytes);
                 }
             }
             catch (Exception ex)

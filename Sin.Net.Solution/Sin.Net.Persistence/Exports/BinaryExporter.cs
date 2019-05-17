@@ -2,6 +2,7 @@
 using Sin.Net.Domain.IO.Adapter;
 using Sin.Net.Domain.IO.Settings;
 using Sin.Net.Domain.Logging;
+using Sin.Net.Persistence.IO;
 using Sin.Net.Persistence.Settings;
 using System;
 using System.Collections.Generic;
@@ -72,7 +73,7 @@ namespace Sin.Net.Persistence.Exports
                 using (s = File.Open(_setting.FullPath, FileMode.Create))
                 {
                     BinaryFormatter formatter = new BinaryFormatter();
-                    formatter.Serialize(s, _data);
+                    formatter.Serialize(s, BinaryIO.ToBytes(_data));
                     result = _setting.FullPath;
                 }
             }

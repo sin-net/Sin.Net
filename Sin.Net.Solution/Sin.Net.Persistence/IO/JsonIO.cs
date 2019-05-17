@@ -1,39 +1,53 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using Sin.Net.Domain.Logging;
 using System;
 using System.IO;
 
 namespace Sin.Net.Persistence.IO
 {
-    // TODO: make english comments
 
     /// <summary>
-    /// Statische Klasse zur Konvertierung von Objekten und serielle Binär- bzw JSON-Daten 
+    /// Static class to convert between objects and json-strings. 
     /// </summary>
-    internal static class JsonIO
+    public static class JsonIO
     {
         #region ToJsonString (2)
         /// <summary>
-        /// Erstellt eine Zeichenkette im json-Format aus einem beliebigen Objekt
+        /// Creates a json-string out of an object.
         /// </summary>
-        /// <param name="obj">Das Objekt mit beliebig kaskadierten Eigenschaften</param>
-        /// <returns>die resuliterende Zeichenkette</returns>
+        /// <param name="obj">The objekt to be serialized.</param>
+        /// <returns>The resulting string</returns>
         public static string ToJsonString(object obj)
         {
-            return ToJsonString(obj, Formatting.None);
+            return ToJsonString(obj);
         }
+
         /// <summary>
-        /// Erstellt eine Zeichenkette im json-Format aus einem beliebigen Objekt
+        /// Creates a json-string out of an object with a custom binder, usefull for interface serializations.
         /// </summary>
-        /// <param name="obj">Das Objekt mit beliebig kaskadierten Eigenschaften</param>
-        /// <param name="format">Das gewünschte Format, mit Zeilenumbrüchen, oder ohne.</param>
-        /// <returns>die resuliterende Zeichenkette</returns>
-        public static string ToJsonString(object obj, Formatting format)
+        /// <param name="obj">The objekt to be serialized.</param>
+        /// <param name="binder">The optional implementation of an ISerializationBinder, e.g. TypedSerializationBinder</param>
+        /// <returns>The resulting string<</returns>
+        public static string ToJsonString(object obj, ISerializationBinder binder = null)
         {
             string json = "{ }";
             try
             {
-                json = JsonConvert.SerializeObject(obj, format);
+                if (binder != null)
+                {
+                    var settings = new JsonSerializerSettings
+                    {
+                        TypeNameHandling = TypeNameHandling.Auto,
+                        SerializationBinder = binder
+                    };
+                    json = JsonConvert.SerializeObject(obj, settings);
+                }
+                else
+                {
+                    json = JsonConvert.SerializeObject(obj);
+                }
+
             }
             catch (Exception ex)
             {
@@ -43,35 +57,56 @@ namespace Sin.Net.Persistence.IO
         }
         #endregion
 
+
         /// <summary>
-        /// Konvertiert einen string in ein Objekt vom Typ T
+        /// Converts a json-stringinto an objekt of type T
         /// </summary>
-        /// <typeparam name="T">Das Objekttyp</typeparam>
-        /// <param name="json">der json string</param>
-        /// <returns></returns>
-        public static T FromJsonString<T>(string json)
+        /// <typeparam name="T">The typeparam</typeparam>
+        /// <param name="json">The json-string</param>
+        /// <param name="binder">The optional binder implementation</param>
+        /// <returns>The deserialized object of type t</returns>
+        public static T FromJsonString<T>(string json, ISerializationBinder binder = null)
         {
-            return JsonConvert.DeserializeObject<T>(json);
+            if (binder != null)
+            {
+                var settings = new JsonSerializerSettings
+                {
+                    TypeNameHandling = TypeNameHandling.Auto,
+                    SerializationBinder = binder
+                };
+                return JsonConvert.DeserializeObject<T>(json, settings);
+            }
+            else
+            {
+                return JsonConvert.DeserializeObject<T>(json);
+            }
+           
         }
 
         /// <summary>
-        /// Lädt aus der angegebenen Datei das generische Objekt T und gibt dieses aus.
+        /// Reads a json file and returns the converted object.
         /// </summary>
-        /// <typeparam name="T">Das Objekttyp</typeparam>
-        /// <param name="file">Die Zieldatei, inkl. Pfadangabe</param>
-        /// <returns>Das ausgelesene Objekt vom Typ T.</returns>
-        public static T ReadJson<T>(string file)
+        /// <typeparam name="T">The typeparam</typeparam>
+        /// <param name="file">The complete file path.</param>
+        /// <param name="binder">The optional binder implementation.</param>
+        /// <returns>The deserialized object of type t.</returns>
+        public static T ReadJson<T>(string file, ISerializationBinder binder = null)
         {
             T obj;
             using (StreamReader r = new StreamReader(file))
             {
                 string json = r.ReadToEnd();
-                obj = FromJsonString<T>(json);
+                obj = FromJsonString<T>(json, binder);
             }
 
             return obj;
         }
 
+        /// <summary>
+        /// Reads a json file and returns the complete json-string.
+        /// </summary>
+        /// <param name="file">The complete file path.</param>
+        /// <returns>The deserialized object of type t.</returns>
         public static string ReadJson(string file)
         {
             string result = string.Empty;
@@ -84,16 +119,18 @@ namespace Sin.Net.Persistence.IO
         }
 
         /// <summary>
-        /// Schreibt die Daten eines beliebigen Objektes in die angegebene Datei.
+        /// Writes an serialized object into a file.
         /// </summary>
-        /// <param name="obj">Das Objekt, welches eingelesen wird</param>
-        /// <param name="file">Die Zieldatei, inkl. Pfadangabe</param>
-        public static bool SaveToJson(object obj, string file)
+        /// <param name="obj">The object to be serialized.</param>
+        /// <param name="file">The complete file path.</param>
+        /// <param name="binder">The optional binder implementation.</param>
+        /// <returns>If successful it returns 'true' otherwise 'false'.</returns>
+        public static bool SaveToJson(object obj, string file, ISerializationBinder binder = null)
         {
             bool result = false;
             try
             {
-                File.WriteAllText(file, ToJsonString(obj, Formatting.Indented));
+                File.WriteAllText(file, ToJsonString(obj, binder));
                 result = true;
             }
             catch (Exception ex)
