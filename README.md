@@ -2,14 +2,14 @@
 
 [![Build Status](https://dev.azure.com/adriansinger87/adriansinger87/_apis/build/status/adriansinger87.Sin.Net?branchName=master)](https://dev.azure.com/adriansinger87/adriansinger87/_build/latest?definitionId=1&branchName=master)
 
+
 The **Sin.Net** Project contains a list of reusable assemblies
 to build clean software architectures for any software purpose.
 
 ## Downloadable on NuGet
-
-* [Sin.Net.Domain](https://www.nuget.org/packages/Sin.Net.Domain/ "Sin.Net.Domain")
-* [Sin.Net.Persistence](https://www.nuget.org/packages/Sin.Net.Persistence/ "Sin.Net.Persistence")
-* [Sin.Net.Logging](https://www.nuget.org/packages/Sin.Net.Logging/ "Sin.Net.Logging")
+* [![Nuget](https://img.shields.io/nuget/v/Sin.Net.Domain.svg?label=Sin.Net.Domain)](https://www.nuget.org/packages/Sin.Net.Domain/)
+* [![Nuget](https://img.shields.io/nuget/v/Sin.Net.Persistence.svg?label=Sin.Net.Persistence)](https://www.nuget.org/packages/Sin.Net.Persistence/)
+* [![Nuget](https://img.shields.io/nuget/v/Sin.Net.Logging.svg?label=Sin.Net.Logging)](https://www.nuget.org/packages/Sin.Net.Logging/)
 
 ## Descriptions
 
