@@ -4,6 +4,7 @@ using Sin.Net.Domain.IO;
 using Sin.Net.Domain.Logging;
 using Sin.Net.Domain.Repository;
 using Sin.Net.Persistence;
+using Sin.Net.Persistence.IO;
 using Sin.Net.Persistence.Settings;
 using System;
 using System.IO;
@@ -11,7 +12,7 @@ using System.IO;
 namespace MSTests.Persistence
 {
     [TestClass]
-    public class RepositoryExportTests : TestBase
+    public class RepositoryTests : TestBase
     {
         private IPersistenceControlable _io;
         private string _path;
@@ -33,6 +34,21 @@ namespace MSTests.Persistence
         }
 
         // -- Tests
+
+        [TestMethod]
+        public void ExportRepositoryToByteArray()
+        {
+            // arrange
+            var input = new TestRepository { MyProperty = "hello test" };
+            
+            // act
+            var bytes = BinaryIO.ToBytes(input);
+            var result = BinaryIO.FromBytes<TestRepository>(bytes);
+
+            // assert
+            Assert.AreEqual(result.MyProperty, input.MyProperty);
+
+        }
 
         [TestMethod]
         public void ExportRepositoryToJson()

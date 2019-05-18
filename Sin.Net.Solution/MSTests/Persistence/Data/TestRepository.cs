@@ -5,6 +5,7 @@ using System.Text;
 
 namespace MSTests.Persistence.Data
 {
+    [Serializable]
     class TestRepository : RepositoryBase<double>
     {
         public TestRepository() : base()

@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Sin.Net.Domain.Repository
 {
+    [Serializable]
     public abstract class RepositoryBase<T>
     {
         // -- constructor
