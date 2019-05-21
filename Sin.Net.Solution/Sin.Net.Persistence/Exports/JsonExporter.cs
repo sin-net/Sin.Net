@@ -18,7 +18,7 @@ namespace Sin.Net.Persistence.Exports
 
         // -- fields
 
-        private FileSetting _setting;
+        private JsonSetting _setting;
         private object _exportData;
 
         // -- constructors
@@ -32,9 +32,9 @@ namespace Sin.Net.Persistence.Exports
 
         public IExportable Setup(SettingsBase setting)
         {
-            if (setting is FileSetting)
+            if (setting is JsonSetting)
             {
-                _setting = setting as FileSetting;
+                _setting = setting as JsonSetting;
             }
             else
             {
@@ -76,7 +76,7 @@ namespace Sin.Net.Persistence.Exports
                 Directory.CreateDirectory(_setting.Location);
             }
 
-            if (JsonIO.SaveToJson(_exportData, file))
+            if (JsonIO.SaveToJson(_exportData, file, _setting.Binder))
             {
                 result = file;
             }

@@ -11,7 +11,7 @@ namespace Sin.Net.Persistence.Imports
     {
         // -- fields
 
-        private FileSetting _setting;
+        private JsonSetting _setting;
 
         string _importJson;
 
@@ -26,9 +26,9 @@ namespace Sin.Net.Persistence.Imports
 
         public IImportable Setup(SettingsBase setting)
         {
-            if (setting is FileSetting)
+            if (setting is JsonSetting)
             {
-                _setting = setting as FileSetting;
+                _setting = setting as JsonSetting;
             }
             else
             {
@@ -37,25 +37,25 @@ namespace Sin.Net.Persistence.Imports
             return this;
         }
 
-        public T ConvertWith<T>(IAdaptable adapter) where T : new()
-        {
-            return adapter.Adapt<string, T>(_importJson);
-        }
-
         public IImportable Import()
         {
             _importJson = JsonIO.ReadJson(_setting.FullPath);
             return this;
         }
 
-        public T Get<T>() where T : new()
+        public T As<T>() where T : new()
         {
-            return JsonIO.FromJsonString<T>(_importJson);
+            return JsonIO.FromJsonString<T>(_importJson, _setting.Binder);
         }
 
-        public T With<T>(IAdaptable adapter) where T : new()
+        public T As<T>(IAdaptable adapter) where T : new()
         {
             return adapter.Adapt<string, T>(_importJson);
+        }
+
+        public object AsItIs()
+        {
+            return _importJson;
         }
 
         // -- properties

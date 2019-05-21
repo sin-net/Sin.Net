@@ -68,14 +68,19 @@ namespace Sin.Net.Persistence.Imports
             return this;
         }
 
-        public T Get<T>() where T : new()
+        public T As<T>() where T : new()
         {
             return (T)_data;
         }
 
-        public T With<T>(IAdaptable adapter) where T : new()
+        public T As<T>(IAdaptable adapter) where T : new()
         {
             return adapter.Adapt<object, T>(_data);
+        }
+
+        public object AsItIs()
+        {
+            return _data;
         }
 
         // -- properties

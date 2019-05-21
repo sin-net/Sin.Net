@@ -55,7 +55,7 @@ namespace MSTests.Persistence
         {
             // arrange 
             var key = Constants.Json.Key;
-            var setting = new FileSetting { Location = _path, Name = "test-repo.json" };
+            var setting = new JsonSetting { Location = _path, Name = "test-repo.json" };
             var testRepo = new TestRepository { MyProperty = "hello test" };
             var rand = new Random();
 
@@ -78,7 +78,7 @@ namespace MSTests.Persistence
             var importedRepo = _io.Importer(key)
                 .Setup(setting)
                 .Import()
-                .Get<TestRepository>();
+                .As<TestRepository>();
 
             Assert.AreEqual(testRepo.MyProperty, importedRepo.MyProperty, $"{key} import failed");
             Log.Info($"{key} success", this);
@@ -89,7 +89,7 @@ namespace MSTests.Persistence
         {
             // arrange 
             var key = Constants.Json.Key;
-            var setting = new FileSetting { Location = _path, Name = "iterative-test-repo.json" };
+            var setting = new JsonSetting { Location = _path, Name = "iterative-test-repo.json" };
             var testRepo = new IterativeTestRepository { MyProperty = 4711 };
             var rand = new Random();
 
@@ -112,7 +112,7 @@ namespace MSTests.Persistence
             var importedRepo = _io.Importer(key)
                 .Setup(setting)
                 .Import()
-                .Get<RepositoryView<double>>()
+                .As<RepositoryView<double>>()
                 .To<IterativeTestRepository>();
 
             Assert.AreEqual(testRepo.MyProperty, importedRepo.MyProperty, $"{key} import failed");
