@@ -7,13 +7,13 @@
     <Copyright>Adrian Singer</Copyright>
     <PackageLicenseUrl>https://raw.githubusercontent.com/adriansinger87/Sin.Net/master/LICENSE</PackageLicenseUrl>
     <Authors>Adrian Singer</Authors>
-    <Version>0.0.5</Version>
+    <Version>0.0.6</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>This assembly contains a reference implementation of the Sin.Net.Domain interfaces for im- and export control. Supported  formats are Json, Binary and Csv based on DataTables. A derivation of the features in your client code is supported. More features will follow.</Description>
     <PackageTags>persistence json binary csv</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/adriansinger87/Sin.Net/master/Images/Sin.Net.Logo.small.png</PackageIconUrl>
-    <AssemblyVersion>0.0.5.0</AssemblyVersion>
-    <FileVersion>0.0.5.0</FileVersion>
+    <AssemblyVersion>0.0.6.0</AssemblyVersion>
+    <FileVersion>0.0.6.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
