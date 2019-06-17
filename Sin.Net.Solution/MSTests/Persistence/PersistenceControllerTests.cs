@@ -67,7 +67,7 @@ namespace MSTests.Persistence
         [TestMethod]
         public void ExportAndImportJson()
         {
-            var setting = new FileSetting { Location = _path, Name = "test-setting.json" };
+            var setting = new JsonSetting { Location = _path, Name = "test-setting.json" };
 
             // act & assert export
 
@@ -83,7 +83,7 @@ namespace MSTests.Persistence
             var importedSetting = _io.Importer(Constants.Json.Key)
                 .Setup(setting)
                 .Import()
-                .Get<FileSetting>();
+                .As<JsonSetting>();
 
             Assert.AreEqual(setting.Name, importedSetting.Name, "json import failed");
             Log.Info("json success", this);
@@ -113,7 +113,7 @@ namespace MSTests.Persistence
             var importedData = _io.Importer(Constants.Binary.Key)
                 .Setup(setting)
                 .Import()
-                .Get<Dictionary<string, object>>();
+                .As<Dictionary<string, object>>();
 
             Assert.AreEqual(data["string"], importedData["string"], "binary import string key failed");
             Assert.AreEqual(data["int"], importedData["int"], "binary import int key failed");
@@ -159,10 +159,9 @@ namespace MSTests.Persistence
             setting.CustomHeader = "";
 
             // act import
-            var importedTable = _io.Importer(key)
+            DataTable importedTable = _io.Importer(key)
                 .Setup(setting)
-                .Import()
-                .Get<DataTable>();
+                .Import().AsItIs() as DataTable;
 
             // assert import
             for (int i = 0; i < importedTable.Rows.Count; i++)

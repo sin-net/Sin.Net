@@ -103,21 +103,20 @@ namespace Sin.Net.Persistence.Imports
             Log.Info($"csv import successfull for '{_setting.Name}'");
             return this;
         }
-
-        /// <summary>
-        /// Returns the DataTable structure of the input data
-        /// Will Throw an exception when the type parameter is different to DataTable
-        /// </summary>
-        /// <typeparam name="T">the target type</typeparam>
-        /// <returns>The DataTable structure that is directly converted into T</returns>
-        public T Get<T>() where T : new()
+        
+        public T As<T>() where T : new()
         {
             return (T)Convert.ChangeType(_table, typeof(T));
         }
 
-        public T With<T>(IAdaptable adapter) where T : new()
+        public T As<T>(IAdaptable adapter) where T : new()
         {
             return adapter.Adapt<DataTable, T>(_table);
+        }
+
+        public object AsItIs()
+        {
+            return _table;
         }
 
         // -- properties

@@ -25,19 +25,25 @@ namespace Sin.Net.Domain.IO
         IImportable Import();
 
         /// <summary>
-        /// Returns the imported data without type conversions
+        /// Returns the imported data with direct type conversion.
         /// </summary>
         /// <typeparam name="T">The target type T for the imported data</typeparam>
         /// <returns>The imported data as target type</returns>
-        T Get<T>() where T : new();
+        T As<T>() where T : new();
 
         /// <summary>
-        /// Casts the imported data instance in the generic result type T 
+        /// Returns the imported data with a manual adoption into the target type.
         /// </summary>
         /// <typeparam name="T">The target type T for the imported data</typeparam>
         /// <param name="casting">The concrete casting functionality</param>
         /// <returns>The imported data as target type</returns>
-        T With<T>(IAdaptable adapter) where T : new();
+        T As<T>(IAdaptable adapter) where T : new();
+
+        /// <summary>
+        /// Returns the imported data without any type converion.
+        /// </summary>
+        /// <returns>The imported data as it is.</returns>
+        object AsItIs();
 
         // -- properties
 
