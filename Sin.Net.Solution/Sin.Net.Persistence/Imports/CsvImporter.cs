@@ -6,13 +6,15 @@ using Sin.Net.Persistence.Settings;
 using System;
 using System.Data;
 using System.IO;
+using System.Linq;
+using System.Text;
 
 namespace Sin.Net.Persistence.Imports
 {
     /// <summary>
     /// Diese Klasse implementiert die IStrategyImportable Schnittstelle für den lesenden Zugriff auf CSV-Dateien
     /// </summary>
-    class CsvImporter : IImportable
+    internal class CsvImporter : IImportable
     {
         // -- fields
 
@@ -58,26 +60,35 @@ namespace Sin.Net.Persistence.Imports
             _table.TableName = _setting.Name;
 
             string[] lines = File.ReadAllLines(_setting.FullPath);
-            string[] fields = lines[0].Split(new char[] { separator });
-            int length = fields.GetLength(0);
 
-            //1st row can be used for column names
-            for (int i = 0; i < length; i++)
+            string[] fields;
+            if (hasHeader == true)
             {
-                if (hasHeader == true)
-                {
-                    _table.Columns.Add(fields[i].ToLower());
-                }
-                else
-                {
-                    _table.Columns.Add(i.ToString());
-                }
+                _table.Columns.AddRange(
+                    lines[_setting.DataPosition - 1]
+                    .ToLower()
+                    .Split(new char[] { separator })
+                    .Select(s => new DataColumn(s))
+                    .ToArray());
             }
+            else
+            {
+                _table.Columns.AddRange(
+                    lines[_setting.DataPosition]
+                    .Split(new char[] { separator })
+                    .Select((s,i) => new DataColumn(i.ToString()))
+                    .ToArray());
+            }
+
+            // read header
+            var sb = new StringBuilder();
+            lines.Take(_setting.DataPosition).ToList()
+                .ForEach(s => sb.AppendLine(s));
+            _setting.CustomHeader = sb.ToString();
 
             // all other rows
             DataRow Row;
-            int firstRowIndex = (hasHeader == true ? 1 : 0);
-            for (int i = firstRowIndex; i < lines.GetLength(0); i++)
+            for (int i = _setting.DataPosition; i < lines.GetLength(0); i++)
             {
                 fields = lines[i].Split(new char[] { separator });
                 Row = _table.NewRow();

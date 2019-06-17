@@ -16,6 +16,7 @@ namespace Sin.Net.Persistence.Settings
         {
             Separator = ';';
             HasHeader = true;
+            DataPosition = 1;
         }
 
         // -- methods
@@ -43,24 +44,19 @@ namespace Sin.Net.Persistence.Settings
         public char Separator { get; set; }
 
         /// <summary>
-        /// Gibt an oder legt fest, ob die erste Zeile als Tabellenkopf ausgewertet werden soll bzw. ob es nutzerspezifische Daten vor den eigentlichen Csv-Daten gibt (true),
-        /// Wenn die erste Zeile bereits Csv-Daten enthält und die Eigenschaft CustomHeader null ist, wird 'false' ausgegeben.
+        /// Gets or sets wheather the column names are used as header line or not.
         /// </summary>
-        public bool HasHeader
-        {
-            get
-            {
-                return (_hasHeader == true || !string.IsNullOrEmpty(CustomHeader));
-            }
-            set
-            {
-                _hasHeader = value;
-            }
-        }
+        public bool HasHeader { get; set; }
 
         /// <summary>
-        /// Gibt an oder legt fest welcher Text vor den eigentlichen Csv-Daten in der Ausgabedatei stehen sollen
+        /// Gets or sets addional header line before the csv-data.
         /// </summary>
         public string CustomHeader { get; set; }
+
+    
+        /// <summary>
+        /// Gets or sets the line number of the first data row.
+        /// </summary>
+        public int DataPosition { get; set; }
     }
 }

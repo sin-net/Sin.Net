@@ -87,18 +87,30 @@ namespace Sin.Net.Persistence.Exports
 
             try
             {
+                // restore path
+                if (!Directory.Exists(_setting.Location))
+                {
+                    Directory.CreateDirectory(_setting.Location);
+                }
+
                 csv = new StringBuilder();
 
                 // csv header - optional
                 if (string.IsNullOrEmpty(_setting.CustomHeader) == false)
                 {
-                    csv.Append(_setting.CustomHeader);
+                    csv.AppendLine(_setting.CustomHeader);
                 }
 
-                // csv content
-                IEnumerable<string> columnNames = _exportTable.Columns.Cast<DataColumn>().
-                                                  Select(column => column.ColumnName);
-                csv.AppendLine(string.Join(seperator, columnNames));
+                // column names header - optional
+                if (_setting.HasHeader)
+                {
+                    // csv content
+                    IEnumerable<string> columnNames = _exportTable.Columns.Cast<DataColumn>().
+                                                      Select(column => column.ColumnName);
+                    csv.AppendLine(string.Join(seperator, columnNames));
+                }
+               
+                // append data
                 foreach (DataRow row in _exportTable.Rows)
                 {
                     IEnumerable<string> fields = row.ItemArray.Select(field => field.ToString());

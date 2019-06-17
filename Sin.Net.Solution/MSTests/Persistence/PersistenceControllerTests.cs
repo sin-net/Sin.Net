@@ -126,7 +126,9 @@ namespace MSTests.Persistence
             // arrange
             var key = Constants.Csv.Key;
             var name = $"test-csv.{Constants.Csv.Extension}";
-            var setting = new CsvSetting { Location = _path, Name = name };
+            var setting = new CsvSetting { Location = _path, Name = name, HasHeader = true };
+            setting.CustomHeader = "#my custom line 1 \r\n#my custom line 2";
+            setting.DataPosition = 3;
 
             var table = new DataTable("test-table");
             table.Columns.AddRange(new DataColumn[]
@@ -154,6 +156,7 @@ namespace MSTests.Persistence
 
             // assert export
             Assert.IsNotNull(result, $"{key} export failed");
+            setting.CustomHeader = "";
 
             // act import
             var importedTable = _io.Importer(key)
