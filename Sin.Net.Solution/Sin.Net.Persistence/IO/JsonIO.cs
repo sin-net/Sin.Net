@@ -41,11 +41,11 @@ namespace Sin.Net.Persistence.IO
                         TypeNameHandling = TypeNameHandling.Auto,
                         SerializationBinder = binder
                     };
-                    json = JsonConvert.SerializeObject(obj, settings);
+                    json = JsonConvert.SerializeObject(obj, Formatting.Indented, settings);
                 }
                 else
                 {
-                    json = JsonConvert.SerializeObject(obj);
+                    json = JsonConvert.SerializeObject(obj, Formatting.Indented);
                 }
 
             }

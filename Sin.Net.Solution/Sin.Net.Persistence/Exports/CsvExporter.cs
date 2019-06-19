@@ -88,7 +88,8 @@ namespace Sin.Net.Persistence.Exports
             try
             {
                 // restore path
-                if (!Directory.Exists(_setting.Location))
+                if (!string.IsNullOrEmpty(_setting.Location) &&
+                    !Directory.Exists(_setting.Location))
                 {
                     Directory.CreateDirectory(_setting.Location);
                 }

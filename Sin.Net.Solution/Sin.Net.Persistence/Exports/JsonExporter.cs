@@ -71,7 +71,9 @@ namespace Sin.Net.Persistence.Exports
             string file = _setting.FullPath;
             string result = null;
 
-            if (!Directory.Exists(_setting.Location))
+            // restore path
+            if (!string.IsNullOrEmpty(_setting.Location) &&
+                !Directory.Exists(_setting.Location))
             {
                 Directory.CreateDirectory(_setting.Location);
             }
