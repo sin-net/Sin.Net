@@ -8,7 +8,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace MSTests.Infrastructure
+namespace MSTests.Infrastructure.Http
 {
     /// <summary>
     /// This class runs all tests for HTTP calls to external services like magna service or test services.

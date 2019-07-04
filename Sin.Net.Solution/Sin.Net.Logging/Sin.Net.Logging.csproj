@@ -6,14 +6,15 @@
     <RepositoryUrl>https://github.com/adriansinger87/Sin.Net</RepositoryUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/adriansinger87/Sin.Net/master/LICENSE</PackageLicenseUrl>
     <Copyright>Adrian Singer</Copyright>
-    <AssemblyVersion>0.0.4.0</AssemblyVersion>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
     <PackageTags>logging NLog</PackageTags>
-    <Description>Implementation of a logging mechanism based on Sin.Net.Domain and NLog.</Description>
-    <Version>0.0.4</Version>
+    <Description>This assembly represents a part of persitence layer. It is the implementation of a logging mechanism based on Sin.Net.Domain and NLog.</Description>
+    <Version>0.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/adriansinger87/Sin.Net</PackageProjectUrl>
-    <FileVersion>0.0.4.0</FileVersion>
+    <FileVersion>0.1.0.0</FileVersion>
     <PackageIconUrl>https://raw.githubusercontent.com/adriansinger87/Sin.Net/master/Images/Sin.Net.Logo.small.png</PackageIconUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
