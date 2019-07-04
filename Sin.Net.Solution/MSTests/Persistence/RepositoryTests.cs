@@ -12,7 +12,7 @@ using System.IO;
 namespace MSTests.Persistence
 {
     [TestClass]
-    public class RepositoryTests : TestBase
+    public class RepositoryTests : TestsBase
     {
         private IPersistenceControlable _io;
         private string _path;

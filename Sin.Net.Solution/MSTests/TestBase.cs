@@ -8,7 +8,7 @@ using System.Text;
 namespace MSTests
 {
     [TestClass]
-    public class TestBase
+    public class TestsBase
     {
         [TestInitialize]
         public virtual void Arrange()
