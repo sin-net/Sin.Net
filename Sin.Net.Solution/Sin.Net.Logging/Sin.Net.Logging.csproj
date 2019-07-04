@@ -15,6 +15,7 @@
     <FileVersion>0.1.0.0</FileVersion>
     <PackageIconUrl>https://raw.githubusercontent.com/adriansinger87/Sin.Net/master/Images/Sin.Net.Logo.small.png</PackageIconUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>namespace refactorings</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

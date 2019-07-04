@@ -8,7 +8,7 @@
     <Authors>Adrian Singer</Authors>
     <Description>Sin.Net.Domain contains a domain layer with abstractions and interfaces for any application purpose. It contains a basis for logging, data repositories and the persistence layer with import and export functionality.</Description>
     <RepositoryUrl>https://github.com/adriansinger87/Sin.Net</RepositoryUrl>
-    <PackageTags>domain shared</PackageTags>
+    <PackageTags>domain modular shared library</PackageTags>
     <PackageReleaseNotes>namespace refactorings for the persistence layer.</PackageReleaseNotes>
     <SignAssembly>true</SignAssembly>
     <DelaySign>false</DelaySign>
