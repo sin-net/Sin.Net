@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Sin.Net.Domain.IO.Adapter
+﻿namespace Sin.Net.Domain.Persistence.Adapter
 {
     /// <summary>
     /// This interface specifies how to deserialze a generic data object, mostly a string, into a domain or application specific type.

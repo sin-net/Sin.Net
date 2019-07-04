@@ -1,6 +1,6 @@
 ﻿using NLog;
 using NLog.Layouts;
-using Sin.Net.Domain.Logging;
+using Sin.Net.Domain.Persistence.Logging;
 using System;
 
 namespace Sin.Net.Logging

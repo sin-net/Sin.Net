@@ -1,4 +1,4 @@
-﻿using Sin.Net.Domain.IO.Settings;
+﻿using Sin.Net.Domain.Persistence.Settings;
 using System;
 using System.IO;
 using System.Linq;

@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MSTests.Persistence.Data;
-using Sin.Net.Domain.IO;
-using Sin.Net.Domain.Logging;
+using Sin.Net.Domain.Persistence;
+using Sin.Net.Domain.Persistence.Logging;
 using Sin.Net.Persistence;
 using Sin.Net.Persistence.IO;
 using Sin.Net.Persistence.Settings;

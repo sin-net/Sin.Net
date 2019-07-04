@@ -1,5 +1,5 @@
-﻿using Sin.Net.Domain.IO;
-using Sin.Net.Domain.Logging;
+﻿using Sin.Net.Domain.Persistence;
+using Sin.Net.Domain.Persistence.Logging;
 using Sin.Net.Persistence.Exports;
 using Sin.Net.Persistence.Imports;
 using System.Collections.Generic;

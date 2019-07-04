@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
-using Sin.Net.Domain.Logging;
+using Sin.Net.Domain.Persistence.Logging;
 using System;
 using System.IO;
 
@@ -80,7 +80,7 @@ namespace Sin.Net.Persistence.IO
             {
                 return JsonConvert.DeserializeObject<T>(json);
             }
-           
+
         }
 
         /// <summary>

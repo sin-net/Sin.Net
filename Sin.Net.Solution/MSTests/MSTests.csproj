@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Sin.Net.Domain\Sin.Net.Domain.csproj" />
+    <ProjectReference Include="..\Sin.Net.Infrastructure\Sin.Net.Infrastructure.csproj" />
     <ProjectReference Include="..\Sin.Net.Logging\Sin.Net.Logging.csproj" />
     <ProjectReference Include="..\Sin.Net.Persistence\Sin.Net.Persistence.csproj" />
   </ItemGroup>

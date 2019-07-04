@@ -1,7 +1,7 @@
-﻿using Sin.Net.Domain.IO.Adapter;
-using Sin.Net.Domain.IO.Settings;
+﻿using Sin.Net.Domain.Persistence.Adapter;
+using Sin.Net.Domain.Persistence.Settings;
 
-namespace Sin.Net.Domain.IO
+namespace Sin.Net.Domain.Persistence
 {
     /// <summary>
     /// Interface for concrete export functionality

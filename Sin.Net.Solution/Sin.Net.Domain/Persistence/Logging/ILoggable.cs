@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sin.Net.Domain.Logging
+namespace Sin.Net.Domain.Persistence.Logging
 {
     /// <summary>
     /// This interface defines the implementation of concrete logging classes that will be injected and used in the static Log class.

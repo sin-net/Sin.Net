@@ -1,10 +1,8 @@
 ﻿using NLog;
 using NLog.Layouts;
-using Sin.Net.Domain.Logging;
+using Sin.Net.Domain.Persistence.Logging;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
 namespace Sin.Net.Logging
 {

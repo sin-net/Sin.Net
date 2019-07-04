@@ -1,7 +1,7 @@
-﻿using Sin.Net.Domain.Logging;
+﻿using Sin.Net.Domain.Persistence.Logging;
 using System;
 
-namespace Sin.Net.Domain.IO.Adapter
+namespace Sin.Net.Domain.Persistence.Adapter
 {
     // TODO make english comments
     public abstract class AdapterBase : IAdaptable

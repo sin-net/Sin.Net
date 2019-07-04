@@ -1,7 +1,7 @@
 ﻿using Sin.Net.Domain.Exeptions;
 using System;
 
-namespace Sin.Net.Domain.Logging
+namespace Sin.Net.Domain.Persistence.Logging
 {
     public static class Log
     {

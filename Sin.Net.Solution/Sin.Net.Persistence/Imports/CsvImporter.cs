@@ -1,7 +1,7 @@
-﻿using Sin.Net.Domain.IO;
-using Sin.Net.Domain.IO.Adapter;
-using Sin.Net.Domain.IO.Settings;
-using Sin.Net.Domain.Logging;
+﻿using Sin.Net.Domain.Persistence;
+using Sin.Net.Domain.Persistence.Adapter;
+using Sin.Net.Domain.Persistence.Logging;
+using Sin.Net.Domain.Persistence.Settings;
 using Sin.Net.Persistence.Settings;
 using System;
 using System.Data;
@@ -76,7 +76,7 @@ namespace Sin.Net.Persistence.Imports
                 _table.Columns.AddRange(
                     lines[_setting.DataPosition]
                     .Split(new char[] { separator })
-                    .Select((s,i) => new DataColumn(i.ToString()))
+                    .Select((s, i) => new DataColumn(i.ToString()))
                     .ToArray());
             }
 
@@ -103,7 +103,7 @@ namespace Sin.Net.Persistence.Imports
             Log.Info($"csv import successfull for '{_setting.Name}'");
             return this;
         }
-        
+
         public T As<T>() where T : new()
         {
             return (T)Convert.ChangeType(_table, typeof(T));

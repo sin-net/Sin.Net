@@ -1,4 +1,4 @@
-﻿using Sin.Net.Domain.Logging;
+﻿using Sin.Net.Domain.Persistence.Logging;
 using System;
 using System.Reflection;
 using System.Runtime.CompilerServices;

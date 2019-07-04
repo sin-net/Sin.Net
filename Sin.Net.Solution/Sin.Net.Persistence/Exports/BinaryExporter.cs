@@ -1,14 +1,12 @@
-﻿using Sin.Net.Domain.IO;
-using Sin.Net.Domain.IO.Adapter;
-using Sin.Net.Domain.IO.Settings;
-using Sin.Net.Domain.Logging;
+﻿using Sin.Net.Domain.Persistence;
+using Sin.Net.Domain.Persistence.Adapter;
+using Sin.Net.Domain.Persistence.Logging;
+using Sin.Net.Domain.Persistence.Settings;
 using Sin.Net.Persistence.IO;
 using Sin.Net.Persistence.Settings;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
 
 namespace Sin.Net.Persistence.Exports
 {
@@ -95,6 +93,6 @@ namespace Sin.Net.Persistence.Exports
         // -- properties
 
         public string Type => Constants.Binary.Key;
-        
+
     }
 }

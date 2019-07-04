@@ -1,4 +1,4 @@
-﻿namespace Sin.Net.Domain.IO
+﻿namespace Sin.Net.Domain.Persistence
 {
     /// <summary>
     /// Interface for controlling IO functionality based on strategy-pattern to access import and export conretions
