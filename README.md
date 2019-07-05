@@ -10,6 +10,7 @@ to build clean software architectures for any software purpose.
 * [![Nuget](https://img.shields.io/nuget/v/Sin.Net.Domain.svg?label=Sin.Net.Domain)](https://www.nuget.org/packages/Sin.Net.Domain/)
 * [![Nuget](https://img.shields.io/nuget/v/Sin.Net.Persistence.svg?label=Sin.Net.Persistence)](https://www.nuget.org/packages/Sin.Net.Persistence/)
 * [![Nuget](https://img.shields.io/nuget/v/Sin.Net.Logging.svg?label=Sin.Net.Logging)](https://www.nuget.org/packages/Sin.Net.Logging/)
+* [![Nuget](https://img.shields.io/nuget/v/Sin.Net.Infrastructure.svg?label=Sin.Net.Infrastructure)](https://www.nuget.org/packages/Sin.Net.Infrastructure/)
 
 ## Descriptions
 
