@@ -1,6 +1,6 @@
 # ![Sin.Net](./Images/Sin.Net.Logo.small.png "Sin.Net") Sin.Net
 
-[![Build Status](https://dev.azure.com/adriansinger87/adriansinger87/_apis/build/status/adriansinger87.Sin.Net?branchName=master)](https://dev.azure.com/adriansinger87/adriansinger87/_build/latest?definitionId=1&branchName=master)
+[![Build Status](https://dev.azure.com/sin-net/Sin.Net/_apis/build/status/sin-net.Sin.Net?branchName=master)](https://dev.azure.com/sin-net/Sin.Net/_build/latest?definitionId=1&branchName=master)
 
 
 The **Sin.Net** Project contains a list of reusable assemblies
