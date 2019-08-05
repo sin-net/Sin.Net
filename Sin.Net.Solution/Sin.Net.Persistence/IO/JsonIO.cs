@@ -34,20 +34,22 @@ namespace Sin.Net.Persistence.IO
             string json = "{ }";
             try
             {
+                var lowerCaseResolver = new LowercaseContractResolver();
+
+                var settings = new JsonSerializerSettings
+                {
+                    TypeNameHandling = TypeNameHandling.Auto,
+                    ContractResolver = lowerCaseResolver
+                };
                 if (binder != null)
                 {
-                    var settings = new JsonSerializerSettings
-                    {
-                        TypeNameHandling = TypeNameHandling.Auto,
-                        SerializationBinder = binder
-                    };
+                    settings.SerializationBinder = binder;
                     json = JsonConvert.SerializeObject(obj, Formatting.Indented, settings);
                 }
                 else
                 {
-                    json = JsonConvert.SerializeObject(obj, Formatting.Indented);
+                    json = JsonConvert.SerializeObject(obj, Formatting.Indented, settings);
                 }
-
             }
             catch (Exception ex)
             {
@@ -80,7 +82,6 @@ namespace Sin.Net.Persistence.IO
             {
                 return JsonConvert.DeserializeObject<T>(json);
             }
-
         }
 
         /// <summary>
@@ -140,5 +141,12 @@ namespace Sin.Net.Persistence.IO
             return result;
         }
 
+    }
+    public class LowercaseContractResolver : DefaultContractResolver
+    {
+        protected override string ResolvePropertyName(string propertyName)
+        {
+            return propertyName.ToLower();
+        }
     }
 }
