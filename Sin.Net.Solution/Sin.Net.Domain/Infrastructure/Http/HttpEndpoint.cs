@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System;
+using System.Net.Http;
 
 namespace Sin.Net.Domain.Infrastructure.Http
 {
@@ -58,6 +59,11 @@ namespace Sin.Net.Domain.Infrastructure.Http
         /// Case sensitivity is ignored, because the property it will be used in lower case.
         /// </summary>
         public string MethodName { get; set; }
+
+        /// <summary>
+        /// Gets the complete Url out of base address and request
+        /// </summary>
+        public string Url => new Uri(new Uri(BaseAddress), Request).ToString();
 
     }
 }
