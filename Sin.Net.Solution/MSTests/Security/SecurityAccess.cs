@@ -1,4 +1,5 @@
-﻿using Sin.Net.Domain.Persistence.Logging;
+﻿using Sin.Net.Domain.Enumerations;
+using Sin.Net.Domain.Persistence.Logging;
 using Sin.Net.Domain.System.Security;
 using System.Runtime.CompilerServices;
 
@@ -38,7 +39,7 @@ namespace MSTests.Security
         public bool Secure([CallerMemberName] string memberName = "")
         {
             Passed = false;
-            return this.SecureAccess(_userSecurityLevel, memberName);
+            return this.SecureAccess((SecurityLevels)_userSecurityLevel, memberName);
         }
 
         // -- properties
