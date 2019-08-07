@@ -20,7 +20,7 @@ namespace Sin.Net.Persistence.IO
         /// <returns>The resulting string</returns>
         public static string ToJsonString(object obj)
         {
-            return ToJsonString(obj);
+            return ToJsonString(obj, null);
         }
 
         /// <summary>
