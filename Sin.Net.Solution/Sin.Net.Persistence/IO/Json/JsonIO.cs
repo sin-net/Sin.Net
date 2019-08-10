@@ -4,7 +4,7 @@ using Sin.Net.Domain.Persistence.Logging;
 using System;
 using System.IO;
 
-namespace Sin.Net.Persistence.IO
+namespace Sin.Net.Persistence.IO.Json
 {
 
     /// <summary>

@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sin.Net.Persistence.IO;
+using Sin.Net.Persistence.IO.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;

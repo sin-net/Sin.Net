@@ -4,6 +4,7 @@ using Sin.Net.Domain.Persistence;
 using Sin.Net.Domain.Persistence.Logging;
 using Sin.Net.Persistence;
 using Sin.Net.Persistence.IO;
+using Sin.Net.Persistence.IO.Json;
 using Sin.Net.Persistence.Settings;
 using System;
 using System.Collections.Generic;

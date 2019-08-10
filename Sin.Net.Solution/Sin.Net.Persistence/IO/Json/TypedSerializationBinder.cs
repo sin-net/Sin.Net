@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Sin.Net.Persistence.IO
+namespace Sin.Net.Persistence.IO.Json
 {
     public class TypedSerializationBinder : ISerializationBinder
     {
