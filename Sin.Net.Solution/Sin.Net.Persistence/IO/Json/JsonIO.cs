@@ -4,7 +4,7 @@ using Sin.Net.Domain.Persistence.Logging;
 using System;
 using System.IO;
 
-namespace Sin.Net.Persistence.IO
+namespace Sin.Net.Persistence.IO.Json
 {
 
     /// <summary>
@@ -20,7 +20,7 @@ namespace Sin.Net.Persistence.IO
         /// <returns>The resulting string</returns>
         public static string ToJsonString(object obj)
         {
-            return ToJsonString(obj);
+            return ToJsonString(obj, null);
         }
 
         /// <summary>
@@ -34,20 +34,18 @@ namespace Sin.Net.Persistence.IO
             string json = "{ }";
             try
             {
+                var settings = new JsonSerializerSettings
+                {
+                    TypeNameHandling = TypeNameHandling.Auto,
+                    ContractResolver = new LowerCaseContractResolver()
+                };
+                    
                 if (binder != null)
                 {
-                    var settings = new JsonSerializerSettings
-                    {
-                        TypeNameHandling = TypeNameHandling.Auto,
-                        SerializationBinder = binder
-                    };
-                    json = JsonConvert.SerializeObject(obj, Formatting.Indented, settings);
-                }
-                else
-                {
-                    json = JsonConvert.SerializeObject(obj, Formatting.Indented);
+                    settings.SerializationBinder = binder;                 
                 }
 
+                json = JsonConvert.SerializeObject(obj, Formatting.Indented, settings);
             }
             catch (Exception ex)
             {

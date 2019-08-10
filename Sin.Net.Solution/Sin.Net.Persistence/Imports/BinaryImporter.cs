@@ -3,6 +3,7 @@ using Sin.Net.Domain.Persistence.Adapter;
 using Sin.Net.Domain.Persistence.Logging;
 using Sin.Net.Domain.Persistence.Settings;
 using Sin.Net.Persistence.IO;
+using Sin.Net.Persistence.IO.Binary;
 using Sin.Net.Persistence.Settings;
 using System;
 using System.IO;

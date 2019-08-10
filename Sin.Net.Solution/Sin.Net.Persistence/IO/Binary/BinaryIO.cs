@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
 using System.IO.Compression;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
 
-namespace Sin.Net.Persistence.IO
+namespace Sin.Net.Persistence.IO.Binary
 {
     public static class BinaryIO
     {

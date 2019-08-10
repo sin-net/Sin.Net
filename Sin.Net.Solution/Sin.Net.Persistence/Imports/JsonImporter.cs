@@ -2,7 +2,7 @@
 using Sin.Net.Domain.Persistence.Adapter;
 using Sin.Net.Domain.Persistence.Logging;
 using Sin.Net.Domain.Persistence.Settings;
-using Sin.Net.Persistence.IO;
+using Sin.Net.Persistence.IO.Json;
 using Sin.Net.Persistence.Settings;
 
 namespace Sin.Net.Persistence.Imports
@@ -12,8 +12,7 @@ namespace Sin.Net.Persistence.Imports
         // -- fields
 
         private JsonSetting _setting;
-
-        string _importJson;
+        private string _importJson;
 
         // -- constructor
 

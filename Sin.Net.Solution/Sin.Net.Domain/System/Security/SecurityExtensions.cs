@@ -1,4 +1,5 @@
-﻿using Sin.Net.Domain.Persistence.Logging;
+﻿using Sin.Net.Domain.Enumerations;
+using Sin.Net.Domain.Persistence.Logging;
 using System;
 using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -15,9 +16,22 @@ namespace Sin.Net.Domain.System.Security
         /// then checks the values with the current level.
         /// </summary>
         /// <param name="obj">The calling object</param>
-        /// <param name="currentLevel">the current level of the application or user.</param>
+        /// <param name="currentLevel">the current level as enum of the application or user.</param>
         /// <param name="memberName">the calling member (method or property).</param>
-        /// <returns></returns>
+        /// <returns>True if successfull, False if not.</returns>
+        public static bool SecureAccess(this object obj, SecurityLevels currentLevel, [CallerMemberName] string memberName = "")
+        {
+            return obj.SecureAccess((int)currentLevel, memberName);
+        }
+
+        /// <summary>
+        /// Extension method for security checks. First the method extracts the attributes of the member and
+        /// then checks the values with the current level.
+        /// </summary>
+        /// <param name="obj">The calling object</param>
+        /// <param name="currentLevel">the current level as integer of the application or user.</param>
+        /// <param name="memberName">the calling member (method or property).</param>
+        /// <returns>True if successfull, False if not.</returns>
         public static bool SecureAccess(this object obj, int currentLevel, [CallerMemberName] string memberName = "")
         {
             object[] attributes = null;

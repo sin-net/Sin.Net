@@ -4,7 +4,7 @@ using Sin.Net.Domain.Persistence;
 using Sin.Net.Domain.Persistence.Logging;
 using Sin.Net.Domain.Repository;
 using Sin.Net.Persistence;
-using Sin.Net.Persistence.IO;
+using Sin.Net.Persistence.IO.Binary;
 using Sin.Net.Persistence.Settings;
 using System;
 using System.IO;

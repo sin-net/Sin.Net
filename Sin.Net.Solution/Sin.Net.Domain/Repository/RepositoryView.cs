@@ -17,7 +17,8 @@ namespace Sin.Net.Domain.Repository
 
         public RepositoryView()
         {
-            Properties = new Dictionary<string, object>();
+            // ignore cases sensitivity because json is stored in lower case
+            Properties = new Dictionary<string, object>(StringComparer.InvariantCultureIgnoreCase);
             Items = new List<T>();
         }
 

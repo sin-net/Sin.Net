@@ -2,9 +2,8 @@
 using Sin.Net.Domain.Infrastructure.Http;
 using Sin.Net.Domain.Persistence.Logging;
 using Sin.Net.Infrastructure.Http;
-using Sin.Net.Persistence.IO;
+using Sin.Net.Persistence.IO.Json;
 using System;
-using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -21,8 +20,6 @@ namespace MSTests.Infrastructure.Http
         private HttpEndpoint _endpoint;
         private ServiceBase _service;
 
-        private static bool _magnaCallsEnabled;
-
         // -- constructor
 
         /// <summary>
@@ -34,7 +31,7 @@ namespace MSTests.Infrastructure.Http
 
         // -- initializer and cleanup
 
-       
+
 
         /// <summary>
         /// Initialize method that runs before every test.
