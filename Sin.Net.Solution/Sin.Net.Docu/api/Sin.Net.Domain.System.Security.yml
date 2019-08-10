@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.System.Security
+  commentId: N:Sin.Net.Domain.System.Security
+  id: Sin.Net.Domain.System.Security
+  children:
+  - Sin.Net.Domain.System.Security.ISecurable
+  - Sin.Net.Domain.System.Security.SecurityExtensions
+  - Sin.Net.Domain.System.Security.SecurityLevelAttribute
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Domain.System.Security
+  nameWithType: Sin.Net.Domain.System.Security
+  fullName: Sin.Net.Domain.System.Security
+  type: Namespace
+  assemblies:
+  - Sin.Net.Domain
+references:
+- uid: Sin.Net.Domain.System.Security.ISecurable
+  commentId: T:Sin.Net.Domain.System.Security.ISecurable
+  name: ISecurable
+  nameWithType: ISecurable
+  fullName: Sin.Net.Domain.System.Security.ISecurable
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions
+  commentId: T:Sin.Net.Domain.System.Security.SecurityExtensions
+  parent: Sin.Net.Domain.System.Security
+  name: SecurityExtensions
+  nameWithType: SecurityExtensions
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions
+- uid: Sin.Net.Domain.System.Security.SecurityLevelAttribute
+  commentId: T:Sin.Net.Domain.System.Security.SecurityLevelAttribute
+  name: SecurityLevelAttribute
+  nameWithType: SecurityLevelAttribute
+  fullName: Sin.Net.Domain.System.Security.SecurityLevelAttribute
+- uid: Sin.Net.Domain.System.Security
+  commentId: N:Sin.Net.Domain.System.Security
+  name: Sin.Net.Domain.System.Security
+  nameWithType: Sin.Net.Domain.System.Security
+  fullName: Sin.Net.Domain.System.Security

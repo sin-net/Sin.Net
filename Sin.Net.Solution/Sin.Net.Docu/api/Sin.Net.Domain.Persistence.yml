@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.Persistence
+  commentId: N:Sin.Net.Domain.Persistence
+  id: Sin.Net.Domain.Persistence
+  children:
+  - Sin.Net.Domain.Persistence.IExportable
+  - Sin.Net.Domain.Persistence.IImportable
+  - Sin.Net.Domain.Persistence.IPersistenceControlable
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Domain.Persistence
+  nameWithType: Sin.Net.Domain.Persistence
+  fullName: Sin.Net.Domain.Persistence
+  type: Namespace
+  assemblies:
+  - Sin.Net.Domain
+references:
+- uid: Sin.Net.Domain.Persistence.IExportable
+  commentId: T:Sin.Net.Domain.Persistence.IExportable
+  parent: Sin.Net.Domain.Persistence
+  name: IExportable
+  nameWithType: IExportable
+  fullName: Sin.Net.Domain.Persistence.IExportable
+- uid: Sin.Net.Domain.Persistence.IImportable
+  commentId: T:Sin.Net.Domain.Persistence.IImportable
+  parent: Sin.Net.Domain.Persistence
+  name: IImportable
+  nameWithType: IImportable
+  fullName: Sin.Net.Domain.Persistence.IImportable
+- uid: Sin.Net.Domain.Persistence.IPersistenceControlable
+  commentId: T:Sin.Net.Domain.Persistence.IPersistenceControlable
+  parent: Sin.Net.Domain.Persistence
+  name: IPersistenceControlable
+  nameWithType: IPersistenceControlable
+  fullName: Sin.Net.Domain.Persistence.IPersistenceControlable
+- uid: Sin.Net.Domain.Persistence
+  commentId: N:Sin.Net.Domain.Persistence
+  name: Sin.Net.Domain.Persistence
+  nameWithType: Sin.Net.Domain.Persistence
+  fullName: Sin.Net.Domain.Persistence

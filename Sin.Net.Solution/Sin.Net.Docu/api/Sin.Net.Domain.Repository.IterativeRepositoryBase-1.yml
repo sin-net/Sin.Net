@@ -1,0 +1,1427 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.Repository.IterativeRepositoryBase`1
+  commentId: T:Sin.Net.Domain.Repository.IterativeRepositoryBase`1
+  id: IterativeRepositoryBase`1
+  parent: Sin.Net.Domain.Repository
+  children:
+  - Sin.Net.Domain.Repository.IterativeRepositoryBase`1.#ctor
+  - Sin.Net.Domain.Repository.IterativeRepositoryBase`1.GetEnumerator
+  langs:
+  - csharp
+  - vb
+  name: IterativeRepositoryBase<T>
+  nameWithType: IterativeRepositoryBase<T>
+  fullName: Sin.Net.Domain.Repository.IterativeRepositoryBase<T>
+  type: Class
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Repository/IterativeRepositoryBase.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: IterativeRepositoryBase
+    path: ../Sin.Net.Domain/Repository/IterativeRepositoryBase.cs
+    startLine: 12
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Repository
+  summary: "\nThis abstract base class allows to store a list of T and setup additional properties in its concretions.\nIt implements the IEnumerable interface so it can directly be iterated in foreach or other loops.\nIt is not suitable for json serialization because the enumerator causes the serialization to skip other user defines properties \n"
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public abstract class IterativeRepositoryBase<T> : RepositoryBase<T>, IEnumerable
+    typeParameters:
+    - id: T
+      description: The type strored in the Items property
+    content.vb: >-
+      <Serializable>
+
+      Public MustInherit Class IterativeRepositoryBase(Of T)
+
+          Inherits RepositoryBase(Of T)
+
+          Implements IEnumerable
+  inheritance:
+  - System.Object
+  - Sin.Net.Domain.Repository.RepositoryBase{{T}}
+  implements:
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - Sin.Net.Domain.Repository.RepositoryBase{{T}}.Contains({T})
+  - Sin.Net.Domain.Repository.RepositoryBase{{T}}.Add({T})
+  - Sin.Net.Domain.Repository.RepositoryBase{{T}}.AddRange({T}[])
+  - Sin.Net.Domain.Repository.RepositoryBase{{T}}.RemoveAt(System.Int32)
+  - Sin.Net.Domain.Repository.RepositoryBase{{T}}.Remove({T})
+  - Sin.Net.Domain.Repository.RepositoryBase{{T}}.Clear
+  - Sin.Net.Domain.Repository.RepositoryBase{{T}}.Name
+  - Sin.Net.Domain.Repository.RepositoryBase{{T}}.Items
+  - Sin.Net.Domain.Repository.RepositoryBase{{T}}.Count
+  - Sin.Net.Domain.Repository.RepositoryBase{{T}}.Item(System.Int32)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  nameWithType.vb: IterativeRepositoryBase(Of T)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Sin.Net.Domain.Repository.IterativeRepositoryBase(Of T)
+  name.vb: IterativeRepositoryBase(Of T)
+- uid: Sin.Net.Domain.Repository.IterativeRepositoryBase`1.#ctor
+  commentId: M:Sin.Net.Domain.Repository.IterativeRepositoryBase`1.#ctor
+  id: '#ctor'
+  parent: Sin.Net.Domain.Repository.IterativeRepositoryBase`1
+  langs:
+  - csharp
+  - vb
+  name: IterativeRepositoryBase()
+  nameWithType: IterativeRepositoryBase<T>.IterativeRepositoryBase()
+  fullName: Sin.Net.Domain.Repository.IterativeRepositoryBase<T>.IterativeRepositoryBase()
+  type: Constructor
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Repository/IterativeRepositoryBase.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: .ctor
+    path: ../Sin.Net.Domain/Repository/IterativeRepositoryBase.cs
+    startLine: 20
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Repository
+  summary: "\nBase constructor that instanciates the items list.\n"
+  example: []
+  syntax:
+    content: public IterativeRepositoryBase()
+    content.vb: Public Sub New
+  overload: Sin.Net.Domain.Repository.IterativeRepositoryBase`1.#ctor*
+  nameWithType.vb: IterativeRepositoryBase(Of T).IterativeRepositoryBase()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sin.Net.Domain.Repository.IterativeRepositoryBase(Of T).IterativeRepositoryBase()
+- uid: Sin.Net.Domain.Repository.IterativeRepositoryBase`1.GetEnumerator
+  commentId: M:Sin.Net.Domain.Repository.IterativeRepositoryBase`1.GetEnumerator
+  id: GetEnumerator
+  parent: Sin.Net.Domain.Repository.IterativeRepositoryBase`1
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: IterativeRepositoryBase<T>.GetEnumerator()
+  fullName: Sin.Net.Domain.Repository.IterativeRepositoryBase<T>.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Repository/IterativeRepositoryBase.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: GetEnumerator
+    path: ../Sin.Net.Domain/Repository/IterativeRepositoryBase.cs
+    startLine: 30
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Repository
+  summary: "\nReturns the Enumerator of the Items list.\n"
+  example: []
+  syntax:
+    content: public IEnumerator GetEnumerator()
+    return:
+      type: System.Collections.IEnumerator
+      description: ''
+    content.vb: Public Function GetEnumerator As IEnumerator
+  overload: Sin.Net.Domain.Repository.IterativeRepositoryBase`1.GetEnumerator*
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: IterativeRepositoryBase(Of T).GetEnumerator()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sin.Net.Domain.Repository.IterativeRepositoryBase(Of T).GetEnumerator()
+references:
+- uid: Sin.Net.Domain.Repository
+  commentId: N:Sin.Net.Domain.Repository
+  name: Sin.Net.Domain.Repository
+  nameWithType: Sin.Net.Domain.Repository
+  fullName: Sin.Net.Domain.Repository
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sin.Net.Domain.Repository.RepositoryBase{{T}}
+  commentId: T:Sin.Net.Domain.Repository.RepositoryBase{`0}
+  parent: Sin.Net.Domain.Repository
+  definition: Sin.Net.Domain.Repository.RepositoryBase`1
+  name: RepositoryBase<T>
+  nameWithType: RepositoryBase<T>
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>
+  nameWithType.vb: RepositoryBase(Of T)
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T)
+  name.vb: RepositoryBase(Of T)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1
+    name: RepositoryBase
+    nameWithType: RepositoryBase
+    fullName: Sin.Net.Domain.Repository.RepositoryBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1
+    name: RepositoryBase
+    nameWithType: RepositoryBase
+    fullName: Sin.Net.Domain.Repository.RepositoryBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: Sin.Net.Domain.Repository.RepositoryBase{{T}}.Contains({T})
+  commentId: M:Sin.Net.Domain.Repository.RepositoryBase{`0}.Contains(`0)
+  parent: Sin.Net.Domain.Repository.RepositoryBase{{T}}
+  definition: Sin.Net.Domain.Repository.RepositoryBase`1.Contains(`0)
+  name: Contains(T)
+  nameWithType: RepositoryBase<T>.Contains(T)
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Contains(T)
+  nameWithType.vb: RepositoryBase(Of T).Contains(T)
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).Contains(T)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Contains(`0)
+    name: Contains
+    nameWithType: RepositoryBase<T>.Contains
+    fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Contains
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Contains(`0)
+    name: Contains
+    nameWithType: RepositoryBase(Of T).Contains
+    fullName: Sin.Net.Domain.Repository.RepositoryBase(Of T).Contains
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Repository.RepositoryBase{{T}}.Add({T})
+  commentId: M:Sin.Net.Domain.Repository.RepositoryBase{`0}.Add(`0)
+  parent: Sin.Net.Domain.Repository.RepositoryBase{{T}}
+  definition: Sin.Net.Domain.Repository.RepositoryBase`1.Add(`0)
+  name: Add(T)
+  nameWithType: RepositoryBase<T>.Add(T)
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Add(T)
+  nameWithType.vb: RepositoryBase(Of T).Add(T)
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).Add(T)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Add(`0)
+    name: Add
+    nameWithType: RepositoryBase<T>.Add
+    fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Add
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Add(`0)
+    name: Add
+    nameWithType: RepositoryBase(Of T).Add
+    fullName: Sin.Net.Domain.Repository.RepositoryBase(Of T).Add
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Repository.RepositoryBase{{T}}.AddRange({T}[])
+  commentId: M:Sin.Net.Domain.Repository.RepositoryBase{`0}.AddRange(`0[])
+  parent: Sin.Net.Domain.Repository.RepositoryBase{{T}}
+  definition: Sin.Net.Domain.Repository.RepositoryBase`1.AddRange(`0[])
+  name: AddRange(T[])
+  nameWithType: RepositoryBase<T>.AddRange(T[])
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.AddRange(T[])
+  nameWithType.vb: RepositoryBase(Of T).AddRange(T())
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).AddRange(T())
+  name.vb: AddRange(T())
+  spec.csharp:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.AddRange(`0[])
+    name: AddRange
+    nameWithType: RepositoryBase<T>.AddRange
+    fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.AddRange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.AddRange(`0[])
+    name: AddRange
+    nameWithType: RepositoryBase(Of T).AddRange
+    fullName: Sin.Net.Domain.Repository.RepositoryBase(Of T).AddRange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Repository.RepositoryBase{{T}}.RemoveAt(System.Int32)
+  commentId: M:Sin.Net.Domain.Repository.RepositoryBase{`0}.RemoveAt(System.Int32)
+  parent: Sin.Net.Domain.Repository.RepositoryBase{{T}}
+  definition: Sin.Net.Domain.Repository.RepositoryBase`1.RemoveAt(System.Int32)
+  name: RemoveAt(Int32)
+  nameWithType: RepositoryBase<T>.RemoveAt(Int32)
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.RemoveAt(System.Int32)
+  nameWithType.vb: RepositoryBase(Of T).RemoveAt(Int32)
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).RemoveAt(System.Int32)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: RepositoryBase<T>.RemoveAt
+    fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.RemoveAt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: RepositoryBase(Of T).RemoveAt
+    fullName: Sin.Net.Domain.Repository.RepositoryBase(Of T).RemoveAt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Repository.RepositoryBase{{T}}.Remove({T})
+  commentId: M:Sin.Net.Domain.Repository.RepositoryBase{`0}.Remove(`0)
+  parent: Sin.Net.Domain.Repository.RepositoryBase{{T}}
+  definition: Sin.Net.Domain.Repository.RepositoryBase`1.Remove(`0)
+  name: Remove(T)
+  nameWithType: RepositoryBase<T>.Remove(T)
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Remove(T)
+  nameWithType.vb: RepositoryBase(Of T).Remove(T)
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).Remove(T)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Remove(`0)
+    name: Remove
+    nameWithType: RepositoryBase<T>.Remove
+    fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Remove
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Remove(`0)
+    name: Remove
+    nameWithType: RepositoryBase(Of T).Remove
+    fullName: Sin.Net.Domain.Repository.RepositoryBase(Of T).Remove
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Repository.RepositoryBase{{T}}.Clear
+  commentId: M:Sin.Net.Domain.Repository.RepositoryBase{`0}.Clear
+  parent: Sin.Net.Domain.Repository.RepositoryBase{{T}}
+  definition: Sin.Net.Domain.Repository.RepositoryBase`1.Clear
+  name: Clear()
+  nameWithType: RepositoryBase<T>.Clear()
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Clear()
+  nameWithType.vb: RepositoryBase(Of T).Clear()
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).Clear()
+  spec.csharp:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Clear
+    name: Clear
+    nameWithType: RepositoryBase<T>.Clear
+    fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Clear
+    name: Clear
+    nameWithType: RepositoryBase(Of T).Clear
+    fullName: Sin.Net.Domain.Repository.RepositoryBase(Of T).Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Repository.RepositoryBase{{T}}.Name
+  commentId: P:Sin.Net.Domain.Repository.RepositoryBase{`0}.Name
+  parent: Sin.Net.Domain.Repository.RepositoryBase{{T}}
+  definition: Sin.Net.Domain.Repository.RepositoryBase`1.Name
+  name: Name
+  nameWithType: RepositoryBase<T>.Name
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Name
+  nameWithType.vb: RepositoryBase(Of T).Name
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).Name
+- uid: Sin.Net.Domain.Repository.RepositoryBase{{T}}.Items
+  commentId: P:Sin.Net.Domain.Repository.RepositoryBase{`0}.Items
+  parent: Sin.Net.Domain.Repository.RepositoryBase{{T}}
+  definition: Sin.Net.Domain.Repository.RepositoryBase`1.Items
+  name: Items
+  nameWithType: RepositoryBase<T>.Items
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Items
+  nameWithType.vb: RepositoryBase(Of T).Items
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).Items
+- uid: Sin.Net.Domain.Repository.RepositoryBase{{T}}.Count
+  commentId: P:Sin.Net.Domain.Repository.RepositoryBase{`0}.Count
+  parent: Sin.Net.Domain.Repository.RepositoryBase{{T}}
+  definition: Sin.Net.Domain.Repository.RepositoryBase`1.Count
+  name: Count
+  nameWithType: RepositoryBase<T>.Count
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Count
+  nameWithType.vb: RepositoryBase(Of T).Count
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).Count
+- uid: Sin.Net.Domain.Repository.RepositoryBase{{T}}.Item(System.Int32)
+  commentId: P:Sin.Net.Domain.Repository.RepositoryBase{`0}.Item(System.Int32)
+  parent: Sin.Net.Domain.Repository.RepositoryBase{{T}}
+  definition: Sin.Net.Domain.Repository.RepositoryBase`1.Item(System.Int32)
+  name: Item[Int32]
+  nameWithType: RepositoryBase<T>.Item[Int32]
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Item[System.Int32]
+  nameWithType.vb: RepositoryBase(Of T).Item(Int32)
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Item(System.Int32)
+    name: Item
+    nameWithType: RepositoryBase<T>.Item
+    fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Item
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Item(System.Int32)
+    name: Item
+    nameWithType: RepositoryBase(Of T).Item
+    fullName: Sin.Net.Domain.Repository.RepositoryBase(Of T).Item
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  name: SecureAccess(SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  name: SecureAccess(Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sin.Net.Domain.Repository.RepositoryBase`1
+  commentId: T:Sin.Net.Domain.Repository.RepositoryBase`1
+  name: RepositoryBase<T>
+  nameWithType: RepositoryBase<T>
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>
+  nameWithType.vb: RepositoryBase(Of T)
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T)
+  name.vb: RepositoryBase(Of T)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1
+    name: RepositoryBase
+    nameWithType: RepositoryBase
+    fullName: Sin.Net.Domain.Repository.RepositoryBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1
+    name: RepositoryBase
+    nameWithType: RepositoryBase
+    fullName: Sin.Net.Domain.Repository.RepositoryBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: Sin.Net.Domain.Repository.RepositoryBase`1.Contains(`0)
+  commentId: M:Sin.Net.Domain.Repository.RepositoryBase`1.Contains(`0)
+  name: Contains(T)
+  nameWithType: RepositoryBase<T>.Contains(T)
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Contains(T)
+  nameWithType.vb: RepositoryBase(Of T).Contains(T)
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).Contains(T)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Contains(`0)
+    name: Contains
+    nameWithType: RepositoryBase<T>.Contains
+    fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Contains
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Contains(`0)
+    name: Contains
+    nameWithType: RepositoryBase(Of T).Contains
+    fullName: Sin.Net.Domain.Repository.RepositoryBase(Of T).Contains
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Repository.RepositoryBase`1.Add(`0)
+  commentId: M:Sin.Net.Domain.Repository.RepositoryBase`1.Add(`0)
+  name: Add(T)
+  nameWithType: RepositoryBase<T>.Add(T)
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Add(T)
+  nameWithType.vb: RepositoryBase(Of T).Add(T)
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).Add(T)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Add(`0)
+    name: Add
+    nameWithType: RepositoryBase<T>.Add
+    fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Add
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Add(`0)
+    name: Add
+    nameWithType: RepositoryBase(Of T).Add
+    fullName: Sin.Net.Domain.Repository.RepositoryBase(Of T).Add
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Repository.RepositoryBase`1.AddRange(`0[])
+  commentId: M:Sin.Net.Domain.Repository.RepositoryBase`1.AddRange(`0[])
+  name: AddRange(T[])
+  nameWithType: RepositoryBase<T>.AddRange(T[])
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.AddRange(T[])
+  nameWithType.vb: RepositoryBase(Of T).AddRange(T())
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).AddRange(T())
+  name.vb: AddRange(T())
+  spec.csharp:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.AddRange(`0[])
+    name: AddRange
+    nameWithType: RepositoryBase<T>.AddRange
+    fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.AddRange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.AddRange(`0[])
+    name: AddRange
+    nameWithType: RepositoryBase(Of T).AddRange
+    fullName: Sin.Net.Domain.Repository.RepositoryBase(Of T).AddRange
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Repository.RepositoryBase`1.RemoveAt(System.Int32)
+  commentId: M:Sin.Net.Domain.Repository.RepositoryBase`1.RemoveAt(System.Int32)
+  isExternal: true
+  name: RemoveAt(Int32)
+  nameWithType: RepositoryBase<T>.RemoveAt(Int32)
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.RemoveAt(System.Int32)
+  nameWithType.vb: RepositoryBase(Of T).RemoveAt(Int32)
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).RemoveAt(System.Int32)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: RepositoryBase<T>.RemoveAt
+    fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.RemoveAt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.RemoveAt(System.Int32)
+    name: RemoveAt
+    nameWithType: RepositoryBase(Of T).RemoveAt
+    fullName: Sin.Net.Domain.Repository.RepositoryBase(Of T).RemoveAt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Repository.RepositoryBase`1.Remove(`0)
+  commentId: M:Sin.Net.Domain.Repository.RepositoryBase`1.Remove(`0)
+  name: Remove(T)
+  nameWithType: RepositoryBase<T>.Remove(T)
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Remove(T)
+  nameWithType.vb: RepositoryBase(Of T).Remove(T)
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).Remove(T)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Remove(`0)
+    name: Remove
+    nameWithType: RepositoryBase<T>.Remove
+    fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Remove
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Remove(`0)
+    name: Remove
+    nameWithType: RepositoryBase(Of T).Remove
+    fullName: Sin.Net.Domain.Repository.RepositoryBase(Of T).Remove
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Repository.RepositoryBase`1.Clear
+  commentId: M:Sin.Net.Domain.Repository.RepositoryBase`1.Clear
+  name: Clear()
+  nameWithType: RepositoryBase<T>.Clear()
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Clear()
+  nameWithType.vb: RepositoryBase(Of T).Clear()
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).Clear()
+  spec.csharp:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Clear
+    name: Clear
+    nameWithType: RepositoryBase<T>.Clear
+    fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Clear
+    name: Clear
+    nameWithType: RepositoryBase(Of T).Clear
+    fullName: Sin.Net.Domain.Repository.RepositoryBase(Of T).Clear
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Repository.RepositoryBase`1.Name
+  commentId: P:Sin.Net.Domain.Repository.RepositoryBase`1.Name
+  name: Name
+  nameWithType: RepositoryBase<T>.Name
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Name
+  nameWithType.vb: RepositoryBase(Of T).Name
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).Name
+- uid: Sin.Net.Domain.Repository.RepositoryBase`1.Items
+  commentId: P:Sin.Net.Domain.Repository.RepositoryBase`1.Items
+  name: Items
+  nameWithType: RepositoryBase<T>.Items
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Items
+  nameWithType.vb: RepositoryBase(Of T).Items
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).Items
+- uid: Sin.Net.Domain.Repository.RepositoryBase`1.Count
+  commentId: P:Sin.Net.Domain.Repository.RepositoryBase`1.Count
+  name: Count
+  nameWithType: RepositoryBase<T>.Count
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Count
+  nameWithType.vb: RepositoryBase(Of T).Count
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).Count
+- uid: Sin.Net.Domain.Repository.RepositoryBase`1.Item(System.Int32)
+  commentId: P:Sin.Net.Domain.Repository.RepositoryBase`1.Item(System.Int32)
+  isExternal: true
+  name: Item[Int32]
+  nameWithType: RepositoryBase<T>.Item[Int32]
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Item[System.Int32]
+  nameWithType.vb: RepositoryBase(Of T).Item(Int32)
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Item(System.Int32)
+    name: Item
+    nameWithType: RepositoryBase<T>.Item
+    fullName: Sin.Net.Domain.Repository.RepositoryBase<T>.Item
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1.Item(System.Int32)
+    name: Item
+    nameWithType: RepositoryBase(Of T).Item
+    fullName: Sin.Net.Domain.Repository.RepositoryBase(Of T).Item
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  isExternal: true
+  name: SecureAccess(Object, SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions
+  commentId: T:Sin.Net.Domain.System.Security.SecurityExtensions
+  parent: Sin.Net.Domain.System.Security
+  name: SecurityExtensions
+  nameWithType: SecurityExtensions
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  isExternal: true
+  name: SecureAccess(Object, Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security
+  commentId: N:Sin.Net.Domain.System.Security
+  name: Sin.Net.Domain.System.Security
+  nameWithType: Sin.Net.Domain.System.Security
+  fullName: Sin.Net.Domain.System.Security
+- uid: Sin.Net.Domain.Repository.IterativeRepositoryBase`1.#ctor*
+  commentId: Overload:Sin.Net.Domain.Repository.IterativeRepositoryBase`1.#ctor
+  name: IterativeRepositoryBase
+  nameWithType: IterativeRepositoryBase<T>.IterativeRepositoryBase
+  fullName: Sin.Net.Domain.Repository.IterativeRepositoryBase<T>.IterativeRepositoryBase
+  nameWithType.vb: IterativeRepositoryBase(Of T).IterativeRepositoryBase
+  fullName.vb: Sin.Net.Domain.Repository.IterativeRepositoryBase(Of T).IterativeRepositoryBase
+- uid: Sin.Net.Domain.Repository.IterativeRepositoryBase`1.GetEnumerator*
+  commentId: Overload:Sin.Net.Domain.Repository.IterativeRepositoryBase`1.GetEnumerator
+  name: GetEnumerator
+  nameWithType: IterativeRepositoryBase<T>.GetEnumerator
+  fullName: Sin.Net.Domain.Repository.IterativeRepositoryBase<T>.GetEnumerator
+  nameWithType.vb: IterativeRepositoryBase(Of T).GetEnumerator
+  fullName.vb: Sin.Net.Domain.Repository.IterativeRepositoryBase(Of T).GetEnumerator
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator

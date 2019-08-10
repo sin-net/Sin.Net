@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Infrastructure.Mqtt
+  commentId: N:Sin.Net.Infrastructure.Mqtt
+  id: Sin.Net.Infrastructure.Mqtt
+  children:
+  - Sin.Net.Infrastructure.Mqtt.MqttConfig
+  - Sin.Net.Infrastructure.Mqtt.MqttNetController
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Infrastructure.Mqtt
+  nameWithType: Sin.Net.Infrastructure.Mqtt
+  fullName: Sin.Net.Infrastructure.Mqtt
+  type: Namespace
+  assemblies:
+  - Sin.Net.Infrastructure
+references:
+- uid: Sin.Net.Infrastructure.Mqtt.MqttConfig
+  commentId: T:Sin.Net.Infrastructure.Mqtt.MqttConfig
+  name: MqttConfig
+  nameWithType: MqttConfig
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttConfig
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController
+  commentId: T:Sin.Net.Infrastructure.Mqtt.MqttNetController
+  name: MqttNetController
+  nameWithType: MqttNetController
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController

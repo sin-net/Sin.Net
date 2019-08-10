@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Persistence
+  commentId: N:Sin.Net.Persistence
+  id: Sin.Net.Persistence
+  children:
+  - Sin.Net.Persistence.Constants
+  - Sin.Net.Persistence.Constants.Binary
+  - Sin.Net.Persistence.Constants.Csv
+  - Sin.Net.Persistence.Constants.Json
+  - Sin.Net.Persistence.PersistenceController
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Persistence
+  nameWithType: Sin.Net.Persistence
+  fullName: Sin.Net.Persistence
+  type: Namespace
+  assemblies:
+  - Sin.Net.Persistence
+references:
+- uid: Sin.Net.Persistence.Constants
+  commentId: T:Sin.Net.Persistence.Constants
+  name: Constants
+  nameWithType: Constants
+  fullName: Sin.Net.Persistence.Constants
+- uid: Sin.Net.Persistence.Constants.Csv
+  commentId: T:Sin.Net.Persistence.Constants.Csv
+  name: Constants.Csv
+  nameWithType: Constants.Csv
+  fullName: Sin.Net.Persistence.Constants.Csv
+- uid: Sin.Net.Persistence.Constants.Json
+  commentId: T:Sin.Net.Persistence.Constants.Json
+  name: Constants.Json
+  nameWithType: Constants.Json
+  fullName: Sin.Net.Persistence.Constants.Json
+- uid: Sin.Net.Persistence.Constants.Binary
+  commentId: T:Sin.Net.Persistence.Constants.Binary
+  name: Constants.Binary
+  nameWithType: Constants.Binary
+  fullName: Sin.Net.Persistence.Constants.Binary
+- uid: Sin.Net.Persistence.PersistenceController
+  commentId: T:Sin.Net.Persistence.PersistenceController
+  name: PersistenceController
+  nameWithType: PersistenceController
+  fullName: Sin.Net.Persistence.PersistenceController

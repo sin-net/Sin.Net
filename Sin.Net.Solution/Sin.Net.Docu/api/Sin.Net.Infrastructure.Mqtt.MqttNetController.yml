@@ -1,0 +1,1308 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController
+  commentId: T:Sin.Net.Infrastructure.Mqtt.MqttNetController
+  id: MqttNetController
+  parent: Sin.Net.Infrastructure.Mqtt
+  children:
+  - Sin.Net.Infrastructure.Mqtt.MqttNetController.#ctor
+  - Sin.Net.Infrastructure.Mqtt.MqttNetController.Config
+  - Sin.Net.Infrastructure.Mqtt.MqttNetController.ConnectAsync
+  - Sin.Net.Infrastructure.Mqtt.MqttNetController.Connected
+  - Sin.Net.Infrastructure.Mqtt.MqttNetController.CreateClient(Sin.Net.Domain.Config.ConfigBase)
+  - Sin.Net.Infrastructure.Mqtt.MqttNetController.DisconnectAsync
+  - Sin.Net.Infrastructure.Mqtt.MqttNetController.Disconnected
+  - Sin.Net.Infrastructure.Mqtt.MqttNetController.MessageReceived
+  - Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync(System.String,System.String)
+  - Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync(System.String,System.String,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: MqttNetController
+  nameWithType: MqttNetController
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController
+  type: Class
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: MqttNetController
+    path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+    startLine: 15
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Mqtt
+  syntax:
+    content: 'public class MqttNetController : IMqttControlable'
+    content.vb: >-
+      Public Class MqttNetController
+
+          Implements IMqttControlable
+  inheritance:
+  - System.Object
+  implements:
+  - Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.MessageReceived
+  commentId: E:Sin.Net.Infrastructure.Mqtt.MqttNetController.MessageReceived
+  id: MessageReceived
+  parent: Sin.Net.Infrastructure.Mqtt.MqttNetController
+  langs:
+  - csharp
+  - vb
+  name: MessageReceived
+  nameWithType: MqttNetController.MessageReceived
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.MessageReceived
+  type: Event
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: MessageReceived
+    path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+    startLine: 23
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Mqtt
+  syntax:
+    content: public event MqttMessageReceivedEventHandler MessageReceived
+    return:
+      type: Sin.Net.Domain.Infrastructure.Mqtt.MqttMessageReceivedEventHandler
+    content.vb: Public Event MessageReceived As MqttMessageReceivedEventHandler
+  implements:
+  - Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.MessageReceived
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.Connected
+  commentId: E:Sin.Net.Infrastructure.Mqtt.MqttNetController.Connected
+  id: Connected
+  parent: Sin.Net.Infrastructure.Mqtt.MqttNetController
+  langs:
+  - csharp
+  - vb
+  name: Connected
+  nameWithType: MqttNetController.Connected
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.Connected
+  type: Event
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Connected
+    path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+    startLine: 24
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Mqtt
+  syntax:
+    content: public event MqttConnectedEventHandler Connected
+    return:
+      type: Sin.Net.Domain.Infrastructure.Mqtt.MqttConnectedEventHandler
+    content.vb: Public Event Connected As MqttConnectedEventHandler
+  implements:
+  - Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.Connected
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.Disconnected
+  commentId: E:Sin.Net.Infrastructure.Mqtt.MqttNetController.Disconnected
+  id: Disconnected
+  parent: Sin.Net.Infrastructure.Mqtt.MqttNetController
+  langs:
+  - csharp
+  - vb
+  name: Disconnected
+  nameWithType: MqttNetController.Disconnected
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.Disconnected
+  type: Event
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Disconnected
+    path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+    startLine: 25
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Mqtt
+  syntax:
+    content: public event MqttConnectedEventHandler Disconnected
+    return:
+      type: Sin.Net.Domain.Infrastructure.Mqtt.MqttConnectedEventHandler
+    content.vb: Public Event Disconnected As MqttConnectedEventHandler
+  implements:
+  - Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.Disconnected
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.#ctor
+  commentId: M:Sin.Net.Infrastructure.Mqtt.MqttNetController.#ctor
+  id: '#ctor'
+  parent: Sin.Net.Infrastructure.Mqtt.MqttNetController
+  langs:
+  - csharp
+  - vb
+  name: MqttNetController()
+  nameWithType: MqttNetController.MqttNetController()
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.MqttNetController()
+  type: Constructor
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: .ctor
+    path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+    startLine: 29
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Mqtt
+  syntax:
+    content: public MqttNetController()
+    content.vb: Public Sub New
+  overload: Sin.Net.Infrastructure.Mqtt.MqttNetController.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.CreateClient(Sin.Net.Domain.Config.ConfigBase)
+  commentId: M:Sin.Net.Infrastructure.Mqtt.MqttNetController.CreateClient(Sin.Net.Domain.Config.ConfigBase)
+  id: CreateClient(Sin.Net.Domain.Config.ConfigBase)
+  parent: Sin.Net.Infrastructure.Mqtt.MqttNetController
+  langs:
+  - csharp
+  - vb
+  name: CreateClient(ConfigBase)
+  nameWithType: MqttNetController.CreateClient(ConfigBase)
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.CreateClient(Sin.Net.Domain.Config.ConfigBase)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: CreateClient
+    path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+    startLine: 36
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Mqtt
+  syntax:
+    content: public bool CreateClient(ConfigBase config)
+    parameters:
+    - id: config
+      type: Sin.Net.Domain.Config.ConfigBase
+    return:
+      type: System.Boolean
+    content.vb: Public Function CreateClient(config As ConfigBase) As Boolean
+  overload: Sin.Net.Infrastructure.Mqtt.MqttNetController.CreateClient*
+  implements:
+  - Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.CreateClient(Sin.Net.Domain.Config.ConfigBase)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.ConnectAsync
+  commentId: M:Sin.Net.Infrastructure.Mqtt.MqttNetController.ConnectAsync
+  id: ConnectAsync
+  parent: Sin.Net.Infrastructure.Mqtt.MqttNetController
+  langs:
+  - csharp
+  - vb
+  name: ConnectAsync()
+  nameWithType: MqttNetController.ConnectAsync()
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.ConnectAsync()
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: ConnectAsync
+    path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+    startLine: 93
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Mqtt
+  syntax:
+    content: public Task ConnectAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ConnectAsync As Task
+  overload: Sin.Net.Infrastructure.Mqtt.MqttNetController.ConnectAsync*
+  implements:
+  - Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.ConnectAsync
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.DisconnectAsync
+  commentId: M:Sin.Net.Infrastructure.Mqtt.MqttNetController.DisconnectAsync
+  id: DisconnectAsync
+  parent: Sin.Net.Infrastructure.Mqtt.MqttNetController
+  langs:
+  - csharp
+  - vb
+  name: DisconnectAsync()
+  nameWithType: MqttNetController.DisconnectAsync()
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.DisconnectAsync()
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: DisconnectAsync
+    path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+    startLine: 98
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Mqtt
+  syntax:
+    content: public Task DisconnectAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function DisconnectAsync As Task
+  overload: Sin.Net.Infrastructure.Mqtt.MqttNetController.DisconnectAsync*
+  implements:
+  - Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.DisconnectAsync
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync(System.String,System.String)
+  commentId: M:Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync(System.String,System.String)
+  id: PublishAsync(System.String,System.String)
+  parent: Sin.Net.Infrastructure.Mqtt.MqttNetController
+  langs:
+  - csharp
+  - vb
+  name: PublishAsync(String, String)
+  nameWithType: MqttNetController.PublishAsync(String, String)
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: PublishAsync
+    path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+    startLine: 103
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Mqtt
+  syntax:
+    content: public Task PublishAsync(string topic, string message)
+    parameters:
+    - id: topic
+      type: System.String
+    - id: message
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function PublishAsync(topic As String, message As String) As Task
+  overload: Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync*
+  implements:
+  - Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.PublishAsync(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync(System.String,System.String,System.Int32)
+  commentId: M:Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync(System.String,System.String,System.Int32)
+  id: PublishAsync(System.String,System.String,System.Int32)
+  parent: Sin.Net.Infrastructure.Mqtt.MqttNetController
+  langs:
+  - csharp
+  - vb
+  name: PublishAsync(String, String, Int32)
+  nameWithType: MqttNetController.PublishAsync(String, String, Int32)
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync(System.String, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: PublishAsync
+    path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+    startLine: 108
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Mqtt
+  syntax:
+    content: public Task PublishAsync(string topic, string message, int qos)
+    parameters:
+    - id: topic
+      type: System.String
+    - id: message
+      type: System.String
+    - id: qos
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function PublishAsync(topic As String, message As String, qos As Integer) As Task
+  overload: Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync*
+  implements:
+  - Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.PublishAsync(System.String,System.String,System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.Config
+  commentId: P:Sin.Net.Infrastructure.Mqtt.MqttNetController.Config
+  id: Config
+  parent: Sin.Net.Infrastructure.Mqtt.MqttNetController
+  langs:
+  - csharp
+  - vb
+  name: Config
+  nameWithType: MqttNetController.Config
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.Config
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Config
+    path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+    startLine: 131
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Mqtt
+  syntax:
+    content: public ConfigBase Config { get; }
+    parameters: []
+    return:
+      type: Sin.Net.Domain.Config.ConfigBase
+    content.vb: Public ReadOnly Property Config As ConfigBase
+  overload: Sin.Net.Infrastructure.Mqtt.MqttNetController.Config*
+  implements:
+  - Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.Config
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Sin.Net.Infrastructure.Mqtt
+  commentId: N:Sin.Net.Infrastructure.Mqtt
+  name: Sin.Net.Infrastructure.Mqtt
+  nameWithType: Sin.Net.Infrastructure.Mqtt
+  fullName: Sin.Net.Infrastructure.Mqtt
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+  commentId: T:Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+  parent: Sin.Net.Domain.Infrastructure.Mqtt
+  name: IMqttControlable
+  nameWithType: IMqttControlable
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  name: SecureAccess(SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  name: SecureAccess(Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sin.Net.Domain.Infrastructure.Mqtt
+  commentId: N:Sin.Net.Domain.Infrastructure.Mqtt
+  name: Sin.Net.Domain.Infrastructure.Mqtt
+  nameWithType: Sin.Net.Domain.Infrastructure.Mqtt
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  isExternal: true
+  name: SecureAccess(Object, SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions
+  commentId: T:Sin.Net.Domain.System.Security.SecurityExtensions
+  parent: Sin.Net.Domain.System.Security
+  name: SecurityExtensions
+  nameWithType: SecurityExtensions
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  isExternal: true
+  name: SecureAccess(Object, Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security
+  commentId: N:Sin.Net.Domain.System.Security
+  name: Sin.Net.Domain.System.Security
+  nameWithType: Sin.Net.Domain.System.Security
+  fullName: Sin.Net.Domain.System.Security
+- uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.MessageReceived
+  commentId: E:Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.MessageReceived
+  parent: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+  name: MessageReceived
+  nameWithType: IMqttControlable.MessageReceived
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.MessageReceived
+- uid: Sin.Net.Domain.Infrastructure.Mqtt.MqttMessageReceivedEventHandler
+  commentId: T:Sin.Net.Domain.Infrastructure.Mqtt.MqttMessageReceivedEventHandler
+  parent: Sin.Net.Domain.Infrastructure.Mqtt
+  name: MqttMessageReceivedEventHandler
+  nameWithType: MqttMessageReceivedEventHandler
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt.MqttMessageReceivedEventHandler
+- uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.Connected
+  commentId: E:Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.Connected
+  parent: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+  name: Connected
+  nameWithType: IMqttControlable.Connected
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.Connected
+- uid: Sin.Net.Domain.Infrastructure.Mqtt.MqttConnectedEventHandler
+  commentId: T:Sin.Net.Domain.Infrastructure.Mqtt.MqttConnectedEventHandler
+  parent: Sin.Net.Domain.Infrastructure.Mqtt
+  name: MqttConnectedEventHandler
+  nameWithType: MqttConnectedEventHandler
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt.MqttConnectedEventHandler
+- uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.Disconnected
+  commentId: E:Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.Disconnected
+  parent: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+  name: Disconnected
+  nameWithType: IMqttControlable.Disconnected
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.Disconnected
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.#ctor*
+  commentId: Overload:Sin.Net.Infrastructure.Mqtt.MqttNetController.#ctor
+  name: MqttNetController
+  nameWithType: MqttNetController.MqttNetController
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.MqttNetController
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.CreateClient*
+  commentId: Overload:Sin.Net.Infrastructure.Mqtt.MqttNetController.CreateClient
+  name: CreateClient
+  nameWithType: MqttNetController.CreateClient
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.CreateClient
+- uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.CreateClient(Sin.Net.Domain.Config.ConfigBase)
+  commentId: M:Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.CreateClient(Sin.Net.Domain.Config.ConfigBase)
+  parent: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+  name: CreateClient(ConfigBase)
+  nameWithType: IMqttControlable.CreateClient(ConfigBase)
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.CreateClient(Sin.Net.Domain.Config.ConfigBase)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.CreateClient(Sin.Net.Domain.Config.ConfigBase)
+    name: CreateClient
+    nameWithType: IMqttControlable.CreateClient
+    fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.CreateClient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Config.ConfigBase
+    name: ConfigBase
+    nameWithType: ConfigBase
+    fullName: Sin.Net.Domain.Config.ConfigBase
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.CreateClient(Sin.Net.Domain.Config.ConfigBase)
+    name: CreateClient
+    nameWithType: IMqttControlable.CreateClient
+    fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.CreateClient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Config.ConfigBase
+    name: ConfigBase
+    nameWithType: ConfigBase
+    fullName: Sin.Net.Domain.Config.ConfigBase
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Config.ConfigBase
+  commentId: T:Sin.Net.Domain.Config.ConfigBase
+  parent: Sin.Net.Domain.Config
+  name: ConfigBase
+  nameWithType: ConfigBase
+  fullName: Sin.Net.Domain.Config.ConfigBase
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sin.Net.Domain.Config
+  commentId: N:Sin.Net.Domain.Config
+  name: Sin.Net.Domain.Config
+  nameWithType: Sin.Net.Domain.Config
+  fullName: Sin.Net.Domain.Config
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.ConnectAsync*
+  commentId: Overload:Sin.Net.Infrastructure.Mqtt.MqttNetController.ConnectAsync
+  name: ConnectAsync
+  nameWithType: MqttNetController.ConnectAsync
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.ConnectAsync
+- uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.ConnectAsync
+  commentId: M:Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.ConnectAsync
+  parent: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+  name: ConnectAsync()
+  nameWithType: IMqttControlable.ConnectAsync()
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.ConnectAsync()
+  spec.csharp:
+  - uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.ConnectAsync
+    name: ConnectAsync
+    nameWithType: IMqttControlable.ConnectAsync
+    fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.ConnectAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.ConnectAsync
+    name: ConnectAsync
+    nameWithType: IMqttControlable.ConnectAsync
+    fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.ConnectAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.DisconnectAsync*
+  commentId: Overload:Sin.Net.Infrastructure.Mqtt.MqttNetController.DisconnectAsync
+  name: DisconnectAsync
+  nameWithType: MqttNetController.DisconnectAsync
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.DisconnectAsync
+- uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.DisconnectAsync
+  commentId: M:Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.DisconnectAsync
+  parent: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+  name: DisconnectAsync()
+  nameWithType: IMqttControlable.DisconnectAsync()
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.DisconnectAsync()
+  spec.csharp:
+  - uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.DisconnectAsync
+    name: DisconnectAsync
+    nameWithType: IMqttControlable.DisconnectAsync
+    fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.DisconnectAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.DisconnectAsync
+    name: DisconnectAsync
+    nameWithType: IMqttControlable.DisconnectAsync
+    fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.DisconnectAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync*
+  commentId: Overload:Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync
+  name: PublishAsync
+  nameWithType: MqttNetController.PublishAsync
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync
+- uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.PublishAsync(System.String,System.String)
+  commentId: M:Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.PublishAsync(System.String,System.String)
+  parent: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+  isExternal: true
+  name: PublishAsync(String, String)
+  nameWithType: IMqttControlable.PublishAsync(String, String)
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.PublishAsync(System.String, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.PublishAsync(System.String,System.String)
+    name: PublishAsync
+    nameWithType: IMqttControlable.PublishAsync
+    fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.PublishAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.PublishAsync(System.String,System.String)
+    name: PublishAsync
+    nameWithType: IMqttControlable.PublishAsync
+    fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.PublishAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.PublishAsync(System.String,System.String,System.Int32)
+  commentId: M:Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.PublishAsync(System.String,System.String,System.Int32)
+  parent: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+  isExternal: true
+  name: PublishAsync(String, String, Int32)
+  nameWithType: IMqttControlable.PublishAsync(String, String, Int32)
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.PublishAsync(System.String, System.String, System.Int32)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.PublishAsync(System.String,System.String,System.Int32)
+    name: PublishAsync
+    nameWithType: IMqttControlable.PublishAsync
+    fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.PublishAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.PublishAsync(System.String,System.String,System.Int32)
+    name: PublishAsync
+    nameWithType: IMqttControlable.PublishAsync
+    fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.PublishAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.Config*
+  commentId: Overload:Sin.Net.Infrastructure.Mqtt.MqttNetController.Config
+  name: Config
+  nameWithType: MqttNetController.Config
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.Config
+- uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.Config
+  commentId: P:Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.Config
+  parent: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+  name: Config
+  nameWithType: IMqttControlable.Config
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.Config

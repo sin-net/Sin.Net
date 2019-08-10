@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.Persistence.Settings
+  commentId: N:Sin.Net.Domain.Persistence.Settings
+  id: Sin.Net.Domain.Persistence.Settings
+  children:
+  - Sin.Net.Domain.Persistence.Settings.SettingsBase
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Domain.Persistence.Settings
+  nameWithType: Sin.Net.Domain.Persistence.Settings
+  fullName: Sin.Net.Domain.Persistence.Settings
+  type: Namespace
+  assemblies:
+  - Sin.Net.Domain
+references:
+- uid: Sin.Net.Domain.Persistence.Settings.SettingsBase
+  commentId: T:Sin.Net.Domain.Persistence.Settings.SettingsBase
+  parent: Sin.Net.Domain.Persistence.Settings
+  name: SettingsBase
+  nameWithType: SettingsBase
+  fullName: Sin.Net.Domain.Persistence.Settings.SettingsBase
+- uid: Sin.Net.Domain.Persistence.Settings
+  commentId: N:Sin.Net.Domain.Persistence.Settings
+  name: Sin.Net.Domain.Persistence.Settings
+  nameWithType: Sin.Net.Domain.Persistence.Settings
+  fullName: Sin.Net.Domain.Persistence.Settings

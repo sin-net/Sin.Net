@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Logging
+  commentId: N:Sin.Net.Logging
+  id: Sin.Net.Logging
+  children:
+  - Sin.Net.Logging.NLogger
+  - Sin.Net.Logging.TestLogger
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Logging
+  nameWithType: Sin.Net.Logging
+  fullName: Sin.Net.Logging
+  type: Namespace
+  assemblies:
+  - Sin.Net.Logging
+references:
+- uid: Sin.Net.Logging.NLogger
+  commentId: T:Sin.Net.Logging.NLogger
+  name: NLogger
+  nameWithType: NLogger
+  fullName: Sin.Net.Logging.NLogger
+- uid: Sin.Net.Logging.TestLogger
+  commentId: T:Sin.Net.Logging.TestLogger
+  name: TestLogger
+  nameWithType: TestLogger
+  fullName: Sin.Net.Logging.TestLogger

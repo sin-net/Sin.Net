@@ -1,0 +1,154 @@
+### YamlMime:TableOfContent
+- uid: Sin.Net.Domain.Config
+  name: Sin.Net.Domain.Config
+  items:
+  - uid: Sin.Net.Domain.Config.ConfigBase
+    name: ConfigBase
+- uid: Sin.Net.Domain.Enumerations
+  name: Sin.Net.Domain.Enumerations
+  items:
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+- uid: Sin.Net.Domain.Infrastructure.Http
+  name: Sin.Net.Domain.Infrastructure.Http
+  items:
+  - uid: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
+    name: HttpEndpoint
+  - uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs
+    name: HttpResponseEventArgs
+  - uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventHandler
+    name: HttpResponseEventHandler
+  - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+    name: ServiceBase
+  - uid: Sin.Net.Domain.Infrastructure.Http.ServiceException
+    name: ServiceException
+- uid: Sin.Net.Domain.Infrastructure.Mqtt
+  name: Sin.Net.Domain.Infrastructure.Mqtt
+  items:
+  - uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+    name: IMqttControlable
+  - uid: Sin.Net.Domain.Infrastructure.Mqtt.MqttConnectedEventArgs
+    name: MqttConnectedEventArgs
+  - uid: Sin.Net.Domain.Infrastructure.Mqtt.MqttConnectedEventHandler
+    name: MqttConnectedEventHandler
+  - uid: Sin.Net.Domain.Infrastructure.Mqtt.MqttMessageReceivedEventHandler
+    name: MqttMessageReceivedEventHandler
+  - uid: Sin.Net.Domain.Infrastructure.Mqtt.MqttReceivedEventArgs
+    name: MqttReceivedEventArgs
+- uid: Sin.Net.Domain.Persistence
+  name: Sin.Net.Domain.Persistence
+  items:
+  - uid: Sin.Net.Domain.Persistence.IExportable
+    name: IExportable
+  - uid: Sin.Net.Domain.Persistence.IImportable
+    name: IImportable
+  - uid: Sin.Net.Domain.Persistence.IPersistenceControlable
+    name: IPersistenceControlable
+- uid: Sin.Net.Domain.Persistence.Adapter
+  name: Sin.Net.Domain.Persistence.Adapter
+  items:
+  - uid: Sin.Net.Domain.Persistence.Adapter.AdapterBase
+    name: AdapterBase
+  - uid: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+    name: IAdaptable
+- uid: Sin.Net.Domain.Persistence.Logging
+  name: Sin.Net.Domain.Persistence.Logging
+  items:
+  - uid: Sin.Net.Domain.Persistence.Logging.ILoggable
+    name: ILoggable
+  - uid: Sin.Net.Domain.Persistence.Logging.Log
+    name: Log
+- uid: Sin.Net.Domain.Persistence.Settings
+  name: Sin.Net.Domain.Persistence.Settings
+  items:
+  - uid: Sin.Net.Domain.Persistence.Settings.SettingsBase
+    name: SettingsBase
+- uid: Sin.Net.Domain.Repository
+  name: Sin.Net.Domain.Repository
+  items:
+  - uid: Sin.Net.Domain.Repository.IterativeRepositoryBase`1
+    name: IterativeRepositoryBase<T>
+    name.vb: IterativeRepositoryBase(Of T)
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1
+    name: RepositoryBase<T>
+    name.vb: RepositoryBase(Of T)
+  - uid: Sin.Net.Domain.Repository.RepositoryView`1
+    name: RepositoryView<T>
+    name.vb: RepositoryView(Of T)
+- uid: Sin.Net.Domain.System.Security
+  name: Sin.Net.Domain.System.Security
+  items:
+  - uid: Sin.Net.Domain.System.Security.ISecurable
+    name: ISecurable
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions
+    name: SecurityExtensions
+  - uid: Sin.Net.Domain.System.Security.SecurityLevelAttribute
+    name: SecurityLevelAttribute
+- uid: Sin.Net.Domain.System.UserManagement
+  name: Sin.Net.Domain.System.UserManagement
+  items:
+  - uid: Sin.Net.Domain.System.UserManagement.User
+    name: User
+- uid: Sin.Net.Infrastructure.Http
+  name: Sin.Net.Infrastructure.Http
+  items:
+  - uid: Sin.Net.Infrastructure.Http.GenericService
+    name: GenericService
+- uid: Sin.Net.Infrastructure.Mqtt
+  name: Sin.Net.Infrastructure.Mqtt
+  items:
+  - uid: Sin.Net.Infrastructure.Mqtt.MqttConfig
+    name: MqttConfig
+  - uid: Sin.Net.Infrastructure.Mqtt.MqttNetController
+    name: MqttNetController
+- uid: Sin.Net.Logging
+  name: Sin.Net.Logging
+  items:
+  - uid: Sin.Net.Logging.NLogger
+    name: NLogger
+  - uid: Sin.Net.Logging.TestLogger
+    name: TestLogger
+- uid: Sin.Net.Persistence
+  name: Sin.Net.Persistence
+  items:
+  - uid: Sin.Net.Persistence.Constants
+    name: Constants
+  - uid: Sin.Net.Persistence.Constants.Binary
+    name: Constants.Binary
+  - uid: Sin.Net.Persistence.Constants.Csv
+    name: Constants.Csv
+  - uid: Sin.Net.Persistence.Constants.Json
+    name: Constants.Json
+  - uid: Sin.Net.Persistence.PersistenceController
+    name: PersistenceController
+- uid: Sin.Net.Persistence.Exports
+  name: Sin.Net.Persistence.Exports
+  items:
+  - uid: Sin.Net.Persistence.Exports.BinaryExporter
+    name: BinaryExporter
+- uid: Sin.Net.Persistence.Imports
+  name: Sin.Net.Persistence.Imports
+  items:
+  - uid: Sin.Net.Persistence.Imports.BinaryImporter
+    name: BinaryImporter
+- uid: Sin.Net.Persistence.IO.Binary
+  name: Sin.Net.Persistence.IO.Binary
+  items:
+  - uid: Sin.Net.Persistence.IO.Binary.BinaryIO
+    name: BinaryIO
+- uid: Sin.Net.Persistence.IO.Json
+  name: Sin.Net.Persistence.IO.Json
+  items:
+  - uid: Sin.Net.Persistence.IO.Json.JsonIO
+    name: JsonIO
+  - uid: Sin.Net.Persistence.IO.Json.TypedSerializationBinder
+    name: TypedSerializationBinder
+- uid: Sin.Net.Persistence.Settings
+  name: Sin.Net.Persistence.Settings
+  items:
+  - uid: Sin.Net.Persistence.Settings.CsvSetting
+    name: CsvSetting
+  - uid: Sin.Net.Persistence.Settings.FileSetting
+    name: FileSetting
+  - uid: Sin.Net.Persistence.Settings.JsonSetting
+    name: JsonSetting

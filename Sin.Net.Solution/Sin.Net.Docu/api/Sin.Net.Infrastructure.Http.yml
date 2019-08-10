@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Infrastructure.Http
+  commentId: N:Sin.Net.Infrastructure.Http
+  id: Sin.Net.Infrastructure.Http
+  children:
+  - Sin.Net.Infrastructure.Http.GenericService
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Infrastructure.Http
+  nameWithType: Sin.Net.Infrastructure.Http
+  fullName: Sin.Net.Infrastructure.Http
+  type: Namespace
+  assemblies:
+  - Sin.Net.Infrastructure
+references:
+- uid: Sin.Net.Infrastructure.Http.GenericService
+  commentId: T:Sin.Net.Infrastructure.Http.GenericService
+  name: GenericService
+  nameWithType: GenericService
+  fullName: Sin.Net.Infrastructure.Http.GenericService

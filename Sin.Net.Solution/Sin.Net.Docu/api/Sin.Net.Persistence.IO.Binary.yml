@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Persistence.IO.Binary
+  commentId: N:Sin.Net.Persistence.IO.Binary
+  id: Sin.Net.Persistence.IO.Binary
+  children:
+  - Sin.Net.Persistence.IO.Binary.BinaryIO
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Persistence.IO.Binary
+  nameWithType: Sin.Net.Persistence.IO.Binary
+  fullName: Sin.Net.Persistence.IO.Binary
+  type: Namespace
+  assemblies:
+  - Sin.Net.Persistence
+references:
+- uid: Sin.Net.Persistence.IO.Binary.BinaryIO
+  commentId: T:Sin.Net.Persistence.IO.Binary.BinaryIO
+  name: BinaryIO
+  nameWithType: BinaryIO
+  fullName: Sin.Net.Persistence.IO.Binary.BinaryIO

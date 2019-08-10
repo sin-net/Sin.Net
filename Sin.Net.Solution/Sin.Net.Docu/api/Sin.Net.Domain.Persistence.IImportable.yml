@@ -1,0 +1,606 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.Persistence.IImportable
+  commentId: T:Sin.Net.Domain.Persistence.IImportable
+  id: IImportable
+  parent: Sin.Net.Domain.Persistence
+  children:
+  - Sin.Net.Domain.Persistence.IImportable.As``1
+  - Sin.Net.Domain.Persistence.IImportable.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  - Sin.Net.Domain.Persistence.IImportable.AsItIs
+  - Sin.Net.Domain.Persistence.IImportable.Import
+  - Sin.Net.Domain.Persistence.IImportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  - Sin.Net.Domain.Persistence.IImportable.Type
+  langs:
+  - csharp
+  - vb
+  name: IImportable
+  nameWithType: IImportable
+  fullName: Sin.Net.Domain.Persistence.IImportable
+  type: Interface
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: IImportable
+    path: ../Sin.Net.Domain/Persistence/IImportable.cs
+    startLine: 8
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence
+  summary: "\nInterface for concrete import functionality\n"
+  example: []
+  syntax:
+    content: public interface IImportable
+    content.vb: Public Interface IImportable
+  extensionMethods:
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sin.Net.Domain.Persistence.IImportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  commentId: M:Sin.Net.Domain.Persistence.IImportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  id: Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  parent: Sin.Net.Domain.Persistence.IImportable
+  langs:
+  - csharp
+  - vb
+  name: Setup(SettingsBase)
+  nameWithType: IImportable.Setup(SettingsBase)
+  fullName: Sin.Net.Domain.Persistence.IImportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Setup
+    path: ../Sin.Net.Domain/Persistence/IImportable.cs
+    startLine: 15
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence
+  summary: "\nTakes the cocnrete implementation of settings\n"
+  example: []
+  syntax:
+    content: IImportable Setup(SettingsBase setting)
+    parameters:
+    - id: setting
+      type: Sin.Net.Domain.Persistence.Settings.SettingsBase
+      description: settings concretion
+    return:
+      type: Sin.Net.Domain.Persistence.IImportable
+      description: the calling IImportable-instance for method chaining
+    content.vb: Function Setup(setting As SettingsBase) As IImportable
+  overload: Sin.Net.Domain.Persistence.IImportable.Setup*
+- uid: Sin.Net.Domain.Persistence.IImportable.Import
+  commentId: M:Sin.Net.Domain.Persistence.IImportable.Import
+  id: Import
+  parent: Sin.Net.Domain.Persistence.IImportable
+  langs:
+  - csharp
+  - vb
+  name: Import()
+  nameWithType: IImportable.Import()
+  fullName: Sin.Net.Domain.Persistence.IImportable.Import()
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Import
+    path: ../Sin.Net.Domain/Persistence/IImportable.cs
+    startLine: 21
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence
+  summary: "\nRuns the import implementation\n"
+  example: []
+  syntax:
+    content: IImportable Import()
+    return:
+      type: Sin.Net.Domain.Persistence.IImportable
+      description: the calling IImportable-instance for method chaining
+    content.vb: Function Import As IImportable
+  overload: Sin.Net.Domain.Persistence.IImportable.Import*
+- uid: Sin.Net.Domain.Persistence.IImportable.As``1
+  commentId: M:Sin.Net.Domain.Persistence.IImportable.As``1
+  id: As``1
+  parent: Sin.Net.Domain.Persistence.IImportable
+  langs:
+  - csharp
+  - vb
+  name: As<T>()
+  nameWithType: IImportable.As<T>()
+  fullName: Sin.Net.Domain.Persistence.IImportable.As<T>()
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: As
+    path: ../Sin.Net.Domain/Persistence/IImportable.cs
+    startLine: 28
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence
+  summary: "\nReturns the imported data with direct type conversion.\n"
+  example: []
+  syntax:
+    content: >-
+      T As<T>()
+
+          where T : new()
+    typeParameters:
+    - id: T
+      description: The target type T for the imported data
+    return:
+      type: '{T}'
+      description: The imported data as target type
+    content.vb: Function As(Of T As New) As T
+  overload: Sin.Net.Domain.Persistence.IImportable.As*
+  nameWithType.vb: IImportable.As(Of T)()
+  fullName.vb: Sin.Net.Domain.Persistence.IImportable.As(Of T)()
+  name.vb: As(Of T)()
+- uid: Sin.Net.Domain.Persistence.IImportable.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  commentId: M:Sin.Net.Domain.Persistence.IImportable.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  id: As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  parent: Sin.Net.Domain.Persistence.IImportable
+  langs:
+  - csharp
+  - vb
+  name: As<T>(IAdaptable)
+  nameWithType: IImportable.As<T>(IAdaptable)
+  fullName: Sin.Net.Domain.Persistence.IImportable.As<T>(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: As
+    path: ../Sin.Net.Domain/Persistence/IImportable.cs
+    startLine: 36
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence
+  summary: "\nReturns the imported data with a manual adoption into the target type.\n"
+  example: []
+  syntax:
+    content: >-
+      T As<T>(IAdaptable adapter)
+
+          where T : new()
+    parameters:
+    - id: adapter
+      type: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+    typeParameters:
+    - id: T
+      description: The target type T for the imported data
+    return:
+      type: '{T}'
+      description: The imported data as target type
+    content.vb: Function As(Of T As New)(adapter As IAdaptable) As T
+  overload: Sin.Net.Domain.Persistence.IImportable.As*
+  nameWithType.vb: IImportable.As(Of T)(IAdaptable)
+  fullName.vb: Sin.Net.Domain.Persistence.IImportable.As(Of T)(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  name.vb: As(Of T)(IAdaptable)
+- uid: Sin.Net.Domain.Persistence.IImportable.AsItIs
+  commentId: M:Sin.Net.Domain.Persistence.IImportable.AsItIs
+  id: AsItIs
+  parent: Sin.Net.Domain.Persistence.IImportable
+  langs:
+  - csharp
+  - vb
+  name: AsItIs()
+  nameWithType: IImportable.AsItIs()
+  fullName: Sin.Net.Domain.Persistence.IImportable.AsItIs()
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: AsItIs
+    path: ../Sin.Net.Domain/Persistence/IImportable.cs
+    startLine: 42
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence
+  summary: "\nReturns the imported data without any type converion.\n"
+  example: []
+  syntax:
+    content: object AsItIs()
+    return:
+      type: System.Object
+      description: The imported data as it is.
+    content.vb: Function AsItIs As Object
+  overload: Sin.Net.Domain.Persistence.IImportable.AsItIs*
+- uid: Sin.Net.Domain.Persistence.IImportable.Type
+  commentId: P:Sin.Net.Domain.Persistence.IImportable.Type
+  id: Type
+  parent: Sin.Net.Domain.Persistence.IImportable
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: IImportable.Type
+  fullName: Sin.Net.Domain.Persistence.IImportable.Type
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Type
+    path: ../Sin.Net.Domain/Persistence/IImportable.cs
+    startLine: 49
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence
+  summary: "\nGets the import type\n"
+  example: []
+  syntax:
+    content: string Type { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Type As String
+  overload: Sin.Net.Domain.Persistence.IImportable.Type*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Sin.Net.Domain.Persistence
+  commentId: N:Sin.Net.Domain.Persistence
+  name: Sin.Net.Domain.Persistence
+  nameWithType: Sin.Net.Domain.Persistence
+  fullName: Sin.Net.Domain.Persistence
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  name: SecureAccess(SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  name: SecureAccess(Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  isExternal: true
+  name: SecureAccess(Object, SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions
+  commentId: T:Sin.Net.Domain.System.Security.SecurityExtensions
+  parent: Sin.Net.Domain.System.Security
+  name: SecurityExtensions
+  nameWithType: SecurityExtensions
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  isExternal: true
+  name: SecureAccess(Object, Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security
+  commentId: N:Sin.Net.Domain.System.Security
+  name: Sin.Net.Domain.System.Security
+  nameWithType: Sin.Net.Domain.System.Security
+  fullName: Sin.Net.Domain.System.Security
+- uid: Sin.Net.Domain.Persistence.IImportable.Setup*
+  commentId: Overload:Sin.Net.Domain.Persistence.IImportable.Setup
+  name: Setup
+  nameWithType: IImportable.Setup
+  fullName: Sin.Net.Domain.Persistence.IImportable.Setup
+- uid: Sin.Net.Domain.Persistence.Settings.SettingsBase
+  commentId: T:Sin.Net.Domain.Persistence.Settings.SettingsBase
+  parent: Sin.Net.Domain.Persistence.Settings
+  name: SettingsBase
+  nameWithType: SettingsBase
+  fullName: Sin.Net.Domain.Persistence.Settings.SettingsBase
+- uid: Sin.Net.Domain.Persistence.IImportable
+  commentId: T:Sin.Net.Domain.Persistence.IImportable
+  parent: Sin.Net.Domain.Persistence
+  name: IImportable
+  nameWithType: IImportable
+  fullName: Sin.Net.Domain.Persistence.IImportable
+- uid: Sin.Net.Domain.Persistence.Settings
+  commentId: N:Sin.Net.Domain.Persistence.Settings
+  name: Sin.Net.Domain.Persistence.Settings
+  nameWithType: Sin.Net.Domain.Persistence.Settings
+  fullName: Sin.Net.Domain.Persistence.Settings
+- uid: Sin.Net.Domain.Persistence.IImportable.Import*
+  commentId: Overload:Sin.Net.Domain.Persistence.IImportable.Import
+  name: Import
+  nameWithType: IImportable.Import
+  fullName: Sin.Net.Domain.Persistence.IImportable.Import
+- uid: Sin.Net.Domain.Persistence.IImportable.As*
+  commentId: Overload:Sin.Net.Domain.Persistence.IImportable.As
+  name: As
+  nameWithType: IImportable.As
+  fullName: Sin.Net.Domain.Persistence.IImportable.As
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+  commentId: T:Sin.Net.Domain.Persistence.Adapter.IAdaptable
+  parent: Sin.Net.Domain.Persistence.Adapter
+  name: IAdaptable
+  nameWithType: IAdaptable
+  fullName: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+- uid: Sin.Net.Domain.Persistence.Adapter
+  commentId: N:Sin.Net.Domain.Persistence.Adapter
+  name: Sin.Net.Domain.Persistence.Adapter
+  nameWithType: Sin.Net.Domain.Persistence.Adapter
+  fullName: Sin.Net.Domain.Persistence.Adapter
+- uid: Sin.Net.Domain.Persistence.IImportable.AsItIs*
+  commentId: Overload:Sin.Net.Domain.Persistence.IImportable.AsItIs
+  name: AsItIs
+  nameWithType: IImportable.AsItIs
+  fullName: Sin.Net.Domain.Persistence.IImportable.AsItIs
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sin.Net.Domain.Persistence.IImportable.Type*
+  commentId: Overload:Sin.Net.Domain.Persistence.IImportable.Type
+  name: Type
+  nameWithType: IImportable.Type
+  fullName: Sin.Net.Domain.Persistence.IImportable.Type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

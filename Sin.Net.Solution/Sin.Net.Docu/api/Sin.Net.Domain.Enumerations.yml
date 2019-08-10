@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.Enumerations
+  commentId: N:Sin.Net.Domain.Enumerations
+  id: Sin.Net.Domain.Enumerations
+  children:
+  - Sin.Net.Domain.Enumerations.SecurityLevels
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Domain.Enumerations
+  nameWithType: Sin.Net.Domain.Enumerations
+  fullName: Sin.Net.Domain.Enumerations
+  type: Namespace
+  assemblies:
+  - Sin.Net.Domain
+references:
+- uid: Sin.Net.Domain.Enumerations.SecurityLevels
+  commentId: T:Sin.Net.Domain.Enumerations.SecurityLevels
+  parent: Sin.Net.Domain.Enumerations
+  name: SecurityLevels
+  nameWithType: SecurityLevels
+  fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+- uid: Sin.Net.Domain.Enumerations
+  commentId: N:Sin.Net.Domain.Enumerations
+  name: Sin.Net.Domain.Enumerations
+  nameWithType: Sin.Net.Domain.Enumerations
+  fullName: Sin.Net.Domain.Enumerations

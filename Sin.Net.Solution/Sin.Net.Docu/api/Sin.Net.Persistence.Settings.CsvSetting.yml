@@ -1,0 +1,930 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Persistence.Settings.CsvSetting
+  commentId: T:Sin.Net.Persistence.Settings.CsvSetting
+  id: CsvSetting
+  parent: Sin.Net.Persistence.Settings
+  children:
+  - Sin.Net.Persistence.Settings.CsvSetting.#ctor
+  - Sin.Net.Persistence.Settings.CsvSetting.AppendHeader(System.String)
+  - Sin.Net.Persistence.Settings.CsvSetting.CustomHeader
+  - Sin.Net.Persistence.Settings.CsvSetting.DataPosition
+  - Sin.Net.Persistence.Settings.CsvSetting.HasHeader
+  - Sin.Net.Persistence.Settings.CsvSetting.Separator
+  langs:
+  - csharp
+  - vb
+  name: CsvSetting
+  nameWithType: CsvSetting
+  fullName: Sin.Net.Persistence.Settings.CsvSetting
+  type: Class
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/Settings/CsvSetting.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: CsvSetting
+    path: ../Sin.Net.Persistence/Settings/CsvSetting.cs
+    startLine: 6
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.Settings
+  syntax:
+    content: 'public class CsvSetting : FileSetting'
+    content.vb: >-
+      Public Class CsvSetting
+
+          Inherits FileSetting
+  inheritance:
+  - System.Object
+  - Sin.Net.Domain.Persistence.Settings.SettingsBase
+  - Sin.Net.Persistence.Settings.FileSetting
+  inheritedMembers:
+  - Sin.Net.Persistence.Settings.FileSetting.Location
+  - Sin.Net.Persistence.Settings.FileSetting.Extension
+  - Sin.Net.Persistence.Settings.FileSetting.FullPath
+  - Sin.Net.Domain.Persistence.Settings.SettingsBase.Name
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sin.Net.Persistence.Settings.CsvSetting.#ctor
+  commentId: M:Sin.Net.Persistence.Settings.CsvSetting.#ctor
+  id: '#ctor'
+  parent: Sin.Net.Persistence.Settings.CsvSetting
+  langs:
+  - csharp
+  - vb
+  name: CsvSetting()
+  nameWithType: CsvSetting.CsvSetting()
+  fullName: Sin.Net.Persistence.Settings.CsvSetting.CsvSetting()
+  type: Constructor
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/Settings/CsvSetting.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: .ctor
+    path: ../Sin.Net.Persistence/Settings/CsvSetting.cs
+    startLine: 14
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.Settings
+  syntax:
+    content: public CsvSetting()
+    content.vb: Public Sub New
+  overload: Sin.Net.Persistence.Settings.CsvSetting.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Persistence.Settings.CsvSetting.AppendHeader(System.String)
+  commentId: M:Sin.Net.Persistence.Settings.CsvSetting.AppendHeader(System.String)
+  id: AppendHeader(System.String)
+  parent: Sin.Net.Persistence.Settings.CsvSetting
+  langs:
+  - csharp
+  - vb
+  name: AppendHeader(String)
+  nameWithType: CsvSetting.AppendHeader(String)
+  fullName: Sin.Net.Persistence.Settings.CsvSetting.AppendHeader(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/Settings/CsvSetting.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: AppendHeader
+    path: ../Sin.Net.Persistence/Settings/CsvSetting.cs
+    startLine: 27
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.Settings
+  summary: "\nFügt dem aktuellen CustomHeader eine neue Zeile hinzu oder legt diesen an.\n"
+  example: []
+  syntax:
+    content: public void AppendHeader(string line = null)
+    parameters:
+    - id: line
+      type: System.String
+      description: die zu ergänzende Zeile
+    content.vb: Public Sub AppendHeader(line As String = Nothing)
+  overload: Sin.Net.Persistence.Settings.CsvSetting.AppendHeader*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Persistence.Settings.CsvSetting.Separator
+  commentId: P:Sin.Net.Persistence.Settings.CsvSetting.Separator
+  id: Separator
+  parent: Sin.Net.Persistence.Settings.CsvSetting
+  langs:
+  - csharp
+  - vb
+  name: Separator
+  nameWithType: CsvSetting.Separator
+  fullName: Sin.Net.Persistence.Settings.CsvSetting.Separator
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/Settings/CsvSetting.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Separator
+    path: ../Sin.Net.Persistence/Settings/CsvSetting.cs
+    startLine: 43
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.Settings
+  summary: "\nGibt das Trennzeichen zwischen den Spalten aus oder legt dieses fest.\n"
+  example: []
+  syntax:
+    content: public char Separator { get; set; }
+    parameters: []
+    return:
+      type: System.Char
+    content.vb: Public Property Separator As Char
+  overload: Sin.Net.Persistence.Settings.CsvSetting.Separator*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Persistence.Settings.CsvSetting.HasHeader
+  commentId: P:Sin.Net.Persistence.Settings.CsvSetting.HasHeader
+  id: HasHeader
+  parent: Sin.Net.Persistence.Settings.CsvSetting
+  langs:
+  - csharp
+  - vb
+  name: HasHeader
+  nameWithType: CsvSetting.HasHeader
+  fullName: Sin.Net.Persistence.Settings.CsvSetting.HasHeader
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/Settings/CsvSetting.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: HasHeader
+    path: ../Sin.Net.Persistence/Settings/CsvSetting.cs
+    startLine: 48
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.Settings
+  summary: "\nGets or sets wheather the column names are used as header line or not.\n"
+  example: []
+  syntax:
+    content: public bool HasHeader { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property HasHeader As Boolean
+  overload: Sin.Net.Persistence.Settings.CsvSetting.HasHeader*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Persistence.Settings.CsvSetting.CustomHeader
+  commentId: P:Sin.Net.Persistence.Settings.CsvSetting.CustomHeader
+  id: CustomHeader
+  parent: Sin.Net.Persistence.Settings.CsvSetting
+  langs:
+  - csharp
+  - vb
+  name: CustomHeader
+  nameWithType: CsvSetting.CustomHeader
+  fullName: Sin.Net.Persistence.Settings.CsvSetting.CustomHeader
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/Settings/CsvSetting.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: CustomHeader
+    path: ../Sin.Net.Persistence/Settings/CsvSetting.cs
+    startLine: 53
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.Settings
+  summary: "\nGets or sets addional header line before the csv-data.\n"
+  example: []
+  syntax:
+    content: public string CustomHeader { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CustomHeader As String
+  overload: Sin.Net.Persistence.Settings.CsvSetting.CustomHeader*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Persistence.Settings.CsvSetting.DataPosition
+  commentId: P:Sin.Net.Persistence.Settings.CsvSetting.DataPosition
+  id: DataPosition
+  parent: Sin.Net.Persistence.Settings.CsvSetting
+  langs:
+  - csharp
+  - vb
+  name: DataPosition
+  nameWithType: CsvSetting.DataPosition
+  fullName: Sin.Net.Persistence.Settings.CsvSetting.DataPosition
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/Settings/CsvSetting.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: DataPosition
+    path: ../Sin.Net.Persistence/Settings/CsvSetting.cs
+    startLine: 59
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.Settings
+  summary: "\nGets or sets the line number of the first data row.\n"
+  example: []
+  syntax:
+    content: public int DataPosition { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DataPosition As Integer
+  overload: Sin.Net.Persistence.Settings.CsvSetting.DataPosition*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sin.Net.Persistence.Settings
+  commentId: N:Sin.Net.Persistence.Settings
+  name: Sin.Net.Persistence.Settings
+  nameWithType: Sin.Net.Persistence.Settings
+  fullName: Sin.Net.Persistence.Settings
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sin.Net.Domain.Persistence.Settings.SettingsBase
+  commentId: T:Sin.Net.Domain.Persistence.Settings.SettingsBase
+  parent: Sin.Net.Domain.Persistence.Settings
+  name: SettingsBase
+  nameWithType: SettingsBase
+  fullName: Sin.Net.Domain.Persistence.Settings.SettingsBase
+- uid: Sin.Net.Persistence.Settings.FileSetting
+  commentId: T:Sin.Net.Persistence.Settings.FileSetting
+  parent: Sin.Net.Persistence.Settings
+  name: FileSetting
+  nameWithType: FileSetting
+  fullName: Sin.Net.Persistence.Settings.FileSetting
+- uid: Sin.Net.Persistence.Settings.FileSetting.Location
+  commentId: P:Sin.Net.Persistence.Settings.FileSetting.Location
+  parent: Sin.Net.Persistence.Settings.FileSetting
+  name: Location
+  nameWithType: FileSetting.Location
+  fullName: Sin.Net.Persistence.Settings.FileSetting.Location
+- uid: Sin.Net.Persistence.Settings.FileSetting.Extension
+  commentId: P:Sin.Net.Persistence.Settings.FileSetting.Extension
+  parent: Sin.Net.Persistence.Settings.FileSetting
+  name: Extension
+  nameWithType: FileSetting.Extension
+  fullName: Sin.Net.Persistence.Settings.FileSetting.Extension
+- uid: Sin.Net.Persistence.Settings.FileSetting.FullPath
+  commentId: P:Sin.Net.Persistence.Settings.FileSetting.FullPath
+  parent: Sin.Net.Persistence.Settings.FileSetting
+  name: FullPath
+  nameWithType: FileSetting.FullPath
+  fullName: Sin.Net.Persistence.Settings.FileSetting.FullPath
+- uid: Sin.Net.Domain.Persistence.Settings.SettingsBase.Name
+  commentId: P:Sin.Net.Domain.Persistence.Settings.SettingsBase.Name
+  parent: Sin.Net.Domain.Persistence.Settings.SettingsBase
+  name: Name
+  nameWithType: SettingsBase.Name
+  fullName: Sin.Net.Domain.Persistence.Settings.SettingsBase.Name
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  name: SecureAccess(SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  name: SecureAccess(Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sin.Net.Domain.Persistence.Settings
+  commentId: N:Sin.Net.Domain.Persistence.Settings
+  name: Sin.Net.Domain.Persistence.Settings
+  nameWithType: Sin.Net.Domain.Persistence.Settings
+  fullName: Sin.Net.Domain.Persistence.Settings
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  isExternal: true
+  name: SecureAccess(Object, SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions
+  commentId: T:Sin.Net.Domain.System.Security.SecurityExtensions
+  parent: Sin.Net.Domain.System.Security
+  name: SecurityExtensions
+  nameWithType: SecurityExtensions
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  isExternal: true
+  name: SecureAccess(Object, Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security
+  commentId: N:Sin.Net.Domain.System.Security
+  name: Sin.Net.Domain.System.Security
+  nameWithType: Sin.Net.Domain.System.Security
+  fullName: Sin.Net.Domain.System.Security
+- uid: Sin.Net.Persistence.Settings.CsvSetting.#ctor*
+  commentId: Overload:Sin.Net.Persistence.Settings.CsvSetting.#ctor
+  name: CsvSetting
+  nameWithType: CsvSetting.CsvSetting
+  fullName: Sin.Net.Persistence.Settings.CsvSetting.CsvSetting
+- uid: Sin.Net.Persistence.Settings.CsvSetting.AppendHeader*
+  commentId: Overload:Sin.Net.Persistence.Settings.CsvSetting.AppendHeader
+  name: AppendHeader
+  nameWithType: CsvSetting.AppendHeader
+  fullName: Sin.Net.Persistence.Settings.CsvSetting.AppendHeader
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sin.Net.Persistence.Settings.CsvSetting.Separator*
+  commentId: Overload:Sin.Net.Persistence.Settings.CsvSetting.Separator
+  name: Separator
+  nameWithType: CsvSetting.Separator
+  fullName: Sin.Net.Persistence.Settings.CsvSetting.Separator
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  nameWithType: Char
+  fullName: System.Char
+- uid: Sin.Net.Persistence.Settings.CsvSetting.HasHeader*
+  commentId: Overload:Sin.Net.Persistence.Settings.CsvSetting.HasHeader
+  name: HasHeader
+  nameWithType: CsvSetting.HasHeader
+  fullName: Sin.Net.Persistence.Settings.CsvSetting.HasHeader
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sin.Net.Persistence.Settings.CsvSetting.CustomHeader*
+  commentId: Overload:Sin.Net.Persistence.Settings.CsvSetting.CustomHeader
+  name: CustomHeader
+  nameWithType: CsvSetting.CustomHeader
+  fullName: Sin.Net.Persistence.Settings.CsvSetting.CustomHeader
+- uid: Sin.Net.Persistence.Settings.CsvSetting.DataPosition*
+  commentId: Overload:Sin.Net.Persistence.Settings.CsvSetting.DataPosition
+  name: DataPosition
+  nameWithType: CsvSetting.DataPosition
+  fullName: Sin.Net.Persistence.Settings.CsvSetting.DataPosition
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

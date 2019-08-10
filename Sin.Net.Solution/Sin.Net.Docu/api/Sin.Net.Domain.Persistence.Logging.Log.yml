@@ -1,0 +1,943 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.Persistence.Logging.Log
+  commentId: T:Sin.Net.Domain.Persistence.Logging.Log
+  id: Log
+  parent: Sin.Net.Domain.Persistence.Logging
+  children:
+  - Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String,System.Object)
+  - Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String,System.String)
+  - Sin.Net.Domain.Persistence.Logging.Log.Error(System.String,System.Object)
+  - Sin.Net.Domain.Persistence.Logging.Log.Error(System.String,System.String)
+  - Sin.Net.Domain.Persistence.Logging.Log.Fatal(System.Exception)
+  - Sin.Net.Domain.Persistence.Logging.Log.Info(System.String,System.Object)
+  - Sin.Net.Domain.Persistence.Logging.Log.Info(System.String,System.String)
+  - Sin.Net.Domain.Persistence.Logging.Log.Inject(Sin.Net.Domain.Persistence.Logging.ILoggable)
+  - Sin.Net.Domain.Persistence.Logging.Log.IsNotNull
+  - Sin.Net.Domain.Persistence.Logging.Log.Stop
+  - Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String,System.Object)
+  - Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String,System.String)
+  - Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String,System.Object)
+  - Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: Log
+  nameWithType: Log
+  fullName: Sin.Net.Domain.Persistence.Logging.Log
+  type: Class
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/Log.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Log
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
+    startLine: 5
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  syntax:
+    content: public static class Log
+    content.vb: Public Module Log
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String,System.String)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String,System.String)
+  id: Trace(System.String,System.String)
+  parent: Sin.Net.Domain.Persistence.Logging.Log
+  langs:
+  - csharp
+  - vb
+  name: Trace(String, String)
+  nameWithType: Log.Trace(String, String)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/Log.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Trace
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
+    startLine: 30
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  syntax:
+    content: public static void Trace(string msg, string src = null)
+    parameters:
+    - id: msg
+      type: System.String
+    - id: src
+      type: System.String
+    content.vb: Public Shared Sub Trace(msg As String, src As String = Nothing)
+  overload: Sin.Net.Domain.Persistence.Logging.Log.Trace*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String,System.Object)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String,System.Object)
+  id: Trace(System.String,System.Object)
+  parent: Sin.Net.Domain.Persistence.Logging.Log
+  langs:
+  - csharp
+  - vb
+  name: Trace(String, Object)
+  nameWithType: Log.Trace(String, Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/Log.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Trace
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
+    startLine: 35
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  syntax:
+    content: public static void Trace(string msg, object sender)
+    parameters:
+    - id: msg
+      type: System.String
+    - id: sender
+      type: System.Object
+    content.vb: Public Shared Sub Trace(msg As String, sender As Object)
+  overload: Sin.Net.Domain.Persistence.Logging.Log.Trace*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String,System.String)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String,System.String)
+  id: Debug(System.String,System.String)
+  parent: Sin.Net.Domain.Persistence.Logging.Log
+  langs:
+  - csharp
+  - vb
+  name: Debug(String, String)
+  nameWithType: Log.Debug(String, String)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/Log.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Debug
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
+    startLine: 42
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  syntax:
+    content: public static void Debug(string msg, string src = null)
+    parameters:
+    - id: msg
+      type: System.String
+    - id: src
+      type: System.String
+    content.vb: Public Shared Sub Debug(msg As String, src As String = Nothing)
+  overload: Sin.Net.Domain.Persistence.Logging.Log.Debug*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String,System.Object)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String,System.Object)
+  id: Debug(System.String,System.Object)
+  parent: Sin.Net.Domain.Persistence.Logging.Log
+  langs:
+  - csharp
+  - vb
+  name: Debug(String, Object)
+  nameWithType: Log.Debug(String, Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/Log.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Debug
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
+    startLine: 47
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  syntax:
+    content: public static void Debug(string msg, object sender)
+    parameters:
+    - id: msg
+      type: System.String
+    - id: sender
+      type: System.Object
+    content.vb: Public Shared Sub Debug(msg As String, sender As Object)
+  overload: Sin.Net.Domain.Persistence.Logging.Log.Debug*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Info(System.String,System.String)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Info(System.String,System.String)
+  id: Info(System.String,System.String)
+  parent: Sin.Net.Domain.Persistence.Logging.Log
+  langs:
+  - csharp
+  - vb
+  name: Info(String, String)
+  nameWithType: Log.Info(String, String)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Info(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/Log.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Info
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
+    startLine: 54
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  syntax:
+    content: public static void Info(string msg, string src = null)
+    parameters:
+    - id: msg
+      type: System.String
+    - id: src
+      type: System.String
+    content.vb: Public Shared Sub Info(msg As String, src As String = Nothing)
+  overload: Sin.Net.Domain.Persistence.Logging.Log.Info*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Info(System.String,System.Object)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Info(System.String,System.Object)
+  id: Info(System.String,System.Object)
+  parent: Sin.Net.Domain.Persistence.Logging.Log
+  langs:
+  - csharp
+  - vb
+  name: Info(String, Object)
+  nameWithType: Log.Info(String, Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Info(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/Log.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Info
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
+    startLine: 59
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  syntax:
+    content: public static void Info(string msg, object sender)
+    parameters:
+    - id: msg
+      type: System.String
+    - id: sender
+      type: System.Object
+    content.vb: Public Shared Sub Info(msg As String, sender As Object)
+  overload: Sin.Net.Domain.Persistence.Logging.Log.Info*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String,System.String)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String,System.String)
+  id: Warn(System.String,System.String)
+  parent: Sin.Net.Domain.Persistence.Logging.Log
+  langs:
+  - csharp
+  - vb
+  name: Warn(String, String)
+  nameWithType: Log.Warn(String, String)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/Log.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Warn
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
+    startLine: 66
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  syntax:
+    content: public static void Warn(string msg, string src = null)
+    parameters:
+    - id: msg
+      type: System.String
+    - id: src
+      type: System.String
+    content.vb: Public Shared Sub Warn(msg As String, src As String = Nothing)
+  overload: Sin.Net.Domain.Persistence.Logging.Log.Warn*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String,System.Object)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String,System.Object)
+  id: Warn(System.String,System.Object)
+  parent: Sin.Net.Domain.Persistence.Logging.Log
+  langs:
+  - csharp
+  - vb
+  name: Warn(String, Object)
+  nameWithType: Log.Warn(String, Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/Log.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Warn
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
+    startLine: 71
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  syntax:
+    content: public static void Warn(string msg, object sender)
+    parameters:
+    - id: msg
+      type: System.String
+    - id: sender
+      type: System.Object
+    content.vb: Public Shared Sub Warn(msg As String, sender As Object)
+  overload: Sin.Net.Domain.Persistence.Logging.Log.Warn*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Error(System.String,System.String)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Error(System.String,System.String)
+  id: Error(System.String,System.String)
+  parent: Sin.Net.Domain.Persistence.Logging.Log
+  langs:
+  - csharp
+  - vb
+  name: Error(String, String)
+  nameWithType: Log.Error(String, String)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Error(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/Log.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Error
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
+    startLine: 78
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  syntax:
+    content: public static void Error(string msg, string src = null)
+    parameters:
+    - id: msg
+      type: System.String
+    - id: src
+      type: System.String
+    content.vb: Public Shared Sub Error(msg As String, src As String = Nothing)
+  overload: Sin.Net.Domain.Persistence.Logging.Log.Error*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Error(System.String,System.Object)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Error(System.String,System.Object)
+  id: Error(System.String,System.Object)
+  parent: Sin.Net.Domain.Persistence.Logging.Log
+  langs:
+  - csharp
+  - vb
+  name: Error(String, Object)
+  nameWithType: Log.Error(String, Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Error(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/Log.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Error
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
+    startLine: 83
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  syntax:
+    content: public static void Error(string msg, object sender)
+    parameters:
+    - id: msg
+      type: System.String
+    - id: sender
+      type: System.Object
+    content.vb: Public Shared Sub Error(msg As String, sender As Object)
+  overload: Sin.Net.Domain.Persistence.Logging.Log.Error*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Fatal(System.Exception)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Fatal(System.Exception)
+  id: Fatal(System.Exception)
+  parent: Sin.Net.Domain.Persistence.Logging.Log
+  langs:
+  - csharp
+  - vb
+  name: Fatal(Exception)
+  nameWithType: Log.Fatal(Exception)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Fatal(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/Log.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Fatal
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
+    startLine: 89
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  syntax:
+    content: public static void Fatal(Exception ex)
+    parameters:
+    - id: ex
+      type: System.Exception
+    content.vb: Public Shared Sub Fatal(ex As Exception)
+  overload: Sin.Net.Domain.Persistence.Logging.Log.Fatal*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Stop
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Stop
+  id: Stop
+  parent: Sin.Net.Domain.Persistence.Logging.Log
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: Log.Stop()
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Stop()
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/Log.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Stop
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
+    startLine: 94
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  syntax:
+    content: public static void Stop()
+    content.vb: Public Shared Sub Stop
+  overload: Sin.Net.Domain.Persistence.Logging.Log.Stop*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Inject(Sin.Net.Domain.Persistence.Logging.ILoggable)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Inject(Sin.Net.Domain.Persistence.Logging.ILoggable)
+  id: Inject(Sin.Net.Domain.Persistence.Logging.ILoggable)
+  parent: Sin.Net.Domain.Persistence.Logging.Log
+  langs:
+  - csharp
+  - vb
+  name: Inject(ILoggable)
+  nameWithType: Log.Inject(ILoggable)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Inject(Sin.Net.Domain.Persistence.Logging.ILoggable)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/Log.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Inject
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
+    startLine: 103
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  summary: "\nInjects concrete ILoggable implementation. Calling this method multiple times is allowed.\n"
+  example: []
+  syntax:
+    content: public static void Inject(ILoggable logger)
+    parameters:
+    - id: logger
+      type: Sin.Net.Domain.Persistence.Logging.ILoggable
+      description: ''
+    content.vb: Public Shared Sub Inject(logger As ILoggable)
+  overload: Sin.Net.Domain.Persistence.Logging.Log.Inject*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Domain.Persistence.Logging.Log.IsNotNull
+  commentId: P:Sin.Net.Domain.Persistence.Logging.Log.IsNotNull
+  id: IsNotNull
+  parent: Sin.Net.Domain.Persistence.Logging.Log
+  langs:
+  - csharp
+  - vb
+  name: IsNotNull
+  nameWithType: Log.IsNotNull
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.IsNotNull
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/Log.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: IsNotNull
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
+    startLine: 113
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  summary: "\nGets the information, if the logger instance is present or not.\n"
+  example: []
+  syntax:
+    content: public static bool IsNotNull { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property IsNotNull As Boolean
+  overload: Sin.Net.Domain.Persistence.Logging.Log.IsNotNull*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: Sin.Net.Domain.Persistence.Logging
+  commentId: N:Sin.Net.Domain.Persistence.Logging
+  name: Sin.Net.Domain.Persistence.Logging
+  nameWithType: Sin.Net.Domain.Persistence.Logging
+  fullName: Sin.Net.Domain.Persistence.Logging
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Trace*
+  commentId: Overload:Sin.Net.Domain.Persistence.Logging.Log.Trace
+  name: Trace
+  nameWithType: Log.Trace
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Trace
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Debug*
+  commentId: Overload:Sin.Net.Domain.Persistence.Logging.Log.Debug
+  name: Debug
+  nameWithType: Log.Debug
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Debug
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Info*
+  commentId: Overload:Sin.Net.Domain.Persistence.Logging.Log.Info
+  name: Info
+  nameWithType: Log.Info
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Info
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Warn*
+  commentId: Overload:Sin.Net.Domain.Persistence.Logging.Log.Warn
+  name: Warn
+  nameWithType: Log.Warn
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Warn
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Error*
+  commentId: Overload:Sin.Net.Domain.Persistence.Logging.Log.Error
+  name: Error
+  nameWithType: Log.Error
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Error
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Fatal*
+  commentId: Overload:Sin.Net.Domain.Persistence.Logging.Log.Fatal
+  name: Fatal
+  nameWithType: Log.Fatal
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Fatal
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Stop*
+  commentId: Overload:Sin.Net.Domain.Persistence.Logging.Log.Stop
+  name: Stop
+  nameWithType: Log.Stop
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Stop
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Inject*
+  commentId: Overload:Sin.Net.Domain.Persistence.Logging.Log.Inject
+  name: Inject
+  nameWithType: Log.Inject
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Inject
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable
+  commentId: T:Sin.Net.Domain.Persistence.Logging.ILoggable
+  parent: Sin.Net.Domain.Persistence.Logging
+  name: ILoggable
+  nameWithType: ILoggable
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable
+- uid: Sin.Net.Domain.Persistence.Logging.Log.IsNotNull*
+  commentId: Overload:Sin.Net.Domain.Persistence.Logging.Log.IsNotNull
+  name: IsNotNull
+  nameWithType: Log.IsNotNull
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.IsNotNull
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

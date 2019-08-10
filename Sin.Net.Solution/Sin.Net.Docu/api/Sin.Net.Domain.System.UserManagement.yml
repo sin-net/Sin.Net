@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.System.UserManagement
+  commentId: N:Sin.Net.Domain.System.UserManagement
+  id: Sin.Net.Domain.System.UserManagement
+  children:
+  - Sin.Net.Domain.System.UserManagement.User
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Domain.System.UserManagement
+  nameWithType: Sin.Net.Domain.System.UserManagement
+  fullName: Sin.Net.Domain.System.UserManagement
+  type: Namespace
+  assemblies:
+  - Sin.Net.Domain
+references:
+- uid: Sin.Net.Domain.System.UserManagement.User
+  commentId: T:Sin.Net.Domain.System.UserManagement.User
+  name: User
+  nameWithType: User
+  fullName: Sin.Net.Domain.System.UserManagement.User

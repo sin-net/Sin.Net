@@ -1,0 +1,55 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.Infrastructure.Http
+  commentId: N:Sin.Net.Domain.Infrastructure.Http
+  id: Sin.Net.Domain.Infrastructure.Http
+  children:
+  - Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
+  - Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs
+  - Sin.Net.Domain.Infrastructure.Http.HttpResponseEventHandler
+  - Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  - Sin.Net.Domain.Infrastructure.Http.ServiceException
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Domain.Infrastructure.Http
+  nameWithType: Sin.Net.Domain.Infrastructure.Http
+  fullName: Sin.Net.Domain.Infrastructure.Http
+  type: Namespace
+  assemblies:
+  - Sin.Net.Domain
+references:
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceException
+  commentId: T:Sin.Net.Domain.Infrastructure.Http.ServiceException
+  name: ServiceException
+  nameWithType: ServiceException
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceException
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
+  commentId: T:Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
+  parent: Sin.Net.Domain.Infrastructure.Http
+  name: HttpEndpoint
+  nameWithType: HttpEndpoint
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventHandler
+  commentId: T:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventHandler
+  parent: Sin.Net.Domain.Infrastructure.Http
+  name: HttpResponseEventHandler
+  nameWithType: HttpResponseEventHandler
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventHandler
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs
+  commentId: T:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs
+  parent: Sin.Net.Domain.Infrastructure.Http
+  name: HttpResponseEventArgs
+  nameWithType: HttpResponseEventArgs
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  commentId: T:Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  parent: Sin.Net.Domain.Infrastructure.Http
+  name: ServiceBase
+  nameWithType: ServiceBase
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+- uid: Sin.Net.Domain.Infrastructure.Http
+  commentId: N:Sin.Net.Domain.Infrastructure.Http
+  name: Sin.Net.Domain.Infrastructure.Http
+  nameWithType: Sin.Net.Domain.Infrastructure.Http
+  fullName: Sin.Net.Domain.Infrastructure.Http

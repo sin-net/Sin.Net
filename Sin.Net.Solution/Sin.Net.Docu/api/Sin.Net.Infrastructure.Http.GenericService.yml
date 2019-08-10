@@ -1,0 +1,1388 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Infrastructure.Http.GenericService
+  commentId: T:Sin.Net.Infrastructure.Http.GenericService
+  id: GenericService
+  parent: Sin.Net.Infrastructure.Http
+  children:
+  - Sin.Net.Infrastructure.Http.GenericService.#ctor
+  - Sin.Net.Infrastructure.Http.GenericService.#ctor(System.Net.Http.HttpClient,Sin.Net.Domain.Infrastructure.Http.HttpEndpoint)
+  - Sin.Net.Infrastructure.Http.GenericService.CallAsync
+  - Sin.Net.Infrastructure.Http.GenericService.CallAsync``1(System.Func{System.String,``0})
+  - Sin.Net.Infrastructure.Http.GenericService.CallResponded
+  langs:
+  - csharp
+  - vb
+  name: GenericService
+  nameWithType: GenericService
+  fullName: Sin.Net.Infrastructure.Http.GenericService
+  type: Class
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Http/GenericService.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: GenericService
+    path: ../Sin.Net.Infrastructure/Http/GenericService.cs
+    startLine: 7
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Http
+  syntax:
+    content: 'public class GenericService : ServiceBase'
+    content.vb: >-
+      Public Class GenericService
+
+          Inherits ServiceBase
+  inheritance:
+  - System.Object
+  - Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  inheritedMembers:
+  - Sin.Net.Domain.Infrastructure.Http.ServiceBase._client
+  - Sin.Net.Domain.Infrastructure.Http.ServiceBase._endpoint
+  - Sin.Net.Domain.Infrastructure.Http.ServiceBase.Setup(System.Net.Http.HttpClient,Sin.Net.Domain.Infrastructure.Http.HttpEndpoint)
+  - Sin.Net.Domain.Infrastructure.Http.ServiceBase.AddHeader(System.String,System.String)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sin.Net.Infrastructure.Http.GenericService.CallResponded
+  commentId: E:Sin.Net.Infrastructure.Http.GenericService.CallResponded
+  id: CallResponded
+  parent: Sin.Net.Infrastructure.Http.GenericService
+  langs:
+  - csharp
+  - vb
+  name: CallResponded
+  nameWithType: GenericService.CallResponded
+  fullName: Sin.Net.Infrastructure.Http.GenericService.CallResponded
+  type: Event
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Http/GenericService.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: CallResponded
+    path: ../Sin.Net.Infrastructure/Http/GenericService.cs
+    startLine: 9
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Http
+  syntax:
+    content: public override sealed event HttpResponseEventHandler CallResponded
+    return:
+      type: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventHandler
+    content.vb: Public NotOverridable Overrides Event CallResponded As HttpResponseEventHandler
+  overridden: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallResponded
+  modifiers.csharp:
+  - public
+  - override
+  - sealed
+  modifiers.vb:
+  - Public
+  - Overrides
+  - NotOverridable
+- uid: Sin.Net.Infrastructure.Http.GenericService.#ctor
+  commentId: M:Sin.Net.Infrastructure.Http.GenericService.#ctor
+  id: '#ctor'
+  parent: Sin.Net.Infrastructure.Http.GenericService
+  langs:
+  - csharp
+  - vb
+  name: GenericService()
+  nameWithType: GenericService.GenericService()
+  fullName: Sin.Net.Infrastructure.Http.GenericService.GenericService()
+  type: Constructor
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Http/GenericService.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: .ctor
+    path: ../Sin.Net.Infrastructure/Http/GenericService.cs
+    startLine: 13
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Http
+  syntax:
+    content: public GenericService()
+    content.vb: Public Sub New
+  overload: Sin.Net.Infrastructure.Http.GenericService.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Http.GenericService.#ctor(System.Net.Http.HttpClient,Sin.Net.Domain.Infrastructure.Http.HttpEndpoint)
+  commentId: M:Sin.Net.Infrastructure.Http.GenericService.#ctor(System.Net.Http.HttpClient,Sin.Net.Domain.Infrastructure.Http.HttpEndpoint)
+  id: '#ctor(System.Net.Http.HttpClient,Sin.Net.Domain.Infrastructure.Http.HttpEndpoint)'
+  parent: Sin.Net.Infrastructure.Http.GenericService
+  langs:
+  - csharp
+  - vb
+  name: GenericService(HttpClient, HttpEndpoint)
+  nameWithType: GenericService.GenericService(HttpClient, HttpEndpoint)
+  fullName: Sin.Net.Infrastructure.Http.GenericService.GenericService(System.Net.Http.HttpClient, Sin.Net.Domain.Infrastructure.Http.HttpEndpoint)
+  type: Constructor
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Http/GenericService.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: .ctor
+    path: ../Sin.Net.Infrastructure/Http/GenericService.cs
+    startLine: 18
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Http
+  syntax:
+    content: public GenericService(HttpClient client, HttpEndpoint endpoint)
+    parameters:
+    - id: client
+      type: System.Net.Http.HttpClient
+    - id: endpoint
+      type: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
+    content.vb: Public Sub New(client As HttpClient, endpoint As HttpEndpoint)
+  overload: Sin.Net.Infrastructure.Http.GenericService.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Http.GenericService.CallAsync
+  commentId: M:Sin.Net.Infrastructure.Http.GenericService.CallAsync
+  id: CallAsync
+  parent: Sin.Net.Infrastructure.Http.GenericService
+  langs:
+  - csharp
+  - vb
+  name: CallAsync()
+  nameWithType: GenericService.CallAsync()
+  fullName: Sin.Net.Infrastructure.Http.GenericService.CallAsync()
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Http/GenericService.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: CallAsync
+    path: ../Sin.Net.Infrastructure/Http/GenericService.cs
+    startLine: 24
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Http
+  syntax:
+    content: public override sealed Task<string> CallAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Public NotOverridable Overrides Function CallAsync As Task(Of String)
+  overridden: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync
+  overload: Sin.Net.Infrastructure.Http.GenericService.CallAsync*
+  modifiers.csharp:
+  - public
+  - override
+  - sealed
+  modifiers.vb:
+  - Public
+  - Overrides
+  - NotOverridable
+- uid: Sin.Net.Infrastructure.Http.GenericService.CallAsync``1(System.Func{System.String,``0})
+  commentId: M:Sin.Net.Infrastructure.Http.GenericService.CallAsync``1(System.Func{System.String,``0})
+  id: CallAsync``1(System.Func{System.String,``0})
+  parent: Sin.Net.Infrastructure.Http.GenericService
+  langs:
+  - csharp
+  - vb
+  name: CallAsync<T>(Func<String, T>)
+  nameWithType: GenericService.CallAsync<T>(Func<String, T>)
+  fullName: Sin.Net.Infrastructure.Http.GenericService.CallAsync<T>(System.Func<System.String, T>)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Http/GenericService.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: CallAsync
+    path: ../Sin.Net.Infrastructure/Http/GenericService.cs
+    startLine: 34
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Http
+  syntax:
+    content: >-
+      public override sealed Task<T> CallAsync<T>(Func<string, T> cast)
+
+          where T : new()
+    parameters:
+    - id: cast
+      type: System.Func{System.String,{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+    content.vb: Public NotOverridable Overrides Function CallAsync(Of T As New)(cast As Func(Of String, T)) As Task(Of T)
+  overridden: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync``1(System.Func{System.String,{T}})
+  overload: Sin.Net.Infrastructure.Http.GenericService.CallAsync*
+  nameWithType.vb: GenericService.CallAsync(Of T)(Func(Of String, T))
+  modifiers.csharp:
+  - public
+  - override
+  - sealed
+  modifiers.vb:
+  - Public
+  - Overrides
+  - NotOverridable
+  fullName.vb: Sin.Net.Infrastructure.Http.GenericService.CallAsync(Of T)(System.Func(Of System.String, T))
+  name.vb: CallAsync(Of T)(Func(Of String, T))
+references:
+- uid: Sin.Net.Infrastructure.Http
+  commentId: N:Sin.Net.Infrastructure.Http
+  name: Sin.Net.Infrastructure.Http
+  nameWithType: Sin.Net.Infrastructure.Http
+  fullName: Sin.Net.Infrastructure.Http
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  commentId: T:Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  parent: Sin.Net.Domain.Infrastructure.Http
+  name: ServiceBase
+  nameWithType: ServiceBase
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase._client
+  commentId: F:Sin.Net.Domain.Infrastructure.Http.ServiceBase._client
+  parent: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  name: _client
+  nameWithType: ServiceBase._client
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase._client
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase._endpoint
+  commentId: F:Sin.Net.Domain.Infrastructure.Http.ServiceBase._endpoint
+  parent: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  name: _endpoint
+  nameWithType: ServiceBase._endpoint
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase._endpoint
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.Setup(System.Net.Http.HttpClient,Sin.Net.Domain.Infrastructure.Http.HttpEndpoint)
+  commentId: M:Sin.Net.Domain.Infrastructure.Http.ServiceBase.Setup(System.Net.Http.HttpClient,Sin.Net.Domain.Infrastructure.Http.HttpEndpoint)
+  parent: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  isExternal: true
+  name: Setup(HttpClient, HttpEndpoint)
+  nameWithType: ServiceBase.Setup(HttpClient, HttpEndpoint)
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.Setup(System.Net.Http.HttpClient, Sin.Net.Domain.Infrastructure.Http.HttpEndpoint)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.Setup(System.Net.Http.HttpClient,Sin.Net.Domain.Infrastructure.Http.HttpEndpoint)
+    name: Setup
+    nameWithType: ServiceBase.Setup
+    fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.Setup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.Http.HttpClient
+    name: HttpClient
+    nameWithType: HttpClient
+    fullName: System.Net.Http.HttpClient
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
+    name: HttpEndpoint
+    nameWithType: HttpEndpoint
+    fullName: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.Setup(System.Net.Http.HttpClient,Sin.Net.Domain.Infrastructure.Http.HttpEndpoint)
+    name: Setup
+    nameWithType: ServiceBase.Setup
+    fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.Setup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.Http.HttpClient
+    name: HttpClient
+    nameWithType: HttpClient
+    fullName: System.Net.Http.HttpClient
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
+    name: HttpEndpoint
+    nameWithType: HttpEndpoint
+    fullName: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.AddHeader(System.String,System.String)
+  commentId: M:Sin.Net.Domain.Infrastructure.Http.ServiceBase.AddHeader(System.String,System.String)
+  parent: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  isExternal: true
+  name: AddHeader(String, String)
+  nameWithType: ServiceBase.AddHeader(String, String)
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.AddHeader(System.String, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.AddHeader(System.String,System.String)
+    name: AddHeader
+    nameWithType: ServiceBase.AddHeader
+    fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.AddHeader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.AddHeader(System.String,System.String)
+    name: AddHeader
+    nameWithType: ServiceBase.AddHeader
+    fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.AddHeader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  name: SecureAccess(SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  name: SecureAccess(Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sin.Net.Domain.Infrastructure.Http
+  commentId: N:Sin.Net.Domain.Infrastructure.Http
+  name: Sin.Net.Domain.Infrastructure.Http
+  nameWithType: Sin.Net.Domain.Infrastructure.Http
+  fullName: Sin.Net.Domain.Infrastructure.Http
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  isExternal: true
+  name: SecureAccess(Object, SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions
+  commentId: T:Sin.Net.Domain.System.Security.SecurityExtensions
+  parent: Sin.Net.Domain.System.Security
+  name: SecurityExtensions
+  nameWithType: SecurityExtensions
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  isExternal: true
+  name: SecureAccess(Object, Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security
+  commentId: N:Sin.Net.Domain.System.Security
+  name: Sin.Net.Domain.System.Security
+  nameWithType: Sin.Net.Domain.System.Security
+  fullName: Sin.Net.Domain.System.Security
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallResponded
+  commentId: E:Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallResponded
+  parent: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  name: CallResponded
+  nameWithType: ServiceBase.CallResponded
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallResponded
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventHandler
+  commentId: T:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventHandler
+  parent: Sin.Net.Domain.Infrastructure.Http
+  name: HttpResponseEventHandler
+  nameWithType: HttpResponseEventHandler
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventHandler
+- uid: Sin.Net.Infrastructure.Http.GenericService.#ctor*
+  commentId: Overload:Sin.Net.Infrastructure.Http.GenericService.#ctor
+  name: GenericService
+  nameWithType: GenericService.GenericService
+  fullName: Sin.Net.Infrastructure.Http.GenericService.GenericService
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
+  commentId: T:Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
+  parent: Sin.Net.Domain.Infrastructure.Http
+  name: HttpEndpoint
+  nameWithType: HttpEndpoint
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync
+  commentId: M:Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync
+  parent: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  name: CallAsync()
+  nameWithType: ServiceBase.CallAsync()
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync()
+  spec.csharp:
+  - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync
+    name: CallAsync
+    nameWithType: ServiceBase.CallAsync
+    fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync
+    name: CallAsync
+    nameWithType: ServiceBase.CallAsync
+    fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Infrastructure.Http.GenericService.CallAsync*
+  commentId: Overload:Sin.Net.Infrastructure.Http.GenericService.CallAsync
+  name: CallAsync
+  nameWithType: GenericService.CallAsync
+  fullName: Sin.Net.Infrastructure.Http.GenericService.CallAsync
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: System.Threading.Tasks.Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync``1(System.Func{System.String,{T}})
+  commentId: M:Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync``1(System.Func{System.String,``0})
+  parent: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  definition: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync``1(System.Func{System.String,``0})
+  name: CallAsync<T>(Func<String, T>)
+  nameWithType: ServiceBase.CallAsync<T>(Func<String, T>)
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync<T>(System.Func<System.String, T>)
+  nameWithType.vb: ServiceBase.CallAsync(Of T)(Func(Of String, T))
+  fullName.vb: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync(Of T)(System.Func(Of System.String, T))
+  name.vb: CallAsync(Of T)(Func(Of String, T))
+  spec.csharp:
+  - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync``1(System.Func{System.String,``0})
+    name: CallAsync<T>
+    nameWithType: ServiceBase.CallAsync<T>
+    fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync``1(System.Func{System.String,``0})
+    name: CallAsync(Of T)
+    nameWithType: ServiceBase.CallAsync(Of T)
+    fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func{System.String,{T}}
+  commentId: T:System.Func{System.String,``0}
+  parent: System
+  definition: System.Func`2
+  name: Func<String, T>
+  nameWithType: Func<String, T>
+  fullName: System.Func<System.String, T>
+  nameWithType.vb: Func(Of String, T)
+  fullName.vb: System.Func(Of System.String, T)
+  name.vb: Func(Of String, T)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync``1(System.Func{System.String,``0})
+  commentId: M:Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync``1(System.Func{System.String,``0})
+  isExternal: true
+  name: CallAsync<T>(Func<String, T>)
+  nameWithType: ServiceBase.CallAsync<T>(Func<String, T>)
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync<T>(System.Func<System.String, T>)
+  nameWithType.vb: ServiceBase.CallAsync(Of T)(Func(Of String, T))
+  fullName.vb: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync(Of T)(System.Func(Of System.String, T))
+  name.vb: CallAsync(Of T)(Func(Of String, T))
+  spec.csharp:
+  - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync``1(System.Func{System.String,``0})
+    name: CallAsync<T>
+    nameWithType: ServiceBase.CallAsync<T>
+    fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync``1(System.Func{System.String,``0})
+    name: CallAsync(Of T)
+    nameWithType: ServiceBase.CallAsync(Of T)
+    fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.Repository
+  commentId: N:Sin.Net.Domain.Repository
+  id: Sin.Net.Domain.Repository
+  children:
+  - Sin.Net.Domain.Repository.IterativeRepositoryBase`1
+  - Sin.Net.Domain.Repository.RepositoryBase`1
+  - Sin.Net.Domain.Repository.RepositoryView`1
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Domain.Repository
+  nameWithType: Sin.Net.Domain.Repository
+  fullName: Sin.Net.Domain.Repository
+  type: Namespace
+  assemblies:
+  - Sin.Net.Domain
+references:
+- uid: Sin.Net.Domain.Repository.IterativeRepositoryBase`1
+  commentId: T:Sin.Net.Domain.Repository.IterativeRepositoryBase`1
+  name: IterativeRepositoryBase<T>
+  nameWithType: IterativeRepositoryBase<T>
+  fullName: Sin.Net.Domain.Repository.IterativeRepositoryBase<T>
+  nameWithType.vb: IterativeRepositoryBase(Of T)
+  fullName.vb: Sin.Net.Domain.Repository.IterativeRepositoryBase(Of T)
+  name.vb: IterativeRepositoryBase(Of T)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Repository.IterativeRepositoryBase`1
+    name: IterativeRepositoryBase
+    nameWithType: IterativeRepositoryBase
+    fullName: Sin.Net.Domain.Repository.IterativeRepositoryBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Sin.Net.Domain.Repository.IterativeRepositoryBase`1
+    name: IterativeRepositoryBase
+    nameWithType: IterativeRepositoryBase
+    fullName: Sin.Net.Domain.Repository.IterativeRepositoryBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Repository.RepositoryBase`1
+  commentId: T:Sin.Net.Domain.Repository.RepositoryBase`1
+  name: RepositoryBase<T>
+  nameWithType: RepositoryBase<T>
+  fullName: Sin.Net.Domain.Repository.RepositoryBase<T>
+  nameWithType.vb: RepositoryBase(Of T)
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryBase(Of T)
+  name.vb: RepositoryBase(Of T)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1
+    name: RepositoryBase
+    nameWithType: RepositoryBase
+    fullName: Sin.Net.Domain.Repository.RepositoryBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Sin.Net.Domain.Repository.RepositoryBase`1
+    name: RepositoryBase
+    nameWithType: RepositoryBase
+    fullName: Sin.Net.Domain.Repository.RepositoryBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Repository.RepositoryView`1
+  commentId: T:Sin.Net.Domain.Repository.RepositoryView`1
+  parent: Sin.Net.Domain.Repository
+  name: RepositoryView<T>
+  nameWithType: RepositoryView<T>
+  fullName: Sin.Net.Domain.Repository.RepositoryView<T>
+  nameWithType.vb: RepositoryView(Of T)
+  fullName.vb: Sin.Net.Domain.Repository.RepositoryView(Of T)
+  name.vb: RepositoryView(Of T)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Repository.RepositoryView`1
+    name: RepositoryView
+    nameWithType: RepositoryView
+    fullName: Sin.Net.Domain.Repository.RepositoryView
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Sin.Net.Domain.Repository.RepositoryView`1
+    name: RepositoryView
+    nameWithType: RepositoryView
+    fullName: Sin.Net.Domain.Repository.RepositoryView
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Repository
+  commentId: N:Sin.Net.Domain.Repository
+  name: Sin.Net.Domain.Repository
+  nameWithType: Sin.Net.Domain.Repository
+  fullName: Sin.Net.Domain.Repository

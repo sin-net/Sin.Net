@@ -1,0 +1,479 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Persistence.IO.Binary.BinaryIO
+  commentId: T:Sin.Net.Persistence.IO.Binary.BinaryIO
+  id: BinaryIO
+  parent: Sin.Net.Persistence.IO.Binary
+  children:
+  - Sin.Net.Persistence.IO.Binary.BinaryIO.FromBytes``1(System.Byte[])
+  - Sin.Net.Persistence.IO.Binary.BinaryIO.ToBytes(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: BinaryIO
+  nameWithType: BinaryIO
+  fullName: Sin.Net.Persistence.IO.Binary.BinaryIO
+  type: Class
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/IO/Binary/BinaryIO.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: BinaryIO
+    path: ../Sin.Net.Persistence/IO/Binary/BinaryIO.cs
+    startLine: 7
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.IO.Binary
+  syntax:
+    content: public static class BinaryIO
+    content.vb: Public Module BinaryIO
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Sin.Net.Persistence.IO.Binary.BinaryIO.ToBytes(System.Object)
+  commentId: M:Sin.Net.Persistence.IO.Binary.BinaryIO.ToBytes(System.Object)
+  id: ToBytes(System.Object)
+  parent: Sin.Net.Persistence.IO.Binary.BinaryIO
+  langs:
+  - csharp
+  - vb
+  name: ToBytes(Object)
+  nameWithType: BinaryIO.ToBytes(Object)
+  fullName: Sin.Net.Persistence.IO.Binary.BinaryIO.ToBytes(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/IO/Binary/BinaryIO.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: ToBytes
+    path: ../Sin.Net.Persistence/IO/Binary/BinaryIO.cs
+    startLine: 14
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.IO.Binary
+  summary: "\nSerializes the object into a compressed byte array.\n"
+  example: []
+  syntax:
+    content: public static byte[] ToBytes(object data)
+    parameters:
+    - id: data
+      type: System.Object
+      description: the input data object
+    return:
+      type: System.Byte[]
+      description: the compressed byte array
+    content.vb: Public Shared Function ToBytes(data As Object) As Byte()
+  overload: Sin.Net.Persistence.IO.Binary.BinaryIO.ToBytes*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Persistence.IO.Binary.BinaryIO.FromBytes``1(System.Byte[])
+  commentId: M:Sin.Net.Persistence.IO.Binary.BinaryIO.FromBytes``1(System.Byte[])
+  id: FromBytes``1(System.Byte[])
+  parent: Sin.Net.Persistence.IO.Binary.BinaryIO
+  langs:
+  - csharp
+  - vb
+  name: FromBytes<T>(Byte[])
+  nameWithType: BinaryIO.FromBytes<T>(Byte[])
+  fullName: Sin.Net.Persistence.IO.Binary.BinaryIO.FromBytes<T>(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/IO/Binary/BinaryIO.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: FromBytes
+    path: ../Sin.Net.Persistence/IO/Binary/BinaryIO.cs
+    startLine: 35
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.IO.Binary
+  summary: "\nDeserializes the compressed byte array into an object of T.\n"
+  example: []
+  syntax:
+    content: public static T FromBytes<T>(byte[] bytes)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+      description: The compressed byte array
+    typeParameters:
+    - id: T
+      description: The type T of the output object
+    return:
+      type: '{T}'
+      description: The deserialized object
+    content.vb: Public Shared Function FromBytes(Of T)(bytes As Byte()) As T
+  overload: Sin.Net.Persistence.IO.Binary.BinaryIO.FromBytes*
+  nameWithType.vb: BinaryIO.FromBytes(Of T)(Byte())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Sin.Net.Persistence.IO.Binary.BinaryIO.FromBytes(Of T)(System.Byte())
+  name.vb: FromBytes(Of T)(Byte())
+references:
+- uid: Sin.Net.Persistence.IO.Binary
+  commentId: N:Sin.Net.Persistence.IO.Binary
+  name: Sin.Net.Persistence.IO.Binary
+  nameWithType: Sin.Net.Persistence.IO.Binary
+  fullName: Sin.Net.Persistence.IO.Binary
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sin.Net.Persistence.IO.Binary.BinaryIO.ToBytes*
+  commentId: Overload:Sin.Net.Persistence.IO.Binary.BinaryIO.ToBytes
+  name: ToBytes
+  nameWithType: BinaryIO.ToBytes
+  fullName: Sin.Net.Persistence.IO.Binary.BinaryIO.ToBytes
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Sin.Net.Persistence.IO.Binary.BinaryIO.FromBytes*
+  commentId: Overload:Sin.Net.Persistence.IO.Binary.BinaryIO.FromBytes
+  name: FromBytes
+  nameWithType: BinaryIO.FromBytes
+  fullName: Sin.Net.Persistence.IO.Binary.BinaryIO.FromBytes
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

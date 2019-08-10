@@ -1,0 +1,448 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.Enumerations.SecurityLevels
+  commentId: T:Sin.Net.Domain.Enumerations.SecurityLevels
+  id: SecurityLevels
+  parent: Sin.Net.Domain.Enumerations
+  children:
+  - Sin.Net.Domain.Enumerations.SecurityLevels.Admin
+  - Sin.Net.Domain.Enumerations.SecurityLevels.Expert
+  - Sin.Net.Domain.Enumerations.SecurityLevels.Guest
+  - Sin.Net.Domain.Enumerations.SecurityLevels.User
+  langs:
+  - csharp
+  - vb
+  name: SecurityLevels
+  nameWithType: SecurityLevels
+  fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  type: Enum
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Enumerations/Enums.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: SecurityLevels
+    path: ../Sin.Net.Domain/Enumerations/Enums.cs
+    startLine: 6
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Enumerations
+  summary: "\nEnum for setting readable security levels.\nThe values are castet into integers to use them by the security mechanism.\n"
+  example: []
+  syntax:
+    content: public enum SecurityLevels
+    content.vb: Public Enum SecurityLevels
+  extensionMethods:
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sin.Net.Domain.Enumerations.SecurityLevels.Guest
+  commentId: F:Sin.Net.Domain.Enumerations.SecurityLevels.Guest
+  id: Guest
+  parent: Sin.Net.Domain.Enumerations.SecurityLevels
+  langs:
+  - csharp
+  - vb
+  name: Guest
+  nameWithType: SecurityLevels.Guest
+  fullName: Sin.Net.Domain.Enumerations.SecurityLevels.Guest
+  type: Field
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Enumerations/Enums.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Guest
+    path: ../Sin.Net.Domain/Enumerations/Enums.cs
+    startLine: 11
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Enumerations
+  summary: "\nLevel 0 with lowest access rights.\n"
+  example: []
+  syntax:
+    content: Guest = 0
+    return:
+      type: Sin.Net.Domain.Enumerations.SecurityLevels
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sin.Net.Domain.Enumerations.SecurityLevels.User
+  commentId: F:Sin.Net.Domain.Enumerations.SecurityLevels.User
+  id: User
+  parent: Sin.Net.Domain.Enumerations.SecurityLevels
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: SecurityLevels.User
+  fullName: Sin.Net.Domain.Enumerations.SecurityLevels.User
+  type: Field
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Enumerations/Enums.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: User
+    path: ../Sin.Net.Domain/Enumerations/Enums.cs
+    startLine: 15
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Enumerations
+  summary: "\nLevel 1 with low access rights.\n"
+  example: []
+  syntax:
+    content: User = 1
+    return:
+      type: Sin.Net.Domain.Enumerations.SecurityLevels
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sin.Net.Domain.Enumerations.SecurityLevels.Expert
+  commentId: F:Sin.Net.Domain.Enumerations.SecurityLevels.Expert
+  id: Expert
+  parent: Sin.Net.Domain.Enumerations.SecurityLevels
+  langs:
+  - csharp
+  - vb
+  name: Expert
+  nameWithType: SecurityLevels.Expert
+  fullName: Sin.Net.Domain.Enumerations.SecurityLevels.Expert
+  type: Field
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Enumerations/Enums.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Expert
+    path: ../Sin.Net.Domain/Enumerations/Enums.cs
+    startLine: 19
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Enumerations
+  summary: "\nLevel 2 with high access rights.\n"
+  example: []
+  syntax:
+    content: Expert = 2
+    return:
+      type: Sin.Net.Domain.Enumerations.SecurityLevels
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sin.Net.Domain.Enumerations.SecurityLevels.Admin
+  commentId: F:Sin.Net.Domain.Enumerations.SecurityLevels.Admin
+  id: Admin
+  parent: Sin.Net.Domain.Enumerations.SecurityLevels
+  langs:
+  - csharp
+  - vb
+  name: Admin
+  nameWithType: SecurityLevels.Admin
+  fullName: Sin.Net.Domain.Enumerations.SecurityLevels.Admin
+  type: Field
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Enumerations/Enums.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Admin
+    path: ../Sin.Net.Domain/Enumerations/Enums.cs
+    startLine: 23
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Enumerations
+  summary: "\nLevel 3 with highest access rights.\n"
+  example: []
+  syntax:
+    content: Admin = 3
+    return:
+      type: Sin.Net.Domain.Enumerations.SecurityLevels
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sin.Net.Domain.Enumerations
+  commentId: N:Sin.Net.Domain.Enumerations
+  name: Sin.Net.Domain.Enumerations
+  nameWithType: Sin.Net.Domain.Enumerations
+  fullName: Sin.Net.Domain.Enumerations
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  name: SecureAccess(SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  name: SecureAccess(Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  isExternal: true
+  name: SecureAccess(Object, SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions
+  commentId: T:Sin.Net.Domain.System.Security.SecurityExtensions
+  parent: Sin.Net.Domain.System.Security
+  name: SecurityExtensions
+  nameWithType: SecurityExtensions
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  isExternal: true
+  name: SecureAccess(Object, Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security
+  commentId: N:Sin.Net.Domain.System.Security
+  name: Sin.Net.Domain.System.Security
+  nameWithType: Sin.Net.Domain.System.Security
+  fullName: Sin.Net.Domain.System.Security
+- uid: Sin.Net.Domain.Enumerations.SecurityLevels
+  commentId: T:Sin.Net.Domain.Enumerations.SecurityLevels
+  parent: Sin.Net.Domain.Enumerations
+  name: SecurityLevels
+  nameWithType: SecurityLevels
+  fullName: Sin.Net.Domain.Enumerations.SecurityLevels

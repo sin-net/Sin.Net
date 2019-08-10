@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Persistence.Exports
+  commentId: N:Sin.Net.Persistence.Exports
+  id: Sin.Net.Persistence.Exports
+  children:
+  - Sin.Net.Persistence.Exports.BinaryExporter
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Persistence.Exports
+  nameWithType: Sin.Net.Persistence.Exports
+  fullName: Sin.Net.Persistence.Exports
+  type: Namespace
+  assemblies:
+  - Sin.Net.Persistence
+references:
+- uid: Sin.Net.Persistence.Exports.BinaryExporter
+  commentId: T:Sin.Net.Persistence.Exports.BinaryExporter
+  name: BinaryExporter
+  nameWithType: BinaryExporter
+  fullName: Sin.Net.Persistence.Exports.BinaryExporter

@@ -1,0 +1,900 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.Persistence.Adapter.AdapterBase
+  commentId: T:Sin.Net.Domain.Persistence.Adapter.AdapterBase
+  id: AdapterBase
+  parent: Sin.Net.Domain.Persistence.Adapter
+  children:
+  - Sin.Net.Domain.Persistence.Adapter.AdapterBase.Adapt``2(``0)
+  - Sin.Net.Domain.Persistence.Adapter.AdapterBase.ConvertOutput``1(System.Object)
+  - Sin.Net.Domain.Persistence.Adapter.AdapterBase.ValidateTypes``2(System.Type,System.Type)
+  langs:
+  - csharp
+  - vb
+  name: AdapterBase
+  nameWithType: AdapterBase
+  fullName: Sin.Net.Domain.Persistence.Adapter.AdapterBase
+  type: Class
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: AdapterBase
+    path: ../Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs
+    startLine: 6
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Adapter
+  syntax:
+    content: 'public abstract class AdapterBase : IAdaptable'
+    content.vb: >-
+      Public MustInherit Class AdapterBase
+
+          Implements IAdaptable
+  inheritance:
+  - System.Object
+  implements:
+  - Sin.Net.Domain.Persistence.Adapter.IAdaptable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Sin.Net.Domain.Persistence.Adapter.AdapterBase.Adapt``2(``0)
+  commentId: M:Sin.Net.Domain.Persistence.Adapter.AdapterBase.Adapt``2(``0)
+  id: Adapt``2(``0)
+  parent: Sin.Net.Domain.Persistence.Adapter.AdapterBase
+  langs:
+  - csharp
+  - vb
+  name: Adapt<Tin, Tout>(Tin)
+  nameWithType: AdapterBase.Adapt<Tin, Tout>(Tin)
+  fullName: Sin.Net.Domain.Persistence.Adapter.AdapterBase.Adapt<Tin, Tout>(Tin)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Adapt
+    path: ../Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs
+    startLine: 16
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Adapter
+  summary: "\nAbstrakte Methode des IAdaptable Schnittstelle\nDie Ein und Ausgabetypen werden hier deklariert, damit jeder Im- Exporter mit beliebigen Adaptern ohne Typbeschränkung arbeiten kann\n"
+  example: []
+  syntax:
+    content: >-
+      public abstract Tout Adapt<Tin, Tout>(Tin input)
+
+          where Tout : new()
+    parameters:
+    - id: input
+      type: '{Tin}'
+      description: Die Eingagnsdaten
+    typeParameters:
+    - id: Tin
+      description: der generische Typparameter für die Eingangsdaten
+    - id: Tout
+      description: der generische Typparameter für die Ausgangsdaten
+    return:
+      type: '{Tout}'
+      description: Die Ausgangsdaten
+    content.vb: Public MustOverride Function Adapt(Of Tin, Tout As New)(input As Tin) As Tout
+  overload: Sin.Net.Domain.Persistence.Adapter.AdapterBase.Adapt*
+  implements:
+  - Sin.Net.Domain.Persistence.Adapter.IAdaptable.Adapt``2({Tin})
+  nameWithType.vb: AdapterBase.Adapt(Of Tin, Tout)(Tin)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: Sin.Net.Domain.Persistence.Adapter.AdapterBase.Adapt(Of Tin, Tout)(Tin)
+  name.vb: Adapt(Of Tin, Tout)(Tin)
+- uid: Sin.Net.Domain.Persistence.Adapter.AdapterBase.ValidateTypes``2(System.Type,System.Type)
+  commentId: M:Sin.Net.Domain.Persistence.Adapter.AdapterBase.ValidateTypes``2(System.Type,System.Type)
+  id: ValidateTypes``2(System.Type,System.Type)
+  parent: Sin.Net.Domain.Persistence.Adapter.AdapterBase
+  langs:
+  - csharp
+  - vb
+  name: ValidateTypes<Tin, Tout>(Type, Type)
+  nameWithType: AdapterBase.ValidateTypes<Tin, Tout>(Type, Type)
+  fullName: Sin.Net.Domain.Persistence.Adapter.AdapterBase.ValidateTypes<Tin, Tout>(System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: ValidateTypes
+    path: ../Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs
+    startLine: 26
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Adapter
+  summary: "\nValidiert die generischen Ein- und Ausgabetypen, die der Adapter verarbeiten soll.\n"
+  example: []
+  syntax:
+    content: public bool ValidateTypes<Tin, Tout>(Type inType, Type outType)
+    parameters:
+    - id: inType
+      type: System.Type
+      description: Type-Objekt der Eingabedaten
+    - id: outType
+      type: System.Type
+      description: Type-Objekt der Ausgabedaten
+    typeParameters:
+    - id: Tin
+      description: Eingabetyp der Adapt Methode
+    - id: Tout
+      description: Ausgabetyp der Adapt Methode
+    return:
+      type: System.Boolean
+      description: Wenn die generischen Typparameter und die Typ-Objekte übereinstimmen wird true, andernfalls false ausgegeben.
+    content.vb: Public Function ValidateTypes(Of Tin, Tout)(inType As Type, outType As Type) As Boolean
+  overload: Sin.Net.Domain.Persistence.Adapter.AdapterBase.ValidateTypes*
+  nameWithType.vb: AdapterBase.ValidateTypes(Of Tin, Tout)(Type, Type)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sin.Net.Domain.Persistence.Adapter.AdapterBase.ValidateTypes(Of Tin, Tout)(System.Type, System.Type)
+  name.vb: ValidateTypes(Of Tin, Tout)(Type, Type)
+- uid: Sin.Net.Domain.Persistence.Adapter.AdapterBase.ConvertOutput``1(System.Object)
+  commentId: M:Sin.Net.Domain.Persistence.Adapter.AdapterBase.ConvertOutput``1(System.Object)
+  id: ConvertOutput``1(System.Object)
+  parent: Sin.Net.Domain.Persistence.Adapter.AdapterBase
+  langs:
+  - csharp
+  - vb
+  name: ConvertOutput<T>(Object)
+  nameWithType: AdapterBase.ConvertOutput<T>(Object)
+  fullName: Sin.Net.Domain.Persistence.Adapter.AdapterBase.ConvertOutput<T>(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: ConvertOutput
+    path: ../Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs
+    startLine: 46
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Adapter
+  summary: "\nKonvertiert das Ausgabeobjekt des Adapterobjektes in den generischen Ausgabetyp.\n"
+  example: []
+  syntax:
+    content: public T ConvertOutput<T>(object data)
+    parameters:
+    - id: data
+      type: System.Object
+      description: Das Datenobjekt
+    typeParameters:
+    - id: T
+      description: Der Ausgabetyp
+    return:
+      type: '{T}'
+      description: der konvertierte generische Ausgabetyp
+    content.vb: Public Function ConvertOutput(Of T)(data As Object) As T
+  overload: Sin.Net.Domain.Persistence.Adapter.AdapterBase.ConvertOutput*
+  nameWithType.vb: AdapterBase.ConvertOutput(Of T)(Object)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sin.Net.Domain.Persistence.Adapter.AdapterBase.ConvertOutput(Of T)(System.Object)
+  name.vb: ConvertOutput(Of T)(Object)
+references:
+- uid: Sin.Net.Domain.Persistence.Adapter
+  commentId: N:Sin.Net.Domain.Persistence.Adapter
+  name: Sin.Net.Domain.Persistence.Adapter
+  nameWithType: Sin.Net.Domain.Persistence.Adapter
+  fullName: Sin.Net.Domain.Persistence.Adapter
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+  commentId: T:Sin.Net.Domain.Persistence.Adapter.IAdaptable
+  parent: Sin.Net.Domain.Persistence.Adapter
+  name: IAdaptable
+  nameWithType: IAdaptable
+  fullName: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  name: SecureAccess(SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  name: SecureAccess(Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  isExternal: true
+  name: SecureAccess(Object, SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions
+  commentId: T:Sin.Net.Domain.System.Security.SecurityExtensions
+  parent: Sin.Net.Domain.System.Security
+  name: SecurityExtensions
+  nameWithType: SecurityExtensions
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  isExternal: true
+  name: SecureAccess(Object, Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security
+  commentId: N:Sin.Net.Domain.System.Security
+  name: Sin.Net.Domain.System.Security
+  nameWithType: Sin.Net.Domain.System.Security
+  fullName: Sin.Net.Domain.System.Security
+- uid: Sin.Net.Domain.Persistence.Adapter.AdapterBase.Adapt*
+  commentId: Overload:Sin.Net.Domain.Persistence.Adapter.AdapterBase.Adapt
+  name: Adapt
+  nameWithType: AdapterBase.Adapt
+  fullName: Sin.Net.Domain.Persistence.Adapter.AdapterBase.Adapt
+- uid: Sin.Net.Domain.Persistence.Adapter.IAdaptable.Adapt``2({Tin})
+  commentId: M:Sin.Net.Domain.Persistence.Adapter.IAdaptable.Adapt``2(``0)
+  parent: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+  definition: Sin.Net.Domain.Persistence.Adapter.IAdaptable.Adapt``2(``0)
+  name: Adapt<Tin, Tout>(Tin)
+  nameWithType: IAdaptable.Adapt<Tin, Tout>(Tin)
+  fullName: Sin.Net.Domain.Persistence.Adapter.IAdaptable.Adapt<Tin, Tout>(Tin)
+  nameWithType.vb: IAdaptable.Adapt(Of Tin, Tout)(Tin)
+  fullName.vb: Sin.Net.Domain.Persistence.Adapter.IAdaptable.Adapt(Of Tin, Tout)(Tin)
+  name.vb: Adapt(Of Tin, Tout)(Tin)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Persistence.Adapter.IAdaptable.Adapt``2(``0)
+    name: Adapt<Tin, Tout>
+    nameWithType: IAdaptable.Adapt<Tin, Tout>
+    fullName: Sin.Net.Domain.Persistence.Adapter.IAdaptable.Adapt<Tin, Tout>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: Tin
+    nameWithType: Tin
+    fullName: Tin
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Persistence.Adapter.IAdaptable.Adapt``2(``0)
+    name: Adapt(Of Tin, Tout)
+    nameWithType: IAdaptable.Adapt(Of Tin, Tout)
+    fullName: Sin.Net.Domain.Persistence.Adapter.IAdaptable.Adapt(Of Tin, Tout)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: Tin
+    nameWithType: Tin
+    fullName: Tin
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{Tin}'
+  commentId: '!:Tin'
+  definition: Tin
+  name: Tin
+  nameWithType: Tin
+  fullName: Tin
+- uid: '{Tout}'
+  commentId: '!:Tout'
+  definition: Tout
+  name: Tout
+  nameWithType: Tout
+  fullName: Tout
+- uid: Sin.Net.Domain.Persistence.Adapter.IAdaptable.Adapt``2(``0)
+  commentId: M:Sin.Net.Domain.Persistence.Adapter.IAdaptable.Adapt``2(``0)
+  name: Adapt<Tin, Tout>(Tin)
+  nameWithType: IAdaptable.Adapt<Tin, Tout>(Tin)
+  fullName: Sin.Net.Domain.Persistence.Adapter.IAdaptable.Adapt<Tin, Tout>(Tin)
+  nameWithType.vb: IAdaptable.Adapt(Of Tin, Tout)(Tin)
+  fullName.vb: Sin.Net.Domain.Persistence.Adapter.IAdaptable.Adapt(Of Tin, Tout)(Tin)
+  name.vb: Adapt(Of Tin, Tout)(Tin)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Persistence.Adapter.IAdaptable.Adapt``2(``0)
+    name: Adapt<Tin, Tout>
+    nameWithType: IAdaptable.Adapt<Tin, Tout>
+    fullName: Sin.Net.Domain.Persistence.Adapter.IAdaptable.Adapt<Tin, Tout>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: Tin
+    nameWithType: Tin
+    fullName: Tin
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Persistence.Adapter.IAdaptable.Adapt``2(``0)
+    name: Adapt(Of Tin, Tout)
+    nameWithType: IAdaptable.Adapt(Of Tin, Tout)
+    fullName: Sin.Net.Domain.Persistence.Adapter.IAdaptable.Adapt(Of Tin, Tout)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: Tin
+    nameWithType: Tin
+    fullName: Tin
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Tin
+  name: Tin
+  nameWithType: Tin
+  fullName: Tin
+- uid: Tout
+  name: Tout
+  nameWithType: Tout
+  fullName: Tout
+- uid: Sin.Net.Domain.Persistence.Adapter.AdapterBase.ValidateTypes*
+  commentId: Overload:Sin.Net.Domain.Persistence.Adapter.AdapterBase.ValidateTypes
+  name: ValidateTypes
+  nameWithType: AdapterBase.ValidateTypes
+  fullName: Sin.Net.Domain.Persistence.Adapter.AdapterBase.ValidateTypes
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sin.Net.Domain.Persistence.Adapter.AdapterBase.ConvertOutput*
+  commentId: Overload:Sin.Net.Domain.Persistence.Adapter.AdapterBase.ConvertOutput
+  name: ConvertOutput
+  nameWithType: AdapterBase.ConvertOutput
+  fullName: Sin.Net.Domain.Persistence.Adapter.AdapterBase.ConvertOutput
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

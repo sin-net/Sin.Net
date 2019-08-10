@@ -1,0 +1,617 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable
+  commentId: T:Sin.Net.Domain.Persistence.Logging.ILoggable
+  id: ILoggable
+  parent: Sin.Net.Domain.Persistence.Logging
+  children:
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.String)
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.String)
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Fatal(System.Exception)
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.String)
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Start
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Stop
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.String)
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ILoggable
+  nameWithType: ILoggable
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable
+  type: Interface
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: ILoggable
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+    startLine: 7
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  summary: "\nThis interface defines the implementation of concrete logging classes that will be injected and used in the static Log class.\n"
+  example: []
+  syntax:
+    content: public interface ILoggable
+    content.vb: Public Interface ILoggable
+  extensionMethods:
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Start
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Start
+  id: Start
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: ILoggable.Start()
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Start()
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Start
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+    startLine: 13
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  summary: "\nThe startup routine for the logging implementation. \nCall this method in the constructor for auto-start readiness of the logging.\n"
+  example: []
+  syntax:
+    content: void Start()
+    content.vb: Sub Start
+  overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Start*
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Stop
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Stop
+  id: Stop
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: ILoggable.Stop()
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Stop()
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Stop
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+    startLine: 18
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  summary: "\nThe stop routine.\n"
+  example: []
+  syntax:
+    content: void Stop()
+    content.vb: Sub Stop
+  overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Stop*
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.String)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.String)
+  id: Trace(System.String)
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  langs:
+  - csharp
+  - vb
+  name: Trace(String)
+  nameWithType: ILoggable.Trace(String)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Trace
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+    startLine: 24
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  summary: "\nLog the trace message.\n"
+  example: []
+  syntax:
+    content: void Trace(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+      description: The message string
+    content.vb: Sub Trace(msg As String)
+  overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Trace*
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.String)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.String)
+  id: Debug(System.String)
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  langs:
+  - csharp
+  - vb
+  name: Debug(String)
+  nameWithType: ILoggable.Debug(String)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Debug
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+    startLine: 30
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  summary: "\nLog the debug message.\n"
+  example: []
+  syntax:
+    content: void Debug(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+      description: The message string
+    content.vb: Sub Debug(msg As String)
+  overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug*
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.String)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.String)
+  id: Info(System.String)
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  langs:
+  - csharp
+  - vb
+  name: Info(String)
+  nameWithType: ILoggable.Info(String)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Info
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+    startLine: 36
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  summary: "\nLog the info message.\n"
+  example: []
+  syntax:
+    content: void Info(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+      description: The message string
+    content.vb: Sub Info(msg As String)
+  overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Info*
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.String)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.String)
+  id: Warn(System.String)
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  langs:
+  - csharp
+  - vb
+  name: Warn(String)
+  nameWithType: ILoggable.Warn(String)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Warn
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+    startLine: 42
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  summary: "\nLog the warning message.\n"
+  example: []
+  syntax:
+    content: void Warn(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+      description: The message string
+    content.vb: Sub Warn(msg As String)
+  overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Warn*
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.String)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.String)
+  id: Error(System.String)
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  langs:
+  - csharp
+  - vb
+  name: Error(String)
+  nameWithType: ILoggable.Error(String)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Error
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+    startLine: 48
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  summary: "\nLog the error message.\n"
+  example: []
+  syntax:
+    content: void Error(string msg)
+    parameters:
+    - id: msg
+      type: System.String
+      description: The message string
+    content.vb: Sub Error(msg As String)
+  overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Error*
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Fatal(System.Exception)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Fatal(System.Exception)
+  id: Fatal(System.Exception)
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  langs:
+  - csharp
+  - vb
+  name: Fatal(Exception)
+  nameWithType: ILoggable.Fatal(Exception)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Fatal(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Fatal
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+    startLine: 54
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  summary: "\nLog the exception.\n"
+  example: []
+  syntax:
+    content: void Fatal(Exception ex)
+    parameters:
+    - id: ex
+      type: System.Exception
+    content.vb: Sub Fatal(ex As Exception)
+  overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Fatal*
+references:
+- uid: Sin.Net.Domain.Persistence.Logging
+  commentId: N:Sin.Net.Domain.Persistence.Logging
+  name: Sin.Net.Domain.Persistence.Logging
+  nameWithType: Sin.Net.Domain.Persistence.Logging
+  fullName: Sin.Net.Domain.Persistence.Logging
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  name: SecureAccess(SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  name: SecureAccess(Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  isExternal: true
+  name: SecureAccess(Object, SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions
+  commentId: T:Sin.Net.Domain.System.Security.SecurityExtensions
+  parent: Sin.Net.Domain.System.Security
+  name: SecurityExtensions
+  nameWithType: SecurityExtensions
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  isExternal: true
+  name: SecureAccess(Object, Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security
+  commentId: N:Sin.Net.Domain.System.Security
+  name: Sin.Net.Domain.System.Security
+  nameWithType: Sin.Net.Domain.System.Security
+  fullName: Sin.Net.Domain.System.Security
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Start*
+  commentId: Overload:Sin.Net.Domain.Persistence.Logging.ILoggable.Start
+  name: Start
+  nameWithType: ILoggable.Start
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Start
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Stop*
+  commentId: Overload:Sin.Net.Domain.Persistence.Logging.ILoggable.Stop
+  name: Stop
+  nameWithType: ILoggable.Stop
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Stop
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Trace*
+  commentId: Overload:Sin.Net.Domain.Persistence.Logging.ILoggable.Trace
+  name: Trace
+  nameWithType: ILoggable.Trace
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Trace
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug*
+  commentId: Overload:Sin.Net.Domain.Persistence.Logging.ILoggable.Debug
+  name: Debug
+  nameWithType: ILoggable.Debug
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Info*
+  commentId: Overload:Sin.Net.Domain.Persistence.Logging.ILoggable.Info
+  name: Info
+  nameWithType: ILoggable.Info
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Info
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Warn*
+  commentId: Overload:Sin.Net.Domain.Persistence.Logging.ILoggable.Warn
+  name: Warn
+  nameWithType: ILoggable.Warn
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Warn
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Error*
+  commentId: Overload:Sin.Net.Domain.Persistence.Logging.ILoggable.Error
+  name: Error
+  nameWithType: ILoggable.Error
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Error
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Fatal*
+  commentId: Overload:Sin.Net.Domain.Persistence.Logging.ILoggable.Fatal
+  name: Fatal
+  nameWithType: ILoggable.Fatal
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Fatal
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception

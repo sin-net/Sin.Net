@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Persistence.IO.Json
+  commentId: N:Sin.Net.Persistence.IO.Json
+  id: Sin.Net.Persistence.IO.Json
+  children:
+  - Sin.Net.Persistence.IO.Json.JsonIO
+  - Sin.Net.Persistence.IO.Json.TypedSerializationBinder
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Persistence.IO.Json
+  nameWithType: Sin.Net.Persistence.IO.Json
+  fullName: Sin.Net.Persistence.IO.Json
+  type: Namespace
+  assemblies:
+  - Sin.Net.Persistence
+references:
+- uid: Sin.Net.Persistence.IO.Json.JsonIO
+  commentId: T:Sin.Net.Persistence.IO.Json.JsonIO
+  name: JsonIO
+  nameWithType: JsonIO
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO
+- uid: Sin.Net.Persistence.IO.Json.TypedSerializationBinder
+  commentId: T:Sin.Net.Persistence.IO.Json.TypedSerializationBinder
+  name: TypedSerializationBinder
+  nameWithType: TypedSerializationBinder
+  fullName: Sin.Net.Persistence.IO.Json.TypedSerializationBinder

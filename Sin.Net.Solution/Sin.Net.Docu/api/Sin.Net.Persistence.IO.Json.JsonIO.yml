@@ -1,0 +1,676 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Persistence.IO.Json.JsonIO
+  commentId: T:Sin.Net.Persistence.IO.Json.JsonIO
+  id: JsonIO
+  parent: Sin.Net.Persistence.IO.Json
+  children:
+  - Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
+  - Sin.Net.Persistence.IO.Json.JsonIO.ReadJson(System.String)
+  - Sin.Net.Persistence.IO.Json.JsonIO.ReadJson``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
+  - Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object,System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
+  - Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object)
+  - Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object,Newtonsoft.Json.Serialization.ISerializationBinder)
+  langs:
+  - csharp
+  - vb
+  name: JsonIO
+  nameWithType: JsonIO
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO
+  type: Class
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: JsonIO
+    path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
+    startLine: 12
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.IO.Json
+  summary: "\nStatic class to convert between objects and json-strings. \n"
+  example: []
+  syntax:
+    content: public static class JsonIO
+    content.vb: Public Module JsonIO
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object)
+  commentId: M:Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object)
+  id: ToJsonString(System.Object)
+  parent: Sin.Net.Persistence.IO.Json.JsonIO
+  langs:
+  - csharp
+  - vb
+  name: ToJsonString(Object)
+  nameWithType: JsonIO.ToJsonString(Object)
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: ToJsonString
+    path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
+    startLine: 20
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.IO.Json
+  summary: "\nCreates a json-string out of an object.\n"
+  example: []
+  syntax:
+    content: public static string ToJsonString(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The objekt to be serialized.
+    return:
+      type: System.String
+      description: The resulting string
+    content.vb: Public Shared Function ToJsonString(obj As Object) As String
+  overload: Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object,Newtonsoft.Json.Serialization.ISerializationBinder)
+  commentId: M:Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object,Newtonsoft.Json.Serialization.ISerializationBinder)
+  id: ToJsonString(System.Object,Newtonsoft.Json.Serialization.ISerializationBinder)
+  parent: Sin.Net.Persistence.IO.Json.JsonIO
+  langs:
+  - csharp
+  - vb
+  name: ToJsonString(Object, ISerializationBinder)
+  nameWithType: JsonIO.ToJsonString(Object, ISerializationBinder)
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object, Newtonsoft.Json.Serialization.ISerializationBinder)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: ToJsonString
+    path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
+    startLine: 31
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.IO.Json
+  syntax:
+    content: public static string ToJsonString(object obj, ISerializationBinder binder = null)
+    parameters:
+    - id: obj
+      type: System.Object
+    - id: binder
+      type: Newtonsoft.Json.Serialization.ISerializationBinder
+    return:
+      type: System.String
+    content.vb: Public Shared Function ToJsonString(obj As Object, binder As ISerializationBinder = Nothing) As String
+  overload: Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
+  commentId: M:Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
+  id: FromJsonString``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
+  parent: Sin.Net.Persistence.IO.Json.JsonIO
+  langs:
+  - csharp
+  - vb
+  name: FromJsonString<T>(String, ISerializationBinder)
+  nameWithType: JsonIO.FromJsonString<T>(String, ISerializationBinder)
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString<T>(System.String, Newtonsoft.Json.Serialization.ISerializationBinder)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: FromJsonString
+    path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
+    startLine: 65
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.IO.Json
+  summary: "\nConverts a json-stringinto an objekt of type T\n"
+  example: []
+  syntax:
+    content: public static T FromJsonString<T>(string json, ISerializationBinder binder = null)
+    parameters:
+    - id: json
+      type: System.String
+      description: The json-string
+    - id: binder
+      type: Newtonsoft.Json.Serialization.ISerializationBinder
+      description: The optional binder implementation
+    typeParameters:
+    - id: T
+      description: The typeparam
+    return:
+      type: '{T}'
+      description: The deserialized object of type t
+    content.vb: Public Shared Function FromJsonString(Of T)(json As String, binder As ISerializationBinder = Nothing) As T
+  overload: Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString*
+  nameWithType.vb: JsonIO.FromJsonString(Of T)(String, ISerializationBinder)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString(Of T)(System.String, Newtonsoft.Json.Serialization.ISerializationBinder)
+  name.vb: FromJsonString(Of T)(String, ISerializationBinder)
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
+  commentId: M:Sin.Net.Persistence.IO.Json.JsonIO.ReadJson``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
+  id: ReadJson``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
+  parent: Sin.Net.Persistence.IO.Json.JsonIO
+  langs:
+  - csharp
+  - vb
+  name: ReadJson<T>(String, ISerializationBinder)
+  nameWithType: JsonIO.ReadJson<T>(String, ISerializationBinder)
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson<T>(System.String, Newtonsoft.Json.Serialization.ISerializationBinder)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: ReadJson
+    path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
+    startLine: 90
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.IO.Json
+  summary: "\nReads a json file and returns the converted object.\n"
+  example: []
+  syntax:
+    content: public static T ReadJson<T>(string file, ISerializationBinder binder = null)
+    parameters:
+    - id: file
+      type: System.String
+      description: The complete file path.
+    - id: binder
+      type: Newtonsoft.Json.Serialization.ISerializationBinder
+      description: The optional binder implementation.
+    typeParameters:
+    - id: T
+      description: The typeparam
+    return:
+      type: '{T}'
+      description: The deserialized object of type t.
+    content.vb: Public Shared Function ReadJson(Of T)(file As String, binder As ISerializationBinder = Nothing) As T
+  overload: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson*
+  nameWithType.vb: JsonIO.ReadJson(Of T)(String, ISerializationBinder)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson(Of T)(System.String, Newtonsoft.Json.Serialization.ISerializationBinder)
+  name.vb: ReadJson(Of T)(String, ISerializationBinder)
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson(System.String)
+  commentId: M:Sin.Net.Persistence.IO.Json.JsonIO.ReadJson(System.String)
+  id: ReadJson(System.String)
+  parent: Sin.Net.Persistence.IO.Json.JsonIO
+  langs:
+  - csharp
+  - vb
+  name: ReadJson(String)
+  nameWithType: JsonIO.ReadJson(String)
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: ReadJson
+    path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
+    startLine: 107
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.IO.Json
+  summary: "\nReads a json file and returns the complete json-string.\n"
+  example: []
+  syntax:
+    content: public static string ReadJson(string file)
+    parameters:
+    - id: file
+      type: System.String
+      description: The complete file path.
+    return:
+      type: System.String
+      description: The deserialized object of type t.
+    content.vb: Public Shared Function ReadJson(file As String) As String
+  overload: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object,System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
+  commentId: M:Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object,System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
+  id: SaveToJson(System.Object,System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
+  parent: Sin.Net.Persistence.IO.Json.JsonIO
+  langs:
+  - csharp
+  - vb
+  name: SaveToJson(Object, String, ISerializationBinder)
+  nameWithType: JsonIO.SaveToJson(Object, String, ISerializationBinder)
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object, System.String, Newtonsoft.Json.Serialization.ISerializationBinder)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: SaveToJson
+    path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
+    startLine: 125
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.IO.Json
+  summary: "\nWrites an serialized object into a file.\n"
+  example: []
+  syntax:
+    content: public static bool SaveToJson(object obj, string file, ISerializationBinder binder = null)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to be serialized.
+    - id: file
+      type: System.String
+      description: The complete file path.
+    - id: binder
+      type: Newtonsoft.Json.Serialization.ISerializationBinder
+      description: The optional binder implementation.
+    return:
+      type: System.Boolean
+      description: If successful it returns &apos;true&apos; otherwise &apos;false&apos;.
+    content.vb: Public Shared Function SaveToJson(obj As Object, file As String, binder As ISerializationBinder = Nothing) As Boolean
+  overload: Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Sin.Net.Persistence.IO.Json
+  commentId: N:Sin.Net.Persistence.IO.Json
+  name: Sin.Net.Persistence.IO.Json
+  nameWithType: Sin.Net.Persistence.IO.Json
+  fullName: Sin.Net.Persistence.IO.Json
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString*
+  commentId: Overload:Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString
+  name: ToJsonString
+  nameWithType: JsonIO.ToJsonString
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Newtonsoft.Json.Serialization.ISerializationBinder
+  commentId: T:Newtonsoft.Json.Serialization.ISerializationBinder
+  parent: Newtonsoft.Json.Serialization
+  isExternal: true
+  name: ISerializationBinder
+  nameWithType: ISerializationBinder
+  fullName: Newtonsoft.Json.Serialization.ISerializationBinder
+- uid: Newtonsoft.Json.Serialization
+  commentId: N:Newtonsoft.Json.Serialization
+  isExternal: true
+  name: Newtonsoft.Json.Serialization
+  nameWithType: Newtonsoft.Json.Serialization
+  fullName: Newtonsoft.Json.Serialization
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString*
+  commentId: Overload:Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString
+  name: FromJsonString
+  nameWithType: JsonIO.FromJsonString
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson*
+  commentId: Overload:Sin.Net.Persistence.IO.Json.JsonIO.ReadJson
+  name: ReadJson
+  nameWithType: JsonIO.ReadJson
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson*
+  commentId: Overload:Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson
+  name: SaveToJson
+  nameWithType: JsonIO.SaveToJson
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

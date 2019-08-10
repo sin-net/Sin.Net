@@ -1,0 +1,56 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.Infrastructure.Mqtt
+  commentId: N:Sin.Net.Domain.Infrastructure.Mqtt
+  id: Sin.Net.Domain.Infrastructure.Mqtt
+  children:
+  - Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+  - Sin.Net.Domain.Infrastructure.Mqtt.MqttConnectedEventArgs
+  - Sin.Net.Domain.Infrastructure.Mqtt.MqttConnectedEventHandler
+  - Sin.Net.Domain.Infrastructure.Mqtt.MqttMessageReceivedEventHandler
+  - Sin.Net.Domain.Infrastructure.Mqtt.MqttReceivedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Domain.Infrastructure.Mqtt
+  nameWithType: Sin.Net.Domain.Infrastructure.Mqtt
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt
+  type: Namespace
+  assemblies:
+  - Sin.Net.Domain
+references:
+- uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+  commentId: T:Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+  parent: Sin.Net.Domain.Infrastructure.Mqtt
+  name: IMqttControlable
+  nameWithType: IMqttControlable
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+- uid: Sin.Net.Domain.Infrastructure.Mqtt.MqttConnectedEventHandler
+  commentId: T:Sin.Net.Domain.Infrastructure.Mqtt.MqttConnectedEventHandler
+  parent: Sin.Net.Domain.Infrastructure.Mqtt
+  name: MqttConnectedEventHandler
+  nameWithType: MqttConnectedEventHandler
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt.MqttConnectedEventHandler
+- uid: Sin.Net.Domain.Infrastructure.Mqtt.MqttConnectedEventArgs
+  commentId: T:Sin.Net.Domain.Infrastructure.Mqtt.MqttConnectedEventArgs
+  parent: Sin.Net.Domain.Infrastructure.Mqtt
+  name: MqttConnectedEventArgs
+  nameWithType: MqttConnectedEventArgs
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt.MqttConnectedEventArgs
+- uid: Sin.Net.Domain.Infrastructure.Mqtt.MqttMessageReceivedEventHandler
+  commentId: T:Sin.Net.Domain.Infrastructure.Mqtt.MqttMessageReceivedEventHandler
+  parent: Sin.Net.Domain.Infrastructure.Mqtt
+  name: MqttMessageReceivedEventHandler
+  nameWithType: MqttMessageReceivedEventHandler
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt.MqttMessageReceivedEventHandler
+- uid: Sin.Net.Domain.Infrastructure.Mqtt.MqttReceivedEventArgs
+  commentId: T:Sin.Net.Domain.Infrastructure.Mqtt.MqttReceivedEventArgs
+  parent: Sin.Net.Domain.Infrastructure.Mqtt
+  name: MqttReceivedEventArgs
+  nameWithType: MqttReceivedEventArgs
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt.MqttReceivedEventArgs
+- uid: Sin.Net.Domain.Infrastructure.Mqtt
+  commentId: N:Sin.Net.Domain.Infrastructure.Mqtt
+  name: Sin.Net.Domain.Infrastructure.Mqtt
+  nameWithType: Sin.Net.Domain.Infrastructure.Mqtt
+  fullName: Sin.Net.Domain.Infrastructure.Mqtt

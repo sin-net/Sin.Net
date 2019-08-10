@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.Persistence.Logging
+  commentId: N:Sin.Net.Domain.Persistence.Logging
+  id: Sin.Net.Domain.Persistence.Logging
+  children:
+  - Sin.Net.Domain.Persistence.Logging.ILoggable
+  - Sin.Net.Domain.Persistence.Logging.Log
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Domain.Persistence.Logging
+  nameWithType: Sin.Net.Domain.Persistence.Logging
+  fullName: Sin.Net.Domain.Persistence.Logging
+  type: Namespace
+  assemblies:
+  - Sin.Net.Domain
+references:
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable
+  commentId: T:Sin.Net.Domain.Persistence.Logging.ILoggable
+  parent: Sin.Net.Domain.Persistence.Logging
+  name: ILoggable
+  nameWithType: ILoggable
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable
+- uid: Sin.Net.Domain.Persistence.Logging.Log
+  commentId: T:Sin.Net.Domain.Persistence.Logging.Log
+  name: Log
+  nameWithType: Log
+  fullName: Sin.Net.Domain.Persistence.Logging.Log
+- uid: Sin.Net.Domain.Persistence.Logging
+  commentId: N:Sin.Net.Domain.Persistence.Logging
+  name: Sin.Net.Domain.Persistence.Logging
+  nameWithType: Sin.Net.Domain.Persistence.Logging
+  fullName: Sin.Net.Domain.Persistence.Logging

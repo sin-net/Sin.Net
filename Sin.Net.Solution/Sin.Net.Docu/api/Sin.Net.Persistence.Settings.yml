@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Persistence.Settings
+  commentId: N:Sin.Net.Persistence.Settings
+  id: Sin.Net.Persistence.Settings
+  children:
+  - Sin.Net.Persistence.Settings.CsvSetting
+  - Sin.Net.Persistence.Settings.FileSetting
+  - Sin.Net.Persistence.Settings.JsonSetting
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Persistence.Settings
+  nameWithType: Sin.Net.Persistence.Settings
+  fullName: Sin.Net.Persistence.Settings
+  type: Namespace
+  assemblies:
+  - Sin.Net.Persistence
+references:
+- uid: Sin.Net.Persistence.Settings.CsvSetting
+  commentId: T:Sin.Net.Persistence.Settings.CsvSetting
+  name: CsvSetting
+  nameWithType: CsvSetting
+  fullName: Sin.Net.Persistence.Settings.CsvSetting
+- uid: Sin.Net.Persistence.Settings.FileSetting
+  commentId: T:Sin.Net.Persistence.Settings.FileSetting
+  parent: Sin.Net.Persistence.Settings
+  name: FileSetting
+  nameWithType: FileSetting
+  fullName: Sin.Net.Persistence.Settings.FileSetting
+- uid: Sin.Net.Persistence.Settings.JsonSetting
+  commentId: T:Sin.Net.Persistence.Settings.JsonSetting
+  name: JsonSetting
+  nameWithType: JsonSetting
+  fullName: Sin.Net.Persistence.Settings.JsonSetting
+- uid: Sin.Net.Persistence.Settings
+  commentId: N:Sin.Net.Persistence.Settings
+  name: Sin.Net.Persistence.Settings
+  nameWithType: Sin.Net.Persistence.Settings
+  fullName: Sin.Net.Persistence.Settings

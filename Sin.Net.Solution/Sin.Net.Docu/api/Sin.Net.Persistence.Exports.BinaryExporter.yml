@@ -1,0 +1,1158 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Persistence.Exports.BinaryExporter
+  commentId: T:Sin.Net.Persistence.Exports.BinaryExporter
+  id: BinaryExporter
+  parent: Sin.Net.Persistence.Exports
+  children:
+  - Sin.Net.Persistence.Exports.BinaryExporter.#ctor
+  - Sin.Net.Persistence.Exports.BinaryExporter.Build``1(``0)
+  - Sin.Net.Persistence.Exports.BinaryExporter.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  - Sin.Net.Persistence.Exports.BinaryExporter.Export
+  - Sin.Net.Persistence.Exports.BinaryExporter.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  - Sin.Net.Persistence.Exports.BinaryExporter.Type
+  langs:
+  - csharp
+  - vb
+  name: BinaryExporter
+  nameWithType: BinaryExporter
+  fullName: Sin.Net.Persistence.Exports.BinaryExporter
+  type: Class
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/Exports/BinaryExporter.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: BinaryExporter
+    path: ../Sin.Net.Persistence/Exports/BinaryExporter.cs
+    startLine: 13
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.Exports
+  syntax:
+    content: 'public class BinaryExporter : IExportable'
+    content.vb: >-
+      Public Class BinaryExporter
+
+          Implements IExportable
+  inheritance:
+  - System.Object
+  implements:
+  - Sin.Net.Domain.Persistence.IExportable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sin.Net.Persistence.Exports.BinaryExporter.#ctor
+  commentId: M:Sin.Net.Persistence.Exports.BinaryExporter.#ctor
+  id: '#ctor'
+  parent: Sin.Net.Persistence.Exports.BinaryExporter
+  langs:
+  - csharp
+  - vb
+  name: BinaryExporter()
+  nameWithType: BinaryExporter.BinaryExporter()
+  fullName: Sin.Net.Persistence.Exports.BinaryExporter.BinaryExporter()
+  type: Constructor
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/Exports/BinaryExporter.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: .ctor
+    path: ../Sin.Net.Persistence/Exports/BinaryExporter.cs
+    startLine: 22
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.Exports
+  syntax:
+    content: public BinaryExporter()
+    content.vb: Public Sub New
+  overload: Sin.Net.Persistence.Exports.BinaryExporter.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Persistence.Exports.BinaryExporter.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  commentId: M:Sin.Net.Persistence.Exports.BinaryExporter.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  id: Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  parent: Sin.Net.Persistence.Exports.BinaryExporter
+  langs:
+  - csharp
+  - vb
+  name: Setup(SettingsBase)
+  nameWithType: BinaryExporter.Setup(SettingsBase)
+  fullName: Sin.Net.Persistence.Exports.BinaryExporter.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/Exports/BinaryExporter.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Setup
+    path: ../Sin.Net.Persistence/Exports/BinaryExporter.cs
+    startLine: 27
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.Exports
+  syntax:
+    content: public IExportable Setup(SettingsBase setting)
+    parameters:
+    - id: setting
+      type: Sin.Net.Domain.Persistence.Settings.SettingsBase
+    return:
+      type: Sin.Net.Domain.Persistence.IExportable
+    content.vb: Public Function Setup(setting As SettingsBase) As IExportable
+  overload: Sin.Net.Persistence.Exports.BinaryExporter.Setup*
+  implements:
+  - Sin.Net.Domain.Persistence.IExportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Persistence.Exports.BinaryExporter.Build``1(``0)
+  commentId: M:Sin.Net.Persistence.Exports.BinaryExporter.Build``1(``0)
+  id: Build``1(``0)
+  parent: Sin.Net.Persistence.Exports.BinaryExporter
+  langs:
+  - csharp
+  - vb
+  name: Build<T>(T)
+  nameWithType: BinaryExporter.Build<T>(T)
+  fullName: Sin.Net.Persistence.Exports.BinaryExporter.Build<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/Exports/BinaryExporter.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Build
+    path: ../Sin.Net.Persistence/Exports/BinaryExporter.cs
+    startLine: 41
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.Exports
+  syntax:
+    content: public IExportable Build<T>(T data)
+    parameters:
+    - id: data
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: Sin.Net.Domain.Persistence.IExportable
+    content.vb: Public Function Build(Of T)(data As T) As IExportable
+  overload: Sin.Net.Persistence.Exports.BinaryExporter.Build*
+  implements:
+  - Sin.Net.Domain.Persistence.IExportable.Build``1({T})
+  nameWithType.vb: BinaryExporter.Build(Of T)(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sin.Net.Persistence.Exports.BinaryExporter.Build(Of T)(T)
+  name.vb: Build(Of T)(T)
+- uid: Sin.Net.Persistence.Exports.BinaryExporter.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  commentId: M:Sin.Net.Persistence.Exports.BinaryExporter.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  id: Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  parent: Sin.Net.Persistence.Exports.BinaryExporter
+  langs:
+  - csharp
+  - vb
+  name: Build<T>(T, IAdaptable)
+  nameWithType: BinaryExporter.Build<T>(T, IAdaptable)
+  fullName: Sin.Net.Persistence.Exports.BinaryExporter.Build<T>(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/Exports/BinaryExporter.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Build
+    path: ../Sin.Net.Persistence/Exports/BinaryExporter.cs
+    startLine: 46
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.Exports
+  syntax:
+    content: public IExportable Build<T>(T data, IAdaptable adapter)
+    parameters:
+    - id: data
+      type: '{T}'
+    - id: adapter
+      type: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+    typeParameters:
+    - id: T
+    return:
+      type: Sin.Net.Domain.Persistence.IExportable
+    content.vb: Public Function Build(Of T)(data As T, adapter As IAdaptable) As IExportable
+  overload: Sin.Net.Persistence.Exports.BinaryExporter.Build*
+  implements:
+  - Sin.Net.Domain.Persistence.IExportable.Build``1({T},Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  nameWithType.vb: BinaryExporter.Build(Of T)(T, IAdaptable)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sin.Net.Persistence.Exports.BinaryExporter.Build(Of T)(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  name.vb: Build(Of T)(T, IAdaptable)
+- uid: Sin.Net.Persistence.Exports.BinaryExporter.Export
+  commentId: M:Sin.Net.Persistence.Exports.BinaryExporter.Export
+  id: Export
+  parent: Sin.Net.Persistence.Exports.BinaryExporter
+  langs:
+  - csharp
+  - vb
+  name: Export()
+  nameWithType: BinaryExporter.Export()
+  fullName: Sin.Net.Persistence.Exports.BinaryExporter.Export()
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/Exports/BinaryExporter.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Export
+    path: ../Sin.Net.Persistence/Exports/BinaryExporter.cs
+    startLine: 59
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.Exports
+  syntax:
+    content: public string Export()
+    return:
+      type: System.String
+    content.vb: Public Function Export As String
+  overload: Sin.Net.Persistence.Exports.BinaryExporter.Export*
+  implements:
+  - Sin.Net.Domain.Persistence.IExportable.Export
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Persistence.Exports.BinaryExporter.Type
+  commentId: P:Sin.Net.Persistence.Exports.BinaryExporter.Type
+  id: Type
+  parent: Sin.Net.Persistence.Exports.BinaryExporter
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: BinaryExporter.Type
+  fullName: Sin.Net.Persistence.Exports.BinaryExporter.Type
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/Exports/BinaryExporter.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Type
+    path: ../Sin.Net.Persistence/Exports/BinaryExporter.cs
+    startLine: 95
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.Exports
+  syntax:
+    content: public string Type { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Type As String
+  overload: Sin.Net.Persistence.Exports.BinaryExporter.Type*
+  implements:
+  - Sin.Net.Domain.Persistence.IExportable.Type
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Sin.Net.Persistence.Exports
+  commentId: N:Sin.Net.Persistence.Exports
+  name: Sin.Net.Persistence.Exports
+  nameWithType: Sin.Net.Persistence.Exports
+  fullName: Sin.Net.Persistence.Exports
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sin.Net.Domain.Persistence.IExportable
+  commentId: T:Sin.Net.Domain.Persistence.IExportable
+  parent: Sin.Net.Domain.Persistence
+  name: IExportable
+  nameWithType: IExportable
+  fullName: Sin.Net.Domain.Persistence.IExportable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  name: SecureAccess(SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  name: SecureAccess(Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sin.Net.Domain.Persistence
+  commentId: N:Sin.Net.Domain.Persistence
+  name: Sin.Net.Domain.Persistence
+  nameWithType: Sin.Net.Domain.Persistence
+  fullName: Sin.Net.Domain.Persistence
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  isExternal: true
+  name: SecureAccess(Object, SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions
+  commentId: T:Sin.Net.Domain.System.Security.SecurityExtensions
+  parent: Sin.Net.Domain.System.Security
+  name: SecurityExtensions
+  nameWithType: SecurityExtensions
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  isExternal: true
+  name: SecureAccess(Object, Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security
+  commentId: N:Sin.Net.Domain.System.Security
+  name: Sin.Net.Domain.System.Security
+  nameWithType: Sin.Net.Domain.System.Security
+  fullName: Sin.Net.Domain.System.Security
+- uid: Sin.Net.Persistence.Exports.BinaryExporter.#ctor*
+  commentId: Overload:Sin.Net.Persistence.Exports.BinaryExporter.#ctor
+  name: BinaryExporter
+  nameWithType: BinaryExporter.BinaryExporter
+  fullName: Sin.Net.Persistence.Exports.BinaryExporter.BinaryExporter
+- uid: Sin.Net.Persistence.Exports.BinaryExporter.Setup*
+  commentId: Overload:Sin.Net.Persistence.Exports.BinaryExporter.Setup
+  name: Setup
+  nameWithType: BinaryExporter.Setup
+  fullName: Sin.Net.Persistence.Exports.BinaryExporter.Setup
+- uid: Sin.Net.Domain.Persistence.IExportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  commentId: M:Sin.Net.Domain.Persistence.IExportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  parent: Sin.Net.Domain.Persistence.IExportable
+  name: Setup(SettingsBase)
+  nameWithType: IExportable.Setup(SettingsBase)
+  fullName: Sin.Net.Domain.Persistence.IExportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Persistence.IExportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+    name: Setup
+    nameWithType: IExportable.Setup
+    fullName: Sin.Net.Domain.Persistence.IExportable.Setup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Persistence.Settings.SettingsBase
+    name: SettingsBase
+    nameWithType: SettingsBase
+    fullName: Sin.Net.Domain.Persistence.Settings.SettingsBase
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Persistence.IExportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+    name: Setup
+    nameWithType: IExportable.Setup
+    fullName: Sin.Net.Domain.Persistence.IExportable.Setup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Persistence.Settings.SettingsBase
+    name: SettingsBase
+    nameWithType: SettingsBase
+    fullName: Sin.Net.Domain.Persistence.Settings.SettingsBase
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Persistence.Settings.SettingsBase
+  commentId: T:Sin.Net.Domain.Persistence.Settings.SettingsBase
+  parent: Sin.Net.Domain.Persistence.Settings
+  name: SettingsBase
+  nameWithType: SettingsBase
+  fullName: Sin.Net.Domain.Persistence.Settings.SettingsBase
+- uid: Sin.Net.Domain.Persistence.Settings
+  commentId: N:Sin.Net.Domain.Persistence.Settings
+  name: Sin.Net.Domain.Persistence.Settings
+  nameWithType: Sin.Net.Domain.Persistence.Settings
+  fullName: Sin.Net.Domain.Persistence.Settings
+- uid: Sin.Net.Persistence.Exports.BinaryExporter.Build*
+  commentId: Overload:Sin.Net.Persistence.Exports.BinaryExporter.Build
+  name: Build
+  nameWithType: BinaryExporter.Build
+  fullName: Sin.Net.Persistence.Exports.BinaryExporter.Build
+- uid: Sin.Net.Domain.Persistence.IExportable.Build``1({T})
+  commentId: M:Sin.Net.Domain.Persistence.IExportable.Build``1(``0)
+  parent: Sin.Net.Domain.Persistence.IExportable
+  definition: Sin.Net.Domain.Persistence.IExportable.Build``1(``0)
+  name: Build<T>(T)
+  nameWithType: IExportable.Build<T>(T)
+  fullName: Sin.Net.Domain.Persistence.IExportable.Build<T>(T)
+  nameWithType.vb: IExportable.Build(Of T)(T)
+  fullName.vb: Sin.Net.Domain.Persistence.IExportable.Build(Of T)(T)
+  name.vb: Build(Of T)(T)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0)
+    name: Build<T>
+    nameWithType: IExportable.Build<T>
+    fullName: Sin.Net.Domain.Persistence.IExportable.Build<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0)
+    name: Build(Of T)
+    nameWithType: IExportable.Build(Of T)
+    fullName: Sin.Net.Domain.Persistence.IExportable.Build(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0)
+  commentId: M:Sin.Net.Domain.Persistence.IExportable.Build``1(``0)
+  name: Build<T>(T)
+  nameWithType: IExportable.Build<T>(T)
+  fullName: Sin.Net.Domain.Persistence.IExportable.Build<T>(T)
+  nameWithType.vb: IExportable.Build(Of T)(T)
+  fullName.vb: Sin.Net.Domain.Persistence.IExportable.Build(Of T)(T)
+  name.vb: Build(Of T)(T)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0)
+    name: Build<T>
+    nameWithType: IExportable.Build<T>
+    fullName: Sin.Net.Domain.Persistence.IExportable.Build<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0)
+    name: Build(Of T)
+    nameWithType: IExportable.Build(Of T)
+    fullName: Sin.Net.Domain.Persistence.IExportable.Build(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Sin.Net.Domain.Persistence.IExportable.Build``1({T},Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  commentId: M:Sin.Net.Domain.Persistence.IExportable.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  parent: Sin.Net.Domain.Persistence.IExportable
+  definition: Sin.Net.Domain.Persistence.IExportable.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  name: Build<T>(T, IAdaptable)
+  nameWithType: IExportable.Build<T>(T, IAdaptable)
+  fullName: Sin.Net.Domain.Persistence.IExportable.Build<T>(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  nameWithType.vb: IExportable.Build(Of T)(T, IAdaptable)
+  fullName.vb: Sin.Net.Domain.Persistence.IExportable.Build(Of T)(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  name.vb: Build(Of T)(T, IAdaptable)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+    name: Build<T>
+    nameWithType: IExportable.Build<T>
+    fullName: Sin.Net.Domain.Persistence.IExportable.Build<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+    name: IAdaptable
+    nameWithType: IAdaptable
+    fullName: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+    name: Build(Of T)
+    nameWithType: IExportable.Build(Of T)
+    fullName: Sin.Net.Domain.Persistence.IExportable.Build(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+    name: IAdaptable
+    nameWithType: IAdaptable
+    fullName: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+  commentId: T:Sin.Net.Domain.Persistence.Adapter.IAdaptable
+  parent: Sin.Net.Domain.Persistence.Adapter
+  name: IAdaptable
+  nameWithType: IAdaptable
+  fullName: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+- uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  commentId: M:Sin.Net.Domain.Persistence.IExportable.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  name: Build<T>(T, IAdaptable)
+  nameWithType: IExportable.Build<T>(T, IAdaptable)
+  fullName: Sin.Net.Domain.Persistence.IExportable.Build<T>(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  nameWithType.vb: IExportable.Build(Of T)(T, IAdaptable)
+  fullName.vb: Sin.Net.Domain.Persistence.IExportable.Build(Of T)(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  name.vb: Build(Of T)(T, IAdaptable)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+    name: Build<T>
+    nameWithType: IExportable.Build<T>
+    fullName: Sin.Net.Domain.Persistence.IExportable.Build<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+    name: IAdaptable
+    nameWithType: IAdaptable
+    fullName: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+    name: Build(Of T)
+    nameWithType: IExportable.Build(Of T)
+    fullName: Sin.Net.Domain.Persistence.IExportable.Build(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+    name: IAdaptable
+    nameWithType: IAdaptable
+    fullName: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Persistence.Adapter
+  commentId: N:Sin.Net.Domain.Persistence.Adapter
+  name: Sin.Net.Domain.Persistence.Adapter
+  nameWithType: Sin.Net.Domain.Persistence.Adapter
+  fullName: Sin.Net.Domain.Persistence.Adapter
+- uid: Sin.Net.Persistence.Exports.BinaryExporter.Export*
+  commentId: Overload:Sin.Net.Persistence.Exports.BinaryExporter.Export
+  name: Export
+  nameWithType: BinaryExporter.Export
+  fullName: Sin.Net.Persistence.Exports.BinaryExporter.Export
+- uid: Sin.Net.Domain.Persistence.IExportable.Export
+  commentId: M:Sin.Net.Domain.Persistence.IExportable.Export
+  parent: Sin.Net.Domain.Persistence.IExportable
+  name: Export()
+  nameWithType: IExportable.Export()
+  fullName: Sin.Net.Domain.Persistence.IExportable.Export()
+  spec.csharp:
+  - uid: Sin.Net.Domain.Persistence.IExportable.Export
+    name: Export
+    nameWithType: IExportable.Export
+    fullName: Sin.Net.Domain.Persistence.IExportable.Export
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Persistence.IExportable.Export
+    name: Export
+    nameWithType: IExportable.Export
+    fullName: Sin.Net.Domain.Persistence.IExportable.Export
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sin.Net.Persistence.Exports.BinaryExporter.Type*
+  commentId: Overload:Sin.Net.Persistence.Exports.BinaryExporter.Type
+  name: Type
+  nameWithType: BinaryExporter.Type
+  fullName: Sin.Net.Persistence.Exports.BinaryExporter.Type
+- uid: Sin.Net.Domain.Persistence.IExportable.Type
+  commentId: P:Sin.Net.Domain.Persistence.IExportable.Type
+  parent: Sin.Net.Domain.Persistence.IExportable
+  name: Type
+  nameWithType: IExportable.Type
+  fullName: Sin.Net.Domain.Persistence.IExportable.Type

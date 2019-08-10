@@ -1,0 +1,1 @@
+﻿Open Packet-Manager console and run `docfx Sin.Net.Docu/docfx.json --serve`

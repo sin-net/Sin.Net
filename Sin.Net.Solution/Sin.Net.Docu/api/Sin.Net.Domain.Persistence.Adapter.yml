@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.Persistence.Adapter
+  commentId: N:Sin.Net.Domain.Persistence.Adapter
+  id: Sin.Net.Domain.Persistence.Adapter
+  children:
+  - Sin.Net.Domain.Persistence.Adapter.AdapterBase
+  - Sin.Net.Domain.Persistence.Adapter.IAdaptable
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Domain.Persistence.Adapter
+  nameWithType: Sin.Net.Domain.Persistence.Adapter
+  fullName: Sin.Net.Domain.Persistence.Adapter
+  type: Namespace
+  assemblies:
+  - Sin.Net.Domain
+references:
+- uid: Sin.Net.Domain.Persistence.Adapter.AdapterBase
+  commentId: T:Sin.Net.Domain.Persistence.Adapter.AdapterBase
+  parent: Sin.Net.Domain.Persistence.Adapter
+  name: AdapterBase
+  nameWithType: AdapterBase
+  fullName: Sin.Net.Domain.Persistence.Adapter.AdapterBase
+- uid: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+  commentId: T:Sin.Net.Domain.Persistence.Adapter.IAdaptable
+  parent: Sin.Net.Domain.Persistence.Adapter
+  name: IAdaptable
+  nameWithType: IAdaptable
+  fullName: Sin.Net.Domain.Persistence.Adapter.IAdaptable
+- uid: Sin.Net.Domain.Persistence.Adapter
+  commentId: N:Sin.Net.Domain.Persistence.Adapter
+  name: Sin.Net.Domain.Persistence.Adapter
+  nameWithType: Sin.Net.Domain.Persistence.Adapter
+  fullName: Sin.Net.Domain.Persistence.Adapter

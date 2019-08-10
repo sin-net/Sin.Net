@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Persistence.Imports
+  commentId: N:Sin.Net.Persistence.Imports
+  id: Sin.Net.Persistence.Imports
+  children:
+  - Sin.Net.Persistence.Imports.BinaryImporter
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Persistence.Imports
+  nameWithType: Sin.Net.Persistence.Imports
+  fullName: Sin.Net.Persistence.Imports
+  type: Namespace
+  assemblies:
+  - Sin.Net.Persistence
+references:
+- uid: Sin.Net.Persistence.Imports.BinaryImporter
+  commentId: T:Sin.Net.Persistence.Imports.BinaryImporter
+  name: BinaryImporter
+  nameWithType: BinaryImporter
+  fullName: Sin.Net.Persistence.Imports.BinaryImporter
