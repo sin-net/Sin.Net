@@ -34,20 +34,18 @@ namespace Sin.Net.Persistence.IO
             string json = "{ }";
             try
             {
+                var settings = new JsonSerializerSettings
+                {
+                    TypeNameHandling = TypeNameHandling.Auto,
+                    ContractResolver = new LowerCaseContractResolver()
+                };
+                    
                 if (binder != null)
                 {
-                    var settings = new JsonSerializerSettings
-                    {
-                        TypeNameHandling = TypeNameHandling.Auto,
-                        SerializationBinder = binder
-                    };
-                    json = JsonConvert.SerializeObject(obj, Formatting.Indented, settings);
-                }
-                else
-                {
-                    json = JsonConvert.SerializeObject(obj, Formatting.Indented);
+                    settings.SerializationBinder = binder;                 
                 }
 
+                json = JsonConvert.SerializeObject(obj, Formatting.Indented, settings);
             }
             catch (Exception ex)
             {
