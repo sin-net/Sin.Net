@@ -32,12 +32,3 @@ steps:
     command: test
     projects: '**/*Tests/*.csproj'
     arguments: '--configuration $(buildConfiguration)'
-- task: CmdLine@2
-  inputs:
-    script: |
-      echo Write your commands here
-      choco install docfx
-      docfx Sin.Net.Solution/Docu
-      cd Sin.Net.Solution/Docu
-      dir
-      echo Hello world
