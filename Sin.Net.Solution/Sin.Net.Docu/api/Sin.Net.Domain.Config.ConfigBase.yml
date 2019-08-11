@@ -71,15 +71,18 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Domain/Config/ConfigBase.cs
-    startLine: 10
+    startLine: 14
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Config
+  summary: "\nThe default constructor that sets the name property.\n"
+  example: []
   syntax:
     content: protected ConfigBase(string name)
     parameters:
     - id: name
       type: System.String
+      description: The name value of the config instance will be set as Name property.
     content.vb: Protected Sub New(name As String)
   overload: Sin.Net.Domain.Config.ConfigBase.#ctor*
   modifiers.csharp:
@@ -104,14 +107,17 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ToString
     path: ../Sin.Net.Domain/Config/ConfigBase.cs
-    startLine: 17
+    startLine: 25
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Config
+  summary: "\nOverrwrites the default ToString method with the Name property.\n"
+  example: []
   syntax:
     content: public override string ToString()
     return:
       type: System.String
+      description: Returns an overwritten string.
     content.vb: Public Overrides Function ToString As String
   overridden: System.Object.ToString
   overload: Sin.Net.Domain.Config.ConfigBase.ToString*
@@ -139,7 +145,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Name
     path: ../Sin.Net.Domain/Config/ConfigBase.cs
-    startLine: 24
+    startLine: 32
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Config

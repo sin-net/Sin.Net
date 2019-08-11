@@ -34,7 +34,6 @@ items:
     content: 'public class BinaryImporter : IImportable'
     content.vb: >-
       Public Class BinaryImporter
-
           Implements IImportable
   inheritance:
   - System.Object
@@ -183,7 +182,6 @@ items:
   syntax:
     content: >-
       public T As<T>()
-
           where T : new()
     typeParameters:
     - id: T
@@ -225,7 +223,6 @@ items:
   syntax:
     content: >-
       public T As<T>(IAdaptable adapter)
-
           where T : new()
     parameters:
     - id: adapter

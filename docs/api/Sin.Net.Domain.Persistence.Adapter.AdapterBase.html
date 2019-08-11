@@ -69,21 +69,18 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="Sin.Net.Domain.Persistence.Adapter.AdapterBase">
-  
-  
-  <h1 id="Sin_Net_Domain_Persistence_Adapter_AdapterBase" data-uid="Sin.Net.Domain.Persistence.Adapter.AdapterBase" class="text-break">Class AdapterBase
+  <h1 id="Sin_Net_Domain_Persistence_Adapter_AdapterBase" data-uid="Sin.Net.Domain.Persistence.Adapter.AdapterBase">Class AdapterBase
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
+
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">AdapterBase</span></div>
   </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="Sin.Net.Domain.Persistence.Adapter.IAdaptable.html">IAdaptable</a></div>
-  </div>
+  
+  
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -108,235 +105,246 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Sin.Net.Domain.Persistence.Adapter.html">Sin.Net.Domain.Persistence.Adapter</a></h6>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>: Sin.Net.Domain.dll</h6>
+  
   <h5 id="Sin_Net_Domain_Persistence_Adapter_AdapterBase_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class AdapterBase : IAdaptable</code></pre>
   </div>
+
+  
+  
+  
+  
   <h3 id="methods">Methods
   </h3>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Domain_Persistence_Adapter_AdapterBase_Adapt__2___0_.md&amp;value=---%0Auid%3A%20Sin.Net.Domain.Persistence.Adapter.AdapterBase.Adapt%60%602(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Domain_Persistence_Adapter_AdapterBase_Adapt__2___0_.md&amp;value=---%0Auid%3A%20Sin.Net.Domain.Persistence.Adapter.AdapterBase.Adapt%60%602(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs/#L17">View Source</a>
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs/#L17" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Sin_Net_Domain_Persistence_Adapter_AdapterBase_Adapt_" data-uid="Sin.Net.Domain.Persistence.Adapter.AdapterBase.Adapt*"></a>
-  <h4 id="Sin_Net_Domain_Persistence_Adapter_AdapterBase_Adapt__2___0_" data-uid="Sin.Net.Domain.Persistence.Adapter.AdapterBase.Adapt``2(``0)">Adapt&lt;Tin, Tout&gt;(Tin)</h4>
+  
+  <h4 id="Sin_Net_Domain_Persistence_Adapter_AdapterBase_Adapt__2___0_" data-uid="Sin.Net.Domain.Persistence.Adapter.AdapterBase.Adapt``2(``0)"><a href="#collapsible-Sin_Net_Domain_Persistence_Adapter_AdapterBase_Adapt__2___0_" class="expander" data-toggle="collapse">Adapt&lt;Tin, Tout&gt;(Tin)</a></h4>
+  
+  <div id="collapsible-Sin_Net_Domain_Persistence_Adapter_AdapterBase_Adapt__2___0_" class="collapse in">
   <div class="markdown level1 summary"><p>Abstrakte Methode des IAdaptable Schnittstelle
 Die Ein und Ausgabetypen werden hier deklariert, damit jeder Im- Exporter mit beliebigen Adaptern ohne Typbeschränkung arbeiten kann</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract Tout Adapt&lt;Tin, Tout&gt;(Tin input)
-
     where Tout : new()</code></pre>
   </div>
+
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Tin</span></td>
-        <td><span class="parametername">input</span></td>
-        <td><p>Die Eingagnsdaten</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Tin</span></span>
+        <span class="parametername">input</span>
+        <p><p>Die Eingagnsdaten</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Tout</span></td>
-        <td><p>Die Ausgangsdaten</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Tout</span>
+        <p><p>Die Ausgangsdaten</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">Tin</span></td>
-        <td><p>der generische Typparameter für die Eingangsdaten</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="parametername">Tout</span></td>
-        <td><p>der generische Typparameter für die Ausgangsdaten</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">Tin</span>
+        <p><p>der generische Typparameter für die Eingangsdaten</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="parametername">Tout</span>
+        <p><p>der generische Typparameter für die Ausgangsdaten</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Sin.Net.Domain.Persistence.Adapter.IAdaptable.html#Sin_Net_Domain_Persistence_Adapter_IAdaptable_Adapt__2___0_">IAdaptable.Adapt&lt;Tin, Tout&gt;(Tin)</a></div>
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Domain_Persistence_Adapter_AdapterBase_ConvertOutput__1_System_Object_.md&amp;value=---%0Auid%3A%20Sin.Net.Domain.Persistence.Adapter.AdapterBase.ConvertOutput%60%601(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Domain_Persistence_Adapter_AdapterBase_ConvertOutput__1_System_Object_.md&amp;value=---%0Auid%3A%20Sin.Net.Domain.Persistence.Adapter.AdapterBase.ConvertOutput%60%601(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs/#L47">View Source</a>
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs/#L47" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Sin_Net_Domain_Persistence_Adapter_AdapterBase_ConvertOutput_" data-uid="Sin.Net.Domain.Persistence.Adapter.AdapterBase.ConvertOutput*"></a>
-  <h4 id="Sin_Net_Domain_Persistence_Adapter_AdapterBase_ConvertOutput__1_System_Object_" data-uid="Sin.Net.Domain.Persistence.Adapter.AdapterBase.ConvertOutput``1(System.Object)">ConvertOutput&lt;T&gt;(Object)</h4>
+  
+  <h4 id="Sin_Net_Domain_Persistence_Adapter_AdapterBase_ConvertOutput__1_System_Object_" data-uid="Sin.Net.Domain.Persistence.Adapter.AdapterBase.ConvertOutput``1(System.Object)"><a href="#collapsible-Sin_Net_Domain_Persistence_Adapter_AdapterBase_ConvertOutput__1_System_Object_" class="expander" data-toggle="collapse">ConvertOutput&lt;T&gt;(Object)</a></h4>
+  
+  <div id="collapsible-Sin_Net_Domain_Persistence_Adapter_AdapterBase_ConvertOutput__1_System_Object_" class="collapse in">
   <div class="markdown level1 summary"><p>Konvertiert das Ausgabeobjekt des Adapterobjektes in den generischen Ausgabetyp.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public T ConvertOutput&lt;T&gt;(object data)</code></pre>
   </div>
+
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">data</span></td>
-        <td><p>Das Datenobjekt</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">data</span>
+        <p><p>Das Datenobjekt</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><p>der konvertierte generische Ausgabetyp</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">T</span>
+        <p><p>der konvertierte generische Ausgabetyp</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>Der Ausgabetyp</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p><p>Der Ausgabetyp</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
   <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Domain_Persistence_Adapter_AdapterBase_ValidateTypes__2_System_Type_System_Type_.md&amp;value=---%0Auid%3A%20Sin.Net.Domain.Persistence.Adapter.AdapterBase.ValidateTypes%60%602(System.Type%2CSystem.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <span class="divider"> </span>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Domain_Persistence_Adapter_AdapterBase_ValidateTypes__2_System_Type_System_Type_.md&amp;value=---%0Auid%3A%20Sin.Net.Domain.Persistence.Adapter.AdapterBase.ValidateTypes%60%602(System.Type%2CSystem.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs/#L27">View Source</a>
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs/#L27" title="View Source"><i class="fa fa-code"></i></a>
   </span>
+  
   <a id="Sin_Net_Domain_Persistence_Adapter_AdapterBase_ValidateTypes_" data-uid="Sin.Net.Domain.Persistence.Adapter.AdapterBase.ValidateTypes*"></a>
-  <h4 id="Sin_Net_Domain_Persistence_Adapter_AdapterBase_ValidateTypes__2_System_Type_System_Type_" data-uid="Sin.Net.Domain.Persistence.Adapter.AdapterBase.ValidateTypes``2(System.Type,System.Type)">ValidateTypes&lt;Tin, Tout&gt;(Type, Type)</h4>
+  
+  <h4 id="Sin_Net_Domain_Persistence_Adapter_AdapterBase_ValidateTypes__2_System_Type_System_Type_" data-uid="Sin.Net.Domain.Persistence.Adapter.AdapterBase.ValidateTypes``2(System.Type,System.Type)"><a href="#collapsible-Sin_Net_Domain_Persistence_Adapter_AdapterBase_ValidateTypes__2_System_Type_System_Type_" class="expander" data-toggle="collapse">ValidateTypes&lt;Tin, Tout&gt;(Type, Type)</a></h4>
+  
+  <div id="collapsible-Sin_Net_Domain_Persistence_Adapter_AdapterBase_ValidateTypes__2_System_Type_System_Type_" class="collapse in">
   <div class="markdown level1 summary"><p>Validiert die generischen Ein- und Ausgabetypen, die der Adapter verarbeiten soll.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool ValidateTypes&lt;Tin, Tout&gt;(Type inType, Type outType)</code></pre>
   </div>
+
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Type</span></td>
-        <td><span class="parametername">inType</span></td>
-        <td><p>Type-Objekt der Eingabedaten</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Type</span></td>
-        <td><span class="parametername">outType</span></td>
-        <td><p>Type-Objekt der Ausgabedaten</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Type</span></span>
+        <span class="parametername">inType</span>
+        <p><p>Type-Objekt der Eingabedaten</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Type</span></span>
+        <span class="parametername">outType</span>
+        <p><p>Type-Objekt der Ausgabedaten</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>Wenn die generischen Typparameter und die Typ-Objekte übereinstimmen wird true, andernfalls false ausgegeben.</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p>Wenn die generischen Typparameter und die Typ-Objekte übereinstimmen wird true, andernfalls false ausgegeben.</p>
+</p>
+      </td>
+    </tr>
   </table>
+  
   <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">Tin</span></td>
-        <td><p>Eingabetyp der Adapt Methode</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="parametername">Tout</span></td>
-        <td><p>Ausgabetyp der Adapt Methode</p>
-</td>
-      </tr>
-    </tbody>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">Tin</span>
+        <p><p>Eingabetyp der Adapt Methode</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="parametername">Tout</span>
+        <p><p>Ausgabetyp der Adapt Methode</p>
+</p>
+      </td>
+    </tr>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="Sin.Net.Domain.Persistence.Adapter.IAdaptable.html">IAdaptable</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
   </div>
+  
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="Sin.Net.Domain.System.Security.SecurityExtensions.html#Sin_Net_Domain_System_Security_SecurityExtensions_SecureAccess_System_Object_Sin_Net_Domain_Enumerations_SecurityLevels_System_String_">SecurityExtensions.SecureAccess(Object, SecurityLevels, String)</a>
@@ -344,23 +352,17 @@ Die Ein und Ausgabetypen werden hier deklariert, damit jeder Im- Exporter mit be
   <div>
       <a class="xref" href="Sin.Net.Domain.System.Security.SecurityExtensions.html#Sin_Net_Domain_System_Security_SecurityExtensions_SecureAccess_System_Object_System_Int32_System_String_">SecurityExtensions.SecureAccess(Object, Int32, String)</a>
   </div>
+  
 </article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Domain_Persistence_Adapter_AdapterBase.md&amp;value=---%0Auid%3A%20Sin.Net.Domain.Persistence.Adapter.AdapterBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs/#L7" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Domain_Persistence_Adapter_AdapterBase.md&amp;value=---%0Auid%3A%20Sin.Net.Domain.Persistence.Adapter.AdapterBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs/#L7" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
               </nav>
             </div>
           </div>

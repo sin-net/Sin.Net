@@ -23,17 +23,17 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ServiceException
     path: ../Sin.Net.Domain/Exceptions/ServiceException.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
+  summary: "\nThe exception type that is thrown when the access to an external service fails,\ne.g. Http or Mqtt calls from the infrastructure layer. \n"
+  example: []
   syntax:
     content: 'public class ServiceException : Exception, ISerializable'
     content.vb: >-
       Public Class ServiceException
-
           Inherits Exception
-
           Implements ISerializable
   inheritance:
   - System.Object
@@ -86,10 +86,12 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Domain/Exceptions/ServiceException.cs
-    startLine: 8
+    startLine: 14
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
+  summary: "\nDefault empty constructor\n"
+  example: []
   syntax:
     content: public ServiceException()
     content.vb: Public Sub New
@@ -116,15 +118,18 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Domain/Exceptions/ServiceException.cs
-    startLine: 12
+    startLine: 22
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
+  summary: "\nConstructor that calls the base class and adds a standard message before the message parameter.\n"
+  example: []
   syntax:
     content: public ServiceException(string message)
     parameters:
     - id: message
       type: System.String
+      description: The additional message of the client code.
     content.vb: Public Sub New(message As String)
   overload: Sin.Net.Domain.Infrastructure.Http.ServiceException.#ctor*
   modifiers.csharp:
@@ -149,17 +154,21 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Domain/Exceptions/ServiceException.cs
-    startLine: 16
+    startLine: 31
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
+  summary: "\nConstructor that calls the base class and adds a standard message and the inner exception.\n"
+  example: []
   syntax:
     content: public ServiceException(string message, Exception innerException)
     parameters:
     - id: message
       type: System.String
+      description: The additional message of the client code.
     - id: innerException
       type: System.Exception
+      description: The inner exception.
     content.vb: Public Sub New(message As String, innerException As Exception)
   overload: Sin.Net.Domain.Infrastructure.Http.ServiceException.#ctor*
   modifiers.csharp:
@@ -184,17 +193,21 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Domain/Exceptions/ServiceException.cs
-    startLine: 20
+    startLine: 40
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
+  summary: "\nConstructor that calls the base class and fowards the SerializationInfo and the StreamingContext.\n"
+  example: []
   syntax:
     content: protected ServiceException(SerializationInfo info, StreamingContext context)
     parameters:
     - id: info
       type: System.Runtime.Serialization.SerializationInfo
+      description: ''
     - id: context
       type: System.Runtime.Serialization.StreamingContext
+      description: ''
     content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
   overload: Sin.Net.Domain.Infrastructure.Http.ServiceException.#ctor*
   modifiers.csharp:

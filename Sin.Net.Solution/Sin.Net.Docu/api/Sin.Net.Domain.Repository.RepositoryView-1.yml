@@ -169,7 +169,6 @@ items:
   syntax:
     content: >-
       public Tout To<Tout>()
-
           where Tout : IterativeRepositoryBase<T>, new()
     typeParameters:
     - id: Tout

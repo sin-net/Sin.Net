@@ -33,7 +33,6 @@ items:
     content: 'public class CsvSetting : FileSetting'
     content.vb: >-
       Public Class CsvSetting
-
           Inherits FileSetting
   inheritance:
   - System.Object

@@ -32,7 +32,6 @@ items:
     content: 'public class MqttReceivedEventArgs : EventArgs'
     content.vb: >-
       Public Class MqttReceivedEventArgs
-
           Inherits EventArgs
   inheritance:
   - System.Object
@@ -115,7 +114,6 @@ items:
   syntax:
     content: >-
       public T Deserialize<T>(Func<string, T> function)
-
           where T : new()
     parameters:
     - id: function
@@ -158,7 +156,6 @@ items:
   syntax:
     content: >-
       public T Deserialize<T>(AdapterBase adapter)
-
           where T : new()
     parameters:
     - id: adapter

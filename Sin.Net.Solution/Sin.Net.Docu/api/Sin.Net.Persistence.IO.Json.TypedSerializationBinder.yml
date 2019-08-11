@@ -32,7 +32,6 @@ items:
     content: 'public class TypedSerializationBinder : ISerializationBinder'
     content.vb: >-
       Public Class TypedSerializationBinder
-
           Implements ISerializationBinder
   inheritance:
   - System.Object

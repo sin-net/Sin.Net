@@ -29,7 +29,6 @@ items:
     content: 'public class JsonSetting : FileSetting'
     content.vb: >-
       Public Class JsonSetting
-
           Inherits FileSetting
   inheritance:
   - System.Object

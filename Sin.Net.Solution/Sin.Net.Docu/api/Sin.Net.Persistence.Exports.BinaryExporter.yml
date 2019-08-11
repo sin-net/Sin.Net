@@ -33,7 +33,6 @@ items:
     content: 'public class BinaryExporter : IExportable'
     content.vb: >-
       Public Class BinaryExporter
-
           Implements IExportable
   inheritance:
   - System.Object

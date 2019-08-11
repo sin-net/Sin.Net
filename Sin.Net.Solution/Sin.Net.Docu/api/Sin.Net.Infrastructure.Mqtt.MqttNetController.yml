@@ -37,7 +37,6 @@ items:
     content: 'public class MqttNetController : IMqttControlable'
     content.vb: >-
       Public Class MqttNetController
-
           Implements IMqttControlable
   inheritance:
   - System.Object

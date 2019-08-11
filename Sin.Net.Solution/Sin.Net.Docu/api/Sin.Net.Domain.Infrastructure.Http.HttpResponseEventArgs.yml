@@ -30,7 +30,6 @@ items:
     content: 'public class HttpResponseEventArgs : EventArgs'
     content.vb: >-
       Public Class HttpResponseEventArgs
-
           Inherits EventArgs
   inheritance:
   - System.Object

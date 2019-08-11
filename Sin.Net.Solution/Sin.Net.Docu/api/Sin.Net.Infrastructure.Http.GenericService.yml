@@ -32,7 +32,6 @@ items:
     content: 'public class GenericService : ServiceBase'
     content.vb: >-
       Public Class GenericService
-
           Inherits ServiceBase
   inheritance:
   - System.Object
@@ -221,7 +220,6 @@ items:
   syntax:
     content: >-
       public override sealed Task<T> CallAsync<T>(Func<string, T> cast)
-
           where T : new()
     parameters:
     - id: cast
