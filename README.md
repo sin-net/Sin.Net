@@ -12,7 +12,13 @@ to build clean software architectures for any software purpose.
 * [![Nuget](https://img.shields.io/nuget/v/Sin.Net.Logging.svg?label=Sin.Net.Logging)](https://www.nuget.org/packages/Sin.Net.Logging/)
 * [![Nuget](https://img.shields.io/nuget/v/Sin.Net.Infrastructure.svg?label=Sin.Net.Infrastructure)](https://www.nuget.org/packages/Sin.Net.Infrastructure/)
 
-## Descriptions
+## API Documentation and Blog
+
+You find a full API documentation here: https://sin-net.github.io/Sin.Net/
+
+Here, I own a blog and write some posts about the project and myself: https://sin-net.github.io/Pages/
+
+## Assemby Descriptions
 
 ### Sin.Net.Domain
 
