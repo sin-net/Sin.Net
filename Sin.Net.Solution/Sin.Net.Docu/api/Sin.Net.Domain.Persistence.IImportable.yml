@@ -24,7 +24,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IImportable
-    path: ../Sin.Net.Domain/Persistence/IImportable.cs
+    path: Persistence/IImportable.cs
     startLine: 8
   assemblies:
   - Sin.Net.Domain
@@ -60,7 +60,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Setup
-    path: ../Sin.Net.Domain/Persistence/IImportable.cs
+    path: Persistence/IImportable.cs
     startLine: 15
   assemblies:
   - Sin.Net.Domain
@@ -95,7 +95,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Import
-    path: ../Sin.Net.Domain/Persistence/IImportable.cs
+    path: Persistence/IImportable.cs
     startLine: 21
   assemblies:
   - Sin.Net.Domain
@@ -126,7 +126,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: As
-    path: ../Sin.Net.Domain/Persistence/IImportable.cs
+    path: Persistence/IImportable.cs
     startLine: 28
   assemblies:
   - Sin.Net.Domain
@@ -136,6 +136,7 @@ items:
   syntax:
     content: >-
       T As<T>()
+
           where T : new()
     typeParameters:
     - id: T
@@ -165,7 +166,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: As
-    path: ../Sin.Net.Domain/Persistence/IImportable.cs
+    path: Persistence/IImportable.cs
     startLine: 36
   assemblies:
   - Sin.Net.Domain
@@ -175,6 +176,7 @@ items:
   syntax:
     content: >-
       T As<T>(IAdaptable adapter)
+
           where T : new()
     parameters:
     - id: adapter
@@ -207,7 +209,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: AsItIs
-    path: ../Sin.Net.Domain/Persistence/IImportable.cs
+    path: Persistence/IImportable.cs
     startLine: 42
   assemblies:
   - Sin.Net.Domain
@@ -238,7 +240,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Type
-    path: ../Sin.Net.Domain/Persistence/IImportable.cs
+    path: Persistence/IImportable.cs
     startLine: 49
   assemblies:
   - Sin.Net.Domain

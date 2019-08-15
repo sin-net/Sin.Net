@@ -8,11 +8,15 @@ items:
   - Sin.Net.Domain.Infrastructure.Http.ServiceBase.#ctor
   - Sin.Net.Domain.Infrastructure.Http.ServiceBase.#ctor(System.Net.Http.HttpClient,Sin.Net.Domain.Infrastructure.Http.HttpEndpoint)
   - Sin.Net.Domain.Infrastructure.Http.ServiceBase._client
+  - Sin.Net.Domain.Infrastructure.Http.ServiceBase._content
   - Sin.Net.Domain.Infrastructure.Http.ServiceBase._endpoint
   - Sin.Net.Domain.Infrastructure.Http.ServiceBase.AddHeader(System.String,System.String)
   - Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync
   - Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync``1(System.Func{System.String,``0})
   - Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallResponded
+  - Sin.Net.Domain.Infrastructure.Http.ServiceBase.Content
+  - Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String)
+  - Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String,System.Text.Encoding,System.String)
   - Sin.Net.Domain.Infrastructure.Http.ServiceBase.Setup(System.Net.Http.HttpClient,Sin.Net.Domain.Infrastructure.Http.HttpEndpoint)
   langs:
   - csharp
@@ -27,8 +31,8 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ServiceBase
-    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
-    startLine: 6
+    path: Infrastructure/Http/ServiceBase.cs
+    startLine: 7
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
@@ -75,8 +79,8 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: _client
-    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
-    startLine: 8
+    path: Infrastructure/Http/ServiceBase.cs
+    startLine: 9
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
@@ -106,8 +110,8 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: _endpoint
-    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
-    startLine: 9
+    path: Infrastructure/Http/ServiceBase.cs
+    startLine: 10
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
@@ -116,6 +120,37 @@ items:
     return:
       type: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
     content.vb: Protected _endpoint As HttpEndpoint
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase._content
+  commentId: F:Sin.Net.Domain.Infrastructure.Http.ServiceBase._content
+  id: _content
+  parent: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  langs:
+  - csharp
+  - vb
+  name: _content
+  nameWithType: ServiceBase._content
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase._content
+  type: Field
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: _content
+    path: Infrastructure/Http/ServiceBase.cs
+    startLine: 11
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure.Http
+  syntax:
+    content: protected StringContent _content
+    return:
+      type: System.Net.Http.StringContent
+    content.vb: Protected _content As StringContent
   modifiers.csharp:
   - protected
   modifiers.vb:
@@ -137,8 +172,8 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: CallResponded
-    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
-    startLine: 14
+    path: Infrastructure/Http/ServiceBase.cs
+    startLine: 16
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
@@ -172,8 +207,8 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
-    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
-    startLine: 21
+    path: Infrastructure/Http/ServiceBase.cs
+    startLine: 23
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
@@ -204,8 +239,8 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
-    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
-    startLine: 31
+    path: Infrastructure/Http/ServiceBase.cs
+    startLine: 33
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
@@ -243,8 +278,8 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Setup
-    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
-    startLine: 39
+    path: Infrastructure/Http/ServiceBase.cs
+    startLine: 40
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
@@ -263,6 +298,94 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String)
+  commentId: M:Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String)
+  id: SetContent(System.String)
+  parent: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  langs:
+  - csharp
+  - vb
+  name: SetContent(String)
+  nameWithType: ServiceBase.SetContent(String)
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: SetContent
+    path: Infrastructure/Http/ServiceBase.cs
+    startLine: 61
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure.Http
+  summary: "\nSets the content for the request provided as json string with UTF8 and media type as `application/json`.\n"
+  example: []
+  syntax:
+    content: public virtual ServiceBase SetContent(string jsonContent)
+    parameters:
+    - id: jsonContent
+      type: System.String
+      description: The json string.
+    return:
+      type: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+      description: The calling instance.
+    content.vb: Public Overridable Function SetContent(jsonContent As String) As ServiceBase
+  overload: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String,System.Text.Encoding,System.String)
+  commentId: M:Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String,System.Text.Encoding,System.String)
+  id: SetContent(System.String,System.Text.Encoding,System.String)
+  parent: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  langs:
+  - csharp
+  - vb
+  name: SetContent(String, Encoding, String)
+  nameWithType: ServiceBase.SetContent(String, Encoding, String)
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String, System.Text.Encoding, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: SetContent
+    path: Infrastructure/Http/ServiceBase.cs
+    startLine: 73
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure.Http
+  summary: "\nSets the content for the request with individual encoding and media type.\n"
+  example: []
+  syntax:
+    content: public virtual ServiceBase SetContent(string content, Encoding encoding, string mediatype)
+    parameters:
+    - id: content
+      type: System.String
+      description: The user-specific string content.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The user-specific encoding.
+    - id: mediatype
+      type: System.String
+      description: The user-specific media type.
+    return:
+      type: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+      description: The calling instance.
+    content.vb: Public Overridable Function SetContent(content As String, encoding As Encoding, mediatype As String) As ServiceBase
+  overload: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
 - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.AddHeader(System.String,System.String)
   commentId: M:Sin.Net.Domain.Infrastructure.Http.ServiceBase.AddHeader(System.String,System.String)
   id: AddHeader(System.String,System.String)
@@ -280,20 +403,25 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: AddHeader
-    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
-    startLine: 55
+    path: Infrastructure/Http/ServiceBase.cs
+    startLine: 85
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
+  summary: "\nAdds a specific header information for the request. \n"
+  example: []
   syntax:
     content: public ServiceBase AddHeader(string name, string value)
     parameters:
     - id: name
       type: System.String
+      description: ''
     - id: value
       type: System.String
+      description: ''
     return:
       type: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+      description: ''
     content.vb: Public Function AddHeader(name As String, value As String) As ServiceBase
   overload: Sin.Net.Domain.Infrastructure.Http.ServiceBase.AddHeader*
   modifiers.csharp:
@@ -317,8 +445,8 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: CallAsync
-    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
-    startLine: 61
+    path: Infrastructure/Http/ServiceBase.cs
+    startLine: 91
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
@@ -351,14 +479,15 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: CallAsync
-    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
-    startLine: 63
+    path: Infrastructure/Http/ServiceBase.cs
+    startLine: 93
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
   syntax:
     content: >-
       public abstract Task<T> CallAsync<T>(Func<string, T> cast)
+
           where T : new()
     parameters:
     - id: cast
@@ -378,6 +507,43 @@ items:
   - MustOverride
   fullName.vb: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync(Of T)(System.Func(Of System.String, T))
   name.vb: CallAsync(Of T)(Func(Of String, T))
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.Content
+  commentId: P:Sin.Net.Domain.Infrastructure.Http.ServiceBase.Content
+  id: Content
+  parent: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: ServiceBase.Content
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.Content
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Content
+    path: Infrastructure/Http/ServiceBase.cs
+    startLine: 100
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure.Http
+  summary: "\nGets the string content that was lastly set by the SetContent method.\n"
+  example: []
+  syntax:
+    content: public StringContent Content { get; }
+    parameters: []
+    return:
+      type: System.Net.Http.StringContent
+    content.vb: Public ReadOnly Property Content As StringContent
+  overload: Sin.Net.Domain.Infrastructure.Http.ServiceBase.Content*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 references:
 - uid: Sin.Net.Domain.Infrastructure.Http
   commentId: N:Sin.Net.Domain.Infrastructure.Http
@@ -952,6 +1118,13 @@ references:
   name: HttpEndpoint
   nameWithType: HttpEndpoint
   fullName: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
+- uid: System.Net.Http.StringContent
+  commentId: T:System.Net.Http.StringContent
+  parent: System.Net.Http
+  isExternal: true
+  name: StringContent
+  nameWithType: StringContent
+  fullName: System.Net.Http.StringContent
 - uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventHandler
   commentId: T:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventHandler
   parent: Sin.Net.Domain.Infrastructure.Http
@@ -974,11 +1147,11 @@ references:
   name: ServiceBase
   nameWithType: ServiceBase
   fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase
-- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.AddHeader*
-  commentId: Overload:Sin.Net.Domain.Infrastructure.Http.ServiceBase.AddHeader
-  name: AddHeader
-  nameWithType: ServiceBase.AddHeader
-  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.AddHeader
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent*
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent
+  name: SetContent
+  nameWithType: ServiceBase.SetContent
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -986,6 +1159,24 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.AddHeader*
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Http.ServiceBase.AddHeader
+  name: AddHeader
+  nameWithType: ServiceBase.AddHeader
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.AddHeader
 - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync*
   commentId: Overload:Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallAsync
   name: CallAsync
@@ -1227,3 +1418,8 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.Content*
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Http.ServiceBase.Content
+  name: Content
+  nameWithType: ServiceBase.Content
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.Content

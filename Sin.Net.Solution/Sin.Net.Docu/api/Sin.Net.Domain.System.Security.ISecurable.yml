@@ -19,7 +19,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ISecurable
-    path: ../Sin.Net.Domain/System/Security/ISecurable.cs
+    path: System/Security/ISecurable.cs
     startLine: 7
   assemblies:
   - Sin.Net.Domain
@@ -55,7 +55,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Secure
-    path: ../Sin.Net.Domain/System/Security/ISecurable.cs
+    path: System/Security/ISecurable.cs
     startLine: 14
   assemblies:
   - Sin.Net.Domain

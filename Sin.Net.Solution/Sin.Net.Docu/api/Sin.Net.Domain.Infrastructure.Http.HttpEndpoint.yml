@@ -24,7 +24,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: HttpEndpoint
-    path: ../Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
+    path: Infrastructure/Http/HttpEndpoint.cs
     startLine: 8
   assemblies:
   - Sin.Net.Domain
@@ -70,7 +70,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
-    path: ../Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
+    path: Infrastructure/Http/HttpEndpoint.cs
     startLine: 18
   assemblies:
   - Sin.Net.Domain
@@ -102,7 +102,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Method
-    path: ../Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
+    path: Infrastructure/Http/HttpEndpoint.cs
     startLine: 27
   assemblies:
   - Sin.Net.Domain
@@ -137,7 +137,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: BaseAddress
-    path: ../Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
+    path: Infrastructure/Http/HttpEndpoint.cs
     startLine: 49
   assemblies:
   - Sin.Net.Domain
@@ -174,7 +174,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Request
-    path: ../Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
+    path: Infrastructure/Http/HttpEndpoint.cs
     startLine: 54
   assemblies:
   - Sin.Net.Domain
@@ -211,7 +211,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: MethodName
-    path: ../Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
+    path: Infrastructure/Http/HttpEndpoint.cs
     startLine: 60
   assemblies:
   - Sin.Net.Domain
@@ -248,7 +248,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Url
-    path: ../Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
+    path: Infrastructure/Http/HttpEndpoint.cs
     startLine: 65
   assemblies:
   - Sin.Net.Domain

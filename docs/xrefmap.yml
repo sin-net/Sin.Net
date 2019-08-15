@@ -190,6 +190,12 @@ references:
   commentId: M:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.#ctor(System.Net.HttpStatusCode)
   fullName: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.HttpResponseEventArgs(System.Net.HttpStatusCode)
   nameWithType: HttpResponseEventArgs.HttpResponseEventArgs(HttpStatusCode)
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.#ctor(System.Net.HttpStatusCode,System.Object)
+  name: HttpResponseEventArgs(HttpStatusCode, Object)
+  href: api/Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.html#Sin_Net_Domain_Infrastructure_Http_HttpResponseEventArgs__ctor_System_Net_HttpStatusCode_System_Object_
+  commentId: M:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.#ctor(System.Net.HttpStatusCode,System.Object)
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.HttpResponseEventArgs(System.Net.HttpStatusCode, System.Object)
+  nameWithType: HttpResponseEventArgs.HttpResponseEventArgs(HttpStatusCode, Object)
 - uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.#ctor*
   name: HttpResponseEventArgs
   href: api/Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.html#Sin_Net_Domain_Infrastructure_Http_HttpResponseEventArgs__ctor_
@@ -197,6 +203,19 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.HttpResponseEventArgs
   nameWithType: HttpResponseEventArgs.HttpResponseEventArgs
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response
+  name: Response
+  href: api/Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.html#Sin_Net_Domain_Infrastructure_Http_HttpResponseEventArgs_Response
+  commentId: P:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response
+  nameWithType: HttpResponseEventArgs.Response
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response*
+  name: Response
+  href: api/Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.html#Sin_Net_Domain_Infrastructure_Http_HttpResponseEventArgs_Response_
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response
+  nameWithType: HttpResponseEventArgs.Response
 - uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.StatusCode
   name: StatusCode
   href: api/Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.html#Sin_Net_Domain_Infrastructure_Http_HttpResponseEventArgs_StatusCode
@@ -260,6 +279,12 @@ references:
   commentId: F:Sin.Net.Domain.Infrastructure.Http.ServiceBase._client
   fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase._client
   nameWithType: ServiceBase._client
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase._content
+  name: _content
+  href: api/Sin.Net.Domain.Infrastructure.Http.ServiceBase.html#Sin_Net_Domain_Infrastructure_Http_ServiceBase__content
+  commentId: F:Sin.Net.Domain.Infrastructure.Http.ServiceBase._content
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase._content
+  nameWithType: ServiceBase._content
 - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase._endpoint
   name: _endpoint
   href: api/Sin.Net.Domain.Infrastructure.Http.ServiceBase.html#Sin_Net_Domain_Infrastructure_Http_ServiceBase__endpoint
@@ -307,6 +332,38 @@ references:
   commentId: E:Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallResponded
   fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.CallResponded
   nameWithType: ServiceBase.CallResponded
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.Content
+  name: Content
+  href: api/Sin.Net.Domain.Infrastructure.Http.ServiceBase.html#Sin_Net_Domain_Infrastructure_Http_ServiceBase_Content
+  commentId: P:Sin.Net.Domain.Infrastructure.Http.ServiceBase.Content
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.Content
+  nameWithType: ServiceBase.Content
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.Content*
+  name: Content
+  href: api/Sin.Net.Domain.Infrastructure.Http.ServiceBase.html#Sin_Net_Domain_Infrastructure_Http_ServiceBase_Content_
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Http.ServiceBase.Content
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.Content
+  nameWithType: ServiceBase.Content
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String)
+  name: SetContent(String)
+  href: api/Sin.Net.Domain.Infrastructure.Http.ServiceBase.html#Sin_Net_Domain_Infrastructure_Http_ServiceBase_SetContent_System_String_
+  commentId: M:Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String)
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String)
+  nameWithType: ServiceBase.SetContent(String)
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String,System.Text.Encoding,System.String)
+  name: SetContent(String, Encoding, String)
+  href: api/Sin.Net.Domain.Infrastructure.Http.ServiceBase.html#Sin_Net_Domain_Infrastructure_Http_ServiceBase_SetContent_System_String_System_Text_Encoding_System_String_
+  commentId: M:Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String,System.Text.Encoding,System.String)
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String, System.Text.Encoding, System.String)
+  nameWithType: ServiceBase.SetContent(String, Encoding, String)
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent*
+  name: SetContent
+  href: api/Sin.Net.Domain.Infrastructure.Http.ServiceBase.html#Sin_Net_Domain_Infrastructure_Http_ServiceBase_SetContent_
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent
+  nameWithType: ServiceBase.SetContent
 - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.Setup(System.Net.Http.HttpClient,Sin.Net.Domain.Infrastructure.Http.HttpEndpoint)
   name: Setup(HttpClient, HttpEndpoint)
   href: api/Sin.Net.Domain.Infrastructure.Http.ServiceBase.html#Sin_Net_Domain_Infrastructure_Http_ServiceBase_Setup_System_Net_Http_HttpClient_Sin_Net_Domain_Infrastructure_Http_HttpEndpoint_

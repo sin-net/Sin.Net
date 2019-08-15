@@ -81,6 +81,41 @@ namespace MSTests.Infrastructure.Http
         }
 
         /// <summary>
+        /// Test method that runs a generic test against a public REST-API.
+        /// </summary>
+        /// <returns>The method awaits for async calls.</returns>
+        [TestMethod]
+        public async Task ServiceCallWithContentAsync()
+        {
+            // arrange
+            _endpoint = new HttpEndpoint
+            {
+                BaseAddress = "https://reqres.in",
+                Request = "/api/users",
+                MethodName = "post"
+            };
+            _service = new GenericService(new HttpClient(), _endpoint);
+            _service.CallResponded += (o, e) =>
+            {
+                var message = e.Response as HttpResponseMessage;
+                Log.Info($"Http responded with code: {e.StatusCode}");
+                Assert.IsTrue(message.StatusCode == System.Net.HttpStatusCode.Created);
+            };
+
+            var data = new
+            {
+                name = "max mustermann",
+                job = "developer"
+            };
+
+            // act
+            var result = await _service.SetContent(JsonIO.ToJsonString(data)).CallAsync<object>((s) => JsonIO.FromJsonString<object>(s));
+
+            // assert
+            Assert.IsNotNull(result);
+        }
+
+        /// <summary>
         /// Test method that shall throw an exception to prof that custom exceptions are working.
         /// </summary>
         /// <returns>The method awaits for async calls.</returns>

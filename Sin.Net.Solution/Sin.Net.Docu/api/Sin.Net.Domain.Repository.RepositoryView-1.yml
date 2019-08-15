@@ -23,7 +23,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: RepositoryView
-    path: ../Sin.Net.Domain/Repository/RepositoryView.cs
+    path: Repository/RepositoryView.cs
     startLine: 12
   assemblies:
   - Sin.Net.Domain
@@ -85,7 +85,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
-    path: ../Sin.Net.Domain/Repository/RepositoryView.cs
+    path: Repository/RepositoryView.cs
     startLine: 17
   assemblies:
   - Sin.Net.Domain
@@ -117,7 +117,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: From
-    path: ../Sin.Net.Domain/Repository/RepositoryView.cs
+    path: Repository/RepositoryView.cs
     startLine: 33
   assemblies:
   - Sin.Net.Domain
@@ -159,7 +159,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: To
-    path: ../Sin.Net.Domain/Repository/RepositoryView.cs
+    path: Repository/RepositoryView.cs
     startLine: 56
   assemblies:
   - Sin.Net.Domain
@@ -169,6 +169,7 @@ items:
   syntax:
     content: >-
       public Tout To<Tout>()
+
           where Tout : IterativeRepositoryBase<T>, new()
     typeParameters:
     - id: Tout
@@ -202,7 +203,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Properties
-    path: ../Sin.Net.Domain/Repository/RepositoryView.cs
+    path: Repository/RepositoryView.cs
     startLine: 93
   assemblies:
   - Sin.Net.Domain
@@ -241,7 +242,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Items
-    path: ../Sin.Net.Domain/Repository/RepositoryView.cs
+    path: Repository/RepositoryView.cs
     startLine: 98
   assemblies:
   - Sin.Net.Domain

@@ -23,7 +23,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: MqttReceivedEventArgs
-    path: ../Sin.Net.Domain/Infrastructure/Mqtt/MqttMessageReceivedEventArgs.cs
+    path: Infrastructure/Mqtt/MqttMessageReceivedEventArgs.cs
     startLine: 7
   assemblies:
   - Sin.Net.Domain
@@ -32,6 +32,7 @@ items:
     content: 'public class MqttReceivedEventArgs : EventArgs'
     content.vb: >-
       Public Class MqttReceivedEventArgs
+
           Inherits EventArgs
   inheritance:
   - System.Object
@@ -71,7 +72,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
-    path: ../Sin.Net.Domain/Infrastructure/Mqtt/MqttMessageReceivedEventArgs.cs
+    path: Infrastructure/Mqtt/MqttMessageReceivedEventArgs.cs
     startLine: 12
   assemblies:
   - Sin.Net.Domain
@@ -106,7 +107,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Deserialize
-    path: ../Sin.Net.Domain/Infrastructure/Mqtt/MqttMessageReceivedEventArgs.cs
+    path: Infrastructure/Mqtt/MqttMessageReceivedEventArgs.cs
     startLine: 18
   assemblies:
   - Sin.Net.Domain
@@ -114,6 +115,7 @@ items:
   syntax:
     content: >-
       public T Deserialize<T>(Func<string, T> function)
+
           where T : new()
     parameters:
     - id: function
@@ -148,7 +150,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Deserialize
-    path: ../Sin.Net.Domain/Infrastructure/Mqtt/MqttMessageReceivedEventArgs.cs
+    path: Infrastructure/Mqtt/MqttMessageReceivedEventArgs.cs
     startLine: 23
   assemblies:
   - Sin.Net.Domain
@@ -156,6 +158,7 @@ items:
   syntax:
     content: >-
       public T Deserialize<T>(AdapterBase adapter)
+
           where T : new()
     parameters:
     - id: adapter
@@ -190,7 +193,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Topic
-    path: ../Sin.Net.Domain/Infrastructure/Mqtt/MqttMessageReceivedEventArgs.cs
+    path: Infrastructure/Mqtt/MqttMessageReceivedEventArgs.cs
     startLine: 30
   assemblies:
   - Sin.Net.Domain
@@ -225,7 +228,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Message
-    path: ../Sin.Net.Domain/Infrastructure/Mqtt/MqttMessageReceivedEventArgs.cs
+    path: Infrastructure/Mqtt/MqttMessageReceivedEventArgs.cs
     startLine: 32
   assemblies:
   - Sin.Net.Domain

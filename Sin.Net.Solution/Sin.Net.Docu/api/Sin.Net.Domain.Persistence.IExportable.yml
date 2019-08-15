@@ -23,7 +23,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IExportable
-    path: ../Sin.Net.Domain/Persistence/IExportable.cs
+    path: Persistence/IExportable.cs
     startLine: 8
   assemblies:
   - Sin.Net.Domain
@@ -59,7 +59,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Setup
-    path: ../Sin.Net.Domain/Persistence/IExportable.cs
+    path: Persistence/IExportable.cs
     startLine: 15
   assemblies:
   - Sin.Net.Domain
@@ -94,7 +94,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Build
-    path: ../Sin.Net.Domain/Persistence/IExportable.cs
+    path: Persistence/IExportable.cs
     startLine: 23
   assemblies:
   - Sin.Net.Domain
@@ -135,7 +135,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Build
-    path: ../Sin.Net.Domain/Persistence/IExportable.cs
+    path: Persistence/IExportable.cs
     startLine: 32
   assemblies:
   - Sin.Net.Domain
@@ -179,7 +179,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Export
-    path: ../Sin.Net.Domain/Persistence/IExportable.cs
+    path: Persistence/IExportable.cs
     startLine: 38
   assemblies:
   - Sin.Net.Domain
@@ -210,7 +210,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Type
-    path: ../Sin.Net.Domain/Persistence/IExportable.cs
+    path: Persistence/IExportable.cs
     startLine: 45
   assemblies:
   - Sin.Net.Domain

@@ -19,7 +19,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: SettingsBase
-    path: ../Sin.Net.Domain/Persistence/Settings/SettingsBase.cs
+    path: Persistence/Settings/SettingsBase.cs
     startLine: 7
   assemblies:
   - Sin.Net.Domain
@@ -79,7 +79,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Name
-    path: ../Sin.Net.Domain/Persistence/Settings/SettingsBase.cs
+    path: Persistence/Settings/SettingsBase.cs
     startLine: 14
   assemblies:
   - Sin.Net.Domain

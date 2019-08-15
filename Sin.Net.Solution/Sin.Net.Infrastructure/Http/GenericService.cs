@@ -1,6 +1,7 @@
 ﻿using Sin.Net.Domain.Infrastructure.Http;
 using System;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Sin.Net.Infrastructure.Http
@@ -8,7 +9,7 @@ namespace Sin.Net.Infrastructure.Http
     public class GenericService : ServiceBase
     {
         public sealed override event HttpResponseEventHandler CallResponded;
-
+        
         // -- constructors
 
         public GenericService() : base()
@@ -24,11 +25,16 @@ namespace Sin.Net.Infrastructure.Http
 
         public sealed override async Task<string> CallAsync()
         {
-            var request = new HttpRequestMessage(_endpoint.Method(), _endpoint.Request);
+            var request = new HttpRequestMessage {
+                Method = _endpoint.Method(),
+                RequestUri = new Uri(_client.BaseAddress, _endpoint.Request),
+                Content = _content
+            };
+
             var response = await _client.SendAsync(request);
             var result = await response.Content.ReadAsStringAsync();
 
-            CallResponded?.Invoke(this, new HttpResponseEventArgs(response.StatusCode));
+            CallResponded?.Invoke(this, new HttpResponseEventArgs(response.StatusCode, response));
             return result;
         }
 
@@ -46,5 +52,8 @@ namespace Sin.Net.Infrastructure.Http
             }
             return result;
         }
+
+
+
     }
 }

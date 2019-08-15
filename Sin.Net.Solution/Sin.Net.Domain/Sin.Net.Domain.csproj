@@ -20,11 +20,4 @@
     <PackageIconUrl>https://raw.githubusercontent.com/sin-net/Sin.Net/master/Images/Sin.Net.Logo.small.png</PackageIconUrl>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="docfx.console" Version="2.44.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-
 </Project>

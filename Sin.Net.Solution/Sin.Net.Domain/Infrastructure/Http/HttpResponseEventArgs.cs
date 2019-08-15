@@ -7,12 +7,18 @@ namespace Sin.Net.Domain.Infrastructure.Http
 
     public class HttpResponseEventArgs : EventArgs
     {
-
         public HttpResponseEventArgs(HttpStatusCode statusCode)
         {
             Timestamp = DateTime.Now;
             StatusCode = statusCode;
         }
+
+        public HttpResponseEventArgs(HttpStatusCode statusCode, object response) : this(statusCode)
+        { 
+            Response = response;
+        }
+
+        public object Response { get; private set; }
 
         public DateTime Timestamp { get; private set; }
 

@@ -19,7 +19,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IAdaptable
-    path: ../Sin.Net.Domain/Persistence/Adapter/IAdaptable.cs
+    path: Persistence/Adapter/IAdaptable.cs
     startLine: 5
   assemblies:
   - Sin.Net.Domain
@@ -55,7 +55,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Adapt
-    path: ../Sin.Net.Domain/Persistence/Adapter/IAdaptable.cs
+    path: Persistence/Adapter/IAdaptable.cs
     startLine: 14
   assemblies:
   - Sin.Net.Domain
@@ -65,6 +65,7 @@ items:
   syntax:
     content: >-
       Tout Adapt<Tin, Tout>(Tin input)
+
           where Tout : new()
     parameters:
     - id: input

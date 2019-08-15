@@ -6,6 +6,8 @@ items:
   parent: Sin.Net.Domain.Infrastructure.Http
   children:
   - Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.#ctor(System.Net.HttpStatusCode)
+  - Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.#ctor(System.Net.HttpStatusCode,System.Object)
+  - Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response
   - Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.StatusCode
   - Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Timestamp
   langs:
@@ -21,7 +23,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: HttpResponseEventArgs
-    path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
+    path: Infrastructure/Http/HttpResponseEventArgs.cs
     startLine: 7
   assemblies:
   - Sin.Net.Domain
@@ -30,6 +32,7 @@ items:
     content: 'public class HttpResponseEventArgs : EventArgs'
     content.vb: >-
       Public Class HttpResponseEventArgs
+
           Inherits EventArgs
   inheritance:
   - System.Object
@@ -69,8 +72,8 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
-    path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-    startLine: 10
+    path: Infrastructure/Http/HttpResponseEventArgs.cs
+    startLine: 9
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
@@ -85,6 +88,76 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.#ctor(System.Net.HttpStatusCode,System.Object)
+  commentId: M:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.#ctor(System.Net.HttpStatusCode,System.Object)
+  id: '#ctor(System.Net.HttpStatusCode,System.Object)'
+  parent: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs
+  langs:
+  - csharp
+  - vb
+  name: HttpResponseEventArgs(HttpStatusCode, Object)
+  nameWithType: HttpResponseEventArgs.HttpResponseEventArgs(HttpStatusCode, Object)
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.HttpResponseEventArgs(System.Net.HttpStatusCode, System.Object)
+  type: Constructor
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: .ctor
+    path: Infrastructure/Http/HttpResponseEventArgs.cs
+    startLine: 15
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure.Http
+  syntax:
+    content: public HttpResponseEventArgs(HttpStatusCode statusCode, object response)
+    parameters:
+    - id: statusCode
+      type: System.Net.HttpStatusCode
+    - id: response
+      type: System.Object
+    content.vb: Public Sub New(statusCode As HttpStatusCode, response As Object)
+  overload: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response
+  commentId: P:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response
+  id: Response
+  parent: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Response
+  nameWithType: HttpResponseEventArgs.Response
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Response
+    path: Infrastructure/Http/HttpResponseEventArgs.cs
+    startLine: 20
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure.Http
+  syntax:
+    content: public object Response { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public ReadOnly Property Response As Object
+  overload: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 - uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Timestamp
   commentId: P:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Timestamp
   id: Timestamp
@@ -102,8 +175,8 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Timestamp
-    path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-    startLine: 16
+    path: Infrastructure/Http/HttpResponseEventArgs.cs
+    startLine: 22
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
@@ -137,8 +210,8 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: StatusCode
-    path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-    startLine: 18
+    path: Infrastructure/Http/HttpResponseEventArgs.cs
+    startLine: 24
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
@@ -742,6 +815,11 @@ references:
   name: System.Net
   nameWithType: System.Net
   fullName: System.Net
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response*
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response
+  name: Response
+  nameWithType: HttpResponseEventArgs.Response
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response
 - uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Timestamp*
   commentId: Overload:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Timestamp
   name: Timestamp

@@ -24,7 +24,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: GenericService
     path: ../Sin.Net.Infrastructure/Http/GenericService.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Http
@@ -39,8 +39,12 @@ items:
   inheritedMembers:
   - Sin.Net.Domain.Infrastructure.Http.ServiceBase._client
   - Sin.Net.Domain.Infrastructure.Http.ServiceBase._endpoint
+  - Sin.Net.Domain.Infrastructure.Http.ServiceBase._content
   - Sin.Net.Domain.Infrastructure.Http.ServiceBase.Setup(System.Net.Http.HttpClient,Sin.Net.Domain.Infrastructure.Http.HttpEndpoint)
+  - Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String)
+  - Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String,System.Text.Encoding,System.String)
   - Sin.Net.Domain.Infrastructure.Http.ServiceBase.AddHeader(System.String,System.String)
+  - Sin.Net.Domain.Infrastructure.Http.ServiceBase.Content
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -75,7 +79,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: CallResponded
     path: ../Sin.Net.Infrastructure/Http/GenericService.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Http
@@ -111,7 +115,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Infrastructure/Http/GenericService.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Http
@@ -141,7 +145,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Infrastructure/Http/GenericService.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Http
@@ -176,7 +180,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: CallAsync
     path: ../Sin.Net.Infrastructure/Http/GenericService.cs
-    startLine: 24
+    startLine: 25
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Http
@@ -213,7 +217,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: CallAsync
     path: ../Sin.Net.Infrastructure/Http/GenericService.cs
-    startLine: 34
+    startLine: 40
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Http
@@ -273,6 +277,12 @@ references:
   name: _endpoint
   nameWithType: ServiceBase._endpoint
   fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase._endpoint
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase._content
+  commentId: F:Sin.Net.Domain.Infrastructure.Http.ServiceBase._content
+  parent: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  name: _content
+  nameWithType: ServiceBase._content
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase._content
 - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.Setup(System.Net.Http.HttpClient,Sin.Net.Domain.Infrastructure.Http.HttpEndpoint)
   commentId: M:Sin.Net.Domain.Infrastructure.Http.ServiceBase.Setup(System.Net.Http.HttpClient,Sin.Net.Domain.Infrastructure.Http.HttpEndpoint)
   parent: Sin.Net.Domain.Infrastructure.Http.ServiceBase
@@ -323,6 +333,116 @@ references:
     name: HttpEndpoint
     nameWithType: HttpEndpoint
     fullName: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String)
+  commentId: M:Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String)
+  parent: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  isExternal: true
+  name: SetContent(String)
+  nameWithType: ServiceBase.SetContent(String)
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String)
+    name: SetContent
+    nameWithType: ServiceBase.SetContent
+    fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String)
+    name: SetContent
+    nameWithType: ServiceBase.SetContent
+    fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String,System.Text.Encoding,System.String)
+  commentId: M:Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String,System.Text.Encoding,System.String)
+  parent: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  isExternal: true
+  name: SetContent(String, Encoding, String)
+  nameWithType: ServiceBase.SetContent(String, Encoding, String)
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String, System.Text.Encoding, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String,System.Text.Encoding,System.String)
+    name: SetContent
+    nameWithType: ServiceBase.SetContent
+    fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    nameWithType: Encoding
+    fullName: System.Text.Encoding
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent(System.String,System.Text.Encoding,System.String)
+    name: SetContent
+    nameWithType: ServiceBase.SetContent
+    fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.SetContent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.Encoding
+    name: Encoding
+    nameWithType: Encoding
+    fullName: System.Text.Encoding
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
@@ -381,6 +501,12 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Sin.Net.Domain.Infrastructure.Http.ServiceBase.Content
+  commentId: P:Sin.Net.Domain.Infrastructure.Http.ServiceBase.Content
+  parent: Sin.Net.Domain.Infrastructure.Http.ServiceBase
+  name: Content
+  nameWithType: ServiceBase.Content
+  fullName: Sin.Net.Domain.Infrastructure.Http.ServiceBase.Content
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object

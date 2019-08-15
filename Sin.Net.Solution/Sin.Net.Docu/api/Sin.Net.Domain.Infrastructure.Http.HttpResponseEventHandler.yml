@@ -18,7 +18,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: HttpResponseEventHandler
-    path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
+    path: Infrastructure/Http/HttpResponseEventArgs.cs
     startLine: 5
   assemblies:
   - Sin.Net.Domain

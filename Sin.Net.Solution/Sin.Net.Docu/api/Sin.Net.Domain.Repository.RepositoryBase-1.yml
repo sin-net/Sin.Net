@@ -29,7 +29,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: RepositoryBase
-    path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
+    path: Repository/RepositoryBase.cs
     startLine: 6
   assemblies:
   - Sin.Net.Domain
@@ -92,7 +92,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
-    path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
+    path: Repository/RepositoryBase.cs
     startLine: 14
   assemblies:
   - Sin.Net.Domain
@@ -126,7 +126,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Contains
-    path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
+    path: Repository/RepositoryBase.cs
     startLine: 26
   assemblies:
   - Sin.Net.Domain
@@ -169,7 +169,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Add
-    path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
+    path: Repository/RepositoryBase.cs
     startLine: 36
   assemblies:
   - Sin.Net.Domain
@@ -212,7 +212,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: AddRange
-    path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
+    path: Repository/RepositoryBase.cs
     startLine: 42
   assemblies:
   - Sin.Net.Domain
@@ -250,7 +250,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: RemoveAt
-    path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
+    path: Repository/RepositoryBase.cs
     startLine: 51
   assemblies:
   - Sin.Net.Domain
@@ -290,7 +290,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Remove
-    path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
+    path: Repository/RepositoryBase.cs
     startLine: 61
   assemblies:
   - Sin.Net.Domain
@@ -333,7 +333,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Clear
-    path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
+    path: Repository/RepositoryBase.cs
     startLine: 66
   assemblies:
   - Sin.Net.Domain
@@ -367,7 +367,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Name
-    path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
+    path: Repository/RepositoryBase.cs
     startLine: 76
   assemblies:
   - Sin.Net.Domain
@@ -406,7 +406,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Items
-    path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
+    path: Repository/RepositoryBase.cs
     startLine: 81
   assemblies:
   - Sin.Net.Domain
@@ -445,7 +445,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Count
-    path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
+    path: Repository/RepositoryBase.cs
     startLine: 86
   assemblies:
   - Sin.Net.Domain
@@ -484,7 +484,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: this[]
-    path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
+    path: Repository/RepositoryBase.cs
     startLine: 95
   assemblies:
   - Sin.Net.Domain

@@ -20,7 +20,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: SecurityExtensions
-    path: ../Sin.Net.Domain/System/Security/SecurityExtensions.cs
+    path: System/Security/SecurityExtensions.cs
     startLine: 11
   assemblies:
   - Sin.Net.Domain
@@ -65,7 +65,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: SecureAccess
-    path: ../Sin.Net.Domain/System/Security/SecurityExtensions.cs
+    path: System/Security/SecurityExtensions.cs
     startLine: 21
   assemblies:
   - Sin.Net.Domain
@@ -116,7 +116,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: SecureAccess
-    path: ../Sin.Net.Domain/System/Security/SecurityExtensions.cs
+    path: System/Security/SecurityExtensions.cs
     startLine: 34
   assemblies:
   - Sin.Net.Domain

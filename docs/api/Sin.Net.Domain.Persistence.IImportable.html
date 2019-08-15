@@ -74,7 +74,7 @@
   <div class="markdown level0 summary"><p>Interface for concrete import functionality</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-
+  
   
   
   
@@ -85,7 +85,7 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IImportable</code></pre>
   </div>
-
+  
   
   
   
@@ -110,11 +110,11 @@
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">string Type { get; }</code></pre>
   </div>
-
+  
   
   
   
@@ -156,12 +156,13 @@
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">T As&lt;T&gt;()
+
     where T : new()</code></pre>
   </div>
-
+  
   
   <h5 class="returns">Returns</h5>
   <table>
@@ -212,12 +213,13 @@
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">T As&lt;T&gt;(IAdaptable adapter)
+
     where T : new()</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -278,11 +280,11 @@
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">object AsItIs()</code></pre>
   </div>
-
+  
   
   <h5 class="returns">Returns</h5>
   <table>
@@ -323,11 +325,11 @@
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">IImportable Import()</code></pre>
   </div>
-
+  
   
   <h5 class="returns">Returns</h5>
   <table>
@@ -368,11 +370,11 @@
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-
+  
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">IImportable Setup(SettingsBase setting)</code></pre>
   </div>
-
+  
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
