@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyVersion>0.1.1.0</AssemblyVersion>
-    <FileVersion>0.1.1.0</FileVersion>
+    <AssemblyVersion>0.1.2.0</AssemblyVersion>
+    <FileVersion>0.1.2.0</FileVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Adrian Singer</Authors>
     <Company>Adrian Singer</Company>
@@ -15,8 +15,8 @@
     <PackageTags>Sin.Net.Domain, HTTP, MQTT, MQTTnet</PackageTags>
     <Description>Sin.Net.Infrastructure provides features for your software to interact with external infrastructure or services. An Http and Mqtt controller is provided for ease of use. The Mqtt implementation is based on MqttNet.</Description>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>0.1.1</Version>
-    <PackageReleaseNotes>project info updated</PackageReleaseNotes>
+    <Version>0.1.2</Version>
+    <PackageReleaseNotes>The Http Service is able to send content e.g. json strings</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
