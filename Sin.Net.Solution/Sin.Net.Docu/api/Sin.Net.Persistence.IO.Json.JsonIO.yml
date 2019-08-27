@@ -7,8 +7,9 @@ items:
   children:
   - Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
   - Sin.Net.Persistence.IO.Json.JsonIO.ReadJson(System.String)
-  - Sin.Net.Persistence.IO.Json.JsonIO.ReadJson``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
-  - Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object,System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
+  - Sin.Net.Persistence.IO.Json.JsonIO.ReadJson``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
+  - Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object,System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
+  - Sin.Net.Persistence.IO.Json.JsonIO.Throw
   - Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
   langs:
   - csharp
@@ -68,7 +69,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ToJsonString
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
-    startLine: 23
+    startLine: 25
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.IO.Json
@@ -112,7 +113,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: FromJsonString
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
-    startLine: 54
+    startLine: 58
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.IO.Json
@@ -129,6 +130,7 @@ items:
       description: The optional binder implementation
     - id: converters
       type: System.Collections.Generic.List{Newtonsoft.Json.JsonConverter}
+      description: The optional list of json converters.
     typeParameters:
     - id: T
       description: The typeparam
@@ -164,7 +166,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ReadJson
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
-    startLine: 71
+    startLine: 83
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.IO.Json
@@ -187,16 +189,16 @@ items:
   modifiers.vb:
   - Public
   - Shared
-- uid: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
-  commentId: M:Sin.Net.Persistence.IO.Json.JsonIO.ReadJson``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
-  id: ReadJson``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
+  commentId: M:Sin.Net.Persistence.IO.Json.JsonIO.ReadJson``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
+  id: ReadJson``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
   parent: Sin.Net.Persistence.IO.Json.JsonIO
   langs:
   - csharp
   - vb
-  name: ReadJson<T>(String, ISerializationBinder)
-  nameWithType: JsonIO.ReadJson<T>(String, ISerializationBinder)
-  fullName: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson<T>(System.String, Newtonsoft.Json.Serialization.ISerializationBinder)
+  name: ReadJson<T>(String, ISerializationBinder, List<JsonConverter>)
+  nameWithType: JsonIO.ReadJson<T>(String, ISerializationBinder, List<JsonConverter>)
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson<T>(System.String, Newtonsoft.Json.Serialization.ISerializationBinder, System.Collections.Generic.List<Newtonsoft.Json.JsonConverter>)
   type: Method
   source:
     remote:
@@ -205,14 +207,14 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ReadJson
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
-    startLine: 89
+    startLine: 102
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.IO.Json
   summary: "\nReads a json file and returns the converted object.\n"
   example: []
   syntax:
-    content: public static T ReadJson<T>(string file, ISerializationBinder binder = null)
+    content: public static T ReadJson<T>(string file, ISerializationBinder binder = null, List<JsonConverter> converters = null)
     parameters:
     - id: file
       type: System.String
@@ -220,33 +222,36 @@ items:
     - id: binder
       type: Newtonsoft.Json.Serialization.ISerializationBinder
       description: The optional binder implementation.
+    - id: converters
+      type: System.Collections.Generic.List{Newtonsoft.Json.JsonConverter}
+      description: The optional list of json converters.
     typeParameters:
     - id: T
       description: The typeparam
     return:
       type: '{T}'
       description: The deserialized object of type t.
-    content.vb: Public Shared Function ReadJson(Of T)(file As String, binder As ISerializationBinder = Nothing) As T
+    content.vb: Public Shared Function ReadJson(Of T)(file As String, binder As ISerializationBinder = Nothing, converters As List(Of JsonConverter) = Nothing) As T
   overload: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson*
-  nameWithType.vb: JsonIO.ReadJson(Of T)(String, ISerializationBinder)
+  nameWithType.vb: JsonIO.ReadJson(Of T)(String, ISerializationBinder, List(Of JsonConverter))
   modifiers.csharp:
   - public
   - static
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson(Of T)(System.String, Newtonsoft.Json.Serialization.ISerializationBinder)
-  name.vb: ReadJson(Of T)(String, ISerializationBinder)
-- uid: Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object,System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
-  commentId: M:Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object,System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
-  id: SaveToJson(System.Object,System.String,Newtonsoft.Json.Serialization.ISerializationBinder)
+  fullName.vb: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson(Of T)(System.String, Newtonsoft.Json.Serialization.ISerializationBinder, System.Collections.Generic.List(Of Newtonsoft.Json.JsonConverter))
+  name.vb: ReadJson(Of T)(String, ISerializationBinder, List(Of JsonConverter))
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object,System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
+  commentId: M:Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object,System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
+  id: SaveToJson(System.Object,System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
   parent: Sin.Net.Persistence.IO.Json.JsonIO
   langs:
   - csharp
   - vb
-  name: SaveToJson(Object, String, ISerializationBinder)
-  nameWithType: JsonIO.SaveToJson(Object, String, ISerializationBinder)
-  fullName: Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object, System.String, Newtonsoft.Json.Serialization.ISerializationBinder)
+  name: SaveToJson(Object, String, ISerializationBinder, List<JsonConverter>)
+  nameWithType: JsonIO.SaveToJson(Object, String, ISerializationBinder, List<JsonConverter>)
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object, System.String, Newtonsoft.Json.Serialization.ISerializationBinder, System.Collections.Generic.List<Newtonsoft.Json.JsonConverter>)
   type: Method
   source:
     remote:
@@ -255,14 +260,14 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: SaveToJson
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
-    startLine: 108
+    startLine: 122
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.IO.Json
   summary: "\nWrites an serialized object into a file.\n"
   example: []
   syntax:
-    content: public static bool SaveToJson(object obj, string file, ISerializationBinder binder = null)
+    content: public static bool SaveToJson(object obj, string file, ISerializationBinder binder = null, List<JsonConverter> converters = null)
     parameters:
     - id: obj
       type: System.Object
@@ -273,14 +278,59 @@ items:
     - id: binder
       type: Newtonsoft.Json.Serialization.ISerializationBinder
       description: The optional binder implementation.
+    - id: converters
+      type: System.Collections.Generic.List{Newtonsoft.Json.JsonConverter}
+      description: The optional list of json converters.
     return:
       type: System.Boolean
       description: If successful it returns &apos;true&apos; otherwise &apos;false&apos;.
-    content.vb: Public Shared Function SaveToJson(obj As Object, file As String, binder As ISerializationBinder = Nothing) As Boolean
+    content.vb: Public Shared Function SaveToJson(obj As Object, file As String, binder As ISerializationBinder = Nothing, converters As List(Of JsonConverter) = Nothing) As Boolean
   overload: Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson*
+  nameWithType.vb: JsonIO.SaveToJson(Object, String, ISerializationBinder, List(Of JsonConverter))
   modifiers.csharp:
   - public
   - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object, System.String, Newtonsoft.Json.Serialization.ISerializationBinder, System.Collections.Generic.List(Of Newtonsoft.Json.JsonConverter))
+  name.vb: SaveToJson(Object, String, ISerializationBinder, List(Of JsonConverter))
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.Throw
+  commentId: P:Sin.Net.Persistence.IO.Json.JsonIO.Throw
+  id: Throw
+  parent: Sin.Net.Persistence.IO.Json.JsonIO
+  langs:
+  - csharp
+  - vb
+  name: Throw
+  nameWithType: JsonIO.Throw
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.Throw
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Throw
+    path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
+    startLine: 151
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.IO.Json
+  summary: "\nGets or sets the behavoir, when an internal Exception occures.\n"
+  example: []
+  syntax:
+    content: public static bool Throw { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Property Throw As Boolean
+  overload: Sin.Net.Persistence.IO.Json.JsonIO.Throw*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
   modifiers.vb:
   - Public
   - Shared
@@ -728,3 +778,8 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.Throw*
+  commentId: Overload:Sin.Net.Persistence.IO.Json.JsonIO.Throw
+  name: Throw
+  nameWithType: JsonIO.Throw
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.Throw

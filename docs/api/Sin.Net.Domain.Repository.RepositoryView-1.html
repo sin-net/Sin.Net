@@ -75,7 +75,7 @@
 This class type can be used for serialization or for views in a web-based application.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  
+
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
@@ -116,7 +116,7 @@ This class type can be used for serialization or for views in a web-based applic
     <pre><code class="lang-csharp hljs">[Serializable]
 public class RepositoryView&lt;T&gt;</code></pre>
   </div>
-  
+
   
   
   <h5 class="typeParameters">Type Parameters</h5>
@@ -150,11 +150,11 @@ public class RepositoryView&lt;T&gt;</code></pre>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-  
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RepositoryView()</code></pre>
   </div>
-  
+
   
   
   
@@ -187,11 +187,11 @@ public class RepositoryView&lt;T&gt;</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-  
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public List&lt;T&gt; Items { get; set; }</code></pre>
   </div>
-  
+
   
   
   
@@ -231,11 +231,11 @@ public class RepositoryView&lt;T&gt;</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-  
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Dictionary&lt;string, object&gt; Properties { get; set; }</code></pre>
   </div>
-  
+
   
   
   
@@ -279,11 +279,11 @@ the Items list will be copied.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-  
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RepositoryView&lt;T&gt; From(IterativeRepositoryBase&lt;T&gt; repository)</code></pre>
   </div>
-  
+
   <h5 class="parameters">Parameters</h5>
   <table>
     <tr>
@@ -335,12 +335,12 @@ the Items list will be copied.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
-  
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Tout To&lt;Tout&gt;()
     where Tout : IterativeRepositoryBase&lt;T&gt;, new()</code></pre>
   </div>
-  
+
   
   <h5 class="returns">Returns</h5>
   <table>
