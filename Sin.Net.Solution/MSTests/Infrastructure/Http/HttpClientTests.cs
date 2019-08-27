@@ -130,7 +130,7 @@ namespace MSTests.Infrastructure.Http
                 Request = "",
                 MethodName = ""
             };
-
+            JsonIO.Throw = true;
             // act
             try
             {
@@ -140,6 +140,11 @@ namespace MSTests.Infrastructure.Http
                     Log.Info($"Http responded with code: {e.StatusCode}");
                 };
                 var result = await _service.CallAsync<object>((s) => JsonIO.FromJsonString<object>(s));
+
+                if (result == null)
+                {
+                    throw new ServiceException("The result should not be null.");
+                }
             }
             catch (Exception ex)
             {

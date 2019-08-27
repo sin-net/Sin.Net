@@ -21,7 +21,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ConfigBase
-    path: Config/ConfigBase.cs
+    path: ../Sin.Net.Domain/Config/ConfigBase.cs
     startLine: 6
   assemblies:
   - Sin.Net.Domain
@@ -70,7 +70,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
-    path: Config/ConfigBase.cs
+    path: ../Sin.Net.Domain/Config/ConfigBase.cs
     startLine: 14
   assemblies:
   - Sin.Net.Domain
@@ -106,7 +106,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ToString
-    path: Config/ConfigBase.cs
+    path: ../Sin.Net.Domain/Config/ConfigBase.cs
     startLine: 25
   assemblies:
   - Sin.Net.Domain
@@ -144,7 +144,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Name
-    path: Config/ConfigBase.cs
+    path: ../Sin.Net.Domain/Config/ConfigBase.cs
     startLine: 32
   assemblies:
   - Sin.Net.Domain

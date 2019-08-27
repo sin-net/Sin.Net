@@ -27,7 +27,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IMqttControlable
-    path: Infrastructure/Mqtt/IMqttControlable.cs
+    path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
     startLine: 5
   assemblies:
   - Sin.Net.Domain
@@ -61,7 +61,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: MessageReceived
-    path: Infrastructure/Mqtt/IMqttControlable.cs
+    path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
     startLine: 9
   assemblies:
   - Sin.Net.Domain
@@ -88,7 +88,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Connected
-    path: Infrastructure/Mqtt/IMqttControlable.cs
+    path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
     startLine: 10
   assemblies:
   - Sin.Net.Domain
@@ -115,7 +115,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Disconnected
-    path: Infrastructure/Mqtt/IMqttControlable.cs
+    path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
     startLine: 11
   assemblies:
   - Sin.Net.Domain
@@ -142,7 +142,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: CreateClient
-    path: Infrastructure/Mqtt/IMqttControlable.cs
+    path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
     startLine: 15
   assemblies:
   - Sin.Net.Domain
@@ -173,7 +173,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: PublishAsync
-    path: Infrastructure/Mqtt/IMqttControlable.cs
+    path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
     startLine: 17
   assemblies:
   - Sin.Net.Domain
@@ -206,7 +206,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: PublishAsync
-    path: Infrastructure/Mqtt/IMqttControlable.cs
+    path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
     startLine: 18
   assemblies:
   - Sin.Net.Domain
@@ -241,7 +241,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ConnectAsync
-    path: Infrastructure/Mqtt/IMqttControlable.cs
+    path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
     startLine: 19
   assemblies:
   - Sin.Net.Domain
@@ -269,7 +269,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: DisconnectAsync
-    path: Infrastructure/Mqtt/IMqttControlable.cs
+    path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
     startLine: 20
   assemblies:
   - Sin.Net.Domain
@@ -297,7 +297,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Config
-    path: Infrastructure/Mqtt/IMqttControlable.cs
+    path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
     startLine: 24
   assemblies:
   - Sin.Net.Domain

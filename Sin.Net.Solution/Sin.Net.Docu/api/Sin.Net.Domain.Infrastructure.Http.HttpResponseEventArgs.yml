@@ -23,7 +23,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: HttpResponseEventArgs
-    path: Infrastructure/Http/HttpResponseEventArgs.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
     startLine: 7
   assemblies:
   - Sin.Net.Domain
@@ -32,7 +32,6 @@ items:
     content: 'public class HttpResponseEventArgs : EventArgs'
     content.vb: >-
       Public Class HttpResponseEventArgs
-
           Inherits EventArgs
   inheritance:
   - System.Object
@@ -72,7 +71,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
-    path: Infrastructure/Http/HttpResponseEventArgs.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
     startLine: 9
   assemblies:
   - Sin.Net.Domain
@@ -105,7 +104,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
-    path: Infrastructure/Http/HttpResponseEventArgs.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
     startLine: 15
   assemblies:
   - Sin.Net.Domain
@@ -140,7 +139,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Response
-    path: Infrastructure/Http/HttpResponseEventArgs.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
     startLine: 20
   assemblies:
   - Sin.Net.Domain
@@ -175,7 +174,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Timestamp
-    path: Infrastructure/Http/HttpResponseEventArgs.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
     startLine: 22
   assemblies:
   - Sin.Net.Domain
@@ -210,7 +209,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: StatusCode
-    path: Infrastructure/Http/HttpResponseEventArgs.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
     startLine: 24
   assemblies:
   - Sin.Net.Domain

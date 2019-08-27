@@ -32,7 +32,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Log
-    path: Persistence/Logging/Log.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
     startLine: 5
   assemblies:
   - Sin.Net.Domain
@@ -74,7 +74,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Trace
-    path: Persistence/Logging/Log.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
     startLine: 30
   assemblies:
   - Sin.Net.Domain
@@ -111,7 +111,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Trace
-    path: Persistence/Logging/Log.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
     startLine: 35
   assemblies:
   - Sin.Net.Domain
@@ -148,7 +148,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Debug
-    path: Persistence/Logging/Log.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
     startLine: 42
   assemblies:
   - Sin.Net.Domain
@@ -185,7 +185,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Debug
-    path: Persistence/Logging/Log.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
     startLine: 47
   assemblies:
   - Sin.Net.Domain
@@ -222,7 +222,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Info
-    path: Persistence/Logging/Log.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
     startLine: 54
   assemblies:
   - Sin.Net.Domain
@@ -259,7 +259,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Info
-    path: Persistence/Logging/Log.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
     startLine: 59
   assemblies:
   - Sin.Net.Domain
@@ -296,7 +296,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Warn
-    path: Persistence/Logging/Log.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
     startLine: 66
   assemblies:
   - Sin.Net.Domain
@@ -333,7 +333,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Warn
-    path: Persistence/Logging/Log.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
     startLine: 71
   assemblies:
   - Sin.Net.Domain
@@ -370,7 +370,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Error
-    path: Persistence/Logging/Log.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
     startLine: 78
   assemblies:
   - Sin.Net.Domain
@@ -407,7 +407,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Error
-    path: Persistence/Logging/Log.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
     startLine: 83
   assemblies:
   - Sin.Net.Domain
@@ -444,7 +444,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Fatal
-    path: Persistence/Logging/Log.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
     startLine: 89
   assemblies:
   - Sin.Net.Domain
@@ -479,7 +479,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Stop
-    path: Persistence/Logging/Log.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
     startLine: 94
   assemblies:
   - Sin.Net.Domain
@@ -511,7 +511,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Inject
-    path: Persistence/Logging/Log.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
     startLine: 103
   assemblies:
   - Sin.Net.Domain
@@ -549,7 +549,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IsNotNull
-    path: Persistence/Logging/Log.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/Log.cs
     startLine: 113
   assemblies:
   - Sin.Net.Domain

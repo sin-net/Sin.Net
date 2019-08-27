@@ -23,7 +23,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: User
-    path: System/UserManagement/User.cs
+    path: ../Sin.Net.Domain/System/UserManagement/User.cs
     startLine: 7
   assemblies:
   - Sin.Net.Domain
@@ -68,7 +68,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
-    path: System/UserManagement/User.cs
+    path: ../Sin.Net.Domain/System/UserManagement/User.cs
     startLine: 12
   assemblies:
   - Sin.Net.Domain
@@ -100,7 +100,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ToString
-    path: System/UserManagement/User.cs
+    path: ../Sin.Net.Domain/System/UserManagement/User.cs
     startLine: 23
   assemblies:
   - Sin.Net.Domain
@@ -138,7 +138,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Name
-    path: System/UserManagement/User.cs
+    path: ../Sin.Net.Domain/System/UserManagement/User.cs
     startLine: 30
   assemblies:
   - Sin.Net.Domain
@@ -175,7 +175,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Level
-    path: System/UserManagement/User.cs
+    path: ../Sin.Net.Domain/System/UserManagement/User.cs
     startLine: 36
   assemblies:
   - Sin.Net.Domain
@@ -212,7 +212,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Email
-    path: System/UserManagement/User.cs
+    path: ../Sin.Net.Domain/System/UserManagement/User.cs
     startLine: 41
   assemblies:
   - Sin.Net.Domain

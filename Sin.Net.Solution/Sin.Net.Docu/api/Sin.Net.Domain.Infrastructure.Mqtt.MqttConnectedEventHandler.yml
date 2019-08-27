@@ -18,7 +18,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: MqttConnectedEventHandler
-    path: Infrastructure/Mqtt/MqttConnectedEventArgs.cs
+    path: ../Sin.Net.Domain/Infrastructure/Mqtt/MqttConnectedEventArgs.cs
     startLine: 2
   assemblies:
   - Sin.Net.Domain

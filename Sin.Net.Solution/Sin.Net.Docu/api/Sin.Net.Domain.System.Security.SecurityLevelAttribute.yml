@@ -23,7 +23,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: SecurityLevelAttribute
-    path: System/Security/SecurityLevelAttribute.cs
+    path: ../Sin.Net.Domain/System/Security/SecurityLevelAttribute.cs
     startLine: 9
   assemblies:
   - Sin.Net.Domain
@@ -39,7 +39,6 @@ items:
       <AttributeUsage(AttributeTargets.Method Or AttributeTargets.Property)>
 
       Public Class SecurityLevelAttribute
-
           Inherits Attribute
   inheritance:
   - System.Object
@@ -119,7 +118,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
-    path: System/Security/SecurityLevelAttribute.cs
+    path: ../Sin.Net.Domain/System/Security/SecurityLevelAttribute.cs
     startLine: 15
   assemblies:
   - Sin.Net.Domain
@@ -151,7 +150,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
-    path: System/Security/SecurityLevelAttribute.cs
+    path: ../Sin.Net.Domain/System/Security/SecurityLevelAttribute.cs
     startLine: 26
   assemblies:
   - Sin.Net.Domain
@@ -187,7 +186,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Level
-    path: System/Security/SecurityLevelAttribute.cs
+    path: ../Sin.Net.Domain/System/Security/SecurityLevelAttribute.cs
     startLine: 36
   assemblies:
   - Sin.Net.Domain
@@ -224,7 +223,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Throw
-    path: System/Security/SecurityLevelAttribute.cs
+    path: ../Sin.Net.Domain/System/Security/SecurityLevelAttribute.cs
     startLine: 41
   assemblies:
   - Sin.Net.Domain
@@ -261,7 +260,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Message
-    path: System/Security/SecurityLevelAttribute.cs
+    path: ../Sin.Net.Domain/System/Security/SecurityLevelAttribute.cs
     startLine: 46
   assemblies:
   - Sin.Net.Domain

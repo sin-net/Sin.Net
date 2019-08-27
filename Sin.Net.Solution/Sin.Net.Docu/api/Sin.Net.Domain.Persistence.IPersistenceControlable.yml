@@ -22,7 +22,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IPersistenceControlable
-    path: Persistence/IPersistenceControlable.cs
+    path: ../Sin.Net.Domain/Persistence/IPersistenceControlable.cs
     startLine: 5
   assemblies:
   - Sin.Net.Domain
@@ -58,7 +58,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: InitExports
-    path: Persistence/IPersistenceControlable.cs
+    path: ../Sin.Net.Domain/Persistence/IPersistenceControlable.cs
     startLine: 10
   assemblies:
   - Sin.Net.Domain
@@ -86,7 +86,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: InitImports
-    path: Persistence/IPersistenceControlable.cs
+    path: ../Sin.Net.Domain/Persistence/IPersistenceControlable.cs
     startLine: 15
   assemblies:
   - Sin.Net.Domain
@@ -114,7 +114,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Exporter
-    path: Persistence/IPersistenceControlable.cs
+    path: ../Sin.Net.Domain/Persistence/IPersistenceControlable.cs
     startLine: 22
   assemblies:
   - Sin.Net.Domain
@@ -149,7 +149,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Importer
-    path: Persistence/IPersistenceControlable.cs
+    path: ../Sin.Net.Domain/Persistence/IPersistenceControlable.cs
     startLine: 29
   assemblies:
   - Sin.Net.Domain

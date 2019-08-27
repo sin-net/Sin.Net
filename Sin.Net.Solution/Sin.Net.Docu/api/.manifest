@@ -248,12 +248,11 @@
   "Sin.Net.Persistence.IO.Binary.BinaryIO.ToBytes(System.Object)": "Sin.Net.Persistence.IO.Binary.BinaryIO.yml",
   "Sin.Net.Persistence.IO.Json": "Sin.Net.Persistence.IO.Json.yml",
   "Sin.Net.Persistence.IO.Json.JsonIO": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
-  "Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder)": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
+  "Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
   "Sin.Net.Persistence.IO.Json.JsonIO.ReadJson(System.String)": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
   "Sin.Net.Persistence.IO.Json.JsonIO.ReadJson``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder)": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
   "Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object,System.String,Newtonsoft.Json.Serialization.ISerializationBinder)": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
-  "Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object)": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
-  "Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object,Newtonsoft.Json.Serialization.ISerializationBinder)": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
+  "Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
   "Sin.Net.Persistence.IO.Json.TypedSerializationBinder": "Sin.Net.Persistence.IO.Json.TypedSerializationBinder.yml",
   "Sin.Net.Persistence.IO.Json.TypedSerializationBinder.#ctor": "Sin.Net.Persistence.IO.Json.TypedSerializationBinder.yml",
   "Sin.Net.Persistence.IO.Json.TypedSerializationBinder.#ctor(System.Collections.Generic.List{System.Type})": "Sin.Net.Persistence.IO.Json.TypedSerializationBinder.yml",
@@ -283,5 +282,7 @@
   "Sin.Net.Persistence.Settings.FileSetting.Location": "Sin.Net.Persistence.Settings.FileSetting.yml",
   "Sin.Net.Persistence.Settings.JsonSetting": "Sin.Net.Persistence.Settings.JsonSetting.yml",
   "Sin.Net.Persistence.Settings.JsonSetting.#ctor": "Sin.Net.Persistence.Settings.JsonSetting.yml",
-  "Sin.Net.Persistence.Settings.JsonSetting.Binder": "Sin.Net.Persistence.Settings.JsonSetting.yml"
+  "Sin.Net.Persistence.Settings.JsonSetting.Binder": "Sin.Net.Persistence.Settings.JsonSetting.yml",
+  "Sin.Net.Persistence.Settings.JsonSetting.ConvertEnumToString": "Sin.Net.Persistence.Settings.JsonSetting.yml",
+  "Sin.Net.Persistence.Settings.JsonSetting.Converters": "Sin.Net.Persistence.Settings.JsonSetting.yml"
 }

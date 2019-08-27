@@ -331,3 +331,4 @@ ASALocalRun/
 
 # own ignores
 docs/Readme.html
+/Sin.Net.Solution/Sin.Net.Docu/log.txt

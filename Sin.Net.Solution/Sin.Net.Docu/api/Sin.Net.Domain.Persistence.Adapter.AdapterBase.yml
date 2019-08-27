@@ -21,7 +21,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: AdapterBase
-    path: Persistence/Adapter/AdapterBase.cs
+    path: ../Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs
     startLine: 6
   assemblies:
   - Sin.Net.Domain
@@ -30,7 +30,6 @@ items:
     content: 'public abstract class AdapterBase : IAdaptable'
     content.vb: >-
       Public MustInherit Class AdapterBase
-
           Implements IAdaptable
   inheritance:
   - System.Object
@@ -72,7 +71,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Adapt
-    path: Persistence/Adapter/AdapterBase.cs
+    path: ../Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs
     startLine: 16
   assemblies:
   - Sin.Net.Domain
@@ -82,7 +81,6 @@ items:
   syntax:
     content: >-
       public abstract Tout Adapt<Tin, Tout>(Tin input)
-
           where Tout : new()
     parameters:
     - id: input
@@ -126,7 +124,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ValidateTypes
-    path: Persistence/Adapter/AdapterBase.cs
+    path: ../Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs
     startLine: 26
   assemblies:
   - Sin.Net.Domain
@@ -176,7 +174,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ConvertOutput
-    path: Persistence/Adapter/AdapterBase.cs
+    path: ../Sin.Net.Domain/Persistence/Adapter/AdapterBase.cs
     startLine: 46
   assemblies:
   - Sin.Net.Domain

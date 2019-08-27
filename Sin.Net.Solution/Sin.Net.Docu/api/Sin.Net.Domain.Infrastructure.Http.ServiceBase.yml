@@ -31,7 +31,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ServiceBase
-    path: Infrastructure/Http/ServiceBase.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
     startLine: 7
   assemblies:
   - Sin.Net.Domain
@@ -79,7 +79,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: _client
-    path: Infrastructure/Http/ServiceBase.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
     startLine: 9
   assemblies:
   - Sin.Net.Domain
@@ -110,7 +110,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: _endpoint
-    path: Infrastructure/Http/ServiceBase.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
     startLine: 10
   assemblies:
   - Sin.Net.Domain
@@ -141,7 +141,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: _content
-    path: Infrastructure/Http/ServiceBase.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
     startLine: 11
   assemblies:
   - Sin.Net.Domain
@@ -172,7 +172,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: CallResponded
-    path: Infrastructure/Http/ServiceBase.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
     startLine: 16
   assemblies:
   - Sin.Net.Domain
@@ -207,7 +207,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
-    path: Infrastructure/Http/ServiceBase.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
     startLine: 23
   assemblies:
   - Sin.Net.Domain
@@ -239,7 +239,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
-    path: Infrastructure/Http/ServiceBase.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
     startLine: 33
   assemblies:
   - Sin.Net.Domain
@@ -278,7 +278,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Setup
-    path: Infrastructure/Http/ServiceBase.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
     startLine: 40
   assemblies:
   - Sin.Net.Domain
@@ -315,7 +315,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: SetContent
-    path: Infrastructure/Http/ServiceBase.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
     startLine: 61
   assemblies:
   - Sin.Net.Domain
@@ -356,7 +356,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: SetContent
-    path: Infrastructure/Http/ServiceBase.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
     startLine: 73
   assemblies:
   - Sin.Net.Domain
@@ -403,7 +403,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: AddHeader
-    path: Infrastructure/Http/ServiceBase.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
     startLine: 85
   assemblies:
   - Sin.Net.Domain
@@ -445,7 +445,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: CallAsync
-    path: Infrastructure/Http/ServiceBase.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
     startLine: 91
   assemblies:
   - Sin.Net.Domain
@@ -479,7 +479,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: CallAsync
-    path: Infrastructure/Http/ServiceBase.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
     startLine: 93
   assemblies:
   - Sin.Net.Domain
@@ -487,7 +487,6 @@ items:
   syntax:
     content: >-
       public abstract Task<T> CallAsync<T>(Func<string, T> cast)
-
           where T : new()
     parameters:
     - id: cast
@@ -524,7 +523,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Content
-    path: Infrastructure/Http/ServiceBase.cs
+    path: ../Sin.Net.Domain/Infrastructure/Http/ServiceBase.cs
     startLine: 100
   assemblies:
   - Sin.Net.Domain

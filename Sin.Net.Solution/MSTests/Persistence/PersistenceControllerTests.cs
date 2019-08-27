@@ -66,7 +66,7 @@ namespace MSTests.Persistence
         }
 
         [TestMethod]
-        public void ExportAndImportJson()
+        public void ExAndImportJson()
         {
             var setting = new JsonSetting { Location = _path, Name = "test-setting.json" };
 
@@ -88,6 +88,46 @@ namespace MSTests.Persistence
 
             Assert.AreEqual(setting.Name, importedSetting.Name, "json import failed");
             Log.Info("json success", this);
+        }
+
+       
+
+        [TestMethod]
+        public void ExAndImportJsonWithConverter()
+        {
+            // arrange
+            var setting = new JsonSetting {
+                Location = _path,
+                Name = "test-object.json",
+                ConvertEnumToString = false
+            };
+
+            var data = new
+            {
+                MyName = "name",
+                MyDate = DateTime.Now,
+                MyState = TestStates.Good
+            };
+
+            // act & assert export
+            var result = _io.Exporter(Constants.Json.Key)
+                .Setup(setting)
+                .Build(data)
+                .Export();
+
+            // assert
+            Assert.IsTrue(!string.IsNullOrEmpty(result), "The json string should not be empty.");
+
+            // act & assert import
+
+            dynamic input = _io.Importer(Constants.Json.Key)
+                .Setup(setting)
+                .Import()
+                .As<object>();
+
+            Assert.IsNotNull(input, "json import failed");
+            Log.Info("json success", this);
+
         }
 
         [TestMethod]
@@ -176,5 +216,12 @@ namespace MSTests.Persistence
                 }
             }
         }
+    }
+
+    enum TestStates
+    {
+        Unknown,
+        Good,
+        Bad
     }
 }

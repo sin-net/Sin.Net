@@ -26,7 +26,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ILoggable
-    path: Persistence/Logging/ILoggable.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
     startLine: 7
   assemblies:
   - Sin.Net.Domain
@@ -62,7 +62,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Start
-    path: Persistence/Logging/ILoggable.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
     startLine: 13
   assemblies:
   - Sin.Net.Domain
@@ -90,7 +90,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Stop
-    path: Persistence/Logging/ILoggable.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
     startLine: 18
   assemblies:
   - Sin.Net.Domain
@@ -118,7 +118,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Trace
-    path: Persistence/Logging/ILoggable.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
     startLine: 24
   assemblies:
   - Sin.Net.Domain
@@ -150,7 +150,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Debug
-    path: Persistence/Logging/ILoggable.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
     startLine: 30
   assemblies:
   - Sin.Net.Domain
@@ -182,7 +182,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Info
-    path: Persistence/Logging/ILoggable.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
     startLine: 36
   assemblies:
   - Sin.Net.Domain
@@ -214,7 +214,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Warn
-    path: Persistence/Logging/ILoggable.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
     startLine: 42
   assemblies:
   - Sin.Net.Domain
@@ -246,7 +246,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Error
-    path: Persistence/Logging/ILoggable.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
     startLine: 48
   assemblies:
   - Sin.Net.Domain
@@ -278,7 +278,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Fatal
-    path: Persistence/Logging/ILoggable.cs
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
     startLine: 54
   assemblies:
   - Sin.Net.Domain

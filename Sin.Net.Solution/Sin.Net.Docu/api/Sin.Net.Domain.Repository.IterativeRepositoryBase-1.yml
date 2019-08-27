@@ -20,7 +20,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IterativeRepositoryBase
-    path: Repository/IterativeRepositoryBase.cs
+    path: ../Sin.Net.Domain/Repository/IterativeRepositoryBase.cs
     startLine: 12
   assemblies:
   - Sin.Net.Domain
@@ -39,9 +39,7 @@ items:
       <Serializable>
 
       Public MustInherit Class IterativeRepositoryBase(Of T)
-
           Inherits RepositoryBase(Of T)
-
           Implements IEnumerable
   inheritance:
   - System.Object
@@ -101,7 +99,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
-    path: Repository/IterativeRepositoryBase.cs
+    path: ../Sin.Net.Domain/Repository/IterativeRepositoryBase.cs
     startLine: 20
   assemblies:
   - Sin.Net.Domain
@@ -135,7 +133,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: GetEnumerator
-    path: Repository/IterativeRepositoryBase.cs
+    path: ../Sin.Net.Domain/Repository/IterativeRepositoryBase.cs
     startLine: 30
   assemblies:
   - Sin.Net.Domain

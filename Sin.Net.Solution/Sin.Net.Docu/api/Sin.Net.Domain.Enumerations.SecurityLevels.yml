@@ -22,7 +22,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: SecurityLevels
-    path: Enumerations/Enums.cs
+    path: ../Sin.Net.Domain/Enumerations/Enums.cs
     startLine: 6
   assemblies:
   - Sin.Net.Domain
@@ -58,7 +58,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Guest
-    path: Enumerations/Enums.cs
+    path: ../Sin.Net.Domain/Enumerations/Enums.cs
     startLine: 11
   assemblies:
   - Sin.Net.Domain
@@ -92,7 +92,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: User
-    path: Enumerations/Enums.cs
+    path: ../Sin.Net.Domain/Enumerations/Enums.cs
     startLine: 15
   assemblies:
   - Sin.Net.Domain
@@ -126,7 +126,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Expert
-    path: Enumerations/Enums.cs
+    path: ../Sin.Net.Domain/Enumerations/Enums.cs
     startLine: 19
   assemblies:
   - Sin.Net.Domain
@@ -160,7 +160,7 @@ items:
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Admin
-    path: Enumerations/Enums.cs
+    path: ../Sin.Net.Domain/Enumerations/Enums.cs
     startLine: 23
   assemblies:
   - Sin.Net.Domain
