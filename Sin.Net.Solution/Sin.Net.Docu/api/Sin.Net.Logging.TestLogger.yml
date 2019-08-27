@@ -36,6 +36,7 @@ items:
     content: 'public class TestLogger : ILoggable'
     content.vb: >-
       Public Class TestLogger
+
           Implements ILoggable
   inheritance:
   - System.Object

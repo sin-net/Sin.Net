@@ -141,8 +141,12 @@
   items:
   - uid: Sin.Net.Persistence.IO.Json.JsonIO
     name: JsonIO
+  - uid: Sin.Net.Persistence.IO.Json.LowerCaseContractResolver
+    name: LowerCaseContractResolver
   - uid: Sin.Net.Persistence.IO.Json.TypedSerializationBinder
     name: TypedSerializationBinder
+  - uid: Sin.Net.Persistence.IO.Json.UpperCaseContractResolver
+    name: UpperCaseContractResolver
 - uid: Sin.Net.Persistence.Settings
   name: Sin.Net.Persistence.Settings
   items:

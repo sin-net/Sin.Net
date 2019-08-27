@@ -35,6 +35,7 @@ items:
     content: 'public class MqttConfig : ConfigBase'
     content.vb: >-
       Public Class MqttConfig
+
           Inherits ConfigBase
   inheritance:
   - System.Object

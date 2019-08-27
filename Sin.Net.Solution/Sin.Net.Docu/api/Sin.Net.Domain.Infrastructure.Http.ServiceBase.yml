@@ -487,6 +487,7 @@ items:
   syntax:
     content: >-
       public abstract Task<T> CallAsync<T>(Func<string, T> cast)
+
           where T : new()
     parameters:
     - id: cast

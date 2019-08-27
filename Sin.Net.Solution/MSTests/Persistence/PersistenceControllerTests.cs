@@ -3,7 +3,6 @@ using MSTests.Persistence.Data;
 using Sin.Net.Domain.Persistence;
 using Sin.Net.Domain.Persistence.Logging;
 using Sin.Net.Persistence;
-using Sin.Net.Persistence.IO;
 using Sin.Net.Persistence.IO.Json;
 using Sin.Net.Persistence.Settings;
 using System;
@@ -13,6 +12,14 @@ using System.IO;
 
 namespace MSTests.Persistence
 {
+    internal class MyModel
+    {
+        public string MyName { get; set; }
+        public DateTime MyDate { get; set; }
+        public TestStates MyState { get; set; }
+        public Dictionary<string, int> MyDictionary { get; set; }
+    }
+
     [TestClass]
     public class PersistenceControllerTests : TestsBase
     {
@@ -90,29 +97,37 @@ namespace MSTests.Persistence
             Log.Info("json success", this);
         }
 
-       
+
 
         [TestMethod]
         public void ExAndImportJsonWithConverter()
         {
             // arrange
-            var setting = new JsonSetting {
+            JsonIO.EnableCaseResolver = true;
+            var setting = new JsonSetting
+            {
                 Location = _path,
                 Name = "test-object.json",
                 ConvertEnumToString = false
             };
 
-            var data = new
+            var dict = new Dictionary<string, int>();
+            dict.Add("KeyOne", 123);
+            dict.Add("KeyTwo", 456);
+            dict.Add("KeyThree", 789);
+
+            var model = new MyModel
             {
                 MyName = "name",
                 MyDate = DateTime.Now,
-                MyState = TestStates.Good
+                MyState = TestStates.Good,
+                MyDictionary = dict
             };
 
             // act & assert export
             var result = _io.Exporter(Constants.Json.Key)
                 .Setup(setting)
-                .Build(data)
+                .Build(model)
                 .Export();
 
             // assert
@@ -120,10 +135,10 @@ namespace MSTests.Persistence
 
             // act & assert import
 
-            dynamic input = _io.Importer(Constants.Json.Key)
+            var input = _io.Importer(Constants.Json.Key)
                 .Setup(setting)
                 .Import()
-                .As<object>();
+                .As<MyModel>();
 
             Assert.IsNotNull(input, "json import failed");
             Log.Info("json success", this);
@@ -218,7 +233,7 @@ namespace MSTests.Persistence
         }
     }
 
-    enum TestStates
+    internal enum TestStates
     {
         Unknown,
         Good,

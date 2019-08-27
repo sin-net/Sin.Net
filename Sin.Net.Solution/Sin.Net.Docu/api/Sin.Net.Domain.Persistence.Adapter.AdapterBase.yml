@@ -30,6 +30,7 @@ items:
     content: 'public abstract class AdapterBase : IAdaptable'
     content.vb: >-
       Public MustInherit Class AdapterBase
+
           Implements IAdaptable
   inheritance:
   - System.Object
@@ -81,6 +82,7 @@ items:
   syntax:
     content: >-
       public abstract Tout Adapt<Tin, Tout>(Tin input)
+
           where Tout : new()
     parameters:
     - id: input

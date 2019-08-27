@@ -31,10 +31,14 @@ namespace Sin.Net.Persistence.IO.Json
                 var settings = new JsonSerializerSettings
                 {
                     TypeNameHandling = TypeNameHandling.Auto,
-                    ContractResolver = new LowerCaseContractResolver(),
                     SerializationBinder = binder,
                     Converters = converters
                 };
+
+                if (EnableCaseResolver)
+                {
+                    settings.ContractResolver = new LowerCaseContractResolver();
+                }
 
                 json = JsonConvert.SerializeObject(obj, Formatting.Indented, settings);
             }
@@ -66,6 +70,11 @@ namespace Sin.Net.Persistence.IO.Json
                     SerializationBinder = binder,
                     Converters = converters
                 };
+
+                if (EnableCaseResolver)
+                {
+                    settings.ContractResolver = new UpperCaseContractResolver();
+                }
 
                 return JsonConvert.DeserializeObject<T>(json, settings);
             }
@@ -150,5 +159,10 @@ namespace Sin.Net.Persistence.IO.Json
         /// Gets or sets the behavoir, when an internal Exception occures.
         /// </summary>
         public static bool Throw { get; set; } = false;
+
+        /// <summary>
+        /// Gets or sets the feature of resolving property names to lower case at serializing. 
+        /// </summary>
+        public static bool EnableCaseResolver { get; set; } = false;
     }
 }

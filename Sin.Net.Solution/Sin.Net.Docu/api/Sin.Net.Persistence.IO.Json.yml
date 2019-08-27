@@ -5,7 +5,9 @@ items:
   id: Sin.Net.Persistence.IO.Json
   children:
   - Sin.Net.Persistence.IO.Json.JsonIO
+  - Sin.Net.Persistence.IO.Json.LowerCaseContractResolver
   - Sin.Net.Persistence.IO.Json.TypedSerializationBinder
+  - Sin.Net.Persistence.IO.Json.UpperCaseContractResolver
   langs:
   - csharp
   - vb
@@ -21,8 +23,18 @@ references:
   name: JsonIO
   nameWithType: JsonIO
   fullName: Sin.Net.Persistence.IO.Json.JsonIO
+- uid: Sin.Net.Persistence.IO.Json.LowerCaseContractResolver
+  commentId: T:Sin.Net.Persistence.IO.Json.LowerCaseContractResolver
+  name: LowerCaseContractResolver
+  nameWithType: LowerCaseContractResolver
+  fullName: Sin.Net.Persistence.IO.Json.LowerCaseContractResolver
 - uid: Sin.Net.Persistence.IO.Json.TypedSerializationBinder
   commentId: T:Sin.Net.Persistence.IO.Json.TypedSerializationBinder
   name: TypedSerializationBinder
   nameWithType: TypedSerializationBinder
   fullName: Sin.Net.Persistence.IO.Json.TypedSerializationBinder
+- uid: Sin.Net.Persistence.IO.Json.UpperCaseContractResolver
+  commentId: T:Sin.Net.Persistence.IO.Json.UpperCaseContractResolver
+  name: UpperCaseContractResolver
+  nameWithType: UpperCaseContractResolver
+  fullName: Sin.Net.Persistence.IO.Json.UpperCaseContractResolver

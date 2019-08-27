@@ -6,11 +6,11 @@ using System.Text;
 
 namespace Sin.Net.Persistence.IO.Json
 {
-    public class LowerCaseContractResolver : DefaultContractResolver
+    public class UpperCaseContractResolver : DefaultContractResolver
     {
         protected override string ResolvePropertyName(string propertyName)
         {
-            return propertyName.First().ToString().ToLower() + string.Join("", propertyName.Skip(1));
+            return propertyName.First().ToString().ToUpper() + string.Join("", propertyName.Skip(1));
         }
     }
 }

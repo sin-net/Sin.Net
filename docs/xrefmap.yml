@@ -2729,6 +2729,25 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString
   nameWithType: JsonIO.ToJsonString
+- uid: Sin.Net.Persistence.IO.Json.LowerCaseContractResolver
+  name: LowerCaseContractResolver
+  href: api/Sin.Net.Persistence.IO.Json.LowerCaseContractResolver.html
+  commentId: T:Sin.Net.Persistence.IO.Json.LowerCaseContractResolver
+  fullName: Sin.Net.Persistence.IO.Json.LowerCaseContractResolver
+  nameWithType: LowerCaseContractResolver
+- uid: Sin.Net.Persistence.IO.Json.LowerCaseContractResolver.ResolvePropertyName(System.String)
+  name: ResolvePropertyName(String)
+  href: api/Sin.Net.Persistence.IO.Json.LowerCaseContractResolver.html#Sin_Net_Persistence_IO_Json_LowerCaseContractResolver_ResolvePropertyName_System_String_
+  commentId: M:Sin.Net.Persistence.IO.Json.LowerCaseContractResolver.ResolvePropertyName(System.String)
+  fullName: Sin.Net.Persistence.IO.Json.LowerCaseContractResolver.ResolvePropertyName(System.String)
+  nameWithType: LowerCaseContractResolver.ResolvePropertyName(String)
+- uid: Sin.Net.Persistence.IO.Json.LowerCaseContractResolver.ResolvePropertyName*
+  name: ResolvePropertyName
+  href: api/Sin.Net.Persistence.IO.Json.LowerCaseContractResolver.html#Sin_Net_Persistence_IO_Json_LowerCaseContractResolver_ResolvePropertyName_
+  commentId: Overload:Sin.Net.Persistence.IO.Json.LowerCaseContractResolver.ResolvePropertyName
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.IO.Json.LowerCaseContractResolver.ResolvePropertyName
+  nameWithType: LowerCaseContractResolver.ResolvePropertyName
 - uid: Sin.Net.Persistence.IO.Json.TypedSerializationBinder
   name: TypedSerializationBinder
   href: api/Sin.Net.Persistence.IO.Json.TypedSerializationBinder.html
@@ -2799,6 +2818,25 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Persistence.IO.Json.TypedSerializationBinder.KnownTypes
   nameWithType: TypedSerializationBinder.KnownTypes
+- uid: Sin.Net.Persistence.IO.Json.UpperCaseContractResolver
+  name: UpperCaseContractResolver
+  href: api/Sin.Net.Persistence.IO.Json.UpperCaseContractResolver.html
+  commentId: T:Sin.Net.Persistence.IO.Json.UpperCaseContractResolver
+  fullName: Sin.Net.Persistence.IO.Json.UpperCaseContractResolver
+  nameWithType: UpperCaseContractResolver
+- uid: Sin.Net.Persistence.IO.Json.UpperCaseContractResolver.ResolvePropertyName(System.String)
+  name: ResolvePropertyName(String)
+  href: api/Sin.Net.Persistence.IO.Json.UpperCaseContractResolver.html#Sin_Net_Persistence_IO_Json_UpperCaseContractResolver_ResolvePropertyName_System_String_
+  commentId: M:Sin.Net.Persistence.IO.Json.UpperCaseContractResolver.ResolvePropertyName(System.String)
+  fullName: Sin.Net.Persistence.IO.Json.UpperCaseContractResolver.ResolvePropertyName(System.String)
+  nameWithType: UpperCaseContractResolver.ResolvePropertyName(String)
+- uid: Sin.Net.Persistence.IO.Json.UpperCaseContractResolver.ResolvePropertyName*
+  name: ResolvePropertyName
+  href: api/Sin.Net.Persistence.IO.Json.UpperCaseContractResolver.html#Sin_Net_Persistence_IO_Json_UpperCaseContractResolver_ResolvePropertyName_
+  commentId: Overload:Sin.Net.Persistence.IO.Json.UpperCaseContractResolver.ResolvePropertyName
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.IO.Json.UpperCaseContractResolver.ResolvePropertyName
+  nameWithType: UpperCaseContractResolver.ResolvePropertyName
 - uid: Sin.Net.Persistence.PersistenceController
   name: PersistenceController
   href: api/Sin.Net.Persistence.PersistenceController.html
