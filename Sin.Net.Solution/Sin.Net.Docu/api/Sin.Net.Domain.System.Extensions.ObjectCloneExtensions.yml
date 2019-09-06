@@ -1,0 +1,518 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  commentId: T:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  id: ObjectCloneExtensions
+  parent: Sin.Net.Domain.System.Extensions
+  children:
+  - Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  - Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  - Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.IsPrimitive(System.Type)
+  langs:
+  - csharp
+  - vb
+  name: ObjectCloneExtensions
+  nameWithType: ObjectCloneExtensions
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  type: Class
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/System/Extensions/ObjectCloneExtensions.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: ObjectCloneExtensions
+    path: ../Sin.Net.Domain/System/Extensions/ObjectCloneExtensions.cs
+    startLine: 10
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.System.Extensions
+  summary: "\nParts of this code are used from\nhttps://github.com/Burtsev-Alexey/net-object-deep-copy\n"
+  example: []
+  syntax:
+    content: public static class ObjectCloneExtensions
+    content.vb: Public Module ObjectCloneExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.IsPrimitive(System.Type)
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.IsPrimitive(System.Type)
+  id: IsPrimitive(System.Type)
+  isExtensionMethod: true
+  parent: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsPrimitive(Type)
+  nameWithType: ObjectCloneExtensions.IsPrimitive(Type)
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.IsPrimitive(System.Type)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/System/Extensions/ObjectCloneExtensions.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: IsPrimitive
+    path: ../Sin.Net.Domain/System/Extensions/ObjectCloneExtensions.cs
+    startLine: 19
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.System.Extensions
+  summary: "\nPrüft ob der Typ eines Objektes ein primitiver Typ ist. String wird als primitiver Typ angeben.\n"
+  example: []
+  syntax:
+    content: public static bool IsPrimitive(this Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: die aufrufende Instanz
+    return:
+      type: System.Boolean
+      description: Gibt &apos;true&apos; zurück, wenn der Typ primitiv ist, andernfalls &apos;false&apos;.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsPrimitive(type As Type) As Boolean
+  overload: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.IsPrimitive*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  id: Clone(System.Object)
+  isExtensionMethod: true
+  parent: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  langs:
+  - csharp
+  - vb
+  name: Clone(Object)
+  nameWithType: ObjectCloneExtensions.Clone(Object)
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/System/Extensions/ObjectCloneExtensions.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Clone
+    path: ../Sin.Net.Domain/System/Extensions/ObjectCloneExtensions.cs
+    startLine: 34
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.System.Extensions
+  summary: "\nFührt eine tiefe Kopie einer Objekt-Instanz aus.\n"
+  example: []
+  syntax:
+    content: public static object Clone(this object originalObject)
+    parameters:
+    - id: originalObject
+      type: System.Object
+      description: das Original-Objekt
+    return:
+      type: System.Object
+      description: die unabhängige Kopie
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Clone(originalObject As Object) As Object
+  overload: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  id: Clone``1(``0)
+  isExtensionMethod: true
+  parent: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  langs:
+  - csharp
+  - vb
+  name: Clone<T>(T)
+  nameWithType: ObjectCloneExtensions.Clone<T>(T)
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/System/Extensions/ObjectCloneExtensions.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Clone
+    path: ../Sin.Net.Domain/System/Extensions/ObjectCloneExtensions.cs
+    startLine: 39
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.System.Extensions
+  syntax:
+    content: public static T Clone<T>(this T original)
+    parameters:
+    - id: original
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Clone(Of T)(original As T) As T
+  overload: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone*
+  nameWithType.vb: ObjectCloneExtensions.Clone(Of T)(T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of T)(T)
+  name.vb: Clone(Of T)(T)
+references:
+- uid: Sin.Net.Domain.System.Extensions
+  commentId: N:Sin.Net.Domain.System.Extensions
+  name: Sin.Net.Domain.System.Extensions
+  nameWithType: Sin.Net.Domain.System.Extensions
+  fullName: Sin.Net.Domain.System.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.IsPrimitive*
+  commentId: Overload:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.IsPrimitive
+  name: IsPrimitive
+  nameWithType: ObjectCloneExtensions.IsPrimitive
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.IsPrimitive
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone*
+  commentId: Overload:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  name: Clone
+  nameWithType: ObjectCloneExtensions.Clone
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

@@ -75,6 +75,15 @@
   - uid: Sin.Net.Domain.Repository.RepositoryView`1
     name: RepositoryView<T>
     name.vb: RepositoryView(Of T)
+- uid: Sin.Net.Domain.System.Extensions
+  name: Sin.Net.Domain.System.Extensions
+  items:
+  - uid: Sin.Net.Domain.System.Extensions.ArrayExtensions
+    name: ArrayExtensions
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+    name: ObjectCloneExtensions
+  - uid: Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer
+    name: ReferenceEqualityComparer
 - uid: Sin.Net.Domain.System.Security
   name: Sin.Net.Domain.System.Security
   items:

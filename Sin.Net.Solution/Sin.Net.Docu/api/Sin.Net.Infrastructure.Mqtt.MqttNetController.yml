@@ -37,7 +37,6 @@ items:
     content: 'public class MqttNetController : IMqttControlable'
     content.vb: >-
       Public Class MqttNetController
-
           Implements IMqttControlable
   inheritance:
   - System.Object
@@ -52,6 +51,8 @@ items:
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
   extensionMethods:
+  - System.Object.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
   - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
   - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
   modifiers.csharp:
@@ -709,6 +710,67 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  parent: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  definition: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  name: Clone()
+  nameWithType: ObjectCloneExtensions.Clone()
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone()
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+    name: Clone
+    nameWithType: ObjectCloneExtensions.Clone
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+    name: Clone
+    nameWithType: ObjectCloneExtensions.Clone
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  parent: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  definition: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  name: Clone<MqttNetController>()
+  nameWithType: ObjectCloneExtensions.Clone<MqttNetController>()
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<Sin.Net.Infrastructure.Mqtt.MqttNetController>()
+  nameWithType.vb: ObjectCloneExtensions.Clone(Of MqttNetController)()
+  fullName.vb: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of Sin.Net.Infrastructure.Mqtt.MqttNetController)()
+  name.vb: Clone(Of MqttNetController)()
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
+    name: Clone<MqttNetController>
+    nameWithType: ObjectCloneExtensions.Clone<MqttNetController>
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<Sin.Net.Infrastructure.Mqtt.MqttNetController>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
+    name: Clone(Of MqttNetController)
+    nameWithType: ObjectCloneExtensions.Clone(Of MqttNetController)
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of Sin.Net.Infrastructure.Mqtt.MqttNetController)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
   commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
   parent: Sin.Net.Domain.System.Security.SecurityExtensions
@@ -828,6 +890,86 @@ references:
   name: Sin.Net.Domain.Infrastructure.Mqtt
   nameWithType: Sin.Net.Domain.Infrastructure.Mqtt
   fullName: Sin.Net.Domain.Infrastructure.Mqtt
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  isExternal: true
+  name: Clone(Object)
+  nameWithType: ObjectCloneExtensions.Clone(Object)
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+    name: Clone
+    nameWithType: ObjectCloneExtensions.Clone
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+    name: Clone
+    nameWithType: ObjectCloneExtensions.Clone
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  commentId: T:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  parent: Sin.Net.Domain.System.Extensions
+  name: ObjectCloneExtensions
+  nameWithType: ObjectCloneExtensions
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  name: Clone<T>(T)
+  nameWithType: ObjectCloneExtensions.Clone<T>(T)
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<T>(T)
+  nameWithType.vb: ObjectCloneExtensions.Clone(Of T)(T)
+  fullName.vb: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of T)(T)
+  name.vb: Clone(Of T)(T)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+    name: Clone<T>
+    nameWithType: ObjectCloneExtensions.Clone<T>
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+    name: Clone(Of T)
+    nameWithType: ObjectCloneExtensions.Clone(Of T)
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
   commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
   isExternal: true
@@ -972,6 +1114,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Sin.Net.Domain.System.Extensions
+  commentId: N:Sin.Net.Domain.System.Extensions
+  name: Sin.Net.Domain.System.Extensions
+  nameWithType: Sin.Net.Domain.System.Extensions
+  fullName: Sin.Net.Domain.System.Extensions
 - uid: Sin.Net.Domain.System.Security
   commentId: N:Sin.Net.Domain.System.Security
   name: Sin.Net.Domain.System.Security

@@ -1604,6 +1604,107 @@ references:
   fullName.vb: Sin.Net.Domain.Repository.RepositoryView(Of T).To(Of Tout)()
   nameWithType: RepositoryView<T>.To<Tout>()
   nameWithType.vb: RepositoryView(Of T).To(Of Tout)()
+- uid: Sin.Net.Domain.System.Extensions
+  name: Sin.Net.Domain.System.Extensions
+  href: api/Sin.Net.Domain.System.Extensions.html
+  commentId: N:Sin.Net.Domain.System.Extensions
+  fullName: Sin.Net.Domain.System.Extensions
+  nameWithType: Sin.Net.Domain.System.Extensions
+- uid: Sin.Net.Domain.System.Extensions.ArrayExtensions
+  name: ArrayExtensions
+  href: api/Sin.Net.Domain.System.Extensions.ArrayExtensions.html
+  commentId: T:Sin.Net.Domain.System.Extensions.ArrayExtensions
+  fullName: Sin.Net.Domain.System.Extensions.ArrayExtensions
+  nameWithType: ArrayExtensions
+- uid: Sin.Net.Domain.System.Extensions.ArrayExtensions.ForEach(System.Array,System.Action{System.Array,System.Int32[]})
+  name: ForEach(Array, Action<Array, Int32[]>)
+  href: api/Sin.Net.Domain.System.Extensions.ArrayExtensions.html#Sin_Net_Domain_System_Extensions_ArrayExtensions_ForEach_System_Array_System_Action_System_Array_System_Int32____
+  commentId: M:Sin.Net.Domain.System.Extensions.ArrayExtensions.ForEach(System.Array,System.Action{System.Array,System.Int32[]})
+  name.vb: ForEach(Array, Action(Of Array, Int32()))
+  fullName: Sin.Net.Domain.System.Extensions.ArrayExtensions.ForEach(System.Array, System.Action<System.Array, System.Int32[]>)
+  fullName.vb: Sin.Net.Domain.System.Extensions.ArrayExtensions.ForEach(System.Array, System.Action(Of System.Array, System.Int32()))
+  nameWithType: ArrayExtensions.ForEach(Array, Action<Array, Int32[]>)
+  nameWithType.vb: ArrayExtensions.ForEach(Array, Action(Of Array, Int32()))
+- uid: Sin.Net.Domain.System.Extensions.ArrayExtensions.ForEach*
+  name: ForEach
+  href: api/Sin.Net.Domain.System.Extensions.ArrayExtensions.html#Sin_Net_Domain_System_Extensions_ArrayExtensions_ForEach_
+  commentId: Overload:Sin.Net.Domain.System.Extensions.ArrayExtensions.ForEach
+  isSpec: "True"
+  fullName: Sin.Net.Domain.System.Extensions.ArrayExtensions.ForEach
+  nameWithType: ArrayExtensions.ForEach
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  name: ObjectCloneExtensions
+  href: api/Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.html
+  commentId: T:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  nameWithType: ObjectCloneExtensions
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  name: Clone(Object)
+  href: api/Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.html#Sin_Net_Domain_System_Extensions_ObjectCloneExtensions_Clone_System_Object_
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  nameWithType: ObjectCloneExtensions.Clone(Object)
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone*
+  name: Clone
+  href: api/Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.html#Sin_Net_Domain_System_Extensions_ObjectCloneExtensions_Clone_
+  commentId: Overload:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  isSpec: "True"
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  nameWithType: ObjectCloneExtensions.Clone
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  name: Clone<T>(T)
+  href: api/Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.html#Sin_Net_Domain_System_Extensions_ObjectCloneExtensions_Clone__1___0_
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  name.vb: Clone(Of T)(T)
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<T>(T)
+  fullName.vb: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of T)(T)
+  nameWithType: ObjectCloneExtensions.Clone<T>(T)
+  nameWithType.vb: ObjectCloneExtensions.Clone(Of T)(T)
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.IsPrimitive(System.Type)
+  name: IsPrimitive(Type)
+  href: api/Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.html#Sin_Net_Domain_System_Extensions_ObjectCloneExtensions_IsPrimitive_System_Type_
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.IsPrimitive(System.Type)
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.IsPrimitive(System.Type)
+  nameWithType: ObjectCloneExtensions.IsPrimitive(Type)
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.IsPrimitive*
+  name: IsPrimitive
+  href: api/Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.html#Sin_Net_Domain_System_Extensions_ObjectCloneExtensions_IsPrimitive_
+  commentId: Overload:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.IsPrimitive
+  isSpec: "True"
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.IsPrimitive
+  nameWithType: ObjectCloneExtensions.IsPrimitive
+- uid: Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer
+  name: ReferenceEqualityComparer
+  href: api/Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer.html
+  commentId: T:Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer
+  fullName: Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer
+  nameWithType: ReferenceEqualityComparer
+- uid: Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer.Equals(System.Object,System.Object)
+  name: Equals(Object, Object)
+  href: api/Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer.html#Sin_Net_Domain_System_Extensions_ReferenceEqualityComparer_Equals_System_Object_System_Object_
+  commentId: M:Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer.Equals(System.Object,System.Object)
+  fullName: Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer.Equals(System.Object, System.Object)
+  nameWithType: ReferenceEqualityComparer.Equals(Object, Object)
+- uid: Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer.Equals*
+  name: Equals
+  href: api/Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer.html#Sin_Net_Domain_System_Extensions_ReferenceEqualityComparer_Equals_
+  commentId: Overload:Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer.Equals
+  isSpec: "True"
+  fullName: Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer.Equals
+  nameWithType: ReferenceEqualityComparer.Equals
+- uid: Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer.GetHashCode(System.Object)
+  name: GetHashCode(Object)
+  href: api/Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer.html#Sin_Net_Domain_System_Extensions_ReferenceEqualityComparer_GetHashCode_System_Object_
+  commentId: M:Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer.GetHashCode(System.Object)
+  fullName: Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer.GetHashCode(System.Object)
+  nameWithType: ReferenceEqualityComparer.GetHashCode(Object)
+- uid: Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer.GetHashCode*
+  name: GetHashCode
+  href: api/Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer.html#Sin_Net_Domain_System_Extensions_ReferenceEqualityComparer_GetHashCode_
+  commentId: Overload:Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer.GetHashCode
+  isSpec: "True"
+  fullName: Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer.GetHashCode
+  nameWithType: ReferenceEqualityComparer.GetHashCode
 - uid: Sin.Net.Domain.System.Security
   name: Sin.Net.Domain.System.Security
   href: api/Sin.Net.Domain.System.Security.html
@@ -2646,6 +2747,19 @@ references:
   commentId: T:Sin.Net.Persistence.IO.Json.JsonIO
   fullName: Sin.Net.Persistence.IO.Json.JsonIO
   nameWithType: JsonIO
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver
+  name: EnableCaseResolver
+  href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_EnableCaseResolver
+  commentId: P:Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver
+  nameWithType: JsonIO.EnableCaseResolver
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver*
+  name: EnableCaseResolver
+  href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_EnableCaseResolver_
+  commentId: Overload:Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver
+  nameWithType: JsonIO.EnableCaseResolver
 - uid: Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString*
   name: FromJsonString
   href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_FromJsonString_

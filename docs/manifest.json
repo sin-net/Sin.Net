@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Config.ConfigBase.html",
-          "hash": "QOer1lpUEN3tb86+kVefuA=="
+          "hash": "YywEE4PIgg9HIHuQ/Sk0Vw=="
         }
       },
       "is_incremental": false,
@@ -45,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Enumerations.SecurityLevels.html",
-          "hash": "GxHm68do9gW3Ks2PbhWtBg=="
+          "hash": "HYRweNv94XDg9/uARJXYPA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -60,7 +60,7 @@
           "hash": "a0blWqxjBpfTPARsNVG3dQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -69,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.html",
-          "hash": "qVPt3rANFcIVJj8iRmQO0A=="
+          "hash": "PVmFRkDvlFazjj4ZFgSN/g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.html",
-          "hash": "7Um26eZ1fCcwcNq11UEwSA=="
+          "hash": "8KXXcy5aJqUGot1TzwSe2Q=="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Infrastructure.Http.HttpResponseEventHandler.html",
-          "hash": "NG0FOM3P+O3Ij5s52n3wUA=="
+          "hash": "Rbdh+JBHlDCf8e04Ym1qBQ=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Infrastructure.Http.ServiceBase.html",
-          "hash": "6WNA5IWUQJGXPqAHS+/ySA=="
+          "hash": "KV7wYbrGVlM6ilKTRgdauQ=="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Infrastructure.Http.ServiceException.html",
-          "hash": "iUI11N7pCWrKTbNQmZvqpw=="
+          "hash": "BJ0bDJbWEo1OQddN57bY8w=="
         }
       },
       "is_incremental": false,
@@ -141,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.html",
-          "hash": "5HDhPlBLiKqILJQOrW+bxQ=="
+          "hash": "zP6ssZN+wW7S+FwKVJByAw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Infrastructure.Mqtt.MqttConnectedEventArgs.html",
-          "hash": "LXG42nFR2UiB3syCmgQlLA=="
+          "hash": "Mx46DhaLd+vMyXaJSJv/Fw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -165,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Infrastructure.Mqtt.MqttConnectedEventHandler.html",
-          "hash": "HQNikBIWd+hP15e92ewkYA=="
+          "hash": "nE6/TqoKMJ0aNVrzwCZ3Ng=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Infrastructure.Mqtt.MqttMessageReceivedEventHandler.html",
-          "hash": "Lf4pgPoelkpNKRjCNTNs5g=="
+          "hash": "I6A3QBAHWkYZswW4vxpRoQ=="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Infrastructure.Mqtt.MqttReceivedEventArgs.html",
-          "hash": "rnPsv6mKo1C+AUzRnJrRXA=="
+          "hash": "RQ47tSNnCLg76m0IWDP0Dw=="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Persistence.Adapter.AdapterBase.html",
-          "hash": "I1vF8b4Pq8lMzKD5xoYztA=="
+          "hash": "TH3e07p5bwPGlrqF3gADZA=="
         }
       },
       "is_incremental": false,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Persistence.Adapter.IAdaptable.html",
-          "hash": "NBY06LTPjVuV9orjOVoYNw=="
+          "hash": "smEszpdWt8Pj9KiV+cv2zg=="
         }
       },
       "is_incremental": false,
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Persistence.IExportable.html",
-          "hash": "uwP0sTOdpcsj6Q90l9DKHQ=="
+          "hash": "jC+A/AD9oub9aWkEB3Feqw=="
         }
       },
       "is_incremental": false,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Persistence.IImportable.html",
-          "hash": "Cngr/c4Fos3piGaQ+gi9AQ=="
+          "hash": "EcRQq8Fd4k/qDjsFrxjtlA=="
         }
       },
       "is_incremental": false,
@@ -273,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Persistence.IPersistenceControlable.html",
-          "hash": "9XuPjVeA5aPfOEEMCmKqpg=="
+          "hash": "ggBgxH+lKEZLz9bmUTC3iA=="
         }
       },
       "is_incremental": false,
@@ -285,10 +285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Persistence.Logging.ILoggable.html",
-          "hash": "yvvaFNTv0/OVDOxomCbYzw=="
+          "hash": "MNE/47kddZCa/AyN8cbBdQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -300,7 +300,7 @@
           "hash": "4pU33Mk2hz2Rd+y0/6hTxw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -312,7 +312,7 @@
           "hash": "yiY7SsZiu7flis0IwZuxOA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -321,10 +321,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Persistence.Settings.SettingsBase.html",
-          "hash": "458mbr/KTQvNk9jLHPqJAQ=="
+          "hash": "xXApO4IT1IRm2vBHv3okJg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -336,7 +336,7 @@
           "hash": "z9NLlL5N3FhZs55KY70ByQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -357,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Repository.IterativeRepositoryBase-1.html",
-          "hash": "PANgBYdCoJDFN7o1o/2UUg=="
+          "hash": "hcFyw+FMGZQxYTLLw0pZIg=="
         }
       },
       "is_incremental": false,
@@ -369,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Repository.RepositoryBase-1.html",
-          "hash": "NW9nPzkP+AZbCN+4wOFiYA=="
+          "hash": "mbN18XsBLi2QI/E7dmikLg=="
         }
       },
       "is_incremental": false,
@@ -381,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Repository.RepositoryView-1.html",
-          "hash": "MiXkuM4007Kn/e+c9Gw1SA=="
+          "hash": "uEqwOaKevR0iVWtnsgEgeQ=="
         }
       },
       "is_incremental": false,
@@ -401,14 +401,62 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Sin.Net.Domain.System.Extensions.ArrayExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sin.Net.Domain.System.Extensions.ArrayExtensions.html",
+          "hash": "u603+OrG/VRmsd5352bCfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.html",
+          "hash": "mFPNWw0RcsHW5zuJgOkt6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer.html",
+          "hash": "xf3uUzdhmTTJsAfyyk6gRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sin.Net.Domain.System.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sin.Net.Domain.System.Extensions.html",
+          "hash": "cJMeGJvYotyZCeGLT9aDHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Sin.Net.Domain.System.Security.ISecurable.yml",
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.System.Security.ISecurable.html",
-          "hash": "4cqiQb/sAQJiOTuXR/LR7Q=="
+          "hash": "N/u1TLDXxLJB6JYna919vg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -420,7 +468,7 @@
           "hash": "W0rHCaZ8e8ApX5jwRc3l8A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -429,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.System.Security.SecurityLevelAttribute.html",
-          "hash": "vURhBUYdWOOQWQl3MEvNuA=="
+          "hash": "ZkvAjkYyliM0u/veibda/w=="
         }
       },
       "is_incremental": false,
@@ -453,10 +501,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.System.UserManagement.User.html",
-          "hash": "OXu5ObXbCw2GlY/tx/KjTw=="
+          "hash": "mXMQ0MvEa5E1CVEjaQiDWw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -468,7 +516,7 @@
           "hash": "8FN28szpC/p6lObH6WkLSg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -477,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Infrastructure.Http.GenericService.html",
-          "hash": "MIAbt8WzWejpSIP4MxdG+Q=="
+          "hash": "hcCe22GQmMYtuvkPXZBM7Q=="
         }
       },
       "is_incremental": false,
@@ -501,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Infrastructure.Mqtt.MqttConfig.html",
-          "hash": "5ToWR7Nm3iz5KRfdjDy2gA=="
+          "hash": "db/alchPwa7/YDK7rXgXpA=="
         }
       },
       "is_incremental": false,
@@ -513,7 +561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Infrastructure.Mqtt.MqttNetController.html",
-          "hash": "PUyN+j05t/5BOMWDw7vmqA=="
+          "hash": "y2LM5jA9lsW4uB9uBSDdkg=="
         }
       },
       "is_incremental": false,
@@ -537,7 +585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Logging.NLogger.html",
-          "hash": "sK7dpR5t7i6Ct3XHJb1PBw=="
+          "hash": "NHdgRhP4TlLr3kkQExWEOw=="
         }
       },
       "is_incremental": false,
@@ -549,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Logging.TestLogger.html",
-          "hash": "IdvIq7R10KBSXbEuIcDQ6Q=="
+          "hash": "FbAHGgYX1mh3xLLKVBp9vQ=="
         }
       },
       "is_incremental": false,
@@ -573,10 +621,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.Constants.Binary.html",
-          "hash": "wsBGZ4rJvWBZrv+VupVeIA=="
+          "hash": "4Q7pJKFKUC96GRNMcfHL5g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -585,10 +633,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.Constants.Csv.html",
-          "hash": "eBMAGAnMm9vpSIkPLLQW3Q=="
+          "hash": "n+7b3S5AgXfAS+GSX6dKZQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -597,10 +645,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.Constants.Json.html",
-          "hash": "HBFB2behD49pU9mJoZGXog=="
+          "hash": "qLTMczJ25XDd5mxmGEaIiw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -609,10 +657,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.Constants.html",
-          "hash": "cZbJuh3gGZtSUy4QlzYwxg=="
+          "hash": "Yl4qTjunmXYOuq2hMlBUEg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -621,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.Exports.BinaryExporter.html",
-          "hash": "r/TDdYN9Qjw4VEe/7B6FRQ=="
+          "hash": "sbqGxK8ocJifHd914dfBiA=="
         }
       },
       "is_incremental": false,
@@ -648,7 +696,7 @@
           "hash": "VnNSeX1kKImttgQO0hHcJA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -660,7 +708,7 @@
           "hash": "Ggj+ZfjdJsO8/flv2yuPEg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -669,10 +717,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.IO.Json.JsonIO.html",
-          "hash": "zyPT2ldBdIzYuUt00cn32A=="
+          "hash": "1YEluxBDSVQtpHmEmkAJlg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -681,10 +729,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.IO.Json.LowerCaseContractResolver.html",
-          "hash": "eH9ubGIsERVpgrqeYuGvAg=="
+          "hash": "/BUVf6CgM0Sc6HpJA/2O1w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -693,10 +741,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.IO.Json.TypedSerializationBinder.html",
-          "hash": "hBWdl2z7C5jEiqX+EwNQuw=="
+          "hash": "kzXUMOGC+HAFkbShgVBYbg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -705,10 +753,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.IO.Json.UpperCaseContractResolver.html",
-          "hash": "tci0AgMHhOg/f+5Pa9te3Q=="
+          "hash": "AHnC/K8IhDLH649z06JPRQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -720,7 +768,7 @@
           "hash": "xHDnFYuDiZ9EL69e0xHrsg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -729,7 +777,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.Imports.BinaryImporter.html",
-          "hash": "eQtvl2QmWjiOQkqw/vjJcw=="
+          "hash": "oHTdSskwV6Qk6USsjVU/ew=="
         }
       },
       "is_incremental": false,
@@ -753,7 +801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.PersistenceController.html",
-          "hash": "5HTv2+KRarkXP5ZLNm2Iug=="
+          "hash": "M9e5K9DZ8/hCr3t8kJxwsQ=="
         }
       },
       "is_incremental": false,
@@ -765,10 +813,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.Settings.CsvSetting.html",
-          "hash": "z/PYYLleM+ZEBr8+gYTJTw=="
+          "hash": "+op0MG0TyKA0EInGHyZdtg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -777,10 +825,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.Settings.FileSetting.html",
-          "hash": "sekZOUSgTzOdBR5WCnIZDQ=="
+          "hash": "E8j5oC8PwmAnuFd8Vi7IAA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -789,10 +837,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.Settings.JsonSetting.html",
-          "hash": "vi3Y6mhpvG/mxFyPpeDbeQ=="
+          "hash": "0yAvWQ8VGI/t9hGvrhTlbw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -804,7 +852,7 @@
           "hash": "oepsnwt1aYkpvBaaW4mg6A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -825,7 +873,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "5fhTQU+lpw1iCqu/lIPjRg=="
+          "hash": "XG4sRiRjPdTKMFRDuFT1Wg=="
         }
       },
       "is_incremental": false,
@@ -911,18 +959,17 @@
         "skipped_file_count": 0
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
           "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 71,
+          "skipped_file_count": 23
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
@@ -931,11 +978,12 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 67,
-          "skipped_file_count": 52
+          "total_file_count": 0,
+          "skipped_file_count": 0
         }
       }
     },

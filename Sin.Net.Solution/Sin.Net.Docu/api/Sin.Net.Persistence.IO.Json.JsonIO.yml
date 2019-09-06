@@ -5,6 +5,7 @@ items:
   id: JsonIO
   parent: Sin.Net.Persistence.IO.Json
   children:
+  - Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver
   - Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
   - Sin.Net.Persistence.IO.Json.JsonIO.ReadJson(System.String)
   - Sin.Net.Persistence.IO.Json.JsonIO.ReadJson``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
@@ -113,7 +114,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: FromJsonString
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
-    startLine: 58
+    startLine: 62
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.IO.Json
@@ -166,7 +167,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ReadJson
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
-    startLine: 84
+    startLine: 92
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.IO.Json
@@ -207,7 +208,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ReadJson
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
-    startLine: 103
+    startLine: 111
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.IO.Json
@@ -260,7 +261,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: SaveToJson
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
-    startLine: 123
+    startLine: 131
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.IO.Json
@@ -313,7 +314,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Throw
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
-    startLine: 152
+    startLine: 160
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.IO.Json
@@ -326,6 +327,45 @@ items:
       type: System.Boolean
     content.vb: Public Shared Property Throw As Boolean
   overload: Sin.Net.Persistence.IO.Json.JsonIO.Throw*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver
+  commentId: P:Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver
+  id: EnableCaseResolver
+  parent: Sin.Net.Persistence.IO.Json.JsonIO
+  langs:
+  - csharp
+  - vb
+  name: EnableCaseResolver
+  nameWithType: JsonIO.EnableCaseResolver
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: EnableCaseResolver
+    path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
+    startLine: 165
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.IO.Json
+  summary: "\nGets or sets the feature of resolving property names to lower case at serializing. \n"
+  example: []
+  syntax:
+    content: public static bool EnableCaseResolver { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Property EnableCaseResolver As Boolean
+  overload: Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver*
   modifiers.csharp:
   - public
   - static
@@ -783,3 +823,8 @@ references:
   name: Throw
   nameWithType: JsonIO.Throw
   fullName: Sin.Net.Persistence.IO.Json.JsonIO.Throw
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver*
+  commentId: Overload:Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver
+  name: EnableCaseResolver
+  nameWithType: JsonIO.EnableCaseResolver
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver

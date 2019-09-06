@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.System.Extensions
+  commentId: N:Sin.Net.Domain.System.Extensions
+  id: Sin.Net.Domain.System.Extensions
+  children:
+  - Sin.Net.Domain.System.Extensions.ArrayExtensions
+  - Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  - Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Domain.System.Extensions
+  nameWithType: Sin.Net.Domain.System.Extensions
+  fullName: Sin.Net.Domain.System.Extensions
+  type: Namespace
+  assemblies:
+  - Sin.Net.Domain
+references:
+- uid: Sin.Net.Domain.System.Extensions.ArrayExtensions
+  commentId: T:Sin.Net.Domain.System.Extensions.ArrayExtensions
+  name: ArrayExtensions
+  nameWithType: ArrayExtensions
+  fullName: Sin.Net.Domain.System.Extensions.ArrayExtensions
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  commentId: T:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  parent: Sin.Net.Domain.System.Extensions
+  name: ObjectCloneExtensions
+  nameWithType: ObjectCloneExtensions
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+- uid: Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer
+  commentId: T:Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer
+  name: ReferenceEqualityComparer
+  nameWithType: ReferenceEqualityComparer
+  fullName: Sin.Net.Domain.System.Extensions.ReferenceEqualityComparer
+- uid: Sin.Net.Domain.System.Extensions
+  commentId: N:Sin.Net.Domain.System.Extensions
+  name: Sin.Net.Domain.System.Extensions
+  nameWithType: Sin.Net.Domain.System.Extensions
+  fullName: Sin.Net.Domain.System.Extensions
