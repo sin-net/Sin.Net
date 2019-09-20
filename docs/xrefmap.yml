@@ -113,6 +113,19 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.HttpEndpoint
   nameWithType: HttpEndpoint.HttpEndpoint
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.Authentication
+  name: Authentication
+  href: api/Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.html#Sin_Net_Domain_Infrastructure_Http_HttpEndpoint_Authentication
+  commentId: P:Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.Authentication
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.Authentication
+  nameWithType: HttpEndpoint.Authentication
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.Authentication*
+  name: Authentication
+  href: api/Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.html#Sin_Net_Domain_Infrastructure_Http_HttpEndpoint_Authentication_
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.Authentication
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.Authentication
+  nameWithType: HttpEndpoint.Authentication
 - uid: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.BaseAddress
   name: BaseAddress
   href: api/Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.html#Sin_Net_Domain_Infrastructure_Http_HttpEndpoint_BaseAddress
@@ -203,6 +216,19 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.HttpResponseEventArgs
   nameWithType: HttpResponseEventArgs.HttpResponseEventArgs
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Endpoint
+  name: Endpoint
+  href: api/Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.html#Sin_Net_Domain_Infrastructure_Http_HttpResponseEventArgs_Endpoint
+  commentId: P:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Endpoint
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Endpoint
+  nameWithType: HttpResponseEventArgs.Endpoint
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Endpoint*
+  name: Endpoint
+  href: api/Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.html#Sin_Net_Domain_Infrastructure_Http_HttpResponseEventArgs_Endpoint_
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Endpoint
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Endpoint
+  nameWithType: HttpResponseEventArgs.Endpoint
 - uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response
   name: Response
   href: api/Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.html#Sin_Net_Domain_Infrastructure_Http_HttpResponseEventArgs_Response

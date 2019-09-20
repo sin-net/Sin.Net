@@ -7,6 +7,7 @@ items:
   children:
   - Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.#ctor(System.Net.HttpStatusCode)
   - Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.#ctor(System.Net.HttpStatusCode,System.Object)
+  - Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Endpoint
   - Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response
   - Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.StatusCode
   - Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Timestamp
@@ -124,6 +125,41 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Endpoint
+  commentId: P:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Endpoint
+  id: Endpoint
+  parent: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Endpoint
+  nameWithType: HttpResponseEventArgs.Endpoint
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Endpoint
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Endpoint
+    path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
+    startLine: 20
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure.Http
+  syntax:
+    content: public HttpEndpoint Endpoint { get; }
+    parameters: []
+    return:
+      type: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
+    content.vb: Public ReadOnly Property Endpoint As HttpEndpoint
+  overload: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Endpoint*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 - uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response
   commentId: P:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response
   id: Response
@@ -142,7 +178,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Response
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-    startLine: 20
+    startLine: 22
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
@@ -177,7 +213,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Timestamp
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-    startLine: 22
+    startLine: 24
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
@@ -212,7 +248,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: StatusCode
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-    startLine: 24
+    startLine: 26
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
@@ -962,6 +998,17 @@ references:
   name: System.Net
   nameWithType: System.Net
   fullName: System.Net
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Endpoint*
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Endpoint
+  name: Endpoint
+  nameWithType: HttpResponseEventArgs.Endpoint
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Endpoint
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
+  commentId: T:Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
+  parent: Sin.Net.Domain.Infrastructure.Http
+  name: HttpEndpoint
+  nameWithType: HttpEndpoint
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
 - uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response*
   commentId: Overload:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response
   name: Response

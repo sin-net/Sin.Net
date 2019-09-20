@@ -6,6 +6,7 @@ items:
   parent: Sin.Net.Domain.Infrastructure.Http
   children:
   - Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.#ctor
+  - Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.Authentication
   - Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.BaseAddress
   - Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.Method
   - Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.MethodName
@@ -270,6 +271,43 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.Authentication
+  commentId: P:Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.Authentication
+  id: Authentication
+  parent: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
+  langs:
+  - csharp
+  - vb
+  name: Authentication
+  nameWithType: HttpEndpoint.Authentication
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.Authentication
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Authentication
+    path: ../Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
+    startLine: 70
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure.Http
+  summary: "\nGets or sets an optional authentication string or API key for requests.\n"
+  example: []
+  syntax:
+    content: public string Authentication { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Authentication As String
+  overload: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.Authentication*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
 references:
 - uid: Sin.Net.Domain.Infrastructure.Http
   commentId: N:Sin.Net.Domain.Infrastructure.Http
@@ -1021,3 +1059,8 @@ references:
   name: Url
   nameWithType: HttpEndpoint.Url
   fullName: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.Url
+- uid: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.Authentication*
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.Authentication
+  name: Authentication
+  nameWithType: HttpEndpoint.Authentication
+  fullName: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint.Authentication

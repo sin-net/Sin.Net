@@ -65,5 +65,10 @@ namespace Sin.Net.Domain.Infrastructure.Http
         /// </summary>
         public string Url => new Uri(new Uri(BaseAddress), Request).ToString();
 
+        /// <summary>
+        /// Gets or sets an optional authentication string or API key for requests.
+        /// </summary>
+        public string Authentication { get; set; }
+
     }
 }

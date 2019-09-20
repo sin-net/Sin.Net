@@ -18,6 +18,8 @@ namespace Sin.Net.Domain.Infrastructure.Http
             Response = response;
         }
 
+        public HttpEndpoint Endpoint { get; private set; }
+
         public object Response { get; private set; }
 
         public DateTime Timestamp { get; private set; }
