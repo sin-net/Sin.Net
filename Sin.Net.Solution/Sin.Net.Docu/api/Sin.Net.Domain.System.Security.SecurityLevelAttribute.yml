@@ -39,6 +39,7 @@ items:
       <AttributeUsage(AttributeTargets.Method Or AttributeTargets.Property)>
 
       Public Class SecurityLevelAttribute
+
           Inherits Attribute
   inheritance:
   - System.Object

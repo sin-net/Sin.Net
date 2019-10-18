@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Serialization;
 using Sin.Net.Persistence.IO;
 using Sin.Net.Persistence.IO.Json;
 using System;
@@ -18,23 +19,39 @@ namespace MSTests.Persistence
             Bad
         }
 
+        class Alien
+        {
+            public bool Invisible { get; set; }
+            public string Name { get; set; }
+            public DateTime Landed { get; set; }
+            public States Feeling { get; set; }
+        }
+           
+
         [TestMethod]
         public void SerializeToJson()
         {
             // arrange
-            var input = new {
-                MyName = "name",
-                MyDate = DateTime.Now,
-                MyState = States.Good
+            var input = new Alien {
+                Invisible = true,
+                Name = "Alf",
+                Landed = DateTime.Now,
+                Feeling = States.Good
             };
+            var resolver = new PropertiesContractResolver();
+            resolver.IgnoreProperty(typeof(Alien), "Invisible");
+            resolver.RenameProperty(typeof(Alien), "Name", "Alien");
 
             // act
-            var json = JsonIO.ToJsonString(input, null, new List<JsonConverter> { new StringEnumConverter() });
+            JsonIO.Resolver = resolver;
+            JsonIO.Converters = new List<JsonConverter> { new StringEnumConverter() };
+            var json = JsonIO.ToJsonString(input);
 
             // assert
             Assert.IsTrue(!string.IsNullOrEmpty(json), "The json string should not be empty.");
-
-            dynamic output = JsonIO.FromJsonString<object>(json);
+            Assert.IsTrue(!json.Contains("Invisible"), "The property Invisible should be invisible.");
+            Assert.IsTrue(!json.Contains("Name"), "The property 'Name' should be renamed into 'AlienName'.");
+            Assert.IsTrue(json.Contains("Alien"), "The property 'Name' should be renamed into 'Alien'.");
         }
     }
 }

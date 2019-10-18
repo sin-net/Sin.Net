@@ -44,7 +44,10 @@ namespace Sin.Net.Persistence.Imports
 
         public T As<T>() where T : new()
         {
-            return JsonIO.FromJsonString<T>(_importJson, _setting.Binder, _setting.Converters);
+            JsonIO.Binder = _setting.Binder;
+            JsonIO.Converters = _setting.Converters;
+            JsonIO.Resolver = _setting.Resolver;
+            return JsonIO.FromJsonString<T>(_importJson);
         }
 
         public T As<T>(IAdaptable adapter) where T : new()

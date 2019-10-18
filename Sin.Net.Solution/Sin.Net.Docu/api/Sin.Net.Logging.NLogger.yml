@@ -37,6 +37,7 @@ items:
     content: 'public class NLogger : ILoggable'
     content.vb: >-
       Public Class NLogger
+
           Implements ILoggable
   inheritance:
   - System.Object

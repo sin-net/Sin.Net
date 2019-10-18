@@ -9,6 +9,7 @@ items:
   - Sin.Net.Persistence.Settings.JsonSetting.Binder
   - Sin.Net.Persistence.Settings.JsonSetting.ConvertEnumToString
   - Sin.Net.Persistence.Settings.JsonSetting.Converters
+  - Sin.Net.Persistence.Settings.JsonSetting.Resolver
   langs:
   - csharp
   - vb
@@ -107,7 +108,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Binder
     path: ../Sin.Net.Persistence/Settings/JsonSetting.cs
-    startLine: 31
+    startLine: 34
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.Settings
@@ -142,7 +143,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Converters
     path: ../Sin.Net.Persistence/Settings/JsonSetting.cs
-    startLine: 33
+    startLine: 36
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.Settings
@@ -153,6 +154,41 @@ items:
       type: System.Collections.Generic.List{Newtonsoft.Json.JsonConverter}
     content.vb: Public Property Converters As List(Of JsonConverter)
   overload: Sin.Net.Persistence.Settings.JsonSetting.Converters*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Persistence.Settings.JsonSetting.Resolver
+  commentId: P:Sin.Net.Persistence.Settings.JsonSetting.Resolver
+  id: Resolver
+  parent: Sin.Net.Persistence.Settings.JsonSetting
+  langs:
+  - csharp
+  - vb
+  name: Resolver
+  nameWithType: JsonSetting.Resolver
+  fullName: Sin.Net.Persistence.Settings.JsonSetting.Resolver
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/Settings/JsonSetting.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Resolver
+    path: ../Sin.Net.Persistence/Settings/JsonSetting.cs
+    startLine: 38
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.Settings
+  syntax:
+    content: public IContractResolver Resolver { get; set; }
+    parameters: []
+    return:
+      type: Newtonsoft.Json.Serialization.IContractResolver
+    content.vb: Public Property Resolver As IContractResolver
+  overload: Sin.Net.Persistence.Settings.JsonSetting.Resolver*
   modifiers.csharp:
   - public
   - get
@@ -177,7 +213,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ConvertEnumToString
     path: ../Sin.Net.Persistence/Settings/JsonSetting.cs
-    startLine: 38
+    startLine: 43
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.Settings
@@ -1055,6 +1091,18 @@ references:
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
+- uid: Sin.Net.Persistence.Settings.JsonSetting.Resolver*
+  commentId: Overload:Sin.Net.Persistence.Settings.JsonSetting.Resolver
+  name: Resolver
+  nameWithType: JsonSetting.Resolver
+  fullName: Sin.Net.Persistence.Settings.JsonSetting.Resolver
+- uid: Newtonsoft.Json.Serialization.IContractResolver
+  commentId: T:Newtonsoft.Json.Serialization.IContractResolver
+  parent: Newtonsoft.Json.Serialization
+  isExternal: true
+  name: IContractResolver
+  nameWithType: IContractResolver
+  fullName: Newtonsoft.Json.Serialization.IContractResolver
 - uid: Sin.Net.Persistence.Settings.JsonSetting.ConvertEnumToString*
   commentId: Overload:Sin.Net.Persistence.Settings.JsonSetting.ConvertEnumToString
   name: ConvertEnumToString

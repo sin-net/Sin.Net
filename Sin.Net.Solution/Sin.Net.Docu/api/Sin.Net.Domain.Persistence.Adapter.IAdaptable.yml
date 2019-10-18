@@ -67,6 +67,7 @@ items:
   syntax:
     content: >-
       Tout Adapt<Tin, Tout>(Tin input)
+
           where Tout : new()
     parameters:
     - id: input

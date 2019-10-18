@@ -20,10 +20,8 @@ namespace Sin.Net.Persistence.IO.Json
         /// Creates a json-string out of an object with a custom binder, usefull for interface serializations.
         /// </summary>
         /// <param name="obj">The objekt to be serialized.</param>
-        /// <param name="binder">The optional implementation of an ISerializationBinder, e.g. TypedSerializationBinder</param>
-        ///  <param name="converters">The optional list of json converters.</param>
         /// <returns>The resulting string<</returns>
-        public static string ToJsonString(object obj, ISerializationBinder binder = null, List<JsonConverter> converters = null)
+        public static string ToJsonString(object obj)
         {
             string json = "{ }";
             try
@@ -31,8 +29,9 @@ namespace Sin.Net.Persistence.IO.Json
                 var settings = new JsonSerializerSettings
                 {
                     TypeNameHandling = TypeNameHandling.Auto,
-                    SerializationBinder = binder,
-                    Converters = converters
+                    SerializationBinder = Binder,
+                    Converters = Converters,
+                    ContractResolver = Resolver                    
                 };
 
                 if (EnableCaseResolver)
@@ -57,18 +56,17 @@ namespace Sin.Net.Persistence.IO.Json
         /// </summary>
         /// <typeparam name="T">The typeparam</typeparam>
         /// <param name="json">The json-string</param>
-        /// <param name="binder">The optional binder implementation</param>
-        /// <param name="converters">The optional list of json converters.</param>
         /// <returns>The deserialized object of type t</returns>
-        public static T FromJsonString<T>(string json, ISerializationBinder binder = null, List<JsonConverter> converters = null)
+        public static T FromJsonString<T>(string json)
         {
             try
             {
                 var settings = new JsonSerializerSettings
                 {
                     TypeNameHandling = TypeNameHandling.Auto,
-                    SerializationBinder = binder,
-                    Converters = converters
+                    SerializationBinder = Binder,
+                    Converters = Converters,
+                    ContractResolver = Resolver
                 };
 
                 if (EnableCaseResolver)
@@ -109,13 +107,13 @@ namespace Sin.Net.Persistence.IO.Json
         /// <param name="binder">The optional binder implementation.</param>
         /// <param name="converters">The optional list of json converters.</param>
         /// <returns>The deserialized object of type t.</returns>
-        public static T ReadJson<T>(string file, ISerializationBinder binder = null, List<JsonConverter> converters = null)
+        public static T ReadJson<T>(string file)
         {
             T obj;
             using (StreamReader r = new StreamReader(file))
             {
                 string json = r.ReadToEnd();
-                obj = FromJsonString<T>(json, binder, converters);
+                obj = FromJsonString<T>(json);
             }
 
             return obj;
@@ -129,12 +127,12 @@ namespace Sin.Net.Persistence.IO.Json
         /// <param name="binder">The optional binder implementation.</param>
         /// <param name="converters">The optional list of json converters.</param>
         /// <returns>If successful it returns 'true' otherwise 'false'.</returns>
-        public static bool SaveToJson(object obj, string file, ISerializationBinder binder = null, List<JsonConverter> converters = null)
+        public static bool SaveToJson(object obj, string file)
         {
             bool result = false;
             try
             {
-                File.WriteAllText(file, ToJsonString(obj, binder, converters));
+                File.WriteAllText(file, ToJsonString(obj));
                 result = true;
             }
             catch (Exception ex)
@@ -164,5 +162,20 @@ namespace Sin.Net.Persistence.IO.Json
         /// Gets or sets the feature of resolving property names to lower case at serializing. 
         /// </summary>
         public static bool EnableCaseResolver { get; set; } = false;
+
+        /// <summary>
+        /// Gets or sets the resolver that defines how a specific object should be serialized and vice versa.
+        /// </summary>
+        public static IContractResolver Resolver { get; set; }
+
+        /// <summary>
+        /// Gets or sets the serialization binder.
+        /// </summary>
+        public static ISerializationBinder Binder { get; set; }
+
+        /// <summary>
+        /// Gets or sets the list of converters that define how base classes or interfaces will be converted.
+        /// </summary>
+        public static List<JsonConverter> Converters { get; set; }
     }
 }

@@ -24,7 +24,10 @@ namespace Sin.Net.Persistence.Settings
 
         private JsonConverter GetStringEnumConverter()
         {
+            var s = new JsonSerializerSettings();
             return Converters.FirstOrDefault(c => typeof(StringEnumConverter).IsAssignableFrom(c.GetType()));
+
+            
         }
 
         // -- properties
@@ -32,6 +35,8 @@ namespace Sin.Net.Persistence.Settings
         public ISerializationBinder Binder { get; set; }
 
         public List<JsonConverter> Converters { get; set; }
+
+        public IContractResolver Resolver { get; set; }
 
         /// <summary>
         /// Sets the StringEnumConverter into the list or removes it, if present. 

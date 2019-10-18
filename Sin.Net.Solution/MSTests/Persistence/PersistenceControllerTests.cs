@@ -59,10 +59,11 @@ namespace MSTests.Persistence
                 typeof(TestClassB)
             });
 
-            string json = JsonIO.ToJsonString(input, binder);
+            JsonIO.Binder = binder;
+            string json = JsonIO.ToJsonString(input);
 
             // act
-            var output = JsonIO.FromJsonString<InterfaceRepository>(json, binder);
+            var output = JsonIO.FromJsonString<InterfaceRepository>(json);
 
             // Assert
             for (int i = 0; i < output.Count; i++)

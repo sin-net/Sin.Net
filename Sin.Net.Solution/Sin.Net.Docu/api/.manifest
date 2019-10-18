@@ -260,13 +260,16 @@
   "Sin.Net.Persistence.IO.Binary.BinaryIO.ToBytes(System.Object)": "Sin.Net.Persistence.IO.Binary.BinaryIO.yml",
   "Sin.Net.Persistence.IO.Json": "Sin.Net.Persistence.IO.Json.yml",
   "Sin.Net.Persistence.IO.Json.JsonIO": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
+  "Sin.Net.Persistence.IO.Json.JsonIO.Binder": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
+  "Sin.Net.Persistence.IO.Json.JsonIO.Converters": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
   "Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
-  "Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
+  "Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString``1(System.String)": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
   "Sin.Net.Persistence.IO.Json.JsonIO.ReadJson(System.String)": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
-  "Sin.Net.Persistence.IO.Json.JsonIO.ReadJson``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
-  "Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object,System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
+  "Sin.Net.Persistence.IO.Json.JsonIO.ReadJson``1(System.String)": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
+  "Sin.Net.Persistence.IO.Json.JsonIO.Resolver": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
+  "Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object,System.String)": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
   "Sin.Net.Persistence.IO.Json.JsonIO.Throw": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
-  "Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
+  "Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object)": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
   "Sin.Net.Persistence.IO.Json.LowerCaseContractResolver": "Sin.Net.Persistence.IO.Json.LowerCaseContractResolver.yml",
   "Sin.Net.Persistence.IO.Json.LowerCaseContractResolver.ResolvePropertyName(System.String)": "Sin.Net.Persistence.IO.Json.LowerCaseContractResolver.yml",
   "Sin.Net.Persistence.IO.Json.TypedSerializationBinder": "Sin.Net.Persistence.IO.Json.TypedSerializationBinder.yml",
@@ -302,5 +305,6 @@
   "Sin.Net.Persistence.Settings.JsonSetting.#ctor": "Sin.Net.Persistence.Settings.JsonSetting.yml",
   "Sin.Net.Persistence.Settings.JsonSetting.Binder": "Sin.Net.Persistence.Settings.JsonSetting.yml",
   "Sin.Net.Persistence.Settings.JsonSetting.ConvertEnumToString": "Sin.Net.Persistence.Settings.JsonSetting.yml",
-  "Sin.Net.Persistence.Settings.JsonSetting.Converters": "Sin.Net.Persistence.Settings.JsonSetting.yml"
+  "Sin.Net.Persistence.Settings.JsonSetting.Converters": "Sin.Net.Persistence.Settings.JsonSetting.yml",
+  "Sin.Net.Persistence.Settings.JsonSetting.Resolver": "Sin.Net.Persistence.Settings.JsonSetting.yml"
 }

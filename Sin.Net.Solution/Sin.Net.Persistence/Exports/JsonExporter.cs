@@ -79,7 +79,11 @@ namespace Sin.Net.Persistence.Exports
                 Directory.CreateDirectory(_setting.Location);
             }
 
-            if (JsonIO.SaveToJson(_exportData, file, _setting.Binder, _setting.Converters))
+            JsonIO.Resolver = _setting.Resolver;
+            JsonIO.Binder = _setting.Binder;
+            JsonIO.Converters = _setting.Converters;
+
+            if (JsonIO.SaveToJson(_exportData, file))
             {
                 result = file;
             }

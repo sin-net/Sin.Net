@@ -2773,6 +2773,32 @@ references:
   commentId: T:Sin.Net.Persistence.IO.Json.JsonIO
   fullName: Sin.Net.Persistence.IO.Json.JsonIO
   nameWithType: JsonIO
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.Binder
+  name: Binder
+  href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_Binder
+  commentId: P:Sin.Net.Persistence.IO.Json.JsonIO.Binder
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.Binder
+  nameWithType: JsonIO.Binder
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.Binder*
+  name: Binder
+  href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_Binder_
+  commentId: Overload:Sin.Net.Persistence.IO.Json.JsonIO.Binder
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.Binder
+  nameWithType: JsonIO.Binder
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.Converters
+  name: Converters
+  href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_Converters
+  commentId: P:Sin.Net.Persistence.IO.Json.JsonIO.Converters
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.Converters
+  nameWithType: JsonIO.Converters
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.Converters*
+  name: Converters
+  href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_Converters_
+  commentId: Overload:Sin.Net.Persistence.IO.Json.JsonIO.Converters
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.Converters
+  nameWithType: JsonIO.Converters
 - uid: Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver
   name: EnableCaseResolver
   href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_EnableCaseResolver
@@ -2793,15 +2819,15 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString
   nameWithType: JsonIO.FromJsonString
-- uid: Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
-  name: FromJsonString<T>(String, ISerializationBinder, List<JsonConverter>)
-  href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_FromJsonString__1_System_String_Newtonsoft_Json_Serialization_ISerializationBinder_System_Collections_Generic_List_Newtonsoft_Json_JsonConverter__
-  commentId: M:Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
-  name.vb: FromJsonString(Of T)(String, ISerializationBinder, List(Of JsonConverter))
-  fullName: Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString<T>(System.String, Newtonsoft.Json.Serialization.ISerializationBinder, System.Collections.Generic.List<Newtonsoft.Json.JsonConverter>)
-  fullName.vb: Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString(Of T)(System.String, Newtonsoft.Json.Serialization.ISerializationBinder, System.Collections.Generic.List(Of Newtonsoft.Json.JsonConverter))
-  nameWithType: JsonIO.FromJsonString<T>(String, ISerializationBinder, List<JsonConverter>)
-  nameWithType.vb: JsonIO.FromJsonString(Of T)(String, ISerializationBinder, List(Of JsonConverter))
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString``1(System.String)
+  name: FromJsonString<T>(String)
+  href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_FromJsonString__1_System_String_
+  commentId: M:Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString``1(System.String)
+  name.vb: FromJsonString(Of T)(String)
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString<T>(System.String)
+  fullName.vb: Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString(Of T)(System.String)
+  nameWithType: JsonIO.FromJsonString<T>(String)
+  nameWithType.vb: JsonIO.FromJsonString(Of T)(String)
 - uid: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson(System.String)
   name: ReadJson(String)
   href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_ReadJson_System_String_
@@ -2815,24 +2841,34 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson
   nameWithType: JsonIO.ReadJson
-- uid: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
-  name: ReadJson<T>(String, ISerializationBinder, List<JsonConverter>)
-  href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_ReadJson__1_System_String_Newtonsoft_Json_Serialization_ISerializationBinder_System_Collections_Generic_List_Newtonsoft_Json_JsonConverter__
-  commentId: M:Sin.Net.Persistence.IO.Json.JsonIO.ReadJson``1(System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
-  name.vb: ReadJson(Of T)(String, ISerializationBinder, List(Of JsonConverter))
-  fullName: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson<T>(System.String, Newtonsoft.Json.Serialization.ISerializationBinder, System.Collections.Generic.List<Newtonsoft.Json.JsonConverter>)
-  fullName.vb: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson(Of T)(System.String, Newtonsoft.Json.Serialization.ISerializationBinder, System.Collections.Generic.List(Of Newtonsoft.Json.JsonConverter))
-  nameWithType: JsonIO.ReadJson<T>(String, ISerializationBinder, List<JsonConverter>)
-  nameWithType.vb: JsonIO.ReadJson(Of T)(String, ISerializationBinder, List(Of JsonConverter))
-- uid: Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object,System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
-  name: SaveToJson(Object, String, ISerializationBinder, List<JsonConverter>)
-  href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_SaveToJson_System_Object_System_String_Newtonsoft_Json_Serialization_ISerializationBinder_System_Collections_Generic_List_Newtonsoft_Json_JsonConverter__
-  commentId: M:Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object,System.String,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
-  name.vb: SaveToJson(Object, String, ISerializationBinder, List(Of JsonConverter))
-  fullName: Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object, System.String, Newtonsoft.Json.Serialization.ISerializationBinder, System.Collections.Generic.List<Newtonsoft.Json.JsonConverter>)
-  fullName.vb: Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object, System.String, Newtonsoft.Json.Serialization.ISerializationBinder, System.Collections.Generic.List(Of Newtonsoft.Json.JsonConverter))
-  nameWithType: JsonIO.SaveToJson(Object, String, ISerializationBinder, List<JsonConverter>)
-  nameWithType.vb: JsonIO.SaveToJson(Object, String, ISerializationBinder, List(Of JsonConverter))
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson``1(System.String)
+  name: ReadJson<T>(String)
+  href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_ReadJson__1_System_String_
+  commentId: M:Sin.Net.Persistence.IO.Json.JsonIO.ReadJson``1(System.String)
+  name.vb: ReadJson(Of T)(String)
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson<T>(System.String)
+  fullName.vb: Sin.Net.Persistence.IO.Json.JsonIO.ReadJson(Of T)(System.String)
+  nameWithType: JsonIO.ReadJson<T>(String)
+  nameWithType.vb: JsonIO.ReadJson(Of T)(String)
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.Resolver
+  name: Resolver
+  href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_Resolver
+  commentId: P:Sin.Net.Persistence.IO.Json.JsonIO.Resolver
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.Resolver
+  nameWithType: JsonIO.Resolver
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.Resolver*
+  name: Resolver
+  href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_Resolver_
+  commentId: Overload:Sin.Net.Persistence.IO.Json.JsonIO.Resolver
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.Resolver
+  nameWithType: JsonIO.Resolver
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object,System.String)
+  name: SaveToJson(Object, String)
+  href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_SaveToJson_System_Object_System_String_
+  commentId: M:Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object,System.String)
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson(System.Object, System.String)
+  nameWithType: JsonIO.SaveToJson(Object, String)
 - uid: Sin.Net.Persistence.IO.Json.JsonIO.SaveToJson*
   name: SaveToJson
   href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_SaveToJson_
@@ -2853,15 +2889,12 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Persistence.IO.Json.JsonIO.Throw
   nameWithType: JsonIO.Throw
-- uid: Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
-  name: ToJsonString(Object, ISerializationBinder, List<JsonConverter>)
-  href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_ToJsonString_System_Object_Newtonsoft_Json_Serialization_ISerializationBinder_System_Collections_Generic_List_Newtonsoft_Json_JsonConverter__
-  commentId: M:Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object,Newtonsoft.Json.Serialization.ISerializationBinder,System.Collections.Generic.List{Newtonsoft.Json.JsonConverter})
-  name.vb: ToJsonString(Object, ISerializationBinder, List(Of JsonConverter))
-  fullName: Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object, Newtonsoft.Json.Serialization.ISerializationBinder, System.Collections.Generic.List<Newtonsoft.Json.JsonConverter>)
-  fullName.vb: Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object, Newtonsoft.Json.Serialization.ISerializationBinder, System.Collections.Generic.List(Of Newtonsoft.Json.JsonConverter))
-  nameWithType: JsonIO.ToJsonString(Object, ISerializationBinder, List<JsonConverter>)
-  nameWithType.vb: JsonIO.ToJsonString(Object, ISerializationBinder, List(Of JsonConverter))
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object)
+  name: ToJsonString(Object)
+  href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_ToJsonString_System_Object_
+  commentId: M:Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object)
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString(System.Object)
+  nameWithType: JsonIO.ToJsonString(Object)
 - uid: Sin.Net.Persistence.IO.Json.JsonIO.ToJsonString*
   name: ToJsonString
   href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_ToJsonString_
@@ -3266,3 +3299,16 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Persistence.Settings.JsonSetting.Converters
   nameWithType: JsonSetting.Converters
+- uid: Sin.Net.Persistence.Settings.JsonSetting.Resolver
+  name: Resolver
+  href: api/Sin.Net.Persistence.Settings.JsonSetting.html#Sin_Net_Persistence_Settings_JsonSetting_Resolver
+  commentId: P:Sin.Net.Persistence.Settings.JsonSetting.Resolver
+  fullName: Sin.Net.Persistence.Settings.JsonSetting.Resolver
+  nameWithType: JsonSetting.Resolver
+- uid: Sin.Net.Persistence.Settings.JsonSetting.Resolver*
+  name: Resolver
+  href: api/Sin.Net.Persistence.Settings.JsonSetting.html#Sin_Net_Persistence_Settings_JsonSetting_Resolver_
+  commentId: Overload:Sin.Net.Persistence.Settings.JsonSetting.Resolver
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Settings.JsonSetting.Resolver
+  nameWithType: JsonSetting.Resolver
