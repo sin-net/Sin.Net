@@ -19,17 +19,21 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: HttpResponseEventHandler
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-    startLine: 5
+    startLine: 10
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
+  summary: "\nThis is the event handler for http responses.\n"
+  example: []
   syntax:
     content: public delegate void HttpResponseEventHandler(object sender, HttpResponseEventArgs e);
     parameters:
     - id: sender
       type: System.Object
+      description: The sending object.
     - id: e
       type: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs
+      description: The event arguments.
     content.vb: Public Delegate Sub HttpResponseEventHandler(sender As Object, e As HttpResponseEventArgs)
   extensionMethods:
   - System.Object.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone

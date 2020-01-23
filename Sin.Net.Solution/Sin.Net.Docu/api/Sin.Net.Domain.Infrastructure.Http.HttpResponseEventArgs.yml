@@ -25,15 +25,16 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: HttpResponseEventArgs
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-    startLine: 7
+    startLine: 15
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
+  summary: "\nThis class is used to pass properties through events, based on the HttpResponseEventHandler type.\n"
+  example: []
   syntax:
     content: 'public class HttpResponseEventArgs : EventArgs'
     content.vb: >-
       Public Class HttpResponseEventArgs
-
           Inherits EventArgs
   inheritance:
   - System.Object
@@ -76,15 +77,18 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-    startLine: 9
+    startLine: 21
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
+  summary: "\nThe default constructor creates the timestamp and needs the status code of the http response as argument.\n"
+  example: []
   syntax:
     content: public HttpResponseEventArgs(HttpStatusCode statusCode)
     parameters:
     - id: statusCode
       type: System.Net.HttpStatusCode
+      description: The http status code.
     content.vb: Public Sub New(statusCode As HttpStatusCode)
   overload: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.#ctor*
   modifiers.csharp:
@@ -109,17 +113,21 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-    startLine: 15
+    startLine: 32
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
+  summary: "\nThe constructor calls the default constructor and takes a response object as parameter.\n"
+  example: []
   syntax:
     content: public HttpResponseEventArgs(HttpStatusCode statusCode, object response)
     parameters:
     - id: statusCode
       type: System.Net.HttpStatusCode
+      description: The http status code.
     - id: response
       type: System.Object
+      description: The response object of the http call.
     content.vb: Public Sub New(statusCode As HttpStatusCode, response As Object)
   overload: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.#ctor*
   modifiers.csharp:
@@ -144,23 +152,25 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Endpoint
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-    startLine: 20
+    startLine: 40
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
+  summary: "\nGets or sets the optional property to keep the information about the http endpoint.\n"
+  example: []
   syntax:
-    content: public HttpEndpoint Endpoint { get; }
+    content: public HttpEndpoint Endpoint { get; set; }
     parameters: []
     return:
       type: Sin.Net.Domain.Infrastructure.Http.HttpEndpoint
-    content.vb: Public ReadOnly Property Endpoint As HttpEndpoint
+    content.vb: Public Property Endpoint As HttpEndpoint
   overload: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Endpoint*
   modifiers.csharp:
   - public
   - get
+  - set
   modifiers.vb:
   - Public
-  - ReadOnly
 - uid: Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response
   commentId: P:Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.Response
   id: Response
@@ -179,10 +189,12 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Response
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-    startLine: 22
+    startLine: 45
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
+  summary: "\nGets the response object of the http call.\n"
+  example: []
   syntax:
     content: public object Response { get; }
     parameters: []
@@ -214,10 +226,12 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Timestamp
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-    startLine: 24
+    startLine: 50
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
+  summary: "\nGets the timestamp of the instanciation of the arguments. \n"
+  example: []
   syntax:
     content: public DateTime Timestamp { get; }
     parameters: []
@@ -249,10 +263,12 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: StatusCode
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-    startLine: 26
+    startLine: 55
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Http
+  summary: "\nGets the http status code.\n"
+  example: []
   syntax:
     content: public HttpStatusCode StatusCode { get; }
     parameters: []

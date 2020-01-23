@@ -2217,18 +2217,12 @@ references:
   commentId: T:Sin.Net.Logging.NLogger
   fullName: Sin.Net.Logging.NLogger
   nameWithType: NLogger
-- uid: Sin.Net.Logging.NLogger.#ctor(NLog.LogLevel,System.Boolean)
-  name: NLogger(LogLevel, Boolean)
-  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger__ctor_NLog_LogLevel_System_Boolean_
-  commentId: M:Sin.Net.Logging.NLogger.#ctor(NLog.LogLevel,System.Boolean)
-  fullName: Sin.Net.Logging.NLogger.NLogger(NLog.LogLevel, System.Boolean)
-  nameWithType: NLogger.NLogger(LogLevel, Boolean)
-- uid: Sin.Net.Logging.NLogger.#ctor(System.Boolean)
-  name: NLogger(Boolean)
-  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger__ctor_System_Boolean_
-  commentId: M:Sin.Net.Logging.NLogger.#ctor(System.Boolean)
-  fullName: Sin.Net.Logging.NLogger.NLogger(System.Boolean)
-  nameWithType: NLogger.NLogger(Boolean)
+- uid: Sin.Net.Logging.NLogger.#ctor
+  name: NLogger()
+  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger__ctor
+  commentId: M:Sin.Net.Logging.NLogger.#ctor
+  fullName: Sin.Net.Logging.NLogger.NLogger()
+  nameWithType: NLogger.NLogger()
 - uid: Sin.Net.Logging.NLogger.#ctor*
   name: NLogger
   href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger__ctor_
@@ -2249,6 +2243,19 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Logging.NLogger.Debug
   nameWithType: NLogger.Debug
+- uid: Sin.Net.Logging.NLogger.DeleteOlFiles
+  name: DeleteOlFiles
+  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_DeleteOlFiles
+  commentId: P:Sin.Net.Logging.NLogger.DeleteOlFiles
+  fullName: Sin.Net.Logging.NLogger.DeleteOlFiles
+  nameWithType: NLogger.DeleteOlFiles
+- uid: Sin.Net.Logging.NLogger.DeleteOlFiles*
+  name: DeleteOlFiles
+  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_DeleteOlFiles_
+  commentId: Overload:Sin.Net.Logging.NLogger.DeleteOlFiles
+  isSpec: "True"
+  fullName: Sin.Net.Logging.NLogger.DeleteOlFiles
+  nameWithType: NLogger.DeleteOlFiles
 - uid: Sin.Net.Logging.NLogger.Error(System.String)
   name: Error(String)
   href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_Error_System_String_
@@ -2288,6 +2295,19 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Logging.NLogger.Info
   nameWithType: NLogger.Info
+- uid: Sin.Net.Logging.NLogger.MinRule
+  name: MinRule
+  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_MinRule
+  commentId: P:Sin.Net.Logging.NLogger.MinRule
+  fullName: Sin.Net.Logging.NLogger.MinRule
+  nameWithType: NLogger.MinRule
+- uid: Sin.Net.Logging.NLogger.MinRule*
+  name: MinRule
+  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_MinRule_
+  commentId: Overload:Sin.Net.Logging.NLogger.MinRule
+  isSpec: "True"
+  fullName: Sin.Net.Logging.NLogger.MinRule
+  nameWithType: NLogger.MinRule
 - uid: Sin.Net.Logging.NLogger.Start
   name: Start()
   href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_Start
@@ -2314,6 +2334,19 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Logging.NLogger.Stop
   nameWithType: NLogger.Stop
+- uid: Sin.Net.Logging.NLogger.Suffix
+  name: Suffix
+  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_Suffix
+  commentId: P:Sin.Net.Logging.NLogger.Suffix
+  fullName: Sin.Net.Logging.NLogger.Suffix
+  nameWithType: NLogger.Suffix
+- uid: Sin.Net.Logging.NLogger.Suffix*
+  name: Suffix
+  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_Suffix_
+  commentId: Overload:Sin.Net.Logging.NLogger.Suffix
+  isSpec: "True"
+  fullName: Sin.Net.Logging.NLogger.Suffix
+  nameWithType: NLogger.Suffix
 - uid: Sin.Net.Logging.NLogger.Trace(System.String)
   name: Trace(String)
   href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_Trace_System_String_
@@ -2921,6 +2954,67 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Persistence.IO.Json.LowerCaseContractResolver.ResolvePropertyName
   nameWithType: LowerCaseContractResolver.ResolvePropertyName
+- uid: Sin.Net.Persistence.IO.Json.PropertiesContractResolver
+  name: PropertiesContractResolver
+  href: api/Sin.Net.Persistence.IO.Json.PropertiesContractResolver.html
+  commentId: T:Sin.Net.Persistence.IO.Json.PropertiesContractResolver
+  fullName: Sin.Net.Persistence.IO.Json.PropertiesContractResolver
+  nameWithType: PropertiesContractResolver
+- uid: Sin.Net.Persistence.IO.Json.PropertiesContractResolver.#ctor
+  name: PropertiesContractResolver()
+  href: api/Sin.Net.Persistence.IO.Json.PropertiesContractResolver.html#Sin_Net_Persistence_IO_Json_PropertiesContractResolver__ctor
+  commentId: M:Sin.Net.Persistence.IO.Json.PropertiesContractResolver.#ctor
+  fullName: Sin.Net.Persistence.IO.Json.PropertiesContractResolver.PropertiesContractResolver()
+  nameWithType: PropertiesContractResolver.PropertiesContractResolver()
+- uid: Sin.Net.Persistence.IO.Json.PropertiesContractResolver.#ctor*
+  name: PropertiesContractResolver
+  href: api/Sin.Net.Persistence.IO.Json.PropertiesContractResolver.html#Sin_Net_Persistence_IO_Json_PropertiesContractResolver__ctor_
+  commentId: Overload:Sin.Net.Persistence.IO.Json.PropertiesContractResolver.#ctor
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.IO.Json.PropertiesContractResolver.PropertiesContractResolver
+  nameWithType: PropertiesContractResolver.PropertiesContractResolver
+- uid: Sin.Net.Persistence.IO.Json.PropertiesContractResolver.CreateProperty(System.Reflection.MemberInfo,Newtonsoft.Json.MemberSerialization)
+  name: CreateProperty(MemberInfo, MemberSerialization)
+  href: api/Sin.Net.Persistence.IO.Json.PropertiesContractResolver.html#Sin_Net_Persistence_IO_Json_PropertiesContractResolver_CreateProperty_System_Reflection_MemberInfo_Newtonsoft_Json_MemberSerialization_
+  commentId: M:Sin.Net.Persistence.IO.Json.PropertiesContractResolver.CreateProperty(System.Reflection.MemberInfo,Newtonsoft.Json.MemberSerialization)
+  fullName: Sin.Net.Persistence.IO.Json.PropertiesContractResolver.CreateProperty(System.Reflection.MemberInfo, Newtonsoft.Json.MemberSerialization)
+  nameWithType: PropertiesContractResolver.CreateProperty(MemberInfo, MemberSerialization)
+- uid: Sin.Net.Persistence.IO.Json.PropertiesContractResolver.CreateProperty*
+  name: CreateProperty
+  href: api/Sin.Net.Persistence.IO.Json.PropertiesContractResolver.html#Sin_Net_Persistence_IO_Json_PropertiesContractResolver_CreateProperty_
+  commentId: Overload:Sin.Net.Persistence.IO.Json.PropertiesContractResolver.CreateProperty
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.IO.Json.PropertiesContractResolver.CreateProperty
+  nameWithType: PropertiesContractResolver.CreateProperty
+- uid: Sin.Net.Persistence.IO.Json.PropertiesContractResolver.IgnoreProperty(System.Type,System.String[])
+  name: IgnoreProperty(Type, String[])
+  href: api/Sin.Net.Persistence.IO.Json.PropertiesContractResolver.html#Sin_Net_Persistence_IO_Json_PropertiesContractResolver_IgnoreProperty_System_Type_System_String___
+  commentId: M:Sin.Net.Persistence.IO.Json.PropertiesContractResolver.IgnoreProperty(System.Type,System.String[])
+  name.vb: IgnoreProperty(Type, String())
+  fullName: Sin.Net.Persistence.IO.Json.PropertiesContractResolver.IgnoreProperty(System.Type, System.String[])
+  fullName.vb: Sin.Net.Persistence.IO.Json.PropertiesContractResolver.IgnoreProperty(System.Type, System.String())
+  nameWithType: PropertiesContractResolver.IgnoreProperty(Type, String[])
+  nameWithType.vb: PropertiesContractResolver.IgnoreProperty(Type, String())
+- uid: Sin.Net.Persistence.IO.Json.PropertiesContractResolver.IgnoreProperty*
+  name: IgnoreProperty
+  href: api/Sin.Net.Persistence.IO.Json.PropertiesContractResolver.html#Sin_Net_Persistence_IO_Json_PropertiesContractResolver_IgnoreProperty_
+  commentId: Overload:Sin.Net.Persistence.IO.Json.PropertiesContractResolver.IgnoreProperty
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.IO.Json.PropertiesContractResolver.IgnoreProperty
+  nameWithType: PropertiesContractResolver.IgnoreProperty
+- uid: Sin.Net.Persistence.IO.Json.PropertiesContractResolver.RenameProperty(System.Type,System.String,System.String)
+  name: RenameProperty(Type, String, String)
+  href: api/Sin.Net.Persistence.IO.Json.PropertiesContractResolver.html#Sin_Net_Persistence_IO_Json_PropertiesContractResolver_RenameProperty_System_Type_System_String_System_String_
+  commentId: M:Sin.Net.Persistence.IO.Json.PropertiesContractResolver.RenameProperty(System.Type,System.String,System.String)
+  fullName: Sin.Net.Persistence.IO.Json.PropertiesContractResolver.RenameProperty(System.Type, System.String, System.String)
+  nameWithType: PropertiesContractResolver.RenameProperty(Type, String, String)
+- uid: Sin.Net.Persistence.IO.Json.PropertiesContractResolver.RenameProperty*
+  name: RenameProperty
+  href: api/Sin.Net.Persistence.IO.Json.PropertiesContractResolver.html#Sin_Net_Persistence_IO_Json_PropertiesContractResolver_RenameProperty_
+  commentId: Overload:Sin.Net.Persistence.IO.Json.PropertiesContractResolver.RenameProperty
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.IO.Json.PropertiesContractResolver.RenameProperty
+  nameWithType: PropertiesContractResolver.RenameProperty
 - uid: Sin.Net.Persistence.IO.Json.TypedSerializationBinder
   name: TypedSerializationBinder
   href: api/Sin.Net.Persistence.IO.Json.TypedSerializationBinder.html

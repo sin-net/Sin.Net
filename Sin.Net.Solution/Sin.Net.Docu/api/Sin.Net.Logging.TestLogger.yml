@@ -36,7 +36,6 @@ items:
     content: 'public class TestLogger : ILoggable'
     content.vb: >-
       Public Class TestLogger
-
           Implements ILoggable
   inheritance:
   - System.Object
@@ -114,8 +113,10 @@ items:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
   syntax:
-    content: public void Start()
-    content.vb: Public Sub Start
+    content: public ILoggable Start()
+    return:
+      type: Sin.Net.Domain.Persistence.Logging.ILoggable
+    content.vb: Public Function Start As ILoggable
   overload: Sin.Net.Logging.TestLogger.Start*
   implements:
   - Sin.Net.Domain.Persistence.Logging.ILoggable.Start
@@ -141,7 +142,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Stop
     path: ../Sin.Net.Logging/TestLogger.cs
-    startLine: 47
+    startLine: 49
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -173,7 +174,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Trace
     path: ../Sin.Net.Logging/TestLogger.cs
-    startLine: 54
+    startLine: 56
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -208,7 +209,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Debug
     path: ../Sin.Net.Logging/TestLogger.cs
-    startLine: 59
+    startLine: 61
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -243,7 +244,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Info
     path: ../Sin.Net.Logging/TestLogger.cs
-    startLine: 64
+    startLine: 66
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -278,7 +279,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Warn
     path: ../Sin.Net.Logging/TestLogger.cs
-    startLine: 69
+    startLine: 71
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -313,7 +314,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Error
     path: ../Sin.Net.Logging/TestLogger.cs
-    startLine: 74
+    startLine: 76
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -348,7 +349,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Fatal
     path: ../Sin.Net.Logging/TestLogger.cs
-    startLine: 79
+    startLine: 81
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging

@@ -12,7 +12,7 @@ namespace MSTests
         {
             if (Log.IsNotNull == false)
             {
-                Log.Inject(new TestLogger());
+                Log.Inject(new TestLogger().Start());
             }
         }
 

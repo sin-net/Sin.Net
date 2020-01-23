@@ -12,38 +12,27 @@ namespace Sin.Net.Logging
 
         private Logger _logger;
 
-        private LogLevel _minLevel;
 
         // -- constructors
 
-        public NLogger(bool deleteOldFiles = true)
+        public NLogger()
         {
-            Start();
-        }
-
-        public NLogger(LogLevel minLevel, bool deleteOldFiles = true) : this(deleteOldFiles)
-        {
-            _minLevel = minLevel;
-            Start();
+            Suffix = string.Empty;
+            DeleteOlFiles = true;
+            MinRule = LogLevel.Info;
         }
 
         // -- methods
 
         #region Start
-        public void Start()
+        public ILoggable Start()
         {
             var path = "Logs/";
             var config = new NLog.Config.LoggingConfiguration();
             var consoleTarget = new NLog.Targets.ConsoleTarget("logconsole");
             var fileTarget = new NLog.Targets.FileTarget("logfile");
             var filename = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-#if DEBUG
-            var suffix = "_DEBUG";
-            var minRule = LogLevel.Debug;
-#else
-            var suffix = "";
-            var minRule = LogLevel.Info;
-#endif
+
             consoleTarget.Layout = new CsvLayout()
             {
                 Columns = {
@@ -66,12 +55,14 @@ namespace Sin.Net.Logging
                 Delimiter = CsvColumnDelimiterMode.Tab
             };
 
-            fileTarget.FileName = $"{Path.Combine(path, filename)}{suffix}.log";
-            fileTarget.DeleteOldFileOnStartup = true;
+            fileTarget.FileName = $"{Path.Combine(path, filename)}{Suffix}.log";
+            fileTarget.DeleteOldFileOnStartup = DeleteOlFiles;
             config.AddRule(LogLevel.Trace, LogLevel.Fatal, consoleTarget);
-            config.AddRule(minRule, LogLevel.Fatal, fileTarget);
+            config.AddRule(MinRule, LogLevel.Fatal, fileTarget);
             LogManager.Configuration = config;
             _logger = LogManager.GetCurrentClassLogger();
+
+            return this;
         }
         #endregion
 
@@ -111,5 +102,14 @@ namespace Sin.Net.Logging
         {
             _logger.Fatal(ex);
         }
+
+        // properties
+
+        public LogLevel MinRule { get; set; }
+
+        public bool DeleteOlFiles { get; set; }
+
+        public string Suffix { get; set; }
+
     }
 }

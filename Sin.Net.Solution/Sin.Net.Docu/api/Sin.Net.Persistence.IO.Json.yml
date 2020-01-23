@@ -6,6 +6,7 @@ items:
   children:
   - Sin.Net.Persistence.IO.Json.JsonIO
   - Sin.Net.Persistence.IO.Json.LowerCaseContractResolver
+  - Sin.Net.Persistence.IO.Json.PropertiesContractResolver
   - Sin.Net.Persistence.IO.Json.TypedSerializationBinder
   - Sin.Net.Persistence.IO.Json.UpperCaseContractResolver
   langs:
@@ -28,6 +29,11 @@ references:
   name: LowerCaseContractResolver
   nameWithType: LowerCaseContractResolver
   fullName: Sin.Net.Persistence.IO.Json.LowerCaseContractResolver
+- uid: Sin.Net.Persistence.IO.Json.PropertiesContractResolver
+  commentId: T:Sin.Net.Persistence.IO.Json.PropertiesContractResolver
+  name: PropertiesContractResolver
+  nameWithType: PropertiesContractResolver
+  fullName: Sin.Net.Persistence.IO.Json.PropertiesContractResolver
 - uid: Sin.Net.Persistence.IO.Json.TypedSerializationBinder
   commentId: T:Sin.Net.Persistence.IO.Json.TypedSerializationBinder
   name: TypedSerializationBinder

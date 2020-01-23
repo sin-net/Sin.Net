@@ -39,9 +39,7 @@ items:
       <Serializable>
 
       Public MustInherit Class IterativeRepositoryBase(Of T)
-
           Inherits RepositoryBase(Of T)
-
           Implements IEnumerable
   inheritance:
   - System.Object

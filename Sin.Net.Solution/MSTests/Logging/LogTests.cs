@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NLog;
 using Sin.Net.Domain.Persistence.Logging;
 using Sin.Net.Logging;
 using System;
@@ -11,7 +12,7 @@ namespace MSTests.Logging
         [TestInitialize]
         public void Arrange()
         {
-            Log.Inject(new NLogger());
+            Log.Inject(new NLogger { MinRule = LogLevel.Warn, Suffix = "-suffix" }.Start());
         }
 
         [TestCleanup]
@@ -51,7 +52,7 @@ namespace MSTests.Logging
             }
             catch (Exception ex)
             {
-                throw new Exception("an exception was thrown", ex);
+                throw new Exception("An UnitTest exception was thrown", ex);
             }
         }
 

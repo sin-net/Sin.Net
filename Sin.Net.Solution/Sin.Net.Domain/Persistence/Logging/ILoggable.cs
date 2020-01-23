@@ -11,7 +11,7 @@ namespace Sin.Net.Domain.Persistence.Logging
         /// The startup routine for the logging implementation. 
         /// Call this method in the constructor for auto-start readiness of the logging.
         /// </summary>
-        void Start();
+        ILoggable Start();
 
         /// <summary>
         /// The stop routine.

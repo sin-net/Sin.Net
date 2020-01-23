@@ -72,8 +72,10 @@ items:
   summary: "\nThe startup routine for the logging implementation. \nCall this method in the constructor for auto-start readiness of the logging.\n"
   example: []
   syntax:
-    content: void Start()
-    content.vb: Sub Start
+    content: ILoggable Start()
+    return:
+      type: Sin.Net.Domain.Persistence.Logging.ILoggable
+    content.vb: Function Start As ILoggable
   overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Start*
 - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Stop
   commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Stop
@@ -708,6 +710,12 @@ references:
   name: Start
   nameWithType: ILoggable.Start
   fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Start
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable
+  commentId: T:Sin.Net.Domain.Persistence.Logging.ILoggable
+  parent: Sin.Net.Domain.Persistence.Logging
+  name: ILoggable
+  nameWithType: ILoggable
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable
 - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Stop*
   commentId: Overload:Sin.Net.Domain.Persistence.Logging.ILoggable.Stop
   name: Stop

@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Infrastructure.Http.HttpResponseEventArgs.html",
-          "hash": "rDHTDGsu8GWcBlx9o/4T1w=="
+          "hash": "Gba112HGe/6Sl5xgrRXWkA=="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Infrastructure.Http.HttpResponseEventHandler.html",
-          "hash": "Rbdh+JBHlDCf8e04Ym1qBQ=="
+          "hash": "Hhto6Qwx3FiiqYJOerCb6Q=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Infrastructure.Http.ServiceBase.html",
-          "hash": "vtjocGXVZTKwBVLGg96YzA=="
+          "hash": "KV7wYbrGVlM6ilKTRgdauQ=="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Infrastructure.Http.html",
-          "hash": "oyaEnTnlABe53h4AtN7d8g=="
+          "hash": "KdE/Qcy2r3iOfsNuGs16+Q=="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Infrastructure.Mqtt.MqttReceivedEventArgs.html",
-          "hash": "Qa464MT6C0WIMuCUdFgvOw=="
+          "hash": "RQ47tSNnCLg76m0IWDP0Dw=="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Persistence.Adapter.AdapterBase.html",
-          "hash": "Yjs7p5nL3k4ejgJpgKE5Rw=="
+          "hash": "TH3e07p5bwPGlrqF3gADZA=="
         }
       },
       "is_incremental": false,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Persistence.Adapter.IAdaptable.html",
-          "hash": "O1VwT/xt67fGC47Qsf3mUA=="
+          "hash": "smEszpdWt8Pj9KiV+cv2zg=="
         }
       },
       "is_incremental": false,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Persistence.IImportable.html",
-          "hash": "QBaGjTuG1RDFD8cLE/+NIg=="
+          "hash": "EcRQq8Fd4k/qDjsFrxjtlA=="
         }
       },
       "is_incremental": false,
@@ -285,10 +285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Persistence.Logging.ILoggable.html",
-          "hash": "MNE/47kddZCa/AyN8cbBdQ=="
+          "hash": "NjDV6JMyFDpghPGKKF0dLA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -300,7 +300,7 @@
           "hash": "4pU33Mk2hz2Rd+y0/6hTxw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -312,7 +312,7 @@
           "hash": "yiY7SsZiu7flis0IwZuxOA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -381,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Repository.RepositoryView-1.html",
-          "hash": "2r4eYzTmOSuzmMDk5ea1ig=="
+          "hash": "uEqwOaKevR0iVWtnsgEgeQ=="
         }
       },
       "is_incremental": false,
@@ -525,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Infrastructure.Http.GenericService.html",
-          "hash": "uwuSl1wuzOG96/SPJhyW/w=="
+          "hash": "hcCe22GQmMYtuvkPXZBM7Q=="
         }
       },
       "is_incremental": false,
@@ -585,7 +585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Logging.NLogger.html",
-          "hash": "NHdgRhP4TlLr3kkQExWEOw=="
+          "hash": "vF8M2vWSGopAsgl9bxjnWg=="
         }
       },
       "is_incremental": false,
@@ -597,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Logging.TestLogger.html",
-          "hash": "FbAHGgYX1mh3xLLKVBp9vQ=="
+          "hash": "pFYgcQMnZCtgMo+Odv+Qhg=="
         }
       },
       "is_incremental": false,
@@ -720,7 +720,7 @@
           "hash": "zIhSx8v/w9EV3WkjT4B40g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -730,6 +730,18 @@
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.IO.Json.LowerCaseContractResolver.html",
           "hash": "/BUVf6CgM0Sc6HpJA/2O1w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sin.Net.Persistence.IO.Json.PropertiesContractResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sin.Net.Persistence.IO.Json.PropertiesContractResolver.html",
+          "hash": "26no4o0tz3x1JIUGk0545Q=="
         }
       },
       "is_incremental": true,
@@ -765,10 +777,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.IO.Json.html",
-          "hash": "xHDnFYuDiZ9EL69e0xHrsg=="
+          "hash": "uSmW9ox3PWJj50NDi+PqWQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -816,7 +828,7 @@
           "hash": "+op0MG0TyKA0EInGHyZdtg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -828,7 +840,7 @@
           "hash": "E8j5oC8PwmAnuFd8Vi7IAA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -840,7 +852,7 @@
           "hash": "u9TCCdKlt4j7TdQvRAA1PA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -852,7 +864,7 @@
           "hash": "oepsnwt1aYkpvBaaW4mg6A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -873,7 +885,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "XG4sRiRjPdTKMFRDuFT1Wg=="
+          "hash": "ntYfuHllyiZgwk7Vecn01Q=="
         }
       },
       "is_incremental": false,
@@ -959,6 +971,13 @@
         "skipped_file_count": 0
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
@@ -968,15 +987,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 71,
-          "skipped_file_count": 53
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
+          "total_file_count": 72,
+          "skipped_file_count": 54
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

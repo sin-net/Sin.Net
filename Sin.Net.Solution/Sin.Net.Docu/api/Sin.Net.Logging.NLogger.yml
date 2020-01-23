@@ -5,14 +5,16 @@ items:
   id: NLogger
   parent: Sin.Net.Logging
   children:
-  - Sin.Net.Logging.NLogger.#ctor(NLog.LogLevel,System.Boolean)
-  - Sin.Net.Logging.NLogger.#ctor(System.Boolean)
+  - Sin.Net.Logging.NLogger.#ctor
   - Sin.Net.Logging.NLogger.Debug(System.String)
+  - Sin.Net.Logging.NLogger.DeleteOlFiles
   - Sin.Net.Logging.NLogger.Error(System.String)
   - Sin.Net.Logging.NLogger.Fatal(System.Exception)
   - Sin.Net.Logging.NLogger.Info(System.String)
+  - Sin.Net.Logging.NLogger.MinRule
   - Sin.Net.Logging.NLogger.Start
   - Sin.Net.Logging.NLogger.Stop
+  - Sin.Net.Logging.NLogger.Suffix
   - Sin.Net.Logging.NLogger.Trace(System.String)
   - Sin.Net.Logging.NLogger.Warn(System.String)
   langs:
@@ -37,7 +39,6 @@ items:
     content: 'public class NLogger : ILoggable'
     content.vb: >-
       Public Class NLogger
-
           Implements ILoggable
   inheritance:
   - System.Object
@@ -62,16 +63,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Sin.Net.Logging.NLogger.#ctor(System.Boolean)
-  commentId: M:Sin.Net.Logging.NLogger.#ctor(System.Boolean)
-  id: '#ctor(System.Boolean)'
+- uid: Sin.Net.Logging.NLogger.#ctor
+  commentId: M:Sin.Net.Logging.NLogger.#ctor
+  id: '#ctor'
   parent: Sin.Net.Logging.NLogger
   langs:
   - csharp
   - vb
-  name: NLogger(Boolean)
-  nameWithType: NLogger.NLogger(Boolean)
-  fullName: Sin.Net.Logging.NLogger.NLogger(System.Boolean)
+  name: NLogger()
+  nameWithType: NLogger.NLogger()
+  fullName: Sin.Net.Logging.NLogger.NLogger()
   type: Constructor
   source:
     remote:
@@ -80,51 +81,13 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 18
+    startLine: 17
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
   syntax:
-    content: public NLogger(bool deleteOldFiles = true)
-    parameters:
-    - id: deleteOldFiles
-      type: System.Boolean
-    content.vb: Public Sub New(deleteOldFiles As Boolean = True)
-  overload: Sin.Net.Logging.NLogger.#ctor*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: Sin.Net.Logging.NLogger.#ctor(NLog.LogLevel,System.Boolean)
-  commentId: M:Sin.Net.Logging.NLogger.#ctor(NLog.LogLevel,System.Boolean)
-  id: '#ctor(NLog.LogLevel,System.Boolean)'
-  parent: Sin.Net.Logging.NLogger
-  langs:
-  - csharp
-  - vb
-  name: NLogger(LogLevel, Boolean)
-  nameWithType: NLogger.NLogger(LogLevel, Boolean)
-  fullName: Sin.Net.Logging.NLogger.NLogger(NLog.LogLevel, System.Boolean)
-  type: Constructor
-  source:
-    remote:
-      path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: master
-      repo: git@github.com:adriansinger87/Sin.Net.git
-    id: .ctor
-    path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 23
-  assemblies:
-  - Sin.Net.Logging
-  namespace: Sin.Net.Logging
-  syntax:
-    content: public NLogger(LogLevel minLevel, bool deleteOldFiles = true)
-    parameters:
-    - id: minLevel
-      type: NLog.LogLevel
-    - id: deleteOldFiles
-      type: System.Boolean
-    content.vb: Public Sub New(minLevel As LogLevel, deleteOldFiles As Boolean = True)
+    content: public NLogger()
+    content.vb: Public Sub New
   overload: Sin.Net.Logging.NLogger.#ctor*
   modifiers.csharp:
   - public
@@ -148,13 +111,15 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Start
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 32
+    startLine: 27
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
   syntax:
-    content: public void Start()
-    content.vb: Public Sub Start
+    content: public ILoggable Start()
+    return:
+      type: Sin.Net.Domain.Persistence.Logging.ILoggable
+    content.vb: Public Function Start As ILoggable
   overload: Sin.Net.Logging.NLogger.Start*
   implements:
   - Sin.Net.Domain.Persistence.Logging.ILoggable.Start
@@ -180,7 +145,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Stop
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 77
+    startLine: 68
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -212,7 +177,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Trace
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 84
+    startLine: 75
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -247,7 +212,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Debug
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 89
+    startLine: 80
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -282,7 +247,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Info
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 94
+    startLine: 85
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -317,7 +282,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Warn
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 99
+    startLine: 90
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -352,7 +317,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Error
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 104
+    startLine: 95
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -387,7 +352,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Fatal
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 109
+    startLine: 100
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -402,6 +367,111 @@ items:
   - Sin.Net.Domain.Persistence.Logging.ILoggable.Fatal(System.Exception)
   modifiers.csharp:
   - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Logging.NLogger.MinRule
+  commentId: P:Sin.Net.Logging.NLogger.MinRule
+  id: MinRule
+  parent: Sin.Net.Logging.NLogger
+  langs:
+  - csharp
+  - vb
+  name: MinRule
+  nameWithType: NLogger.MinRule
+  fullName: Sin.Net.Logging.NLogger.MinRule
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: MinRule
+    path: ../Sin.Net.Logging/NLogger.cs
+    startLine: 107
+  assemblies:
+  - Sin.Net.Logging
+  namespace: Sin.Net.Logging
+  syntax:
+    content: public LogLevel MinRule { get; set; }
+    parameters: []
+    return:
+      type: NLog.LogLevel
+    content.vb: Public Property MinRule As LogLevel
+  overload: Sin.Net.Logging.NLogger.MinRule*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Logging.NLogger.DeleteOlFiles
+  commentId: P:Sin.Net.Logging.NLogger.DeleteOlFiles
+  id: DeleteOlFiles
+  parent: Sin.Net.Logging.NLogger
+  langs:
+  - csharp
+  - vb
+  name: DeleteOlFiles
+  nameWithType: NLogger.DeleteOlFiles
+  fullName: Sin.Net.Logging.NLogger.DeleteOlFiles
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: DeleteOlFiles
+    path: ../Sin.Net.Logging/NLogger.cs
+    startLine: 109
+  assemblies:
+  - Sin.Net.Logging
+  namespace: Sin.Net.Logging
+  syntax:
+    content: public bool DeleteOlFiles { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property DeleteOlFiles As Boolean
+  overload: Sin.Net.Logging.NLogger.DeleteOlFiles*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Logging.NLogger.Suffix
+  commentId: P:Sin.Net.Logging.NLogger.Suffix
+  id: Suffix
+  parent: Sin.Net.Logging.NLogger
+  langs:
+  - csharp
+  - vb
+  name: Suffix
+  nameWithType: NLogger.Suffix
+  fullName: Sin.Net.Logging.NLogger.Suffix
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Suffix
+    path: ../Sin.Net.Logging/NLogger.cs
+    startLine: 111
+  assemblies:
+  - Sin.Net.Logging
+  namespace: Sin.Net.Logging
+  syntax:
+    content: public string Suffix { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Suffix As String
+  overload: Sin.Net.Logging.NLogger.Suffix*
+  modifiers.csharp:
+  - public
+  - get
+  - set
   modifiers.vb:
   - Public
 references:
@@ -1121,26 +1191,6 @@ references:
   name: NLogger
   nameWithType: NLogger.NLogger
   fullName: Sin.Net.Logging.NLogger.NLogger
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean
-- uid: NLog.LogLevel
-  commentId: T:NLog.LogLevel
-  parent: NLog
-  isExternal: true
-  name: LogLevel
-  nameWithType: LogLevel
-  fullName: NLog.LogLevel
-- uid: NLog
-  commentId: N:NLog
-  isExternal: true
-  name: NLog
-  nameWithType: NLog
-  fullName: NLog
 - uid: Sin.Net.Logging.NLogger.Start*
   commentId: Overload:Sin.Net.Logging.NLogger.Start
   name: Start
@@ -1485,3 +1535,38 @@ references:
   name: Exception
   nameWithType: Exception
   fullName: System.Exception
+- uid: Sin.Net.Logging.NLogger.MinRule*
+  commentId: Overload:Sin.Net.Logging.NLogger.MinRule
+  name: MinRule
+  nameWithType: NLogger.MinRule
+  fullName: Sin.Net.Logging.NLogger.MinRule
+- uid: NLog.LogLevel
+  commentId: T:NLog.LogLevel
+  parent: NLog
+  isExternal: true
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: NLog.LogLevel
+- uid: NLog
+  commentId: N:NLog
+  isExternal: true
+  name: NLog
+  nameWithType: NLog
+  fullName: NLog
+- uid: Sin.Net.Logging.NLogger.DeleteOlFiles*
+  commentId: Overload:Sin.Net.Logging.NLogger.DeleteOlFiles
+  name: DeleteOlFiles
+  nameWithType: NLogger.DeleteOlFiles
+  fullName: Sin.Net.Logging.NLogger.DeleteOlFiles
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sin.Net.Logging.NLogger.Suffix*
+  commentId: Overload:Sin.Net.Logging.NLogger.Suffix
+  name: Suffix
+  nameWithType: NLogger.Suffix
+  fullName: Sin.Net.Logging.NLogger.Suffix

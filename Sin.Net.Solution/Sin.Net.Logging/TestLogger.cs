@@ -21,7 +21,7 @@ namespace Sin.Net.Logging
         // -- methods
 
         #region Start
-        public void Start()
+        public ILoggable Start()
         {
             var config = new NLog.Config.LoggingConfiguration();
             var consoleTarget = new NLog.Targets.ConsoleTarget("logconsole");
@@ -42,6 +42,8 @@ namespace Sin.Net.Logging
 
             LogManager.Configuration = config;
             _logger = LogManager.GetCurrentClassLogger();
+
+            return this;
         }
         #endregion
 

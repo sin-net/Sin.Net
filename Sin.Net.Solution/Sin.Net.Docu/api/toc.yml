@@ -152,6 +152,8 @@
     name: JsonIO
   - uid: Sin.Net.Persistence.IO.Json.LowerCaseContractResolver
     name: LowerCaseContractResolver
+  - uid: Sin.Net.Persistence.IO.Json.PropertiesContractResolver
+    name: PropertiesContractResolver
   - uid: Sin.Net.Persistence.IO.Json.TypedSerializationBinder
     name: TypedSerializationBinder
   - uid: Sin.Net.Persistence.IO.Json.UpperCaseContractResolver
