@@ -8,6 +8,7 @@ items:
   - Sin.Net.Persistence.IO.Json.JsonIO.Binder
   - Sin.Net.Persistence.IO.Json.JsonIO.Converters
   - Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver
+  - Sin.Net.Persistence.IO.Json.JsonIO.FileEncoding
   - Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString``1(System.String)
   - Sin.Net.Persistence.IO.Json.JsonIO.ReadJson(System.String)
   - Sin.Net.Persistence.IO.Json.JsonIO.ReadJson``1(System.String)
@@ -29,7 +30,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: JsonIO
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.IO.Json
@@ -198,7 +199,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ReadJson
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
-    startLine: 109
+    startLine: 110
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.IO.Json
@@ -245,7 +246,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: SaveToJson
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
-    startLine: 129
+    startLine: 130
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.IO.Json
@@ -289,7 +290,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Throw
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
-    startLine: 158
+    startLine: 159
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.IO.Json
@@ -328,7 +329,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: EnableCaseResolver
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
-    startLine: 163
+    startLine: 164
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.IO.Json
@@ -341,6 +342,45 @@ items:
       type: System.Boolean
     content.vb: Public Shared Property EnableCaseResolver As Boolean
   overload: Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.FileEncoding
+  commentId: P:Sin.Net.Persistence.IO.Json.JsonIO.FileEncoding
+  id: FileEncoding
+  parent: Sin.Net.Persistence.IO.Json.JsonIO
+  langs:
+  - csharp
+  - vb
+  name: FileEncoding
+  nameWithType: JsonIO.FileEncoding
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.FileEncoding
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: FileEncoding
+    path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
+    startLine: 169
+  assemblies:
+  - Sin.Net.Persistence
+  namespace: Sin.Net.Persistence.IO.Json
+  summary: "\nGets or sets the encoding of json string for reading and writing files.\n"
+  example: []
+  syntax:
+    content: public static Encoding FileEncoding { get; set; }
+    parameters: []
+    return:
+      type: System.Text.Encoding
+    content.vb: Public Shared Property FileEncoding As Encoding
+  overload: Sin.Net.Persistence.IO.Json.JsonIO.FileEncoding*
   modifiers.csharp:
   - public
   - static
@@ -367,7 +407,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Resolver
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
-    startLine: 168
+    startLine: 174
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.IO.Json
@@ -406,7 +446,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Binder
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
-    startLine: 173
+    startLine: 179
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.IO.Json
@@ -445,7 +485,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Converters
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
-    startLine: 178
+    startLine: 184
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.IO.Json
@@ -818,6 +858,24 @@ references:
   name: EnableCaseResolver
   nameWithType: JsonIO.EnableCaseResolver
   fullName: Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.FileEncoding*
+  commentId: Overload:Sin.Net.Persistence.IO.Json.JsonIO.FileEncoding
+  name: FileEncoding
+  nameWithType: JsonIO.FileEncoding
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.FileEncoding
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
 - uid: Sin.Net.Persistence.IO.Json.JsonIO.Resolver*
   commentId: Overload:Sin.Net.Persistence.IO.Json.JsonIO.Resolver
   name: Resolver

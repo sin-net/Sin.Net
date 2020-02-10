@@ -9,7 +9,7 @@
     <AssemblyVersion>0.1.2.0</AssemblyVersion>
     <PackageTags>Sin.Net.Domain, Logger, NLog</PackageTags>
     <Description>This assembly represents a part of persitence layer. It is the implementation of a logging mechanism based on Sin.Net.Domain and NLog.</Description>
-    <Version>0.1.1</Version>
+    <Version>0.1.2</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/sin-net/Sin.Net</PackageProjectUrl>
     <FileVersion>0.1.2.0</FileVersion>

@@ -265,6 +265,7 @@
   "Sin.Net.Persistence.IO.Json.JsonIO.Binder": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
   "Sin.Net.Persistence.IO.Json.JsonIO.Converters": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
   "Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
+  "Sin.Net.Persistence.IO.Json.JsonIO.FileEncoding": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
   "Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString``1(System.String)": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
   "Sin.Net.Persistence.IO.Json.JsonIO.ReadJson(System.String)": "Sin.Net.Persistence.IO.Json.JsonIO.yml",
   "Sin.Net.Persistence.IO.Json.JsonIO.ReadJson``1(System.String)": "Sin.Net.Persistence.IO.Json.JsonIO.yml",

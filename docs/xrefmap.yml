@@ -2845,6 +2845,19 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Persistence.IO.Json.JsonIO.EnableCaseResolver
   nameWithType: JsonIO.EnableCaseResolver
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.FileEncoding
+  name: FileEncoding
+  href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_FileEncoding
+  commentId: P:Sin.Net.Persistence.IO.Json.JsonIO.FileEncoding
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.FileEncoding
+  nameWithType: JsonIO.FileEncoding
+- uid: Sin.Net.Persistence.IO.Json.JsonIO.FileEncoding*
+  name: FileEncoding
+  href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_FileEncoding_
+  commentId: Overload:Sin.Net.Persistence.IO.Json.JsonIO.FileEncoding
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.IO.Json.JsonIO.FileEncoding
+  nameWithType: JsonIO.FileEncoding
 - uid: Sin.Net.Persistence.IO.Json.JsonIO.FromJsonString*
   name: FromJsonString
   href: api/Sin.Net.Persistence.IO.Json.JsonIO.html#Sin_Net_Persistence_IO_Json_JsonIO_FromJsonString_

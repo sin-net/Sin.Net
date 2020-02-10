@@ -138,6 +138,7 @@ items:
   syntax:
     content: >-
       T As<T>()
+
           where T : new()
     typeParameters:
     - id: T
@@ -177,6 +178,7 @@ items:
   syntax:
     content: >-
       T As<T>(IAdaptable adapter)
+
           where T : new()
     parameters:
     - id: adapter

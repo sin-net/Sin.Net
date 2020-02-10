@@ -4,6 +4,7 @@ using Sin.Net.Domain.Persistence.Logging;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 
 namespace Sin.Net.Persistence.IO.Json
 {
@@ -13,7 +14,6 @@ namespace Sin.Net.Persistence.IO.Json
     /// </summary>
     public static class JsonIO
     {
-
         #region ToJsonString (2)
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace Sin.Net.Persistence.IO.Json
                     TypeNameHandling = TypeNameHandling.Auto,
                     SerializationBinder = Binder,
                     Converters = Converters,
-                    ContractResolver = Resolver                    
+                    ContractResolver = Resolver
                 };
 
                 if (EnableCaseResolver)
@@ -90,8 +90,9 @@ namespace Sin.Net.Persistence.IO.Json
         /// <returns>The deserialized object of type t.</returns>
         public static string ReadJson(string file)
         {
+           
             string result = string.Empty;
-            using (StreamReader r = new StreamReader(file))
+            using (StreamReader r = new StreamReader(file, FileEncoding))
             {
                 result = r.ReadToEnd();
             }
@@ -110,7 +111,7 @@ namespace Sin.Net.Persistence.IO.Json
         public static T ReadJson<T>(string file)
         {
             T obj;
-            using (StreamReader r = new StreamReader(file))
+            using (StreamReader r = new StreamReader(file, FileEncoding))
             {
                 string json = r.ReadToEnd();
                 obj = FromJsonString<T>(json);
@@ -132,7 +133,7 @@ namespace Sin.Net.Persistence.IO.Json
             bool result = false;
             try
             {
-                File.WriteAllText(file, ToJsonString(obj));
+                File.WriteAllText(file, ToJsonString(obj), FileEncoding);
                 result = true;
             }
             catch (Exception ex)
@@ -162,6 +163,11 @@ namespace Sin.Net.Persistence.IO.Json
         /// Gets or sets the feature of resolving property names to lower case at serializing. 
         /// </summary>
         public static bool EnableCaseResolver { get; set; } = false;
+
+        /// <summary>
+        /// Gets or sets the encoding of json string for reading and writing files.
+        /// </summary>
+        public static Encoding FileEncoding { get; set; } = Encoding.Default;
 
         /// <summary>
         /// Gets or sets the resolver that defines how a specific object should be serialized and vice versa.
