@@ -7,14 +7,14 @@
     <Copyright>Adrian Singer</Copyright>
     <PackageLicenseUrl>https://raw.githubusercontent.com/sin-net/Sin.Net/master/LICENSE</PackageLicenseUrl>
     <Authors>Adrian Singer</Authors>
-    <Version>0.2.0</Version>
+    <Version>0.2.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>This assembly contains a reference implementation of the Sin.Net.Domain interfaces for im- and export control. Supported  formats are Json, Binary and Csv based on DataTables. A derivation of the features in your client code is supported. More features will follow.</Description>
     <PackageTags>Sin.Net.Domain, Persistence, json, Newtonsoft.Json, Binary, csv</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/sin-net/Sin.Net/master/Images/Sin.Net.Logo.small.png</PackageIconUrl>
-    <AssemblyVersion>0.2.0.0</AssemblyVersion>
-    <FileVersion>0.2.0.0</FileVersion>
-    <PackageReleaseNotes>API for json serialization changed with a new way to set options.</PackageReleaseNotes>
+    <AssemblyVersion>0.2.1.0</AssemblyVersion>
+    <FileVersion>0.2.1.0</FileVersion>
+    <PackageReleaseNotes>The file encoding for json de-serialization is now editable via a property of the JsonIO class.</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
