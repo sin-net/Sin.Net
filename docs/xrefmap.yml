@@ -941,6 +941,37 @@ references:
   commentId: T:Sin.Net.Domain.Persistence.IPersistenceControlable
   fullName: Sin.Net.Domain.Persistence.IPersistenceControlable
   nameWithType: IPersistenceControlable
+- uid: Sin.Net.Domain.Persistence.IPersistenceControlable.Add(Sin.Net.Domain.Persistence.IExportable)
+  name: Add(IExportable)
+  href: api/Sin.Net.Domain.Persistence.IPersistenceControlable.html#Sin_Net_Domain_Persistence_IPersistenceControlable_Add_Sin_Net_Domain_Persistence_IExportable_
+  commentId: M:Sin.Net.Domain.Persistence.IPersistenceControlable.Add(Sin.Net.Domain.Persistence.IExportable)
+  fullName: Sin.Net.Domain.Persistence.IPersistenceControlable.Add(Sin.Net.Domain.Persistence.IExportable)
+  nameWithType: IPersistenceControlable.Add(IExportable)
+- uid: Sin.Net.Domain.Persistence.IPersistenceControlable.Add(Sin.Net.Domain.Persistence.IImportable)
+  name: Add(IImportable)
+  href: api/Sin.Net.Domain.Persistence.IPersistenceControlable.html#Sin_Net_Domain_Persistence_IPersistenceControlable_Add_Sin_Net_Domain_Persistence_IImportable_
+  commentId: M:Sin.Net.Domain.Persistence.IPersistenceControlable.Add(Sin.Net.Domain.Persistence.IImportable)
+  fullName: Sin.Net.Domain.Persistence.IPersistenceControlable.Add(Sin.Net.Domain.Persistence.IImportable)
+  nameWithType: IPersistenceControlable.Add(IImportable)
+- uid: Sin.Net.Domain.Persistence.IPersistenceControlable.Add(System.String,Sin.Net.Domain.Persistence.IExportable)
+  name: Add(String, IExportable)
+  href: api/Sin.Net.Domain.Persistence.IPersistenceControlable.html#Sin_Net_Domain_Persistence_IPersistenceControlable_Add_System_String_Sin_Net_Domain_Persistence_IExportable_
+  commentId: M:Sin.Net.Domain.Persistence.IPersistenceControlable.Add(System.String,Sin.Net.Domain.Persistence.IExportable)
+  fullName: Sin.Net.Domain.Persistence.IPersistenceControlable.Add(System.String, Sin.Net.Domain.Persistence.IExportable)
+  nameWithType: IPersistenceControlable.Add(String, IExportable)
+- uid: Sin.Net.Domain.Persistence.IPersistenceControlable.Add(System.String,Sin.Net.Domain.Persistence.IImportable)
+  name: Add(String, IImportable)
+  href: api/Sin.Net.Domain.Persistence.IPersistenceControlable.html#Sin_Net_Domain_Persistence_IPersistenceControlable_Add_System_String_Sin_Net_Domain_Persistence_IImportable_
+  commentId: M:Sin.Net.Domain.Persistence.IPersistenceControlable.Add(System.String,Sin.Net.Domain.Persistence.IImportable)
+  fullName: Sin.Net.Domain.Persistence.IPersistenceControlable.Add(System.String, Sin.Net.Domain.Persistence.IImportable)
+  nameWithType: IPersistenceControlable.Add(String, IImportable)
+- uid: Sin.Net.Domain.Persistence.IPersistenceControlable.Add*
+  name: Add
+  href: api/Sin.Net.Domain.Persistence.IPersistenceControlable.html#Sin_Net_Domain_Persistence_IPersistenceControlable_Add_
+  commentId: Overload:Sin.Net.Domain.Persistence.IPersistenceControlable.Add
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Persistence.IPersistenceControlable.Add
+  nameWithType: IPersistenceControlable.Add
 - uid: Sin.Net.Domain.Persistence.IPersistenceControlable.Exporter(System.String)
   name: Exporter(String)
   href: api/Sin.Net.Domain.Persistence.IPersistenceControlable.html#Sin_Net_Domain_Persistence_IPersistenceControlable_Exporter_System_String_
@@ -3123,12 +3154,12 @@ references:
   commentId: T:Sin.Net.Persistence.PersistenceController
   fullName: Sin.Net.Persistence.PersistenceController
   nameWithType: PersistenceController
-- uid: Sin.Net.Persistence.PersistenceController.#ctor
-  name: PersistenceController()
-  href: api/Sin.Net.Persistence.PersistenceController.html#Sin_Net_Persistence_PersistenceController__ctor
-  commentId: M:Sin.Net.Persistence.PersistenceController.#ctor
-  fullName: Sin.Net.Persistence.PersistenceController.PersistenceController()
-  nameWithType: PersistenceController.PersistenceController()
+- uid: Sin.Net.Persistence.PersistenceController.#ctor(System.Boolean)
+  name: PersistenceController(Boolean)
+  href: api/Sin.Net.Persistence.PersistenceController.html#Sin_Net_Persistence_PersistenceController__ctor_System_Boolean_
+  commentId: M:Sin.Net.Persistence.PersistenceController.#ctor(System.Boolean)
+  fullName: Sin.Net.Persistence.PersistenceController.PersistenceController(System.Boolean)
+  nameWithType: PersistenceController.PersistenceController(Boolean)
 - uid: Sin.Net.Persistence.PersistenceController.#ctor*
   name: PersistenceController
   href: api/Sin.Net.Persistence.PersistenceController.html#Sin_Net_Persistence_PersistenceController__ctor_
@@ -3148,6 +3179,37 @@ references:
   commentId: F:Sin.Net.Persistence.PersistenceController._imports
   fullName: Sin.Net.Persistence.PersistenceController._imports
   nameWithType: PersistenceController._imports
+- uid: Sin.Net.Persistence.PersistenceController.Add(Sin.Net.Domain.Persistence.IExportable)
+  name: Add(IExportable)
+  href: api/Sin.Net.Persistence.PersistenceController.html#Sin_Net_Persistence_PersistenceController_Add_Sin_Net_Domain_Persistence_IExportable_
+  commentId: M:Sin.Net.Persistence.PersistenceController.Add(Sin.Net.Domain.Persistence.IExportable)
+  fullName: Sin.Net.Persistence.PersistenceController.Add(Sin.Net.Domain.Persistence.IExportable)
+  nameWithType: PersistenceController.Add(IExportable)
+- uid: Sin.Net.Persistence.PersistenceController.Add(Sin.Net.Domain.Persistence.IImportable)
+  name: Add(IImportable)
+  href: api/Sin.Net.Persistence.PersistenceController.html#Sin_Net_Persistence_PersistenceController_Add_Sin_Net_Domain_Persistence_IImportable_
+  commentId: M:Sin.Net.Persistence.PersistenceController.Add(Sin.Net.Domain.Persistence.IImportable)
+  fullName: Sin.Net.Persistence.PersistenceController.Add(Sin.Net.Domain.Persistence.IImportable)
+  nameWithType: PersistenceController.Add(IImportable)
+- uid: Sin.Net.Persistence.PersistenceController.Add(System.String,Sin.Net.Domain.Persistence.IExportable)
+  name: Add(String, IExportable)
+  href: api/Sin.Net.Persistence.PersistenceController.html#Sin_Net_Persistence_PersistenceController_Add_System_String_Sin_Net_Domain_Persistence_IExportable_
+  commentId: M:Sin.Net.Persistence.PersistenceController.Add(System.String,Sin.Net.Domain.Persistence.IExportable)
+  fullName: Sin.Net.Persistence.PersistenceController.Add(System.String, Sin.Net.Domain.Persistence.IExportable)
+  nameWithType: PersistenceController.Add(String, IExportable)
+- uid: Sin.Net.Persistence.PersistenceController.Add(System.String,Sin.Net.Domain.Persistence.IImportable)
+  name: Add(String, IImportable)
+  href: api/Sin.Net.Persistence.PersistenceController.html#Sin_Net_Persistence_PersistenceController_Add_System_String_Sin_Net_Domain_Persistence_IImportable_
+  commentId: M:Sin.Net.Persistence.PersistenceController.Add(System.String,Sin.Net.Domain.Persistence.IImportable)
+  fullName: Sin.Net.Persistence.PersistenceController.Add(System.String, Sin.Net.Domain.Persistence.IImportable)
+  nameWithType: PersistenceController.Add(String, IImportable)
+- uid: Sin.Net.Persistence.PersistenceController.Add*
+  name: Add
+  href: api/Sin.Net.Persistence.PersistenceController.html#Sin_Net_Persistence_PersistenceController_Add_
+  commentId: Overload:Sin.Net.Persistence.PersistenceController.Add
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.PersistenceController.Add
+  nameWithType: PersistenceController.Add
 - uid: Sin.Net.Persistence.PersistenceController.Exporter(System.String)
   name: Exporter(String)
   href: api/Sin.Net.Persistence.PersistenceController.html#Sin_Net_Persistence_PersistenceController_Exporter_System_String_

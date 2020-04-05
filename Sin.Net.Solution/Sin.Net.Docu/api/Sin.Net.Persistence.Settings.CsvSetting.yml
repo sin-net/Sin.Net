@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Settings/CsvSetting.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: CsvSetting
     path: ../Sin.Net.Persistence/Settings/CsvSetting.cs
@@ -75,7 +75,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Settings/CsvSetting.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Persistence/Settings/CsvSetting.cs
@@ -105,7 +105,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Settings/CsvSetting.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: AppendHeader
     path: ../Sin.Net.Persistence/Settings/CsvSetting.cs
@@ -141,7 +141,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Settings/CsvSetting.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Separator
     path: ../Sin.Net.Persistence/Settings/CsvSetting.cs
@@ -178,7 +178,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Settings/CsvSetting.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: HasHeader
     path: ../Sin.Net.Persistence/Settings/CsvSetting.cs
@@ -215,7 +215,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Settings/CsvSetting.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: CustomHeader
     path: ../Sin.Net.Persistence/Settings/CsvSetting.cs
@@ -252,7 +252,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Settings/CsvSetting.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: DataPosition
     path: ../Sin.Net.Persistence/Settings/CsvSetting.cs

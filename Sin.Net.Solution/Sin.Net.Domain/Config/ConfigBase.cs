@@ -8,6 +8,7 @@
     {
         // -- constructors
 
+
         /// <summary>
         /// The default constructor that sets the name property.
         /// </summary>

@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/PropertiesContractResolver.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: PropertiesContractResolver
     path: ../Sin.Net.Persistence/IO/Json/PropertiesContractResolver.cs
@@ -101,7 +101,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/PropertiesContractResolver.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Persistence/IO/Json/PropertiesContractResolver.cs
@@ -131,7 +131,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/PropertiesContractResolver.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IgnoreProperty
     path: ../Sin.Net.Persistence/IO/Json/PropertiesContractResolver.cs
@@ -169,7 +169,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/PropertiesContractResolver.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: RenameProperty
     path: ../Sin.Net.Persistence/IO/Json/PropertiesContractResolver.cs
@@ -206,7 +206,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/PropertiesContractResolver.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: CreateProperty
     path: ../Sin.Net.Persistence/IO/Json/PropertiesContractResolver.cs
