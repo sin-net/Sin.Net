@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/Security/SecurityLevelAttribute.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: SecurityLevelAttribute
     path: ../Sin.Net.Domain/System/Security/SecurityLevelAttribute.cs
@@ -117,7 +117,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/Security/SecurityLevelAttribute.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Domain/System/Security/SecurityLevelAttribute.cs
@@ -149,7 +149,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/Security/SecurityLevelAttribute.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Domain/System/Security/SecurityLevelAttribute.cs
@@ -185,7 +185,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/Security/SecurityLevelAttribute.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Level
     path: ../Sin.Net.Domain/System/Security/SecurityLevelAttribute.cs
@@ -222,7 +222,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/Security/SecurityLevelAttribute.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Throw
     path: ../Sin.Net.Domain/System/Security/SecurityLevelAttribute.cs
@@ -259,7 +259,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/Security/SecurityLevelAttribute.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Message
     path: ../Sin.Net.Domain/System/Security/SecurityLevelAttribute.cs

@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Binary/BinaryIO.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: BinaryIO
     path: ../Sin.Net.Persistence/IO/Binary/BinaryIO.cs
@@ -59,7 +59,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Binary/BinaryIO.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ToBytes
     path: ../Sin.Net.Persistence/IO/Binary/BinaryIO.cs
@@ -100,7 +100,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Binary/BinaryIO.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: FromBytes
     path: ../Sin.Net.Persistence/IO/Binary/BinaryIO.cs

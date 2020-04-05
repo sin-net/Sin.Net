@@ -24,7 +24,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IMqttControlable
     path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: MessageReceived
     path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
@@ -87,7 +87,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Connected
     path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
@@ -114,7 +114,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Disconnected
     path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
@@ -141,7 +141,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: CreateClient
     path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
@@ -172,7 +172,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: PublishAsync
     path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
@@ -205,7 +205,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: PublishAsync
     path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
@@ -240,7 +240,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ConnectAsync
     path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
@@ -268,7 +268,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: DisconnectAsync
     path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
@@ -296,7 +296,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Config
     path: ../Sin.Net.Domain/Infrastructure/Mqtt/IMqttControlable.cs

@@ -8,12 +8,20 @@
         /// <summary>
         /// Initalizes all export implementations
         /// </summary>
-        void InitExports();
+        IPersistenceControlable InitExports();
 
         /// <summary>
         /// Initializes all import implementations 
         /// </summary>
-        void InitImports();
+        IPersistenceControlable InitImports();
+
+        IPersistenceControlable Add(IImportable importer);
+
+        IPersistenceControlable Add(string key, IImportable importer);
+        
+        IPersistenceControlable Add(IExportable exporter);
+
+        IPersistenceControlable Add(string key, IExportable exporter);
 
         /// <summary>
         /// Gets the concrete export functionality based on its key as identifier

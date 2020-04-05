@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Settings/JsonSetting.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: JsonSetting
     path: ../Sin.Net.Persistence/Settings/JsonSetting.cs
@@ -74,7 +74,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Settings/JsonSetting.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Persistence/Settings/JsonSetting.cs
@@ -104,7 +104,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Settings/JsonSetting.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Binder
     path: ../Sin.Net.Persistence/Settings/JsonSetting.cs
@@ -139,7 +139,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Settings/JsonSetting.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Converters
     path: ../Sin.Net.Persistence/Settings/JsonSetting.cs
@@ -174,7 +174,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Settings/JsonSetting.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Resolver
     path: ../Sin.Net.Persistence/Settings/JsonSetting.cs
@@ -209,7 +209,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Settings/JsonSetting.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ConvertEnumToString
     path: ../Sin.Net.Persistence/Settings/JsonSetting.cs

@@ -15,15 +15,18 @@ namespace Sin.Net.Persistence
 
         // -- constructors
 
-        public PersistenceController()
+        public PersistenceController(bool init = true)
         {
-            InitExports();
-            InitImports();
+            if (init)
+            {
+                InitExports();
+                InitImports();
+            }
         }
 
         // -- methods
 
-        public virtual void InitExports()
+        public virtual IPersistenceControlable InitExports()
         {
             _exports = new Dictionary<string, IExportable>();
             IExportable export;
@@ -37,10 +40,11 @@ namespace Sin.Net.Persistence
             export = new CsvExporter();
             _exports.Add(export.Type, export);
 
-            // add new import types here
+            // add new default export types here
+            return this;
         }
 
-        public virtual void InitImports()
+        public virtual IPersistenceControlable InitImports()
         {
             _imports = new Dictionary<string, IImportable>();
             IImportable import;
@@ -54,7 +58,54 @@ namespace Sin.Net.Persistence
             import = new CsvImporter();
             _imports.Add(import.Type, import);
 
-            // add new import types here
+            // add new default import types here
+            return this;
+        }
+
+        /// <summary>
+        /// Adds a new importer and uses the name of the type as key.
+        /// </summary>
+        /// <param name="importer"></param>
+        /// <returns></returns>
+        public IPersistenceControlable Add(IImportable importer)
+        {
+            Add(importer.GetType().Name, importer);
+            return this;
+        }
+
+        /// <summary>
+        /// Adds a new importer and uses the specific key.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="importer"></param>
+        /// <returns></returns>
+        public IPersistenceControlable Add(string key, IImportable importer)
+        {
+            _imports.Add(key, importer);
+            return this;
+        }
+
+        /// <summary>
+        /// Adds a new exporter and uses the name of the type as key.
+        /// </summary>
+        /// <param name="exporter"></param>
+        /// <returns></returns>
+        public IPersistenceControlable Add(IExportable exporter)
+        {
+            Add(exporter.GetType().Name, exporter);
+            return this;
+        }
+
+        /// <summary>
+        /// Adds a new exporter and uses the specific key.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="exporter"></param>
+        /// <returns></returns>
+        public IPersistenceControlable Add(string key, IExportable exporter)
+        {
+            _exports.Add(key, exporter);
+            return this;
         }
 
         public IExportable Exporter(string key)

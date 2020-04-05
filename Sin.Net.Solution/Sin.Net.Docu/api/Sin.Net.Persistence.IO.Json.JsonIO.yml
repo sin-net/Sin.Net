@@ -26,7 +26,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: JsonIO
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
@@ -70,7 +70,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ToJsonString
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
@@ -107,7 +107,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: FromJsonString
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
@@ -154,7 +154,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ReadJson
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
@@ -195,7 +195,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ReadJson
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
@@ -242,7 +242,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: SaveToJson
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
@@ -286,7 +286,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Throw
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
@@ -325,7 +325,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: EnableCaseResolver
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
@@ -364,7 +364,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: FileEncoding
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
@@ -403,7 +403,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Resolver
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
@@ -442,7 +442,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Binder
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs
@@ -481,7 +481,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/JsonIO.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Converters
     path: ../Sin.Net.Persistence/IO/Json/JsonIO.cs

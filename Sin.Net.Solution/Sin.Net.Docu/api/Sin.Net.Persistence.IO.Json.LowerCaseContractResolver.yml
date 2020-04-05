@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/LowerCaseContractResolver.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: LowerCaseContractResolver
     path: ../Sin.Net.Persistence/IO/Json/LowerCaseContractResolver.cs
@@ -96,7 +96,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/LowerCaseContractResolver.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ResolvePropertyName
     path: ../Sin.Net.Persistence/IO/Json/LowerCaseContractResolver.cs

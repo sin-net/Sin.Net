@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IImportable
     path: ../Sin.Net.Domain/Persistence/IImportable.cs
@@ -59,7 +59,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Setup
     path: ../Sin.Net.Domain/Persistence/IImportable.cs
@@ -94,7 +94,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Import
     path: ../Sin.Net.Domain/Persistence/IImportable.cs
@@ -125,7 +125,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: As
     path: ../Sin.Net.Domain/Persistence/IImportable.cs
@@ -164,7 +164,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: As
     path: ../Sin.Net.Domain/Persistence/IImportable.cs
@@ -206,7 +206,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: AsItIs
     path: ../Sin.Net.Domain/Persistence/IImportable.cs
@@ -237,7 +237,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Type
     path: ../Sin.Net.Domain/Persistence/IImportable.cs

@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/UserManagement/User.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: User
     path: ../Sin.Net.Domain/System/UserManagement/User.cs
@@ -67,7 +67,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/UserManagement/User.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Domain/System/UserManagement/User.cs
@@ -99,7 +99,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/UserManagement/User.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ToString
     path: ../Sin.Net.Domain/System/UserManagement/User.cs
@@ -137,7 +137,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/UserManagement/User.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Name
     path: ../Sin.Net.Domain/System/UserManagement/User.cs
@@ -174,7 +174,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/UserManagement/User.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Level
     path: ../Sin.Net.Domain/System/UserManagement/User.cs
@@ -211,7 +211,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/UserManagement/User.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Email
     path: ../Sin.Net.Domain/System/UserManagement/User.cs

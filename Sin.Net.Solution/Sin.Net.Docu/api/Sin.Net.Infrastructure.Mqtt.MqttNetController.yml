@@ -25,7 +25,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: MqttNetController
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -75,7 +75,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: MessageReceived
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -108,7 +108,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Connected
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -141,7 +141,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Disconnected
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -174,7 +174,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -204,7 +204,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: CreateClient
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -241,7 +241,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ConnectAsync
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -275,7 +275,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: DisconnectAsync
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -309,7 +309,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: PublishAsync
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -348,7 +348,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: PublishAsync
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -389,7 +389,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Config
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs

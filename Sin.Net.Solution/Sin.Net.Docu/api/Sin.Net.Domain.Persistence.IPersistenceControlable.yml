@@ -5,6 +5,10 @@ items:
   id: IPersistenceControlable
   parent: Sin.Net.Domain.Persistence
   children:
+  - Sin.Net.Domain.Persistence.IPersistenceControlable.Add(Sin.Net.Domain.Persistence.IExportable)
+  - Sin.Net.Domain.Persistence.IPersistenceControlable.Add(Sin.Net.Domain.Persistence.IImportable)
+  - Sin.Net.Domain.Persistence.IPersistenceControlable.Add(System.String,Sin.Net.Domain.Persistence.IExportable)
+  - Sin.Net.Domain.Persistence.IPersistenceControlable.Add(System.String,Sin.Net.Domain.Persistence.IImportable)
   - Sin.Net.Domain.Persistence.IPersistenceControlable.Exporter(System.String)
   - Sin.Net.Domain.Persistence.IPersistenceControlable.Importer(System.String)
   - Sin.Net.Domain.Persistence.IPersistenceControlable.InitExports
@@ -19,7 +23,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IPersistenceControlable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IPersistenceControlable
     path: ../Sin.Net.Domain/Persistence/IPersistenceControlable.cs
@@ -57,7 +61,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IPersistenceControlable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: InitExports
     path: ../Sin.Net.Domain/Persistence/IPersistenceControlable.cs
@@ -68,8 +72,10 @@ items:
   summary: "\nInitalizes all export implementations\n"
   example: []
   syntax:
-    content: void InitExports()
-    content.vb: Sub InitExports
+    content: IPersistenceControlable InitExports()
+    return:
+      type: Sin.Net.Domain.Persistence.IPersistenceControlable
+    content.vb: Function InitExports As IPersistenceControlable
   overload: Sin.Net.Domain.Persistence.IPersistenceControlable.InitExports*
 - uid: Sin.Net.Domain.Persistence.IPersistenceControlable.InitImports
   commentId: M:Sin.Net.Domain.Persistence.IPersistenceControlable.InitImports
@@ -85,7 +91,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IPersistenceControlable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: InitImports
     path: ../Sin.Net.Domain/Persistence/IPersistenceControlable.cs
@@ -96,9 +102,139 @@ items:
   summary: "\nInitializes all import implementations \n"
   example: []
   syntax:
-    content: void InitImports()
-    content.vb: Sub InitImports
+    content: IPersistenceControlable InitImports()
+    return:
+      type: Sin.Net.Domain.Persistence.IPersistenceControlable
+    content.vb: Function InitImports As IPersistenceControlable
   overload: Sin.Net.Domain.Persistence.IPersistenceControlable.InitImports*
+- uid: Sin.Net.Domain.Persistence.IPersistenceControlable.Add(Sin.Net.Domain.Persistence.IImportable)
+  commentId: M:Sin.Net.Domain.Persistence.IPersistenceControlable.Add(Sin.Net.Domain.Persistence.IImportable)
+  id: Add(Sin.Net.Domain.Persistence.IImportable)
+  parent: Sin.Net.Domain.Persistence.IPersistenceControlable
+  langs:
+  - csharp
+  - vb
+  name: Add(IImportable)
+  nameWithType: IPersistenceControlable.Add(IImportable)
+  fullName: Sin.Net.Domain.Persistence.IPersistenceControlable.Add(Sin.Net.Domain.Persistence.IImportable)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IPersistenceControlable.cs
+      branch: dev-injection
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Add
+    path: ../Sin.Net.Domain/Persistence/IPersistenceControlable.cs
+    startLine: 17
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence
+  syntax:
+    content: IPersistenceControlable Add(IImportable importer)
+    parameters:
+    - id: importer
+      type: Sin.Net.Domain.Persistence.IImportable
+    return:
+      type: Sin.Net.Domain.Persistence.IPersistenceControlable
+    content.vb: Function Add(importer As IImportable) As IPersistenceControlable
+  overload: Sin.Net.Domain.Persistence.IPersistenceControlable.Add*
+- uid: Sin.Net.Domain.Persistence.IPersistenceControlable.Add(System.String,Sin.Net.Domain.Persistence.IImportable)
+  commentId: M:Sin.Net.Domain.Persistence.IPersistenceControlable.Add(System.String,Sin.Net.Domain.Persistence.IImportable)
+  id: Add(System.String,Sin.Net.Domain.Persistence.IImportable)
+  parent: Sin.Net.Domain.Persistence.IPersistenceControlable
+  langs:
+  - csharp
+  - vb
+  name: Add(String, IImportable)
+  nameWithType: IPersistenceControlable.Add(String, IImportable)
+  fullName: Sin.Net.Domain.Persistence.IPersistenceControlable.Add(System.String, Sin.Net.Domain.Persistence.IImportable)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IPersistenceControlable.cs
+      branch: dev-injection
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Add
+    path: ../Sin.Net.Domain/Persistence/IPersistenceControlable.cs
+    startLine: 19
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence
+  syntax:
+    content: IPersistenceControlable Add(string key, IImportable importer)
+    parameters:
+    - id: key
+      type: System.String
+    - id: importer
+      type: Sin.Net.Domain.Persistence.IImportable
+    return:
+      type: Sin.Net.Domain.Persistence.IPersistenceControlable
+    content.vb: Function Add(key As String, importer As IImportable) As IPersistenceControlable
+  overload: Sin.Net.Domain.Persistence.IPersistenceControlable.Add*
+- uid: Sin.Net.Domain.Persistence.IPersistenceControlable.Add(Sin.Net.Domain.Persistence.IExportable)
+  commentId: M:Sin.Net.Domain.Persistence.IPersistenceControlable.Add(Sin.Net.Domain.Persistence.IExportable)
+  id: Add(Sin.Net.Domain.Persistence.IExportable)
+  parent: Sin.Net.Domain.Persistence.IPersistenceControlable
+  langs:
+  - csharp
+  - vb
+  name: Add(IExportable)
+  nameWithType: IPersistenceControlable.Add(IExportable)
+  fullName: Sin.Net.Domain.Persistence.IPersistenceControlable.Add(Sin.Net.Domain.Persistence.IExportable)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IPersistenceControlable.cs
+      branch: dev-injection
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Add
+    path: ../Sin.Net.Domain/Persistence/IPersistenceControlable.cs
+    startLine: 21
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence
+  syntax:
+    content: IPersistenceControlable Add(IExportable exporter)
+    parameters:
+    - id: exporter
+      type: Sin.Net.Domain.Persistence.IExportable
+    return:
+      type: Sin.Net.Domain.Persistence.IPersistenceControlable
+    content.vb: Function Add(exporter As IExportable) As IPersistenceControlable
+  overload: Sin.Net.Domain.Persistence.IPersistenceControlable.Add*
+- uid: Sin.Net.Domain.Persistence.IPersistenceControlable.Add(System.String,Sin.Net.Domain.Persistence.IExportable)
+  commentId: M:Sin.Net.Domain.Persistence.IPersistenceControlable.Add(System.String,Sin.Net.Domain.Persistence.IExportable)
+  id: Add(System.String,Sin.Net.Domain.Persistence.IExportable)
+  parent: Sin.Net.Domain.Persistence.IPersistenceControlable
+  langs:
+  - csharp
+  - vb
+  name: Add(String, IExportable)
+  nameWithType: IPersistenceControlable.Add(String, IExportable)
+  fullName: Sin.Net.Domain.Persistence.IPersistenceControlable.Add(System.String, Sin.Net.Domain.Persistence.IExportable)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IPersistenceControlable.cs
+      branch: dev-injection
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Add
+    path: ../Sin.Net.Domain/Persistence/IPersistenceControlable.cs
+    startLine: 23
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence
+  syntax:
+    content: IPersistenceControlable Add(string key, IExportable exporter)
+    parameters:
+    - id: key
+      type: System.String
+    - id: exporter
+      type: Sin.Net.Domain.Persistence.IExportable
+    return:
+      type: Sin.Net.Domain.Persistence.IPersistenceControlable
+    content.vb: Function Add(key As String, exporter As IExportable) As IPersistenceControlable
+  overload: Sin.Net.Domain.Persistence.IPersistenceControlable.Add*
 - uid: Sin.Net.Domain.Persistence.IPersistenceControlable.Exporter(System.String)
   commentId: M:Sin.Net.Domain.Persistence.IPersistenceControlable.Exporter(System.String)
   id: Exporter(System.String)
@@ -113,11 +249,11 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IPersistenceControlable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Exporter
     path: ../Sin.Net.Domain/Persistence/IPersistenceControlable.cs
-    startLine: 22
+    startLine: 30
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Persistence
@@ -148,11 +284,11 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IPersistenceControlable.cs
-      branch: master
+      branch: dev-injection
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Importer
     path: ../Sin.Net.Domain/Persistence/IPersistenceControlable.cs
-    startLine: 29
+    startLine: 37
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Persistence
@@ -583,16 +719,28 @@ references:
   name: InitExports
   nameWithType: IPersistenceControlable.InitExports
   fullName: Sin.Net.Domain.Persistence.IPersistenceControlable.InitExports
+- uid: Sin.Net.Domain.Persistence.IPersistenceControlable
+  commentId: T:Sin.Net.Domain.Persistence.IPersistenceControlable
+  parent: Sin.Net.Domain.Persistence
+  name: IPersistenceControlable
+  nameWithType: IPersistenceControlable
+  fullName: Sin.Net.Domain.Persistence.IPersistenceControlable
 - uid: Sin.Net.Domain.Persistence.IPersistenceControlable.InitImports*
   commentId: Overload:Sin.Net.Domain.Persistence.IPersistenceControlable.InitImports
   name: InitImports
   nameWithType: IPersistenceControlable.InitImports
   fullName: Sin.Net.Domain.Persistence.IPersistenceControlable.InitImports
-- uid: Sin.Net.Domain.Persistence.IPersistenceControlable.Exporter*
-  commentId: Overload:Sin.Net.Domain.Persistence.IPersistenceControlable.Exporter
-  name: Exporter
-  nameWithType: IPersistenceControlable.Exporter
-  fullName: Sin.Net.Domain.Persistence.IPersistenceControlable.Exporter
+- uid: Sin.Net.Domain.Persistence.IPersistenceControlable.Add*
+  commentId: Overload:Sin.Net.Domain.Persistence.IPersistenceControlable.Add
+  name: Add
+  nameWithType: IPersistenceControlable.Add
+  fullName: Sin.Net.Domain.Persistence.IPersistenceControlable.Add
+- uid: Sin.Net.Domain.Persistence.IImportable
+  commentId: T:Sin.Net.Domain.Persistence.IImportable
+  parent: Sin.Net.Domain.Persistence
+  name: IImportable
+  nameWithType: IImportable
+  fullName: Sin.Net.Domain.Persistence.IImportable
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -600,26 +748,25 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: Sin.Net.Domain.Persistence.IExportable
-  commentId: T:Sin.Net.Domain.Persistence.IExportable
-  parent: Sin.Net.Domain.Persistence
-  name: IExportable
-  nameWithType: IExportable
-  fullName: Sin.Net.Domain.Persistence.IExportable
 - uid: System
   commentId: N:System
   isExternal: true
   name: System
   nameWithType: System
   fullName: System
+- uid: Sin.Net.Domain.Persistence.IExportable
+  commentId: T:Sin.Net.Domain.Persistence.IExportable
+  parent: Sin.Net.Domain.Persistence
+  name: IExportable
+  nameWithType: IExportable
+  fullName: Sin.Net.Domain.Persistence.IExportable
+- uid: Sin.Net.Domain.Persistence.IPersistenceControlable.Exporter*
+  commentId: Overload:Sin.Net.Domain.Persistence.IPersistenceControlable.Exporter
+  name: Exporter
+  nameWithType: IPersistenceControlable.Exporter
+  fullName: Sin.Net.Domain.Persistence.IPersistenceControlable.Exporter
 - uid: Sin.Net.Domain.Persistence.IPersistenceControlable.Importer*
   commentId: Overload:Sin.Net.Domain.Persistence.IPersistenceControlable.Importer
   name: Importer
   nameWithType: IPersistenceControlable.Importer
   fullName: Sin.Net.Domain.Persistence.IPersistenceControlable.Importer
-- uid: Sin.Net.Domain.Persistence.IImportable
-  commentId: T:Sin.Net.Domain.Persistence.IImportable
-  parent: Sin.Net.Domain.Persistence
-  name: IImportable
-  nameWithType: IImportable
-  fullName: Sin.Net.Domain.Persistence.IImportable

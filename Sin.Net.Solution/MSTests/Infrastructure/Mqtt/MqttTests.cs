@@ -23,10 +23,10 @@ namespace MSTests.Infrastructure.Mqtt
             {
                 Broker = "broker.hivemq.com",
                 Port = 1883,
-                ClientID = "D3vS1m-MSTests-Client"
+                ClientID = "Sin.Net.MSTests"
             };
             _mqtt.Connected += OnConnected;
-            _mqtt.CreateClient(_config);
+            _mqtt.Setup(_config);
         }
 
         [TestCleanup]
@@ -37,8 +37,22 @@ namespace MSTests.Infrastructure.Mqtt
             _mqtt = null;
         }
 
+        // -- test methods
+
         [TestMethod]
-        public async Task ConnectAndDisconnectMqtt()
+        public void ConnectAndDisconnectMqtt()
+        {
+            // connect: act & assert
+            _mqtt.Connect();
+            Assert.IsTrue(_mqtt.IsConnected, $"mqtt {_mqtt} should be connected");
+
+            // disconnect: act & assert
+            _mqtt.Disconnect();
+            Assert.IsFalse(_mqtt.IsConnected, $"mqtt {_mqtt} should be disconnected");
+        }
+        
+        [TestMethod]
+        public async Task ConnectAndDisconnectMqttAsync()
         {
             // connect: act & assert
             await ConnectAsync();
@@ -48,6 +62,8 @@ namespace MSTests.Infrastructure.Mqtt
             await DisconnectAsync();
             Assert.IsFalse(_isConnected);
         }
+
+
 
         // -- private methods
 
@@ -78,9 +94,7 @@ namespace MSTests.Infrastructure.Mqtt
             _isConnected = true;
 
             var mqtt = sender as MqttNetController;
-            var config = mqtt.Config as MqttConfig;
-
-            //_devices.AddRange(config.Topics.Select(s => new DeviceBase { Id = s }));
+            var config = mqtt.Config;
         }
     }
 }
