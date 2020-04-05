@@ -24,7 +24,6 @@ namespace MSTests.Infrastructure.Smtp
 
         // test methods
 
-        [TestMethod]
         public void SendEmails()
         {
             // arrange
