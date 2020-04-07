@@ -7,14 +7,19 @@ items:
   children:
   - Sin.Net.Infrastructure.Mqtt.MqttNetController.#ctor
   - Sin.Net.Infrastructure.Mqtt.MqttNetController.Config
+  - Sin.Net.Infrastructure.Mqtt.MqttNetController.Connect
   - Sin.Net.Infrastructure.Mqtt.MqttNetController.ConnectAsync
   - Sin.Net.Infrastructure.Mqtt.MqttNetController.Connected
-  - Sin.Net.Infrastructure.Mqtt.MqttNetController.CreateClient(Sin.Net.Domain.Config.ConfigBase)
+  - Sin.Net.Infrastructure.Mqtt.MqttNetController.Disconnect
   - Sin.Net.Infrastructure.Mqtt.MqttNetController.DisconnectAsync
   - Sin.Net.Infrastructure.Mqtt.MqttNetController.Disconnected
+  - Sin.Net.Infrastructure.Mqtt.MqttNetController.IsConnected
   - Sin.Net.Infrastructure.Mqtt.MqttNetController.MessageReceived
   - Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync(System.String,System.String)
   - Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync(System.String,System.String,System.Int32)
+  - Sin.Net.Infrastructure.Mqtt.MqttNetController.Setup(Sin.Net.Infrastructure.Mqtt.MqttConfig)
+  - Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin#Net#Domain#Infrastructure#IControlable#Config
+  - Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin#Net#Domain#Infrastructure#IControlable#Setup(Sin.Net.Domain.Config.ConfigBase)
   langs:
   - csharp
   - vb
@@ -25,7 +30,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: MqttNetController
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -34,14 +39,16 @@ items:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
   syntax:
-    content: 'public class MqttNetController : IMqttControlable'
+    content: 'public class MqttNetController : IMqttControlable, IAsyncControlable, IControlable'
     content.vb: >-
       Public Class MqttNetController
-          Implements IMqttControlable
+          Implements IMqttControlable, IAsyncControlable, IControlable
   inheritance:
   - System.Object
   implements:
   - Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+  - Sin.Net.Domain.Infrastructure.IAsyncControlable
+  - Sin.Net.Domain.Infrastructure.IControlable
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -75,11 +82,11 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: MessageReceived
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-    startLine: 23
+    startLine: 22
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -108,11 +115,11 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Connected
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-    startLine: 24
+    startLine: 23
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -141,11 +148,11 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Disconnected
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-    startLine: 25
+    startLine: 24
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -174,11 +181,11 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-    startLine: 29
+    startLine: 28
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -190,39 +197,141 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.CreateClient(Sin.Net.Domain.Config.ConfigBase)
-  commentId: M:Sin.Net.Infrastructure.Mqtt.MqttNetController.CreateClient(Sin.Net.Domain.Config.ConfigBase)
-  id: CreateClient(Sin.Net.Domain.Config.ConfigBase)
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin#Net#Domain#Infrastructure#IControlable#Setup(Sin.Net.Domain.Config.ConfigBase)
+  commentId: M:Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin#Net#Domain#Infrastructure#IControlable#Setup(Sin.Net.Domain.Config.ConfigBase)
+  id: Sin#Net#Domain#Infrastructure#IControlable#Setup(Sin.Net.Domain.Config.ConfigBase)
+  isEii: true
   parent: Sin.Net.Infrastructure.Mqtt.MqttNetController
   langs:
   - csharp
   - vb
-  name: CreateClient(ConfigBase)
-  nameWithType: MqttNetController.CreateClient(ConfigBase)
-  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.CreateClient(Sin.Net.Domain.Config.ConfigBase)
+  name: IControlable.Setup(ConfigBase)
+  nameWithType: MqttNetController.IControlable.Setup(ConfigBase)
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin.Net.Domain.Infrastructure.IControlable.Setup(Sin.Net.Domain.Config.ConfigBase)
   type: Method
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
-    id: CreateClient
+    id: Sin.Net.Domain.Infrastructure.IControlable.Setup
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-    startLine: 36
+    startLine: 35
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
   syntax:
-    content: public bool CreateClient(ConfigBase config)
+    content: IControlable IControlable.Setup(ConfigBase config)
     parameters:
     - id: config
       type: Sin.Net.Domain.Config.ConfigBase
     return:
-      type: System.Boolean
-    content.vb: Public Function CreateClient(config As ConfigBase) As Boolean
-  overload: Sin.Net.Infrastructure.Mqtt.MqttNetController.CreateClient*
+      type: Sin.Net.Domain.Infrastructure.IControlable
+    content.vb: Function Sin.Net.Domain.Infrastructure.IControlable.Setup(config As ConfigBase) As IControlable Implements IControlable.Setup
+  overload: Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin#Net#Domain#Infrastructure#IControlable#Setup*
   implements:
-  - Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.CreateClient(Sin.Net.Domain.Config.ConfigBase)
+  - Sin.Net.Domain.Infrastructure.IControlable.Setup(Sin.Net.Domain.Config.ConfigBase)
+  nameWithType.vb: MqttNetController.Sin.Net.Domain.Infrastructure.IControlable.Setup(ConfigBase)
+  name.vb: Sin.Net.Domain.Infrastructure.IControlable.Setup(ConfigBase)
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.Setup(Sin.Net.Infrastructure.Mqtt.MqttConfig)
+  commentId: M:Sin.Net.Infrastructure.Mqtt.MqttNetController.Setup(Sin.Net.Infrastructure.Mqtt.MqttConfig)
+  id: Setup(Sin.Net.Infrastructure.Mqtt.MqttConfig)
+  parent: Sin.Net.Infrastructure.Mqtt.MqttNetController
+  langs:
+  - csharp
+  - vb
+  name: Setup(MqttConfig)
+  nameWithType: MqttNetController.Setup(MqttConfig)
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.Setup(Sin.Net.Infrastructure.Mqtt.MqttConfig)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Setup
+    path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+    startLine: 40
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Mqtt
+  syntax:
+    content: public IControlable Setup(MqttConfig config)
+    parameters:
+    - id: config
+      type: Sin.Net.Infrastructure.Mqtt.MqttConfig
+    return:
+      type: Sin.Net.Domain.Infrastructure.IControlable
+    content.vb: Public Function Setup(config As MqttConfig) As IControlable
+  overload: Sin.Net.Infrastructure.Mqtt.MqttNetController.Setup*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.Connect
+  commentId: M:Sin.Net.Infrastructure.Mqtt.MqttNetController.Connect
+  id: Connect
+  parent: Sin.Net.Infrastructure.Mqtt.MqttNetController
+  langs:
+  - csharp
+  - vb
+  name: Connect()
+  nameWithType: MqttNetController.Connect()
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.Connect()
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Connect
+    path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+    startLine: 96
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Mqtt
+  syntax:
+    content: public IControlable Connect()
+    return:
+      type: Sin.Net.Domain.Infrastructure.IControlable
+    content.vb: Public Function Connect As IControlable
+  overload: Sin.Net.Infrastructure.Mqtt.MqttNetController.Connect*
+  implements:
+  - Sin.Net.Domain.Infrastructure.IControlable.Connect
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.Disconnect
+  commentId: M:Sin.Net.Infrastructure.Mqtt.MqttNetController.Disconnect
+  id: Disconnect
+  parent: Sin.Net.Infrastructure.Mqtt.MqttNetController
+  langs:
+  - csharp
+  - vb
+  name: Disconnect()
+  nameWithType: MqttNetController.Disconnect()
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.Disconnect()
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Disconnect
+    path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+    startLine: 103
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Mqtt
+  syntax:
+    content: public IControlable Disconnect()
+    return:
+      type: Sin.Net.Domain.Infrastructure.IControlable
+    content.vb: Public Function Disconnect As IControlable
+  overload: Sin.Net.Infrastructure.Mqtt.MqttNetController.Disconnect*
+  implements:
+  - Sin.Net.Domain.Infrastructure.IControlable.Disconnect
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -241,11 +350,11 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ConnectAsync
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-    startLine: 93
+    startLine: 110
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -256,7 +365,7 @@ items:
     content.vb: Public Function ConnectAsync As Task
   overload: Sin.Net.Infrastructure.Mqtt.MqttNetController.ConnectAsync*
   implements:
-  - Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.ConnectAsync
+  - Sin.Net.Domain.Infrastructure.IAsyncControlable.ConnectAsync
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -275,11 +384,11 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: DisconnectAsync
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-    startLine: 98
+    startLine: 115
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -290,7 +399,7 @@ items:
     content.vb: Public Function DisconnectAsync As Task
   overload: Sin.Net.Infrastructure.Mqtt.MqttNetController.DisconnectAsync*
   implements:
-  - Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.DisconnectAsync
+  - Sin.Net.Domain.Infrastructure.IAsyncControlable.DisconnectAsync
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -309,11 +418,11 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: PublishAsync
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-    startLine: 103
+    startLine: 120
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -348,11 +457,11 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: PublishAsync
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-    startLine: 108
+    startLine: 125
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -389,29 +498,104 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Config
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-    startLine: 131
+    startLine: 148
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
   syntax:
-    content: public ConfigBase Config { get; }
+    content: public MqttConfig Config { get; }
     parameters: []
     return:
-      type: Sin.Net.Domain.Config.ConfigBase
-    content.vb: Public ReadOnly Property Config As ConfigBase
+      type: Sin.Net.Infrastructure.Mqtt.MqttConfig
+    content.vb: Public ReadOnly Property Config As MqttConfig
   overload: Sin.Net.Infrastructure.Mqtt.MqttNetController.Config*
-  implements:
-  - Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.Config
   modifiers.csharp:
   - public
   - get
   modifiers.vb:
   - Public
   - ReadOnly
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.IsConnected
+  commentId: P:Sin.Net.Infrastructure.Mqtt.MqttNetController.IsConnected
+  id: IsConnected
+  parent: Sin.Net.Infrastructure.Mqtt.MqttNetController
+  langs:
+  - csharp
+  - vb
+  name: IsConnected
+  nameWithType: MqttNetController.IsConnected
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.IsConnected
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: IsConnected
+    path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+    startLine: 153
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Mqtt
+  summary: "\nGets the information if the controller is connected or not. \n"
+  example: []
+  syntax:
+    content: public bool IsConnected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsConnected As Boolean
+  overload: Sin.Net.Infrastructure.Mqtt.MqttNetController.IsConnected*
+  implements:
+  - Sin.Net.Domain.Infrastructure.IControlable.IsConnected
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin#Net#Domain#Infrastructure#IControlable#Config
+  commentId: P:Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin#Net#Domain#Infrastructure#IControlable#Config
+  id: Sin#Net#Domain#Infrastructure#IControlable#Config
+  isEii: true
+  parent: Sin.Net.Infrastructure.Mqtt.MqttNetController
+  langs:
+  - csharp
+  - vb
+  name: IControlable.Config
+  nameWithType: MqttNetController.IControlable.Config
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin.Net.Domain.Infrastructure.IControlable.Config
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Sin.Net.Domain.Infrastructure.IControlable.Config
+    path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
+    startLine: 155
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Mqtt
+  syntax:
+    content: ConfigBase IControlable.Config { get; }
+    parameters: []
+    return:
+      type: Sin.Net.Domain.Config.ConfigBase
+    content.vb: ReadOnly WriteOnly Property Sin.Net.Domain.Infrastructure.IControlable.Config As ConfigBase Implements IControlable.Config
+  overload: Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin#Net#Domain#Infrastructure#IControlable#Config*
+  implements:
+  - Sin.Net.Domain.Infrastructure.IControlable.Config
+  nameWithType.vb: MqttNetController.Sin.Net.Domain.Infrastructure.IControlable.Config
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  name.vb: Sin.Net.Domain.Infrastructure.IControlable.Config
 references:
 - uid: Sin.Net.Infrastructure.Mqtt
   commentId: N:Sin.Net.Infrastructure.Mqtt
@@ -431,6 +615,18 @@ references:
   name: IMqttControlable
   nameWithType: IMqttControlable
   fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+- uid: Sin.Net.Domain.Infrastructure.IAsyncControlable
+  commentId: T:Sin.Net.Domain.Infrastructure.IAsyncControlable
+  parent: Sin.Net.Domain.Infrastructure
+  name: IAsyncControlable
+  nameWithType: IAsyncControlable
+  fullName: Sin.Net.Domain.Infrastructure.IAsyncControlable
+- uid: Sin.Net.Domain.Infrastructure.IControlable
+  commentId: T:Sin.Net.Domain.Infrastructure.IControlable
+  parent: Sin.Net.Domain.Infrastructure
+  name: IControlable
+  nameWithType: IControlable
+  fullName: Sin.Net.Domain.Infrastructure.IControlable
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -890,6 +1086,11 @@ references:
   name: Sin.Net.Domain.Infrastructure.Mqtt
   nameWithType: Sin.Net.Domain.Infrastructure.Mqtt
   fullName: Sin.Net.Domain.Infrastructure.Mqtt
+- uid: Sin.Net.Domain.Infrastructure
+  commentId: N:Sin.Net.Domain.Infrastructure
+  name: Sin.Net.Domain.Infrastructure
+  nameWithType: Sin.Net.Domain.Infrastructure
+  fullName: Sin.Net.Domain.Infrastructure
 - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
   commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
   isExternal: true
@@ -1159,22 +1360,24 @@ references:
   name: MqttNetController
   nameWithType: MqttNetController.MqttNetController
   fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.MqttNetController
-- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.CreateClient*
-  commentId: Overload:Sin.Net.Infrastructure.Mqtt.MqttNetController.CreateClient
-  name: CreateClient
-  nameWithType: MqttNetController.CreateClient
-  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.CreateClient
-- uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.CreateClient(Sin.Net.Domain.Config.ConfigBase)
-  commentId: M:Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.CreateClient(Sin.Net.Domain.Config.ConfigBase)
-  parent: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
-  name: CreateClient(ConfigBase)
-  nameWithType: IMqttControlable.CreateClient(ConfigBase)
-  fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.CreateClient(Sin.Net.Domain.Config.ConfigBase)
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin#Net#Domain#Infrastructure#IControlable#Setup*
+  commentId: Overload:Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin#Net#Domain#Infrastructure#IControlable#Setup
+  name: IControlable.Setup
+  nameWithType: MqttNetController.IControlable.Setup
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin.Net.Domain.Infrastructure.IControlable.Setup
+  nameWithType.vb: MqttNetController.Sin.Net.Domain.Infrastructure.IControlable.Setup
+  name.vb: Sin.Net.Domain.Infrastructure.IControlable.Setup
+- uid: Sin.Net.Domain.Infrastructure.IControlable.Setup(Sin.Net.Domain.Config.ConfigBase)
+  commentId: M:Sin.Net.Domain.Infrastructure.IControlable.Setup(Sin.Net.Domain.Config.ConfigBase)
+  parent: Sin.Net.Domain.Infrastructure.IControlable
+  name: Setup(ConfigBase)
+  nameWithType: IControlable.Setup(ConfigBase)
+  fullName: Sin.Net.Domain.Infrastructure.IControlable.Setup(Sin.Net.Domain.Config.ConfigBase)
   spec.csharp:
-  - uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.CreateClient(Sin.Net.Domain.Config.ConfigBase)
-    name: CreateClient
-    nameWithType: IMqttControlable.CreateClient
-    fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.CreateClient
+  - uid: Sin.Net.Domain.Infrastructure.IControlable.Setup(Sin.Net.Domain.Config.ConfigBase)
+    name: Setup
+    nameWithType: IControlable.Setup
+    fullName: Sin.Net.Domain.Infrastructure.IControlable.Setup
   - name: (
     nameWithType: (
     fullName: (
@@ -1186,10 +1389,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.CreateClient(Sin.Net.Domain.Config.ConfigBase)
-    name: CreateClient
-    nameWithType: IMqttControlable.CreateClient
-    fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.CreateClient
+  - uid: Sin.Net.Domain.Infrastructure.IControlable.Setup(Sin.Net.Domain.Config.ConfigBase)
+    name: Setup
+    nameWithType: IControlable.Setup
+    fullName: Sin.Net.Domain.Infrastructure.IControlable.Setup
   - name: (
     nameWithType: (
     fullName: (
@@ -1206,34 +1409,38 @@ references:
   name: ConfigBase
   nameWithType: ConfigBase
   fullName: Sin.Net.Domain.Config.ConfigBase
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean
 - uid: Sin.Net.Domain.Config
   commentId: N:Sin.Net.Domain.Config
   name: Sin.Net.Domain.Config
   nameWithType: Sin.Net.Domain.Config
   fullName: Sin.Net.Domain.Config
-- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.ConnectAsync*
-  commentId: Overload:Sin.Net.Infrastructure.Mqtt.MqttNetController.ConnectAsync
-  name: ConnectAsync
-  nameWithType: MqttNetController.ConnectAsync
-  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.ConnectAsync
-- uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.ConnectAsync
-  commentId: M:Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.ConnectAsync
-  parent: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
-  name: ConnectAsync()
-  nameWithType: IMqttControlable.ConnectAsync()
-  fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.ConnectAsync()
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.Setup*
+  commentId: Overload:Sin.Net.Infrastructure.Mqtt.MqttNetController.Setup
+  name: Setup
+  nameWithType: MqttNetController.Setup
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.Setup
+- uid: Sin.Net.Infrastructure.Mqtt.MqttConfig
+  commentId: T:Sin.Net.Infrastructure.Mqtt.MqttConfig
+  parent: Sin.Net.Infrastructure.Mqtt
+  name: MqttConfig
+  nameWithType: MqttConfig
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttConfig
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.Connect*
+  commentId: Overload:Sin.Net.Infrastructure.Mqtt.MqttNetController.Connect
+  name: Connect
+  nameWithType: MqttNetController.Connect
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.Connect
+- uid: Sin.Net.Domain.Infrastructure.IControlable.Connect
+  commentId: M:Sin.Net.Domain.Infrastructure.IControlable.Connect
+  parent: Sin.Net.Domain.Infrastructure.IControlable
+  name: Connect()
+  nameWithType: IControlable.Connect()
+  fullName: Sin.Net.Domain.Infrastructure.IControlable.Connect()
   spec.csharp:
-  - uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.ConnectAsync
-    name: ConnectAsync
-    nameWithType: IMqttControlable.ConnectAsync
-    fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.ConnectAsync
+  - uid: Sin.Net.Domain.Infrastructure.IControlable.Connect
+    name: Connect
+    nameWithType: IControlable.Connect
+    fullName: Sin.Net.Domain.Infrastructure.IControlable.Connect
   - name: (
     nameWithType: (
     fullName: (
@@ -1241,10 +1448,76 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.ConnectAsync
+  - uid: Sin.Net.Domain.Infrastructure.IControlable.Connect
+    name: Connect
+    nameWithType: IControlable.Connect
+    fullName: Sin.Net.Domain.Infrastructure.IControlable.Connect
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.Disconnect*
+  commentId: Overload:Sin.Net.Infrastructure.Mqtt.MqttNetController.Disconnect
+  name: Disconnect
+  nameWithType: MqttNetController.Disconnect
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.Disconnect
+- uid: Sin.Net.Domain.Infrastructure.IControlable.Disconnect
+  commentId: M:Sin.Net.Domain.Infrastructure.IControlable.Disconnect
+  parent: Sin.Net.Domain.Infrastructure.IControlable
+  name: Disconnect()
+  nameWithType: IControlable.Disconnect()
+  fullName: Sin.Net.Domain.Infrastructure.IControlable.Disconnect()
+  spec.csharp:
+  - uid: Sin.Net.Domain.Infrastructure.IControlable.Disconnect
+    name: Disconnect
+    nameWithType: IControlable.Disconnect
+    fullName: Sin.Net.Domain.Infrastructure.IControlable.Disconnect
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Infrastructure.IControlable.Disconnect
+    name: Disconnect
+    nameWithType: IControlable.Disconnect
+    fullName: Sin.Net.Domain.Infrastructure.IControlable.Disconnect
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.ConnectAsync*
+  commentId: Overload:Sin.Net.Infrastructure.Mqtt.MqttNetController.ConnectAsync
+  name: ConnectAsync
+  nameWithType: MqttNetController.ConnectAsync
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.ConnectAsync
+- uid: Sin.Net.Domain.Infrastructure.IAsyncControlable.ConnectAsync
+  commentId: M:Sin.Net.Domain.Infrastructure.IAsyncControlable.ConnectAsync
+  parent: Sin.Net.Domain.Infrastructure.IAsyncControlable
+  name: ConnectAsync()
+  nameWithType: IAsyncControlable.ConnectAsync()
+  fullName: Sin.Net.Domain.Infrastructure.IAsyncControlable.ConnectAsync()
+  spec.csharp:
+  - uid: Sin.Net.Domain.Infrastructure.IAsyncControlable.ConnectAsync
     name: ConnectAsync
-    nameWithType: IMqttControlable.ConnectAsync
-    fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.ConnectAsync
+    nameWithType: IAsyncControlable.ConnectAsync
+    fullName: Sin.Net.Domain.Infrastructure.IAsyncControlable.ConnectAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Infrastructure.IAsyncControlable.ConnectAsync
+    name: ConnectAsync
+    nameWithType: IAsyncControlable.ConnectAsync
+    fullName: Sin.Net.Domain.Infrastructure.IAsyncControlable.ConnectAsync
   - name: (
     nameWithType: (
     fullName: (
@@ -1269,17 +1542,17 @@ references:
   name: DisconnectAsync
   nameWithType: MqttNetController.DisconnectAsync
   fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.DisconnectAsync
-- uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.DisconnectAsync
-  commentId: M:Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.DisconnectAsync
-  parent: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+- uid: Sin.Net.Domain.Infrastructure.IAsyncControlable.DisconnectAsync
+  commentId: M:Sin.Net.Domain.Infrastructure.IAsyncControlable.DisconnectAsync
+  parent: Sin.Net.Domain.Infrastructure.IAsyncControlable
   name: DisconnectAsync()
-  nameWithType: IMqttControlable.DisconnectAsync()
-  fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.DisconnectAsync()
+  nameWithType: IAsyncControlable.DisconnectAsync()
+  fullName: Sin.Net.Domain.Infrastructure.IAsyncControlable.DisconnectAsync()
   spec.csharp:
-  - uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.DisconnectAsync
+  - uid: Sin.Net.Domain.Infrastructure.IAsyncControlable.DisconnectAsync
     name: DisconnectAsync
-    nameWithType: IMqttControlable.DisconnectAsync
-    fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.DisconnectAsync
+    nameWithType: IAsyncControlable.DisconnectAsync
+    fullName: Sin.Net.Domain.Infrastructure.IAsyncControlable.DisconnectAsync
   - name: (
     nameWithType: (
     fullName: (
@@ -1287,10 +1560,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.DisconnectAsync
+  - uid: Sin.Net.Domain.Infrastructure.IAsyncControlable.DisconnectAsync
     name: DisconnectAsync
-    nameWithType: IMqttControlable.DisconnectAsync
-    fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.DisconnectAsync
+    nameWithType: IAsyncControlable.DisconnectAsync
+    fullName: Sin.Net.Domain.Infrastructure.IAsyncControlable.DisconnectAsync
   - name: (
     nameWithType: (
     fullName: (
@@ -1447,9 +1720,34 @@ references:
   name: Config
   nameWithType: MqttNetController.Config
   fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.Config
-- uid: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.Config
-  commentId: P:Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.Config
-  parent: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.IsConnected*
+  commentId: Overload:Sin.Net.Infrastructure.Mqtt.MqttNetController.IsConnected
+  name: IsConnected
+  nameWithType: MqttNetController.IsConnected
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.IsConnected
+- uid: Sin.Net.Domain.Infrastructure.IControlable.IsConnected
+  commentId: P:Sin.Net.Domain.Infrastructure.IControlable.IsConnected
+  parent: Sin.Net.Domain.Infrastructure.IControlable
+  name: IsConnected
+  nameWithType: IControlable.IsConnected
+  fullName: Sin.Net.Domain.Infrastructure.IControlable.IsConnected
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin#Net#Domain#Infrastructure#IControlable#Config*
+  commentId: Overload:Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin#Net#Domain#Infrastructure#IControlable#Config
+  name: IControlable.Config
+  nameWithType: MqttNetController.IControlable.Config
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin.Net.Domain.Infrastructure.IControlable.Config
+  nameWithType.vb: MqttNetController.Sin.Net.Domain.Infrastructure.IControlable.Config
+  name.vb: Sin.Net.Domain.Infrastructure.IControlable.Config
+- uid: Sin.Net.Domain.Infrastructure.IControlable.Config
+  commentId: P:Sin.Net.Domain.Infrastructure.IControlable.Config
+  parent: Sin.Net.Domain.Infrastructure.IControlable
   name: Config
-  nameWithType: IMqttControlable.Config
-  fullName: Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.Config
+  nameWithType: IControlable.Config
+  fullName: Sin.Net.Domain.Infrastructure.IControlable.Config

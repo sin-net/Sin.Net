@@ -24,7 +24,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/TestLogger.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: TestLogger
     path: ../Sin.Net.Logging/TestLogger.cs
@@ -74,7 +74,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/TestLogger.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Logging/TestLogger.cs
@@ -104,7 +104,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/TestLogger.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Start
     path: ../Sin.Net.Logging/TestLogger.cs
@@ -138,7 +138,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/TestLogger.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Stop
     path: ../Sin.Net.Logging/TestLogger.cs
@@ -170,7 +170,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/TestLogger.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Trace
     path: ../Sin.Net.Logging/TestLogger.cs
@@ -205,7 +205,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/TestLogger.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Debug
     path: ../Sin.Net.Logging/TestLogger.cs
@@ -240,7 +240,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/TestLogger.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Info
     path: ../Sin.Net.Logging/TestLogger.cs
@@ -275,7 +275,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/TestLogger.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Warn
     path: ../Sin.Net.Logging/TestLogger.cs
@@ -310,7 +310,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/TestLogger.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Error
     path: ../Sin.Net.Logging/TestLogger.cs
@@ -345,7 +345,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/TestLogger.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Fatal
     path: ../Sin.Net.Logging/TestLogger.cs

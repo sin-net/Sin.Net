@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IExportable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IExportable
     path: ../Sin.Net.Domain/Persistence/IExportable.cs
@@ -58,7 +58,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IExportable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Setup
     path: ../Sin.Net.Domain/Persistence/IExportable.cs
@@ -93,7 +93,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IExportable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Build
     path: ../Sin.Net.Domain/Persistence/IExportable.cs
@@ -134,7 +134,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IExportable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Build
     path: ../Sin.Net.Domain/Persistence/IExportable.cs
@@ -178,7 +178,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IExportable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Export
     path: ../Sin.Net.Domain/Persistence/IExportable.cs
@@ -209,7 +209,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IExportable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Type
     path: ../Sin.Net.Domain/Persistence/IExportable.cs

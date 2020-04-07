@@ -1,0 +1,661 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.Infrastructure.IControlable
+  commentId: T:Sin.Net.Domain.Infrastructure.IControlable
+  id: IControlable
+  parent: Sin.Net.Domain.Infrastructure
+  children:
+  - Sin.Net.Domain.Infrastructure.IControlable.Config
+  - Sin.Net.Domain.Infrastructure.IControlable.Connect
+  - Sin.Net.Domain.Infrastructure.IControlable.Disconnect
+  - Sin.Net.Domain.Infrastructure.IControlable.IsConnected
+  - Sin.Net.Domain.Infrastructure.IControlable.Setup(Sin.Net.Domain.Config.ConfigBase)
+  langs:
+  - csharp
+  - vb
+  name: IControlable
+  nameWithType: IControlable
+  fullName: Sin.Net.Domain.Infrastructure.IControlable
+  type: Interface
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/IControlable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: IControlable
+    path: ../Sin.Net.Domain/Infrastructure/IControlable.cs
+    startLine: 4
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure
+  syntax:
+    content: public interface IControlable
+    content.vb: Public Interface IControlable
+  extensionMethods:
+  - System.Object.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - Sin.Net.Domain.Infrastructure.IControlable.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sin.Net.Domain.Infrastructure.IControlable.Setup(Sin.Net.Domain.Config.ConfigBase)
+  commentId: M:Sin.Net.Domain.Infrastructure.IControlable.Setup(Sin.Net.Domain.Config.ConfigBase)
+  id: Setup(Sin.Net.Domain.Config.ConfigBase)
+  parent: Sin.Net.Domain.Infrastructure.IControlable
+  langs:
+  - csharp
+  - vb
+  name: Setup(ConfigBase)
+  nameWithType: IControlable.Setup(ConfigBase)
+  fullName: Sin.Net.Domain.Infrastructure.IControlable.Setup(Sin.Net.Domain.Config.ConfigBase)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/IControlable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Setup
+    path: ../Sin.Net.Domain/Infrastructure/IControlable.cs
+    startLine: 6
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure
+  syntax:
+    content: IControlable Setup(ConfigBase config)
+    parameters:
+    - id: config
+      type: Sin.Net.Domain.Config.ConfigBase
+    return:
+      type: Sin.Net.Domain.Infrastructure.IControlable
+    content.vb: Function Setup(config As ConfigBase) As IControlable
+  overload: Sin.Net.Domain.Infrastructure.IControlable.Setup*
+- uid: Sin.Net.Domain.Infrastructure.IControlable.Connect
+  commentId: M:Sin.Net.Domain.Infrastructure.IControlable.Connect
+  id: Connect
+  parent: Sin.Net.Domain.Infrastructure.IControlable
+  langs:
+  - csharp
+  - vb
+  name: Connect()
+  nameWithType: IControlable.Connect()
+  fullName: Sin.Net.Domain.Infrastructure.IControlable.Connect()
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/IControlable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Connect
+    path: ../Sin.Net.Domain/Infrastructure/IControlable.cs
+    startLine: 8
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure
+  syntax:
+    content: IControlable Connect()
+    return:
+      type: Sin.Net.Domain.Infrastructure.IControlable
+    content.vb: Function Connect As IControlable
+  overload: Sin.Net.Domain.Infrastructure.IControlable.Connect*
+- uid: Sin.Net.Domain.Infrastructure.IControlable.Disconnect
+  commentId: M:Sin.Net.Domain.Infrastructure.IControlable.Disconnect
+  id: Disconnect
+  parent: Sin.Net.Domain.Infrastructure.IControlable
+  langs:
+  - csharp
+  - vb
+  name: Disconnect()
+  nameWithType: IControlable.Disconnect()
+  fullName: Sin.Net.Domain.Infrastructure.IControlable.Disconnect()
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/IControlable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Disconnect
+    path: ../Sin.Net.Domain/Infrastructure/IControlable.cs
+    startLine: 10
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure
+  syntax:
+    content: IControlable Disconnect()
+    return:
+      type: Sin.Net.Domain.Infrastructure.IControlable
+    content.vb: Function Disconnect As IControlable
+  overload: Sin.Net.Domain.Infrastructure.IControlable.Disconnect*
+- uid: Sin.Net.Domain.Infrastructure.IControlable.IsConnected
+  commentId: P:Sin.Net.Domain.Infrastructure.IControlable.IsConnected
+  id: IsConnected
+  parent: Sin.Net.Domain.Infrastructure.IControlable
+  langs:
+  - csharp
+  - vb
+  name: IsConnected
+  nameWithType: IControlable.IsConnected
+  fullName: Sin.Net.Domain.Infrastructure.IControlable.IsConnected
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/IControlable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: IsConnected
+    path: ../Sin.Net.Domain/Infrastructure/IControlable.cs
+    startLine: 14
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure
+  syntax:
+    content: bool IsConnected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsConnected As Boolean
+  overload: Sin.Net.Domain.Infrastructure.IControlable.IsConnected*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Sin.Net.Domain.Infrastructure.IControlable.Config
+  commentId: P:Sin.Net.Domain.Infrastructure.IControlable.Config
+  id: Config
+  parent: Sin.Net.Domain.Infrastructure.IControlable
+  langs:
+  - csharp
+  - vb
+  name: Config
+  nameWithType: IControlable.Config
+  fullName: Sin.Net.Domain.Infrastructure.IControlable.Config
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/IControlable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Config
+    path: ../Sin.Net.Domain/Infrastructure/IControlable.cs
+    startLine: 16
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure
+  syntax:
+    content: ConfigBase Config { get; }
+    parameters: []
+    return:
+      type: Sin.Net.Domain.Config.ConfigBase
+    content.vb: ReadOnly Property Config As ConfigBase
+  overload: Sin.Net.Domain.Infrastructure.IControlable.Config*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Sin.Net.Domain.Infrastructure
+  commentId: N:Sin.Net.Domain.Infrastructure
+  name: Sin.Net.Domain.Infrastructure
+  nameWithType: Sin.Net.Domain.Infrastructure
+  fullName: Sin.Net.Domain.Infrastructure
+- uid: System.Object.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  parent: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  definition: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  name: Clone()
+  nameWithType: ObjectCloneExtensions.Clone()
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone()
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+    name: Clone
+    nameWithType: ObjectCloneExtensions.Clone
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+    name: Clone
+    nameWithType: ObjectCloneExtensions.Clone
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Infrastructure.IControlable.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  parent: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  definition: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  name: Clone<IControlable>()
+  nameWithType: ObjectCloneExtensions.Clone<IControlable>()
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<Sin.Net.Domain.Infrastructure.IControlable>()
+  nameWithType.vb: ObjectCloneExtensions.Clone(Of IControlable)()
+  fullName.vb: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of Sin.Net.Domain.Infrastructure.IControlable)()
+  name.vb: Clone(Of IControlable)()
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
+    name: Clone<IControlable>
+    nameWithType: ObjectCloneExtensions.Clone<IControlable>
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<Sin.Net.Domain.Infrastructure.IControlable>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
+    name: Clone(Of IControlable)
+    nameWithType: ObjectCloneExtensions.Clone(Of IControlable)
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of Sin.Net.Domain.Infrastructure.IControlable)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  name: SecureAccess(SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  name: SecureAccess(Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  isExternal: true
+  name: Clone(Object)
+  nameWithType: ObjectCloneExtensions.Clone(Object)
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+    name: Clone
+    nameWithType: ObjectCloneExtensions.Clone
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+    name: Clone
+    nameWithType: ObjectCloneExtensions.Clone
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  commentId: T:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  parent: Sin.Net.Domain.System.Extensions
+  name: ObjectCloneExtensions
+  nameWithType: ObjectCloneExtensions
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  name: Clone<T>(T)
+  nameWithType: ObjectCloneExtensions.Clone<T>(T)
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<T>(T)
+  nameWithType.vb: ObjectCloneExtensions.Clone(Of T)(T)
+  fullName.vb: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of T)(T)
+  name.vb: Clone(Of T)(T)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+    name: Clone<T>
+    nameWithType: ObjectCloneExtensions.Clone<T>
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+    name: Clone(Of T)
+    nameWithType: ObjectCloneExtensions.Clone(Of T)
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  isExternal: true
+  name: SecureAccess(Object, SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions
+  commentId: T:Sin.Net.Domain.System.Security.SecurityExtensions
+  parent: Sin.Net.Domain.System.Security
+  name: SecurityExtensions
+  nameWithType: SecurityExtensions
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  isExternal: true
+  name: SecureAccess(Object, Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Extensions
+  commentId: N:Sin.Net.Domain.System.Extensions
+  name: Sin.Net.Domain.System.Extensions
+  nameWithType: Sin.Net.Domain.System.Extensions
+  fullName: Sin.Net.Domain.System.Extensions
+- uid: Sin.Net.Domain.System.Security
+  commentId: N:Sin.Net.Domain.System.Security
+  name: Sin.Net.Domain.System.Security
+  nameWithType: Sin.Net.Domain.System.Security
+  fullName: Sin.Net.Domain.System.Security
+- uid: Sin.Net.Domain.Infrastructure.IControlable.Setup*
+  commentId: Overload:Sin.Net.Domain.Infrastructure.IControlable.Setup
+  name: Setup
+  nameWithType: IControlable.Setup
+  fullName: Sin.Net.Domain.Infrastructure.IControlable.Setup
+- uid: Sin.Net.Domain.Config.ConfigBase
+  commentId: T:Sin.Net.Domain.Config.ConfigBase
+  parent: Sin.Net.Domain.Config
+  name: ConfigBase
+  nameWithType: ConfigBase
+  fullName: Sin.Net.Domain.Config.ConfigBase
+- uid: Sin.Net.Domain.Infrastructure.IControlable
+  commentId: T:Sin.Net.Domain.Infrastructure.IControlable
+  parent: Sin.Net.Domain.Infrastructure
+  name: IControlable
+  nameWithType: IControlable
+  fullName: Sin.Net.Domain.Infrastructure.IControlable
+- uid: Sin.Net.Domain.Config
+  commentId: N:Sin.Net.Domain.Config
+  name: Sin.Net.Domain.Config
+  nameWithType: Sin.Net.Domain.Config
+  fullName: Sin.Net.Domain.Config
+- uid: Sin.Net.Domain.Infrastructure.IControlable.Connect*
+  commentId: Overload:Sin.Net.Domain.Infrastructure.IControlable.Connect
+  name: Connect
+  nameWithType: IControlable.Connect
+  fullName: Sin.Net.Domain.Infrastructure.IControlable.Connect
+- uid: Sin.Net.Domain.Infrastructure.IControlable.Disconnect*
+  commentId: Overload:Sin.Net.Domain.Infrastructure.IControlable.Disconnect
+  name: Disconnect
+  nameWithType: IControlable.Disconnect
+  fullName: Sin.Net.Domain.Infrastructure.IControlable.Disconnect
+- uid: Sin.Net.Domain.Infrastructure.IControlable.IsConnected*
+  commentId: Overload:Sin.Net.Domain.Infrastructure.IControlable.IsConnected
+  name: IsConnected
+  nameWithType: IControlable.IsConnected
+  fullName: Sin.Net.Domain.Infrastructure.IControlable.IsConnected
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sin.Net.Domain.Infrastructure.IControlable.Config*
+  commentId: Overload:Sin.Net.Domain.Infrastructure.IControlable.Config
+  name: Config
+  nameWithType: IControlable.Config
+  fullName: Sin.Net.Domain.Infrastructure.IControlable.Config

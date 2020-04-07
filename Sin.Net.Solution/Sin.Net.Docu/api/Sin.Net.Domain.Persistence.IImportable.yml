@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IImportable
     path: ../Sin.Net.Domain/Persistence/IImportable.cs
@@ -59,7 +59,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Setup
     path: ../Sin.Net.Domain/Persistence/IImportable.cs
@@ -94,7 +94,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Import
     path: ../Sin.Net.Domain/Persistence/IImportable.cs
@@ -125,7 +125,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: As
     path: ../Sin.Net.Domain/Persistence/IImportable.cs
@@ -136,16 +136,14 @@ items:
   summary: "\nReturns the imported data with direct type conversion.\n"
   example: []
   syntax:
-    content: >-
-      T As<T>()
-          where T : new()
+    content: T As<T>()
     typeParameters:
     - id: T
       description: The target type T for the imported data
     return:
       type: '{T}'
       description: The imported data as target type
-    content.vb: Function As(Of T As New) As T
+    content.vb: Function As(Of T) As T
   overload: Sin.Net.Domain.Persistence.IImportable.As*
   nameWithType.vb: IImportable.As(Of T)()
   fullName.vb: Sin.Net.Domain.Persistence.IImportable.As(Of T)()
@@ -164,7 +162,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: As
     path: ../Sin.Net.Domain/Persistence/IImportable.cs
@@ -175,9 +173,7 @@ items:
   summary: "\nReturns the imported data with a manual adoption into the target type.\n"
   example: []
   syntax:
-    content: >-
-      T As<T>(IAdaptable adapter)
-          where T : new()
+    content: T As<T>(IAdaptable adapter)
     parameters:
     - id: adapter
       type: Sin.Net.Domain.Persistence.Adapter.IAdaptable
@@ -187,7 +183,7 @@ items:
     return:
       type: '{T}'
       description: The imported data as target type
-    content.vb: Function As(Of T As New)(adapter As IAdaptable) As T
+    content.vb: Function As(Of T)(adapter As IAdaptable) As T
   overload: Sin.Net.Domain.Persistence.IImportable.As*
   nameWithType.vb: IImportable.As(Of T)(IAdaptable)
   fullName.vb: Sin.Net.Domain.Persistence.IImportable.As(Of T)(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
@@ -206,7 +202,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: AsItIs
     path: ../Sin.Net.Domain/Persistence/IImportable.cs
@@ -237,7 +233,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Type
     path: ../Sin.Net.Domain/Persistence/IImportable.cs

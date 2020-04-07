@@ -26,7 +26,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/RepositoryBase.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: RepositoryBase
     path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
@@ -91,7 +91,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/RepositoryBase.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
@@ -125,7 +125,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/RepositoryBase.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Contains
     path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
@@ -168,7 +168,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/RepositoryBase.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Add
     path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
@@ -211,7 +211,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/RepositoryBase.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: AddRange
     path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
@@ -249,7 +249,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/RepositoryBase.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: RemoveAt
     path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
@@ -289,7 +289,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/RepositoryBase.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Remove
     path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
@@ -332,7 +332,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/RepositoryBase.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Clear
     path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
@@ -366,7 +366,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/RepositoryBase.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Name
     path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
@@ -405,7 +405,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/RepositoryBase.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Items
     path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
@@ -444,7 +444,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/RepositoryBase.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Count
     path: ../Sin.Net.Domain/Repository/RepositoryBase.cs
@@ -483,7 +483,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/RepositoryBase.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: this[]
     path: ../Sin.Net.Domain/Repository/RepositoryBase.cs

@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Enumerations/Enums.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: SecurityLevels
     path: ../Sin.Net.Domain/Enumerations/Enums.cs
@@ -57,7 +57,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Enumerations/Enums.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Guest
     path: ../Sin.Net.Domain/Enumerations/Enums.cs
@@ -91,7 +91,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Enumerations/Enums.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: User
     path: ../Sin.Net.Domain/Enumerations/Enums.cs
@@ -125,7 +125,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Enumerations/Enums.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Expert
     path: ../Sin.Net.Domain/Enumerations/Enums.cs
@@ -159,7 +159,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Enumerations/Enums.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Admin
     path: ../Sin.Net.Domain/Enumerations/Enums.cs

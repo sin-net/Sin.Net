@@ -111,7 +111,7 @@
   
   <h5 id="Sin_Net_Infrastructure_Mqtt_MqttNetController_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MqttNetController : IMqttControlable</code></pre>
+    <pre><code class="lang-csharp hljs">public class MqttNetController : IMqttControlable, IAsyncControlable, IControlable</code></pre>
   </div>
   
   
@@ -123,10 +123,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/adriansinger87/Sin.Net/new/dev-injection/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController__ctor.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController__ctor.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/adriansinger87/Sin.Net/blob/dev-injection/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L30" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L29" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="Sin_Net_Infrastructure_Mqtt_MqttNetController__ctor_" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.#ctor*"></a>
@@ -159,10 +159,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/adriansinger87/Sin.Net/new/dev-injection/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_Config.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.Config%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_Config.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.Config%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/adriansinger87/Sin.Net/blob/dev-injection/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L132" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L149" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="Sin_Net_Infrastructure_Mqtt_MqttNetController_Config_" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.Config*"></a>
@@ -175,7 +175,7 @@
   <h5 class="decalaration">Declaration</h5>
   
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ConfigBase Config { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public MqttConfig Config { get; }</code></pre>
   </div>
   
   
@@ -186,7 +186,51 @@
   <table>
     <tr>
       <td>
-        <a class="xref" href="Sin.Net.Domain.Config.ConfigBase.html">ConfigBase</a>
+        <a class="xref" href="Sin.Net.Infrastructure.Mqtt.MqttConfig.html">MqttConfig</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_IsConnected.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.IsConnected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L154" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="Sin_Net_Infrastructure_Mqtt_MqttNetController_IsConnected_" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.IsConnected*"></a>
+  
+  <h4 id="Sin_Net_Infrastructure_Mqtt_MqttNetController_IsConnected" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.IsConnected"><a href="#collapsible-Sin_Net_Infrastructure_Mqtt_MqttNetController_IsConnected" class="expander" data-toggle="collapse">IsConnected</a></h4>
+  
+  <div id="collapsible-Sin_Net_Infrastructure_Mqtt_MqttNetController_IsConnected" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets the information if the controller is connected or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsConnected { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
         <p>
       </td>
     </tr>
@@ -195,7 +239,7 @@
   
   
   <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.html#Sin_Net_Domain_Infrastructure_Mqtt_IMqttControlable_Config">IMqttControlable.Config</a></div>
+      <div><a class="xref" href="Sin.Net.Domain.Infrastructure.IControlable.html#Sin_Net_Domain_Infrastructure_IControlable_IsConnected">IControlable.IsConnected</a></div>
   
   
   
@@ -206,10 +250,55 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/adriansinger87/Sin.Net/new/dev-injection/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_ConnectAsync.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.ConnectAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_Connect.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.Connect%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/adriansinger87/Sin.Net/blob/dev-injection/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L94" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L97" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="Sin_Net_Infrastructure_Mqtt_MqttNetController_Connect_" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.Connect*"></a>
+  
+  <h4 id="Sin_Net_Infrastructure_Mqtt_MqttNetController_Connect" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.Connect"><a href="#collapsible-Sin_Net_Infrastructure_Mqtt_MqttNetController_Connect" class="expander" data-toggle="collapse">Connect()</a></h4>
+  
+  <div id="collapsible-Sin_Net_Infrastructure_Mqtt_MqttNetController_Connect" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControlable Connect()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Sin.Net.Domain.Infrastructure.IControlable.html">IControlable</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Sin.Net.Domain.Infrastructure.IControlable.html#Sin_Net_Domain_Infrastructure_IControlable_Connect">IControlable.Connect()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_ConnectAsync.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.ConnectAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L111" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="Sin_Net_Infrastructure_Mqtt_MqttNetController_ConnectAsync_" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.ConnectAsync*"></a>
@@ -242,7 +331,7 @@
   
   
   <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.html#Sin_Net_Domain_Infrastructure_Mqtt_IMqttControlable_ConnectAsync">IMqttControlable.ConnectAsync()</a></div>
+      <div><a class="xref" href="Sin.Net.Domain.Infrastructure.IAsyncControlable.html#Sin_Net_Domain_Infrastructure_IAsyncControlable_ConnectAsync">IAsyncControlable.ConnectAsync()</a></div>
   
   
   
@@ -251,41 +340,31 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/adriansinger87/Sin.Net/new/dev-injection/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_CreateClient_Sin_Net_Domain_Config_ConfigBase_.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.CreateClient(Sin.Net.Domain.Config.ConfigBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_Disconnect.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.Disconnect%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/adriansinger87/Sin.Net/blob/dev-injection/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L37" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L104" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
-  <a id="Sin_Net_Infrastructure_Mqtt_MqttNetController_CreateClient_" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.CreateClient*"></a>
+  <a id="Sin_Net_Infrastructure_Mqtt_MqttNetController_Disconnect_" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.Disconnect*"></a>
   
-  <h4 id="Sin_Net_Infrastructure_Mqtt_MqttNetController_CreateClient_Sin_Net_Domain_Config_ConfigBase_" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.CreateClient(Sin.Net.Domain.Config.ConfigBase)"><a href="#collapsible-Sin_Net_Infrastructure_Mqtt_MqttNetController_CreateClient_Sin_Net_Domain_Config_ConfigBase_" class="expander" data-toggle="collapse">CreateClient(ConfigBase)</a></h4>
+  <h4 id="Sin_Net_Infrastructure_Mqtt_MqttNetController_Disconnect" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.Disconnect"><a href="#collapsible-Sin_Net_Infrastructure_Mqtt_MqttNetController_Disconnect" class="expander" data-toggle="collapse">Disconnect()</a></h4>
   
-  <div id="collapsible-Sin_Net_Infrastructure_Mqtt_MqttNetController_CreateClient_Sin_Net_Domain_Config_ConfigBase_" class="collapse in">
+  <div id="collapsible-Sin_Net_Infrastructure_Mqtt_MqttNetController_Disconnect" class="collapse in">
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CreateClient(ConfigBase config)</code></pre>
+    <pre><code class="lang-csharp hljs">public IControlable Disconnect()</code></pre>
   </div>
   
-  <h5 class="parameters">Parameters</h5>
-  <table>
-    <tr>
-      <td>
-        <span class="pull-right"><a class="xref" href="Sin.Net.Domain.Config.ConfigBase.html">ConfigBase</a></span>
-        <span class="parametername">config</span>
-        <p>
-      </td>
-    </tr>
-  </table>
   
   <h5 class="returns">Returns</h5>
   <table>
     <tr>
       <td>
-        <span class="xref">System.Boolean</span>
+        <a class="xref" href="Sin.Net.Domain.Infrastructure.IControlable.html">IControlable</a>
         <p>
       </td>
     </tr>
@@ -297,7 +376,7 @@
   
   
   <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.html#Sin_Net_Domain_Infrastructure_Mqtt_IMqttControlable_CreateClient_Sin_Net_Domain_Config_ConfigBase_">IMqttControlable.CreateClient(ConfigBase)</a></div>
+      <div><a class="xref" href="Sin.Net.Domain.Infrastructure.IControlable.html#Sin_Net_Domain_Infrastructure_IControlable_Disconnect">IControlable.Disconnect()</a></div>
   
   
   
@@ -306,10 +385,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/adriansinger87/Sin.Net/new/dev-injection/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_DisconnectAsync.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.DisconnectAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_DisconnectAsync.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.DisconnectAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/adriansinger87/Sin.Net/blob/dev-injection/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L99" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L116" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="Sin_Net_Infrastructure_Mqtt_MqttNetController_DisconnectAsync_" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.DisconnectAsync*"></a>
@@ -342,7 +421,7 @@
   
   
   <h5 class="implements">Implements</h5>
-      <div><a class="xref" href="Sin.Net.Domain.Infrastructure.Mqtt.IMqttControlable.html#Sin_Net_Domain_Infrastructure_Mqtt_IMqttControlable_DisconnectAsync">IMqttControlable.DisconnectAsync()</a></div>
+      <div><a class="xref" href="Sin.Net.Domain.Infrastructure.IAsyncControlable.html#Sin_Net_Domain_Infrastructure_IAsyncControlable_DisconnectAsync">IAsyncControlable.DisconnectAsync()</a></div>
   
   
   
@@ -351,10 +430,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/adriansinger87/Sin.Net/new/dev-injection/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_PublishAsync_System_String_System_String_.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_PublishAsync_System_String_System_String_.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/adriansinger87/Sin.Net/blob/dev-injection/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L104" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L121" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="Sin_Net_Infrastructure_Mqtt_MqttNetController_PublishAsync_" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync*"></a>
@@ -413,10 +492,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/adriansinger87/Sin.Net/new/dev-injection/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_PublishAsync_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync(System.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_PublishAsync_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync(System.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/adriansinger87/Sin.Net/blob/dev-injection/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L109" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L126" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   <a id="Sin_Net_Infrastructure_Mqtt_MqttNetController_PublishAsync_" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.PublishAsync*"></a>
@@ -479,15 +558,68 @@
   
   
   </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_Setup_Sin_Net_Infrastructure_Mqtt_MqttConfig_.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.Setup(Sin.Net.Infrastructure.Mqtt.MqttConfig)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L41" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="Sin_Net_Infrastructure_Mqtt_MqttNetController_Setup_" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.Setup*"></a>
+  
+  <h4 id="Sin_Net_Infrastructure_Mqtt_MqttNetController_Setup_Sin_Net_Infrastructure_Mqtt_MqttConfig_" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.Setup(Sin.Net.Infrastructure.Mqtt.MqttConfig)"><a href="#collapsible-Sin_Net_Infrastructure_Mqtt_MqttNetController_Setup_Sin_Net_Infrastructure_Mqtt_MqttConfig_" class="expander" data-toggle="collapse">Setup(MqttConfig)</a></h4>
+  
+  <div id="collapsible-Sin_Net_Infrastructure_Mqtt_MqttNetController_Setup_Sin_Net_Infrastructure_Mqtt_MqttConfig_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IControlable Setup(MqttConfig config)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Sin.Net.Infrastructure.Mqtt.MqttConfig.html">MqttConfig</a></span>
+        <span class="parametername">config</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Sin.Net.Domain.Infrastructure.IControlable.html">IControlable</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
   <h3 id="events">Events
   </h3>
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/adriansinger87/Sin.Net/new/dev-injection/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_Connected.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.Connected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_Connected.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.Connected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/adriansinger87/Sin.Net/blob/dev-injection/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L25" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L24" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   
@@ -528,10 +660,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/adriansinger87/Sin.Net/new/dev-injection/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_Disconnected.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.Disconnected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_Disconnected.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.Disconnected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/adriansinger87/Sin.Net/blob/dev-injection/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L26" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L25" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   
@@ -572,10 +704,10 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider"> </span>
-    <a href="https://github.com/adriansinger87/Sin.Net/new/dev-injection/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_MessageReceived.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.MessageReceived%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_MessageReceived.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.MessageReceived%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/adriansinger87/Sin.Net/blob/dev-injection/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L24" title="View Source"><i class="fa fa-code"></i></a>
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L23" title="View Source"><i class="fa fa-code"></i></a>
   </span>
   
   
@@ -613,6 +745,108 @@
   
   
   </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_Sin_Net_Domain_Infrastructure_IControlable_Config.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin%23Net%23Domain%23Infrastructure%23IControlable%23Config%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L156" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="Sin_Net_Infrastructure_Mqtt_MqttNetController_Sin_Net_Domain_Infrastructure_IControlable_Config_" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin#Net#Domain#Infrastructure#IControlable#Config*"></a>
+  
+  <h4 id="Sin_Net_Infrastructure_Mqtt_MqttNetController_Sin_Net_Domain_Infrastructure_IControlable_Config" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin#Net#Domain#Infrastructure#IControlable#Config"><a href="#collapsible-Sin_Net_Infrastructure_Mqtt_MqttNetController_Sin_Net_Domain_Infrastructure_IControlable_Config" class="expander" data-toggle="collapse">IControlable.Config</a></h4>
+  
+  <div id="collapsible-Sin_Net_Infrastructure_Mqtt_MqttNetController_Sin_Net_Domain_Infrastructure_IControlable_Config" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ConfigBase IControlable.Config { get; }</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Sin.Net.Domain.Config.ConfigBase.html">ConfigBase</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Sin.Net.Domain.Infrastructure.IControlable.html#Sin_Net_Domain_Infrastructure_IControlable_Config">IControlable.Config</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController_Sin_Net_Domain_Infrastructure_IControlable_Setup_Sin_Net_Domain_Config_ConfigBase_.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin%23Net%23Domain%23Infrastructure%23IControlable%23Setup(Sin.Net.Domain.Config.ConfigBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L36" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="Sin_Net_Infrastructure_Mqtt_MqttNetController_Sin_Net_Domain_Infrastructure_IControlable_Setup_" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin#Net#Domain#Infrastructure#IControlable#Setup*"></a>
+  
+  <h4 id="Sin_Net_Infrastructure_Mqtt_MqttNetController_Sin_Net_Domain_Infrastructure_IControlable_Setup_Sin_Net_Domain_Config_ConfigBase_" data-uid="Sin.Net.Infrastructure.Mqtt.MqttNetController.Sin#Net#Domain#Infrastructure#IControlable#Setup(Sin.Net.Domain.Config.ConfigBase)"><a href="#collapsible-Sin_Net_Infrastructure_Mqtt_MqttNetController_Sin_Net_Domain_Infrastructure_IControlable_Setup_Sin_Net_Domain_Config_ConfigBase_" class="expander" data-toggle="collapse">IControlable.Setup(ConfigBase)</a></h4>
+  
+  <div id="collapsible-Sin_Net_Infrastructure_Mqtt_MqttNetController_Sin_Net_Domain_Infrastructure_IControlable_Setup_Sin_Net_Domain_Config_ConfigBase_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IControlable IControlable.Setup(ConfigBase config)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Sin.Net.Domain.Config.ConfigBase.html">ConfigBase</a></span>
+        <span class="parametername">config</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Sin.Net.Domain.Infrastructure.IControlable.html">IControlable</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="Sin.Net.Domain.Infrastructure.IControlable.html#Sin_Net_Domain_Infrastructure_IControlable_Setup_Sin_Net_Domain_Config_ConfigBase_">IControlable.Setup(ConfigBase)</a></div>
+  
+  
+  
+  
+  </div>
   
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
@@ -631,8 +865,8 @@
 </article>
           </div>
           <div class="contribution-panel mobile-hide">
-              <a href="https://github.com/adriansinger87/Sin.Net/new/dev-injection/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
-              <a href="https://github.com/adriansinger87/Sin.Net/blob/dev-injection/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L16" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
+              <a href="https://github.com/adriansinger87/Sin.Net/new/master/apiSpec/new?filename=Sin_Net_Infrastructure_Mqtt_MqttNetController.md&amp;value=---%0Auid%3A%20Sin.Net.Infrastructure.Mqtt.MqttNetController%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/adriansinger87/Sin.Net/blob/master/Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs/#L16" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

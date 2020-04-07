@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Mqtt/MqttConnectedEventArgs.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: MqttConnectedEventArgs
     path: ../Sin.Net.Domain/Infrastructure/Mqtt/MqttConnectedEventArgs.cs
@@ -65,7 +65,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Mqtt/MqttConnectedEventArgs.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Domain/Infrastructure/Mqtt/MqttConnectedEventArgs.cs
@@ -102,7 +102,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Mqtt/MqttConnectedEventArgs.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ToString
     path: ../Sin.Net.Domain/Infrastructure/Mqtt/MqttConnectedEventArgs.cs
@@ -140,7 +140,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Mqtt/MqttConnectedEventArgs.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Broker
     path: ../Sin.Net.Domain/Infrastructure/Mqtt/MqttConnectedEventArgs.cs
@@ -175,7 +175,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Mqtt/MqttConnectedEventArgs.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Port
     path: ../Sin.Net.Domain/Infrastructure/Mqtt/MqttConnectedEventArgs.cs
@@ -210,7 +210,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Mqtt/MqttConnectedEventArgs.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ClientID
     path: ../Sin.Net.Domain/Infrastructure/Mqtt/MqttConnectedEventArgs.cs

@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.Infrastructure
+  commentId: N:Sin.Net.Domain.Infrastructure
+  id: Sin.Net.Domain.Infrastructure
+  children:
+  - Sin.Net.Domain.Infrastructure.IAsyncControlable
+  - Sin.Net.Domain.Infrastructure.IControlable
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Domain.Infrastructure
+  nameWithType: Sin.Net.Domain.Infrastructure
+  fullName: Sin.Net.Domain.Infrastructure
+  type: Namespace
+  assemblies:
+  - Sin.Net.Domain
+references:
+- uid: Sin.Net.Domain.Infrastructure.IAsyncControlable
+  commentId: T:Sin.Net.Domain.Infrastructure.IAsyncControlable
+  parent: Sin.Net.Domain.Infrastructure
+  name: IAsyncControlable
+  nameWithType: IAsyncControlable
+  fullName: Sin.Net.Domain.Infrastructure.IAsyncControlable
+- uid: Sin.Net.Domain.Infrastructure.IControlable
+  commentId: T:Sin.Net.Domain.Infrastructure.IControlable
+  parent: Sin.Net.Domain.Infrastructure
+  name: IControlable
+  nameWithType: IControlable
+  fullName: Sin.Net.Domain.Infrastructure.IControlable
+- uid: Sin.Net.Domain.Infrastructure
+  commentId: N:Sin.Net.Domain.Infrastructure
+  name: Sin.Net.Domain.Infrastructure
+  nameWithType: Sin.Net.Domain.Infrastructure
+  fullName: Sin.Net.Domain.Infrastructure

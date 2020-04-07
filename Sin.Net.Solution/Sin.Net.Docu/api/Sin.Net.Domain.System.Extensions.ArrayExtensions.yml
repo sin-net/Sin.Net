@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/Extensions/ArrayExtensions.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ArrayExtensions
     path: ../Sin.Net.Domain/System/Extensions/ArrayExtensions.cs
@@ -61,7 +61,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/Extensions/ArrayExtensions.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ForEach
     path: ../Sin.Net.Domain/System/Extensions/ArrayExtensions.cs

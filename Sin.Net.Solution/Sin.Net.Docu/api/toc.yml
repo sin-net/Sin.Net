@@ -9,6 +9,13 @@
   items:
   - uid: Sin.Net.Domain.Enumerations.SecurityLevels
     name: SecurityLevels
+- uid: Sin.Net.Domain.Infrastructure
+  name: Sin.Net.Domain.Infrastructure
+  items:
+  - uid: Sin.Net.Domain.Infrastructure.IAsyncControlable
+    name: IAsyncControlable
+  - uid: Sin.Net.Domain.Infrastructure.IControlable
+    name: IControlable
 - uid: Sin.Net.Domain.Infrastructure.Http
   name: Sin.Net.Domain.Infrastructure.Http
   items:
@@ -110,6 +117,13 @@
     name: MqttConfig
   - uid: Sin.Net.Infrastructure.Mqtt.MqttNetController
     name: MqttNetController
+- uid: Sin.Net.Infrastructure.Smtp
+  name: Sin.Net.Infrastructure.Smtp
+  items:
+  - uid: Sin.Net.Infrastructure.Smtp.SmtpConfig
+    name: SmtpConfig
+  - uid: Sin.Net.Infrastructure.Smtp.SmtpController
+    name: SmtpController
 - uid: Sin.Net.Logging
   name: Sin.Net.Logging
   items:

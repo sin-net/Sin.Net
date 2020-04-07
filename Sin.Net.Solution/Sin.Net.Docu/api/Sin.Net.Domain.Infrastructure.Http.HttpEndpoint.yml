@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: HttpEndpoint
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
@@ -70,7 +70,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
@@ -102,7 +102,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Method
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
@@ -137,7 +137,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: BaseAddress
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
@@ -174,7 +174,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Request
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
@@ -211,7 +211,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: MethodName
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
@@ -248,7 +248,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Url
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
@@ -285,7 +285,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Authentication
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpEndpoint.cs

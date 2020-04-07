@@ -1,0 +1,1196 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig
+  commentId: T:Sin.Net.Infrastructure.Smtp.SmtpConfig
+  id: SmtpConfig
+  parent: Sin.Net.Infrastructure.Smtp
+  children:
+  - Sin.Net.Infrastructure.Smtp.SmtpConfig.#ctor(System.String)
+  - Sin.Net.Infrastructure.Smtp.SmtpConfig.Body
+  - Sin.Net.Infrastructure.Smtp.SmtpConfig.Password
+  - Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
+  - Sin.Net.Infrastructure.Smtp.SmtpConfig.Receivers
+  - Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject
+  - Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString
+  - Sin.Net.Infrastructure.Smtp.SmtpConfig.User
+  langs:
+  - csharp
+  - vb
+  name: SmtpConfig
+  nameWithType: SmtpConfig
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig
+  type: Class
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: SmtpConfig
+    path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+    startLine: 5
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Smtp
+  syntax:
+    content: 'public class SmtpConfig : ConfigBase'
+    content.vb: >-
+      Public Class SmtpConfig
+          Inherits ConfigBase
+  inheritance:
+  - System.Object
+  - Sin.Net.Domain.Config.ConfigBase
+  inheritedMembers:
+  - Sin.Net.Domain.Config.ConfigBase.Name
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  extensionMethods:
+  - System.Object.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - Sin.Net.Infrastructure.Smtp.SmtpConfig.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.#ctor(System.String)
+  commentId: M:Sin.Net.Infrastructure.Smtp.SmtpConfig.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Sin.Net.Infrastructure.Smtp.SmtpConfig
+  langs:
+  - csharp
+  - vb
+  name: SmtpConfig(String)
+  nameWithType: SmtpConfig.SmtpConfig(String)
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpConfig(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: .ctor
+    path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+    startLine: 8
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Smtp
+  syntax:
+    content: public SmtpConfig(string name)
+    parameters:
+    - id: name
+      type: System.String
+    content.vb: Public Sub New(name As String)
+  overload: Sin.Net.Infrastructure.Smtp.SmtpConfig.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString
+  commentId: M:Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString
+  id: ToString
+  parent: Sin.Net.Infrastructure.Smtp.SmtpConfig
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: SmtpConfig.ToString()
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString()
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: ToString
+    path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+    startLine: 15
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Smtp
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: Sin.Net.Domain.Config.ConfigBase.ToString
+  overload: Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Receivers
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Receivers
+  id: Receivers
+  parent: Sin.Net.Infrastructure.Smtp.SmtpConfig
+  langs:
+  - csharp
+  - vb
+  name: Receivers
+  nameWithType: SmtpConfig.Receivers
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Receivers
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Receivers
+    path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+    startLine: 19
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Smtp
+  syntax:
+    content: public List<string> Receivers { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Property Receivers As List(Of String)
+  overload: Sin.Net.Infrastructure.Smtp.SmtpConfig.Receivers*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
+  id: Port
+  parent: Sin.Net.Infrastructure.Smtp.SmtpConfig
+  langs:
+  - csharp
+  - vb
+  name: Port
+  nameWithType: SmtpConfig.Port
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Port
+    path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+    startLine: 21
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Smtp
+  syntax:
+    content: public int Port { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Port As Integer
+  overload: Sin.Net.Infrastructure.Smtp.SmtpConfig.Port*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject
+  id: Subject
+  parent: Sin.Net.Infrastructure.Smtp.SmtpConfig
+  langs:
+  - csharp
+  - vb
+  name: Subject
+  nameWithType: SmtpConfig.Subject
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Subject
+    path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+    startLine: 23
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Smtp
+  syntax:
+    content: public string Subject { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Subject As String
+  overload: Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Body
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Body
+  id: Body
+  parent: Sin.Net.Infrastructure.Smtp.SmtpConfig
+  langs:
+  - csharp
+  - vb
+  name: Body
+  nameWithType: SmtpConfig.Body
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Body
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Body
+    path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+    startLine: 25
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Smtp
+  syntax:
+    content: public string Body { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Body As String
+  overload: Sin.Net.Infrastructure.Smtp.SmtpConfig.Body*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.User
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.User
+  id: User
+  parent: Sin.Net.Infrastructure.Smtp.SmtpConfig
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: SmtpConfig.User
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.User
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: User
+    path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+    startLine: 27
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Smtp
+  syntax:
+    content: public string User { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property User As String
+  overload: Sin.Net.Infrastructure.Smtp.SmtpConfig.User*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Password
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Password
+  id: Password
+  parent: Sin.Net.Infrastructure.Smtp.SmtpConfig
+  langs:
+  - csharp
+  - vb
+  name: Password
+  nameWithType: SmtpConfig.Password
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Password
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Password
+    path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+    startLine: 29
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Smtp
+  syntax:
+    content: public string Password { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Password As String
+  overload: Sin.Net.Infrastructure.Smtp.SmtpConfig.Password*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sin.Net.Infrastructure.Smtp
+  commentId: N:Sin.Net.Infrastructure.Smtp
+  name: Sin.Net.Infrastructure.Smtp
+  nameWithType: Sin.Net.Infrastructure.Smtp
+  fullName: Sin.Net.Infrastructure.Smtp
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sin.Net.Domain.Config.ConfigBase
+  commentId: T:Sin.Net.Domain.Config.ConfigBase
+  parent: Sin.Net.Domain.Config
+  name: ConfigBase
+  nameWithType: ConfigBase
+  fullName: Sin.Net.Domain.Config.ConfigBase
+- uid: Sin.Net.Domain.Config.ConfigBase.Name
+  commentId: P:Sin.Net.Domain.Config.ConfigBase.Name
+  parent: Sin.Net.Domain.Config.ConfigBase
+  name: Name
+  nameWithType: ConfigBase.Name
+  fullName: Sin.Net.Domain.Config.ConfigBase.Name
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  parent: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  definition: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  name: Clone()
+  nameWithType: ObjectCloneExtensions.Clone()
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone()
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+    name: Clone
+    nameWithType: ObjectCloneExtensions.Clone
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+    name: Clone
+    nameWithType: ObjectCloneExtensions.Clone
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  parent: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  definition: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  name: Clone<SmtpConfig>()
+  nameWithType: ObjectCloneExtensions.Clone<SmtpConfig>()
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<Sin.Net.Infrastructure.Smtp.SmtpConfig>()
+  nameWithType.vb: ObjectCloneExtensions.Clone(Of SmtpConfig)()
+  fullName.vb: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of Sin.Net.Infrastructure.Smtp.SmtpConfig)()
+  name.vb: Clone(Of SmtpConfig)()
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
+    name: Clone<SmtpConfig>
+    nameWithType: ObjectCloneExtensions.Clone<SmtpConfig>
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<Sin.Net.Infrastructure.Smtp.SmtpConfig>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
+    name: Clone(Of SmtpConfig)
+    nameWithType: ObjectCloneExtensions.Clone(Of SmtpConfig)
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of Sin.Net.Infrastructure.Smtp.SmtpConfig)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  name: SecureAccess(SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  name: SecureAccess(Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sin.Net.Domain.Config
+  commentId: N:Sin.Net.Domain.Config
+  name: Sin.Net.Domain.Config
+  nameWithType: Sin.Net.Domain.Config
+  fullName: Sin.Net.Domain.Config
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  isExternal: true
+  name: Clone(Object)
+  nameWithType: ObjectCloneExtensions.Clone(Object)
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+    name: Clone
+    nameWithType: ObjectCloneExtensions.Clone
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+    name: Clone
+    nameWithType: ObjectCloneExtensions.Clone
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  commentId: T:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  parent: Sin.Net.Domain.System.Extensions
+  name: ObjectCloneExtensions
+  nameWithType: ObjectCloneExtensions
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  name: Clone<T>(T)
+  nameWithType: ObjectCloneExtensions.Clone<T>(T)
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<T>(T)
+  nameWithType.vb: ObjectCloneExtensions.Clone(Of T)(T)
+  fullName.vb: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of T)(T)
+  name.vb: Clone(Of T)(T)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+    name: Clone<T>
+    nameWithType: ObjectCloneExtensions.Clone<T>
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+    name: Clone(Of T)
+    nameWithType: ObjectCloneExtensions.Clone(Of T)
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  isExternal: true
+  name: SecureAccess(Object, SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions
+  commentId: T:Sin.Net.Domain.System.Security.SecurityExtensions
+  parent: Sin.Net.Domain.System.Security
+  name: SecurityExtensions
+  nameWithType: SecurityExtensions
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  isExternal: true
+  name: SecureAccess(Object, Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Extensions
+  commentId: N:Sin.Net.Domain.System.Extensions
+  name: Sin.Net.Domain.System.Extensions
+  nameWithType: Sin.Net.Domain.System.Extensions
+  fullName: Sin.Net.Domain.System.Extensions
+- uid: Sin.Net.Domain.System.Security
+  commentId: N:Sin.Net.Domain.System.Security
+  name: Sin.Net.Domain.System.Security
+  nameWithType: Sin.Net.Domain.System.Security
+  fullName: Sin.Net.Domain.System.Security
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.#ctor*
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.#ctor
+  name: SmtpConfig
+  nameWithType: SmtpConfig.SmtpConfig
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpConfig
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sin.Net.Domain.Config.ConfigBase.ToString
+  commentId: M:Sin.Net.Domain.Config.ConfigBase.ToString
+  parent: Sin.Net.Domain.Config.ConfigBase
+  name: ToString()
+  nameWithType: ConfigBase.ToString()
+  fullName: Sin.Net.Domain.Config.ConfigBase.ToString()
+  spec.csharp:
+  - uid: Sin.Net.Domain.Config.ConfigBase.ToString
+    name: ToString
+    nameWithType: ConfigBase.ToString
+    fullName: Sin.Net.Domain.Config.ConfigBase.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Config.ConfigBase.ToString
+    name: ToString
+    nameWithType: ConfigBase.ToString
+    fullName: Sin.Net.Domain.Config.ConfigBase.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString*
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString
+  name: ToString
+  nameWithType: SmtpConfig.ToString
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Receivers*
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Receivers
+  name: Receivers
+  nameWithType: SmtpConfig.Receivers
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Receivers
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Port*
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
+  name: Port
+  nameWithType: SmtpConfig.Port
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject*
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject
+  name: Subject
+  nameWithType: SmtpConfig.Subject
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Body*
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Body
+  name: Body
+  nameWithType: SmtpConfig.Body
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Body
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.User*
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.User
+  name: User
+  nameWithType: SmtpConfig.User
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.User
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Password*
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Password
+  name: Password
+  nameWithType: SmtpConfig.Password
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Password

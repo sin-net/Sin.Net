@@ -23,7 +23,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ILoggable
     path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
@@ -61,7 +61,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Start
     path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
@@ -91,7 +91,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Stop
     path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
@@ -119,7 +119,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Trace
     path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
@@ -151,7 +151,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Debug
     path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
@@ -183,7 +183,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Info
     path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
@@ -215,7 +215,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Warn
     path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
@@ -247,7 +247,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Error
     path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
@@ -279,7 +279,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
-      branch: dev-injection
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Fatal
     path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs

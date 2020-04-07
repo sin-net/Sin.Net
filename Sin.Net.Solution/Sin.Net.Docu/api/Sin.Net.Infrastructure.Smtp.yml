@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Infrastructure.Smtp
+  commentId: N:Sin.Net.Infrastructure.Smtp
+  id: Sin.Net.Infrastructure.Smtp
+  children:
+  - Sin.Net.Infrastructure.Smtp.SmtpConfig
+  - Sin.Net.Infrastructure.Smtp.SmtpController
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Infrastructure.Smtp
+  nameWithType: Sin.Net.Infrastructure.Smtp
+  fullName: Sin.Net.Infrastructure.Smtp
+  type: Namespace
+  assemblies:
+  - Sin.Net.Infrastructure
+references:
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig
+  commentId: T:Sin.Net.Infrastructure.Smtp.SmtpConfig
+  parent: Sin.Net.Infrastructure.Smtp
+  name: SmtpConfig
+  nameWithType: SmtpConfig
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig
+- uid: Sin.Net.Infrastructure.Smtp.SmtpController
+  commentId: T:Sin.Net.Infrastructure.Smtp.SmtpController
+  parent: Sin.Net.Infrastructure.Smtp
+  name: SmtpController
+  nameWithType: SmtpController
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpController
+- uid: Sin.Net.Infrastructure.Smtp
+  commentId: N:Sin.Net.Infrastructure.Smtp
+  name: Sin.Net.Infrastructure.Smtp
+  nameWithType: Sin.Net.Infrastructure.Smtp
+  fullName: Sin.Net.Infrastructure.Smtp
