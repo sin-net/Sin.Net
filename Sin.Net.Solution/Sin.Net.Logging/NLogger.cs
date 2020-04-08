@@ -57,7 +57,7 @@ namespace Sin.Net.Logging
 
             fileTarget.FileName = $"{Path.Combine(path, filename)}{Suffix}.log";
             fileTarget.DeleteOldFileOnStartup = DeleteOlFiles;
-            config.AddRule(LogLevel.Trace, LogLevel.Fatal, consoleTarget);
+            config.AddRule(MinRule, LogLevel.Fatal, consoleTarget);
             config.AddRule(MinRule, LogLevel.Fatal, fileTarget);
             LogManager.Configuration = config;
             _logger = LogManager.GetCurrentClassLogger();
