@@ -24,11 +24,15 @@ namespace Sin.Net.Domain.Persistence.Logging
         /// <param name="msg">The message string</param>
         void Trace(string msg);
 
+        void Trace(object data);
+
         /// <summary>
         /// Log the debug message.
         /// </summary>
         /// <param name="msg">The message string</param>
         void Debug(string msg);
+
+        void Debug(object data);
 
         /// <summary>
         /// Log the info message.
@@ -36,11 +40,15 @@ namespace Sin.Net.Domain.Persistence.Logging
         /// <param name="msg">The message string</param>
         void Info(string msg);
 
+        void Info(object data);
+
         /// <summary>
         /// Log the warning message.
         /// </summary>
         /// <param name="msg">The message string</param>
         void Warn(string msg);
+
+        void Warn(object data);
 
         /// <summary>
         /// Log the error message.
@@ -48,10 +56,19 @@ namespace Sin.Net.Domain.Persistence.Logging
         /// <param name="msg">The message string</param>
         void Error(string msg);
 
+        void Error(object data);
+
         /// <summary>
         /// Log the exception.
         /// </summary>
         /// <param name="msg">The message string</param>
         void Fatal(Exception ex);
+
+        /// <summary>
+        /// Converts objects into string messages that can be logged by the static Log class.
+        /// </summary>
+        /// <param name="attachment">Any kind of object that is handed as attachment parameter.</param>
+        /// <returns></returns>
+        string Convert(object attachment);
     }
 }

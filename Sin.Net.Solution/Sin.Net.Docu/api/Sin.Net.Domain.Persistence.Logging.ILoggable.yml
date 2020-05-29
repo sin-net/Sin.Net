@@ -5,13 +5,19 @@ items:
   id: ILoggable
   parent: Sin.Net.Domain.Persistence.Logging
   children:
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Convert(System.Object)
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.Object)
   - Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.String)
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.Object)
   - Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.String)
   - Sin.Net.Domain.Persistence.Logging.ILoggable.Fatal(System.Exception)
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.Object)
   - Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.String)
   - Sin.Net.Domain.Persistence.Logging.ILoggable.Start
   - Sin.Net.Domain.Persistence.Logging.ILoggable.Stop
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.Object)
   - Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.String)
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.Object)
   - Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.String)
   langs:
   - csharp
@@ -137,6 +143,35 @@ items:
       description: The message string
     content.vb: Sub Trace(msg As String)
   overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Trace*
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.Object)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.Object)
+  id: Trace(System.Object)
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  langs:
+  - csharp
+  - vb
+  name: Trace(Object)
+  nameWithType: ILoggable.Trace(Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Trace
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+    startLine: 26
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  syntax:
+    content: void Trace(object data)
+    parameters:
+    - id: data
+      type: System.Object
+    content.vb: Sub Trace(data As Object)
+  overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Trace*
 - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.String)
   commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.String)
   id: Debug(System.String)
@@ -155,7 +190,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Debug
     path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
-    startLine: 30
+    startLine: 32
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Persistence.Logging
@@ -168,6 +203,35 @@ items:
       type: System.String
       description: The message string
     content.vb: Sub Debug(msg As String)
+  overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug*
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.Object)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.Object)
+  id: Debug(System.Object)
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  langs:
+  - csharp
+  - vb
+  name: Debug(Object)
+  nameWithType: ILoggable.Debug(Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Debug
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+    startLine: 34
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  syntax:
+    content: void Debug(object data)
+    parameters:
+    - id: data
+      type: System.Object
+    content.vb: Sub Debug(data As Object)
   overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug*
 - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.String)
   commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.String)
@@ -187,7 +251,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Info
     path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
-    startLine: 36
+    startLine: 40
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Persistence.Logging
@@ -200,6 +264,35 @@ items:
       type: System.String
       description: The message string
     content.vb: Sub Info(msg As String)
+  overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Info*
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.Object)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.Object)
+  id: Info(System.Object)
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  langs:
+  - csharp
+  - vb
+  name: Info(Object)
+  nameWithType: ILoggable.Info(Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Info
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+    startLine: 42
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  syntax:
+    content: void Info(object data)
+    parameters:
+    - id: data
+      type: System.Object
+    content.vb: Sub Info(data As Object)
   overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Info*
 - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.String)
   commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.String)
@@ -219,7 +312,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Warn
     path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
-    startLine: 42
+    startLine: 48
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Persistence.Logging
@@ -232,6 +325,35 @@ items:
       type: System.String
       description: The message string
     content.vb: Sub Warn(msg As String)
+  overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Warn*
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.Object)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.Object)
+  id: Warn(System.Object)
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  langs:
+  - csharp
+  - vb
+  name: Warn(Object)
+  nameWithType: ILoggable.Warn(Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Warn
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+    startLine: 50
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  syntax:
+    content: void Warn(object data)
+    parameters:
+    - id: data
+      type: System.Object
+    content.vb: Sub Warn(data As Object)
   overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Warn*
 - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.String)
   commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.String)
@@ -251,7 +373,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Error
     path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
-    startLine: 48
+    startLine: 56
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Persistence.Logging
@@ -264,6 +386,35 @@ items:
       type: System.String
       description: The message string
     content.vb: Sub Error(msg As String)
+  overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Error*
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.Object)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.Object)
+  id: Error(System.Object)
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  langs:
+  - csharp
+  - vb
+  name: Error(Object)
+  nameWithType: ILoggable.Error(Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Error
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+    startLine: 58
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  syntax:
+    content: void Error(object data)
+    parameters:
+    - id: data
+      type: System.Object
+    content.vb: Sub Error(data As Object)
   overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Error*
 - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Fatal(System.Exception)
   commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Fatal(System.Exception)
@@ -283,7 +434,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Fatal
     path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
-    startLine: 54
+    startLine: 64
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Persistence.Logging
@@ -296,6 +447,41 @@ items:
       type: System.Exception
     content.vb: Sub Fatal(ex As Exception)
   overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Fatal*
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Convert(System.Object)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Convert(System.Object)
+  id: Convert(System.Object)
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  langs:
+  - csharp
+  - vb
+  name: Convert(Object)
+  nameWithType: ILoggable.Convert(Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Convert(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Convert
+    path: ../Sin.Net.Domain/Persistence/Logging/ILoggable.cs
+    startLine: 71
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence.Logging
+  summary: "\nConverts objects into string messages that can be logged by the static Log class.\n"
+  example: []
+  syntax:
+    content: string Convert(object attachment)
+    parameters:
+    - id: attachment
+      type: System.Object
+      description: Any kind of object that is handed as attachment parameter.
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function Convert(attachment As Object) As String
+  overload: Sin.Net.Domain.Persistence.Logging.ILoggable.Convert*
 references:
 - uid: Sin.Net.Domain.Persistence.Logging
   commentId: N:Sin.Net.Domain.Persistence.Logging
@@ -739,6 +925,13 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug*
   commentId: Overload:Sin.Net.Domain.Persistence.Logging.ILoggable.Debug
   name: Debug
@@ -771,3 +964,8 @@ references:
   name: Exception
   nameWithType: Exception
   fullName: System.Exception
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Convert*
+  commentId: Overload:Sin.Net.Domain.Persistence.Logging.ILoggable.Convert
+  name: Convert
+  nameWithType: ILoggable.Convert
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Convert

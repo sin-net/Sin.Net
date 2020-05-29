@@ -6,16 +6,22 @@ items:
   parent: Sin.Net.Logging
   children:
   - Sin.Net.Logging.NLogger.#ctor
+  - Sin.Net.Logging.NLogger.Convert(System.Object)
+  - Sin.Net.Logging.NLogger.Debug(System.Object)
   - Sin.Net.Logging.NLogger.Debug(System.String)
   - Sin.Net.Logging.NLogger.DeleteOlFiles
+  - Sin.Net.Logging.NLogger.Error(System.Object)
   - Sin.Net.Logging.NLogger.Error(System.String)
   - Sin.Net.Logging.NLogger.Fatal(System.Exception)
+  - Sin.Net.Logging.NLogger.Info(System.Object)
   - Sin.Net.Logging.NLogger.Info(System.String)
   - Sin.Net.Logging.NLogger.MinRule
   - Sin.Net.Logging.NLogger.Start
   - Sin.Net.Logging.NLogger.Stop
   - Sin.Net.Logging.NLogger.Suffix
+  - Sin.Net.Logging.NLogger.Trace(System.Object)
   - Sin.Net.Logging.NLogger.Trace(System.String)
+  - Sin.Net.Logging.NLogger.Warn(System.Object)
   - Sin.Net.Logging.NLogger.Warn(System.String)
   langs:
   - csharp
@@ -31,7 +37,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: NLogger
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 8
+    startLine: 10
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -81,7 +87,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -111,7 +117,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Start
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 27
+    startLine: 29
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -145,7 +151,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Stop
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 68
+    startLine: 70
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -177,7 +183,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Trace
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 75
+    startLine: 77
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -190,6 +196,41 @@ items:
   overload: Sin.Net.Logging.NLogger.Trace*
   implements:
   - Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Logging.NLogger.Trace(System.Object)
+  commentId: M:Sin.Net.Logging.NLogger.Trace(System.Object)
+  id: Trace(System.Object)
+  parent: Sin.Net.Logging.NLogger
+  langs:
+  - csharp
+  - vb
+  name: Trace(Object)
+  nameWithType: NLogger.Trace(Object)
+  fullName: Sin.Net.Logging.NLogger.Trace(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Trace
+    path: ../Sin.Net.Logging/NLogger.cs
+    startLine: 82
+  assemblies:
+  - Sin.Net.Logging
+  namespace: Sin.Net.Logging
+  syntax:
+    content: public void Trace(object data)
+    parameters:
+    - id: data
+      type: System.Object
+    content.vb: Public Sub Trace(data As Object)
+  overload: Sin.Net.Logging.NLogger.Trace*
+  implements:
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.Object)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -212,7 +253,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Debug
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 80
+    startLine: 87
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -225,6 +266,41 @@ items:
   overload: Sin.Net.Logging.NLogger.Debug*
   implements:
   - Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Logging.NLogger.Debug(System.Object)
+  commentId: M:Sin.Net.Logging.NLogger.Debug(System.Object)
+  id: Debug(System.Object)
+  parent: Sin.Net.Logging.NLogger
+  langs:
+  - csharp
+  - vb
+  name: Debug(Object)
+  nameWithType: NLogger.Debug(Object)
+  fullName: Sin.Net.Logging.NLogger.Debug(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Debug
+    path: ../Sin.Net.Logging/NLogger.cs
+    startLine: 92
+  assemblies:
+  - Sin.Net.Logging
+  namespace: Sin.Net.Logging
+  syntax:
+    content: public void Debug(object data)
+    parameters:
+    - id: data
+      type: System.Object
+    content.vb: Public Sub Debug(data As Object)
+  overload: Sin.Net.Logging.NLogger.Debug*
+  implements:
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.Object)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -247,7 +323,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Info
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 85
+    startLine: 97
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -260,6 +336,41 @@ items:
   overload: Sin.Net.Logging.NLogger.Info*
   implements:
   - Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Logging.NLogger.Info(System.Object)
+  commentId: M:Sin.Net.Logging.NLogger.Info(System.Object)
+  id: Info(System.Object)
+  parent: Sin.Net.Logging.NLogger
+  langs:
+  - csharp
+  - vb
+  name: Info(Object)
+  nameWithType: NLogger.Info(Object)
+  fullName: Sin.Net.Logging.NLogger.Info(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Info
+    path: ../Sin.Net.Logging/NLogger.cs
+    startLine: 102
+  assemblies:
+  - Sin.Net.Logging
+  namespace: Sin.Net.Logging
+  syntax:
+    content: public void Info(object data)
+    parameters:
+    - id: data
+      type: System.Object
+    content.vb: Public Sub Info(data As Object)
+  overload: Sin.Net.Logging.NLogger.Info*
+  implements:
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.Object)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -282,7 +393,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Warn
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 90
+    startLine: 107
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -295,6 +406,41 @@ items:
   overload: Sin.Net.Logging.NLogger.Warn*
   implements:
   - Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Logging.NLogger.Warn(System.Object)
+  commentId: M:Sin.Net.Logging.NLogger.Warn(System.Object)
+  id: Warn(System.Object)
+  parent: Sin.Net.Logging.NLogger
+  langs:
+  - csharp
+  - vb
+  name: Warn(Object)
+  nameWithType: NLogger.Warn(Object)
+  fullName: Sin.Net.Logging.NLogger.Warn(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Warn
+    path: ../Sin.Net.Logging/NLogger.cs
+    startLine: 112
+  assemblies:
+  - Sin.Net.Logging
+  namespace: Sin.Net.Logging
+  syntax:
+    content: public void Warn(object data)
+    parameters:
+    - id: data
+      type: System.Object
+    content.vb: Public Sub Warn(data As Object)
+  overload: Sin.Net.Logging.NLogger.Warn*
+  implements:
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.Object)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -317,7 +463,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Error
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 95
+    startLine: 117
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -330,6 +476,41 @@ items:
   overload: Sin.Net.Logging.NLogger.Error*
   implements:
   - Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Logging.NLogger.Error(System.Object)
+  commentId: M:Sin.Net.Logging.NLogger.Error(System.Object)
+  id: Error(System.Object)
+  parent: Sin.Net.Logging.NLogger
+  langs:
+  - csharp
+  - vb
+  name: Error(Object)
+  nameWithType: NLogger.Error(Object)
+  fullName: Sin.Net.Logging.NLogger.Error(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Error
+    path: ../Sin.Net.Logging/NLogger.cs
+    startLine: 122
+  assemblies:
+  - Sin.Net.Logging
+  namespace: Sin.Net.Logging
+  syntax:
+    content: public void Error(object data)
+    parameters:
+    - id: data
+      type: System.Object
+    content.vb: Public Sub Error(data As Object)
+  overload: Sin.Net.Logging.NLogger.Error*
+  implements:
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.Object)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -352,7 +533,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Fatal
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 100
+    startLine: 127
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -365,6 +546,43 @@ items:
   overload: Sin.Net.Logging.NLogger.Fatal*
   implements:
   - Sin.Net.Domain.Persistence.Logging.ILoggable.Fatal(System.Exception)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Logging.NLogger.Convert(System.Object)
+  commentId: M:Sin.Net.Logging.NLogger.Convert(System.Object)
+  id: Convert(System.Object)
+  parent: Sin.Net.Logging.NLogger
+  langs:
+  - csharp
+  - vb
+  name: Convert(Object)
+  nameWithType: NLogger.Convert(Object)
+  fullName: Sin.Net.Logging.NLogger.Convert(System.Object)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Convert
+    path: ../Sin.Net.Logging/NLogger.cs
+    startLine: 132
+  assemblies:
+  - Sin.Net.Logging
+  namespace: Sin.Net.Logging
+  syntax:
+    content: public string Convert(object attachment)
+    parameters:
+    - id: attachment
+      type: System.Object
+    return:
+      type: System.String
+    content.vb: Public Function Convert(attachment As Object) As String
+  overload: Sin.Net.Logging.NLogger.Convert*
+  implements:
+  - Sin.Net.Domain.Persistence.Logging.ILoggable.Convert(System.Object)
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -387,7 +605,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: MinRule
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 107
+    startLine: 162
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -422,7 +640,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: DeleteOlFiles
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 109
+    startLine: 164
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -457,7 +675,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Suffix
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 111
+    startLine: 166
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -1308,6 +1526,45 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.Object)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.Object)
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  isExternal: true
+  name: Trace(Object)
+  nameWithType: ILoggable.Trace(Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.Object)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.Object)
+    name: Trace
+    nameWithType: ILoggable.Trace
+    fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Trace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.Object)
+    name: Trace
+    nameWithType: ILoggable.Trace
+    fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Trace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Sin.Net.Logging.NLogger.Debug*
   commentId: Overload:Sin.Net.Logging.NLogger.Debug
   name: Debug
@@ -1348,6 +1605,45 @@ references:
     name: String
     nameWithType: String
     fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.Object)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.Object)
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  isExternal: true
+  name: Debug(Object)
+  nameWithType: ILoggable.Debug(Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.Object)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.Object)
+    name: Debug
+    nameWithType: ILoggable.Debug
+    fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.Object)
+    name: Debug
+    nameWithType: ILoggable.Debug
+    fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
     isExternal: true
   - name: )
     nameWithType: )
@@ -1396,6 +1692,45 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.Object)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.Object)
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  isExternal: true
+  name: Info(Object)
+  nameWithType: ILoggable.Info(Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.Object)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.Object)
+    name: Info
+    nameWithType: ILoggable.Info
+    fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.Object)
+    name: Info
+    nameWithType: ILoggable.Info
+    fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Sin.Net.Logging.NLogger.Warn*
   commentId: Overload:Sin.Net.Logging.NLogger.Warn
   name: Warn
@@ -1440,6 +1775,45 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.Object)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.Object)
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  isExternal: true
+  name: Warn(Object)
+  nameWithType: ILoggable.Warn(Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.Object)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.Object)
+    name: Warn
+    nameWithType: ILoggable.Warn
+    fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Warn
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.Object)
+    name: Warn
+    nameWithType: ILoggable.Warn
+    fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Warn
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Sin.Net.Logging.NLogger.Error*
   commentId: Overload:Sin.Net.Logging.NLogger.Error
   name: Error
@@ -1480,6 +1854,45 @@ references:
     name: String
     nameWithType: String
     fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.Object)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.Object)
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  isExternal: true
+  name: Error(Object)
+  nameWithType: ILoggable.Error(Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.Object)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.Object)
+    name: Error
+    nameWithType: ILoggable.Error
+    fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Error
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.Object)
+    name: Error
+    nameWithType: ILoggable.Error
+    fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Error
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
     isExternal: true
   - name: )
     nameWithType: )
@@ -1535,6 +1948,50 @@ references:
   name: Exception
   nameWithType: Exception
   fullName: System.Exception
+- uid: Sin.Net.Logging.NLogger.Convert*
+  commentId: Overload:Sin.Net.Logging.NLogger.Convert
+  name: Convert
+  nameWithType: NLogger.Convert
+  fullName: Sin.Net.Logging.NLogger.Convert
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Convert(System.Object)
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Convert(System.Object)
+  parent: Sin.Net.Domain.Persistence.Logging.ILoggable
+  isExternal: true
+  name: Convert(Object)
+  nameWithType: ILoggable.Convert(Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Convert(System.Object)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Convert(System.Object)
+    name: Convert
+    nameWithType: ILoggable.Convert
+    fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Convert
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Convert(System.Object)
+    name: Convert
+    nameWithType: ILoggable.Convert
+    fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Convert
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Sin.Net.Logging.NLogger.MinRule*
   commentId: Overload:Sin.Net.Logging.NLogger.MinRule
   name: MinRule

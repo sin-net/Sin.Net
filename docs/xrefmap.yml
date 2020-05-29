@@ -1093,6 +1093,25 @@ references:
   commentId: T:Sin.Net.Domain.Persistence.Logging.ILoggable
   fullName: Sin.Net.Domain.Persistence.Logging.ILoggable
   nameWithType: ILoggable
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Convert(System.Object)
+  name: Convert(Object)
+  href: api/Sin.Net.Domain.Persistence.Logging.ILoggable.html#Sin_Net_Domain_Persistence_Logging_ILoggable_Convert_System_Object_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Convert(System.Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Convert(System.Object)
+  nameWithType: ILoggable.Convert(Object)
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Convert*
+  name: Convert
+  href: api/Sin.Net.Domain.Persistence.Logging.ILoggable.html#Sin_Net_Domain_Persistence_Logging_ILoggable_Convert_
+  commentId: Overload:Sin.Net.Domain.Persistence.Logging.ILoggable.Convert
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Convert
+  nameWithType: ILoggable.Convert
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.Object)
+  name: Debug(Object)
+  href: api/Sin.Net.Domain.Persistence.Logging.ILoggable.html#Sin_Net_Domain_Persistence_Logging_ILoggable_Debug_System_Object_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.Object)
+  nameWithType: ILoggable.Debug(Object)
 - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug(System.String)
   name: Debug(String)
   href: api/Sin.Net.Domain.Persistence.Logging.ILoggable.html#Sin_Net_Domain_Persistence_Logging_ILoggable_Debug_System_String_
@@ -1106,6 +1125,12 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Debug
   nameWithType: ILoggable.Debug
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.Object)
+  name: Error(Object)
+  href: api/Sin.Net.Domain.Persistence.Logging.ILoggable.html#Sin_Net_Domain_Persistence_Logging_ILoggable_Error_System_Object_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.Object)
+  nameWithType: ILoggable.Error(Object)
 - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Error(System.String)
   name: Error(String)
   href: api/Sin.Net.Domain.Persistence.Logging.ILoggable.html#Sin_Net_Domain_Persistence_Logging_ILoggable_Error_System_String_
@@ -1132,6 +1157,12 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Fatal
   nameWithType: ILoggable.Fatal
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.Object)
+  name: Info(Object)
+  href: api/Sin.Net.Domain.Persistence.Logging.ILoggable.html#Sin_Net_Domain_Persistence_Logging_ILoggable_Info_System_Object_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.Object)
+  nameWithType: ILoggable.Info(Object)
 - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Info(System.String)
   name: Info(String)
   href: api/Sin.Net.Domain.Persistence.Logging.ILoggable.html#Sin_Net_Domain_Persistence_Logging_ILoggable_Info_System_String_
@@ -1171,6 +1202,12 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Stop
   nameWithType: ILoggable.Stop
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.Object)
+  name: Trace(Object)
+  href: api/Sin.Net.Domain.Persistence.Logging.ILoggable.html#Sin_Net_Domain_Persistence_Logging_ILoggable_Trace_System_Object_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.Object)
+  nameWithType: ILoggable.Trace(Object)
 - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Trace(System.String)
   name: Trace(String)
   href: api/Sin.Net.Domain.Persistence.Logging.ILoggable.html#Sin_Net_Domain_Persistence_Logging_ILoggable_Trace_System_String_
@@ -1184,6 +1221,12 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Trace
   nameWithType: ILoggable.Trace
+- uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.Object)
+  name: Warn(Object)
+  href: api/Sin.Net.Domain.Persistence.Logging.ILoggable.html#Sin_Net_Domain_Persistence_Logging_ILoggable_Warn_System_Object_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.Object)
+  nameWithType: ILoggable.Warn(Object)
 - uid: Sin.Net.Domain.Persistence.Logging.ILoggable.Warn(System.String)
   name: Warn(String)
   href: api/Sin.Net.Domain.Persistence.Logging.ILoggable.html#Sin_Net_Domain_Persistence_Logging_ILoggable_Warn_System_String_
@@ -1203,18 +1246,36 @@ references:
   commentId: T:Sin.Net.Domain.Persistence.Logging.Log
   fullName: Sin.Net.Domain.Persistence.Logging.Log
   nameWithType: Log
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String)
+  name: Debug(String)
+  href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Debug_System_String_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String)
+  nameWithType: Log.Debug(String)
 - uid: Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String,System.Object)
   name: Debug(String, Object)
   href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Debug_System_String_System_Object_
   commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String,System.Object)
   fullName: Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String, System.Object)
   nameWithType: Log.Debug(String, Object)
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String,System.Object,System.Object)
+  name: Debug(String, Object, Object)
+  href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Debug_System_String_System_Object_System_Object_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String,System.Object,System.Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String, System.Object, System.Object)
+  nameWithType: Log.Debug(String, Object, Object)
 - uid: Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String,System.String)
   name: Debug(String, String)
   href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Debug_System_String_System_String_
   commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String,System.String)
   fullName: Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String, System.String)
   nameWithType: Log.Debug(String, String)
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String,System.String,System.Object)
+  name: Debug(String, String, Object)
+  href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Debug_System_String_System_String_System_Object_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String,System.String,System.Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Debug(System.String, System.String, System.Object)
+  nameWithType: Log.Debug(String, String, Object)
 - uid: Sin.Net.Domain.Persistence.Logging.Log.Debug*
   name: Debug
   href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Debug_
@@ -1222,18 +1283,36 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Domain.Persistence.Logging.Log.Debug
   nameWithType: Log.Debug
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Error(System.String)
+  name: Error(String)
+  href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Error_System_String_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Error(System.String)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Error(System.String)
+  nameWithType: Log.Error(String)
 - uid: Sin.Net.Domain.Persistence.Logging.Log.Error(System.String,System.Object)
   name: Error(String, Object)
   href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Error_System_String_System_Object_
   commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Error(System.String,System.Object)
   fullName: Sin.Net.Domain.Persistence.Logging.Log.Error(System.String, System.Object)
   nameWithType: Log.Error(String, Object)
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Error(System.String,System.Object,System.Object)
+  name: Error(String, Object, Object)
+  href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Error_System_String_System_Object_System_Object_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Error(System.String,System.Object,System.Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Error(System.String, System.Object, System.Object)
+  nameWithType: Log.Error(String, Object, Object)
 - uid: Sin.Net.Domain.Persistence.Logging.Log.Error(System.String,System.String)
   name: Error(String, String)
   href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Error_System_String_System_String_
   commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Error(System.String,System.String)
   fullName: Sin.Net.Domain.Persistence.Logging.Log.Error(System.String, System.String)
   nameWithType: Log.Error(String, String)
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Error(System.String,System.String,System.Object)
+  name: Error(String, String, Object)
+  href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Error_System_String_System_String_System_Object_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Error(System.String,System.String,System.Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Error(System.String, System.String, System.Object)
+  nameWithType: Log.Error(String, String, Object)
 - uid: Sin.Net.Domain.Persistence.Logging.Log.Error*
   name: Error
   href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Error_
@@ -1254,18 +1333,36 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Domain.Persistence.Logging.Log.Fatal
   nameWithType: Log.Fatal
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Info(System.String)
+  name: Info(String)
+  href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Info_System_String_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Info(System.String)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Info(System.String)
+  nameWithType: Log.Info(String)
 - uid: Sin.Net.Domain.Persistence.Logging.Log.Info(System.String,System.Object)
   name: Info(String, Object)
   href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Info_System_String_System_Object_
   commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Info(System.String,System.Object)
   fullName: Sin.Net.Domain.Persistence.Logging.Log.Info(System.String, System.Object)
   nameWithType: Log.Info(String, Object)
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Info(System.String,System.Object,System.Object)
+  name: Info(String, Object, Object)
+  href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Info_System_String_System_Object_System_Object_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Info(System.String,System.Object,System.Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Info(System.String, System.Object, System.Object)
+  nameWithType: Log.Info(String, Object, Object)
 - uid: Sin.Net.Domain.Persistence.Logging.Log.Info(System.String,System.String)
   name: Info(String, String)
   href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Info_System_String_System_String_
   commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Info(System.String,System.String)
   fullName: Sin.Net.Domain.Persistence.Logging.Log.Info(System.String, System.String)
   nameWithType: Log.Info(String, String)
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Info(System.String,System.String,System.Object)
+  name: Info(String, String, Object)
+  href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Info_System_String_System_String_System_Object_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Info(System.String,System.String,System.Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Info(System.String, System.String, System.Object)
+  nameWithType: Log.Info(String, String, Object)
 - uid: Sin.Net.Domain.Persistence.Logging.Log.Info*
   name: Info
   href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Info_
@@ -1312,18 +1409,36 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Domain.Persistence.Logging.Log.Stop
   nameWithType: Log.Stop
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String)
+  name: Trace(String)
+  href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Trace_System_String_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String)
+  nameWithType: Log.Trace(String)
 - uid: Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String,System.Object)
   name: Trace(String, Object)
   href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Trace_System_String_System_Object_
   commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String,System.Object)
   fullName: Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String, System.Object)
   nameWithType: Log.Trace(String, Object)
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String,System.Object,System.Object)
+  name: Trace(String, Object, Object)
+  href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Trace_System_String_System_Object_System_Object_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String,System.Object,System.Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String, System.Object, System.Object)
+  nameWithType: Log.Trace(String, Object, Object)
 - uid: Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String,System.String)
   name: Trace(String, String)
   href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Trace_System_String_System_String_
   commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String,System.String)
   fullName: Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String, System.String)
   nameWithType: Log.Trace(String, String)
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String,System.String,System.Object)
+  name: Trace(String, String, Object)
+  href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Trace_System_String_System_String_System_Object_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String,System.String,System.Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Trace(System.String, System.String, System.Object)
+  nameWithType: Log.Trace(String, String, Object)
 - uid: Sin.Net.Domain.Persistence.Logging.Log.Trace*
   name: Trace
   href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Trace_
@@ -1331,18 +1446,36 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Domain.Persistence.Logging.Log.Trace
   nameWithType: Log.Trace
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String)
+  name: Warn(String)
+  href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Warn_System_String_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String)
+  nameWithType: Log.Warn(String)
 - uid: Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String,System.Object)
   name: Warn(String, Object)
   href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Warn_System_String_System_Object_
   commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String,System.Object)
   fullName: Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String, System.Object)
   nameWithType: Log.Warn(String, Object)
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String,System.Object,System.Object)
+  name: Warn(String, Object, Object)
+  href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Warn_System_String_System_Object_System_Object_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String,System.Object,System.Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String, System.Object, System.Object)
+  nameWithType: Log.Warn(String, Object, Object)
 - uid: Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String,System.String)
   name: Warn(String, String)
   href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Warn_System_String_System_String_
   commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String,System.String)
   fullName: Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String, System.String)
   nameWithType: Log.Warn(String, String)
+- uid: Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String,System.String,System.Object)
+  name: Warn(String, String, Object)
+  href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Warn_System_String_System_String_System_Object_
+  commentId: M:Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String,System.String,System.Object)
+  fullName: Sin.Net.Domain.Persistence.Logging.Log.Warn(System.String, System.String, System.Object)
+  nameWithType: Log.Warn(String, String, Object)
 - uid: Sin.Net.Domain.Persistence.Logging.Log.Warn*
   name: Warn
   href: api/Sin.Net.Domain.Persistence.Logging.Log.html#Sin_Net_Domain_Persistence_Logging_Log_Warn_
@@ -2651,6 +2784,25 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Logging.NLogger.NLogger
   nameWithType: NLogger.NLogger
+- uid: Sin.Net.Logging.NLogger.Convert(System.Object)
+  name: Convert(Object)
+  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_Convert_System_Object_
+  commentId: M:Sin.Net.Logging.NLogger.Convert(System.Object)
+  fullName: Sin.Net.Logging.NLogger.Convert(System.Object)
+  nameWithType: NLogger.Convert(Object)
+- uid: Sin.Net.Logging.NLogger.Convert*
+  name: Convert
+  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_Convert_
+  commentId: Overload:Sin.Net.Logging.NLogger.Convert
+  isSpec: "True"
+  fullName: Sin.Net.Logging.NLogger.Convert
+  nameWithType: NLogger.Convert
+- uid: Sin.Net.Logging.NLogger.Debug(System.Object)
+  name: Debug(Object)
+  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_Debug_System_Object_
+  commentId: M:Sin.Net.Logging.NLogger.Debug(System.Object)
+  fullName: Sin.Net.Logging.NLogger.Debug(System.Object)
+  nameWithType: NLogger.Debug(Object)
 - uid: Sin.Net.Logging.NLogger.Debug(System.String)
   name: Debug(String)
   href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_Debug_System_String_
@@ -2677,6 +2829,12 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Logging.NLogger.DeleteOlFiles
   nameWithType: NLogger.DeleteOlFiles
+- uid: Sin.Net.Logging.NLogger.Error(System.Object)
+  name: Error(Object)
+  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_Error_System_Object_
+  commentId: M:Sin.Net.Logging.NLogger.Error(System.Object)
+  fullName: Sin.Net.Logging.NLogger.Error(System.Object)
+  nameWithType: NLogger.Error(Object)
 - uid: Sin.Net.Logging.NLogger.Error(System.String)
   name: Error(String)
   href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_Error_System_String_
@@ -2703,6 +2861,12 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Logging.NLogger.Fatal
   nameWithType: NLogger.Fatal
+- uid: Sin.Net.Logging.NLogger.Info(System.Object)
+  name: Info(Object)
+  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_Info_System_Object_
+  commentId: M:Sin.Net.Logging.NLogger.Info(System.Object)
+  fullName: Sin.Net.Logging.NLogger.Info(System.Object)
+  nameWithType: NLogger.Info(Object)
 - uid: Sin.Net.Logging.NLogger.Info(System.String)
   name: Info(String)
   href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_Info_System_String_
@@ -2768,6 +2932,12 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Logging.NLogger.Suffix
   nameWithType: NLogger.Suffix
+- uid: Sin.Net.Logging.NLogger.Trace(System.Object)
+  name: Trace(Object)
+  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_Trace_System_Object_
+  commentId: M:Sin.Net.Logging.NLogger.Trace(System.Object)
+  fullName: Sin.Net.Logging.NLogger.Trace(System.Object)
+  nameWithType: NLogger.Trace(Object)
 - uid: Sin.Net.Logging.NLogger.Trace(System.String)
   name: Trace(String)
   href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_Trace_System_String_
@@ -2781,6 +2951,12 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Logging.NLogger.Trace
   nameWithType: NLogger.Trace
+- uid: Sin.Net.Logging.NLogger.Warn(System.Object)
+  name: Warn(Object)
+  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_Warn_System_Object_
+  commentId: M:Sin.Net.Logging.NLogger.Warn(System.Object)
+  fullName: Sin.Net.Logging.NLogger.Warn(System.Object)
+  nameWithType: NLogger.Warn(Object)
 - uid: Sin.Net.Logging.NLogger.Warn(System.String)
   name: Warn(String)
   href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_Warn_System_String_
@@ -2813,6 +2989,25 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Logging.TestLogger.TestLogger
   nameWithType: TestLogger.TestLogger
+- uid: Sin.Net.Logging.TestLogger.Convert(System.Object)
+  name: Convert(Object)
+  href: api/Sin.Net.Logging.TestLogger.html#Sin_Net_Logging_TestLogger_Convert_System_Object_
+  commentId: M:Sin.Net.Logging.TestLogger.Convert(System.Object)
+  fullName: Sin.Net.Logging.TestLogger.Convert(System.Object)
+  nameWithType: TestLogger.Convert(Object)
+- uid: Sin.Net.Logging.TestLogger.Convert*
+  name: Convert
+  href: api/Sin.Net.Logging.TestLogger.html#Sin_Net_Logging_TestLogger_Convert_
+  commentId: Overload:Sin.Net.Logging.TestLogger.Convert
+  isSpec: "True"
+  fullName: Sin.Net.Logging.TestLogger.Convert
+  nameWithType: TestLogger.Convert
+- uid: Sin.Net.Logging.TestLogger.Debug(System.Object)
+  name: Debug(Object)
+  href: api/Sin.Net.Logging.TestLogger.html#Sin_Net_Logging_TestLogger_Debug_System_Object_
+  commentId: M:Sin.Net.Logging.TestLogger.Debug(System.Object)
+  fullName: Sin.Net.Logging.TestLogger.Debug(System.Object)
+  nameWithType: TestLogger.Debug(Object)
 - uid: Sin.Net.Logging.TestLogger.Debug(System.String)
   name: Debug(String)
   href: api/Sin.Net.Logging.TestLogger.html#Sin_Net_Logging_TestLogger_Debug_System_String_
@@ -2826,6 +3021,12 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Logging.TestLogger.Debug
   nameWithType: TestLogger.Debug
+- uid: Sin.Net.Logging.TestLogger.Error(System.Object)
+  name: Error(Object)
+  href: api/Sin.Net.Logging.TestLogger.html#Sin_Net_Logging_TestLogger_Error_System_Object_
+  commentId: M:Sin.Net.Logging.TestLogger.Error(System.Object)
+  fullName: Sin.Net.Logging.TestLogger.Error(System.Object)
+  nameWithType: TestLogger.Error(Object)
 - uid: Sin.Net.Logging.TestLogger.Error(System.String)
   name: Error(String)
   href: api/Sin.Net.Logging.TestLogger.html#Sin_Net_Logging_TestLogger_Error_System_String_
@@ -2852,6 +3053,12 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Logging.TestLogger.Fatal
   nameWithType: TestLogger.Fatal
+- uid: Sin.Net.Logging.TestLogger.Info(System.Object)
+  name: Info(Object)
+  href: api/Sin.Net.Logging.TestLogger.html#Sin_Net_Logging_TestLogger_Info_System_Object_
+  commentId: M:Sin.Net.Logging.TestLogger.Info(System.Object)
+  fullName: Sin.Net.Logging.TestLogger.Info(System.Object)
+  nameWithType: TestLogger.Info(Object)
 - uid: Sin.Net.Logging.TestLogger.Info(System.String)
   name: Info(String)
   href: api/Sin.Net.Logging.TestLogger.html#Sin_Net_Logging_TestLogger_Info_System_String_
@@ -2891,6 +3098,12 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Logging.TestLogger.Stop
   nameWithType: TestLogger.Stop
+- uid: Sin.Net.Logging.TestLogger.Trace(System.Object)
+  name: Trace(Object)
+  href: api/Sin.Net.Logging.TestLogger.html#Sin_Net_Logging_TestLogger_Trace_System_Object_
+  commentId: M:Sin.Net.Logging.TestLogger.Trace(System.Object)
+  fullName: Sin.Net.Logging.TestLogger.Trace(System.Object)
+  nameWithType: TestLogger.Trace(Object)
 - uid: Sin.Net.Logging.TestLogger.Trace(System.String)
   name: Trace(String)
   href: api/Sin.Net.Logging.TestLogger.html#Sin_Net_Logging_TestLogger_Trace_System_String_
@@ -2904,6 +3117,12 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Logging.TestLogger.Trace
   nameWithType: TestLogger.Trace
+- uid: Sin.Net.Logging.TestLogger.Warn(System.Object)
+  name: Warn(Object)
+  href: api/Sin.Net.Logging.TestLogger.html#Sin_Net_Logging_TestLogger_Warn_System_Object_
+  commentId: M:Sin.Net.Logging.TestLogger.Warn(System.Object)
+  fullName: Sin.Net.Logging.TestLogger.Warn(System.Object)
+  nameWithType: TestLogger.Warn(Object)
 - uid: Sin.Net.Logging.TestLogger.Warn(System.String)
   name: Warn(String)
   href: api/Sin.Net.Logging.TestLogger.html#Sin_Net_Logging_TestLogger_Warn_System_String_
