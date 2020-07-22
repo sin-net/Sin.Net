@@ -1,4 +1,5 @@
-﻿using Sin.Net.Domain.Persistence;
+﻿using Sin.Net.Domain.Exeptions;
+using Sin.Net.Domain.Persistence;
 using Sin.Net.Domain.Persistence.Adapter;
 using Sin.Net.Domain.Persistence.Logging;
 using Sin.Net.Domain.Persistence.Settings;
@@ -14,7 +15,7 @@ namespace Sin.Net.Persistence.Exports
 {
     // TODO: english comments
 
-    class CsvExporter : IExportable
+    public class CsvExporter : ExporterBase
     {
 
         // -- fields
@@ -25,23 +26,29 @@ namespace Sin.Net.Persistence.Exports
 
         // -- constructors
 
-        public CsvExporter()
+        public CsvExporter() : base()
         {
 
         }
 
         // -- methods
 
-        public IExportable Setup(SettingsBase setting)
+        public override IExportable Setup(SettingsBase setting)
         {
-            if (setting is CsvSetting)
-            {
+            try
+			{
                 _setting = setting as CsvSetting;
             }
-            else
-            {
+            catch (Exception ex)
+			{
                 Log.Error("The csv export setting has the wrong type and was not accepted.");
-            }
+                base.HandleException(ex);
+			}
+            finally
+			{
+
+			}
+
             return this;
         }
 
@@ -51,7 +58,7 @@ namespace Sin.Net.Persistence.Exports
         /// <typeparam name="T"></typeparam>
         /// <param name="data"></param>
         /// <returns></returns>
-        public IExportable Build<T>(T data)
+        public override IExportable Build<T>(T data)
         {
             _exportData = data;
 
@@ -70,16 +77,28 @@ namespace Sin.Net.Persistence.Exports
         /// <param name="data"></param>
         /// <param name="adapter"></param>
         /// <returns></returns>
-        public IExportable Build<T>(T data, IAdaptable adapter)
+        public override IExportable Build<T>(T data, IAdaptable adapter)
         {
-            _exportData = data;
-            _exportTable = adapter.Adapt<T, DataTable>(data);
-            _exportTable.TableName = _setting.Name;
+            try
+			{
+                _exportData = data;
+                _exportTable = adapter.Adapt<T, DataTable>(data);
+                _exportTable.TableName = _setting.Name;
+            }
+            catch(Exception ex)
+			{
+                base.HandleException(ex);
+			}
+			finally
+			{
+
+			}
+           
             return this;
         }
 
 
-        public string Export()
+        public override string Export()
         {
             StringBuilder csv;
             string result = string.Empty;
@@ -124,7 +143,7 @@ namespace Sin.Net.Persistence.Exports
             }
             catch (Exception ex)
             {
-                Log.Error($"An error occured during csv export: {ex.Message}");
+                base.HandleException(ex);
             }
             finally
             {
@@ -136,6 +155,7 @@ namespace Sin.Net.Persistence.Exports
 
         // -- properties
 
-        public string Type => Constants.Csv.Key;
+        public override string Type => Constants.Csv.Key;
+
     }
 }

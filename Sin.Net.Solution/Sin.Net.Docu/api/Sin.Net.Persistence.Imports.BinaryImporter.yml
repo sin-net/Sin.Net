@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Imports/BinaryImporter.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: BinaryImporter
     path: ../Sin.Net.Persistence/Imports/BinaryImporter.cs
@@ -31,15 +31,19 @@ items:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.Imports
   syntax:
-    content: 'public class BinaryImporter : IImportable'
+    content: 'public class BinaryImporter : ImporterBase, IImportable'
     content.vb: >-
       Public Class BinaryImporter
+          Inherits ImporterBase
           Implements IImportable
   inheritance:
   - System.Object
+  - Sin.Net.Persistence.Imports.ImporterBase
   implements:
   - Sin.Net.Domain.Persistence.IImportable
   inheritedMembers:
+  - Sin.Net.Persistence.Imports.ImporterBase.HandleException(System.Exception,System.String)
+  - Sin.Net.Persistence.Imports.ImporterBase.Exception
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -72,7 +76,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Imports/BinaryImporter.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Persistence/Imports/BinaryImporter.cs
@@ -102,7 +106,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Imports/BinaryImporter.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Setup
     path: ../Sin.Net.Persistence/Imports/BinaryImporter.cs
@@ -111,20 +115,21 @@ items:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.Imports
   syntax:
-    content: public IImportable Setup(SettingsBase setting)
+    content: public override IImportable Setup(SettingsBase setting)
     parameters:
     - id: setting
       type: Sin.Net.Domain.Persistence.Settings.SettingsBase
     return:
       type: Sin.Net.Domain.Persistence.IImportable
-    content.vb: Public Function Setup(setting As SettingsBase) As IImportable
+    content.vb: Public Overrides Function Setup(setting As SettingsBase) As IImportable
+  overridden: Sin.Net.Persistence.Imports.ImporterBase.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
   overload: Sin.Net.Persistence.Imports.BinaryImporter.Setup*
-  implements:
-  - Sin.Net.Domain.Persistence.IImportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
   modifiers.csharp:
   - public
+  - override
   modifiers.vb:
   - Public
+  - Overrides
 - uid: Sin.Net.Persistence.Imports.BinaryImporter.Import
   commentId: M:Sin.Net.Persistence.Imports.BinaryImporter.Import
   id: Import
@@ -139,26 +144,27 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Imports/BinaryImporter.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Import
     path: ../Sin.Net.Persistence/Imports/BinaryImporter.cs
-    startLine: 42
+    startLine: 47
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.Imports
   syntax:
-    content: public IImportable Import()
+    content: public override IImportable Import()
     return:
       type: Sin.Net.Domain.Persistence.IImportable
-    content.vb: Public Function Import As IImportable
+    content.vb: Public Overrides Function Import As IImportable
+  overridden: Sin.Net.Persistence.Imports.ImporterBase.Import
   overload: Sin.Net.Persistence.Imports.BinaryImporter.Import*
-  implements:
-  - Sin.Net.Domain.Persistence.IImportable.Import
   modifiers.csharp:
   - public
+  - override
   modifiers.vb:
   - Public
+  - Overrides
 - uid: Sin.Net.Persistence.Imports.BinaryImporter.As``1
   commentId: M:Sin.Net.Persistence.Imports.BinaryImporter.As``1
   id: As``1
@@ -173,31 +179,32 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Imports/BinaryImporter.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: As
     path: ../Sin.Net.Persistence/Imports/BinaryImporter.cs
-    startLine: 69
+    startLine: 74
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.Imports
   syntax:
     content: >-
-      public T As<T>()
+      public override T As<T>()
           where T : new()
     typeParameters:
     - id: T
     return:
       type: '{T}'
-    content.vb: Public Function As(Of T As New) As T
+    content.vb: Public Overrides Function As(Of T As New) As T
+  overridden: Sin.Net.Persistence.Imports.ImporterBase.As``1
   overload: Sin.Net.Persistence.Imports.BinaryImporter.As*
-  implements:
-  - Sin.Net.Domain.Persistence.IImportable.As``1
   nameWithType.vb: BinaryImporter.As(Of T)()
   modifiers.csharp:
   - public
+  - override
   modifiers.vb:
   - Public
+  - Overrides
   fullName.vb: Sin.Net.Persistence.Imports.BinaryImporter.As(Of T)()
   name.vb: As(Of T)()
 - uid: Sin.Net.Persistence.Imports.BinaryImporter.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
@@ -214,17 +221,17 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Imports/BinaryImporter.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: As
     path: ../Sin.Net.Persistence/Imports/BinaryImporter.cs
-    startLine: 74
+    startLine: 88
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.Imports
   syntax:
     content: >-
-      public T As<T>(IAdaptable adapter)
+      public override T As<T>(IAdaptable adapter)
           where T : new()
     parameters:
     - id: adapter
@@ -233,15 +240,16 @@ items:
     - id: T
     return:
       type: '{T}'
-    content.vb: Public Function As(Of T As New)(adapter As IAdaptable) As T
+    content.vb: Public Overrides Function As(Of T As New)(adapter As IAdaptable) As T
+  overridden: Sin.Net.Persistence.Imports.ImporterBase.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
   overload: Sin.Net.Persistence.Imports.BinaryImporter.As*
-  implements:
-  - Sin.Net.Domain.Persistence.IImportable.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
   nameWithType.vb: BinaryImporter.As(Of T)(IAdaptable)
   modifiers.csharp:
   - public
+  - override
   modifiers.vb:
   - Public
+  - Overrides
   fullName.vb: Sin.Net.Persistence.Imports.BinaryImporter.As(Of T)(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
   name.vb: As(Of T)(IAdaptable)
 - uid: Sin.Net.Persistence.Imports.BinaryImporter.AsItIs
@@ -258,26 +266,27 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Imports/BinaryImporter.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: AsItIs
     path: ../Sin.Net.Persistence/Imports/BinaryImporter.cs
-    startLine: 79
+    startLine: 102
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.Imports
   syntax:
-    content: public object AsItIs()
+    content: public override object AsItIs()
     return:
       type: System.Object
-    content.vb: Public Function AsItIs As Object
+    content.vb: Public Overrides Function AsItIs As Object
+  overridden: Sin.Net.Persistence.Imports.ImporterBase.AsItIs
   overload: Sin.Net.Persistence.Imports.BinaryImporter.AsItIs*
-  implements:
-  - Sin.Net.Domain.Persistence.IImportable.AsItIs
   modifiers.csharp:
   - public
+  - override
   modifiers.vb:
   - Public
+  - Overrides
 - uid: Sin.Net.Persistence.Imports.BinaryImporter.Type
   commentId: P:Sin.Net.Persistence.Imports.BinaryImporter.Type
   id: Type
@@ -292,28 +301,29 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Imports/BinaryImporter.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Type
     path: ../Sin.Net.Persistence/Imports/BinaryImporter.cs
-    startLine: 86
+    startLine: 109
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.Imports
   syntax:
-    content: public string Type { get; }
+    content: public override string Type { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public ReadOnly Property Type As String
+    content.vb: Public Overrides ReadOnly Property Type As String
+  overridden: Sin.Net.Persistence.Imports.ImporterBase.Type
   overload: Sin.Net.Persistence.Imports.BinaryImporter.Type*
-  implements:
-  - Sin.Net.Domain.Persistence.IImportable.Type
   modifiers.csharp:
   - public
+  - override
   - get
   modifiers.vb:
   - Public
+  - Overrides
   - ReadOnly
 references:
 - uid: Sin.Net.Persistence.Imports
@@ -328,12 +338,79 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
+- uid: Sin.Net.Persistence.Imports.ImporterBase
+  commentId: T:Sin.Net.Persistence.Imports.ImporterBase
+  parent: Sin.Net.Persistence.Imports
+  name: ImporterBase
+  nameWithType: ImporterBase
+  fullName: Sin.Net.Persistence.Imports.ImporterBase
 - uid: Sin.Net.Domain.Persistence.IImportable
   commentId: T:Sin.Net.Domain.Persistence.IImportable
   parent: Sin.Net.Domain.Persistence
   name: IImportable
   nameWithType: IImportable
   fullName: Sin.Net.Domain.Persistence.IImportable
+- uid: Sin.Net.Persistence.Imports.ImporterBase.HandleException(System.Exception,System.String)
+  commentId: M:Sin.Net.Persistence.Imports.ImporterBase.HandleException(System.Exception,System.String)
+  parent: Sin.Net.Persistence.Imports.ImporterBase
+  isExternal: true
+  name: HandleException(Exception, String)
+  nameWithType: ImporterBase.HandleException(Exception, String)
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.HandleException(System.Exception, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Persistence.Imports.ImporterBase.HandleException(System.Exception,System.String)
+    name: HandleException
+    nameWithType: ImporterBase.HandleException
+    fullName: Sin.Net.Persistence.Imports.ImporterBase.HandleException
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Persistence.Imports.ImporterBase.HandleException(System.Exception,System.String)
+    name: HandleException
+    nameWithType: ImporterBase.HandleException
+    fullName: Sin.Net.Persistence.Imports.ImporterBase.HandleException
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Persistence.Imports.ImporterBase.Exception
+  commentId: P:Sin.Net.Persistence.Imports.ImporterBase.Exception
+  parent: Sin.Net.Persistence.Imports.ImporterBase
+  name: Exception
+  nameWithType: ImporterBase.Exception
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.Exception
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -1032,22 +1109,17 @@ references:
   name: BinaryImporter
   nameWithType: BinaryImporter.BinaryImporter
   fullName: Sin.Net.Persistence.Imports.BinaryImporter.BinaryImporter
-- uid: Sin.Net.Persistence.Imports.BinaryImporter.Setup*
-  commentId: Overload:Sin.Net.Persistence.Imports.BinaryImporter.Setup
-  name: Setup
-  nameWithType: BinaryImporter.Setup
-  fullName: Sin.Net.Persistence.Imports.BinaryImporter.Setup
-- uid: Sin.Net.Domain.Persistence.IImportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
-  commentId: M:Sin.Net.Domain.Persistence.IImportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
-  parent: Sin.Net.Domain.Persistence.IImportable
+- uid: Sin.Net.Persistence.Imports.ImporterBase.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  commentId: M:Sin.Net.Persistence.Imports.ImporterBase.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  parent: Sin.Net.Persistence.Imports.ImporterBase
   name: Setup(SettingsBase)
-  nameWithType: IImportable.Setup(SettingsBase)
-  fullName: Sin.Net.Domain.Persistence.IImportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  nameWithType: ImporterBase.Setup(SettingsBase)
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
   spec.csharp:
-  - uid: Sin.Net.Domain.Persistence.IImportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  - uid: Sin.Net.Persistence.Imports.ImporterBase.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
     name: Setup
-    nameWithType: IImportable.Setup
-    fullName: Sin.Net.Domain.Persistence.IImportable.Setup
+    nameWithType: ImporterBase.Setup
+    fullName: Sin.Net.Persistence.Imports.ImporterBase.Setup
   - name: (
     nameWithType: (
     fullName: (
@@ -1059,10 +1131,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Sin.Net.Domain.Persistence.IImportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  - uid: Sin.Net.Persistence.Imports.ImporterBase.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
     name: Setup
-    nameWithType: IImportable.Setup
-    fullName: Sin.Net.Domain.Persistence.IImportable.Setup
+    nameWithType: ImporterBase.Setup
+    fullName: Sin.Net.Persistence.Imports.ImporterBase.Setup
   - name: (
     nameWithType: (
     fullName: (
@@ -1073,6 +1145,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Sin.Net.Persistence.Imports.BinaryImporter.Setup*
+  commentId: Overload:Sin.Net.Persistence.Imports.BinaryImporter.Setup
+  name: Setup
+  nameWithType: BinaryImporter.Setup
+  fullName: Sin.Net.Persistence.Imports.BinaryImporter.Setup
 - uid: Sin.Net.Domain.Persistence.Settings.SettingsBase
   commentId: T:Sin.Net.Domain.Persistence.Settings.SettingsBase
   parent: Sin.Net.Domain.Persistence.Settings
@@ -1084,22 +1161,17 @@ references:
   name: Sin.Net.Domain.Persistence.Settings
   nameWithType: Sin.Net.Domain.Persistence.Settings
   fullName: Sin.Net.Domain.Persistence.Settings
-- uid: Sin.Net.Persistence.Imports.BinaryImporter.Import*
-  commentId: Overload:Sin.Net.Persistence.Imports.BinaryImporter.Import
-  name: Import
-  nameWithType: BinaryImporter.Import
-  fullName: Sin.Net.Persistence.Imports.BinaryImporter.Import
-- uid: Sin.Net.Domain.Persistence.IImportable.Import
-  commentId: M:Sin.Net.Domain.Persistence.IImportable.Import
-  parent: Sin.Net.Domain.Persistence.IImportable
+- uid: Sin.Net.Persistence.Imports.ImporterBase.Import
+  commentId: M:Sin.Net.Persistence.Imports.ImporterBase.Import
+  parent: Sin.Net.Persistence.Imports.ImporterBase
   name: Import()
-  nameWithType: IImportable.Import()
-  fullName: Sin.Net.Domain.Persistence.IImportable.Import()
+  nameWithType: ImporterBase.Import()
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.Import()
   spec.csharp:
-  - uid: Sin.Net.Domain.Persistence.IImportable.Import
+  - uid: Sin.Net.Persistence.Imports.ImporterBase.Import
     name: Import
-    nameWithType: IImportable.Import
-    fullName: Sin.Net.Domain.Persistence.IImportable.Import
+    nameWithType: ImporterBase.Import
+    fullName: Sin.Net.Persistence.Imports.ImporterBase.Import
   - name: (
     nameWithType: (
     fullName: (
@@ -1107,10 +1179,46 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Sin.Net.Domain.Persistence.IImportable.Import
+  - uid: Sin.Net.Persistence.Imports.ImporterBase.Import
     name: Import
-    nameWithType: IImportable.Import
-    fullName: Sin.Net.Domain.Persistence.IImportable.Import
+    nameWithType: ImporterBase.Import
+    fullName: Sin.Net.Persistence.Imports.ImporterBase.Import
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Persistence.Imports.BinaryImporter.Import*
+  commentId: Overload:Sin.Net.Persistence.Imports.BinaryImporter.Import
+  name: Import
+  nameWithType: BinaryImporter.Import
+  fullName: Sin.Net.Persistence.Imports.BinaryImporter.Import
+- uid: Sin.Net.Persistence.Imports.ImporterBase.As``1
+  commentId: M:Sin.Net.Persistence.Imports.ImporterBase.As``1
+  parent: Sin.Net.Persistence.Imports.ImporterBase
+  name: As<T>()
+  nameWithType: ImporterBase.As<T>()
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.As<T>()
+  nameWithType.vb: ImporterBase.As(Of T)()
+  fullName.vb: Sin.Net.Persistence.Imports.ImporterBase.As(Of T)()
+  name.vb: As(Of T)()
+  spec.csharp:
+  - uid: Sin.Net.Persistence.Imports.ImporterBase.As``1
+    name: As<T>
+    nameWithType: ImporterBase.As<T>
+    fullName: Sin.Net.Persistence.Imports.ImporterBase.As<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Persistence.Imports.ImporterBase.As``1
+    name: As(Of T)
+    nameWithType: ImporterBase.As(Of T)
+    fullName: Sin.Net.Persistence.Imports.ImporterBase.As(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -1122,37 +1230,6 @@ references:
   name: As
   nameWithType: BinaryImporter.As
   fullName: Sin.Net.Persistence.Imports.BinaryImporter.As
-- uid: Sin.Net.Domain.Persistence.IImportable.As``1
-  commentId: M:Sin.Net.Domain.Persistence.IImportable.As``1
-  parent: Sin.Net.Domain.Persistence.IImportable
-  name: As<T>()
-  nameWithType: IImportable.As<T>()
-  fullName: Sin.Net.Domain.Persistence.IImportable.As<T>()
-  nameWithType.vb: IImportable.As(Of T)()
-  fullName.vb: Sin.Net.Domain.Persistence.IImportable.As(Of T)()
-  name.vb: As(Of T)()
-  spec.csharp:
-  - uid: Sin.Net.Domain.Persistence.IImportable.As``1
-    name: As<T>
-    nameWithType: IImportable.As<T>
-    fullName: Sin.Net.Domain.Persistence.IImportable.As<T>
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Sin.Net.Domain.Persistence.IImportable.As``1
-    name: As(Of T)
-    nameWithType: IImportable.As(Of T)
-    fullName: Sin.Net.Domain.Persistence.IImportable.As(Of T)
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: '{T}'
   commentId: '!:T'
   definition: T
@@ -1163,20 +1240,20 @@ references:
   name: T
   nameWithType: T
   fullName: T
-- uid: Sin.Net.Domain.Persistence.IImportable.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
-  commentId: M:Sin.Net.Domain.Persistence.IImportable.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
-  parent: Sin.Net.Domain.Persistence.IImportable
+- uid: Sin.Net.Persistence.Imports.ImporterBase.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  commentId: M:Sin.Net.Persistence.Imports.ImporterBase.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  parent: Sin.Net.Persistence.Imports.ImporterBase
   name: As<T>(IAdaptable)
-  nameWithType: IImportable.As<T>(IAdaptable)
-  fullName: Sin.Net.Domain.Persistence.IImportable.As<T>(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
-  nameWithType.vb: IImportable.As(Of T)(IAdaptable)
-  fullName.vb: Sin.Net.Domain.Persistence.IImportable.As(Of T)(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  nameWithType: ImporterBase.As<T>(IAdaptable)
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.As<T>(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  nameWithType.vb: ImporterBase.As(Of T)(IAdaptable)
+  fullName.vb: Sin.Net.Persistence.Imports.ImporterBase.As(Of T)(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
   name.vb: As(Of T)(IAdaptable)
   spec.csharp:
-  - uid: Sin.Net.Domain.Persistence.IImportable.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  - uid: Sin.Net.Persistence.Imports.ImporterBase.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
     name: As<T>
-    nameWithType: IImportable.As<T>
-    fullName: Sin.Net.Domain.Persistence.IImportable.As<T>
+    nameWithType: ImporterBase.As<T>
+    fullName: Sin.Net.Persistence.Imports.ImporterBase.As<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -1188,10 +1265,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Sin.Net.Domain.Persistence.IImportable.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  - uid: Sin.Net.Persistence.Imports.ImporterBase.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
     name: As(Of T)
-    nameWithType: IImportable.As(Of T)
-    fullName: Sin.Net.Domain.Persistence.IImportable.As(Of T)
+    nameWithType: ImporterBase.As(Of T)
+    fullName: Sin.Net.Persistence.Imports.ImporterBase.As(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -1213,22 +1290,17 @@ references:
   name: Sin.Net.Domain.Persistence.Adapter
   nameWithType: Sin.Net.Domain.Persistence.Adapter
   fullName: Sin.Net.Domain.Persistence.Adapter
-- uid: Sin.Net.Persistence.Imports.BinaryImporter.AsItIs*
-  commentId: Overload:Sin.Net.Persistence.Imports.BinaryImporter.AsItIs
-  name: AsItIs
-  nameWithType: BinaryImporter.AsItIs
-  fullName: Sin.Net.Persistence.Imports.BinaryImporter.AsItIs
-- uid: Sin.Net.Domain.Persistence.IImportable.AsItIs
-  commentId: M:Sin.Net.Domain.Persistence.IImportable.AsItIs
-  parent: Sin.Net.Domain.Persistence.IImportable
+- uid: Sin.Net.Persistence.Imports.ImporterBase.AsItIs
+  commentId: M:Sin.Net.Persistence.Imports.ImporterBase.AsItIs
+  parent: Sin.Net.Persistence.Imports.ImporterBase
   name: AsItIs()
-  nameWithType: IImportable.AsItIs()
-  fullName: Sin.Net.Domain.Persistence.IImportable.AsItIs()
+  nameWithType: ImporterBase.AsItIs()
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.AsItIs()
   spec.csharp:
-  - uid: Sin.Net.Domain.Persistence.IImportable.AsItIs
+  - uid: Sin.Net.Persistence.Imports.ImporterBase.AsItIs
     name: AsItIs
-    nameWithType: IImportable.AsItIs
-    fullName: Sin.Net.Domain.Persistence.IImportable.AsItIs
+    nameWithType: ImporterBase.AsItIs
+    fullName: Sin.Net.Persistence.Imports.ImporterBase.AsItIs
   - name: (
     nameWithType: (
     fullName: (
@@ -1236,27 +1308,32 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Sin.Net.Domain.Persistence.IImportable.AsItIs
+  - uid: Sin.Net.Persistence.Imports.ImporterBase.AsItIs
     name: AsItIs
-    nameWithType: IImportable.AsItIs
-    fullName: Sin.Net.Domain.Persistence.IImportable.AsItIs
+    nameWithType: ImporterBase.AsItIs
+    fullName: Sin.Net.Persistence.Imports.ImporterBase.AsItIs
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
+- uid: Sin.Net.Persistence.Imports.BinaryImporter.AsItIs*
+  commentId: Overload:Sin.Net.Persistence.Imports.BinaryImporter.AsItIs
+  name: AsItIs
+  nameWithType: BinaryImporter.AsItIs
+  fullName: Sin.Net.Persistence.Imports.BinaryImporter.AsItIs
+- uid: Sin.Net.Persistence.Imports.ImporterBase.Type
+  commentId: P:Sin.Net.Persistence.Imports.ImporterBase.Type
+  parent: Sin.Net.Persistence.Imports.ImporterBase
+  name: Type
+  nameWithType: ImporterBase.Type
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.Type
 - uid: Sin.Net.Persistence.Imports.BinaryImporter.Type*
   commentId: Overload:Sin.Net.Persistence.Imports.BinaryImporter.Type
   name: Type
   nameWithType: BinaryImporter.Type
   fullName: Sin.Net.Persistence.Imports.BinaryImporter.Type
-- uid: Sin.Net.Domain.Persistence.IImportable.Type
-  commentId: P:Sin.Net.Domain.Persistence.IImportable.Type
-  parent: Sin.Net.Domain.Persistence.IImportable
-  name: Type
-  nameWithType: IImportable.Type
-  fullName: Sin.Net.Domain.Persistence.IImportable.Type
 - uid: System.String
   commentId: T:System.String
   parent: System

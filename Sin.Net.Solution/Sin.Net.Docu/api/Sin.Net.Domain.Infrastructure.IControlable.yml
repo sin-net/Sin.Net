@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/IControlable.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IControlable
     path: ../Sin.Net.Domain/Infrastructure/IControlable.cs
@@ -56,7 +56,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/IControlable.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Setup
     path: ../Sin.Net.Domain/Infrastructure/IControlable.cs
@@ -87,7 +87,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/IControlable.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Connect
     path: ../Sin.Net.Domain/Infrastructure/IControlable.cs
@@ -115,7 +115,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/IControlable.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Disconnect
     path: ../Sin.Net.Domain/Infrastructure/IControlable.cs
@@ -143,7 +143,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/IControlable.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IsConnected
     path: ../Sin.Net.Domain/Infrastructure/IControlable.cs
@@ -176,7 +176,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/IControlable.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Config
     path: ../Sin.Net.Domain/Infrastructure/IControlable.cs

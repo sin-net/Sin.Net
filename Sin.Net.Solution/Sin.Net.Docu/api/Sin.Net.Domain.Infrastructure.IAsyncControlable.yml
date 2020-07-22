@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/IAsyncControlable.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IAsyncControlable
     path: ../Sin.Net.Domain/Infrastructure/IAsyncControlable.cs
@@ -61,7 +61,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/IAsyncControlable.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ConnectAsync
     path: ../Sin.Net.Domain/Infrastructure/IAsyncControlable.cs
@@ -89,7 +89,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/IAsyncControlable.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: DisconnectAsync
     path: ../Sin.Net.Domain/Infrastructure/IAsyncControlable.cs

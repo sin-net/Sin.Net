@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/TypedSerializationBinder.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: TypedSerializationBinder
     path: ../Sin.Net.Persistence/IO/Json/TypedSerializationBinder.cs
@@ -70,7 +70,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/TypedSerializationBinder.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Persistence/IO/Json/TypedSerializationBinder.cs
@@ -102,7 +102,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/TypedSerializationBinder.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Persistence/IO/Json/TypedSerializationBinder.cs
@@ -141,7 +141,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/TypedSerializationBinder.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: BindToType
     path: ../Sin.Net.Persistence/IO/Json/TypedSerializationBinder.cs
@@ -185,7 +185,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/TypedSerializationBinder.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: BindToName
     path: ../Sin.Net.Persistence/IO/Json/TypedSerializationBinder.cs
@@ -232,7 +232,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/IO/Json/TypedSerializationBinder.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: KnownTypes
     path: ../Sin.Net.Persistence/IO/Json/TypedSerializationBinder.cs

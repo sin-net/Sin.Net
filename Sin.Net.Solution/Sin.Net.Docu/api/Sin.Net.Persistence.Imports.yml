@@ -5,6 +5,9 @@ items:
   id: Sin.Net.Persistence.Imports
   children:
   - Sin.Net.Persistence.Imports.BinaryImporter
+  - Sin.Net.Persistence.Imports.CsvImporter
+  - Sin.Net.Persistence.Imports.ImporterBase
+  - Sin.Net.Persistence.Imports.JsonImporter
   langs:
   - csharp
   - vb
@@ -20,3 +23,24 @@ references:
   name: BinaryImporter
   nameWithType: BinaryImporter
   fullName: Sin.Net.Persistence.Imports.BinaryImporter
+- uid: Sin.Net.Persistence.Imports.CsvImporter
+  commentId: T:Sin.Net.Persistence.Imports.CsvImporter
+  name: CsvImporter
+  nameWithType: CsvImporter
+  fullName: Sin.Net.Persistence.Imports.CsvImporter
+- uid: Sin.Net.Persistence.Imports.ImporterBase
+  commentId: T:Sin.Net.Persistence.Imports.ImporterBase
+  parent: Sin.Net.Persistence.Imports
+  name: ImporterBase
+  nameWithType: ImporterBase
+  fullName: Sin.Net.Persistence.Imports.ImporterBase
+- uid: Sin.Net.Persistence.Imports.JsonImporter
+  commentId: T:Sin.Net.Persistence.Imports.JsonImporter
+  name: JsonImporter
+  nameWithType: JsonImporter
+  fullName: Sin.Net.Persistence.Imports.JsonImporter
+- uid: Sin.Net.Persistence.Imports
+  commentId: N:Sin.Net.Persistence.Imports
+  name: Sin.Net.Persistence.Imports
+  nameWithType: Sin.Net.Persistence.Imports
+  fullName: Sin.Net.Persistence.Imports

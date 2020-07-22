@@ -88,6 +88,49 @@ references:
   commentId: F:Sin.Net.Domain.Enumerations.SecurityLevels.User
   fullName: Sin.Net.Domain.Enumerations.SecurityLevels.User
   nameWithType: SecurityLevels.User
+- uid: Sin.Net.Domain.Exeptions
+  name: Sin.Net.Domain.Exeptions
+  href: api/Sin.Net.Domain.Exeptions.html
+  commentId: N:Sin.Net.Domain.Exeptions
+  fullName: Sin.Net.Domain.Exeptions
+  nameWithType: Sin.Net.Domain.Exeptions
+- uid: Sin.Net.Domain.Exeptions.PersistenceException
+  name: PersistenceException
+  href: api/Sin.Net.Domain.Exeptions.PersistenceException.html
+  commentId: T:Sin.Net.Domain.Exeptions.PersistenceException
+  fullName: Sin.Net.Domain.Exeptions.PersistenceException
+  nameWithType: PersistenceException
+- uid: Sin.Net.Domain.Exeptions.PersistenceException.#ctor
+  name: PersistenceException()
+  href: api/Sin.Net.Domain.Exeptions.PersistenceException.html#Sin_Net_Domain_Exeptions_PersistenceException__ctor
+  commentId: M:Sin.Net.Domain.Exeptions.PersistenceException.#ctor
+  fullName: Sin.Net.Domain.Exeptions.PersistenceException.PersistenceException()
+  nameWithType: PersistenceException.PersistenceException()
+- uid: Sin.Net.Domain.Exeptions.PersistenceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: PersistenceException(SerializationInfo, StreamingContext)
+  href: api/Sin.Net.Domain.Exeptions.PersistenceException.html#Sin_Net_Domain_Exeptions_PersistenceException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Sin.Net.Domain.Exeptions.PersistenceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: Sin.Net.Domain.Exeptions.PersistenceException.PersistenceException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: PersistenceException.PersistenceException(SerializationInfo, StreamingContext)
+- uid: Sin.Net.Domain.Exeptions.PersistenceException.#ctor(System.String)
+  name: PersistenceException(String)
+  href: api/Sin.Net.Domain.Exeptions.PersistenceException.html#Sin_Net_Domain_Exeptions_PersistenceException__ctor_System_String_
+  commentId: M:Sin.Net.Domain.Exeptions.PersistenceException.#ctor(System.String)
+  fullName: Sin.Net.Domain.Exeptions.PersistenceException.PersistenceException(System.String)
+  nameWithType: PersistenceException.PersistenceException(String)
+- uid: Sin.Net.Domain.Exeptions.PersistenceException.#ctor(System.String,System.Exception)
+  name: PersistenceException(String, Exception)
+  href: api/Sin.Net.Domain.Exeptions.PersistenceException.html#Sin_Net_Domain_Exeptions_PersistenceException__ctor_System_String_System_Exception_
+  commentId: M:Sin.Net.Domain.Exeptions.PersistenceException.#ctor(System.String,System.Exception)
+  fullName: Sin.Net.Domain.Exeptions.PersistenceException.PersistenceException(System.String, System.Exception)
+  nameWithType: PersistenceException.PersistenceException(String, Exception)
+- uid: Sin.Net.Domain.Exeptions.PersistenceException.#ctor*
+  name: PersistenceException
+  href: api/Sin.Net.Domain.Exeptions.PersistenceException.html#Sin_Net_Domain_Exeptions_PersistenceException__ctor_
+  commentId: Overload:Sin.Net.Domain.Exeptions.PersistenceException.#ctor
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Exeptions.PersistenceException.PersistenceException
+  nameWithType: PersistenceException.PersistenceException
 - uid: Sin.Net.Domain.Infrastructure
   name: Sin.Net.Domain.Infrastructure
   href: api/Sin.Net.Domain.Infrastructure.html
@@ -870,6 +913,19 @@ references:
   fullName.vb: Sin.Net.Domain.Persistence.IExportable.Build(Of T)(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
   nameWithType: IExportable.Build<T>(T, IAdaptable)
   nameWithType.vb: IExportable.Build(Of T)(T, IAdaptable)
+- uid: Sin.Net.Domain.Persistence.IExportable.Exception
+  name: Exception
+  href: api/Sin.Net.Domain.Persistence.IExportable.html#Sin_Net_Domain_Persistence_IExportable_Exception
+  commentId: P:Sin.Net.Domain.Persistence.IExportable.Exception
+  fullName: Sin.Net.Domain.Persistence.IExportable.Exception
+  nameWithType: IExportable.Exception
+- uid: Sin.Net.Domain.Persistence.IExportable.Exception*
+  name: Exception
+  href: api/Sin.Net.Domain.Persistence.IExportable.html#Sin_Net_Domain_Persistence_IExportable_Exception_
+  commentId: Overload:Sin.Net.Domain.Persistence.IExportable.Exception
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Persistence.IExportable.Exception
+  nameWithType: IExportable.Exception
 - uid: Sin.Net.Domain.Persistence.IExportable.Export
   name: Export()
   href: api/Sin.Net.Domain.Persistence.IExportable.html#Sin_Net_Domain_Persistence_IExportable_Export
@@ -953,6 +1009,19 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Domain.Persistence.IImportable.AsItIs
   nameWithType: IImportable.AsItIs
+- uid: Sin.Net.Domain.Persistence.IImportable.Exception
+  name: Exception
+  href: api/Sin.Net.Domain.Persistence.IImportable.html#Sin_Net_Domain_Persistence_IImportable_Exception
+  commentId: P:Sin.Net.Domain.Persistence.IImportable.Exception
+  fullName: Sin.Net.Domain.Persistence.IImportable.Exception
+  nameWithType: IImportable.Exception
+- uid: Sin.Net.Domain.Persistence.IImportable.Exception*
+  name: Exception
+  href: api/Sin.Net.Domain.Persistence.IImportable.html#Sin_Net_Domain_Persistence_IImportable_Exception_
+  commentId: Overload:Sin.Net.Domain.Persistence.IImportable.Exception
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Persistence.IImportable.Exception
+  nameWithType: IImportable.Exception
 - uid: Sin.Net.Domain.Persistence.IImportable.Import
   name: Import()
   href: api/Sin.Net.Domain.Persistence.IImportable.html#Sin_Net_Domain_Persistence_IImportable_Import
@@ -3291,6 +3360,287 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Persistence.Exports.BinaryExporter.Type
   nameWithType: BinaryExporter.Type
+- uid: Sin.Net.Persistence.Exports.CsvExporter
+  name: CsvExporter
+  href: api/Sin.Net.Persistence.Exports.CsvExporter.html
+  commentId: T:Sin.Net.Persistence.Exports.CsvExporter
+  fullName: Sin.Net.Persistence.Exports.CsvExporter
+  nameWithType: CsvExporter
+- uid: Sin.Net.Persistence.Exports.CsvExporter.#ctor
+  name: CsvExporter()
+  href: api/Sin.Net.Persistence.Exports.CsvExporter.html#Sin_Net_Persistence_Exports_CsvExporter__ctor
+  commentId: M:Sin.Net.Persistence.Exports.CsvExporter.#ctor
+  fullName: Sin.Net.Persistence.Exports.CsvExporter.CsvExporter()
+  nameWithType: CsvExporter.CsvExporter()
+- uid: Sin.Net.Persistence.Exports.CsvExporter.#ctor*
+  name: CsvExporter
+  href: api/Sin.Net.Persistence.Exports.CsvExporter.html#Sin_Net_Persistence_Exports_CsvExporter__ctor_
+  commentId: Overload:Sin.Net.Persistence.Exports.CsvExporter.#ctor
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Exports.CsvExporter.CsvExporter
+  nameWithType: CsvExporter.CsvExporter
+- uid: Sin.Net.Persistence.Exports.CsvExporter.Build*
+  name: Build
+  href: api/Sin.Net.Persistence.Exports.CsvExporter.html#Sin_Net_Persistence_Exports_CsvExporter_Build_
+  commentId: Overload:Sin.Net.Persistence.Exports.CsvExporter.Build
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Exports.CsvExporter.Build
+  nameWithType: CsvExporter.Build
+- uid: Sin.Net.Persistence.Exports.CsvExporter.Build``1(``0)
+  name: Build<T>(T)
+  href: api/Sin.Net.Persistence.Exports.CsvExporter.html#Sin_Net_Persistence_Exports_CsvExporter_Build__1___0_
+  commentId: M:Sin.Net.Persistence.Exports.CsvExporter.Build``1(``0)
+  name.vb: Build(Of T)(T)
+  fullName: Sin.Net.Persistence.Exports.CsvExporter.Build<T>(T)
+  fullName.vb: Sin.Net.Persistence.Exports.CsvExporter.Build(Of T)(T)
+  nameWithType: CsvExporter.Build<T>(T)
+  nameWithType.vb: CsvExporter.Build(Of T)(T)
+- uid: Sin.Net.Persistence.Exports.CsvExporter.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  name: Build<T>(T, IAdaptable)
+  href: api/Sin.Net.Persistence.Exports.CsvExporter.html#Sin_Net_Persistence_Exports_CsvExporter_Build__1___0_Sin_Net_Domain_Persistence_Adapter_IAdaptable_
+  commentId: M:Sin.Net.Persistence.Exports.CsvExporter.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  name.vb: Build(Of T)(T, IAdaptable)
+  fullName: Sin.Net.Persistence.Exports.CsvExporter.Build<T>(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  fullName.vb: Sin.Net.Persistence.Exports.CsvExporter.Build(Of T)(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  nameWithType: CsvExporter.Build<T>(T, IAdaptable)
+  nameWithType.vb: CsvExporter.Build(Of T)(T, IAdaptable)
+- uid: Sin.Net.Persistence.Exports.CsvExporter.Export
+  name: Export()
+  href: api/Sin.Net.Persistence.Exports.CsvExporter.html#Sin_Net_Persistence_Exports_CsvExporter_Export
+  commentId: M:Sin.Net.Persistence.Exports.CsvExporter.Export
+  fullName: Sin.Net.Persistence.Exports.CsvExporter.Export()
+  nameWithType: CsvExporter.Export()
+- uid: Sin.Net.Persistence.Exports.CsvExporter.Export*
+  name: Export
+  href: api/Sin.Net.Persistence.Exports.CsvExporter.html#Sin_Net_Persistence_Exports_CsvExporter_Export_
+  commentId: Overload:Sin.Net.Persistence.Exports.CsvExporter.Export
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Exports.CsvExporter.Export
+  nameWithType: CsvExporter.Export
+- uid: Sin.Net.Persistence.Exports.CsvExporter.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  name: Setup(SettingsBase)
+  href: api/Sin.Net.Persistence.Exports.CsvExporter.html#Sin_Net_Persistence_Exports_CsvExporter_Setup_Sin_Net_Domain_Persistence_Settings_SettingsBase_
+  commentId: M:Sin.Net.Persistence.Exports.CsvExporter.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  fullName: Sin.Net.Persistence.Exports.CsvExporter.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  nameWithType: CsvExporter.Setup(SettingsBase)
+- uid: Sin.Net.Persistence.Exports.CsvExporter.Setup*
+  name: Setup
+  href: api/Sin.Net.Persistence.Exports.CsvExporter.html#Sin_Net_Persistence_Exports_CsvExporter_Setup_
+  commentId: Overload:Sin.Net.Persistence.Exports.CsvExporter.Setup
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Exports.CsvExporter.Setup
+  nameWithType: CsvExporter.Setup
+- uid: Sin.Net.Persistence.Exports.CsvExporter.Type
+  name: Type
+  href: api/Sin.Net.Persistence.Exports.CsvExporter.html#Sin_Net_Persistence_Exports_CsvExporter_Type
+  commentId: P:Sin.Net.Persistence.Exports.CsvExporter.Type
+  fullName: Sin.Net.Persistence.Exports.CsvExporter.Type
+  nameWithType: CsvExporter.Type
+- uid: Sin.Net.Persistence.Exports.CsvExporter.Type*
+  name: Type
+  href: api/Sin.Net.Persistence.Exports.CsvExporter.html#Sin_Net_Persistence_Exports_CsvExporter_Type_
+  commentId: Overload:Sin.Net.Persistence.Exports.CsvExporter.Type
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Exports.CsvExporter.Type
+  nameWithType: CsvExporter.Type
+- uid: Sin.Net.Persistence.Exports.ExporterBase
+  name: ExporterBase
+  href: api/Sin.Net.Persistence.Exports.ExporterBase.html
+  commentId: T:Sin.Net.Persistence.Exports.ExporterBase
+  fullName: Sin.Net.Persistence.Exports.ExporterBase
+  nameWithType: ExporterBase
+- uid: Sin.Net.Persistence.Exports.ExporterBase.#ctor
+  name: ExporterBase()
+  href: api/Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase__ctor
+  commentId: M:Sin.Net.Persistence.Exports.ExporterBase.#ctor
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.ExporterBase()
+  nameWithType: ExporterBase.ExporterBase()
+- uid: Sin.Net.Persistence.Exports.ExporterBase.#ctor*
+  name: ExporterBase
+  href: api/Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase__ctor_
+  commentId: Overload:Sin.Net.Persistence.Exports.ExporterBase.#ctor
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.ExporterBase
+  nameWithType: ExporterBase.ExporterBase
+- uid: Sin.Net.Persistence.Exports.ExporterBase._exceptions
+  name: _exceptions
+  href: api/Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase__exceptions
+  commentId: F:Sin.Net.Persistence.Exports.ExporterBase._exceptions
+  fullName: Sin.Net.Persistence.Exports.ExporterBase._exceptions
+  nameWithType: ExporterBase._exceptions
+- uid: Sin.Net.Persistence.Exports.ExporterBase.Build*
+  name: Build
+  href: api/Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase_Build_
+  commentId: Overload:Sin.Net.Persistence.Exports.ExporterBase.Build
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.Build
+  nameWithType: ExporterBase.Build
+- uid: Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0)
+  name: Build<T>(T)
+  href: api/Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase_Build__1___0_
+  commentId: M:Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0)
+  name.vb: Build(Of T)(T)
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.Build<T>(T)
+  fullName.vb: Sin.Net.Persistence.Exports.ExporterBase.Build(Of T)(T)
+  nameWithType: ExporterBase.Build<T>(T)
+  nameWithType.vb: ExporterBase.Build(Of T)(T)
+- uid: Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  name: Build<T>(T, IAdaptable)
+  href: api/Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase_Build__1___0_Sin_Net_Domain_Persistence_Adapter_IAdaptable_
+  commentId: M:Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  name.vb: Build(Of T)(T, IAdaptable)
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.Build<T>(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  fullName.vb: Sin.Net.Persistence.Exports.ExporterBase.Build(Of T)(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  nameWithType: ExporterBase.Build<T>(T, IAdaptable)
+  nameWithType.vb: ExporterBase.Build(Of T)(T, IAdaptable)
+- uid: Sin.Net.Persistence.Exports.ExporterBase.Exception
+  name: Exception
+  href: api/Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase_Exception
+  commentId: P:Sin.Net.Persistence.Exports.ExporterBase.Exception
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.Exception
+  nameWithType: ExporterBase.Exception
+- uid: Sin.Net.Persistence.Exports.ExporterBase.Exception*
+  name: Exception
+  href: api/Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase_Exception_
+  commentId: Overload:Sin.Net.Persistence.Exports.ExporterBase.Exception
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.Exception
+  nameWithType: ExporterBase.Exception
+- uid: Sin.Net.Persistence.Exports.ExporterBase.Export
+  name: Export()
+  href: api/Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase_Export
+  commentId: M:Sin.Net.Persistence.Exports.ExporterBase.Export
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.Export()
+  nameWithType: ExporterBase.Export()
+- uid: Sin.Net.Persistence.Exports.ExporterBase.Export*
+  name: Export
+  href: api/Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase_Export_
+  commentId: Overload:Sin.Net.Persistence.Exports.ExporterBase.Export
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.Export
+  nameWithType: ExporterBase.Export
+- uid: Sin.Net.Persistence.Exports.ExporterBase.HandleException(System.Exception,System.String)
+  name: HandleException(Exception, String)
+  href: api/Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase_HandleException_System_Exception_System_String_
+  commentId: M:Sin.Net.Persistence.Exports.ExporterBase.HandleException(System.Exception,System.String)
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.HandleException(System.Exception, System.String)
+  nameWithType: ExporterBase.HandleException(Exception, String)
+- uid: Sin.Net.Persistence.Exports.ExporterBase.HandleException*
+  name: HandleException
+  href: api/Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase_HandleException_
+  commentId: Overload:Sin.Net.Persistence.Exports.ExporterBase.HandleException
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.HandleException
+  nameWithType: ExporterBase.HandleException
+- uid: Sin.Net.Persistence.Exports.ExporterBase.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  name: Setup(SettingsBase)
+  href: api/Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase_Setup_Sin_Net_Domain_Persistence_Settings_SettingsBase_
+  commentId: M:Sin.Net.Persistence.Exports.ExporterBase.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  nameWithType: ExporterBase.Setup(SettingsBase)
+- uid: Sin.Net.Persistence.Exports.ExporterBase.Setup*
+  name: Setup
+  href: api/Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase_Setup_
+  commentId: Overload:Sin.Net.Persistence.Exports.ExporterBase.Setup
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.Setup
+  nameWithType: ExporterBase.Setup
+- uid: Sin.Net.Persistence.Exports.ExporterBase.Type
+  name: Type
+  href: api/Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase_Type
+  commentId: P:Sin.Net.Persistence.Exports.ExporterBase.Type
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.Type
+  nameWithType: ExporterBase.Type
+- uid: Sin.Net.Persistence.Exports.ExporterBase.Type*
+  name: Type
+  href: api/Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase_Type_
+  commentId: Overload:Sin.Net.Persistence.Exports.ExporterBase.Type
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.Type
+  nameWithType: ExporterBase.Type
+- uid: Sin.Net.Persistence.Exports.JsonExporter
+  name: JsonExporter
+  href: api/Sin.Net.Persistence.Exports.JsonExporter.html
+  commentId: T:Sin.Net.Persistence.Exports.JsonExporter
+  fullName: Sin.Net.Persistence.Exports.JsonExporter
+  nameWithType: JsonExporter
+- uid: Sin.Net.Persistence.Exports.JsonExporter.#ctor
+  name: JsonExporter()
+  href: api/Sin.Net.Persistence.Exports.JsonExporter.html#Sin_Net_Persistence_Exports_JsonExporter__ctor
+  commentId: M:Sin.Net.Persistence.Exports.JsonExporter.#ctor
+  fullName: Sin.Net.Persistence.Exports.JsonExporter.JsonExporter()
+  nameWithType: JsonExporter.JsonExporter()
+- uid: Sin.Net.Persistence.Exports.JsonExporter.#ctor*
+  name: JsonExporter
+  href: api/Sin.Net.Persistence.Exports.JsonExporter.html#Sin_Net_Persistence_Exports_JsonExporter__ctor_
+  commentId: Overload:Sin.Net.Persistence.Exports.JsonExporter.#ctor
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Exports.JsonExporter.JsonExporter
+  nameWithType: JsonExporter.JsonExporter
+- uid: Sin.Net.Persistence.Exports.JsonExporter.Build*
+  name: Build
+  href: api/Sin.Net.Persistence.Exports.JsonExporter.html#Sin_Net_Persistence_Exports_JsonExporter_Build_
+  commentId: Overload:Sin.Net.Persistence.Exports.JsonExporter.Build
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Exports.JsonExporter.Build
+  nameWithType: JsonExporter.Build
+- uid: Sin.Net.Persistence.Exports.JsonExporter.Build``1(``0)
+  name: Build<T>(T)
+  href: api/Sin.Net.Persistence.Exports.JsonExporter.html#Sin_Net_Persistence_Exports_JsonExporter_Build__1___0_
+  commentId: M:Sin.Net.Persistence.Exports.JsonExporter.Build``1(``0)
+  name.vb: Build(Of T)(T)
+  fullName: Sin.Net.Persistence.Exports.JsonExporter.Build<T>(T)
+  fullName.vb: Sin.Net.Persistence.Exports.JsonExporter.Build(Of T)(T)
+  nameWithType: JsonExporter.Build<T>(T)
+  nameWithType.vb: JsonExporter.Build(Of T)(T)
+- uid: Sin.Net.Persistence.Exports.JsonExporter.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  name: Build<T>(T, IAdaptable)
+  href: api/Sin.Net.Persistence.Exports.JsonExporter.html#Sin_Net_Persistence_Exports_JsonExporter_Build__1___0_Sin_Net_Domain_Persistence_Adapter_IAdaptable_
+  commentId: M:Sin.Net.Persistence.Exports.JsonExporter.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  name.vb: Build(Of T)(T, IAdaptable)
+  fullName: Sin.Net.Persistence.Exports.JsonExporter.Build<T>(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  fullName.vb: Sin.Net.Persistence.Exports.JsonExporter.Build(Of T)(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  nameWithType: JsonExporter.Build<T>(T, IAdaptable)
+  nameWithType.vb: JsonExporter.Build(Of T)(T, IAdaptable)
+- uid: Sin.Net.Persistence.Exports.JsonExporter.Export
+  name: Export()
+  href: api/Sin.Net.Persistence.Exports.JsonExporter.html#Sin_Net_Persistence_Exports_JsonExporter_Export
+  commentId: M:Sin.Net.Persistence.Exports.JsonExporter.Export
+  fullName: Sin.Net.Persistence.Exports.JsonExporter.Export()
+  nameWithType: JsonExporter.Export()
+- uid: Sin.Net.Persistence.Exports.JsonExporter.Export*
+  name: Export
+  href: api/Sin.Net.Persistence.Exports.JsonExporter.html#Sin_Net_Persistence_Exports_JsonExporter_Export_
+  commentId: Overload:Sin.Net.Persistence.Exports.JsonExporter.Export
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Exports.JsonExporter.Export
+  nameWithType: JsonExporter.Export
+- uid: Sin.Net.Persistence.Exports.JsonExporter.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  name: Setup(SettingsBase)
+  href: api/Sin.Net.Persistence.Exports.JsonExporter.html#Sin_Net_Persistence_Exports_JsonExporter_Setup_Sin_Net_Domain_Persistence_Settings_SettingsBase_
+  commentId: M:Sin.Net.Persistence.Exports.JsonExporter.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  fullName: Sin.Net.Persistence.Exports.JsonExporter.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  nameWithType: JsonExporter.Setup(SettingsBase)
+- uid: Sin.Net.Persistence.Exports.JsonExporter.Setup*
+  name: Setup
+  href: api/Sin.Net.Persistence.Exports.JsonExporter.html#Sin_Net_Persistence_Exports_JsonExporter_Setup_
+  commentId: Overload:Sin.Net.Persistence.Exports.JsonExporter.Setup
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Exports.JsonExporter.Setup
+  nameWithType: JsonExporter.Setup
+- uid: Sin.Net.Persistence.Exports.JsonExporter.Type
+  name: Type
+  href: api/Sin.Net.Persistence.Exports.JsonExporter.html#Sin_Net_Persistence_Exports_JsonExporter_Type
+  commentId: P:Sin.Net.Persistence.Exports.JsonExporter.Type
+  fullName: Sin.Net.Persistence.Exports.JsonExporter.Type
+  nameWithType: JsonExporter.Type
+- uid: Sin.Net.Persistence.Exports.JsonExporter.Type*
+  name: Type
+  href: api/Sin.Net.Persistence.Exports.JsonExporter.html#Sin_Net_Persistence_Exports_JsonExporter_Type_
+  commentId: Overload:Sin.Net.Persistence.Exports.JsonExporter.Type
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Exports.JsonExporter.Type
+  nameWithType: JsonExporter.Type
 - uid: Sin.Net.Persistence.Imports
   name: Sin.Net.Persistence.Imports
   href: api/Sin.Net.Persistence.Imports.html
@@ -3393,6 +3743,320 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Persistence.Imports.BinaryImporter.Type
   nameWithType: BinaryImporter.Type
+- uid: Sin.Net.Persistence.Imports.CsvImporter
+  name: CsvImporter
+  href: api/Sin.Net.Persistence.Imports.CsvImporter.html
+  commentId: T:Sin.Net.Persistence.Imports.CsvImporter
+  fullName: Sin.Net.Persistence.Imports.CsvImporter
+  nameWithType: CsvImporter
+- uid: Sin.Net.Persistence.Imports.CsvImporter.#ctor
+  name: CsvImporter()
+  href: api/Sin.Net.Persistence.Imports.CsvImporter.html#Sin_Net_Persistence_Imports_CsvImporter__ctor
+  commentId: M:Sin.Net.Persistence.Imports.CsvImporter.#ctor
+  fullName: Sin.Net.Persistence.Imports.CsvImporter.CsvImporter()
+  nameWithType: CsvImporter.CsvImporter()
+- uid: Sin.Net.Persistence.Imports.CsvImporter.#ctor*
+  name: CsvImporter
+  href: api/Sin.Net.Persistence.Imports.CsvImporter.html#Sin_Net_Persistence_Imports_CsvImporter__ctor_
+  commentId: Overload:Sin.Net.Persistence.Imports.CsvImporter.#ctor
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.CsvImporter.CsvImporter
+  nameWithType: CsvImporter.CsvImporter
+- uid: Sin.Net.Persistence.Imports.CsvImporter.As*
+  name: As
+  href: api/Sin.Net.Persistence.Imports.CsvImporter.html#Sin_Net_Persistence_Imports_CsvImporter_As_
+  commentId: Overload:Sin.Net.Persistence.Imports.CsvImporter.As
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.CsvImporter.As
+  nameWithType: CsvImporter.As
+- uid: Sin.Net.Persistence.Imports.CsvImporter.As``1
+  name: As<T>()
+  href: api/Sin.Net.Persistence.Imports.CsvImporter.html#Sin_Net_Persistence_Imports_CsvImporter_As__1
+  commentId: M:Sin.Net.Persistence.Imports.CsvImporter.As``1
+  name.vb: As(Of T)()
+  fullName: Sin.Net.Persistence.Imports.CsvImporter.As<T>()
+  fullName.vb: Sin.Net.Persistence.Imports.CsvImporter.As(Of T)()
+  nameWithType: CsvImporter.As<T>()
+  nameWithType.vb: CsvImporter.As(Of T)()
+- uid: Sin.Net.Persistence.Imports.CsvImporter.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  name: As<T>(IAdaptable)
+  href: api/Sin.Net.Persistence.Imports.CsvImporter.html#Sin_Net_Persistence_Imports_CsvImporter_As__1_Sin_Net_Domain_Persistence_Adapter_IAdaptable_
+  commentId: M:Sin.Net.Persistence.Imports.CsvImporter.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  name.vb: As(Of T)(IAdaptable)
+  fullName: Sin.Net.Persistence.Imports.CsvImporter.As<T>(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  fullName.vb: Sin.Net.Persistence.Imports.CsvImporter.As(Of T)(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  nameWithType: CsvImporter.As<T>(IAdaptable)
+  nameWithType.vb: CsvImporter.As(Of T)(IAdaptable)
+- uid: Sin.Net.Persistence.Imports.CsvImporter.AsItIs
+  name: AsItIs()
+  href: api/Sin.Net.Persistence.Imports.CsvImporter.html#Sin_Net_Persistence_Imports_CsvImporter_AsItIs
+  commentId: M:Sin.Net.Persistence.Imports.CsvImporter.AsItIs
+  fullName: Sin.Net.Persistence.Imports.CsvImporter.AsItIs()
+  nameWithType: CsvImporter.AsItIs()
+- uid: Sin.Net.Persistence.Imports.CsvImporter.AsItIs*
+  name: AsItIs
+  href: api/Sin.Net.Persistence.Imports.CsvImporter.html#Sin_Net_Persistence_Imports_CsvImporter_AsItIs_
+  commentId: Overload:Sin.Net.Persistence.Imports.CsvImporter.AsItIs
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.CsvImporter.AsItIs
+  nameWithType: CsvImporter.AsItIs
+- uid: Sin.Net.Persistence.Imports.CsvImporter.Import
+  name: Import()
+  href: api/Sin.Net.Persistence.Imports.CsvImporter.html#Sin_Net_Persistence_Imports_CsvImporter_Import
+  commentId: M:Sin.Net.Persistence.Imports.CsvImporter.Import
+  fullName: Sin.Net.Persistence.Imports.CsvImporter.Import()
+  nameWithType: CsvImporter.Import()
+- uid: Sin.Net.Persistence.Imports.CsvImporter.Import*
+  name: Import
+  href: api/Sin.Net.Persistence.Imports.CsvImporter.html#Sin_Net_Persistence_Imports_CsvImporter_Import_
+  commentId: Overload:Sin.Net.Persistence.Imports.CsvImporter.Import
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.CsvImporter.Import
+  nameWithType: CsvImporter.Import
+- uid: Sin.Net.Persistence.Imports.CsvImporter.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  name: Setup(SettingsBase)
+  href: api/Sin.Net.Persistence.Imports.CsvImporter.html#Sin_Net_Persistence_Imports_CsvImporter_Setup_Sin_Net_Domain_Persistence_Settings_SettingsBase_
+  commentId: M:Sin.Net.Persistence.Imports.CsvImporter.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  fullName: Sin.Net.Persistence.Imports.CsvImporter.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  nameWithType: CsvImporter.Setup(SettingsBase)
+- uid: Sin.Net.Persistence.Imports.CsvImporter.Setup*
+  name: Setup
+  href: api/Sin.Net.Persistence.Imports.CsvImporter.html#Sin_Net_Persistence_Imports_CsvImporter_Setup_
+  commentId: Overload:Sin.Net.Persistence.Imports.CsvImporter.Setup
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.CsvImporter.Setup
+  nameWithType: CsvImporter.Setup
+- uid: Sin.Net.Persistence.Imports.CsvImporter.Type
+  name: Type
+  href: api/Sin.Net.Persistence.Imports.CsvImporter.html#Sin_Net_Persistence_Imports_CsvImporter_Type
+  commentId: P:Sin.Net.Persistence.Imports.CsvImporter.Type
+  fullName: Sin.Net.Persistence.Imports.CsvImporter.Type
+  nameWithType: CsvImporter.Type
+- uid: Sin.Net.Persistence.Imports.CsvImporter.Type*
+  name: Type
+  href: api/Sin.Net.Persistence.Imports.CsvImporter.html#Sin_Net_Persistence_Imports_CsvImporter_Type_
+  commentId: Overload:Sin.Net.Persistence.Imports.CsvImporter.Type
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.CsvImporter.Type
+  nameWithType: CsvImporter.Type
+- uid: Sin.Net.Persistence.Imports.ImporterBase
+  name: ImporterBase
+  href: api/Sin.Net.Persistence.Imports.ImporterBase.html
+  commentId: T:Sin.Net.Persistence.Imports.ImporterBase
+  fullName: Sin.Net.Persistence.Imports.ImporterBase
+  nameWithType: ImporterBase
+- uid: Sin.Net.Persistence.Imports.ImporterBase.#ctor
+  name: ImporterBase()
+  href: api/Sin.Net.Persistence.Imports.ImporterBase.html#Sin_Net_Persistence_Imports_ImporterBase__ctor
+  commentId: M:Sin.Net.Persistence.Imports.ImporterBase.#ctor
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.ImporterBase()
+  nameWithType: ImporterBase.ImporterBase()
+- uid: Sin.Net.Persistence.Imports.ImporterBase.#ctor*
+  name: ImporterBase
+  href: api/Sin.Net.Persistence.Imports.ImporterBase.html#Sin_Net_Persistence_Imports_ImporterBase__ctor_
+  commentId: Overload:Sin.Net.Persistence.Imports.ImporterBase.#ctor
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.ImporterBase
+  nameWithType: ImporterBase.ImporterBase
+- uid: Sin.Net.Persistence.Imports.ImporterBase.As*
+  name: As
+  href: api/Sin.Net.Persistence.Imports.ImporterBase.html#Sin_Net_Persistence_Imports_ImporterBase_As_
+  commentId: Overload:Sin.Net.Persistence.Imports.ImporterBase.As
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.As
+  nameWithType: ImporterBase.As
+- uid: Sin.Net.Persistence.Imports.ImporterBase.As``1
+  name: As<T>()
+  href: api/Sin.Net.Persistence.Imports.ImporterBase.html#Sin_Net_Persistence_Imports_ImporterBase_As__1
+  commentId: M:Sin.Net.Persistence.Imports.ImporterBase.As``1
+  name.vb: As(Of T)()
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.As<T>()
+  fullName.vb: Sin.Net.Persistence.Imports.ImporterBase.As(Of T)()
+  nameWithType: ImporterBase.As<T>()
+  nameWithType.vb: ImporterBase.As(Of T)()
+- uid: Sin.Net.Persistence.Imports.ImporterBase.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  name: As<T>(IAdaptable)
+  href: api/Sin.Net.Persistence.Imports.ImporterBase.html#Sin_Net_Persistence_Imports_ImporterBase_As__1_Sin_Net_Domain_Persistence_Adapter_IAdaptable_
+  commentId: M:Sin.Net.Persistence.Imports.ImporterBase.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  name.vb: As(Of T)(IAdaptable)
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.As<T>(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  fullName.vb: Sin.Net.Persistence.Imports.ImporterBase.As(Of T)(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  nameWithType: ImporterBase.As<T>(IAdaptable)
+  nameWithType.vb: ImporterBase.As(Of T)(IAdaptable)
+- uid: Sin.Net.Persistence.Imports.ImporterBase.AsItIs
+  name: AsItIs()
+  href: api/Sin.Net.Persistence.Imports.ImporterBase.html#Sin_Net_Persistence_Imports_ImporterBase_AsItIs
+  commentId: M:Sin.Net.Persistence.Imports.ImporterBase.AsItIs
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.AsItIs()
+  nameWithType: ImporterBase.AsItIs()
+- uid: Sin.Net.Persistence.Imports.ImporterBase.AsItIs*
+  name: AsItIs
+  href: api/Sin.Net.Persistence.Imports.ImporterBase.html#Sin_Net_Persistence_Imports_ImporterBase_AsItIs_
+  commentId: Overload:Sin.Net.Persistence.Imports.ImporterBase.AsItIs
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.AsItIs
+  nameWithType: ImporterBase.AsItIs
+- uid: Sin.Net.Persistence.Imports.ImporterBase.Exception
+  name: Exception
+  href: api/Sin.Net.Persistence.Imports.ImporterBase.html#Sin_Net_Persistence_Imports_ImporterBase_Exception
+  commentId: P:Sin.Net.Persistence.Imports.ImporterBase.Exception
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.Exception
+  nameWithType: ImporterBase.Exception
+- uid: Sin.Net.Persistence.Imports.ImporterBase.Exception*
+  name: Exception
+  href: api/Sin.Net.Persistence.Imports.ImporterBase.html#Sin_Net_Persistence_Imports_ImporterBase_Exception_
+  commentId: Overload:Sin.Net.Persistence.Imports.ImporterBase.Exception
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.Exception
+  nameWithType: ImporterBase.Exception
+- uid: Sin.Net.Persistence.Imports.ImporterBase.HandleException(System.Exception,System.String)
+  name: HandleException(Exception, String)
+  href: api/Sin.Net.Persistence.Imports.ImporterBase.html#Sin_Net_Persistence_Imports_ImporterBase_HandleException_System_Exception_System_String_
+  commentId: M:Sin.Net.Persistence.Imports.ImporterBase.HandleException(System.Exception,System.String)
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.HandleException(System.Exception, System.String)
+  nameWithType: ImporterBase.HandleException(Exception, String)
+- uid: Sin.Net.Persistence.Imports.ImporterBase.HandleException*
+  name: HandleException
+  href: api/Sin.Net.Persistence.Imports.ImporterBase.html#Sin_Net_Persistence_Imports_ImporterBase_HandleException_
+  commentId: Overload:Sin.Net.Persistence.Imports.ImporterBase.HandleException
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.HandleException
+  nameWithType: ImporterBase.HandleException
+- uid: Sin.Net.Persistence.Imports.ImporterBase.Import
+  name: Import()
+  href: api/Sin.Net.Persistence.Imports.ImporterBase.html#Sin_Net_Persistence_Imports_ImporterBase_Import
+  commentId: M:Sin.Net.Persistence.Imports.ImporterBase.Import
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.Import()
+  nameWithType: ImporterBase.Import()
+- uid: Sin.Net.Persistence.Imports.ImporterBase.Import*
+  name: Import
+  href: api/Sin.Net.Persistence.Imports.ImporterBase.html#Sin_Net_Persistence_Imports_ImporterBase_Import_
+  commentId: Overload:Sin.Net.Persistence.Imports.ImporterBase.Import
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.Import
+  nameWithType: ImporterBase.Import
+- uid: Sin.Net.Persistence.Imports.ImporterBase.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  name: Setup(SettingsBase)
+  href: api/Sin.Net.Persistence.Imports.ImporterBase.html#Sin_Net_Persistence_Imports_ImporterBase_Setup_Sin_Net_Domain_Persistence_Settings_SettingsBase_
+  commentId: M:Sin.Net.Persistence.Imports.ImporterBase.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  nameWithType: ImporterBase.Setup(SettingsBase)
+- uid: Sin.Net.Persistence.Imports.ImporterBase.Setup*
+  name: Setup
+  href: api/Sin.Net.Persistence.Imports.ImporterBase.html#Sin_Net_Persistence_Imports_ImporterBase_Setup_
+  commentId: Overload:Sin.Net.Persistence.Imports.ImporterBase.Setup
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.Setup
+  nameWithType: ImporterBase.Setup
+- uid: Sin.Net.Persistence.Imports.ImporterBase.Type
+  name: Type
+  href: api/Sin.Net.Persistence.Imports.ImporterBase.html#Sin_Net_Persistence_Imports_ImporterBase_Type
+  commentId: P:Sin.Net.Persistence.Imports.ImporterBase.Type
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.Type
+  nameWithType: ImporterBase.Type
+- uid: Sin.Net.Persistence.Imports.ImporterBase.Type*
+  name: Type
+  href: api/Sin.Net.Persistence.Imports.ImporterBase.html#Sin_Net_Persistence_Imports_ImporterBase_Type_
+  commentId: Overload:Sin.Net.Persistence.Imports.ImporterBase.Type
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.ImporterBase.Type
+  nameWithType: ImporterBase.Type
+- uid: Sin.Net.Persistence.Imports.JsonImporter
+  name: JsonImporter
+  href: api/Sin.Net.Persistence.Imports.JsonImporter.html
+  commentId: T:Sin.Net.Persistence.Imports.JsonImporter
+  fullName: Sin.Net.Persistence.Imports.JsonImporter
+  nameWithType: JsonImporter
+- uid: Sin.Net.Persistence.Imports.JsonImporter.#ctor
+  name: JsonImporter()
+  href: api/Sin.Net.Persistence.Imports.JsonImporter.html#Sin_Net_Persistence_Imports_JsonImporter__ctor
+  commentId: M:Sin.Net.Persistence.Imports.JsonImporter.#ctor
+  fullName: Sin.Net.Persistence.Imports.JsonImporter.JsonImporter()
+  nameWithType: JsonImporter.JsonImporter()
+- uid: Sin.Net.Persistence.Imports.JsonImporter.#ctor*
+  name: JsonImporter
+  href: api/Sin.Net.Persistence.Imports.JsonImporter.html#Sin_Net_Persistence_Imports_JsonImporter__ctor_
+  commentId: Overload:Sin.Net.Persistence.Imports.JsonImporter.#ctor
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.JsonImporter.JsonImporter
+  nameWithType: JsonImporter.JsonImporter
+- uid: Sin.Net.Persistence.Imports.JsonImporter.As*
+  name: As
+  href: api/Sin.Net.Persistence.Imports.JsonImporter.html#Sin_Net_Persistence_Imports_JsonImporter_As_
+  commentId: Overload:Sin.Net.Persistence.Imports.JsonImporter.As
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.JsonImporter.As
+  nameWithType: JsonImporter.As
+- uid: Sin.Net.Persistence.Imports.JsonImporter.As``1
+  name: As<T>()
+  href: api/Sin.Net.Persistence.Imports.JsonImporter.html#Sin_Net_Persistence_Imports_JsonImporter_As__1
+  commentId: M:Sin.Net.Persistence.Imports.JsonImporter.As``1
+  name.vb: As(Of T)()
+  fullName: Sin.Net.Persistence.Imports.JsonImporter.As<T>()
+  fullName.vb: Sin.Net.Persistence.Imports.JsonImporter.As(Of T)()
+  nameWithType: JsonImporter.As<T>()
+  nameWithType.vb: JsonImporter.As(Of T)()
+- uid: Sin.Net.Persistence.Imports.JsonImporter.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  name: As<T>(IAdaptable)
+  href: api/Sin.Net.Persistence.Imports.JsonImporter.html#Sin_Net_Persistence_Imports_JsonImporter_As__1_Sin_Net_Domain_Persistence_Adapter_IAdaptable_
+  commentId: M:Sin.Net.Persistence.Imports.JsonImporter.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  name.vb: As(Of T)(IAdaptable)
+  fullName: Sin.Net.Persistence.Imports.JsonImporter.As<T>(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  fullName.vb: Sin.Net.Persistence.Imports.JsonImporter.As(Of T)(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  nameWithType: JsonImporter.As<T>(IAdaptable)
+  nameWithType.vb: JsonImporter.As(Of T)(IAdaptable)
+- uid: Sin.Net.Persistence.Imports.JsonImporter.AsItIs
+  name: AsItIs()
+  href: api/Sin.Net.Persistence.Imports.JsonImporter.html#Sin_Net_Persistence_Imports_JsonImporter_AsItIs
+  commentId: M:Sin.Net.Persistence.Imports.JsonImporter.AsItIs
+  fullName: Sin.Net.Persistence.Imports.JsonImporter.AsItIs()
+  nameWithType: JsonImporter.AsItIs()
+- uid: Sin.Net.Persistence.Imports.JsonImporter.AsItIs*
+  name: AsItIs
+  href: api/Sin.Net.Persistence.Imports.JsonImporter.html#Sin_Net_Persistence_Imports_JsonImporter_AsItIs_
+  commentId: Overload:Sin.Net.Persistence.Imports.JsonImporter.AsItIs
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.JsonImporter.AsItIs
+  nameWithType: JsonImporter.AsItIs
+- uid: Sin.Net.Persistence.Imports.JsonImporter.Import
+  name: Import()
+  href: api/Sin.Net.Persistence.Imports.JsonImporter.html#Sin_Net_Persistence_Imports_JsonImporter_Import
+  commentId: M:Sin.Net.Persistence.Imports.JsonImporter.Import
+  fullName: Sin.Net.Persistence.Imports.JsonImporter.Import()
+  nameWithType: JsonImporter.Import()
+- uid: Sin.Net.Persistence.Imports.JsonImporter.Import*
+  name: Import
+  href: api/Sin.Net.Persistence.Imports.JsonImporter.html#Sin_Net_Persistence_Imports_JsonImporter_Import_
+  commentId: Overload:Sin.Net.Persistence.Imports.JsonImporter.Import
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.JsonImporter.Import
+  nameWithType: JsonImporter.Import
+- uid: Sin.Net.Persistence.Imports.JsonImporter.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  name: Setup(SettingsBase)
+  href: api/Sin.Net.Persistence.Imports.JsonImporter.html#Sin_Net_Persistence_Imports_JsonImporter_Setup_Sin_Net_Domain_Persistence_Settings_SettingsBase_
+  commentId: M:Sin.Net.Persistence.Imports.JsonImporter.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  fullName: Sin.Net.Persistence.Imports.JsonImporter.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  nameWithType: JsonImporter.Setup(SettingsBase)
+- uid: Sin.Net.Persistence.Imports.JsonImporter.Setup*
+  name: Setup
+  href: api/Sin.Net.Persistence.Imports.JsonImporter.html#Sin_Net_Persistence_Imports_JsonImporter_Setup_
+  commentId: Overload:Sin.Net.Persistence.Imports.JsonImporter.Setup
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.JsonImporter.Setup
+  nameWithType: JsonImporter.Setup
+- uid: Sin.Net.Persistence.Imports.JsonImporter.Type
+  name: Type
+  href: api/Sin.Net.Persistence.Imports.JsonImporter.html#Sin_Net_Persistence_Imports_JsonImporter_Type
+  commentId: P:Sin.Net.Persistence.Imports.JsonImporter.Type
+  fullName: Sin.Net.Persistence.Imports.JsonImporter.Type
+  nameWithType: JsonImporter.Type
+- uid: Sin.Net.Persistence.Imports.JsonImporter.Type*
+  name: Type
+  href: api/Sin.Net.Persistence.Imports.JsonImporter.html#Sin_Net_Persistence_Imports_JsonImporter_Type_
+  commentId: Overload:Sin.Net.Persistence.Imports.JsonImporter.Type
+  isSpec: "True"
+  fullName: Sin.Net.Persistence.Imports.JsonImporter.Type
+  nameWithType: JsonImporter.Type
 - uid: Sin.Net.Persistence.IO.Binary
   name: Sin.Net.Persistence.IO.Binary
   href: api/Sin.Net.Persistence.IO.Binary.html

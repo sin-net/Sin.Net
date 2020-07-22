@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.Exeptions
+  commentId: N:Sin.Net.Domain.Exeptions
+  id: Sin.Net.Domain.Exeptions
+  children:
+  - Sin.Net.Domain.Exeptions.PersistenceException
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Domain.Exeptions
+  nameWithType: Sin.Net.Domain.Exeptions
+  fullName: Sin.Net.Domain.Exeptions
+  type: Namespace
+  assemblies:
+  - Sin.Net.Domain
+references:
+- uid: Sin.Net.Domain.Exeptions.PersistenceException
+  commentId: T:Sin.Net.Domain.Exeptions.PersistenceException
+  parent: Sin.Net.Domain.Exeptions
+  name: PersistenceException
+  nameWithType: PersistenceException
+  fullName: Sin.Net.Domain.Exeptions.PersistenceException
+- uid: Sin.Net.Domain.Exeptions
+  commentId: N:Sin.Net.Domain.Exeptions
+  name: Sin.Net.Domain.Exeptions
+  nameWithType: Sin.Net.Domain.Exeptions
+  fullName: Sin.Net.Domain.Exeptions

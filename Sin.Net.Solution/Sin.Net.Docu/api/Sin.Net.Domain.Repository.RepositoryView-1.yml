@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/RepositoryView.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: RepositoryView
     path: ../Sin.Net.Domain/Repository/RepositoryView.cs
@@ -84,7 +84,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/RepositoryView.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Domain/Repository/RepositoryView.cs
@@ -116,7 +116,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/RepositoryView.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: From
     path: ../Sin.Net.Domain/Repository/RepositoryView.cs
@@ -158,7 +158,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/RepositoryView.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: To
     path: ../Sin.Net.Domain/Repository/RepositoryView.cs
@@ -201,7 +201,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/RepositoryView.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Properties
     path: ../Sin.Net.Domain/Repository/RepositoryView.cs
@@ -240,7 +240,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/RepositoryView.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Items
     path: ../Sin.Net.Domain/Repository/RepositoryView.cs

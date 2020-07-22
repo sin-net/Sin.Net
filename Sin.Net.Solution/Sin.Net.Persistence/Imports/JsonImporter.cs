@@ -1,4 +1,5 @@
-﻿using Sin.Net.Domain.Persistence;
+﻿using System;
+using Sin.Net.Domain.Persistence;
 using Sin.Net.Domain.Persistence.Adapter;
 using Sin.Net.Domain.Persistence.Logging;
 using Sin.Net.Domain.Persistence.Settings;
@@ -7,62 +8,85 @@ using Sin.Net.Persistence.Settings;
 
 namespace Sin.Net.Persistence.Imports
 {
-    internal class JsonImporter : IImportable
-    {
-        // -- fields
+	public class JsonImporter : ImporterBase
+	{
+		// -- fields
 
-        private JsonSetting _setting;
-        private string _importJson;
+		private JsonSetting _setting;
+		private string _importJson;
 
-        // -- constructor
+		// -- constructor
 
-        public JsonImporter()
-        {
+		public JsonImporter() : base()
+		{
 
-        }
+		}
 
-        // -- methods
+		// -- methods
 
-        public IImportable Setup(SettingsBase setting)
-        {
-            if (setting is JsonSetting)
-            {
-                _setting = setting as JsonSetting;
-            }
-            else
-            {
-                Log.Error("The json import setting has the wrong type and was not accepted.");
-            }
-            return this;
-        }
+		public override IImportable Setup(SettingsBase setting)
+		{
+			try
+			{
+				_setting = setting as JsonSetting;
+			}
+			catch (Exception ex)
+			{
+				Log.Error("The json import setting has the wrong type and was not accepted.");
+				base.HandleException(ex);
+			}
+			return this;
+		}
 
-        public IImportable Import()
-        {
-            _importJson = JsonIO.ReadJson(_setting.FullPath);
-            return this;
-        }
+		public override IImportable Import()
+		{
+			try
+			{
+				_importJson = JsonIO.ReadJson(_setting.FullPath);
+			}
+			catch (Exception ex)
+			{
+				base.HandleException(ex);
+			}
+			return this;
+		}
 
-        public T As<T>() where T : new()
-        {
-            JsonIO.Binder = _setting.Binder;
-            JsonIO.Converters = _setting.Converters;
-            JsonIO.Resolver = _setting.Resolver;
-            return JsonIO.FromJsonString<T>(_importJson);
-        }
+		public override T As<T>()
+		{
+			try
+			{
+				JsonIO.Binder = _setting.Binder;
+				JsonIO.Converters = _setting.Converters;
+				JsonIO.Resolver = _setting.Resolver;
+				return JsonIO.FromJsonString<T>(_importJson);
+			}
+			catch (Exception ex)
+			{
+				base.HandleException(ex);
+			}
+			return default;
+		}
 
-        public T As<T>(IAdaptable adapter) where T : new()
-        {
-            return adapter.Adapt<string, T>(_importJson);
-        }
+		public override T As<T>(IAdaptable adapter)
+		{
+			try
+			{
+				return adapter.Adapt<string, T>(_importJson);
+			}
+			catch (Exception ex)
+			{
+				base.HandleException(ex);
+			}
+			return default;
+		}
 
-        public object AsItIs()
-        {
-            return _importJson;
-        }
+		public override object AsItIs()
+		{
+			return _importJson;
+		}
 
-        // -- properties
+		// -- properties
 
-        public string Type => Persistence.Constants.Json.Key;
-
-    }
+		public override string Type => Persistence.Constants.Json.Key;
+	}
 }

@@ -1,0 +1,502 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CsvExporter
+   | Sin.Net Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CsvExporter
+   | Sin.Net Documentation ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sin.Net.Persistence.Exports.CsvExporter">
+  <h1 id="Sin_Net_Persistence_Exports_CsvExporter" data-uid="Sin.Net.Persistence.Exports.CsvExporter">Class CsvExporter
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Sin.Net.Persistence.Exports.ExporterBase.html">ExporterBase</a></div>
+    <div class="level2"><span class="xref">CsvExporter</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase__exceptions">ExporterBase._exceptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase_HandleException_System_Exception_System_String_">ExporterBase.HandleException(Exception, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase_Exception">ExporterBase.Exception</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: Sin.Net.Persistence.dll</h6>
+  
+  <h5 id="Sin_Net_Persistence_Exports_CsvExporter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CsvExporter : ExporterBase, IExportable</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/develop/apiSpec/new?filename=Sin_Net_Persistence_Exports_CsvExporter__ctor.md&amp;value=---%0Auid%3A%20Sin.Net.Persistence.Exports.CsvExporter.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/develop/Sin.Net.Solution/Sin.Net.Persistence/Exports/CsvExporter.cs/#L29" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="Sin_Net_Persistence_Exports_CsvExporter__ctor_" data-uid="Sin.Net.Persistence.Exports.CsvExporter.#ctor*"></a>
+  
+  <h4 id="Sin_Net_Persistence_Exports_CsvExporter__ctor" data-uid="Sin.Net.Persistence.Exports.CsvExporter.#ctor"><a href="#collapsible-Sin_Net_Persistence_Exports_CsvExporter__ctor" class="expander" data-toggle="collapse">CsvExporter()</a></h4>
+  
+  <div id="collapsible-Sin_Net_Persistence_Exports_CsvExporter__ctor" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CsvExporter()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/develop/apiSpec/new?filename=Sin_Net_Persistence_Exports_CsvExporter_Type.md&amp;value=---%0Auid%3A%20Sin.Net.Persistence.Exports.CsvExporter.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/develop/Sin.Net.Solution/Sin.Net.Persistence/Exports/CsvExporter.cs/#L158" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="Sin_Net_Persistence_Exports_CsvExporter_Type_" data-uid="Sin.Net.Persistence.Exports.CsvExporter.Type*"></a>
+  
+  <h4 id="Sin_Net_Persistence_Exports_CsvExporter_Type" data-uid="Sin.Net.Persistence.Exports.CsvExporter.Type"><a href="#collapsible-Sin_Net_Persistence_Exports_CsvExporter_Type" class="expander" data-toggle="collapse">Type</a></h4>
+  
+  <div id="collapsible-Sin_Net_Persistence_Exports_CsvExporter_Type" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Type { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase_Type">ExporterBase.Type</a></div>
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/develop/apiSpec/new?filename=Sin_Net_Persistence_Exports_CsvExporter_Build__1___0_.md&amp;value=---%0Auid%3A%20Sin.Net.Persistence.Exports.CsvExporter.Build%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/develop/Sin.Net.Solution/Sin.Net.Persistence/Exports/CsvExporter.cs/#L61" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="Sin_Net_Persistence_Exports_CsvExporter_Build_" data-uid="Sin.Net.Persistence.Exports.CsvExporter.Build*"></a>
+  
+  <h4 id="Sin_Net_Persistence_Exports_CsvExporter_Build__1___0_" data-uid="Sin.Net.Persistence.Exports.CsvExporter.Build``1(``0)"><a href="#collapsible-Sin_Net_Persistence_Exports_CsvExporter_Build__1___0_" class="expander" data-toggle="collapse">Build&lt;T&gt;(T)</a></h4>
+  
+  <div id="collapsible-Sin_Net_Persistence_Exports_CsvExporter_Build__1___0_" class="collapse in">
+  <div class="markdown level1 summary"><p>Bindet die Daten für den Export ohne Konvertierung an.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IExportable Build&lt;T&gt;(T data)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">T</span></span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Sin.Net.Domain.Persistence.IExportable.html">IExportable</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Sin.Net.Persistence.Exports.ExporterBase.Build&lt;T&gt;(T)</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/develop/apiSpec/new?filename=Sin_Net_Persistence_Exports_CsvExporter_Build__1___0_Sin_Net_Domain_Persistence_Adapter_IAdaptable_.md&amp;value=---%0Auid%3A%20Sin.Net.Persistence.Exports.CsvExporter.Build%60%601(%60%600%2CSin.Net.Domain.Persistence.Adapter.IAdaptable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/develop/Sin.Net.Solution/Sin.Net.Persistence/Exports/CsvExporter.cs/#L80" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="Sin_Net_Persistence_Exports_CsvExporter_Build_" data-uid="Sin.Net.Persistence.Exports.CsvExporter.Build*"></a>
+  
+  <h4 id="Sin_Net_Persistence_Exports_CsvExporter_Build__1___0_Sin_Net_Domain_Persistence_Adapter_IAdaptable_" data-uid="Sin.Net.Persistence.Exports.CsvExporter.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)"><a href="#collapsible-Sin_Net_Persistence_Exports_CsvExporter_Build__1___0_Sin_Net_Domain_Persistence_Adapter_IAdaptable_" class="expander" data-toggle="collapse">Build&lt;T&gt;(T, IAdaptable)</a></h4>
+  
+  <div id="collapsible-Sin_Net_Persistence_Exports_CsvExporter_Build__1___0_Sin_Net_Domain_Persistence_Adapter_IAdaptable_" class="collapse in">
+  <div class="markdown level1 summary"><p>Bindet die Daten für den Export an.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IExportable Build&lt;T&gt;(T data, IAdaptable adapter)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">T</span></span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Sin.Net.Domain.Persistence.Adapter.IAdaptable.html">IAdaptable</a></span>
+        <span class="parametername">adapter</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Sin.Net.Domain.Persistence.IExportable.html">IExportable</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Sin.Net.Persistence.Exports.ExporterBase.Build&lt;T&gt;(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)</span></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/develop/apiSpec/new?filename=Sin_Net_Persistence_Exports_CsvExporter_Export.md&amp;value=---%0Auid%3A%20Sin.Net.Persistence.Exports.CsvExporter.Export%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/develop/Sin.Net.Solution/Sin.Net.Persistence/Exports/CsvExporter.cs/#L101" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="Sin_Net_Persistence_Exports_CsvExporter_Export_" data-uid="Sin.Net.Persistence.Exports.CsvExporter.Export*"></a>
+  
+  <h4 id="Sin_Net_Persistence_Exports_CsvExporter_Export" data-uid="Sin.Net.Persistence.Exports.CsvExporter.Export"><a href="#collapsible-Sin_Net_Persistence_Exports_CsvExporter_Export" class="expander" data-toggle="collapse">Export()</a></h4>
+  
+  <div id="collapsible-Sin_Net_Persistence_Exports_CsvExporter_Export" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Export()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase_Export">ExporterBase.Export()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/adriansinger87/Sin.Net/new/develop/apiSpec/new?filename=Sin_Net_Persistence_Exports_CsvExporter_Setup_Sin_Net_Domain_Persistence_Settings_SettingsBase_.md&amp;value=---%0Auid%3A%20Sin.Net.Persistence.Exports.CsvExporter.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/adriansinger87/Sin.Net/blob/develop/Sin.Net.Solution/Sin.Net.Persistence/Exports/CsvExporter.cs/#L36" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="Sin_Net_Persistence_Exports_CsvExporter_Setup_" data-uid="Sin.Net.Persistence.Exports.CsvExporter.Setup*"></a>
+  
+  <h4 id="Sin_Net_Persistence_Exports_CsvExporter_Setup_Sin_Net_Domain_Persistence_Settings_SettingsBase_" data-uid="Sin.Net.Persistence.Exports.CsvExporter.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)"><a href="#collapsible-Sin_Net_Persistence_Exports_CsvExporter_Setup_Sin_Net_Domain_Persistence_Settings_SettingsBase_" class="expander" data-toggle="collapse">Setup(SettingsBase)</a></h4>
+  
+  <div id="collapsible-Sin_Net_Persistence_Exports_CsvExporter_Setup_Sin_Net_Domain_Persistence_Settings_SettingsBase_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IExportable Setup(SettingsBase setting)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Sin.Net.Domain.Persistence.Settings.SettingsBase.html">SettingsBase</a></span>
+        <span class="parametername">setting</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Sin.Net.Domain.Persistence.IExportable.html">IExportable</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Sin.Net.Persistence.Exports.ExporterBase.html#Sin_Net_Persistence_Exports_ExporterBase_Setup_Sin_Net_Domain_Persistence_Settings_SettingsBase_">ExporterBase.Setup(SettingsBase)</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.html#Sin_Net_Domain_System_Extensions_ObjectCloneExtensions_Clone_System_Object_">ObjectCloneExtensions.Clone(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.html#Sin_Net_Domain_System_Extensions_ObjectCloneExtensions_Clone__1___0_">ObjectCloneExtensions.Clone&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sin.Net.Domain.System.Security.SecurityExtensions.html#Sin_Net_Domain_System_Security_SecurityExtensions_SecureAccess_System_Object_Sin_Net_Domain_Enumerations_SecurityLevels_System_String_">SecurityExtensions.SecureAccess(Object, SecurityLevels, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Sin.Net.Domain.System.Security.SecurityExtensions.html#Sin_Net_Domain_System_Security_SecurityExtensions_SecureAccess_System_Object_System_Int32_System_String_">SecurityExtensions.SecureAccess(Object, Int32, String)</a>
+  </div>
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/adriansinger87/Sin.Net/new/develop/apiSpec/new?filename=Sin_Net_Persistence_Exports_CsvExporter.md&amp;value=---%0Auid%3A%20Sin.Net.Persistence.Exports.CsvExporter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/adriansinger87/Sin.Net/blob/develop/Sin.Net.Solution/Sin.Net.Persistence/Exports/CsvExporter.cs/#L18" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright 2019 <strong>Adrian Singer</strong>. Generated by <strong>DocFX</strong>.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

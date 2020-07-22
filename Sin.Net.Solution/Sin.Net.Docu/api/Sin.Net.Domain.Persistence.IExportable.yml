@@ -7,6 +7,7 @@ items:
   children:
   - Sin.Net.Domain.Persistence.IExportable.Build``1(``0)
   - Sin.Net.Domain.Persistence.IExportable.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  - Sin.Net.Domain.Persistence.IExportable.Exception
   - Sin.Net.Domain.Persistence.IExportable.Export
   - Sin.Net.Domain.Persistence.IExportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
   - Sin.Net.Domain.Persistence.IExportable.Type
@@ -20,11 +21,11 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IExportable.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IExportable
     path: ../Sin.Net.Domain/Persistence/IExportable.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Persistence
@@ -58,11 +59,11 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IExportable.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Setup
     path: ../Sin.Net.Domain/Persistence/IExportable.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Persistence
@@ -93,11 +94,11 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IExportable.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Build
     path: ../Sin.Net.Domain/Persistence/IExportable.cs
-    startLine: 23
+    startLine: 24
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Persistence
@@ -134,11 +135,11 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IExportable.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Build
     path: ../Sin.Net.Domain/Persistence/IExportable.cs
-    startLine: 32
+    startLine: 33
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Persistence
@@ -178,11 +179,11 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IExportable.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Export
     path: ../Sin.Net.Domain/Persistence/IExportable.cs
-    startLine: 38
+    startLine: 39
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Persistence
@@ -195,6 +196,41 @@ items:
       description: The string is a generic result format and is specified by the export concretion
     content.vb: Function Export As String
   overload: Sin.Net.Domain.Persistence.IExportable.Export*
+- uid: Sin.Net.Domain.Persistence.IExportable.Exception
+  commentId: P:Sin.Net.Domain.Persistence.IExportable.Exception
+  id: Exception
+  parent: Sin.Net.Domain.Persistence.IExportable
+  langs:
+  - csharp
+  - vb
+  name: Exception
+  nameWithType: IExportable.Exception
+  fullName: Sin.Net.Domain.Persistence.IExportable.Exception
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IExportable.cs
+      branch: develop
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Exception
+    path: ../Sin.Net.Domain/Persistence/IExportable.cs
+    startLine: 46
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Persistence
+  summary: "\nGets the exception that maybe occured during the export pocess.\n"
+  example: []
+  syntax:
+    content: PersistenceException Exception { get; }
+    parameters: []
+    return:
+      type: Sin.Net.Domain.Exeptions.PersistenceException
+    content.vb: ReadOnly Property Exception As PersistenceException
+  overload: Sin.Net.Domain.Persistence.IExportable.Exception*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
 - uid: Sin.Net.Domain.Persistence.IExportable.Type
   commentId: P:Sin.Net.Domain.Persistence.IExportable.Type
   id: Type
@@ -209,11 +245,11 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IExportable.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Type
     path: ../Sin.Net.Domain/Persistence/IExportable.cs
-    startLine: 45
+    startLine: 51
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Persistence
@@ -705,6 +741,22 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Sin.Net.Domain.Persistence.IExportable.Exception*
+  commentId: Overload:Sin.Net.Domain.Persistence.IExportable.Exception
+  name: Exception
+  nameWithType: IExportable.Exception
+  fullName: Sin.Net.Domain.Persistence.IExportable.Exception
+- uid: Sin.Net.Domain.Exeptions.PersistenceException
+  commentId: T:Sin.Net.Domain.Exeptions.PersistenceException
+  parent: Sin.Net.Domain.Exeptions
+  name: PersistenceException
+  nameWithType: PersistenceException
+  fullName: Sin.Net.Domain.Exeptions.PersistenceException
+- uid: Sin.Net.Domain.Exeptions
+  commentId: N:Sin.Net.Domain.Exeptions
+  name: Sin.Net.Domain.Exeptions
+  nameWithType: Sin.Net.Domain.Exeptions
+  fullName: Sin.Net.Domain.Exeptions
 - uid: Sin.Net.Domain.Persistence.IExportable.Type*
   commentId: Overload:Sin.Net.Domain.Persistence.IExportable.Type
   name: Type

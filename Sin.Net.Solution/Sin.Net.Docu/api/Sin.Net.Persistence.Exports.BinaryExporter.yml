@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/BinaryExporter.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: BinaryExporter
     path: ../Sin.Net.Persistence/Exports/BinaryExporter.cs
@@ -30,15 +30,20 @@ items:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.Exports
   syntax:
-    content: 'public class BinaryExporter : IExportable'
+    content: 'public class BinaryExporter : ExporterBase, IExportable'
     content.vb: >-
       Public Class BinaryExporter
+          Inherits ExporterBase
           Implements IExportable
   inheritance:
   - System.Object
+  - Sin.Net.Persistence.Exports.ExporterBase
   implements:
   - Sin.Net.Domain.Persistence.IExportable
   inheritedMembers:
+  - Sin.Net.Persistence.Exports.ExporterBase._exceptions
+  - Sin.Net.Persistence.Exports.ExporterBase.HandleException(System.Exception,System.String)
+  - Sin.Net.Persistence.Exports.ExporterBase.Exception
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -71,7 +76,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/BinaryExporter.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Persistence/Exports/BinaryExporter.cs
@@ -101,7 +106,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/BinaryExporter.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Setup
     path: ../Sin.Net.Persistence/Exports/BinaryExporter.cs
@@ -110,20 +115,21 @@ items:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.Exports
   syntax:
-    content: public IExportable Setup(SettingsBase setting)
+    content: public override IExportable Setup(SettingsBase setting)
     parameters:
     - id: setting
       type: Sin.Net.Domain.Persistence.Settings.SettingsBase
     return:
       type: Sin.Net.Domain.Persistence.IExportable
-    content.vb: Public Function Setup(setting As SettingsBase) As IExportable
+    content.vb: Public Overrides Function Setup(setting As SettingsBase) As IExportable
+  overridden: Sin.Net.Persistence.Exports.ExporterBase.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
   overload: Sin.Net.Persistence.Exports.BinaryExporter.Setup*
-  implements:
-  - Sin.Net.Domain.Persistence.IExportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
   modifiers.csharp:
   - public
+  - override
   modifiers.vb:
   - Public
+  - Overrides
 - uid: Sin.Net.Persistence.Exports.BinaryExporter.Build``1(``0)
   commentId: M:Sin.Net.Persistence.Exports.BinaryExporter.Build``1(``0)
   id: Build``1(``0)
@@ -138,16 +144,16 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/BinaryExporter.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Build
     path: ../Sin.Net.Persistence/Exports/BinaryExporter.cs
-    startLine: 41
+    startLine: 45
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.Exports
   syntax:
-    content: public IExportable Build<T>(T data)
+    content: public override IExportable Build<T>(T data)
     parameters:
     - id: data
       type: '{T}'
@@ -155,15 +161,16 @@ items:
     - id: T
     return:
       type: Sin.Net.Domain.Persistence.IExportable
-    content.vb: Public Function Build(Of T)(data As T) As IExportable
+    content.vb: Public Overrides Function Build(Of T)(data As T) As IExportable
+  overridden: Sin.Net.Persistence.Exports.ExporterBase.Build``1({T})
   overload: Sin.Net.Persistence.Exports.BinaryExporter.Build*
-  implements:
-  - Sin.Net.Domain.Persistence.IExportable.Build``1({T})
   nameWithType.vb: BinaryExporter.Build(Of T)(T)
   modifiers.csharp:
   - public
+  - override
   modifiers.vb:
   - Public
+  - Overrides
   fullName.vb: Sin.Net.Persistence.Exports.BinaryExporter.Build(Of T)(T)
   name.vb: Build(Of T)(T)
 - uid: Sin.Net.Persistence.Exports.BinaryExporter.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
@@ -180,16 +187,16 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/BinaryExporter.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Build
     path: ../Sin.Net.Persistence/Exports/BinaryExporter.cs
-    startLine: 46
+    startLine: 50
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.Exports
   syntax:
-    content: public IExportable Build<T>(T data, IAdaptable adapter)
+    content: public override IExportable Build<T>(T data, IAdaptable adapter)
     parameters:
     - id: data
       type: '{T}'
@@ -199,15 +206,16 @@ items:
     - id: T
     return:
       type: Sin.Net.Domain.Persistence.IExportable
-    content.vb: Public Function Build(Of T)(data As T, adapter As IAdaptable) As IExportable
+    content.vb: Public Overrides Function Build(Of T)(data As T, adapter As IAdaptable) As IExportable
+  overridden: Sin.Net.Persistence.Exports.ExporterBase.Build``1({T},Sin.Net.Domain.Persistence.Adapter.IAdaptable)
   overload: Sin.Net.Persistence.Exports.BinaryExporter.Build*
-  implements:
-  - Sin.Net.Domain.Persistence.IExportable.Build``1({T},Sin.Net.Domain.Persistence.Adapter.IAdaptable)
   nameWithType.vb: BinaryExporter.Build(Of T)(T, IAdaptable)
   modifiers.csharp:
   - public
+  - override
   modifiers.vb:
   - Public
+  - Overrides
   fullName.vb: Sin.Net.Persistence.Exports.BinaryExporter.Build(Of T)(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
   name.vb: Build(Of T)(T, IAdaptable)
 - uid: Sin.Net.Persistence.Exports.BinaryExporter.Export
@@ -224,26 +232,27 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/BinaryExporter.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Export
     path: ../Sin.Net.Persistence/Exports/BinaryExporter.cs
-    startLine: 59
+    startLine: 75
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.Exports
   syntax:
-    content: public string Export()
+    content: public override string Export()
     return:
       type: System.String
-    content.vb: Public Function Export As String
+    content.vb: Public Overrides Function Export As String
+  overridden: Sin.Net.Persistence.Exports.ExporterBase.Export
   overload: Sin.Net.Persistence.Exports.BinaryExporter.Export*
-  implements:
-  - Sin.Net.Domain.Persistence.IExportable.Export
   modifiers.csharp:
   - public
+  - override
   modifiers.vb:
   - Public
+  - Overrides
 - uid: Sin.Net.Persistence.Exports.BinaryExporter.Type
   commentId: P:Sin.Net.Persistence.Exports.BinaryExporter.Type
   id: Type
@@ -258,28 +267,29 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/BinaryExporter.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Type
     path: ../Sin.Net.Persistence/Exports/BinaryExporter.cs
-    startLine: 95
+    startLine: 111
   assemblies:
   - Sin.Net.Persistence
   namespace: Sin.Net.Persistence.Exports
   syntax:
-    content: public string Type { get; }
+    content: public override string Type { get; }
     parameters: []
     return:
       type: System.String
-    content.vb: Public ReadOnly Property Type As String
+    content.vb: Public Overrides ReadOnly Property Type As String
+  overridden: Sin.Net.Persistence.Exports.ExporterBase.Type
   overload: Sin.Net.Persistence.Exports.BinaryExporter.Type*
-  implements:
-  - Sin.Net.Domain.Persistence.IExportable.Type
   modifiers.csharp:
   - public
+  - override
   - get
   modifiers.vb:
   - Public
+  - Overrides
   - ReadOnly
 references:
 - uid: Sin.Net.Persistence.Exports
@@ -294,12 +304,85 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
+- uid: Sin.Net.Persistence.Exports.ExporterBase
+  commentId: T:Sin.Net.Persistence.Exports.ExporterBase
+  parent: Sin.Net.Persistence.Exports
+  name: ExporterBase
+  nameWithType: ExporterBase
+  fullName: Sin.Net.Persistence.Exports.ExporterBase
 - uid: Sin.Net.Domain.Persistence.IExportable
   commentId: T:Sin.Net.Domain.Persistence.IExportable
   parent: Sin.Net.Domain.Persistence
   name: IExportable
   nameWithType: IExportable
   fullName: Sin.Net.Domain.Persistence.IExportable
+- uid: Sin.Net.Persistence.Exports.ExporterBase._exceptions
+  commentId: F:Sin.Net.Persistence.Exports.ExporterBase._exceptions
+  parent: Sin.Net.Persistence.Exports.ExporterBase
+  name: _exceptions
+  nameWithType: ExporterBase._exceptions
+  fullName: Sin.Net.Persistence.Exports.ExporterBase._exceptions
+- uid: Sin.Net.Persistence.Exports.ExporterBase.HandleException(System.Exception,System.String)
+  commentId: M:Sin.Net.Persistence.Exports.ExporterBase.HandleException(System.Exception,System.String)
+  parent: Sin.Net.Persistence.Exports.ExporterBase
+  isExternal: true
+  name: HandleException(Exception, String)
+  nameWithType: ExporterBase.HandleException(Exception, String)
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.HandleException(System.Exception, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Persistence.Exports.ExporterBase.HandleException(System.Exception,System.String)
+    name: HandleException
+    nameWithType: ExporterBase.HandleException
+    fullName: Sin.Net.Persistence.Exports.ExporterBase.HandleException
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Persistence.Exports.ExporterBase.HandleException(System.Exception,System.String)
+    name: HandleException
+    nameWithType: ExporterBase.HandleException
+    fullName: Sin.Net.Persistence.Exports.ExporterBase.HandleException
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Persistence.Exports.ExporterBase.Exception
+  commentId: P:Sin.Net.Persistence.Exports.ExporterBase.Exception
+  parent: Sin.Net.Persistence.Exports.ExporterBase
+  name: Exception
+  nameWithType: ExporterBase.Exception
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.Exception
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -998,22 +1081,17 @@ references:
   name: BinaryExporter
   nameWithType: BinaryExporter.BinaryExporter
   fullName: Sin.Net.Persistence.Exports.BinaryExporter.BinaryExporter
-- uid: Sin.Net.Persistence.Exports.BinaryExporter.Setup*
-  commentId: Overload:Sin.Net.Persistence.Exports.BinaryExporter.Setup
-  name: Setup
-  nameWithType: BinaryExporter.Setup
-  fullName: Sin.Net.Persistence.Exports.BinaryExporter.Setup
-- uid: Sin.Net.Domain.Persistence.IExportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
-  commentId: M:Sin.Net.Domain.Persistence.IExportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
-  parent: Sin.Net.Domain.Persistence.IExportable
+- uid: Sin.Net.Persistence.Exports.ExporterBase.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  commentId: M:Sin.Net.Persistence.Exports.ExporterBase.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  parent: Sin.Net.Persistence.Exports.ExporterBase
   name: Setup(SettingsBase)
-  nameWithType: IExportable.Setup(SettingsBase)
-  fullName: Sin.Net.Domain.Persistence.IExportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  nameWithType: ExporterBase.Setup(SettingsBase)
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
   spec.csharp:
-  - uid: Sin.Net.Domain.Persistence.IExportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  - uid: Sin.Net.Persistence.Exports.ExporterBase.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
     name: Setup
-    nameWithType: IExportable.Setup
-    fullName: Sin.Net.Domain.Persistence.IExportable.Setup
+    nameWithType: ExporterBase.Setup
+    fullName: Sin.Net.Persistence.Exports.ExporterBase.Setup
   - name: (
     nameWithType: (
     fullName: (
@@ -1025,10 +1103,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Sin.Net.Domain.Persistence.IExportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
+  - uid: Sin.Net.Persistence.Exports.ExporterBase.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
     name: Setup
-    nameWithType: IExportable.Setup
-    fullName: Sin.Net.Domain.Persistence.IExportable.Setup
+    nameWithType: ExporterBase.Setup
+    fullName: Sin.Net.Persistence.Exports.ExporterBase.Setup
   - name: (
     nameWithType: (
     fullName: (
@@ -1039,6 +1117,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Sin.Net.Persistence.Exports.BinaryExporter.Setup*
+  commentId: Overload:Sin.Net.Persistence.Exports.BinaryExporter.Setup
+  name: Setup
+  nameWithType: BinaryExporter.Setup
+  fullName: Sin.Net.Persistence.Exports.BinaryExporter.Setup
 - uid: Sin.Net.Domain.Persistence.Settings.SettingsBase
   commentId: T:Sin.Net.Domain.Persistence.Settings.SettingsBase
   parent: Sin.Net.Domain.Persistence.Settings
@@ -1050,26 +1133,21 @@ references:
   name: Sin.Net.Domain.Persistence.Settings
   nameWithType: Sin.Net.Domain.Persistence.Settings
   fullName: Sin.Net.Domain.Persistence.Settings
-- uid: Sin.Net.Persistence.Exports.BinaryExporter.Build*
-  commentId: Overload:Sin.Net.Persistence.Exports.BinaryExporter.Build
-  name: Build
-  nameWithType: BinaryExporter.Build
-  fullName: Sin.Net.Persistence.Exports.BinaryExporter.Build
-- uid: Sin.Net.Domain.Persistence.IExportable.Build``1({T})
-  commentId: M:Sin.Net.Domain.Persistence.IExportable.Build``1(``0)
-  parent: Sin.Net.Domain.Persistence.IExportable
-  definition: Sin.Net.Domain.Persistence.IExportable.Build``1(``0)
+- uid: Sin.Net.Persistence.Exports.ExporterBase.Build``1({T})
+  commentId: M:Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0)
+  parent: Sin.Net.Persistence.Exports.ExporterBase
+  definition: Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0)
   name: Build<T>(T)
-  nameWithType: IExportable.Build<T>(T)
-  fullName: Sin.Net.Domain.Persistence.IExportable.Build<T>(T)
-  nameWithType.vb: IExportable.Build(Of T)(T)
-  fullName.vb: Sin.Net.Domain.Persistence.IExportable.Build(Of T)(T)
+  nameWithType: ExporterBase.Build<T>(T)
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.Build<T>(T)
+  nameWithType.vb: ExporterBase.Build(Of T)(T)
+  fullName.vb: Sin.Net.Persistence.Exports.ExporterBase.Build(Of T)(T)
   name.vb: Build(Of T)(T)
   spec.csharp:
-  - uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0)
+  - uid: Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0)
     name: Build<T>
-    nameWithType: IExportable.Build<T>
-    fullName: Sin.Net.Domain.Persistence.IExportable.Build<T>
+    nameWithType: ExporterBase.Build<T>
+    fullName: Sin.Net.Persistence.Exports.ExporterBase.Build<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -1080,10 +1158,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0)
+  - uid: Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0)
     name: Build(Of T)
-    nameWithType: IExportable.Build(Of T)
-    fullName: Sin.Net.Domain.Persistence.IExportable.Build(Of T)
+    nameWithType: ExporterBase.Build(Of T)
+    fullName: Sin.Net.Persistence.Exports.ExporterBase.Build(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -1093,25 +1171,30 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Sin.Net.Persistence.Exports.BinaryExporter.Build*
+  commentId: Overload:Sin.Net.Persistence.Exports.BinaryExporter.Build
+  name: Build
+  nameWithType: BinaryExporter.Build
+  fullName: Sin.Net.Persistence.Exports.BinaryExporter.Build
 - uid: '{T}'
   commentId: '!:T'
   definition: T
   name: T
   nameWithType: T
   fullName: T
-- uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0)
-  commentId: M:Sin.Net.Domain.Persistence.IExportable.Build``1(``0)
+- uid: Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0)
+  commentId: M:Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0)
   name: Build<T>(T)
-  nameWithType: IExportable.Build<T>(T)
-  fullName: Sin.Net.Domain.Persistence.IExportable.Build<T>(T)
-  nameWithType.vb: IExportable.Build(Of T)(T)
-  fullName.vb: Sin.Net.Domain.Persistence.IExportable.Build(Of T)(T)
+  nameWithType: ExporterBase.Build<T>(T)
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.Build<T>(T)
+  nameWithType.vb: ExporterBase.Build(Of T)(T)
+  fullName.vb: Sin.Net.Persistence.Exports.ExporterBase.Build(Of T)(T)
   name.vb: Build(Of T)(T)
   spec.csharp:
-  - uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0)
+  - uid: Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0)
     name: Build<T>
-    nameWithType: IExportable.Build<T>
-    fullName: Sin.Net.Domain.Persistence.IExportable.Build<T>
+    nameWithType: ExporterBase.Build<T>
+    fullName: Sin.Net.Persistence.Exports.ExporterBase.Build<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -1122,10 +1205,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0)
+  - uid: Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0)
     name: Build(Of T)
-    nameWithType: IExportable.Build(Of T)
-    fullName: Sin.Net.Domain.Persistence.IExportable.Build(Of T)
+    nameWithType: ExporterBase.Build(Of T)
+    fullName: Sin.Net.Persistence.Exports.ExporterBase.Build(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -1139,21 +1222,21 @@ references:
   name: T
   nameWithType: T
   fullName: T
-- uid: Sin.Net.Domain.Persistence.IExportable.Build``1({T},Sin.Net.Domain.Persistence.Adapter.IAdaptable)
-  commentId: M:Sin.Net.Domain.Persistence.IExportable.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
-  parent: Sin.Net.Domain.Persistence.IExportable
-  definition: Sin.Net.Domain.Persistence.IExportable.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+- uid: Sin.Net.Persistence.Exports.ExporterBase.Build``1({T},Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  commentId: M:Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  parent: Sin.Net.Persistence.Exports.ExporterBase
+  definition: Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
   name: Build<T>(T, IAdaptable)
-  nameWithType: IExportable.Build<T>(T, IAdaptable)
-  fullName: Sin.Net.Domain.Persistence.IExportable.Build<T>(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
-  nameWithType.vb: IExportable.Build(Of T)(T, IAdaptable)
-  fullName.vb: Sin.Net.Domain.Persistence.IExportable.Build(Of T)(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  nameWithType: ExporterBase.Build<T>(T, IAdaptable)
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.Build<T>(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  nameWithType.vb: ExporterBase.Build(Of T)(T, IAdaptable)
+  fullName.vb: Sin.Net.Persistence.Exports.ExporterBase.Build(Of T)(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
   name.vb: Build(Of T)(T, IAdaptable)
   spec.csharp:
-  - uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  - uid: Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
     name: Build<T>
-    nameWithType: IExportable.Build<T>
-    fullName: Sin.Net.Domain.Persistence.IExportable.Build<T>
+    nameWithType: ExporterBase.Build<T>
+    fullName: Sin.Net.Persistence.Exports.ExporterBase.Build<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -1171,10 +1254,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  - uid: Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
     name: Build(Of T)
-    nameWithType: IExportable.Build(Of T)
-    fullName: Sin.Net.Domain.Persistence.IExportable.Build(Of T)
+    nameWithType: ExporterBase.Build(Of T)
+    fullName: Sin.Net.Persistence.Exports.ExporterBase.Build(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -1197,19 +1280,19 @@ references:
   name: IAdaptable
   nameWithType: IAdaptable
   fullName: Sin.Net.Domain.Persistence.Adapter.IAdaptable
-- uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
-  commentId: M:Sin.Net.Domain.Persistence.IExportable.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+- uid: Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  commentId: M:Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
   name: Build<T>(T, IAdaptable)
-  nameWithType: IExportable.Build<T>(T, IAdaptable)
-  fullName: Sin.Net.Domain.Persistence.IExportable.Build<T>(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
-  nameWithType.vb: IExportable.Build(Of T)(T, IAdaptable)
-  fullName.vb: Sin.Net.Domain.Persistence.IExportable.Build(Of T)(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  nameWithType: ExporterBase.Build<T>(T, IAdaptable)
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.Build<T>(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  nameWithType.vb: ExporterBase.Build(Of T)(T, IAdaptable)
+  fullName.vb: Sin.Net.Persistence.Exports.ExporterBase.Build(Of T)(T, Sin.Net.Domain.Persistence.Adapter.IAdaptable)
   name.vb: Build(Of T)(T, IAdaptable)
   spec.csharp:
-  - uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  - uid: Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
     name: Build<T>
-    nameWithType: IExportable.Build<T>
-    fullName: Sin.Net.Domain.Persistence.IExportable.Build<T>
+    nameWithType: ExporterBase.Build<T>
+    fullName: Sin.Net.Persistence.Exports.ExporterBase.Build<T>
   - name: (
     nameWithType: (
     fullName: (
@@ -1227,10 +1310,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Sin.Net.Domain.Persistence.IExportable.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
+  - uid: Sin.Net.Persistence.Exports.ExporterBase.Build``1(``0,Sin.Net.Domain.Persistence.Adapter.IAdaptable)
     name: Build(Of T)
-    nameWithType: IExportable.Build(Of T)
-    fullName: Sin.Net.Domain.Persistence.IExportable.Build(Of T)
+    nameWithType: ExporterBase.Build(Of T)
+    fullName: Sin.Net.Persistence.Exports.ExporterBase.Build(Of T)
   - name: (
     nameWithType: (
     fullName: (
@@ -1252,22 +1335,17 @@ references:
   name: Sin.Net.Domain.Persistence.Adapter
   nameWithType: Sin.Net.Domain.Persistence.Adapter
   fullName: Sin.Net.Domain.Persistence.Adapter
-- uid: Sin.Net.Persistence.Exports.BinaryExporter.Export*
-  commentId: Overload:Sin.Net.Persistence.Exports.BinaryExporter.Export
-  name: Export
-  nameWithType: BinaryExporter.Export
-  fullName: Sin.Net.Persistence.Exports.BinaryExporter.Export
-- uid: Sin.Net.Domain.Persistence.IExportable.Export
-  commentId: M:Sin.Net.Domain.Persistence.IExportable.Export
-  parent: Sin.Net.Domain.Persistence.IExportable
+- uid: Sin.Net.Persistence.Exports.ExporterBase.Export
+  commentId: M:Sin.Net.Persistence.Exports.ExporterBase.Export
+  parent: Sin.Net.Persistence.Exports.ExporterBase
   name: Export()
-  nameWithType: IExportable.Export()
-  fullName: Sin.Net.Domain.Persistence.IExportable.Export()
+  nameWithType: ExporterBase.Export()
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.Export()
   spec.csharp:
-  - uid: Sin.Net.Domain.Persistence.IExportable.Export
+  - uid: Sin.Net.Persistence.Exports.ExporterBase.Export
     name: Export
-    nameWithType: IExportable.Export
-    fullName: Sin.Net.Domain.Persistence.IExportable.Export
+    nameWithType: ExporterBase.Export
+    fullName: Sin.Net.Persistence.Exports.ExporterBase.Export
   - name: (
     nameWithType: (
     fullName: (
@@ -1275,16 +1353,21 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Sin.Net.Domain.Persistence.IExportable.Export
+  - uid: Sin.Net.Persistence.Exports.ExporterBase.Export
     name: Export
-    nameWithType: IExportable.Export
-    fullName: Sin.Net.Domain.Persistence.IExportable.Export
+    nameWithType: ExporterBase.Export
+    fullName: Sin.Net.Persistence.Exports.ExporterBase.Export
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
+- uid: Sin.Net.Persistence.Exports.BinaryExporter.Export*
+  commentId: Overload:Sin.Net.Persistence.Exports.BinaryExporter.Export
+  name: Export
+  nameWithType: BinaryExporter.Export
+  fullName: Sin.Net.Persistence.Exports.BinaryExporter.Export
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -1292,14 +1375,14 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: Sin.Net.Persistence.Exports.ExporterBase.Type
+  commentId: P:Sin.Net.Persistence.Exports.ExporterBase.Type
+  parent: Sin.Net.Persistence.Exports.ExporterBase
+  name: Type
+  nameWithType: ExporterBase.Type
+  fullName: Sin.Net.Persistence.Exports.ExporterBase.Type
 - uid: Sin.Net.Persistence.Exports.BinaryExporter.Type*
   commentId: Overload:Sin.Net.Persistence.Exports.BinaryExporter.Type
   name: Type
   nameWithType: BinaryExporter.Type
   fullName: Sin.Net.Persistence.Exports.BinaryExporter.Type
-- uid: Sin.Net.Domain.Persistence.IExportable.Type
-  commentId: P:Sin.Net.Domain.Persistence.IExportable.Type
-  parent: Sin.Net.Domain.Persistence.IExportable
-  name: Type
-  nameWithType: IExportable.Type
-  fullName: Sin.Net.Domain.Persistence.IExportable.Type

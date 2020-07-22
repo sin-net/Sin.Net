@@ -1,4 +1,5 @@
 ﻿using System;
+using Sin.Net.Domain.Exeptions;
 using Sin.Net.Domain.Persistence.Adapter;
 using Sin.Net.Domain.Persistence.Settings;
 
@@ -46,9 +47,9 @@ namespace Sin.Net.Domain.Persistence
         // -- properties
 
         /// <summary>
-        /// Gets or sets the exception that maybe occured during the export pocess.
+        /// Gets the exception that maybe occured during the export pocess.
         /// </summary>
-        Exception Exception { get; set; }
+        PersistenceException Exception { get; }
 
         /// <summary>
         /// Gets the import type

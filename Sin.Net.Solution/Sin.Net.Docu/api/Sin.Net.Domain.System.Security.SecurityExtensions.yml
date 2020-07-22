@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/Security/SecurityExtensions.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: SecurityExtensions
     path: ../Sin.Net.Domain/System/Security/SecurityExtensions.cs
@@ -62,7 +62,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/Security/SecurityExtensions.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: SecureAccess
     path: ../Sin.Net.Domain/System/Security/SecurityExtensions.cs
@@ -113,7 +113,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/Security/SecurityExtensions.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: SecureAccess
     path: ../Sin.Net.Domain/System/Security/SecurityExtensions.cs

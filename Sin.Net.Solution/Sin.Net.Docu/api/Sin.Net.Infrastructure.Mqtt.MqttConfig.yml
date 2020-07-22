@@ -23,7 +23,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: MqttConfig
     path: ../Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
@@ -72,7 +72,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
@@ -102,7 +102,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ToString
     path: ../Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
@@ -137,7 +137,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Broker
     path: ../Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
@@ -172,7 +172,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Port
     path: ../Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
@@ -207,7 +207,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ClientID
     path: ../Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
@@ -242,7 +242,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: LasWill
     path: ../Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
@@ -279,7 +279,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: QoS
     path: ../Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
@@ -316,7 +316,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Topics
     path: ../Sin.Net.Infrastructure/Mqtt/MqttConfig.cs

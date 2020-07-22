@@ -9,6 +9,11 @@
   items:
   - uid: Sin.Net.Domain.Enumerations.SecurityLevels
     name: SecurityLevels
+- uid: Sin.Net.Domain.Exeptions
+  name: Sin.Net.Domain.Exeptions
+  items:
+  - uid: Sin.Net.Domain.Exeptions.PersistenceException
+    name: PersistenceException
 - uid: Sin.Net.Domain.Infrastructure
   name: Sin.Net.Domain.Infrastructure
   items:
@@ -149,11 +154,23 @@
   items:
   - uid: Sin.Net.Persistence.Exports.BinaryExporter
     name: BinaryExporter
+  - uid: Sin.Net.Persistence.Exports.CsvExporter
+    name: CsvExporter
+  - uid: Sin.Net.Persistence.Exports.ExporterBase
+    name: ExporterBase
+  - uid: Sin.Net.Persistence.Exports.JsonExporter
+    name: JsonExporter
 - uid: Sin.Net.Persistence.Imports
   name: Sin.Net.Persistence.Imports
   items:
   - uid: Sin.Net.Persistence.Imports.BinaryImporter
     name: BinaryImporter
+  - uid: Sin.Net.Persistence.Imports.CsvImporter
+    name: CsvImporter
+  - uid: Sin.Net.Persistence.Imports.ImporterBase
+    name: ImporterBase
+  - uid: Sin.Net.Persistence.Imports.JsonImporter
+    name: JsonImporter
 - uid: Sin.Net.Persistence.IO.Binary
   name: Sin.Net.Persistence.IO.Binary
   items:

@@ -1,89 +1,112 @@
-﻿using Sin.Net.Domain.Persistence;
+﻿using System;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using Sin.Net.Domain.Exeptions;
+using Sin.Net.Domain.Persistence;
 using Sin.Net.Domain.Persistence.Adapter;
 using Sin.Net.Domain.Persistence.Logging;
 using Sin.Net.Domain.Persistence.Settings;
-using Sin.Net.Persistence.IO;
 using Sin.Net.Persistence.IO.Binary;
 using Sin.Net.Persistence.Settings;
-using System;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Sin.Net.Persistence.Imports
 {
-    public class BinaryImporter : IImportable
-    {
-        // -- fields
+	public class BinaryImporter : ImporterBase
+	{
+		// -- fields
 
-        private FileSetting _setting;
-        private object _data;
+		private FileSetting _setting;
+		private object _data;
 
-        // -- constructors 
+		// -- constructors 
 
-        public BinaryImporter()
-        {
+		public BinaryImporter() : base()
+		{
 
-        }
+		}
 
-        // -- methods
+		// -- methods
 
-        public IImportable Setup(SettingsBase setting)
-        {
-            if (setting is FileSetting)
-            {
-                _setting = setting as FileSetting;
-            }
-            else
-            {
-                Log.Error($"The setting has the wrong type and was not accepted.", this);
-            }
-            return this;
-        }
+		public override IImportable Setup(SettingsBase setting)
+		{
+			try
+			{
+				_setting = setting as FileSetting;
+			}
+			catch (Exception ex)
+			{
+				base.HandleException(ex);
+			}
+			finally
+			{
 
-        public IImportable Import()
-        {
-            Stream s = null;
-            try
-            {
-                using (s = File.Open(_setting.FullPath, FileMode.Open))
-                {
-                    BinaryFormatter formatter = new BinaryFormatter();
-                    byte[] bytes = (byte[])formatter.Deserialize(s);
-                    _data = BinaryIO.FromBytes<object>(bytes);
-                }
-            }
-            catch (Exception ex)
-            {
-                Log.Fatal(ex);
-            }
-            finally
-            {
-                if (s != null)
-                {
-                    s.Close();
-                }
-            }
+			}
 
-            return this;
-        }
+			return this;
+		}
 
-        public T As<T>() where T : new()
-        {
-            return (T)_data;
-        }
+		public override IImportable Import()
+		{
+			Stream s = null;
+			try
+			{
+				using (s = File.Open(_setting.FullPath, FileMode.Open))
+				{
+					BinaryFormatter formatter = new BinaryFormatter();
+					byte[] bytes = (byte[])formatter.Deserialize(s);
+					_data = BinaryIO.FromBytes<object>(bytes);
+				}
+			}
+			catch (Exception ex)
+			{
+				base.HandleException(ex);
+			}
+			finally
+			{
+				if (s != null)
+				{
+					s.Close();
+				}
+			}
 
-        public T As<T>(IAdaptable adapter) where T : new()
-        {
-            return adapter.Adapt<object, T>(_data);
-        }
+			return this;
+		}
 
-        public object AsItIs()
-        {
-            return _data;
-        }
+		public override T As<T>()
+		{
+			try
+			{
+				return (T)_data;
+			}
+			catch (Exception ex)
+			{
+				HandleException(ex);
+			}
 
-        // -- properties
+			return default;
+		}
 
-        public string Type => Constants.Binary.Key;
-    }
+		public override T As<T>(IAdaptable adapter)
+		{
+			try
+			{
+				return adapter.Adapt<object, T>(_data);
+			}
+			catch (Exception ex)
+			{
+				HandleException(ex);
+			}
+
+			return default;
+		}
+
+		public override object AsItIs()
+		{
+			return _data;
+		}
+
+		// -- properties
+
+		public override string Type => Constants.Binary.Key;
+	}
 }

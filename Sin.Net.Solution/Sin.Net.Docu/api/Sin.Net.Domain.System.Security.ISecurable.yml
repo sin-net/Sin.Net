@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/Security/ISecurable.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ISecurable
     path: ../Sin.Net.Domain/System/Security/ISecurable.cs
@@ -54,7 +54,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/Security/ISecurable.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Secure
     path: ../Sin.Net.Domain/System/Security/ISecurable.cs

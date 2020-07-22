@@ -1,4 +1,5 @@
-﻿using Sin.Net.Domain.Persistence;
+﻿using Sin.Net.Domain.Exeptions;
+using Sin.Net.Domain.Persistence;
 using Sin.Net.Domain.Persistence.Adapter;
 using Sin.Net.Domain.Persistence.Logging;
 using Sin.Net.Domain.Persistence.Settings;
@@ -14,7 +15,7 @@ namespace Sin.Net.Persistence.Exports
     /// <summary>
     /// Die Klasse implementiert die IExportable Schnittstelle zum Exportieren von Objekten in das Json-Format.
     /// </summary>
-    internal class JsonExporter : IExportable
+    public class JsonExporter : ExporterBase
     {
 
         // -- fields
@@ -24,14 +25,14 @@ namespace Sin.Net.Persistence.Exports
 
         // -- constructors
 
-        public JsonExporter()
+        public JsonExporter() : base()
         {
 
         }
 
         // -- methods
 
-        public IExportable Setup(SettingsBase setting)
+        public override IExportable Setup(SettingsBase setting)
         {
             if (setting is JsonSetting)
             {
@@ -44,12 +45,12 @@ namespace Sin.Net.Persistence.Exports
             return this;
         }
 
-        public IExportable Build<T>(T data)
+        public override IExportable Build<T>(T data)
         {
             return Build<T>(data, null);
         }
 
-        public IExportable Build<T>(T data, IAdaptable adapter)
+        public override IExportable Build<T>(T data, IAdaptable adapter)
         {
             if (adapter != null)
             {
@@ -67,7 +68,7 @@ namespace Sin.Net.Persistence.Exports
         /// Führt die Kernfunktion des Exports aus und gibt bei erfolgreichen Export den kompletten Pfad aus. andernfalls null.
         /// </summary>
         /// <returns></returns>
-        public string Export()
+        public override string Export()
         {
             string file = _setting.FullPath;
             string result = null;
@@ -95,6 +96,6 @@ namespace Sin.Net.Persistence.Exports
 
         // -- properties
 
-        public string Type => Persistence.Constants.Json.Key;
+        public override string Type => Persistence.Constants.Json.Key;
     }
 }

@@ -26,7 +26,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/PersistenceController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: PersistenceController
     path: ../Sin.Net.Persistence/PersistenceController.cs
@@ -76,7 +76,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/PersistenceController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: _exports
     path: ../Sin.Net.Persistence/PersistenceController.cs
@@ -107,7 +107,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/PersistenceController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: _imports
     path: ../Sin.Net.Persistence/PersistenceController.cs
@@ -138,7 +138,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/PersistenceController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Persistence/PersistenceController.cs
@@ -171,7 +171,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/PersistenceController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: InitExports
     path: ../Sin.Net.Persistence/PersistenceController.cs
@@ -207,7 +207,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/PersistenceController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: InitImports
     path: ../Sin.Net.Persistence/PersistenceController.cs
@@ -243,7 +243,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/PersistenceController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Add
     path: ../Sin.Net.Persistence/PersistenceController.cs
@@ -284,7 +284,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/PersistenceController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Add
     path: ../Sin.Net.Persistence/PersistenceController.cs
@@ -328,7 +328,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/PersistenceController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Add
     path: ../Sin.Net.Persistence/PersistenceController.cs
@@ -369,7 +369,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/PersistenceController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Add
     path: ../Sin.Net.Persistence/PersistenceController.cs
@@ -413,7 +413,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/PersistenceController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Exporter
     path: ../Sin.Net.Persistence/PersistenceController.cs
@@ -450,7 +450,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/PersistenceController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Importer
     path: ../Sin.Net.Persistence/PersistenceController.cs

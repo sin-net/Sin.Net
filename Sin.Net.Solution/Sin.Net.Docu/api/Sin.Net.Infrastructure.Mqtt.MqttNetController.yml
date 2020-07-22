@@ -30,7 +30,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: MqttNetController
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -82,7 +82,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: MessageReceived
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -115,7 +115,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Connected
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -148,7 +148,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Disconnected
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -181,7 +181,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -212,7 +212,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Sin.Net.Domain.Infrastructure.IControlable.Setup
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -247,7 +247,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Setup
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -282,7 +282,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Connect
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -316,7 +316,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Disconnect
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -350,7 +350,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ConnectAsync
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -384,7 +384,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: DisconnectAsync
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -418,7 +418,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: PublishAsync
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -457,7 +457,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: PublishAsync
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -498,7 +498,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Config
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -533,7 +533,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IsConnected
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
@@ -573,7 +573,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Sin.Net.Domain.Infrastructure.IControlable.Config
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs

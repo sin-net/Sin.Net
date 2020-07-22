@@ -1,99 +1,115 @@
-﻿using Sin.Net.Domain.Persistence;
-using Sin.Net.Domain.Persistence.Adapter;
-using Sin.Net.Domain.Persistence.Logging;
-using Sin.Net.Domain.Persistence.Settings;
-using Sin.Net.Persistence.IO;
-using Sin.Net.Persistence.IO.Binary;
-using Sin.Net.Persistence.Settings;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using Sin.Net.Domain.Exeptions;
+using Sin.Net.Domain.Persistence;
+using Sin.Net.Domain.Persistence.Adapter;
+using Sin.Net.Domain.Persistence.Settings;
+using Sin.Net.Persistence.IO.Binary;
+using Sin.Net.Persistence.Settings;
 
 namespace Sin.Net.Persistence.Exports
 {
-    public class BinaryExporter : IExportable
-    {
-        // -- fields
+	public class BinaryExporter : ExporterBase
+	{
+		// -- fields
 
-        private FileSetting _setting;
-        private object _data;
+		private FileSetting _setting;
+		private object _data;
 
-        // -- constructor
+		// -- constructor
 
-        public BinaryExporter()
-        {
+		public BinaryExporter() : base()
+		{
+			
+		}
 
-        }
+		public override IExportable Setup(SettingsBase setting)
+		{
+			try
+			{
+				_setting = setting as FileSetting;
+			}
+			catch (Exception ex)
+			{
+				base.HandleException(ex);
+			}
+			finally
+			{
 
-        public IExportable Setup(SettingsBase setting)
-        {
-            if (setting is FileSetting)
-            {
-                _setting = setting as FileSetting;
-            }
-            else
-            {
-                Log.Error($"The setting has the wrong type and was not accepted.", this);
-            }
-            return this;
-        }
+			}
 
+			return this;
+		}
 
-        public IExportable Build<T>(T data)
-        {
-            return Build(data, null);
-        }
+		public override IExportable Build<T>(T data)
+		{
+			return Build(data, null);
+		}
 
-        public IExportable Build<T>(T data, IAdaptable adapter)
-        {
-            if (adapter == null)
-            {
-                _data = data;
-            }
-            else
-            {
-                _data = adapter.Adapt<T, object>(data);
-            }
-            return this;
-        }
+		public override IExportable Build<T>(T data, IAdaptable adapter)
+		{
+			try
+			{
+				if (adapter == null)
+				{
+					_data = data;
+				}
+				else
+				{
+					_data = adapter.Adapt<T, object>(data);
+				}
+			}
+			catch (Exception ex)
+			{
+				HandleException(ex);
+			}
+			finally
+			{
 
-        public string Export()
-        {
-            var s = default(Stream);
-            var result = "";
-            try
-            {
-                // restore path
-                if (!string.IsNullOrEmpty(_setting.Location) &&
-                    !Directory.Exists(_setting.Location))
-                {
-                    Directory.CreateDirectory(_setting.Location);
-                }
+			}
 
-                using (s = File.Open(_setting.FullPath, FileMode.Create))
-                {
-                    BinaryFormatter formatter = new BinaryFormatter();
-                    formatter.Serialize(s, BinaryIO.ToBytes(_data));
-                    result = _setting.FullPath;
-                }
-            }
-            catch (Exception ex)
-            {
-                Log.Fatal(ex);
-            }
-            finally
-            {
-                if (s != null)
-                {
-                    s.Close();
-                }
-            }
-            return result;
-        }
+			return this;
+		}
 
-        // -- properties
+		public override string Export()
+		{
+			var s = default(Stream);
+			var result = "";
+			try
+			{
+				// restore path
+				if (!string.IsNullOrEmpty(_setting.Location) &&
+					!Directory.Exists(_setting.Location))
+				{
+					Directory.CreateDirectory(_setting.Location);
+				}
 
-        public string Type => Constants.Binary.Key;
+				using (s = File.Open(_setting.FullPath, FileMode.Create))
+				{
+					BinaryFormatter formatter = new BinaryFormatter();
+					formatter.Serialize(s, BinaryIO.ToBytes(_data));
+					result = _setting.FullPath;
+				}
+			}
+			catch (Exception ex)
+			{
+				HandleException(ex);
+			}
+			finally
+			{
+				if (s != null)
+				{
+					s.Close();
+				}
+			}
+			return result;
+		}
+		
+		// -- properties
 
-    }
+		public override string Type => Constants.Binary.Key;
+			
+	}
 }

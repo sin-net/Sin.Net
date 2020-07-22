@@ -5,6 +5,9 @@ items:
   id: Sin.Net.Persistence.Exports
   children:
   - Sin.Net.Persistence.Exports.BinaryExporter
+  - Sin.Net.Persistence.Exports.CsvExporter
+  - Sin.Net.Persistence.Exports.ExporterBase
+  - Sin.Net.Persistence.Exports.JsonExporter
   langs:
   - csharp
   - vb
@@ -20,3 +23,24 @@ references:
   name: BinaryExporter
   nameWithType: BinaryExporter
   fullName: Sin.Net.Persistence.Exports.BinaryExporter
+- uid: Sin.Net.Persistence.Exports.CsvExporter
+  commentId: T:Sin.Net.Persistence.Exports.CsvExporter
+  name: CsvExporter
+  nameWithType: CsvExporter
+  fullName: Sin.Net.Persistence.Exports.CsvExporter
+- uid: Sin.Net.Persistence.Exports.ExporterBase
+  commentId: T:Sin.Net.Persistence.Exports.ExporterBase
+  parent: Sin.Net.Persistence.Exports
+  name: ExporterBase
+  nameWithType: ExporterBase
+  fullName: Sin.Net.Persistence.Exports.ExporterBase
+- uid: Sin.Net.Persistence.Exports.JsonExporter
+  commentId: T:Sin.Net.Persistence.Exports.JsonExporter
+  name: JsonExporter
+  nameWithType: JsonExporter
+  fullName: Sin.Net.Persistence.Exports.JsonExporter
+- uid: Sin.Net.Persistence.Exports
+  commentId: N:Sin.Net.Persistence.Exports
+  name: Sin.Net.Persistence.Exports
+  nameWithType: Sin.Net.Persistence.Exports
+  fullName: Sin.Net.Persistence.Exports

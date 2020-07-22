@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: HttpResponseEventArgs
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
@@ -73,7 +73,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
@@ -109,7 +109,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
@@ -148,7 +148,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Endpoint
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
@@ -185,7 +185,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Response
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
@@ -222,7 +222,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Timestamp
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
@@ -259,7 +259,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-      branch: master
+      branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: StatusCode
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs

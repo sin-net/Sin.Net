@@ -3,6 +3,7 @@ using MSTests.Persistence.Data;
 using Sin.Net.Domain.Persistence;
 using Sin.Net.Domain.Persistence.Logging;
 using Sin.Net.Persistence;
+using Sin.Net.Persistence.Exports;
 using Sin.Net.Persistence.IO.Json;
 using Sin.Net.Persistence.Settings;
 using System;
@@ -158,12 +159,14 @@ namespace MSTests.Persistence
 
             // act & assert export
 
-            var result = _io.Exporter(Constants.Binary.Key)
+            var exporter = _io.Exporter(Constants.Binary.Key);
+            var result = exporter
                 .Setup(setting)
                 .Build(data)
                 .Export();
 
             Assert.IsNotNull(result, "binary export failed");
+            Assert.IsNull(exporter.Exception, "The exception property should be null.");
 
             // act & assert import
 
@@ -232,7 +235,29 @@ namespace MSTests.Persistence
                 }
             }
         }
+
+        [TestMethod]
+        public void HandleExceptionOfImportExport()
+        {
+            // arrange
+            var importer = new DefectImporter();
+
+
+            // act
+            var result = importer.Setup(new FileSetting())
+                .Import()
+                .As<Object>(null);
+
+            // assert
+            Assert.IsNotNull(importer.Exception, "There should be some exceptions");
+            Assert.IsTrue(importer.Exception.InnerException is AggregateException, "There should be an inner AggregateException");
+
+            Assert.IsTrue(
+                ((AggregateException)importer.Exception.InnerException).InnerExceptions.Count == 3, "There should be 3 inner exceptions");
+        }
     }
+
+
 
     internal enum TestStates
     {
