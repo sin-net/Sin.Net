@@ -33,6 +33,7 @@ items:
     content: 'public class FileSetting : SettingsBase'
     content.vb: >-
       Public Class FileSetting
+
           Inherits SettingsBase
   inheritance:
   - System.Object

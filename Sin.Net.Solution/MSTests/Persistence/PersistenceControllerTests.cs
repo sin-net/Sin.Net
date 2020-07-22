@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
+using System.Linq;
 
 namespace MSTests.Persistence
 {
@@ -237,28 +238,40 @@ namespace MSTests.Persistence
         }
 
         [TestMethod]
-        public void HandleExceptionOfImportExport()
+        public void HandleExceptionOfImportExportBaseClasses()
         {
-            // arrange
+            // importer - arrange, act, assert
             var importer = new DefectImporter();
 
-
-            // act
-            var result = importer.Setup(new FileSetting())
+            importer.Setup(new FileSetting())
                 .Import()
-                .As<Object>(null);
+                .As<object>(null);
 
-            // assert
-            Assert.IsNotNull(importer.Exception, "There should be some exceptions");
-            Assert.IsTrue(importer.Exception.InnerException is AggregateException, "There should be an inner AggregateException");
-
+            Assert.IsNotNull(importer.Exception, "The Exception property of the importer should not be null.");
             Assert.IsTrue(
-                ((AggregateException)importer.Exception.InnerException).InnerExceptions.Count == 3, "There should be 3 inner exceptions");
+                importer.Exception.InnerException is AggregateException,
+                "There should be an inner AggregateException");
+            Assert.IsTrue(
+                ((AggregateException)importer.Exception.InnerException).InnerExceptions.Count == 3,
+                "There should be 3 inner exceptions");            
+
+            // exporter - arrange, act, assert
+            var exporter = new DefectExporter();
+
+            exporter.Setup(new FileSetting())
+                .Build<object>(null)
+                .Export();
+
+            Assert.IsNotNull(exporter.Exception, "The Exception property should not be null.");
+            Assert.IsTrue(
+             exporter.Exception.InnerException is AggregateException,
+             "There should be an inner AggregateException");
+            Assert.IsTrue(
+                ((AggregateException)exporter.Exception.InnerException).InnerExceptions.Count == 3,
+                "There should be 3 inner exceptions");
         }
     }
-
-
-
+    
     internal enum TestStates
     {
         Unknown,

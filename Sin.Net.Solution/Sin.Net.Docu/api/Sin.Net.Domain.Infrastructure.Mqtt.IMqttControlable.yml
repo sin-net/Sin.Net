@@ -32,6 +32,7 @@ items:
     content: 'public interface IMqttControlable : IAsyncControlable, IControlable'
     content.vb: >-
       Public Interface IMqttControlable
+
           Inherits IAsyncControlable
   inheritedMembers:
   - Sin.Net.Domain.Infrastructure.IAsyncControlable.ConnectAsync

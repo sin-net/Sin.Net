@@ -35,6 +35,7 @@ items:
     content: 'public class SmtpConfig : ConfigBase'
     content.vb: >-
       Public Class SmtpConfig
+
           Inherits ConfigBase
   inheritance:
   - System.Object

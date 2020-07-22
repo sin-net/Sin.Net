@@ -37,6 +37,7 @@ items:
     content: 'public class SmtpController : IControlable'
     content.vb: >-
       Public Class SmtpController
+
           Implements IControlable
   inheritance:
   - System.Object
