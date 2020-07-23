@@ -1,34 +1,36 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Sin.Net.Domain.Infrastructure.IAsyncControlable
-  commentId: T:Sin.Net.Domain.Infrastructure.IAsyncControlable
-  id: IAsyncControlable
-  parent: Sin.Net.Domain.Infrastructure
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+  commentId: T:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+  id: ISmtpControlable
+  parent: Sin.Net.Domain.Infrastructure.Smtp
   children:
-  - Sin.Net.Domain.Infrastructure.IAsyncControlable.ConnectAsync
-  - Sin.Net.Domain.Infrastructure.IAsyncControlable.DisconnectAsync
+  - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.Object[])
+  - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.String,System.String,System.Object[])
+  - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String,System.String[],System.String,System.String,System.Object[])
+  - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send
   langs:
   - csharp
   - vb
-  name: IAsyncControlable
-  nameWithType: IAsyncControlable
-  fullName: Sin.Net.Domain.Infrastructure.IAsyncControlable
+  name: ISmtpControlable
+  nameWithType: ISmtpControlable
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
   type: Interface
   source:
     remote:
-      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/IAsyncControlable.cs
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
       branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
-    id: IAsyncControlable
-    path: ../Sin.Net.Domain/Infrastructure/IAsyncControlable.cs
-    startLine: 4
+    id: ISmtpControlable
+    path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
+    startLine: 7
   assemblies:
   - Sin.Net.Domain
-  namespace: Sin.Net.Domain.Infrastructure
+  namespace: Sin.Net.Domain.Infrastructure.Smtp
   syntax:
-    content: 'public interface IAsyncControlable : IControlable'
+    content: 'public interface ISmtpControlable : IControlable'
     content.vb: >-
-      Public Interface IAsyncControlable
+      Public Interface ISmtpControlable
           Inherits IControlable
   inheritedMembers:
   - Sin.Net.Domain.Infrastructure.IControlable.Setup(Sin.Net.Domain.Config.ConfigBase)
@@ -38,7 +40,7 @@ items:
   - Sin.Net.Domain.Infrastructure.IControlable.Config
   extensionMethods:
   - System.Object.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
-  - Sin.Net.Domain.Infrastructure.IAsyncControlable.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
+  - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
   - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
   - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
   modifiers.csharp:
@@ -47,68 +49,162 @@ items:
   modifiers.vb:
   - Public
   - Interface
-- uid: Sin.Net.Domain.Infrastructure.IAsyncControlable.ConnectAsync
-  commentId: M:Sin.Net.Domain.Infrastructure.IAsyncControlable.ConnectAsync
-  id: ConnectAsync
-  parent: Sin.Net.Domain.Infrastructure.IAsyncControlable
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.Object[])
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.Object[])
+  id: BuildMessage(System.String,System.String,System.Object[])
+  parent: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
   langs:
   - csharp
   - vb
-  name: ConnectAsync()
-  nameWithType: IAsyncControlable.ConnectAsync()
-  fullName: Sin.Net.Domain.Infrastructure.IAsyncControlable.ConnectAsync()
+  name: BuildMessage(String, String, Object[])
+  nameWithType: ISmtpControlable.BuildMessage(String, String, Object[])
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String, System.Object[])
   type: Method
   source:
     remote:
-      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/IAsyncControlable.cs
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
       branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
-    id: ConnectAsync
-    path: ../Sin.Net.Domain/Infrastructure/IAsyncControlable.cs
-    startLine: 6
+    id: BuildMessage
+    path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
+    startLine: 9
   assemblies:
   - Sin.Net.Domain
-  namespace: Sin.Net.Domain.Infrastructure
+  namespace: Sin.Net.Domain.Infrastructure.Smtp
   syntax:
-    content: Task ConnectAsync()
+    content: ISmtpControlable BuildMessage(string subject, string body, object[] attachment = null)
+    parameters:
+    - id: subject
+      type: System.String
+    - id: body
+      type: System.String
+    - id: attachment
+      type: System.Object[]
     return:
-      type: System.Threading.Tasks.Task
-    content.vb: Function ConnectAsync As Task
-  overload: Sin.Net.Domain.Infrastructure.IAsyncControlable.ConnectAsync*
-- uid: Sin.Net.Domain.Infrastructure.IAsyncControlable.DisconnectAsync
-  commentId: M:Sin.Net.Domain.Infrastructure.IAsyncControlable.DisconnectAsync
-  id: DisconnectAsync
-  parent: Sin.Net.Domain.Infrastructure.IAsyncControlable
+      type: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+    content.vb: Function BuildMessage(subject As String, body As String, attachment As Object() = Nothing) As ISmtpControlable
+  overload: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage*
+  nameWithType.vb: ISmtpControlable.BuildMessage(String, String, Object())
+  fullName.vb: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String, System.Object())
+  name.vb: BuildMessage(String, String, Object())
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.String,System.String,System.Object[])
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.String,System.String,System.Object[])
+  id: BuildMessage(System.String,System.String,System.String,System.String,System.Object[])
+  parent: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
   langs:
   - csharp
   - vb
-  name: DisconnectAsync()
-  nameWithType: IAsyncControlable.DisconnectAsync()
-  fullName: Sin.Net.Domain.Infrastructure.IAsyncControlable.DisconnectAsync()
+  name: BuildMessage(String, String, String, String, Object[])
+  nameWithType: ISmtpControlable.BuildMessage(String, String, String, String, Object[])
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String, System.String, System.String, System.Object[])
   type: Method
   source:
     remote:
-      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/IAsyncControlable.cs
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
       branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
-    id: DisconnectAsync
-    path: ../Sin.Net.Domain/Infrastructure/IAsyncControlable.cs
-    startLine: 8
+    id: BuildMessage
+    path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
+    startLine: 14
   assemblies:
   - Sin.Net.Domain
-  namespace: Sin.Net.Domain.Infrastructure
+  namespace: Sin.Net.Domain.Infrastructure.Smtp
   syntax:
-    content: Task DisconnectAsync()
+    content: ISmtpControlable BuildMessage(string sender, string receiver, string subject, string body, object[] attachment = null)
+    parameters:
+    - id: sender
+      type: System.String
+    - id: receiver
+      type: System.String
+    - id: subject
+      type: System.String
+    - id: body
+      type: System.String
+    - id: attachment
+      type: System.Object[]
     return:
-      type: System.Threading.Tasks.Task
-    content.vb: Function DisconnectAsync As Task
-  overload: Sin.Net.Domain.Infrastructure.IAsyncControlable.DisconnectAsync*
+      type: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+    content.vb: Function BuildMessage(sender As String, receiver As String, subject As String, body As String, attachment As Object() = Nothing) As ISmtpControlable
+  overload: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage*
+  nameWithType.vb: ISmtpControlable.BuildMessage(String, String, String, String, Object())
+  fullName.vb: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String, System.String, System.String, System.Object())
+  name.vb: BuildMessage(String, String, String, String, Object())
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String,System.String[],System.String,System.String,System.Object[])
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String,System.String[],System.String,System.String,System.Object[])
+  id: BuildMessages(System.String,System.String[],System.String,System.String,System.Object[])
+  parent: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+  langs:
+  - csharp
+  - vb
+  name: BuildMessages(String, String[], String, String, Object[])
+  nameWithType: ISmtpControlable.BuildMessages(String, String[], String, String, Object[])
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String, System.String[], System.String, System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
+      branch: develop
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: BuildMessages
+    path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
+    startLine: 21
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure.Smtp
+  syntax:
+    content: ISmtpControlable BuildMessages(string sender, string[] receivers, string subject, string body, object[] attachment = null)
+    parameters:
+    - id: sender
+      type: System.String
+    - id: receivers
+      type: System.String[]
+    - id: subject
+      type: System.String
+    - id: body
+      type: System.String
+    - id: attachment
+      type: System.Object[]
+    return:
+      type: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+    content.vb: Function BuildMessages(sender As String, receivers As String(), subject As String, body As String, attachment As Object() = Nothing) As ISmtpControlable
+  overload: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages*
+  nameWithType.vb: ISmtpControlable.BuildMessages(String, String(), String, String, Object())
+  fullName.vb: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String, System.String(), System.String, System.String, System.Object())
+  name.vb: BuildMessages(String, String(), String, String, Object())
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send
+  id: Send
+  parent: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+  langs:
+  - csharp
+  - vb
+  name: Send()
+  nameWithType: ISmtpControlable.Send()
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send()
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
+      branch: develop
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Send
+    path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
+    startLine: 28
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure.Smtp
+  syntax:
+    content: bool Send()
+    return:
+      type: System.Boolean
+    content.vb: Function Send As Boolean
+  overload: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send*
 references:
-- uid: Sin.Net.Domain.Infrastructure
-  commentId: N:Sin.Net.Domain.Infrastructure
-  name: Sin.Net.Domain.Infrastructure
-  nameWithType: Sin.Net.Domain.Infrastructure
-  fullName: Sin.Net.Domain.Infrastructure
+- uid: Sin.Net.Domain.Infrastructure.Smtp
+  commentId: N:Sin.Net.Domain.Infrastructure.Smtp
+  name: Sin.Net.Domain.Infrastructure.Smtp
+  nameWithType: Sin.Net.Domain.Infrastructure.Smtp
+  fullName: Sin.Net.Domain.Infrastructure.Smtp
 - uid: Sin.Net.Domain.Infrastructure.IControlable.Setup(Sin.Net.Domain.Config.ConfigBase)
   commentId: M:Sin.Net.Domain.Infrastructure.IControlable.Setup(Sin.Net.Domain.Config.ConfigBase)
   parent: Sin.Net.Domain.Infrastructure.IControlable
@@ -242,21 +338,21 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Sin.Net.Domain.Infrastructure.IAsyncControlable.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
   commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
   parent: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
   definition: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
-  name: Clone<IAsyncControlable>()
-  nameWithType: ObjectCloneExtensions.Clone<IAsyncControlable>()
-  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<Sin.Net.Domain.Infrastructure.IAsyncControlable>()
-  nameWithType.vb: ObjectCloneExtensions.Clone(Of IAsyncControlable)()
-  fullName.vb: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of Sin.Net.Domain.Infrastructure.IAsyncControlable)()
-  name.vb: Clone(Of IAsyncControlable)()
+  name: Clone<ISmtpControlable>()
+  nameWithType: ObjectCloneExtensions.Clone<ISmtpControlable>()
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable>()
+  nameWithType.vb: ObjectCloneExtensions.Clone(Of ISmtpControlable)()
+  fullName.vb: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable)()
+  name.vb: Clone(Of ISmtpControlable)()
   spec.csharp:
   - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
-    name: Clone<IAsyncControlable>
-    nameWithType: ObjectCloneExtensions.Clone<IAsyncControlable>
-    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<Sin.Net.Domain.Infrastructure.IAsyncControlable>
+    name: Clone<ISmtpControlable>
+    nameWithType: ObjectCloneExtensions.Clone<ISmtpControlable>
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable>
   - name: (
     nameWithType: (
     fullName: (
@@ -265,9 +361,9 @@ references:
     fullName: )
   spec.vb:
   - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
-    name: Clone(Of IAsyncControlable)
-    nameWithType: ObjectCloneExtensions.Clone(Of IAsyncControlable)
-    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of Sin.Net.Domain.Infrastructure.IAsyncControlable)
+    name: Clone(Of ISmtpControlable)
+    nameWithType: ObjectCloneExtensions.Clone(Of ISmtpControlable)
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable)
   - name: (
     nameWithType: (
     fullName: (
@@ -612,6 +708,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Sin.Net.Domain.Infrastructure
+  commentId: N:Sin.Net.Domain.Infrastructure
+  name: Sin.Net.Domain.Infrastructure
+  nameWithType: Sin.Net.Domain.Infrastructure
+  fullName: Sin.Net.Domain.Infrastructure
 - uid: Sin.Net.Domain.System.Extensions
   commentId: N:Sin.Net.Domain.System.Extensions
   name: Sin.Net.Domain.System.Extensions
@@ -622,26 +723,96 @@ references:
   name: Sin.Net.Domain.System.Security
   nameWithType: Sin.Net.Domain.System.Security
   fullName: Sin.Net.Domain.System.Security
-- uid: Sin.Net.Domain.Infrastructure.IAsyncControlable.ConnectAsync*
-  commentId: Overload:Sin.Net.Domain.Infrastructure.IAsyncControlable.ConnectAsync
-  name: ConnectAsync
-  nameWithType: IAsyncControlable.ConnectAsync
-  fullName: Sin.Net.Domain.Infrastructure.IAsyncControlable.ConnectAsync
-- uid: System.Threading.Tasks.Task
-  commentId: T:System.Threading.Tasks.Task
-  parent: System.Threading.Tasks
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage*
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage
+  name: BuildMessage
+  nameWithType: ISmtpControlable.BuildMessage
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
   isExternal: true
-  name: Task
-  nameWithType: Task
-  fullName: System.Threading.Tasks.Task
-- uid: System.Threading.Tasks
-  commentId: N:System.Threading.Tasks
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Object[]
   isExternal: true
-  name: System.Threading.Tasks
-  nameWithType: System.Threading.Tasks
-  fullName: System.Threading.Tasks
-- uid: Sin.Net.Domain.Infrastructure.IAsyncControlable.DisconnectAsync*
-  commentId: Overload:Sin.Net.Domain.Infrastructure.IAsyncControlable.DisconnectAsync
-  name: DisconnectAsync
-  nameWithType: IAsyncControlable.DisconnectAsync
-  fullName: Sin.Net.Domain.Infrastructure.IAsyncControlable.DisconnectAsync
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+  commentId: T:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+  parent: Sin.Net.Domain.Infrastructure.Smtp
+  name: ISmtpControlable
+  nameWithType: ISmtpControlable
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages*
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages
+  name: BuildMessages
+  nameWithType: ISmtpControlable.BuildMessages
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send*
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send
+  name: Send
+  nameWithType: ISmtpControlable.Send
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

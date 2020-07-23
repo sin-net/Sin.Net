@@ -35,9 +35,7 @@ items:
     content: 'public class JsonExporter : ExporterBase, IExportable'
     content.vb: >-
       Public Class JsonExporter
-
           Inherits ExporterBase
-
           Implements IExportable
   inheritance:
   - System.Object

@@ -1,305 +1,416 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Sin.Net.Domain.Persistence.IImportable
-  commentId: T:Sin.Net.Domain.Persistence.IImportable
-  id: IImportable
-  parent: Sin.Net.Domain.Persistence
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
+  commentId: T:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
+  id: SmtpConfig.SmtpHost
+  parent: Sin.Net.Infrastructure.Smtp
   children:
-  - Sin.Net.Domain.Persistence.IImportable.As``1
-  - Sin.Net.Domain.Persistence.IImportable.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
-  - Sin.Net.Domain.Persistence.IImportable.AsItIs
-  - Sin.Net.Domain.Persistence.IImportable.Exception
-  - Sin.Net.Domain.Persistence.IImportable.Import
-  - Sin.Net.Domain.Persistence.IImportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
-  - Sin.Net.Domain.Persistence.IImportable.Type
+  - Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name
+  - Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port
   langs:
   - csharp
   - vb
-  name: IImportable
-  nameWithType: IImportable
-  fullName: Sin.Net.Domain.Persistence.IImportable
-  type: Interface
+  name: SmtpConfig.SmtpHost
+  nameWithType: SmtpConfig.SmtpHost
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
+  type: Class
   source:
     remote:
-      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
       branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
-    id: IImportable
-    path: ../Sin.Net.Domain/Persistence/IImportable.cs
-    startLine: 10
+    id: SmtpHost
+    path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+    startLine: 25
   assemblies:
-  - Sin.Net.Domain
-  namespace: Sin.Net.Domain.Persistence
-  summary: "\nInterface for concrete import functionality\n"
-  example: []
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Smtp
   syntax:
-    content: public interface IImportable
-    content.vb: Public Interface IImportable
+    content: public class SmtpHost
+    content.vb: Public Class SmtpHost
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
   extensionMethods:
   - System.Object.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
-  - Sin.Net.Domain.Persistence.IImportable.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
+  - Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
   - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
   - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
   modifiers.csharp:
   - public
-  - interface
+  - class
   modifiers.vb:
   - Public
-  - Interface
-- uid: Sin.Net.Domain.Persistence.IImportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
-  commentId: M:Sin.Net.Domain.Persistence.IImportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
-  id: Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
-  parent: Sin.Net.Domain.Persistence.IImportable
+  - Class
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name
+  id: Name
+  parent: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
   langs:
   - csharp
   - vb
-  name: Setup(SettingsBase)
-  nameWithType: IImportable.Setup(SettingsBase)
-  fullName: Sin.Net.Domain.Persistence.IImportable.Setup(Sin.Net.Domain.Persistence.Settings.SettingsBase)
-  type: Method
-  source:
-    remote:
-      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: develop
-      repo: git@github.com:adriansinger87/Sin.Net.git
-    id: Setup
-    path: ../Sin.Net.Domain/Persistence/IImportable.cs
-    startLine: 17
-  assemblies:
-  - Sin.Net.Domain
-  namespace: Sin.Net.Domain.Persistence
-  summary: "\nTakes the cocnrete implementation of settings\n"
-  example: []
-  syntax:
-    content: IImportable Setup(SettingsBase setting)
-    parameters:
-    - id: setting
-      type: Sin.Net.Domain.Persistence.Settings.SettingsBase
-      description: settings concretion
-    return:
-      type: Sin.Net.Domain.Persistence.IImportable
-      description: the calling IImportable-instance for method chaining
-    content.vb: Function Setup(setting As SettingsBase) As IImportable
-  overload: Sin.Net.Domain.Persistence.IImportable.Setup*
-- uid: Sin.Net.Domain.Persistence.IImportable.Import
-  commentId: M:Sin.Net.Domain.Persistence.IImportable.Import
-  id: Import
-  parent: Sin.Net.Domain.Persistence.IImportable
-  langs:
-  - csharp
-  - vb
-  name: Import()
-  nameWithType: IImportable.Import()
-  fullName: Sin.Net.Domain.Persistence.IImportable.Import()
-  type: Method
-  source:
-    remote:
-      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: develop
-      repo: git@github.com:adriansinger87/Sin.Net.git
-    id: Import
-    path: ../Sin.Net.Domain/Persistence/IImportable.cs
-    startLine: 23
-  assemblies:
-  - Sin.Net.Domain
-  namespace: Sin.Net.Domain.Persistence
-  summary: "\nRuns the import implementation\n"
-  example: []
-  syntax:
-    content: IImportable Import()
-    return:
-      type: Sin.Net.Domain.Persistence.IImportable
-      description: the calling IImportable-instance for method chaining
-    content.vb: Function Import As IImportable
-  overload: Sin.Net.Domain.Persistence.IImportable.Import*
-- uid: Sin.Net.Domain.Persistence.IImportable.As``1
-  commentId: M:Sin.Net.Domain.Persistence.IImportable.As``1
-  id: As``1
-  parent: Sin.Net.Domain.Persistence.IImportable
-  langs:
-  - csharp
-  - vb
-  name: As<T>()
-  nameWithType: IImportable.As<T>()
-  fullName: Sin.Net.Domain.Persistence.IImportable.As<T>()
-  type: Method
-  source:
-    remote:
-      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: develop
-      repo: git@github.com:adriansinger87/Sin.Net.git
-    id: As
-    path: ../Sin.Net.Domain/Persistence/IImportable.cs
-    startLine: 30
-  assemblies:
-  - Sin.Net.Domain
-  namespace: Sin.Net.Domain.Persistence
-  summary: "\nReturns the imported data with direct type conversion.\n"
-  example: []
-  syntax:
-    content: >-
-      T As<T>()
-          where T : new()
-    typeParameters:
-    - id: T
-      description: The target type T for the imported data
-    return:
-      type: '{T}'
-      description: The imported data as target type
-    content.vb: Function As(Of T As New) As T
-  overload: Sin.Net.Domain.Persistence.IImportable.As*
-  nameWithType.vb: IImportable.As(Of T)()
-  fullName.vb: Sin.Net.Domain.Persistence.IImportable.As(Of T)()
-  name.vb: As(Of T)()
-- uid: Sin.Net.Domain.Persistence.IImportable.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
-  commentId: M:Sin.Net.Domain.Persistence.IImportable.As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
-  id: As``1(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
-  parent: Sin.Net.Domain.Persistence.IImportable
-  langs:
-  - csharp
-  - vb
-  name: As<T>(IAdaptable)
-  nameWithType: IImportable.As<T>(IAdaptable)
-  fullName: Sin.Net.Domain.Persistence.IImportable.As<T>(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
-  type: Method
-  source:
-    remote:
-      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: develop
-      repo: git@github.com:adriansinger87/Sin.Net.git
-    id: As
-    path: ../Sin.Net.Domain/Persistence/IImportable.cs
-    startLine: 38
-  assemblies:
-  - Sin.Net.Domain
-  namespace: Sin.Net.Domain.Persistence
-  summary: "\nReturns the imported data with a manual adoption into the target type.\n"
-  example: []
-  syntax:
-    content: >-
-      T As<T>(IAdaptable adapter)
-          where T : new()
-    parameters:
-    - id: adapter
-      type: Sin.Net.Domain.Persistence.Adapter.IAdaptable
-    typeParameters:
-    - id: T
-      description: The target type T for the imported data
-    return:
-      type: '{T}'
-      description: The imported data as target type
-    content.vb: Function As(Of T As New)(adapter As IAdaptable) As T
-  overload: Sin.Net.Domain.Persistence.IImportable.As*
-  nameWithType.vb: IImportable.As(Of T)(IAdaptable)
-  fullName.vb: Sin.Net.Domain.Persistence.IImportable.As(Of T)(Sin.Net.Domain.Persistence.Adapter.IAdaptable)
-  name.vb: As(Of T)(IAdaptable)
-- uid: Sin.Net.Domain.Persistence.IImportable.AsItIs
-  commentId: M:Sin.Net.Domain.Persistence.IImportable.AsItIs
-  id: AsItIs
-  parent: Sin.Net.Domain.Persistence.IImportable
-  langs:
-  - csharp
-  - vb
-  name: AsItIs()
-  nameWithType: IImportable.AsItIs()
-  fullName: Sin.Net.Domain.Persistence.IImportable.AsItIs()
-  type: Method
-  source:
-    remote:
-      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: develop
-      repo: git@github.com:adriansinger87/Sin.Net.git
-    id: AsItIs
-    path: ../Sin.Net.Domain/Persistence/IImportable.cs
-    startLine: 44
-  assemblies:
-  - Sin.Net.Domain
-  namespace: Sin.Net.Domain.Persistence
-  summary: "\nReturns the imported data without any type converion.\n"
-  example: []
-  syntax:
-    content: object AsItIs()
-    return:
-      type: System.Object
-      description: The imported data as it is.
-    content.vb: Function AsItIs As Object
-  overload: Sin.Net.Domain.Persistence.IImportable.AsItIs*
-- uid: Sin.Net.Domain.Persistence.IImportable.Exception
-  commentId: P:Sin.Net.Domain.Persistence.IImportable.Exception
-  id: Exception
-  parent: Sin.Net.Domain.Persistence.IImportable
-  langs:
-  - csharp
-  - vb
-  name: Exception
-  nameWithType: IImportable.Exception
-  fullName: Sin.Net.Domain.Persistence.IImportable.Exception
+  name: Name
+  nameWithType: SmtpConfig.SmtpHost.Name
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name
   type: Property
   source:
     remote:
-      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
       branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
-    id: Exception
-    path: ../Sin.Net.Domain/Persistence/IImportable.cs
-    startLine: 51
+    id: Name
+    path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+    startLine: 27
   assemblies:
-  - Sin.Net.Domain
-  namespace: Sin.Net.Domain.Persistence
-  summary: "\nGets the exception that maybe occured during the export pocess.\n"
-  example: []
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Smtp
   syntax:
-    content: PersistenceException Exception { get; }
-    parameters: []
-    return:
-      type: Sin.Net.Domain.Exeptions.PersistenceException
-    content.vb: ReadOnly Property Exception As PersistenceException
-  overload: Sin.Net.Domain.Persistence.IImportable.Exception*
-  modifiers.csharp:
-  - get
-  modifiers.vb:
-  - ReadOnly
-- uid: Sin.Net.Domain.Persistence.IImportable.Type
-  commentId: P:Sin.Net.Domain.Persistence.IImportable.Type
-  id: Type
-  parent: Sin.Net.Domain.Persistence.IImportable
-  langs:
-  - csharp
-  - vb
-  name: Type
-  nameWithType: IImportable.Type
-  fullName: Sin.Net.Domain.Persistence.IImportable.Type
-  type: Property
-  source:
-    remote:
-      path: Sin.Net.Solution/Sin.Net.Domain/Persistence/IImportable.cs
-      branch: develop
-      repo: git@github.com:adriansinger87/Sin.Net.git
-    id: Type
-    path: ../Sin.Net.Domain/Persistence/IImportable.cs
-    startLine: 56
-  assemblies:
-  - Sin.Net.Domain
-  namespace: Sin.Net.Domain.Persistence
-  summary: "\nGets the import type\n"
-  example: []
-  syntax:
-    content: string Type { get; }
+    content: public string Name { get; set; }
     parameters: []
     return:
       type: System.String
-    content.vb: ReadOnly Property Type As String
-  overload: Sin.Net.Domain.Persistence.IImportable.Type*
+    content.vb: Public Property Name As String
+  overload: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name*
   modifiers.csharp:
+  - public
   - get
+  - set
   modifiers.vb:
-  - ReadOnly
+  - Public
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port
+  id: Port
+  parent: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
+  langs:
+  - csharp
+  - vb
+  name: Port
+  nameWithType: SmtpConfig.SmtpHost.Port
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+      branch: develop
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Port
+    path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+    startLine: 29
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Smtp
+  syntax:
+    content: public int Port { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Port As Integer
+  overload: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
 references:
-- uid: Sin.Net.Domain.Persistence
-  commentId: N:Sin.Net.Domain.Persistence
-  name: Sin.Net.Domain.Persistence
-  nameWithType: Sin.Net.Domain.Persistence
-  fullName: Sin.Net.Domain.Persistence
+- uid: Sin.Net.Infrastructure.Smtp
+  commentId: N:Sin.Net.Infrastructure.Smtp
+  name: Sin.Net.Infrastructure.Smtp
+  nameWithType: Sin.Net.Infrastructure.Smtp
+  fullName: Sin.Net.Infrastructure.Smtp
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Object.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
   commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
   parent: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
@@ -329,21 +440,21 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Sin.Net.Domain.Persistence.IImportable.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
   commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
   parent: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
   definition: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
-  name: Clone<IImportable>()
-  nameWithType: ObjectCloneExtensions.Clone<IImportable>()
-  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<Sin.Net.Domain.Persistence.IImportable>()
-  nameWithType.vb: ObjectCloneExtensions.Clone(Of IImportable)()
-  fullName.vb: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of Sin.Net.Domain.Persistence.IImportable)()
-  name.vb: Clone(Of IImportable)()
+  name: Clone<SmtpConfig.SmtpHost>()
+  nameWithType: ObjectCloneExtensions.Clone<SmtpConfig.SmtpHost>()
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost>()
+  nameWithType.vb: ObjectCloneExtensions.Clone(Of SmtpConfig.SmtpHost)()
+  fullName.vb: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost)()
+  name.vb: Clone(Of SmtpConfig.SmtpHost)()
   spec.csharp:
   - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
-    name: Clone<IImportable>
-    nameWithType: ObjectCloneExtensions.Clone<IImportable>
-    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<Sin.Net.Domain.Persistence.IImportable>
+    name: Clone<SmtpConfig.SmtpHost>
+    nameWithType: ObjectCloneExtensions.Clone<SmtpConfig.SmtpHost>
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost>
   - name: (
     nameWithType: (
     fullName: (
@@ -352,9 +463,9 @@ references:
     fullName: )
   spec.vb:
   - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
-    name: Clone(Of IImportable)
-    nameWithType: ObjectCloneExtensions.Clone(Of IImportable)
-    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of Sin.Net.Domain.Persistence.IImportable)
+    name: Clone(Of SmtpConfig.SmtpHost)
+    nameWithType: ObjectCloneExtensions.Clone(Of SmtpConfig.SmtpHost)
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost)
   - name: (
     nameWithType: (
     fullName: (
@@ -469,6 +580,12 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
   commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
   isExternal: true
@@ -703,98 +820,11 @@ references:
   name: Sin.Net.Domain.System.Security
   nameWithType: Sin.Net.Domain.System.Security
   fullName: Sin.Net.Domain.System.Security
-- uid: Sin.Net.Domain.Persistence.IImportable.Setup*
-  commentId: Overload:Sin.Net.Domain.Persistence.IImportable.Setup
-  name: Setup
-  nameWithType: IImportable.Setup
-  fullName: Sin.Net.Domain.Persistence.IImportable.Setup
-- uid: Sin.Net.Domain.Persistence.Settings.SettingsBase
-  commentId: T:Sin.Net.Domain.Persistence.Settings.SettingsBase
-  parent: Sin.Net.Domain.Persistence.Settings
-  name: SettingsBase
-  nameWithType: SettingsBase
-  fullName: Sin.Net.Domain.Persistence.Settings.SettingsBase
-- uid: Sin.Net.Domain.Persistence.IImportable
-  commentId: T:Sin.Net.Domain.Persistence.IImportable
-  parent: Sin.Net.Domain.Persistence
-  name: IImportable
-  nameWithType: IImportable
-  fullName: Sin.Net.Domain.Persistence.IImportable
-- uid: Sin.Net.Domain.Persistence.Settings
-  commentId: N:Sin.Net.Domain.Persistence.Settings
-  name: Sin.Net.Domain.Persistence.Settings
-  nameWithType: Sin.Net.Domain.Persistence.Settings
-  fullName: Sin.Net.Domain.Persistence.Settings
-- uid: Sin.Net.Domain.Persistence.IImportable.Import*
-  commentId: Overload:Sin.Net.Domain.Persistence.IImportable.Import
-  name: Import
-  nameWithType: IImportable.Import
-  fullName: Sin.Net.Domain.Persistence.IImportable.Import
-- uid: Sin.Net.Domain.Persistence.IImportable.As*
-  commentId: Overload:Sin.Net.Domain.Persistence.IImportable.As
-  name: As
-  nameWithType: IImportable.As
-  fullName: Sin.Net.Domain.Persistence.IImportable.As
-- uid: '{T}'
-  commentId: '!:T'
-  definition: T
-  name: T
-  nameWithType: T
-  fullName: T
-- uid: T
-  name: T
-  nameWithType: T
-  fullName: T
-- uid: Sin.Net.Domain.Persistence.Adapter.IAdaptable
-  commentId: T:Sin.Net.Domain.Persistence.Adapter.IAdaptable
-  parent: Sin.Net.Domain.Persistence.Adapter
-  name: IAdaptable
-  nameWithType: IAdaptable
-  fullName: Sin.Net.Domain.Persistence.Adapter.IAdaptable
-- uid: Sin.Net.Domain.Persistence.Adapter
-  commentId: N:Sin.Net.Domain.Persistence.Adapter
-  name: Sin.Net.Domain.Persistence.Adapter
-  nameWithType: Sin.Net.Domain.Persistence.Adapter
-  fullName: Sin.Net.Domain.Persistence.Adapter
-- uid: Sin.Net.Domain.Persistence.IImportable.AsItIs*
-  commentId: Overload:Sin.Net.Domain.Persistence.IImportable.AsItIs
-  name: AsItIs
-  nameWithType: IImportable.AsItIs
-  fullName: Sin.Net.Domain.Persistence.IImportable.AsItIs
-- uid: System.Object
-  commentId: T:System.Object
-  parent: System
-  isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
-- uid: Sin.Net.Domain.Persistence.IImportable.Exception*
-  commentId: Overload:Sin.Net.Domain.Persistence.IImportable.Exception
-  name: Exception
-  nameWithType: IImportable.Exception
-  fullName: Sin.Net.Domain.Persistence.IImportable.Exception
-- uid: Sin.Net.Domain.Exeptions.PersistenceException
-  commentId: T:Sin.Net.Domain.Exeptions.PersistenceException
-  parent: Sin.Net.Domain.Exeptions
-  name: PersistenceException
-  nameWithType: PersistenceException
-  fullName: Sin.Net.Domain.Exeptions.PersistenceException
-- uid: Sin.Net.Domain.Exeptions
-  commentId: N:Sin.Net.Domain.Exeptions
-  name: Sin.Net.Domain.Exeptions
-  nameWithType: Sin.Net.Domain.Exeptions
-  fullName: Sin.Net.Domain.Exeptions
-- uid: Sin.Net.Domain.Persistence.IImportable.Type*
-  commentId: Overload:Sin.Net.Domain.Persistence.IImportable.Type
-  name: Type
-  nameWithType: IImportable.Type
-  fullName: Sin.Net.Domain.Persistence.IImportable.Type
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name*
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name
+  name: Name
+  nameWithType: SmtpConfig.SmtpHost.Name
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -802,3 +832,15 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port*
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port
+  name: Port
+  nameWithType: SmtpConfig.SmtpHost.Port
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

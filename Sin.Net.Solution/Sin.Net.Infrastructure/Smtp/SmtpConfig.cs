@@ -11,23 +11,24 @@ namespace Sin.Net.Infrastructure.Smtp
             Receivers = new List<string>();
         }
 
-        // -- methods
+		// -- properties
 
-        public override string ToString() => Name;
+		public int Port { get; set; }
 
-        // -- properties
+		public string Sender { get; set; }
 
-        public List<string> Receivers { get; set; }
+		public List<string> Receivers { get; set; }
 
-        public int Port { get; set; }
+		public SmtpCredentials Credentials { get; set; }
 
-        public string Subject { get; set; }
+		// -- inner classes
 
-        public string Body { get; set; }
+		public class SmtpCredentials
+		{
+			public string Name { get; set; }
 
-        public string User { get; set; }
+			public string Password { get; set; }
+		}
 
-        public string Password { get; set; }
-
-    }
+	}
 }

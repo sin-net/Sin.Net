@@ -42,7 +42,6 @@ items:
     content: 'public class MqttNetController : IMqttControlable, IAsyncControlable, IControlable'
     content.vb: >-
       Public Class MqttNetController
-
           Implements IMqttControlable, IAsyncControlable, IControlable
   inheritance:
   - System.Object

@@ -794,6 +794,72 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Domain.Infrastructure.Mqtt.MqttReceivedEventArgs.Topic
   nameWithType: MqttReceivedEventArgs.Topic
+- uid: Sin.Net.Domain.Infrastructure.Smtp
+  name: Sin.Net.Domain.Infrastructure.Smtp
+  href: api/Sin.Net.Domain.Infrastructure.Smtp.html
+  commentId: N:Sin.Net.Domain.Infrastructure.Smtp
+  fullName: Sin.Net.Domain.Infrastructure.Smtp
+  nameWithType: Sin.Net.Domain.Infrastructure.Smtp
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+  name: ISmtpControlable
+  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html
+  commentId: T:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+  nameWithType: ISmtpControlable
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.Object[])
+  name: BuildMessage(String, String, Object[])
+  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_BuildMessage_System_String_System_String_System_Object___
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.Object[])
+  name.vb: BuildMessage(String, String, Object())
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String, System.Object[])
+  fullName.vb: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String, System.Object())
+  nameWithType: ISmtpControlable.BuildMessage(String, String, Object[])
+  nameWithType.vb: ISmtpControlable.BuildMessage(String, String, Object())
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.String,System.String,System.Object[])
+  name: BuildMessage(String, String, String, String, Object[])
+  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_BuildMessage_System_String_System_String_System_String_System_String_System_Object___
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.String,System.String,System.Object[])
+  name.vb: BuildMessage(String, String, String, String, Object())
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String, System.String, System.String, System.Object[])
+  fullName.vb: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String, System.String, System.String, System.Object())
+  nameWithType: ISmtpControlable.BuildMessage(String, String, String, String, Object[])
+  nameWithType.vb: ISmtpControlable.BuildMessage(String, String, String, String, Object())
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage*
+  name: BuildMessage
+  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_BuildMessage_
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage
+  nameWithType: ISmtpControlable.BuildMessage
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String,System.String[],System.String,System.String,System.Object[])
+  name: BuildMessages(String, String[], String, String, Object[])
+  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_BuildMessages_System_String_System_String___System_String_System_String_System_Object___
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String,System.String[],System.String,System.String,System.Object[])
+  name.vb: BuildMessages(String, String(), String, String, Object())
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String, System.String[], System.String, System.String, System.Object[])
+  fullName.vb: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String, System.String(), System.String, System.String, System.Object())
+  nameWithType: ISmtpControlable.BuildMessages(String, String[], String, String, Object[])
+  nameWithType.vb: ISmtpControlable.BuildMessages(String, String(), String, String, Object())
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages*
+  name: BuildMessages
+  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_BuildMessages_
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages
+  nameWithType: ISmtpControlable.BuildMessages
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send
+  name: Send()
+  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_Send
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send()
+  nameWithType: ISmtpControlable.Send()
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send*
+  name: Send
+  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_Send_
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send
+  nameWithType: ISmtpControlable.Send
 - uid: Sin.Net.Domain.Persistence
   name: Sin.Net.Domain.Persistence
   href: api/Sin.Net.Domain.Persistence.html
@@ -2593,45 +2659,32 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpConfig
   nameWithType: SmtpConfig.SmtpConfig
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Body
-  name: Body
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Body
-  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Body
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Body
-  nameWithType: SmtpConfig.Body
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Body*
-  name: Body
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Body_
-  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Body
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Credentials
+  name: Credentials
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Credentials
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Credentials
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Credentials
+  nameWithType: SmtpConfig.Credentials
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Credentials*
+  name: Credentials
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Credentials_
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Credentials
   isSpec: "True"
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Body
-  nameWithType: SmtpConfig.Body
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Password
-  name: Password
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Password
-  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Password
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Password
-  nameWithType: SmtpConfig.Password
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Password*
-  name: Password
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Password_
-  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Password
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Credentials
+  nameWithType: SmtpConfig.Credentials
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Host
+  name: Host
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Host
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Host
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Host
+  nameWithType: SmtpConfig.Host
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Host*
+  name: Host
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Host_
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Host
   isSpec: "True"
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Password
-  nameWithType: SmtpConfig.Password
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
-  name: Port
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Port
-  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
-  nameWithType: SmtpConfig.Port
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Port*
-  name: Port
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Port_
-  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
-  isSpec: "True"
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
-  nameWithType: SmtpConfig.Port
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Host
+  nameWithType: SmtpConfig.Host
 - uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Receivers
   name: Receivers
   href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Receivers
@@ -2645,45 +2698,83 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Receivers
   nameWithType: SmtpConfig.Receivers
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject
-  name: Subject
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Subject
-  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject
-  nameWithType: SmtpConfig.Subject
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject*
-  name: Subject
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Subject_
-  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Sender
+  name: Sender
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Sender
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Sender
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Sender
+  nameWithType: SmtpConfig.Sender
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Sender*
+  name: Sender
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Sender_
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Sender
   isSpec: "True"
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject
-  nameWithType: SmtpConfig.Subject
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString
-  name: ToString()
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_ToString
-  commentId: M:Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString()
-  nameWithType: SmtpConfig.ToString()
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString*
-  name: ToString
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_ToString_
-  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Sender
+  nameWithType: SmtpConfig.Sender
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials
+  name: SmtpConfig.SmtpCredentials
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.html
+  commentId: T:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials
+  nameWithType: SmtpConfig.SmtpCredentials
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Name
+  name: Name
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_SmtpCredentials_Name
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Name
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Name
+  nameWithType: SmtpConfig.SmtpCredentials.Name
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Name*
+  name: Name
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_SmtpCredentials_Name_
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Name
   isSpec: "True"
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString
-  nameWithType: SmtpConfig.ToString
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.User
-  name: User
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_User
-  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.User
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.User
-  nameWithType: SmtpConfig.User
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.User*
-  name: User
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_User_
-  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.User
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Name
+  nameWithType: SmtpConfig.SmtpCredentials.Name
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Password
+  name: Password
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_SmtpCredentials_Password
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Password
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Password
+  nameWithType: SmtpConfig.SmtpCredentials.Password
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Password*
+  name: Password
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_SmtpCredentials_Password_
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Password
   isSpec: "True"
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.User
-  nameWithType: SmtpConfig.User
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Password
+  nameWithType: SmtpConfig.SmtpCredentials.Password
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
+  name: SmtpConfig.SmtpHost
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.html
+  commentId: T:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
+  nameWithType: SmtpConfig.SmtpHost
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name
+  name: Name
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_SmtpHost_Name
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name
+  nameWithType: SmtpConfig.SmtpHost.Name
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name*
+  name: Name
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_SmtpHost_Name_
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name
+  isSpec: "True"
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name
+  nameWithType: SmtpConfig.SmtpHost.Name
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port
+  name: Port
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_SmtpHost_Port
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port
+  nameWithType: SmtpConfig.SmtpHost.Port
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port*
+  name: Port
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_SmtpHost_Port_
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port
+  isSpec: "True"
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port
+  nameWithType: SmtpConfig.SmtpHost.Port
 - uid: Sin.Net.Infrastructure.Smtp.SmtpController
   name: SmtpController
   href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html
@@ -2703,6 +2794,47 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Infrastructure.Smtp.SmtpController.SmtpController
   nameWithType: SmtpController.SmtpController
+- uid: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String,System.String,System.Object[])
+  name: BuildMessage(String, String, Object[])
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_BuildMessage_System_String_System_String_System_Object___
+  commentId: M:Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String,System.String,System.Object[])
+  name.vb: BuildMessage(String, String, Object())
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String, System.String, System.Object[])
+  fullName.vb: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String, System.String, System.Object())
+  nameWithType: SmtpController.BuildMessage(String, String, Object[])
+  nameWithType.vb: SmtpController.BuildMessage(String, String, Object())
+- uid: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String,System.String,System.String,System.String,System.Object[])
+  name: BuildMessage(String, String, String, String, Object[])
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_BuildMessage_System_String_System_String_System_String_System_String_System_Object___
+  commentId: M:Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String,System.String,System.String,System.String,System.Object[])
+  name.vb: BuildMessage(String, String, String, String, Object())
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String, System.String, System.String, System.String, System.Object[])
+  fullName.vb: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String, System.String, System.String, System.String, System.Object())
+  nameWithType: SmtpController.BuildMessage(String, String, String, String, Object[])
+  nameWithType.vb: SmtpController.BuildMessage(String, String, String, String, Object())
+- uid: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage*
+  name: BuildMessage
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_BuildMessage_
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage
+  isSpec: "True"
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage
+  nameWithType: SmtpController.BuildMessage
+- uid: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessages(System.String,System.String[],System.String,System.String,System.Object[])
+  name: BuildMessages(String, String[], String, String, Object[])
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_BuildMessages_System_String_System_String___System_String_System_String_System_Object___
+  commentId: M:Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessages(System.String,System.String[],System.String,System.String,System.Object[])
+  name.vb: BuildMessages(String, String(), String, String, Object())
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessages(System.String, System.String[], System.String, System.String, System.Object[])
+  fullName.vb: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessages(System.String, System.String(), System.String, System.String, System.Object())
+  nameWithType: SmtpController.BuildMessages(String, String[], String, String, Object[])
+  nameWithType.vb: SmtpController.BuildMessages(String, String(), String, String, Object())
+- uid: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessages*
+  name: BuildMessages
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_BuildMessages_
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessages
+  isSpec: "True"
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessages
+  nameWithType: SmtpController.BuildMessages
 - uid: Sin.Net.Infrastructure.Smtp.SmtpController.Config
   name: Config
   href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_Config
@@ -2729,19 +2861,6 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Infrastructure.Smtp.SmtpController.Connect
   nameWithType: SmtpController.Connect
-- uid: Sin.Net.Infrastructure.Smtp.SmtpController.Counter
-  name: Counter
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_Counter
-  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpController.Counter
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.Counter
-  nameWithType: SmtpController.Counter
-- uid: Sin.Net.Infrastructure.Smtp.SmtpController.Counter*
-  name: Counter
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_Counter_
-  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpController.Counter
-  isSpec: "True"
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.Counter
-  nameWithType: SmtpController.Counter
 - uid: Sin.Net.Infrastructure.Smtp.SmtpController.Disconnect
   name: Disconnect()
   href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_Disconnect

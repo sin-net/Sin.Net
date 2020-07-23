@@ -36,9 +36,7 @@ items:
     content: 'public class CsvImporter : ImporterBase, IImportable'
     content.vb: >-
       Public Class CsvImporter
-
           Inherits ImporterBase
-
           Implements IImportable
   inheritance:
   - System.Object
@@ -197,7 +195,6 @@ items:
   syntax:
     content: >-
       public override T As<T>()
-
           where T : new()
     typeParameters:
     - id: T
@@ -240,7 +237,6 @@ items:
   syntax:
     content: >-
       public override T As<T>(IAdaptable adapter)
-
           where T : new()
     parameters:
     - id: adapter

@@ -1,16 +1,22 @@
 ﻿using Sin.Net.Domain.Config;
 using Sin.Net.Domain.Infrastructure;
+using Sin.Net.Domain.Infrastructure.Smtp;
 using Sin.Net.Domain.Persistence.Logging;
 using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Net.Mail;
+using System.Runtime.CompilerServices;
 
 namespace Sin.Net.Infrastructure.Smtp
 {
-    public class SmtpController : IControlable
+    public class SmtpController : ISmtpControlable
     {
+        private List<MailMessage> _messages;
+
         public SmtpController()
         {
+            _messages = new List<MailMessage>();
         }
 
         // -- methods
@@ -23,6 +29,7 @@ namespace Sin.Net.Infrastructure.Smtp
         public SmtpController Setup(SmtpConfig config)
         {
             Config = config;
+            _messages.Clear();
             Counter = 0;
             return this;
         }
@@ -39,25 +46,57 @@ namespace Sin.Net.Infrastructure.Smtp
             return this;
         }
 
-        public SmtpController Send()
+        public ISmtpControlable BuildMessage(string subject, string body, object[] attachments = null)
         {
+            var from = Config.Sender;
+            foreach(var to in Config.Receivers)
+			{
+                AddMessage(from, to, subject, body, attachments);
+            }
+            return this;
+        }
+
+        public ISmtpControlable BuildMessage(string sender, string receiver, string subject, string body, object[] attachments = null)
+        {
+            AddMessage(sender, receiver, subject, body, attachments);
+            return this;
+        }
+
+        public ISmtpControlable BuildMessages(string sender, string[] receivers, string subject, string body, object[] attachments = null)
+        {
+            foreach(var to in receivers)
+			{
+                AddMessage(sender, to, subject, body, attachments);
+            }
+            return this;
+        }
+
+        private void AddMessage(string from, string to, string subject, string body, object[] attachments = null)
+		{
+            var msg = new MailMessage(from, to, subject, body);
+            // TODO: handle attachments
+            _messages.Add(msg);
+        }
+
+        public bool Send()
+        {
+            var success = false;
             SmtpClient client = null;
             try
             {
-                var subject = Config.Subject;
-                var body = Config.Body;
-                var from = Config.User;
+				client = new SmtpClient(Config.Name, Config.Port)
+				{
+					UseDefaultCredentials = false,
+					EnableSsl = true,
+					Credentials = new NetworkCredential(Config.Credentials.Name, Config.Credentials.Password)
+				};
 
-                foreach (var to in Config.Receivers)
-                {
-                    var msg = new MailMessage(from, to, subject, body);
-                    client = new SmtpClient(Config.Name, Config.Port);
-                    client.UseDefaultCredentials = false;
-                    client.EnableSsl = true;
-                    client.Credentials = new NetworkCredential(Config.User, Config.Password);
-                    client.Send(msg);
+				foreach (var mail in _messages)
+                {                    
+                    client.Send(mail);
                     Counter++;
                 }
+                success = true;
             }
             catch(Exception ex)
             {
@@ -71,18 +110,17 @@ namespace Sin.Net.Infrastructure.Smtp
                 }
             }
 
-            return this;
+            return success;
         }
 
-        // -- properties
+		// -- properties
 
-        public bool IsConnected { get; private set; }
+		public bool IsConnected { get; private set; }
 
         ConfigBase IControlable.Config => Config;
 
         public SmtpConfig Config { get; private set; }
 
-        public int Counter { get; private set; }
-
-    }
+		public int Counter { get; private set; }
+	}
 }

@@ -29,9 +29,7 @@ items:
     content: 'public class ReferenceEqualityComparer : EqualityComparer<object>, IEqualityComparer<object>, IEqualityComparer'
     content.vb: >-
       Public Class ReferenceEqualityComparer
-
           Inherits EqualityComparer(Of Object)
-
           Implements IEqualityComparer(Of Object), IEqualityComparer
   inheritance:
   - System.Object

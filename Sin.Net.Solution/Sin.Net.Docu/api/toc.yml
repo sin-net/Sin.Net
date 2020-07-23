@@ -47,6 +47,11 @@
     name: MqttMessageReceivedEventHandler
   - uid: Sin.Net.Domain.Infrastructure.Mqtt.MqttReceivedEventArgs
     name: MqttReceivedEventArgs
+- uid: Sin.Net.Domain.Infrastructure.Smtp
+  name: Sin.Net.Domain.Infrastructure.Smtp
+  items:
+  - uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+    name: ISmtpControlable
 - uid: Sin.Net.Domain.Persistence
   name: Sin.Net.Domain.Persistence
   items:
@@ -127,6 +132,10 @@
   items:
   - uid: Sin.Net.Infrastructure.Smtp.SmtpConfig
     name: SmtpConfig
+  - uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials
+    name: SmtpConfig.SmtpCredentials
+  - uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
+    name: SmtpConfig.SmtpHost
   - uid: Sin.Net.Infrastructure.Smtp.SmtpController
     name: SmtpController
 - uid: Sin.Net.Logging

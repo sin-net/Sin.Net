@@ -31,17 +31,27 @@ namespace MSTests.Infrastructure.Smtp
             var num = 2;
 
             var config = new SmtpConfig("smtp.gmail.com");
-            config.User = address;
-            config.Password = "";
-            config.Subject = "Greetings from Sin.Net";
             config.Port = 587;
+            config.Credentials = new SmtpConfig.SmtpCredentials
+            {
+                Name = address,
+                Password = ""
+            };
+            config.Sender = address;
             config.Receivers = Enumerable.Repeat(address, num).ToList();
-            config.Body = "Hello world";
-            // act
-            var smtp = new SmtpController().Setup(config).Send();
 
+            var subject = "Greetings from Sin.Net";
+            var body = "Hello world";
+
+            // act
+            var smtp = new SmtpController();
+
+            var result = smtp.Setup(config)
+                .BuildMessage(subject, body)
+                .Send();
 
             // assert
+            Assert.IsTrue(result, "The smtp controller should have been successfull");
             Assert.IsTrue(smtp.Counter == num, $"The {smtp.GetType().Name} should have sent {num} emails.");
         }
     }

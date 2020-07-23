@@ -6,13 +6,10 @@ items:
   parent: Sin.Net.Infrastructure.Smtp
   children:
   - Sin.Net.Infrastructure.Smtp.SmtpConfig.#ctor(System.String)
-  - Sin.Net.Infrastructure.Smtp.SmtpConfig.Body
-  - Sin.Net.Infrastructure.Smtp.SmtpConfig.Password
-  - Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
+  - Sin.Net.Infrastructure.Smtp.SmtpConfig.Credentials
+  - Sin.Net.Infrastructure.Smtp.SmtpConfig.Host
   - Sin.Net.Infrastructure.Smtp.SmtpConfig.Receivers
-  - Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject
-  - Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString
-  - Sin.Net.Infrastructure.Smtp.SmtpConfig.User
+  - Sin.Net.Infrastructure.Smtp.SmtpConfig.Sender
   langs:
   - csharp
   - vb
@@ -35,12 +32,12 @@ items:
     content: 'public class SmtpConfig : ConfigBase'
     content.vb: >-
       Public Class SmtpConfig
-
           Inherits ConfigBase
   inheritance:
   - System.Object
   - Sin.Net.Domain.Config.ConfigBase
   inheritedMembers:
+  - Sin.Net.Domain.Config.ConfigBase.ToString
   - Sin.Net.Domain.Config.ConfigBase.Name
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -92,41 +89,41 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString
-  commentId: M:Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString
-  id: ToString
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Sender
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Sender
+  id: Sender
   parent: Sin.Net.Infrastructure.Smtp.SmtpConfig
   langs:
   - csharp
   - vb
-  name: ToString()
-  nameWithType: SmtpConfig.ToString()
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString()
-  type: Method
+  name: Sender
+  nameWithType: SmtpConfig.Sender
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Sender
+  type: Property
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
       branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
-    id: ToString
+    id: Sender
     path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
     startLine: 15
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Smtp
   syntax:
-    content: public override string ToString()
+    content: public string Sender { get; set; }
+    parameters: []
     return:
       type: System.String
-    content.vb: Public Overrides Function ToString As String
-  overridden: Sin.Net.Domain.Config.ConfigBase.ToString
-  overload: Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString*
+    content.vb: Public Property Sender As String
+  overload: Sin.Net.Infrastructure.Smtp.SmtpConfig.Sender*
   modifiers.csharp:
   - public
-  - override
+  - get
+  - set
   modifiers.vb:
   - Public
-  - Overrides
 - uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Receivers
   commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Receivers
   id: Receivers
@@ -145,7 +142,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Receivers
     path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
-    startLine: 19
+    startLine: 17
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Smtp
@@ -162,175 +159,70 @@ items:
   - set
   modifiers.vb:
   - Public
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
-  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
-  id: Port
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Host
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Host
+  id: Host
   parent: Sin.Net.Infrastructure.Smtp.SmtpConfig
   langs:
   - csharp
   - vb
-  name: Port
-  nameWithType: SmtpConfig.Port
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
+  name: Host
+  nameWithType: SmtpConfig.Host
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Host
   type: Property
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
       branch: develop
       repo: git@github.com:adriansinger87/Sin.Net.git
-    id: Port
+    id: Host
+    path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+    startLine: 19
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Smtp
+  syntax:
+    content: public SmtpConfig.SmtpHost Host { get; set; }
+    parameters: []
+    return:
+      type: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
+    content.vb: Public Property Host As SmtpConfig.SmtpHost
+  overload: Sin.Net.Infrastructure.Smtp.SmtpConfig.Host*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Credentials
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Credentials
+  id: Credentials
+  parent: Sin.Net.Infrastructure.Smtp.SmtpConfig
+  langs:
+  - csharp
+  - vb
+  name: Credentials
+  nameWithType: SmtpConfig.Credentials
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Credentials
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
+      branch: develop
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Credentials
     path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
     startLine: 21
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Smtp
   syntax:
-    content: public int Port { get; set; }
+    content: public SmtpConfig.SmtpCredentials Credentials { get; set; }
     parameters: []
     return:
-      type: System.Int32
-    content.vb: Public Property Port As Integer
-  overload: Sin.Net.Infrastructure.Smtp.SmtpConfig.Port*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject
-  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject
-  id: Subject
-  parent: Sin.Net.Infrastructure.Smtp.SmtpConfig
-  langs:
-  - csharp
-  - vb
-  name: Subject
-  nameWithType: SmtpConfig.Subject
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject
-  type: Property
-  source:
-    remote:
-      path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
-      branch: develop
-      repo: git@github.com:adriansinger87/Sin.Net.git
-    id: Subject
-    path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
-    startLine: 23
-  assemblies:
-  - Sin.Net.Infrastructure
-  namespace: Sin.Net.Infrastructure.Smtp
-  syntax:
-    content: public string Subject { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property Subject As String
-  overload: Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Body
-  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Body
-  id: Body
-  parent: Sin.Net.Infrastructure.Smtp.SmtpConfig
-  langs:
-  - csharp
-  - vb
-  name: Body
-  nameWithType: SmtpConfig.Body
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Body
-  type: Property
-  source:
-    remote:
-      path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
-      branch: develop
-      repo: git@github.com:adriansinger87/Sin.Net.git
-    id: Body
-    path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
-    startLine: 25
-  assemblies:
-  - Sin.Net.Infrastructure
-  namespace: Sin.Net.Infrastructure.Smtp
-  syntax:
-    content: public string Body { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property Body As String
-  overload: Sin.Net.Infrastructure.Smtp.SmtpConfig.Body*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.User
-  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.User
-  id: User
-  parent: Sin.Net.Infrastructure.Smtp.SmtpConfig
-  langs:
-  - csharp
-  - vb
-  name: User
-  nameWithType: SmtpConfig.User
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.User
-  type: Property
-  source:
-    remote:
-      path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
-      branch: develop
-      repo: git@github.com:adriansinger87/Sin.Net.git
-    id: User
-    path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
-    startLine: 27
-  assemblies:
-  - Sin.Net.Infrastructure
-  namespace: Sin.Net.Infrastructure.Smtp
-  syntax:
-    content: public string User { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property User As String
-  overload: Sin.Net.Infrastructure.Smtp.SmtpConfig.User*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Password
-  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Password
-  id: Password
-  parent: Sin.Net.Infrastructure.Smtp.SmtpConfig
-  langs:
-  - csharp
-  - vb
-  name: Password
-  nameWithType: SmtpConfig.Password
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Password
-  type: Property
-  source:
-    remote:
-      path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
-      branch: develop
-      repo: git@github.com:adriansinger87/Sin.Net.git
-    id: Password
-    path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
-    startLine: 29
-  assemblies:
-  - Sin.Net.Infrastructure
-  namespace: Sin.Net.Infrastructure.Smtp
-  syntax:
-    content: public string Password { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property Password As String
-  overload: Sin.Net.Infrastructure.Smtp.SmtpConfig.Password*
+      type: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials
+    content.vb: Public Property Credentials As SmtpConfig.SmtpCredentials
+  overload: Sin.Net.Infrastructure.Smtp.SmtpConfig.Credentials*
   modifiers.csharp:
   - public
   - get
@@ -356,6 +248,34 @@ references:
   name: ConfigBase
   nameWithType: ConfigBase
   fullName: Sin.Net.Domain.Config.ConfigBase
+- uid: Sin.Net.Domain.Config.ConfigBase.ToString
+  commentId: M:Sin.Net.Domain.Config.ConfigBase.ToString
+  parent: Sin.Net.Domain.Config.ConfigBase
+  name: ToString()
+  nameWithType: ConfigBase.ToString()
+  fullName: Sin.Net.Domain.Config.ConfigBase.ToString()
+  spec.csharp:
+  - uid: Sin.Net.Domain.Config.ConfigBase.ToString
+    name: ToString
+    nameWithType: ConfigBase.ToString
+    fullName: Sin.Net.Domain.Config.ConfigBase.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.Config.ConfigBase.ToString
+    name: ToString
+    nameWithType: ConfigBase.ToString
+    fullName: Sin.Net.Domain.Config.ConfigBase.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Sin.Net.Domain.Config.ConfigBase.Name
   commentId: P:Sin.Net.Domain.Config.ConfigBase.Name
   parent: Sin.Net.Domain.Config.ConfigBase
@@ -1036,39 +956,11 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: Sin.Net.Domain.Config.ConfigBase.ToString
-  commentId: M:Sin.Net.Domain.Config.ConfigBase.ToString
-  parent: Sin.Net.Domain.Config.ConfigBase
-  name: ToString()
-  nameWithType: ConfigBase.ToString()
-  fullName: Sin.Net.Domain.Config.ConfigBase.ToString()
-  spec.csharp:
-  - uid: Sin.Net.Domain.Config.ConfigBase.ToString
-    name: ToString
-    nameWithType: ConfigBase.ToString
-    fullName: Sin.Net.Domain.Config.ConfigBase.ToString
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Sin.Net.Domain.Config.ConfigBase.ToString
-    name: ToString
-    nameWithType: ConfigBase.ToString
-    fullName: Sin.Net.Domain.Config.ConfigBase.ToString
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString*
-  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString
-  name: ToString
-  nameWithType: SmtpConfig.ToString
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.ToString
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Sender*
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Sender
+  name: Sender
+  nameWithType: SmtpConfig.Sender
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Sender
 - uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Receivers*
   commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Receivers
   name: Receivers
@@ -1163,35 +1055,25 @@ references:
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Port*
-  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
-  name: Port
-  nameWithType: SmtpConfig.Port
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  name: Int32
-  nameWithType: Int32
-  fullName: System.Int32
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject*
-  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject
-  name: Subject
-  nameWithType: SmtpConfig.Subject
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Subject
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Body*
-  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Body
-  name: Body
-  nameWithType: SmtpConfig.Body
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Body
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.User*
-  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.User
-  name: User
-  nameWithType: SmtpConfig.User
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.User
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Password*
-  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Password
-  name: Password
-  nameWithType: SmtpConfig.Password
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Password
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Host*
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Host
+  name: Host
+  nameWithType: SmtpConfig.Host
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Host
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
+  commentId: T:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
+  parent: Sin.Net.Infrastructure.Smtp
+  name: SmtpConfig.SmtpHost
+  nameWithType: SmtpConfig.SmtpHost
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Credentials*
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Credentials
+  name: Credentials
+  nameWithType: SmtpConfig.Credentials
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Credentials
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials
+  commentId: T:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials
+  parent: Sin.Net.Infrastructure.Smtp
+  name: SmtpConfig.SmtpCredentials
+  nameWithType: SmtpConfig.SmtpCredentials
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials

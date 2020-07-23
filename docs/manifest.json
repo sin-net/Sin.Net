@@ -48,7 +48,7 @@
           "hash": "+rg8tET68MK10a7s9q2l/w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -60,7 +60,7 @@
           "hash": "enoqdMoc5cWA8gSFvUi8qA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -96,7 +96,7 @@
           "hash": "27MQ8P8vKhB00iEjADUxoQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Infrastructure.Http.ServiceBase.html",
-          "hash": "D42ly9mTJYUe9GpktOqdcQ=="
+          "hash": "bAcaIrYZQfXtWjlOsyJTxA=="
         }
       },
       "is_incremental": false,
@@ -180,7 +180,7 @@
           "hash": "Vu6ZTKXXlBu9c0ZGD/Wt6w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -204,7 +204,7 @@
           "hash": "mlZb77R/W/hoHczk9Vik+A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -216,7 +216,7 @@
           "hash": "/p2pdWhT+NJg01Yz0p0ceg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -237,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Infrastructure.Mqtt.MqttReceivedEventArgs.html",
-          "hash": "fEe/diUuNX9Qv1/8v9LMkA=="
+          "hash": "B60n2XXA+9aExqBLQos4Ww=="
         }
       },
       "is_incremental": false,
@@ -250,6 +250,30 @@
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Infrastructure.Mqtt.html",
           "hash": "U508D5lC6NH1mfIUnsKmtg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html",
+          "hash": "x5LZwxsxslGLdNUNJBijZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sin.Net.Domain.Infrastructure.Smtp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sin.Net.Domain.Infrastructure.Smtp.html",
+          "hash": "7WlblydSwHWRyVGbiC7tgg=="
         }
       },
       "is_incremental": false,
@@ -273,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Persistence.Adapter.AdapterBase.html",
-          "hash": "6Lo8uzmay1NeWpYaerZVIw=="
+          "hash": "zgPLHPH9SVk6RabyBD/h9g=="
         }
       },
       "is_incremental": false,
@@ -285,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Persistence.Adapter.IAdaptable.html",
-          "hash": "hfm8MrO0e964a+3UbuDfhw=="
+          "hash": "NCeesaXm/mPw+rtVMDQ2bA=="
         }
       },
       "is_incremental": false,
@@ -321,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Persistence.IImportable.html",
-          "hash": "J6qhat5PqowDWfRe8H6ReQ=="
+          "hash": "xSnx6fz0nKYx217OpPE8qw=="
         }
       },
       "is_incremental": false,
@@ -348,7 +372,7 @@
           "hash": "zlqTbNjPCglWj8LCogi6JA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -360,7 +384,7 @@
           "hash": "3KlXPf441RqtRfiqD+NHGQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -372,7 +396,7 @@
           "hash": "QtCvHGd2FCfSMOvs5pZCWQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -441,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Repository.RepositoryView-1.html",
-          "hash": "oLg+7737zvxsTqSgKaokAg=="
+          "hash": "1mwcHr41ijB0KpWVb0zBaA=="
         }
       },
       "is_incremental": false,
@@ -468,7 +492,7 @@
           "hash": "ChOgz6IyLTvOZvdyNNozEQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -480,7 +504,7 @@
           "hash": "cO8HBuIb4RaKeIoJH1YulA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -516,7 +540,7 @@
           "hash": "VS8PxavsbJ3vZ9VwMnDPYw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -528,7 +552,7 @@
           "hash": "gHHXRB+kpVMMIUFCK9LL+w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -564,7 +588,7 @@
           "hash": "EsgzRPIlqrhPwItMgLWiJQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -576,7 +600,7 @@
           "hash": "SjRhv832VwdziE958gHJSg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -585,7 +609,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Infrastructure.Http.GenericService.html",
-          "hash": "KoIjpeOTnf8LGhAvJBM9DQ=="
+          "hash": "LU3NdqJlUGc+GGhuA52vuA=="
         }
       },
       "is_incremental": false,
@@ -641,11 +665,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.html",
+          "hash": "O+mM8JY+0YEj0jvGGoY0PQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.html",
+          "hash": "CFG4a+pqw1xVHCTwjN02DA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Sin.Net.Infrastructure.Smtp.SmtpConfig.yml",
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html",
-          "hash": "AurousS1MMpyknyKiWkZ/g=="
+          "hash": "6O19ieZrHCJIl2BHtReQlQ=="
         }
       },
       "is_incremental": false,
@@ -657,7 +705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Infrastructure.Smtp.SmtpController.html",
-          "hash": "tv3RrHMkAeGadwRkk7hJpw=="
+          "hash": "Rh5zGsymHFm28tPwJ6utzg=="
         }
       },
       "is_incremental": false,
@@ -669,7 +717,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Infrastructure.Smtp.html",
-          "hash": "Uo+TIIVh74Ipg3dODrwgyg=="
+          "hash": "/GWlmV64mXgr1QGX/TPaTw=="
         }
       },
       "is_incremental": false,
@@ -720,7 +768,7 @@
           "hash": "m9fvPN4Cjge/ODhAJ8zx1w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -732,7 +780,7 @@
           "hash": "cOeVwSJHGxHvqejkOlFycA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -744,7 +792,7 @@
           "hash": "GMOQTxoLrFFkkH1SZhkE2g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -756,7 +804,7 @@
           "hash": "UlCeXCELVrQmywLq5+An0g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -828,7 +876,7 @@
           "hash": "ZhVOBicKLRhkRHw4Sey3LQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -840,7 +888,7 @@
           "hash": "jIHaoaRQkomUuHxHUdGfBA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -852,7 +900,7 @@
           "hash": "TnzG4gY7OLgI5oNcha1+1A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -921,7 +969,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.Imports.BinaryImporter.html",
-          "hash": "7U9cFsGFM5KiXVD9aAuBwA=="
+          "hash": "mH0koU45W4Pof91wUkkQHg=="
         }
       },
       "is_incremental": false,
@@ -933,7 +981,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.Imports.CsvImporter.html",
-          "hash": "aPiP6IfMOvQSPlrCFcBdBg=="
+          "hash": "9x6ru2TkUXxf3JfRz0nQ4w=="
         }
       },
       "is_incremental": false,
@@ -945,7 +993,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.Imports.ImporterBase.html",
-          "hash": "2R//HTcmjbQ9A4oiJQ3V5Q=="
+          "hash": "yMpm9vrLQSKkNbFTZsmVKg=="
         }
       },
       "is_incremental": false,
@@ -957,7 +1005,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Persistence.Imports.JsonImporter.html",
-          "hash": "gxlgj+P4Z7ZDRcbRRXSzJQ=="
+          "hash": "MxATUwp+1RJlDLLFPysXTA=="
         }
       },
       "is_incremental": false,
@@ -1053,7 +1101,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "gvcpKgRHCay+cdgSFC6JEw=="
+          "hash": "TnkOMLyjIdhohCYzu9XsDQ=="
         }
       },
       "is_incremental": false,
@@ -1139,6 +1187,13 @@
         "skipped_file_count": 0
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -1152,18 +1207,11 @@
           "total_file_count": 3,
           "skipped_file_count": 3
         },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 86,
-          "skipped_file_count": 49
+          "total_file_count": 90,
+          "skipped_file_count": 48
         }
       }
     },
