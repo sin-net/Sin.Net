@@ -847,6 +847,19 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages
   nameWithType: ISmtpControlable.BuildMessages
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Counter
+  name: Counter
+  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_Counter
+  commentId: P:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Counter
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Counter
+  nameWithType: ISmtpControlable.Counter
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Counter*
+  name: Counter
+  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_Counter_
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Counter
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Counter
+  nameWithType: ISmtpControlable.Counter
 - uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send
   name: Send()
   href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_Send
@@ -2201,6 +2214,79 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Domain.System.Security.SecurityLevelAttribute.Throw
   nameWithType: SecurityLevelAttribute.Throw
+- uid: Sin.Net.Domain.System.Security.SimpleCredentials
+  name: SimpleCredentials
+  href: api/Sin.Net.Domain.System.Security.SimpleCredentials.html
+  commentId: T:Sin.Net.Domain.System.Security.SimpleCredentials
+  fullName: Sin.Net.Domain.System.Security.SimpleCredentials
+  nameWithType: SimpleCredentials
+- uid: Sin.Net.Domain.System.Security.SimpleCredentials.#ctor
+  name: SimpleCredentials()
+  href: api/Sin.Net.Domain.System.Security.SimpleCredentials.html#Sin_Net_Domain_System_Security_SimpleCredentials__ctor
+  commentId: M:Sin.Net.Domain.System.Security.SimpleCredentials.#ctor
+  fullName: Sin.Net.Domain.System.Security.SimpleCredentials.SimpleCredentials()
+  nameWithType: SimpleCredentials.SimpleCredentials()
+- uid: Sin.Net.Domain.System.Security.SimpleCredentials.#ctor(System.String,System.Security.SecureString)
+  name: SimpleCredentials(String, SecureString)
+  href: api/Sin.Net.Domain.System.Security.SimpleCredentials.html#Sin_Net_Domain_System_Security_SimpleCredentials__ctor_System_String_System_Security_SecureString_
+  commentId: M:Sin.Net.Domain.System.Security.SimpleCredentials.#ctor(System.String,System.Security.SecureString)
+  fullName: Sin.Net.Domain.System.Security.SimpleCredentials.SimpleCredentials(System.String, System.Security.SecureString)
+  nameWithType: SimpleCredentials.SimpleCredentials(String, SecureString)
+- uid: Sin.Net.Domain.System.Security.SimpleCredentials.#ctor(System.String,System.String)
+  name: SimpleCredentials(String, String)
+  href: api/Sin.Net.Domain.System.Security.SimpleCredentials.html#Sin_Net_Domain_System_Security_SimpleCredentials__ctor_System_String_System_String_
+  commentId: M:Sin.Net.Domain.System.Security.SimpleCredentials.#ctor(System.String,System.String)
+  fullName: Sin.Net.Domain.System.Security.SimpleCredentials.SimpleCredentials(System.String, System.String)
+  nameWithType: SimpleCredentials.SimpleCredentials(String, String)
+- uid: Sin.Net.Domain.System.Security.SimpleCredentials.#ctor*
+  name: SimpleCredentials
+  href: api/Sin.Net.Domain.System.Security.SimpleCredentials.html#Sin_Net_Domain_System_Security_SimpleCredentials__ctor_
+  commentId: Overload:Sin.Net.Domain.System.Security.SimpleCredentials.#ctor
+  isSpec: "True"
+  fullName: Sin.Net.Domain.System.Security.SimpleCredentials.SimpleCredentials
+  nameWithType: SimpleCredentials.SimpleCredentials
+- uid: Sin.Net.Domain.System.Security.SimpleCredentials.Name
+  name: Name
+  href: api/Sin.Net.Domain.System.Security.SimpleCredentials.html#Sin_Net_Domain_System_Security_SimpleCredentials_Name
+  commentId: P:Sin.Net.Domain.System.Security.SimpleCredentials.Name
+  fullName: Sin.Net.Domain.System.Security.SimpleCredentials.Name
+  nameWithType: SimpleCredentials.Name
+- uid: Sin.Net.Domain.System.Security.SimpleCredentials.Name*
+  name: Name
+  href: api/Sin.Net.Domain.System.Security.SimpleCredentials.html#Sin_Net_Domain_System_Security_SimpleCredentials_Name_
+  commentId: Overload:Sin.Net.Domain.System.Security.SimpleCredentials.Name
+  isSpec: "True"
+  fullName: Sin.Net.Domain.System.Security.SimpleCredentials.Name
+  nameWithType: SimpleCredentials.Name
+- uid: Sin.Net.Domain.System.Security.SimpleCredentials.Password
+  name: Password
+  href: api/Sin.Net.Domain.System.Security.SimpleCredentials.html#Sin_Net_Domain_System_Security_SimpleCredentials_Password
+  commentId: P:Sin.Net.Domain.System.Security.SimpleCredentials.Password
+  fullName: Sin.Net.Domain.System.Security.SimpleCredentials.Password
+  nameWithType: SimpleCredentials.Password
+- uid: Sin.Net.Domain.System.Security.SimpleCredentials.Password*
+  name: Password
+  href: api/Sin.Net.Domain.System.Security.SimpleCredentials.html#Sin_Net_Domain_System_Security_SimpleCredentials_Password_
+  commentId: Overload:Sin.Net.Domain.System.Security.SimpleCredentials.Password
+  isSpec: "True"
+  fullName: Sin.Net.Domain.System.Security.SimpleCredentials.Password
+  nameWithType: SimpleCredentials.Password
+- uid: Sin.Net.Domain.System.Security.SimpleCredentials.SetPassword(System.String@)
+  name: SetPassword(String)
+  href: api/Sin.Net.Domain.System.Security.SimpleCredentials.html#Sin_Net_Domain_System_Security_SimpleCredentials_SetPassword_System_String__
+  commentId: M:Sin.Net.Domain.System.Security.SimpleCredentials.SetPassword(System.String@)
+  name.vb: SetPassword(ByRef String)
+  fullName: Sin.Net.Domain.System.Security.SimpleCredentials.SetPassword(System.String)
+  fullName.vb: Sin.Net.Domain.System.Security.SimpleCredentials.SetPassword(ByRef System.String)
+  nameWithType: SimpleCredentials.SetPassword(String)
+  nameWithType.vb: SimpleCredentials.SetPassword(ByRef String)
+- uid: Sin.Net.Domain.System.Security.SimpleCredentials.SetPassword*
+  name: SetPassword
+  href: api/Sin.Net.Domain.System.Security.SimpleCredentials.html#Sin_Net_Domain_System_Security_SimpleCredentials_SetPassword_
+  commentId: Overload:Sin.Net.Domain.System.Security.SimpleCredentials.SetPassword
+  isSpec: "True"
+  fullName: Sin.Net.Domain.System.Security.SimpleCredentials.SetPassword
+  nameWithType: SimpleCredentials.SetPassword
 - uid: Sin.Net.Domain.System.UserManagement
   name: Sin.Net.Domain.System.UserManagement
   href: api/Sin.Net.Domain.System.UserManagement.html
@@ -2672,19 +2758,19 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Credentials
   nameWithType: SmtpConfig.Credentials
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Host
-  name: Host
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Host
-  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Host
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Host
-  nameWithType: SmtpConfig.Host
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Host*
-  name: Host
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Host_
-  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Host
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
+  name: Port
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Port
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
+  nameWithType: SmtpConfig.Port
+- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Port*
+  name: Port
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Port_
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
   isSpec: "True"
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Host
-  nameWithType: SmtpConfig.Host
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Port
+  nameWithType: SmtpConfig.Port
 - uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.Receivers
   name: Receivers
   href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_Receivers
@@ -2711,70 +2797,6 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.Sender
   nameWithType: SmtpConfig.Sender
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials
-  name: SmtpConfig.SmtpCredentials
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.html
-  commentId: T:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials
-  nameWithType: SmtpConfig.SmtpCredentials
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Name
-  name: Name
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_SmtpCredentials_Name
-  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Name
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Name
-  nameWithType: SmtpConfig.SmtpCredentials.Name
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Name*
-  name: Name
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_SmtpCredentials_Name_
-  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Name
-  isSpec: "True"
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Name
-  nameWithType: SmtpConfig.SmtpCredentials.Name
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Password
-  name: Password
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_SmtpCredentials_Password
-  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Password
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Password
-  nameWithType: SmtpConfig.SmtpCredentials.Password
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Password*
-  name: Password
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_SmtpCredentials_Password_
-  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Password
-  isSpec: "True"
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.Password
-  nameWithType: SmtpConfig.SmtpCredentials.Password
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
-  name: SmtpConfig.SmtpHost
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.html
-  commentId: T:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
-  nameWithType: SmtpConfig.SmtpHost
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name
-  name: Name
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_SmtpHost_Name
-  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name
-  nameWithType: SmtpConfig.SmtpHost.Name
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name*
-  name: Name
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_SmtpHost_Name_
-  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name
-  isSpec: "True"
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Name
-  nameWithType: SmtpConfig.SmtpHost.Name
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port
-  name: Port
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_SmtpHost_Port
-  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port
-  nameWithType: SmtpConfig.SmtpHost.Port
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port*
-  name: Port
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.html#Sin_Net_Infrastructure_Smtp_SmtpConfig_SmtpHost_Port_
-  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port
-  isSpec: "True"
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.Port
-  nameWithType: SmtpConfig.SmtpHost.Port
 - uid: Sin.Net.Infrastructure.Smtp.SmtpController
   name: SmtpController
   href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html
@@ -2861,6 +2883,19 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Infrastructure.Smtp.SmtpController.Connect
   nameWithType: SmtpController.Connect
+- uid: Sin.Net.Infrastructure.Smtp.SmtpController.Counter
+  name: Counter
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_Counter
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpController.Counter
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.Counter
+  nameWithType: SmtpController.Counter
+- uid: Sin.Net.Infrastructure.Smtp.SmtpController.Counter*
+  name: Counter
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_Counter_
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpController.Counter
+  isSpec: "True"
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.Counter
+  nameWithType: SmtpController.Counter
 - uid: Sin.Net.Infrastructure.Smtp.SmtpController.Disconnect
   name: Disconnect()
   href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_Disconnect

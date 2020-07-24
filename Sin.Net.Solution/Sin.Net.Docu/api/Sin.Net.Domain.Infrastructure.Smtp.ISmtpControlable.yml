@@ -8,6 +8,7 @@ items:
   - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.Object[])
   - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.String,System.String,System.Object[])
   - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String,System.String[],System.String,System.String,System.Object[])
+  - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Counter
   - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send
   langs:
   - csharp
@@ -199,6 +200,39 @@ items:
       type: System.Boolean
     content.vb: Function Send As Boolean
   overload: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send*
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Counter
+  commentId: P:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Counter
+  id: Counter
+  parent: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+  langs:
+  - csharp
+  - vb
+  name: Counter
+  nameWithType: ISmtpControlable.Counter
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Counter
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
+      branch: develop
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Counter
+    path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
+    startLine: 30
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure.Smtp
+  syntax:
+    content: int Counter { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Counter As Integer
+  overload: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Counter*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
 references:
 - uid: Sin.Net.Domain.Infrastructure.Smtp
   commentId: N:Sin.Net.Domain.Infrastructure.Smtp
@@ -816,3 +850,15 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Counter*
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Counter
+  name: Counter
+  nameWithType: ISmtpControlable.Counter
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Counter
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

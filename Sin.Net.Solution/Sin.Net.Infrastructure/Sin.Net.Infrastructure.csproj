@@ -21,6 +21,10 @@
     <PackageIcon>Sin.Net.Logo.small.png</PackageIcon>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+
   <ItemGroup>
     <Folder Include="Http\" />
     <Folder Include="Mqtt\" />

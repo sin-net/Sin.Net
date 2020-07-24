@@ -1,5 +1,7 @@
 ﻿using Sin.Net.Domain.Config;
+using Sin.Net.Domain.System.Security;
 using System.Collections.Generic;
+using System.Security;
 
 namespace Sin.Net.Infrastructure.Smtp
 {
@@ -10,7 +12,7 @@ namespace Sin.Net.Infrastructure.Smtp
         {
             Receivers = new List<string>();
         }
-
+		
 		// -- properties
 
 		public int Port { get; set; }
@@ -19,16 +21,7 @@ namespace Sin.Net.Infrastructure.Smtp
 
 		public List<string> Receivers { get; set; }
 
-		public SmtpCredentials Credentials { get; set; }
-
-		// -- inner classes
-
-		public class SmtpCredentials
-		{
-			public string Name { get; set; }
-
-			public string Password { get; set; }
-		}
+		public SimpleCredentials Credentials { get; set; }
 
 	}
 }

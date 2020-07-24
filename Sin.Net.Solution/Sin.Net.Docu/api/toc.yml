@@ -110,6 +110,8 @@
     name: SecurityExtensions
   - uid: Sin.Net.Domain.System.Security.SecurityLevelAttribute
     name: SecurityLevelAttribute
+  - uid: Sin.Net.Domain.System.Security.SimpleCredentials
+    name: SimpleCredentials
 - uid: Sin.Net.Domain.System.UserManagement
   name: Sin.Net.Domain.System.UserManagement
   items:
@@ -132,10 +134,6 @@
   items:
   - uid: Sin.Net.Infrastructure.Smtp.SmtpConfig
     name: SmtpConfig
-  - uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials
-    name: SmtpConfig.SmtpCredentials
-  - uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
-    name: SmtpConfig.SmtpHost
   - uid: Sin.Net.Infrastructure.Smtp.SmtpController
     name: SmtpController
 - uid: Sin.Net.Logging

@@ -12,7 +12,7 @@
           "hash": "EBq+cEiDkTzXPc88cMWj4w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html",
-          "hash": "x5LZwxsxslGLdNUNJBijZw=="
+          "hash": "k0cFvR2HSQC5+XdlqC58hA=="
         }
       },
       "is_incremental": false,
@@ -569,11 +569,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Sin.Net.Domain.System.Security.SimpleCredentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sin.Net.Domain.System.Security.SimpleCredentials.html",
+          "hash": "4Bw/72l0w9WJlJcWEZl0Og=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Sin.Net.Domain.System.Security.yml",
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Domain.System.Security.html",
-          "hash": "uUQGX1rr6Sg9wbbHxdylLA=="
+          "hash": "G0UdA5z66B7HljMhlA59Jw=="
         }
       },
       "is_incremental": false,
@@ -665,35 +677,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials.html",
-          "hash": "O+mM8JY+0YEj0jvGGoY0PQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost.html",
-          "hash": "CFG4a+pqw1xVHCTwjN02DA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Sin.Net.Infrastructure.Smtp.SmtpConfig.yml",
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Infrastructure.Smtp.SmtpConfig.html",
-          "hash": "6O19ieZrHCJIl2BHtReQlQ=="
+          "hash": "eeD6e47B7Pu+WY3oFKvCIw=="
         }
       },
       "is_incremental": false,
@@ -705,7 +693,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Infrastructure.Smtp.SmtpController.html",
-          "hash": "Rh5zGsymHFm28tPwJ6utzg=="
+          "hash": "KApo/JdZ5CjkxpK3+QYjRA=="
         }
       },
       "is_incremental": false,
@@ -717,7 +705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sin.Net.Infrastructure.Smtp.html",
-          "hash": "/GWlmV64mXgr1QGX/TPaTw=="
+          "hash": "Uo+TIIVh74Ipg3dODrwgyg=="
         }
       },
       "is_incremental": false,
@@ -1101,7 +1089,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "TnkOMLyjIdhohCYzu9XsDQ=="
+          "hash": "WWrk3ZN4jMz+lrXyX3obLQ=="
         }
       },
       "is_incremental": false,
@@ -1116,7 +1104,7 @@
           "hash": "ZhZBZ0kG+PwgdXcAn/jhww=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1162,7 +1150,7 @@
           "hash": "dVgz4kCFJT6VBybxY0IkWA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1181,19 +1169,14 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -1202,23 +1185,30 @@
           "skipped_file_count": 0
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 3
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 90,
-          "skipped_file_count": 48
+          "total_file_count": 89,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
         }
       }
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

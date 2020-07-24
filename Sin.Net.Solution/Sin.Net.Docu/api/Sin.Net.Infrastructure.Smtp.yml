@@ -5,8 +5,6 @@ items:
   id: Sin.Net.Infrastructure.Smtp
   children:
   - Sin.Net.Infrastructure.Smtp.SmtpConfig
-  - Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials
-  - Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
   - Sin.Net.Infrastructure.Smtp.SmtpController
   langs:
   - csharp
@@ -24,18 +22,6 @@ references:
   name: SmtpConfig
   nameWithType: SmtpConfig
   fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
-  commentId: T:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
-  parent: Sin.Net.Infrastructure.Smtp
-  name: SmtpConfig.SmtpHost
-  nameWithType: SmtpConfig.SmtpHost
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpHost
-- uid: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials
-  commentId: T:Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials
-  parent: Sin.Net.Infrastructure.Smtp
-  name: SmtpConfig.SmtpCredentials
-  nameWithType: SmtpConfig.SmtpCredentials
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpConfig.SmtpCredentials
 - uid: Sin.Net.Infrastructure.Smtp.SmtpController
   commentId: T:Sin.Net.Infrastructure.Smtp.SmtpController
   parent: Sin.Net.Infrastructure.Smtp

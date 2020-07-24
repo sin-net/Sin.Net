@@ -11,6 +11,7 @@ items:
   - Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessages(System.String,System.String[],System.String,System.String,System.Object[])
   - Sin.Net.Infrastructure.Smtp.SmtpController.Config
   - Sin.Net.Infrastructure.Smtp.SmtpController.Connect
+  - Sin.Net.Infrastructure.Smtp.SmtpController.Counter
   - Sin.Net.Infrastructure.Smtp.SmtpController.Disconnect
   - Sin.Net.Infrastructure.Smtp.SmtpController.IsConnected
   - Sin.Net.Infrastructure.Smtp.SmtpController.Send
@@ -183,7 +184,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Connect
     path: ../Sin.Net.Infrastructure/Smtp/SmtpController.cs
-    startLine: 35
+    startLine: 36
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Smtp
@@ -217,7 +218,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Disconnect
     path: ../Sin.Net.Infrastructure/Smtp/SmtpController.cs
-    startLine: 41
+    startLine: 42
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Smtp
@@ -251,7 +252,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: BuildMessage
     path: ../Sin.Net.Infrastructure/Smtp/SmtpController.cs
-    startLine: 47
+    startLine: 48
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Smtp
@@ -295,7 +296,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: BuildMessage
     path: ../Sin.Net.Infrastructure/Smtp/SmtpController.cs
-    startLine: 57
+    startLine: 58
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Smtp
@@ -343,7 +344,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: BuildMessages
     path: ../Sin.Net.Infrastructure/Smtp/SmtpController.cs
-    startLine: 63
+    startLine: 64
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Smtp
@@ -391,7 +392,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Send
     path: ../Sin.Net.Infrastructure/Smtp/SmtpController.cs
-    startLine: 79
+    startLine: 80
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Smtp
@@ -425,7 +426,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IsConnected
     path: ../Sin.Net.Infrastructure/Smtp/SmtpController.cs
-    startLine: 113
+    startLine: 117
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Smtp
@@ -463,7 +464,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Sin.Net.Domain.Infrastructure.IControlable.Config
     path: ../Sin.Net.Infrastructure/Smtp/SmtpController.cs
-    startLine: 115
+    startLine: 119
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Smtp
@@ -500,7 +501,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Config
     path: ../Sin.Net.Infrastructure/Smtp/SmtpController.cs
-    startLine: 117
+    startLine: 121
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Smtp
@@ -511,6 +512,43 @@ items:
       type: Sin.Net.Infrastructure.Smtp.SmtpConfig
     content.vb: Public ReadOnly Property Config As SmtpConfig
   overload: Sin.Net.Infrastructure.Smtp.SmtpController.Config*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Sin.Net.Infrastructure.Smtp.SmtpController.Counter
+  commentId: P:Sin.Net.Infrastructure.Smtp.SmtpController.Counter
+  id: Counter
+  parent: Sin.Net.Infrastructure.Smtp.SmtpController
+  langs:
+  - csharp
+  - vb
+  name: Counter
+  nameWithType: SmtpController.Counter
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.Counter
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpController.cs
+      branch: develop
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Counter
+    path: ../Sin.Net.Infrastructure/Smtp/SmtpController.cs
+    startLine: 123
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Smtp
+  syntax:
+    content: public int Counter { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Counter As Integer
+  overload: Sin.Net.Infrastructure.Smtp.SmtpController.Counter*
+  implements:
+  - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Counter
   modifiers.csharp:
   - public
   - get
@@ -1830,3 +1868,21 @@ references:
   name: Config
   nameWithType: SmtpController.Config
   fullName: Sin.Net.Infrastructure.Smtp.SmtpController.Config
+- uid: Sin.Net.Infrastructure.Smtp.SmtpController.Counter*
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpController.Counter
+  name: Counter
+  nameWithType: SmtpController.Counter
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.Counter
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Counter
+  commentId: P:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Counter
+  parent: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+  name: Counter
+  nameWithType: ISmtpControlable.Counter
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Counter
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

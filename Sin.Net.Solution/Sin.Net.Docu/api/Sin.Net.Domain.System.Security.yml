@@ -7,6 +7,7 @@ items:
   - Sin.Net.Domain.System.Security.ISecurable
   - Sin.Net.Domain.System.Security.SecurityExtensions
   - Sin.Net.Domain.System.Security.SecurityLevelAttribute
+  - Sin.Net.Domain.System.Security.SimpleCredentials
   langs:
   - csharp
   - vb
@@ -33,6 +34,12 @@ references:
   name: SecurityLevelAttribute
   nameWithType: SecurityLevelAttribute
   fullName: Sin.Net.Domain.System.Security.SecurityLevelAttribute
+- uid: Sin.Net.Domain.System.Security.SimpleCredentials
+  commentId: T:Sin.Net.Domain.System.Security.SimpleCredentials
+  parent: Sin.Net.Domain.System.Security
+  name: SimpleCredentials
+  nameWithType: SimpleCredentials
+  fullName: Sin.Net.Domain.System.Security.SimpleCredentials
 - uid: Sin.Net.Domain.System.Security
   commentId: N:Sin.Net.Domain.System.Security
   name: Sin.Net.Domain.System.Security

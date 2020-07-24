@@ -22,6 +22,10 @@
     <PackageIcon>Sin.Net.Logo.small.png</PackageIcon>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Include="..\..\Images\Sin.Net.Logo.small.png">
       <Pack>True</Pack>
