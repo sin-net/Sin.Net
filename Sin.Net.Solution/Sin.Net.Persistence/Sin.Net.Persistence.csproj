@@ -5,7 +5,7 @@
     <RepositoryUrl>https://github.com/sin-net/Sin.Net</RepositoryUrl>
     <PackageProjectUrl>https://github.com/sin-net/Sin.Net</PackageProjectUrl>
     <Copyright>Adrian Singer</Copyright>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/sin-net/Sin.Net/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
     <Authors>Adrian Singer</Authors>
     <Version>0.3.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -16,6 +16,7 @@
     <FileVersion>0.3.0.0</FileVersion>
     <PackageReleaseNotes>PersistenceController updated with new Add method for adding custon im- and exporter.</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,6 +25,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Sin.Net.Domain\Sin.Net.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
