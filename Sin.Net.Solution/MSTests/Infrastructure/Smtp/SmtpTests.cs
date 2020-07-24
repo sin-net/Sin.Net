@@ -27,7 +27,7 @@ namespace MSTests.Infrastructure.Smtp
         public void SendEmails()
         {
             // arrange
-            var address = "adriansinger87@gmail.com";
+            var address = "";
             var num = 2;
 
             var config = new SmtpConfig("smtp.gmail.com");
