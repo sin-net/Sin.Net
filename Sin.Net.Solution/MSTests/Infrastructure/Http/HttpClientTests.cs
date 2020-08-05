@@ -61,6 +61,7 @@ namespace MSTests.Infrastructure.Http
         public async Task ServiceCallAsync()
         {
             // arrange
+
             _endpoint = new HttpEndpoint
             {
                 BaseAddress = "https://api.abalin.net",

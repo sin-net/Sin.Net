@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/IterativeRepositoryBase.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IterativeRepositoryBase
     path: ../Sin.Net.Domain/Repository/IterativeRepositoryBase.cs
@@ -98,7 +98,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/IterativeRepositoryBase.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Domain/Repository/IterativeRepositoryBase.cs
@@ -132,7 +132,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Repository/IterativeRepositoryBase.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: GetEnumerator
     path: ../Sin.Net.Domain/Repository/IterativeRepositoryBase.cs

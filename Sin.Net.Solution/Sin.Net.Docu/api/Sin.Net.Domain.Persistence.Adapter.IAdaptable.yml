@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Adapter/IAdaptable.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IAdaptable
     path: ../Sin.Net.Domain/Persistence/Adapter/IAdaptable.cs
@@ -54,7 +54,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Adapter/IAdaptable.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Adapt
     path: ../Sin.Net.Domain/Persistence/Adapter/IAdaptable.cs

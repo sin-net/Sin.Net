@@ -63,7 +63,23 @@ namespace Sin.Net.Domain.Infrastructure.Http
         /// <summary>
         /// Gets the complete Url out of base address and request
         /// </summary>
-        public string Url => new Uri(new Uri(BaseAddress), Request).ToString();
+        public string Url
+        {
+            get
+			{
+                Uri uri;
+                if (string.IsNullOrEmpty(Request))
+                {
+                    uri = new Uri((!string.IsNullOrEmpty(BaseAddress) ? BaseAddress : "no-base-address"));
+                }
+                else
+                {
+                   uri = new Uri(
+                    new Uri((!string.IsNullOrEmpty(BaseAddress) ? BaseAddress : "no-base-address")), Request);
+                }
+                return uri?.OriginalString ?? "no-uri";
+            }
+        }
 
         /// <summary>
         /// Gets or sets an optional authentication string or API key for requests.

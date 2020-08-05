@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ISmtpControlable
     path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
@@ -64,7 +64,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: BuildMessage
     path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
@@ -102,7 +102,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: BuildMessage
     path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
@@ -144,7 +144,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: BuildMessages
     path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
@@ -186,7 +186,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Send
     path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
@@ -214,7 +214,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Counter
     path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs

@@ -33,7 +33,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: NLogger
     path: ../Sin.Net.Logging/NLogger.cs
@@ -83,7 +83,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Logging/NLogger.cs
@@ -113,7 +113,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Start
     path: ../Sin.Net.Logging/NLogger.cs
@@ -147,7 +147,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Stop
     path: ../Sin.Net.Logging/NLogger.cs
@@ -179,7 +179,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Trace
     path: ../Sin.Net.Logging/NLogger.cs
@@ -214,7 +214,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Trace
     path: ../Sin.Net.Logging/NLogger.cs
@@ -249,7 +249,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Debug
     path: ../Sin.Net.Logging/NLogger.cs
@@ -284,7 +284,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Debug
     path: ../Sin.Net.Logging/NLogger.cs
@@ -319,7 +319,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Info
     path: ../Sin.Net.Logging/NLogger.cs
@@ -354,7 +354,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Info
     path: ../Sin.Net.Logging/NLogger.cs
@@ -389,7 +389,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Warn
     path: ../Sin.Net.Logging/NLogger.cs
@@ -424,7 +424,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Warn
     path: ../Sin.Net.Logging/NLogger.cs
@@ -459,7 +459,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Error
     path: ../Sin.Net.Logging/NLogger.cs
@@ -494,7 +494,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Error
     path: ../Sin.Net.Logging/NLogger.cs
@@ -529,7 +529,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Fatal
     path: ../Sin.Net.Logging/NLogger.cs
@@ -564,7 +564,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Convert
     path: ../Sin.Net.Logging/NLogger.cs
@@ -601,7 +601,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: MinRule
     path: ../Sin.Net.Logging/NLogger.cs
@@ -636,7 +636,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: DeleteOlFiles
     path: ../Sin.Net.Logging/NLogger.cs
@@ -671,7 +671,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Suffix
     path: ../Sin.Net.Logging/NLogger.cs

@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Constants.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Csv
     path: ../Sin.Net.Persistence/Constants.cs
@@ -65,7 +65,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Constants.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Key
     path: ../Sin.Net.Persistence/Constants.cs
@@ -98,7 +98,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Constants.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Extension
     path: ../Sin.Net.Persistence/Constants.cs

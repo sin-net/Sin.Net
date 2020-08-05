@@ -24,7 +24,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/ExporterBase.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ExporterBase
     path: ../Sin.Net.Persistence/Exports/ExporterBase.cs
@@ -80,7 +80,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/ExporterBase.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: _exceptions
     path: ../Sin.Net.Persistence/Exports/ExporterBase.cs
@@ -111,7 +111,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/ExporterBase.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Persistence/Exports/ExporterBase.cs
@@ -141,7 +141,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/ExporterBase.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Setup
     path: ../Sin.Net.Persistence/Exports/ExporterBase.cs
@@ -180,7 +180,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/ExporterBase.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Build
     path: ../Sin.Net.Persistence/Exports/ExporterBase.cs
@@ -224,7 +224,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/ExporterBase.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Build
     path: ../Sin.Net.Persistence/Exports/ExporterBase.cs
@@ -270,7 +270,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/ExporterBase.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Export
     path: ../Sin.Net.Persistence/Exports/ExporterBase.cs
@@ -306,7 +306,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/ExporterBase.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: HandleException
     path: ../Sin.Net.Persistence/Exports/ExporterBase.cs
@@ -341,7 +341,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/ExporterBase.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Exception
     path: ../Sin.Net.Persistence/Exports/ExporterBase.cs
@@ -378,7 +378,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/ExporterBase.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Type
     path: ../Sin.Net.Persistence/Exports/ExporterBase.cs

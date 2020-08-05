@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: SmtpConfig
     path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
@@ -70,7 +70,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
@@ -103,7 +103,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Port
     path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
@@ -138,7 +138,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Sender
     path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
@@ -173,7 +173,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Receivers
     path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
@@ -208,7 +208,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Infrastructure/Smtp/SmtpConfig.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Credentials
     path: ../Sin.Net.Infrastructure/Smtp/SmtpConfig.cs

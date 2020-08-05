@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Settings/SettingsBase.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: SettingsBase
     path: ../Sin.Net.Domain/Persistence/Settings/SettingsBase.cs
@@ -78,7 +78,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Persistence/Settings/SettingsBase.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Name
     path: ../Sin.Net.Domain/Persistence/Settings/SettingsBase.cs

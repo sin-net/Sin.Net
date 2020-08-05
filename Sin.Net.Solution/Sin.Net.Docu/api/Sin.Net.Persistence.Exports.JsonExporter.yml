@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/JsonExporter.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: JsonExporter
     path: ../Sin.Net.Persistence/Exports/JsonExporter.cs
@@ -78,7 +78,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/JsonExporter.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Persistence/Exports/JsonExporter.cs
@@ -108,7 +108,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/JsonExporter.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Setup
     path: ../Sin.Net.Persistence/Exports/JsonExporter.cs
@@ -146,7 +146,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/JsonExporter.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Build
     path: ../Sin.Net.Persistence/Exports/JsonExporter.cs
@@ -189,7 +189,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/JsonExporter.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Build
     path: ../Sin.Net.Persistence/Exports/JsonExporter.cs
@@ -234,7 +234,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/JsonExporter.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Export
     path: ../Sin.Net.Persistence/Exports/JsonExporter.cs
@@ -272,7 +272,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Persistence/Exports/JsonExporter.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Type
     path: ../Sin.Net.Persistence/Exports/JsonExporter.cs

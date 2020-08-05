@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/Extensions/ObjectCloneExtensions.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ReferenceEqualityComparer
     path: ../Sin.Net.Domain/System/Extensions/ObjectCloneExtensions.cs
@@ -72,7 +72,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/Extensions/ObjectCloneExtensions.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Equals
     path: ../Sin.Net.Domain/System/Extensions/ObjectCloneExtensions.cs
@@ -112,7 +112,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/System/Extensions/ObjectCloneExtensions.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: GetHashCode
     path: ../Sin.Net.Domain/System/Extensions/ObjectCloneExtensions.cs

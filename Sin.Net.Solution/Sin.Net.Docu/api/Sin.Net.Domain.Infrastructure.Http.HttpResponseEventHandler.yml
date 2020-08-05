@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
-      branch: develop
+      branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: HttpResponseEventHandler
     path: ../Sin.Net.Domain/Infrastructure/Http/HttpResponseEventArgs.cs
