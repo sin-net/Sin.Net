@@ -13,11 +13,14 @@ namespace Sin.Net.Domain.Infrastructure.Http
         private const string PUT = "put";
         private const string DELETE = "delete";
 
+        private const string NO_ADDRESS = "http://no.address";
+
         /// <summary>
         /// The default constructor sets the method type to a GET-Method
         /// </summary>
         public HttpEndpoint()
         {
+            BaseAddress = NO_ADDRESS;
             MethodName = GET;
         }
 
@@ -70,12 +73,12 @@ namespace Sin.Net.Domain.Infrastructure.Http
                 Uri uri;
                 if (string.IsNullOrEmpty(Request))
                 {
-                    uri = new Uri((!string.IsNullOrEmpty(BaseAddress) ? BaseAddress : "no-base-address"));
+                    uri = new Uri((!string.IsNullOrEmpty(BaseAddress) ? BaseAddress : NO_ADDRESS));
                 }
                 else
                 {
                    uri = new Uri(
-                    new Uri((!string.IsNullOrEmpty(BaseAddress) ? BaseAddress : "no-base-address")), Request);
+                    new Uri((!string.IsNullOrEmpty(BaseAddress) ? BaseAddress : NO_ADDRESS)), Request);
                 }
                 return uri?.OriginalString ?? "no-uri";
             }
