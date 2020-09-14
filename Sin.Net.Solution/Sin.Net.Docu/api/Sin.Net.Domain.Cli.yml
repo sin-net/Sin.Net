@@ -1,0 +1,59 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.Cli
+  commentId: N:Sin.Net.Domain.Cli
+  id: Sin.Net.Domain.Cli
+  children:
+  - Sin.Net.Domain.Cli.CliAttribute
+  - Sin.Net.Domain.Cli.CliOptionParser`1
+  langs:
+  - csharp
+  - vb
+  name: Sin.Net.Domain.Cli
+  nameWithType: Sin.Net.Domain.Cli
+  fullName: Sin.Net.Domain.Cli
+  type: Namespace
+  assemblies:
+  - Sin.Net.Domain
+references:
+- uid: Sin.Net.Domain.Cli.CliAttribute
+  commentId: T:Sin.Net.Domain.Cli.CliAttribute
+  name: CliAttribute
+  nameWithType: CliAttribute
+  fullName: Sin.Net.Domain.Cli.CliAttribute
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1
+  commentId: T:Sin.Net.Domain.Cli.CliOptionParser`1
+  name: CliOptionParser<T>
+  nameWithType: CliOptionParser<T>
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>
+  nameWithType.vb: CliOptionParser(Of T)
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T)
+  name.vb: CliOptionParser(Of T)
+  spec.csharp:
+  - uid: Sin.Net.Domain.Cli.CliOptionParser`1
+    name: CliOptionParser
+    nameWithType: CliOptionParser
+    fullName: Sin.Net.Domain.Cli.CliOptionParser
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Sin.Net.Domain.Cli.CliOptionParser`1
+    name: CliOptionParser
+    nameWithType: CliOptionParser
+    fullName: Sin.Net.Domain.Cli.CliOptionParser
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

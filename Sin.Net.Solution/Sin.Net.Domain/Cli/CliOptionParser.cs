@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System;
+using System.Globalization;
+using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
@@ -8,7 +10,6 @@ namespace Sin.Net.Domain.Cli
 	{
 		// --fields
 
-		private const string PREFIX = "-";
 		private T _options;
 
 		// -- properties
@@ -18,17 +19,31 @@ namespace Sin.Net.Domain.Cli
 		/// </summary>
 		public string Prefix { get; set; }
 
+		public IFormatProvider Format { get; set; }
+
 		// -- constructor
 
 		public CliOptionParser()
 		{
 			_options = new T();
-			Prefix = PREFIX;
+			Prefix = "-";
+			Format = CultureInfo.InvariantCulture;
 		}
 
 		public CliOptionParser(string prefix) : this()
 		{
 			Prefix = prefix;
+		}
+
+		public CliOptionParser(IFormatProvider format) : this()
+		{
+			Format = format;
+		}
+
+		public CliOptionParser(string prefix, IFormatProvider format) : this()
+		{
+			Prefix = prefix;
+			Format = format;
 		}
 
 		// -- methods
@@ -44,7 +59,7 @@ namespace Sin.Net.Domain.Cli
 			{
 				var arg = args[i];
 
-				if (arg.StartsWith(PREFIX) == false)
+				if (arg.StartsWith(Prefix) == false)
 				{
 					continue;
 				}
@@ -74,7 +89,7 @@ namespace Sin.Net.Domain.Cli
 				else
 				{
 					var val = args.Length > index + 1 ? args[index + 1] : string.Empty;
-					prop.SetValue(_options, val);
+					prop.SetValue(_options, Convert.ChangeType(val, prop.PropertyType, Format));
 				}
 			}
 		}

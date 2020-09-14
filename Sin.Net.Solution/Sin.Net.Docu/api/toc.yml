@@ -1,4 +1,12 @@
 ### YamlMime:TableOfContent
+- uid: Sin.Net.Domain.Cli
+  name: Sin.Net.Domain.Cli
+  items:
+  - uid: Sin.Net.Domain.Cli.CliAttribute
+    name: CliAttribute
+  - uid: Sin.Net.Domain.Cli.CliOptionParser`1
+    name: CliOptionParser<T>
+    name.vb: CliOptionParser(Of T)
 - uid: Sin.Net.Domain.Config
   name: Sin.Net.Domain.Config
   items:

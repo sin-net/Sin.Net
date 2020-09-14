@@ -1,0 +1,1099 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1
+  commentId: T:Sin.Net.Domain.Cli.CliOptionParser`1
+  id: CliOptionParser`1
+  parent: Sin.Net.Domain.Cli
+  children:
+  - Sin.Net.Domain.Cli.CliOptionParser`1.#ctor
+  - Sin.Net.Domain.Cli.CliOptionParser`1.#ctor(System.IFormatProvider)
+  - Sin.Net.Domain.Cli.CliOptionParser`1.#ctor(System.String)
+  - Sin.Net.Domain.Cli.CliOptionParser`1.#ctor(System.String,System.IFormatProvider)
+  - Sin.Net.Domain.Cli.CliOptionParser`1.Format
+  - Sin.Net.Domain.Cli.CliOptionParser`1.Prefix
+  - Sin.Net.Domain.Cli.CliOptionParser`1.ReadArguments(System.String[])
+  langs:
+  - csharp
+  - vb
+  name: CliOptionParser<T>
+  nameWithType: CliOptionParser<T>
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>
+  type: Class
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Cli/CliOptionParser.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: CliOptionParser
+    path: ../Sin.Net.Domain/Cli/CliOptionParser.cs
+    startLine: 8
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Cli
+  syntax:
+    content: >-
+      public class CliOptionParser<T>
+          where T : new()
+    typeParameters:
+    - id: T
+    content.vb: Public Class CliOptionParser(Of T As New)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - Sin.Net.Domain.Cli.CliOptionParser`1.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  - System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  nameWithType.vb: CliOptionParser(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T)
+  name.vb: CliOptionParser(Of T)
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.Prefix
+  commentId: P:Sin.Net.Domain.Cli.CliOptionParser`1.Prefix
+  id: Prefix
+  parent: Sin.Net.Domain.Cli.CliOptionParser`1
+  langs:
+  - csharp
+  - vb
+  name: Prefix
+  nameWithType: CliOptionParser<T>.Prefix
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.Prefix
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Cli/CliOptionParser.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Prefix
+    path: ../Sin.Net.Domain/Cli/CliOptionParser.cs
+    startLine: 19
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Cli
+  summary: "\nGets or sets the Prefix that is used to identify options.\n"
+  example: []
+  syntax:
+    content: public string Prefix { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Prefix As String
+  overload: Sin.Net.Domain.Cli.CliOptionParser`1.Prefix*
+  nameWithType.vb: CliOptionParser(Of T).Prefix
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).Prefix
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.Format
+  commentId: P:Sin.Net.Domain.Cli.CliOptionParser`1.Format
+  id: Format
+  parent: Sin.Net.Domain.Cli.CliOptionParser`1
+  langs:
+  - csharp
+  - vb
+  name: Format
+  nameWithType: CliOptionParser<T>.Format
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.Format
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Cli/CliOptionParser.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Format
+    path: ../Sin.Net.Domain/Cli/CliOptionParser.cs
+    startLine: 21
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Cli
+  syntax:
+    content: public IFormatProvider Format { get; set; }
+    parameters: []
+    return:
+      type: System.IFormatProvider
+    content.vb: Public Property Format As IFormatProvider
+  overload: Sin.Net.Domain.Cli.CliOptionParser`1.Format*
+  nameWithType.vb: CliOptionParser(Of T).Format
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).Format
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.#ctor
+  commentId: M:Sin.Net.Domain.Cli.CliOptionParser`1.#ctor
+  id: '#ctor'
+  parent: Sin.Net.Domain.Cli.CliOptionParser`1
+  langs:
+  - csharp
+  - vb
+  name: CliOptionParser()
+  nameWithType: CliOptionParser<T>.CliOptionParser()
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.CliOptionParser()
+  type: Constructor
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Cli/CliOptionParser.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: .ctor
+    path: ../Sin.Net.Domain/Cli/CliOptionParser.cs
+    startLine: 25
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Cli
+  syntax:
+    content: public CliOptionParser()
+    content.vb: Public Sub New
+  overload: Sin.Net.Domain.Cli.CliOptionParser`1.#ctor*
+  nameWithType.vb: CliOptionParser(Of T).CliOptionParser()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).CliOptionParser()
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.#ctor(System.String)
+  commentId: M:Sin.Net.Domain.Cli.CliOptionParser`1.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Sin.Net.Domain.Cli.CliOptionParser`1
+  langs:
+  - csharp
+  - vb
+  name: CliOptionParser(String)
+  nameWithType: CliOptionParser<T>.CliOptionParser(String)
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.CliOptionParser(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Cli/CliOptionParser.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: .ctor
+    path: ../Sin.Net.Domain/Cli/CliOptionParser.cs
+    startLine: 32
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Cli
+  syntax:
+    content: public CliOptionParser(string prefix)
+    parameters:
+    - id: prefix
+      type: System.String
+    content.vb: Public Sub New(prefix As String)
+  overload: Sin.Net.Domain.Cli.CliOptionParser`1.#ctor*
+  nameWithType.vb: CliOptionParser(Of T).CliOptionParser(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).CliOptionParser(System.String)
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.#ctor(System.IFormatProvider)
+  commentId: M:Sin.Net.Domain.Cli.CliOptionParser`1.#ctor(System.IFormatProvider)
+  id: '#ctor(System.IFormatProvider)'
+  parent: Sin.Net.Domain.Cli.CliOptionParser`1
+  langs:
+  - csharp
+  - vb
+  name: CliOptionParser(IFormatProvider)
+  nameWithType: CliOptionParser<T>.CliOptionParser(IFormatProvider)
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.CliOptionParser(System.IFormatProvider)
+  type: Constructor
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Cli/CliOptionParser.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: .ctor
+    path: ../Sin.Net.Domain/Cli/CliOptionParser.cs
+    startLine: 37
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Cli
+  syntax:
+    content: public CliOptionParser(IFormatProvider format)
+    parameters:
+    - id: format
+      type: System.IFormatProvider
+    content.vb: Public Sub New(format As IFormatProvider)
+  overload: Sin.Net.Domain.Cli.CliOptionParser`1.#ctor*
+  nameWithType.vb: CliOptionParser(Of T).CliOptionParser(IFormatProvider)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).CliOptionParser(System.IFormatProvider)
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.#ctor(System.String,System.IFormatProvider)
+  commentId: M:Sin.Net.Domain.Cli.CliOptionParser`1.#ctor(System.String,System.IFormatProvider)
+  id: '#ctor(System.String,System.IFormatProvider)'
+  parent: Sin.Net.Domain.Cli.CliOptionParser`1
+  langs:
+  - csharp
+  - vb
+  name: CliOptionParser(String, IFormatProvider)
+  nameWithType: CliOptionParser<T>.CliOptionParser(String, IFormatProvider)
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.CliOptionParser(System.String, System.IFormatProvider)
+  type: Constructor
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Cli/CliOptionParser.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: .ctor
+    path: ../Sin.Net.Domain/Cli/CliOptionParser.cs
+    startLine: 42
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Cli
+  syntax:
+    content: public CliOptionParser(string prefix, IFormatProvider format)
+    parameters:
+    - id: prefix
+      type: System.String
+    - id: format
+      type: System.IFormatProvider
+    content.vb: Public Sub New(prefix As String, format As IFormatProvider)
+  overload: Sin.Net.Domain.Cli.CliOptionParser`1.#ctor*
+  nameWithType.vb: CliOptionParser(Of T).CliOptionParser(String, IFormatProvider)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).CliOptionParser(System.String, System.IFormatProvider)
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.ReadArguments(System.String[])
+  commentId: M:Sin.Net.Domain.Cli.CliOptionParser`1.ReadArguments(System.String[])
+  id: ReadArguments(System.String[])
+  parent: Sin.Net.Domain.Cli.CliOptionParser`1
+  langs:
+  - csharp
+  - vb
+  name: ReadArguments(String[])
+  nameWithType: CliOptionParser<T>.ReadArguments(String[])
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.ReadArguments(System.String[])
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Cli/CliOptionParser.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: ReadArguments
+    path: ../Sin.Net.Domain/Cli/CliOptionParser.cs
+    startLine: 55
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Cli
+  summary: "\nReads the command line arguments and places them into the properties of the according instance of type T.\n"
+  example: []
+  syntax:
+    content: public T ReadArguments(string[] args)
+    parameters:
+    - id: args
+      type: System.String[]
+      description: The cli options of the main method.
+    return:
+      type: '{T}'
+      description: The resulting instance of type T.
+    content.vb: Public Function ReadArguments(args As String()) As T
+  overload: Sin.Net.Domain.Cli.CliOptionParser`1.ReadArguments*
+  nameWithType.vb: CliOptionParser(Of T).ReadArguments(String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).ReadArguments(System.String())
+  name.vb: ReadArguments(String())
+references:
+- uid: Sin.Net.Domain.Cli
+  commentId: N:Sin.Net.Domain.Cli
+  name: Sin.Net.Domain.Cli
+  nameWithType: Sin.Net.Domain.Cli
+  fullName: Sin.Net.Domain.Cli
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  parent: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  definition: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  name: Clone()
+  nameWithType: ObjectCloneExtensions.Clone()
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone()
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+    name: Clone
+    nameWithType: ObjectCloneExtensions.Clone
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+    name: Clone
+    nameWithType: ObjectCloneExtensions.Clone
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  parent: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  definition: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  name: Clone<CliOptionParser<T>>()
+  nameWithType: ObjectCloneExtensions.Clone<CliOptionParser<T>>()
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<Sin.Net.Domain.Cli.CliOptionParser<T>>()
+  nameWithType.vb: ObjectCloneExtensions.Clone(Of CliOptionParser(Of T))()
+  fullName.vb: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of Sin.Net.Domain.Cli.CliOptionParser(Of T))()
+  name.vb: Clone(Of CliOptionParser(Of T))()
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
+    name: Clone<CliOptionParser<T>>
+    nameWithType: ObjectCloneExtensions.Clone<CliOptionParser<T>>
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<Sin.Net.Domain.Cli.CliOptionParser<T>>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1
+    name: Clone(Of CliOptionParser(Of T))
+    nameWithType: ObjectCloneExtensions.Clone(Of CliOptionParser(Of T))
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of Sin.Net.Domain.Cli.CliOptionParser(Of T))
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  name: SecureAccess(SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  parent: Sin.Net.Domain.System.Security.SecurityExtensions
+  definition: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  name: SecureAccess(Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  isExternal: true
+  name: Clone(Object)
+  nameWithType: ObjectCloneExtensions.Clone(Object)
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+    name: Clone
+    nameWithType: ObjectCloneExtensions.Clone
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(System.Object)
+    name: Clone
+    nameWithType: ObjectCloneExtensions.Clone
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  commentId: T:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+  parent: Sin.Net.Domain.System.Extensions
+  name: ObjectCloneExtensions
+  nameWithType: ObjectCloneExtensions
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions
+- uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  commentId: M:Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+  name: Clone<T>(T)
+  nameWithType: ObjectCloneExtensions.Clone<T>(T)
+  fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<T>(T)
+  nameWithType.vb: ObjectCloneExtensions.Clone(Of T)(T)
+  fullName.vb: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of T)(T)
+  name.vb: Clone(Of T)(T)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+    name: Clone<T>
+    nameWithType: ObjectCloneExtensions.Clone<T>
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone``1(``0)
+    name: Clone(Of T)
+    nameWithType: ObjectCloneExtensions.Clone(Of T)
+    fullName: Sin.Net.Domain.System.Extensions.ObjectCloneExtensions.Clone(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+  isExternal: true
+  name: SecureAccess(Object, SecurityLevels, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, SecurityLevels, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, Sin.Net.Domain.Enumerations.SecurityLevels, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,Sin.Net.Domain.Enumerations.SecurityLevels,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sin.Net.Domain.Enumerations.SecurityLevels
+    name: SecurityLevels
+    nameWithType: SecurityLevels
+    fullName: Sin.Net.Domain.Enumerations.SecurityLevels
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions
+  commentId: T:Sin.Net.Domain.System.Security.SecurityExtensions
+  parent: Sin.Net.Domain.System.Security
+  name: SecurityExtensions
+  nameWithType: SecurityExtensions
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions
+- uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  commentId: M:Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+  isExternal: true
+  name: SecureAccess(Object, Int32, String)
+  nameWithType: SecurityExtensions.SecureAccess(Object, Int32, String)
+  fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object, System.Int32, System.String)
+  spec.csharp:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess(System.Object,System.Int32,System.String)
+    name: SecureAccess
+    nameWithType: SecurityExtensions.SecureAccess
+    fullName: Sin.Net.Domain.System.Security.SecurityExtensions.SecureAccess
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sin.Net.Domain.System.Extensions
+  commentId: N:Sin.Net.Domain.System.Extensions
+  name: Sin.Net.Domain.System.Extensions
+  nameWithType: Sin.Net.Domain.System.Extensions
+  fullName: Sin.Net.Domain.System.Extensions
+- uid: Sin.Net.Domain.System.Security
+  commentId: N:Sin.Net.Domain.System.Security
+  name: Sin.Net.Domain.System.Security
+  nameWithType: Sin.Net.Domain.System.Security
+  fullName: Sin.Net.Domain.System.Security
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.Prefix*
+  commentId: Overload:Sin.Net.Domain.Cli.CliOptionParser`1.Prefix
+  name: Prefix
+  nameWithType: CliOptionParser<T>.Prefix
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.Prefix
+  nameWithType.vb: CliOptionParser(Of T).Prefix
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).Prefix
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.Format*
+  commentId: Overload:Sin.Net.Domain.Cli.CliOptionParser`1.Format
+  name: Format
+  nameWithType: CliOptionParser<T>.Format
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.Format
+  nameWithType.vb: CliOptionParser(Of T).Format
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).Format
+- uid: System.IFormatProvider
+  commentId: T:System.IFormatProvider
+  parent: System
+  isExternal: true
+  name: IFormatProvider
+  nameWithType: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.#ctor*
+  commentId: Overload:Sin.Net.Domain.Cli.CliOptionParser`1.#ctor
+  name: CliOptionParser
+  nameWithType: CliOptionParser<T>.CliOptionParser
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.CliOptionParser
+  nameWithType.vb: CliOptionParser(Of T).CliOptionParser
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).CliOptionParser
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.ReadArguments*
+  commentId: Overload:Sin.Net.Domain.Cli.CliOptionParser`1.ReadArguments
+  name: ReadArguments
+  nameWithType: CliOptionParser<T>.ReadArguments
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.ReadArguments
+  nameWithType.vb: CliOptionParser(Of T).ReadArguments
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).ReadArguments
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

@@ -1,6 +1,165 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: Sin.Net.Domain.Cli
+  name: Sin.Net.Domain.Cli
+  href: api/Sin.Net.Domain.Cli.html
+  commentId: N:Sin.Net.Domain.Cli
+  fullName: Sin.Net.Domain.Cli
+  nameWithType: Sin.Net.Domain.Cli
+- uid: Sin.Net.Domain.Cli.CliAttribute
+  name: CliAttribute
+  href: api/Sin.Net.Domain.Cli.CliAttribute.html
+  commentId: T:Sin.Net.Domain.Cli.CliAttribute
+  fullName: Sin.Net.Domain.Cli.CliAttribute
+  nameWithType: CliAttribute
+- uid: Sin.Net.Domain.Cli.CliAttribute.#ctor
+  name: CliAttribute()
+  href: api/Sin.Net.Domain.Cli.CliAttribute.html#Sin_Net_Domain_Cli_CliAttribute__ctor
+  commentId: M:Sin.Net.Domain.Cli.CliAttribute.#ctor
+  fullName: Sin.Net.Domain.Cli.CliAttribute.CliAttribute()
+  nameWithType: CliAttribute.CliAttribute()
+- uid: Sin.Net.Domain.Cli.CliAttribute.#ctor(System.String,System.String)
+  name: CliAttribute(String, String)
+  href: api/Sin.Net.Domain.Cli.CliAttribute.html#Sin_Net_Domain_Cli_CliAttribute__ctor_System_String_System_String_
+  commentId: M:Sin.Net.Domain.Cli.CliAttribute.#ctor(System.String,System.String)
+  fullName: Sin.Net.Domain.Cli.CliAttribute.CliAttribute(System.String, System.String)
+  nameWithType: CliAttribute.CliAttribute(String, String)
+- uid: Sin.Net.Domain.Cli.CliAttribute.#ctor*
+  name: CliAttribute
+  href: api/Sin.Net.Domain.Cli.CliAttribute.html#Sin_Net_Domain_Cli_CliAttribute__ctor_
+  commentId: Overload:Sin.Net.Domain.Cli.CliAttribute.#ctor
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Cli.CliAttribute.CliAttribute
+  nameWithType: CliAttribute.CliAttribute
+- uid: Sin.Net.Domain.Cli.CliAttribute.Long
+  name: Long
+  href: api/Sin.Net.Domain.Cli.CliAttribute.html#Sin_Net_Domain_Cli_CliAttribute_Long
+  commentId: P:Sin.Net.Domain.Cli.CliAttribute.Long
+  fullName: Sin.Net.Domain.Cli.CliAttribute.Long
+  nameWithType: CliAttribute.Long
+- uid: Sin.Net.Domain.Cli.CliAttribute.Long*
+  name: Long
+  href: api/Sin.Net.Domain.Cli.CliAttribute.html#Sin_Net_Domain_Cli_CliAttribute_Long_
+  commentId: Overload:Sin.Net.Domain.Cli.CliAttribute.Long
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Cli.CliAttribute.Long
+  nameWithType: CliAttribute.Long
+- uid: Sin.Net.Domain.Cli.CliAttribute.Short
+  name: Short
+  href: api/Sin.Net.Domain.Cli.CliAttribute.html#Sin_Net_Domain_Cli_CliAttribute_Short
+  commentId: P:Sin.Net.Domain.Cli.CliAttribute.Short
+  fullName: Sin.Net.Domain.Cli.CliAttribute.Short
+  nameWithType: CliAttribute.Short
+- uid: Sin.Net.Domain.Cli.CliAttribute.Short*
+  name: Short
+  href: api/Sin.Net.Domain.Cli.CliAttribute.html#Sin_Net_Domain_Cli_CliAttribute_Short_
+  commentId: Overload:Sin.Net.Domain.Cli.CliAttribute.Short
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Cli.CliAttribute.Short
+  nameWithType: CliAttribute.Short
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1
+  name: CliOptionParser<T>
+  href: api/Sin.Net.Domain.Cli.CliOptionParser-1.html
+  commentId: T:Sin.Net.Domain.Cli.CliOptionParser`1
+  name.vb: CliOptionParser(Of T)
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T)
+  nameWithType: CliOptionParser<T>
+  nameWithType.vb: CliOptionParser(Of T)
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.#ctor
+  name: CliOptionParser()
+  href: api/Sin.Net.Domain.Cli.CliOptionParser-1.html#Sin_Net_Domain_Cli_CliOptionParser_1__ctor
+  commentId: M:Sin.Net.Domain.Cli.CliOptionParser`1.#ctor
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.CliOptionParser()
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).CliOptionParser()
+  nameWithType: CliOptionParser<T>.CliOptionParser()
+  nameWithType.vb: CliOptionParser(Of T).CliOptionParser()
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.#ctor(System.IFormatProvider)
+  name: CliOptionParser(IFormatProvider)
+  href: api/Sin.Net.Domain.Cli.CliOptionParser-1.html#Sin_Net_Domain_Cli_CliOptionParser_1__ctor_System_IFormatProvider_
+  commentId: M:Sin.Net.Domain.Cli.CliOptionParser`1.#ctor(System.IFormatProvider)
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.CliOptionParser(System.IFormatProvider)
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).CliOptionParser(System.IFormatProvider)
+  nameWithType: CliOptionParser<T>.CliOptionParser(IFormatProvider)
+  nameWithType.vb: CliOptionParser(Of T).CliOptionParser(IFormatProvider)
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.#ctor(System.String)
+  name: CliOptionParser(String)
+  href: api/Sin.Net.Domain.Cli.CliOptionParser-1.html#Sin_Net_Domain_Cli_CliOptionParser_1__ctor_System_String_
+  commentId: M:Sin.Net.Domain.Cli.CliOptionParser`1.#ctor(System.String)
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.CliOptionParser(System.String)
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).CliOptionParser(System.String)
+  nameWithType: CliOptionParser<T>.CliOptionParser(String)
+  nameWithType.vb: CliOptionParser(Of T).CliOptionParser(String)
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.#ctor(System.String,System.IFormatProvider)
+  name: CliOptionParser(String, IFormatProvider)
+  href: api/Sin.Net.Domain.Cli.CliOptionParser-1.html#Sin_Net_Domain_Cli_CliOptionParser_1__ctor_System_String_System_IFormatProvider_
+  commentId: M:Sin.Net.Domain.Cli.CliOptionParser`1.#ctor(System.String,System.IFormatProvider)
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.CliOptionParser(System.String, System.IFormatProvider)
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).CliOptionParser(System.String, System.IFormatProvider)
+  nameWithType: CliOptionParser<T>.CliOptionParser(String, IFormatProvider)
+  nameWithType.vb: CliOptionParser(Of T).CliOptionParser(String, IFormatProvider)
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.#ctor*
+  name: CliOptionParser
+  href: api/Sin.Net.Domain.Cli.CliOptionParser-1.html#Sin_Net_Domain_Cli_CliOptionParser_1__ctor_
+  commentId: Overload:Sin.Net.Domain.Cli.CliOptionParser`1.#ctor
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.CliOptionParser
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).CliOptionParser
+  nameWithType: CliOptionParser<T>.CliOptionParser
+  nameWithType.vb: CliOptionParser(Of T).CliOptionParser
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.Format
+  name: Format
+  href: api/Sin.Net.Domain.Cli.CliOptionParser-1.html#Sin_Net_Domain_Cli_CliOptionParser_1_Format
+  commentId: P:Sin.Net.Domain.Cli.CliOptionParser`1.Format
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.Format
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).Format
+  nameWithType: CliOptionParser<T>.Format
+  nameWithType.vb: CliOptionParser(Of T).Format
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.Format*
+  name: Format
+  href: api/Sin.Net.Domain.Cli.CliOptionParser-1.html#Sin_Net_Domain_Cli_CliOptionParser_1_Format_
+  commentId: Overload:Sin.Net.Domain.Cli.CliOptionParser`1.Format
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.Format
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).Format
+  nameWithType: CliOptionParser<T>.Format
+  nameWithType.vb: CliOptionParser(Of T).Format
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.Prefix
+  name: Prefix
+  href: api/Sin.Net.Domain.Cli.CliOptionParser-1.html#Sin_Net_Domain_Cli_CliOptionParser_1_Prefix
+  commentId: P:Sin.Net.Domain.Cli.CliOptionParser`1.Prefix
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.Prefix
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).Prefix
+  nameWithType: CliOptionParser<T>.Prefix
+  nameWithType.vb: CliOptionParser(Of T).Prefix
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.Prefix*
+  name: Prefix
+  href: api/Sin.Net.Domain.Cli.CliOptionParser-1.html#Sin_Net_Domain_Cli_CliOptionParser_1_Prefix_
+  commentId: Overload:Sin.Net.Domain.Cli.CliOptionParser`1.Prefix
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.Prefix
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).Prefix
+  nameWithType: CliOptionParser<T>.Prefix
+  nameWithType.vb: CliOptionParser(Of T).Prefix
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.ReadArguments(System.String[])
+  name: ReadArguments(String[])
+  href: api/Sin.Net.Domain.Cli.CliOptionParser-1.html#Sin_Net_Domain_Cli_CliOptionParser_1_ReadArguments_System_String___
+  commentId: M:Sin.Net.Domain.Cli.CliOptionParser`1.ReadArguments(System.String[])
+  name.vb: ReadArguments(String())
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.ReadArguments(System.String[])
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).ReadArguments(System.String())
+  nameWithType: CliOptionParser<T>.ReadArguments(String[])
+  nameWithType.vb: CliOptionParser(Of T).ReadArguments(String())
+- uid: Sin.Net.Domain.Cli.CliOptionParser`1.ReadArguments*
+  name: ReadArguments
+  href: api/Sin.Net.Domain.Cli.CliOptionParser-1.html#Sin_Net_Domain_Cli_CliOptionParser_1_ReadArguments_
+  commentId: Overload:Sin.Net.Domain.Cli.CliOptionParser`1.ReadArguments
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Cli.CliOptionParser<T>.ReadArguments
+  fullName.vb: Sin.Net.Domain.Cli.CliOptionParser(Of T).ReadArguments
+  nameWithType: CliOptionParser<T>.ReadArguments
+  nameWithType.vb: CliOptionParser(Of T).ReadArguments
 - uid: Sin.Net.Domain.Config
   name: Sin.Net.Domain.Config
   href: api/Sin.Net.Domain.Config.html
