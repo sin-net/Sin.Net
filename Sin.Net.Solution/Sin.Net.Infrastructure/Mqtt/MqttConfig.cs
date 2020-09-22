@@ -19,6 +19,7 @@ namespace Sin.Net.Infrastructure.Mqtt
             LasWill = $"Goodby from {ClientID}";
             QoS = 0;
             Topics = new List<string>();
+            Reconnection = 0;
         }
 
         // -- methods
@@ -51,9 +52,10 @@ namespace Sin.Net.Infrastructure.Mqtt
         }
 
         /// <summary>
-        /// Gets or sets the flag wheather the controller should reconnect or not on a connection loss.
+        /// Gets or sets the time in seconds to reconnect after a connection loss.
+        /// If the value is set to the default of 0, no reconnection attempt will be done. 
         /// </summary>
-        public bool AutoReconnect { get; set; }
+        public int Reconnection { get; set; }
 
         /// <summary>
         /// Gets or sets the list of topic strings.
