@@ -66,22 +66,26 @@ namespace Sin.Net.Infrastructure.Mqtt
                 }
             });
 
-            _client.UseDisconnectedHandler(async e =>
-            {
-                Log.Warn($"Disconnected from broker '{Config.Broker}'", this);
-                // fire own event for application layer
-                Disconnected?.Invoke(this, new MqttConnectedEventArgs(Config.Broker, Config.Port, Config.ClientID));
-                await Task.Delay(TimeSpan.FromSeconds(5));
-                try
+            if (Config.AutoReconnect)
+			{
+                _client.UseDisconnectedHandler(async e =>
                 {
-                    await ConnectAsync();
-                }
-                catch (Exception ex)
-                {
-                    Log.Error("could not reconnect", this);
-                    Log.Fatal(ex);
-                }
-            });
+
+                    Log.Warn($"Disconnected from broker '{Config.Broker}'", this);
+                    // fire own event for application layer
+                    Disconnected?.Invoke(this, new MqttConnectedEventArgs(Config.Broker, Config.Port, Config.ClientID));
+                    await Task.Delay(TimeSpan.FromSeconds(5));
+                    try
+                    {
+                        await ConnectAsync();
+                    }
+                    catch (Exception ex)
+                    {
+                        Log.Error("could not reconnect", this);
+                        Log.Fatal(ex);
+                    }
+                });
+            }           
 
             _client.UseApplicationMessageReceivedHandler(e =>
             {

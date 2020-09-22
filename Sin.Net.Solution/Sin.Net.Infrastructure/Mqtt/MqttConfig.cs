@@ -51,6 +51,11 @@ namespace Sin.Net.Infrastructure.Mqtt
         }
 
         /// <summary>
+        /// Gets or sets the flag wheather the controller should reconnect or not on a connection loss.
+        /// </summary>
+        public bool AutoReconnect { get; set; }
+
+        /// <summary>
         /// Gets or sets the list of topic strings.
         /// </summary>
         public List<string> Topics { get; set; }
