@@ -28,7 +28,9 @@ items:
     content: 'public class UpperCaseContractResolver : DefaultContractResolver, IContractResolver'
     content.vb: >-
       Public Class UpperCaseContractResolver
+
           Inherits DefaultContractResolver
+
           Implements IContractResolver
   inheritance:
   - System.Object

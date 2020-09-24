@@ -6,10 +6,11 @@ items:
   parent: Sin.Net.Logging
   children:
   - Sin.Net.Logging.NLogger.#ctor
+  - Sin.Net.Logging.NLogger.ArchiveDaily
   - Sin.Net.Logging.NLogger.Convert(System.Object)
   - Sin.Net.Logging.NLogger.Debug(System.Object)
   - Sin.Net.Logging.NLogger.Debug(System.String)
-  - Sin.Net.Logging.NLogger.DeleteOlFiles
+  - Sin.Net.Logging.NLogger.DeleteOldFiles
   - Sin.Net.Logging.NLogger.Error(System.Object)
   - Sin.Net.Logging.NLogger.Error(System.String)
   - Sin.Net.Logging.NLogger.Fatal(System.Exception)
@@ -37,7 +38,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: NLogger
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -87,7 +88,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: .ctor
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -117,7 +118,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Start
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -151,7 +152,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Stop
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 70
+    startLine: 77
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -183,7 +184,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Trace
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 77
+    startLine: 84
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -218,7 +219,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Trace
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 82
+    startLine: 89
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -253,7 +254,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Debug
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 87
+    startLine: 94
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -288,7 +289,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Debug
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 92
+    startLine: 99
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -323,7 +324,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Info
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 97
+    startLine: 104
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -358,7 +359,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Info
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 102
+    startLine: 109
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -393,7 +394,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Warn
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 107
+    startLine: 114
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -428,7 +429,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Warn
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 112
+    startLine: 119
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -463,7 +464,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Error
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 117
+    startLine: 124
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -498,7 +499,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Error
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 122
+    startLine: 129
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -533,7 +534,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Fatal
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 127
+    startLine: 134
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -568,7 +569,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Convert
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 132
+    startLine: 139
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -605,7 +606,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: MinRule
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 162
+    startLine: 169
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -622,35 +623,35 @@ items:
   - set
   modifiers.vb:
   - Public
-- uid: Sin.Net.Logging.NLogger.DeleteOlFiles
-  commentId: P:Sin.Net.Logging.NLogger.DeleteOlFiles
-  id: DeleteOlFiles
+- uid: Sin.Net.Logging.NLogger.DeleteOldFiles
+  commentId: P:Sin.Net.Logging.NLogger.DeleteOldFiles
+  id: DeleteOldFiles
   parent: Sin.Net.Logging.NLogger
   langs:
   - csharp
   - vb
-  name: DeleteOlFiles
-  nameWithType: NLogger.DeleteOlFiles
-  fullName: Sin.Net.Logging.NLogger.DeleteOlFiles
+  name: DeleteOldFiles
+  nameWithType: NLogger.DeleteOldFiles
+  fullName: Sin.Net.Logging.NLogger.DeleteOldFiles
   type: Property
   source:
     remote:
       path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
       branch: master
       repo: git@github.com:adriansinger87/Sin.Net.git
-    id: DeleteOlFiles
+    id: DeleteOldFiles
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 164
+    startLine: 171
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
   syntax:
-    content: public bool DeleteOlFiles { get; set; }
+    content: public bool DeleteOldFiles { get; set; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Property DeleteOlFiles As Boolean
-  overload: Sin.Net.Logging.NLogger.DeleteOlFiles*
+    content.vb: Public Property DeleteOldFiles As Boolean
+  overload: Sin.Net.Logging.NLogger.DeleteOldFiles*
   modifiers.csharp:
   - public
   - get
@@ -675,7 +676,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Suffix
     path: ../Sin.Net.Logging/NLogger.cs
-    startLine: 166
+    startLine: 173
   assemblies:
   - Sin.Net.Logging
   namespace: Sin.Net.Logging
@@ -686,6 +687,41 @@ items:
       type: System.String
     content.vb: Public Property Suffix As String
   overload: Sin.Net.Logging.NLogger.Suffix*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Logging.NLogger.ArchiveDaily
+  commentId: P:Sin.Net.Logging.NLogger.ArchiveDaily
+  id: ArchiveDaily
+  parent: Sin.Net.Logging.NLogger
+  langs:
+  - csharp
+  - vb
+  name: ArchiveDaily
+  nameWithType: NLogger.ArchiveDaily
+  fullName: Sin.Net.Logging.NLogger.ArchiveDaily
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Logging/NLogger.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: ArchiveDaily
+    path: ../Sin.Net.Logging/NLogger.cs
+    startLine: 175
+  assemblies:
+  - Sin.Net.Logging
+  namespace: Sin.Net.Logging
+  syntax:
+    content: public bool ArchiveDaily { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ArchiveDaily As Boolean
+  overload: Sin.Net.Logging.NLogger.ArchiveDaily*
   modifiers.csharp:
   - public
   - get
@@ -2010,11 +2046,11 @@ references:
   name: NLog
   nameWithType: NLog
   fullName: NLog
-- uid: Sin.Net.Logging.NLogger.DeleteOlFiles*
-  commentId: Overload:Sin.Net.Logging.NLogger.DeleteOlFiles
-  name: DeleteOlFiles
-  nameWithType: NLogger.DeleteOlFiles
-  fullName: Sin.Net.Logging.NLogger.DeleteOlFiles
+- uid: Sin.Net.Logging.NLogger.DeleteOldFiles*
+  commentId: Overload:Sin.Net.Logging.NLogger.DeleteOldFiles
+  name: DeleteOldFiles
+  nameWithType: NLogger.DeleteOldFiles
+  fullName: Sin.Net.Logging.NLogger.DeleteOldFiles
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -2027,3 +2063,8 @@ references:
   name: Suffix
   nameWithType: NLogger.Suffix
   fullName: Sin.Net.Logging.NLogger.Suffix
+- uid: Sin.Net.Logging.NLogger.ArchiveDaily*
+  commentId: Overload:Sin.Net.Logging.NLogger.ArchiveDaily
+  name: ArchiveDaily
+  nameWithType: NLogger.ArchiveDaily
+  fullName: Sin.Net.Logging.NLogger.ArchiveDaily

@@ -286,7 +286,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Connect
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-    startLine: 96
+    startLine: 102
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -320,7 +320,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Disconnect
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-    startLine: 103
+    startLine: 109
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -354,7 +354,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ConnectAsync
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-    startLine: 110
+    startLine: 116
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -388,7 +388,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: DisconnectAsync
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-    startLine: 115
+    startLine: 121
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -422,7 +422,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: PublishAsync
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-    startLine: 120
+    startLine: 126
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -461,7 +461,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: PublishAsync
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-    startLine: 125
+    startLine: 131
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -502,7 +502,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Config
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-    startLine: 148
+    startLine: 154
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -537,7 +537,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: IsConnected
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-    startLine: 153
+    startLine: 159
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -577,7 +577,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Sin.Net.Domain.Infrastructure.IControlable.Config
     path: ../Sin.Net.Infrastructure/Mqtt/MqttNetController.cs
-    startLine: 155
+    startLine: 161
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt

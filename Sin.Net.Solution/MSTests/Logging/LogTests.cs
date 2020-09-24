@@ -5,6 +5,7 @@ using Sin.Net.Domain.System.UserManagement;
 using Sin.Net.Logging;
 using System;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace MSTests.Logging
 {
@@ -14,7 +15,12 @@ namespace MSTests.Logging
         [TestInitialize]
         public void Arrange()
         {
-            Log.Inject(new NLogger { MinRule = LogLevel.Trace, Suffix = "-suffix" }.Start());
+            Log.Inject(new NLogger
+            {
+                MinRule = LogLevel.Trace,
+                Suffix = "-suffix",
+                DeleteOldFiles = true
+            }.Start());
         }
 
         [TestCleanup]
@@ -26,6 +32,21 @@ namespace MSTests.Logging
         // -- test methods
 
         [TestMethod]
+        public void TestArchives()
+        {
+            // pre-assert
+            var iterations = 1; // increment to test amount of new file archives
+            var ms = 1000;
+            Assert.IsTrue(Log.IsNotNull, "logger should be injected");
+
+            for (int i = 0; i < iterations; i++)
+			{
+                Log.Info($"Round {i + 1}");
+                Thread.Sleep(ms);
+            }
+        }
+
+            [TestMethod]
         public void TestAttachment()
         {
             // pre-assert

@@ -1,5 +1,6 @@
 ﻿using NLog;
 using NLog.Layouts;
+using NLog.Targets;
 using Sin.Net.Domain.Persistence.Logging;
 using System;
 using System.Collections;
@@ -20,8 +21,8 @@ namespace Sin.Net.Logging
         public NLogger()
         {
             Suffix = string.Empty;
-            DeleteOlFiles = true;
             MinRule = LogLevel.Info;
+            ArchiveDaily = true;
         }
 
         // -- methods
@@ -33,12 +34,13 @@ namespace Sin.Net.Logging
             var config = new NLog.Config.LoggingConfiguration();
             var consoleTarget = new NLog.Targets.ConsoleTarget("logconsole");
             var fileTarget = new NLog.Targets.FileTarget("logfile");
-            var filename = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            var fileNameFormat = "${date:format=yyyy-MM-dd}";
+            var timeFormat = "${date:format=yyyy-MM-dd HH\\:mm\\:ss}";
 
             consoleTarget.Layout = new CsvLayout()
             {
                 Columns = {
-                    new CsvColumn("Time", "${date:format=yyyy-MM-dd HH\\:mm\\:ss}"),
+                    new CsvColumn("Time", timeFormat),
                     new CsvColumn("Level", "${level}"),
                     new CsvColumn("Message", "${message}"),
                 },
@@ -50,15 +52,20 @@ namespace Sin.Net.Logging
             fileTarget.Layout = new CsvLayout()
             {
                 Columns = {
-                    new CsvColumn("Time", "${date:format=yyyy-MM-dd HH\\:mm\\:ss}"),
+                    new CsvColumn("Time", timeFormat),
                     new CsvColumn("Level", "${level}"),
                     new CsvColumn("Message", "${message}"),
                 },
                 Delimiter = CsvColumnDelimiterMode.Tab
             };
+            fileTarget.FileName = $"{Path.Combine(path, fileNameFormat)}{Suffix}.log";
+            fileTarget.DeleteOldFileOnStartup = DeleteOldFiles;
+            if (ArchiveDaily)
+			{
+                fileTarget.ArchiveEvery = FileArchivePeriod.Day;
+                fileTarget.ArchiveDateFormat = "yyyy-MM-dd";
+            }
 
-            fileTarget.FileName = $"{Path.Combine(path, filename)}{Suffix}.log";
-            fileTarget.DeleteOldFileOnStartup = DeleteOlFiles;
             config.AddRule(MinRule, LogLevel.Fatal, consoleTarget);
             config.AddRule(MinRule, LogLevel.Fatal, fileTarget);
             LogManager.Configuration = config;
@@ -162,9 +169,11 @@ namespace Sin.Net.Logging
 
         public LogLevel MinRule { get; set; }
 
-        public bool DeleteOlFiles { get; set; }
+        public bool DeleteOldFiles { get; set; }
 
         public string Suffix { get; set; }
+
+        public bool ArchiveDaily { get; set; }
 
     }
 }

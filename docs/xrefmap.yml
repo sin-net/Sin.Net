@@ -2672,6 +2672,19 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Infrastructure.Mqtt.MqttConfig.QoS
   nameWithType: MqttConfig.QoS
+- uid: Sin.Net.Infrastructure.Mqtt.MqttConfig.Reconnection
+  name: Reconnection
+  href: api/Sin.Net.Infrastructure.Mqtt.MqttConfig.html#Sin_Net_Infrastructure_Mqtt_MqttConfig_Reconnection
+  commentId: P:Sin.Net.Infrastructure.Mqtt.MqttConfig.Reconnection
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttConfig.Reconnection
+  nameWithType: MqttConfig.Reconnection
+- uid: Sin.Net.Infrastructure.Mqtt.MqttConfig.Reconnection*
+  name: Reconnection
+  href: api/Sin.Net.Infrastructure.Mqtt.MqttConfig.html#Sin_Net_Infrastructure_Mqtt_MqttConfig_Reconnection_
+  commentId: Overload:Sin.Net.Infrastructure.Mqtt.MqttConfig.Reconnection
+  isSpec: "True"
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttConfig.Reconnection
+  nameWithType: MqttConfig.Reconnection
 - uid: Sin.Net.Infrastructure.Mqtt.MqttConfig.Topics
   name: Topics
   href: api/Sin.Net.Infrastructure.Mqtt.MqttConfig.html#Sin_Net_Infrastructure_Mqtt_MqttConfig_Topics
@@ -3166,6 +3179,19 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Logging.NLogger.NLogger
   nameWithType: NLogger.NLogger
+- uid: Sin.Net.Logging.NLogger.ArchiveDaily
+  name: ArchiveDaily
+  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_ArchiveDaily
+  commentId: P:Sin.Net.Logging.NLogger.ArchiveDaily
+  fullName: Sin.Net.Logging.NLogger.ArchiveDaily
+  nameWithType: NLogger.ArchiveDaily
+- uid: Sin.Net.Logging.NLogger.ArchiveDaily*
+  name: ArchiveDaily
+  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_ArchiveDaily_
+  commentId: Overload:Sin.Net.Logging.NLogger.ArchiveDaily
+  isSpec: "True"
+  fullName: Sin.Net.Logging.NLogger.ArchiveDaily
+  nameWithType: NLogger.ArchiveDaily
 - uid: Sin.Net.Logging.NLogger.Convert(System.Object)
   name: Convert(Object)
   href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_Convert_System_Object_
@@ -3198,19 +3224,19 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Logging.NLogger.Debug
   nameWithType: NLogger.Debug
-- uid: Sin.Net.Logging.NLogger.DeleteOlFiles
-  name: DeleteOlFiles
-  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_DeleteOlFiles
-  commentId: P:Sin.Net.Logging.NLogger.DeleteOlFiles
-  fullName: Sin.Net.Logging.NLogger.DeleteOlFiles
-  nameWithType: NLogger.DeleteOlFiles
-- uid: Sin.Net.Logging.NLogger.DeleteOlFiles*
-  name: DeleteOlFiles
-  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_DeleteOlFiles_
-  commentId: Overload:Sin.Net.Logging.NLogger.DeleteOlFiles
+- uid: Sin.Net.Logging.NLogger.DeleteOldFiles
+  name: DeleteOldFiles
+  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_DeleteOldFiles
+  commentId: P:Sin.Net.Logging.NLogger.DeleteOldFiles
+  fullName: Sin.Net.Logging.NLogger.DeleteOldFiles
+  nameWithType: NLogger.DeleteOldFiles
+- uid: Sin.Net.Logging.NLogger.DeleteOldFiles*
+  name: DeleteOldFiles
+  href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_DeleteOldFiles_
+  commentId: Overload:Sin.Net.Logging.NLogger.DeleteOldFiles
   isSpec: "True"
-  fullName: Sin.Net.Logging.NLogger.DeleteOlFiles
-  nameWithType: NLogger.DeleteOlFiles
+  fullName: Sin.Net.Logging.NLogger.DeleteOldFiles
+  nameWithType: NLogger.DeleteOldFiles
 - uid: Sin.Net.Logging.NLogger.Error(System.Object)
   name: Error(Object)
   href: api/Sin.Net.Logging.NLogger.html#Sin_Net_Logging_NLogger_Error_System_Object_

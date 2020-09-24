@@ -11,6 +11,7 @@ items:
   - Sin.Net.Infrastructure.Mqtt.MqttConfig.LasWill
   - Sin.Net.Infrastructure.Mqtt.MqttConfig.Port
   - Sin.Net.Infrastructure.Mqtt.MqttConfig.QoS
+  - Sin.Net.Infrastructure.Mqtt.MqttConfig.Reconnection
   - Sin.Net.Infrastructure.Mqtt.MqttConfig.Topics
   - Sin.Net.Infrastructure.Mqtt.MqttConfig.ToString
   langs:
@@ -106,7 +107,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ToString
     path: ../Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
-    startLine: 25
+    startLine: 26
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -141,7 +142,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Broker
     path: ../Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -176,7 +177,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Port
     path: ../Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
-    startLine: 30
+    startLine: 31
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -211,7 +212,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ClientID
     path: ../Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
-    startLine: 31
+    startLine: 32
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -246,7 +247,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: LasWill
     path: ../Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
-    startLine: 36
+    startLine: 37
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -283,7 +284,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: QoS
     path: ../Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
-    startLine: 41
+    startLine: 42
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -296,6 +297,43 @@ items:
       type: System.Int32
     content.vb: Public Property QoS As Integer
   overload: Sin.Net.Infrastructure.Mqtt.MqttConfig.QoS*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sin.Net.Infrastructure.Mqtt.MqttConfig.Reconnection
+  commentId: P:Sin.Net.Infrastructure.Mqtt.MqttConfig.Reconnection
+  id: Reconnection
+  parent: Sin.Net.Infrastructure.Mqtt.MqttConfig
+  langs:
+  - csharp
+  - vb
+  name: Reconnection
+  nameWithType: MqttConfig.Reconnection
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttConfig.Reconnection
+  type: Property
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Reconnection
+    path: ../Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
+    startLine: 57
+  assemblies:
+  - Sin.Net.Infrastructure
+  namespace: Sin.Net.Infrastructure.Mqtt
+  summary: "\nGets or sets the time in seconds to reconnect after a connection loss.\nIf the value is set to the default of 0, no reconnection attempt will be done. \n"
+  example: []
+  syntax:
+    content: public int Reconnection { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Reconnection As Integer
+  overload: Sin.Net.Infrastructure.Mqtt.MqttConfig.Reconnection*
   modifiers.csharp:
   - public
   - get
@@ -320,7 +358,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Topics
     path: ../Sin.Net.Infrastructure/Mqtt/MqttConfig.cs
-    startLine: 55
+    startLine: 62
   assemblies:
   - Sin.Net.Infrastructure
   namespace: Sin.Net.Infrastructure.Mqtt
@@ -1103,6 +1141,11 @@ references:
   name: QoS
   nameWithType: MqttConfig.QoS
   fullName: Sin.Net.Infrastructure.Mqtt.MqttConfig.QoS
+- uid: Sin.Net.Infrastructure.Mqtt.MqttConfig.Reconnection*
+  commentId: Overload:Sin.Net.Infrastructure.Mqtt.MqttConfig.Reconnection
+  name: Reconnection
+  nameWithType: MqttConfig.Reconnection
+  fullName: Sin.Net.Infrastructure.Mqtt.MqttConfig.Reconnection
 - uid: Sin.Net.Infrastructure.Mqtt.MqttConfig.Topics*
   commentId: Overload:Sin.Net.Infrastructure.Mqtt.MqttConfig.Topics
   name: Topics

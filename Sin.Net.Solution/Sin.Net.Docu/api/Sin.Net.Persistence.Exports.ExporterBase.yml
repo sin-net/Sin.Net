@@ -36,6 +36,7 @@ items:
     content: 'public abstract class ExporterBase : IExportable'
     content.vb: >-
       Public MustInherit Class ExporterBase
+
           Implements IExportable
   inheritance:
   - System.Object

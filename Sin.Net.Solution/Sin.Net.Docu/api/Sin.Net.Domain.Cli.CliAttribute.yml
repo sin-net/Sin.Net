@@ -38,6 +38,7 @@ items:
       <AttributeUsage(AttributeTargets.Property)>
 
       Public Class CliAttribute
+
           Inherits Attribute
   inheritance:
   - System.Object

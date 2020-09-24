@@ -33,7 +33,9 @@ items:
     content: 'public class PropertiesContractResolver : DefaultContractResolver, IContractResolver'
     content.vb: >-
       Public Class PropertiesContractResolver
+
           Inherits DefaultContractResolver
+
           Implements IContractResolver
   inheritance:
   - System.Object

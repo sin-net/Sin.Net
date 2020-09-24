@@ -38,6 +38,7 @@ items:
     content: 'public class PersistenceController : IPersistenceControlable'
     content.vb: >-
       Public Class PersistenceController
+
           Implements IPersistenceControlable
   inheritance:
   - System.Object
