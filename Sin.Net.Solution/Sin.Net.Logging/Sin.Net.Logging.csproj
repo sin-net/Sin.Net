@@ -6,16 +6,16 @@
     <RepositoryUrl>https://github.com/sin-net/Sin.Net</RepositoryUrl>
     <PackageLicenseUrl></PackageLicenseUrl>
     <Copyright>Adrian Singer</Copyright>
-    <AssemblyVersion>0.3.0.0</AssemblyVersion>
+    <AssemblyVersion>0.3.1.0</AssemblyVersion>
     <PackageTags>Sin.Net.Domain, Logger, NLog</PackageTags>
     <Description>This assembly represents a part of persitence layer. It is the implementation of a logging mechanism based on Sin.Net.Domain and NLog.</Description>
-    <Version>0.3.0</Version>
+    <Version>0.3.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/sin-net/Sin.Net</PackageProjectUrl>
-    <FileVersion>0.3.0.0</FileVersion>
+    <FileVersion>0.3.1.0</FileVersion>
     <PackageIconUrl></PackageIconUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>NLogger and TestLogger updated to ILoggable interface version included in Sin.Net.Domain version 0.3.0</PackageReleaseNotes>
+    <PackageReleaseNotes>NLogger features updated to archive files on a daily basis.</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageIcon>Sin.Net.Logo.small.png</PackageIcon>
   </PropertyGroup>
