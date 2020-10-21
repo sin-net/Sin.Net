@@ -22,10 +22,11 @@ namespace MSTests.Infrastructure.Smtp
 
 		// test methods
 
+		[TestMethod]
 		public void SendEmails()
 		{
 			// arrange
-			var address = "";
+			var address = "123@456.de";
 
 			var num = 2;
 
@@ -43,8 +44,10 @@ namespace MSTests.Infrastructure.Smtp
 			// act
 			var smtp = new SmtpController();
 
+			// TODO: test attachment functions
 			var result = smtp.Setup(config)
 				.BuildMessage(subject, body)
+				.Attach("App_Data/demo.csv")
 				.Send();
 
 			// assert
