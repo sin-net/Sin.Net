@@ -5,9 +5,13 @@ items:
   id: ISmtpControlable
   parent: Sin.Net.Domain.Infrastructure.Smtp
   children:
-  - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.Object[])
-  - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.String,System.String,System.Object[])
-  - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String,System.String[],System.String,System.String,System.Object[])
+  - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.IO.FileInfo)
+  - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.IO.FileInfo,System.String)
+  - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.String)
+  - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.String,System.String)
+  - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String)
+  - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.String,System.String)
+  - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String,System.String[],System.String,System.String)
   - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Counter
   - Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send
   langs:
@@ -24,7 +28,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: ISmtpControlable
     path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
-    startLine: 7
+    startLine: 9
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Smtp
@@ -51,16 +55,16 @@ items:
   modifiers.vb:
   - Public
   - Interface
-- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.Object[])
-  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.Object[])
-  id: BuildMessage(System.String,System.String,System.Object[])
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String)
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String)
+  id: BuildMessage(System.String,System.String)
   parent: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
   langs:
   - csharp
   - vb
-  name: BuildMessage(String, String, Object[])
-  nameWithType: ISmtpControlable.BuildMessage(String, String, Object[])
-  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String, System.Object[])
+  name: BuildMessage(String, String)
+  nameWithType: ISmtpControlable.BuildMessage(String, String)
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String)
   type: Method
   source:
     remote:
@@ -69,36 +73,31 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: BuildMessage
     path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
-    startLine: 9
+    startLine: 11
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Smtp
   syntax:
-    content: ISmtpControlable BuildMessage(string subject, string body, object[] attachment = null)
+    content: ISmtpControlable BuildMessage(string subject, string body)
     parameters:
     - id: subject
       type: System.String
     - id: body
       type: System.String
-    - id: attachment
-      type: System.Object[]
     return:
       type: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
-    content.vb: Function BuildMessage(subject As String, body As String, attachment As Object() = Nothing) As ISmtpControlable
+    content.vb: Function BuildMessage(subject As String, body As String) As ISmtpControlable
   overload: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage*
-  nameWithType.vb: ISmtpControlable.BuildMessage(String, String, Object())
-  fullName.vb: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String, System.Object())
-  name.vb: BuildMessage(String, String, Object())
-- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.String,System.String,System.Object[])
-  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.String,System.String,System.Object[])
-  id: BuildMessage(System.String,System.String,System.String,System.String,System.Object[])
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.String,System.String)
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.String,System.String)
+  id: BuildMessage(System.String,System.String,System.String,System.String)
   parent: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
   langs:
   - csharp
   - vb
-  name: BuildMessage(String, String, String, String, Object[])
-  nameWithType: ISmtpControlable.BuildMessage(String, String, String, String, Object[])
-  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String, System.String, System.String, System.Object[])
+  name: BuildMessage(String, String, String, String)
+  nameWithType: ISmtpControlable.BuildMessage(String, String, String, String)
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String, System.String, System.String)
   type: Method
   source:
     remote:
@@ -107,12 +106,12 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: BuildMessage
     path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Smtp
   syntax:
-    content: ISmtpControlable BuildMessage(string sender, string receiver, string subject, string body, object[] attachment = null)
+    content: ISmtpControlable BuildMessage(string sender, string receiver, string subject, string body)
     parameters:
     - id: sender
       type: System.String
@@ -122,25 +121,20 @@ items:
       type: System.String
     - id: body
       type: System.String
-    - id: attachment
-      type: System.Object[]
     return:
       type: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
-    content.vb: Function BuildMessage(sender As String, receiver As String, subject As String, body As String, attachment As Object() = Nothing) As ISmtpControlable
+    content.vb: Function BuildMessage(sender As String, receiver As String, subject As String, body As String) As ISmtpControlable
   overload: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage*
-  nameWithType.vb: ISmtpControlable.BuildMessage(String, String, String, String, Object())
-  fullName.vb: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String, System.String, System.String, System.Object())
-  name.vb: BuildMessage(String, String, String, String, Object())
-- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String,System.String[],System.String,System.String,System.Object[])
-  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String,System.String[],System.String,System.String,System.Object[])
-  id: BuildMessages(System.String,System.String[],System.String,System.String,System.Object[])
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String,System.String[],System.String,System.String)
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String,System.String[],System.String,System.String)
+  id: BuildMessages(System.String,System.String[],System.String,System.String)
   parent: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
   langs:
   - csharp
   - vb
-  name: BuildMessages(String, String[], String, String, Object[])
-  nameWithType: ISmtpControlable.BuildMessages(String, String[], String, String, Object[])
-  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String, System.String[], System.String, System.String, System.Object[])
+  name: BuildMessages(String, String[], String, String)
+  nameWithType: ISmtpControlable.BuildMessages(String, String[], String, String)
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String, System.String[], System.String, System.String)
   type: Method
   source:
     remote:
@@ -154,7 +148,7 @@ items:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Smtp
   syntax:
-    content: ISmtpControlable BuildMessages(string sender, string[] receivers, string subject, string body, object[] attachment = null)
+    content: ISmtpControlable BuildMessages(string sender, string[] receivers, string subject, string body)
     parameters:
     - id: sender
       type: System.String
@@ -164,15 +158,141 @@ items:
       type: System.String
     - id: body
       type: System.String
-    - id: attachment
-      type: System.Object[]
     return:
       type: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
-    content.vb: Function BuildMessages(sender As String, receivers As String(), subject As String, body As String, attachment As Object() = Nothing) As ISmtpControlable
+    content.vb: Function BuildMessages(sender As String, receivers As String(), subject As String, body As String) As ISmtpControlable
   overload: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages*
-  nameWithType.vb: ISmtpControlable.BuildMessages(String, String(), String, String, Object())
-  fullName.vb: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String, System.String(), System.String, System.String, System.Object())
-  name.vb: BuildMessages(String, String(), String, String, Object())
+  nameWithType.vb: ISmtpControlable.BuildMessages(String, String(), String, String)
+  fullName.vb: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String, System.String(), System.String, System.String)
+  name.vb: BuildMessages(String, String(), String, String)
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.String)
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.String)
+  id: Attach(System.String)
+  parent: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+  langs:
+  - csharp
+  - vb
+  name: Attach(String)
+  nameWithType: ISmtpControlable.Attach(String)
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Attach
+    path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
+    startLine: 27
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure.Smtp
+  syntax:
+    content: ISmtpControlable Attach(string filename)
+    parameters:
+    - id: filename
+      type: System.String
+    return:
+      type: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+    content.vb: Function Attach(filename As String) As ISmtpControlable
+  overload: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach*
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.String,System.String)
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.String,System.String)
+  id: Attach(System.String,System.String)
+  parent: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+  langs:
+  - csharp
+  - vb
+  name: Attach(String, String)
+  nameWithType: ISmtpControlable.Attach(String, String)
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Attach
+    path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
+    startLine: 28
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure.Smtp
+  syntax:
+    content: ISmtpControlable Attach(string filename, string mimeType)
+    parameters:
+    - id: filename
+      type: System.String
+    - id: mimeType
+      type: System.String
+    return:
+      type: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+    content.vb: Function Attach(filename As String, mimeType As String) As ISmtpControlable
+  overload: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach*
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.IO.FileInfo)
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.IO.FileInfo)
+  id: Attach(System.IO.FileInfo)
+  parent: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+  langs:
+  - csharp
+  - vb
+  name: Attach(FileInfo)
+  nameWithType: ISmtpControlable.Attach(FileInfo)
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.IO.FileInfo)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Attach
+    path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
+    startLine: 29
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure.Smtp
+  syntax:
+    content: ISmtpControlable Attach(FileInfo file)
+    parameters:
+    - id: file
+      type: System.IO.FileInfo
+    return:
+      type: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+    content.vb: Function Attach(file As FileInfo) As ISmtpControlable
+  overload: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach*
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.IO.FileInfo,System.String)
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.IO.FileInfo,System.String)
+  id: Attach(System.IO.FileInfo,System.String)
+  parent: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+  langs:
+  - csharp
+  - vb
+  name: Attach(FileInfo, String)
+  nameWithType: ISmtpControlable.Attach(FileInfo, String)
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.IO.FileInfo, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sin.Net.Solution/Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
+      branch: master
+      repo: git@github.com:adriansinger87/Sin.Net.git
+    id: Attach
+    path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
+    startLine: 30
+  assemblies:
+  - Sin.Net.Domain
+  namespace: Sin.Net.Domain.Infrastructure.Smtp
+  syntax:
+    content: ISmtpControlable Attach(FileInfo file, string mimeType)
+    parameters:
+    - id: file
+      type: System.IO.FileInfo
+    - id: mimeType
+      type: System.String
+    return:
+      type: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
+    content.vb: Function Attach(file As FileInfo, mimeType As String) As ISmtpControlable
+  overload: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach*
 - uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send
   commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send
   id: Send
@@ -191,7 +311,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Send
     path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
-    startLine: 28
+    startLine: 32
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Smtp
@@ -219,7 +339,7 @@ items:
       repo: git@github.com:adriansinger87/Sin.Net.git
     id: Counter
     path: ../Sin.Net.Domain/Infrastructure/Smtp/ISmtpControlable.cs
-    startLine: 30
+    startLine: 34
   assemblies:
   - Sin.Net.Domain
   namespace: Sin.Net.Domain.Infrastructure.Smtp
@@ -770,32 +890,6 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: System.Object[]
-  isExternal: true
-  name: Object[]
-  nameWithType: Object[]
-  fullName: System.Object[]
-  nameWithType.vb: Object()
-  fullName.vb: System.Object()
-  name.vb: Object()
-  spec.csharp:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
-  spec.vb:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
 - uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
   commentId: T:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
   parent: Sin.Net.Domain.Infrastructure.Smtp
@@ -839,6 +933,24 @@ references:
   - name: ()
     nameWithType: ()
     fullName: ()
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach*
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach
+  name: Attach
+  nameWithType: ISmtpControlable.Attach
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach
+- uid: System.IO.FileInfo
+  commentId: T:System.IO.FileInfo
+  parent: System.IO
+  isExternal: true
+  name: FileInfo
+  nameWithType: FileInfo
+  fullName: System.IO.FileInfo
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
 - uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send*
   commentId: Overload:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Send
   name: Send

@@ -33,4 +33,10 @@
     <ProjectReference Include="..\Sin.Net.Persistence\Sin.Net.Persistence.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="App_Data\demo.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

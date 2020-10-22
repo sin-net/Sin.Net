@@ -53,32 +53,31 @@ namespace Sin.Net.Infrastructure.Smtp
 
 		public ISmtpControlable BuildMessage(string subject, string body)
 		{
-			var from = Config.Sender;
-			foreach (var to in Config.Receivers)
-			{
-				AddMessage(from, to, subject, body);
-			}
+			AddMessage(Config.Sender, Config.Receivers.ToArray(), subject, body);
 			return this;
 		}
 
 		public ISmtpControlable BuildMessage(string sender, string receiver, string subject, string body)
 		{
-			AddMessage(sender, receiver, subject, body);
+			AddMessage(sender, new string[] { receiver }, subject, body);
 			return this;
 		}
 
 		public ISmtpControlable BuildMessages(string sender, string[] receivers, string subject, string body)
 		{
-			foreach (var to in receivers)
-			{
-				AddMessage(sender, to, subject, body);
-			}
+			AddMessage(sender, receivers, subject, body);
 			return this;
 		}
-
-		private void AddMessage(string from, string to, string subject, string body)
+		
+		private void AddMessage(string from, string[] to, string subject, string body)
 		{
-			var msg = new MailMessage(from, to, subject, body);
+			var msg = new MailMessage();
+			var adresses = to.Length == 1 ? to[0] : string.Join(",", to);
+
+			msg.From = new MailAddress(from);
+			msg.To.Add(adresses);
+			msg.Subject = subject;
+			msg.Body = body;
 			_messages.Add(msg);
 		}
 
@@ -127,7 +126,7 @@ namespace Sin.Net.Infrastructure.Smtp
 					{
 						client.Send(mail);
 						_messages.Remove(mail);
-						Counter++;
+						Counter += mail.To.Count;
 					}
 					catch (Exception ex)
 					{

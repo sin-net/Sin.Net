@@ -965,24 +965,49 @@ references:
   commentId: T:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
   fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable
   nameWithType: ISmtpControlable
-- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.Object[])
-  name: BuildMessage(String, String, Object[])
-  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_BuildMessage_System_String_System_String_System_Object___
-  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.Object[])
-  name.vb: BuildMessage(String, String, Object())
-  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String, System.Object[])
-  fullName.vb: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String, System.Object())
-  nameWithType: ISmtpControlable.BuildMessage(String, String, Object[])
-  nameWithType.vb: ISmtpControlable.BuildMessage(String, String, Object())
-- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.String,System.String,System.Object[])
-  name: BuildMessage(String, String, String, String, Object[])
-  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_BuildMessage_System_String_System_String_System_String_System_String_System_Object___
-  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.String,System.String,System.Object[])
-  name.vb: BuildMessage(String, String, String, String, Object())
-  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String, System.String, System.String, System.Object[])
-  fullName.vb: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String, System.String, System.String, System.Object())
-  nameWithType: ISmtpControlable.BuildMessage(String, String, String, String, Object[])
-  nameWithType.vb: ISmtpControlable.BuildMessage(String, String, String, String, Object())
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.IO.FileInfo)
+  name: Attach(FileInfo)
+  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_Attach_System_IO_FileInfo_
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.IO.FileInfo)
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.IO.FileInfo)
+  nameWithType: ISmtpControlable.Attach(FileInfo)
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.IO.FileInfo,System.String)
+  name: Attach(FileInfo, String)
+  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_Attach_System_IO_FileInfo_System_String_
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.IO.FileInfo,System.String)
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.IO.FileInfo, System.String)
+  nameWithType: ISmtpControlable.Attach(FileInfo, String)
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.String)
+  name: Attach(String)
+  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_Attach_System_String_
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.String)
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.String)
+  nameWithType: ISmtpControlable.Attach(String)
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.String,System.String)
+  name: Attach(String, String)
+  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_Attach_System_String_System_String_
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.String,System.String)
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach(System.String, System.String)
+  nameWithType: ISmtpControlable.Attach(String, String)
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach*
+  name: Attach
+  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_Attach_
+  commentId: Overload:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach
+  isSpec: "True"
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.Attach
+  nameWithType: ISmtpControlable.Attach
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String)
+  name: BuildMessage(String, String)
+  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_BuildMessage_System_String_System_String_
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String)
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String)
+  nameWithType: ISmtpControlable.BuildMessage(String, String)
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.String,System.String)
+  name: BuildMessage(String, String, String, String)
+  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_BuildMessage_System_String_System_String_System_String_System_String_
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String,System.String,System.String,System.String)
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage(System.String, System.String, System.String, System.String)
+  nameWithType: ISmtpControlable.BuildMessage(String, String, String, String)
 - uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage*
   name: BuildMessage
   href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_BuildMessage_
@@ -990,15 +1015,15 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessage
   nameWithType: ISmtpControlable.BuildMessage
-- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String,System.String[],System.String,System.String,System.Object[])
-  name: BuildMessages(String, String[], String, String, Object[])
-  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_BuildMessages_System_String_System_String___System_String_System_String_System_Object___
-  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String,System.String[],System.String,System.String,System.Object[])
-  name.vb: BuildMessages(String, String(), String, String, Object())
-  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String, System.String[], System.String, System.String, System.Object[])
-  fullName.vb: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String, System.String(), System.String, System.String, System.Object())
-  nameWithType: ISmtpControlable.BuildMessages(String, String[], String, String, Object[])
-  nameWithType.vb: ISmtpControlable.BuildMessages(String, String(), String, String, Object())
+- uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String,System.String[],System.String,System.String)
+  name: BuildMessages(String, String[], String, String)
+  href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_BuildMessages_System_String_System_String___System_String_System_String_
+  commentId: M:Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String,System.String[],System.String,System.String)
+  name.vb: BuildMessages(String, String(), String, String)
+  fullName: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String, System.String[], System.String, System.String)
+  fullName.vb: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages(System.String, System.String(), System.String, System.String)
+  nameWithType: ISmtpControlable.BuildMessages(String, String[], String, String)
+  nameWithType.vb: ISmtpControlable.BuildMessages(String, String(), String, String)
 - uid: Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.BuildMessages*
   name: BuildMessages
   href: api/Sin.Net.Domain.Infrastructure.Smtp.ISmtpControlable.html#Sin_Net_Domain_Infrastructure_Smtp_ISmtpControlable_BuildMessages_
@@ -2988,24 +3013,49 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Infrastructure.Smtp.SmtpController.SmtpController
   nameWithType: SmtpController.SmtpController
-- uid: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String,System.String,System.Object[])
-  name: BuildMessage(String, String, Object[])
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_BuildMessage_System_String_System_String_System_Object___
-  commentId: M:Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String,System.String,System.Object[])
-  name.vb: BuildMessage(String, String, Object())
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String, System.String, System.Object[])
-  fullName.vb: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String, System.String, System.Object())
-  nameWithType: SmtpController.BuildMessage(String, String, Object[])
-  nameWithType.vb: SmtpController.BuildMessage(String, String, Object())
-- uid: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String,System.String,System.String,System.String,System.Object[])
-  name: BuildMessage(String, String, String, String, Object[])
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_BuildMessage_System_String_System_String_System_String_System_String_System_Object___
-  commentId: M:Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String,System.String,System.String,System.String,System.Object[])
-  name.vb: BuildMessage(String, String, String, String, Object())
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String, System.String, System.String, System.String, System.Object[])
-  fullName.vb: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String, System.String, System.String, System.String, System.Object())
-  nameWithType: SmtpController.BuildMessage(String, String, String, String, Object[])
-  nameWithType.vb: SmtpController.BuildMessage(String, String, String, String, Object())
+- uid: Sin.Net.Infrastructure.Smtp.SmtpController.Attach(System.IO.FileInfo)
+  name: Attach(FileInfo)
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_Attach_System_IO_FileInfo_
+  commentId: M:Sin.Net.Infrastructure.Smtp.SmtpController.Attach(System.IO.FileInfo)
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.Attach(System.IO.FileInfo)
+  nameWithType: SmtpController.Attach(FileInfo)
+- uid: Sin.Net.Infrastructure.Smtp.SmtpController.Attach(System.IO.FileInfo,System.String)
+  name: Attach(FileInfo, String)
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_Attach_System_IO_FileInfo_System_String_
+  commentId: M:Sin.Net.Infrastructure.Smtp.SmtpController.Attach(System.IO.FileInfo,System.String)
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.Attach(System.IO.FileInfo, System.String)
+  nameWithType: SmtpController.Attach(FileInfo, String)
+- uid: Sin.Net.Infrastructure.Smtp.SmtpController.Attach(System.String)
+  name: Attach(String)
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_Attach_System_String_
+  commentId: M:Sin.Net.Infrastructure.Smtp.SmtpController.Attach(System.String)
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.Attach(System.String)
+  nameWithType: SmtpController.Attach(String)
+- uid: Sin.Net.Infrastructure.Smtp.SmtpController.Attach(System.String,System.String)
+  name: Attach(String, String)
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_Attach_System_String_System_String_
+  commentId: M:Sin.Net.Infrastructure.Smtp.SmtpController.Attach(System.String,System.String)
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.Attach(System.String, System.String)
+  nameWithType: SmtpController.Attach(String, String)
+- uid: Sin.Net.Infrastructure.Smtp.SmtpController.Attach*
+  name: Attach
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_Attach_
+  commentId: Overload:Sin.Net.Infrastructure.Smtp.SmtpController.Attach
+  isSpec: "True"
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.Attach
+  nameWithType: SmtpController.Attach
+- uid: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String,System.String)
+  name: BuildMessage(String, String)
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_BuildMessage_System_String_System_String_
+  commentId: M:Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String,System.String)
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String, System.String)
+  nameWithType: SmtpController.BuildMessage(String, String)
+- uid: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String,System.String,System.String,System.String)
+  name: BuildMessage(String, String, String, String)
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_BuildMessage_System_String_System_String_System_String_System_String_
+  commentId: M:Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String,System.String,System.String,System.String)
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage(System.String, System.String, System.String, System.String)
+  nameWithType: SmtpController.BuildMessage(String, String, String, String)
 - uid: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage*
   name: BuildMessage
   href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_BuildMessage_
@@ -3013,15 +3063,15 @@ references:
   isSpec: "True"
   fullName: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessage
   nameWithType: SmtpController.BuildMessage
-- uid: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessages(System.String,System.String[],System.String,System.String,System.Object[])
-  name: BuildMessages(String, String[], String, String, Object[])
-  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_BuildMessages_System_String_System_String___System_String_System_String_System_Object___
-  commentId: M:Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessages(System.String,System.String[],System.String,System.String,System.Object[])
-  name.vb: BuildMessages(String, String(), String, String, Object())
-  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessages(System.String, System.String[], System.String, System.String, System.Object[])
-  fullName.vb: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessages(System.String, System.String(), System.String, System.String, System.Object())
-  nameWithType: SmtpController.BuildMessages(String, String[], String, String, Object[])
-  nameWithType.vb: SmtpController.BuildMessages(String, String(), String, String, Object())
+- uid: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessages(System.String,System.String[],System.String,System.String)
+  name: BuildMessages(String, String[], String, String)
+  href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_BuildMessages_System_String_System_String___System_String_System_String_
+  commentId: M:Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessages(System.String,System.String[],System.String,System.String)
+  name.vb: BuildMessages(String, String(), String, String)
+  fullName: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessages(System.String, System.String[], System.String, System.String)
+  fullName.vb: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessages(System.String, System.String(), System.String, System.String)
+  nameWithType: SmtpController.BuildMessages(String, String[], String, String)
+  nameWithType.vb: SmtpController.BuildMessages(String, String(), String, String)
 - uid: Sin.Net.Infrastructure.Smtp.SmtpController.BuildMessages*
   name: BuildMessages
   href: api/Sin.Net.Infrastructure.Smtp.SmtpController.html#Sin_Net_Infrastructure_Smtp_SmtpController_BuildMessages_

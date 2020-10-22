@@ -22,11 +22,11 @@ namespace MSTests.Infrastructure.Smtp
 
 		// test methods
 
-		[TestMethod]
+		//[TestMethod]
 		public void SendEmails()
 		{
 			// arrange
-			var address = "123@456.de";
+			var address = "your.name@host.com";
 
 			var num = 2;
 
