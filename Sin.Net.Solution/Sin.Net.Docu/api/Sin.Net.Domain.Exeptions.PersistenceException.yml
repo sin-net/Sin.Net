@@ -33,9 +33,7 @@ items:
     content: 'public class PersistenceException : Exception, ISerializable'
     content.vb: >-
       Public Class PersistenceException
-
           Inherits Exception
-
           Implements ISerializable
   inheritance:
   - System.Object

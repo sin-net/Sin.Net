@@ -33,9 +33,7 @@ items:
     content: 'public class CsvExporter : ExporterBase, IExportable'
     content.vb: >-
       Public Class CsvExporter
-
           Inherits ExporterBase
-
           Implements IExportable
   inheritance:
   - System.Object

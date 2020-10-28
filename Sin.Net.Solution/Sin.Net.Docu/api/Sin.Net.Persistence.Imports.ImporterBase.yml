@@ -36,7 +36,6 @@ items:
     content: 'public abstract class ImporterBase : IImportable'
     content.vb: >-
       Public MustInherit Class ImporterBase
-
           Implements IImportable
   inheritance:
   - System.Object
@@ -197,7 +196,6 @@ items:
   syntax:
     content: >-
       public abstract T As<T>()
-
           where T : new()
     typeParameters:
     - id: T
@@ -241,7 +239,6 @@ items:
   syntax:
     content: >-
       public abstract T As<T>(IAdaptable adapter)
-
           where T : new()
     parameters:
     - id: adapter

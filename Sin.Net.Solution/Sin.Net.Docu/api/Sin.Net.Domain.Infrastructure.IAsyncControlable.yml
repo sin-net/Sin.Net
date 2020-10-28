@@ -29,7 +29,6 @@ items:
     content: 'public interface IAsyncControlable : IControlable'
     content.vb: >-
       Public Interface IAsyncControlable
-
           Inherits IControlable
   inheritedMembers:
   - Sin.Net.Domain.Infrastructure.IControlable.Setup(Sin.Net.Domain.Config.ConfigBase)

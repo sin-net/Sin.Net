@@ -33,7 +33,6 @@ items:
   syntax:
     content: >-
       public class CliOptionParser<T>
-
           where T : new()
     typeParameters:
     - id: T

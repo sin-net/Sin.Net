@@ -28,9 +28,7 @@ items:
     content: 'public class LowerCaseContractResolver : DefaultContractResolver, IContractResolver'
     content.vb: >-
       Public Class LowerCaseContractResolver
-
           Inherits DefaultContractResolver
-
           Implements IContractResolver
   inheritance:
   - System.Object
