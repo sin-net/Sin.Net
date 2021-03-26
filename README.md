@@ -1,7 +1,8 @@
 # ![Sin.Net](./Images/Sin.Net.Logo.small.png "Sin.Net") Sin.Net
 
-[![Build Status](https://dev.azure.com/sin-net/Sin.Net/_apis/build/status/sin-net.Sin.Net?branchName=master)](https://dev.azure.com/sin-net/Sin.Net/_build/latest?definitionId=1&branchName=master)
+## :exclamation: The project will no longer maintained. The major parts of the code base have moved to a new and well defined project called [TeleScope](https://github.com/telescope-dotnet/telescope). 
 
+[![Build Status](https://dev.azure.com/sin-net/Sin.Net/_apis/build/status/sin-net.Sin.Net?branchName=master)](https://dev.azure.com/sin-net/Sin.Net/_build/latest?definitionId=1&branchName=master)
 
 The **Sin.Net** Project contains a list of reusable assemblies
 to build clean software architectures for any software purpose.
